@@ -1,36 +1,31 @@
-// تفعيل القائمة للجوال (للإصدارات القادمة)
-console.log('مرحباً بكم في موقع وظائف حول العالم');
-
-// بيانات الدول (مؤقتة)
-const countries = [
-    { name: 'الإمارات', page: 'uae.html' },
-    { name: 'السعودية', page: '#' },
-    { name: 'قطر', page: '#' },
-    { name: 'الكويت', page: '#' },
-    { name: 'بريطانيا', page: '#' },
-    { name: 'أمريكا', page: '#' },
-    { name: 'كندا', page: '#' },
-    { name: 'ألمانيا', page: '#' },
-    { name: 'فرنسا', page: '#' },
-    { name: 'أستراليا', page: '#' }
-];
-
-// وظيفة البحث (للتطبيق المستقبلي)
-function searchJobs() {
+// تفعيل القائمة للجوال
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (mobileMenu) {
+        mobileMenu.addEventListener('click', function() {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+    }
+    
+    // وظيفة البحث البسيطة
     const searchInput = document.querySelector('.search-box input');
-    if (searchInput) {
-        searchInput.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                alert('خاصية البحث قيد التطوير قريباً');
+    const searchBtn = document.querySelector('.search-btn');
+    
+    if (searchBtn) {
+        searchBtn.addEventListener('click', function() {
+            if (searchInput && searchInput.value.trim() !== '') {
+                alert(`جاري البحث عن وظائف في: ${searchInput.value}`);
             }
         });
     }
-}
-
-// تشغيل الوظائف عند تحميل الصفحة
-document.addEventListener('DOMContentLoaded', function() {
-    searchJobs();
     
-    // رسالة ترحيب
-    console.log('تم تحميل الموقع بنجاح ✅');
+    if (searchInput) {
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && this.value.trim() !== '') {
+                alert(`جاري البحث عن وظائف في: ${this.value}`);
+            }
+        });
+    }
 });
