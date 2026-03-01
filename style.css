@@ -1,18 +1,3 @@
-/* ===== المتغيرات والأساسيات ===== */
-:root {
-    --primary-color: #2563eb;
-    --primary-dark: #1d4ed8;
-    --secondary-color: #f59e0b;
-    --text-dark: #1e293b;
-    --text-light: #64748b;
-    --bg-light: #f8fafc;
-    --white: #ffffff;
-    --border-color: #e2e8f0;
-    --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
-    --transition: all 0.3s ease;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -21,8 +6,8 @@
 
 body {
     font-family: 'Cairo', sans-serif;
-    background-color: var(--bg-light);
-    color: var(--text-dark);
+    background-color: #f8fafc;
+    color: #1e293b;
     line-height: 1.6;
 }
 
@@ -32,15 +17,15 @@ body {
     padding: 0 20px;
 }
 
-/* ===== شريط التنقل ===== */
+/* شريط التنقل */
 .navbar {
-    background-color: var(--white);
-    box-shadow: var(--shadow-sm);
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
     z-index: 100;
     padding: 15px 0;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid #e2e8f0;
 }
 
 .nav-content {
@@ -55,12 +40,8 @@ body {
     gap: 10px;
     font-size: 1.3rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: #2563eb;
     text-decoration: none;
-}
-
-.logo i {
-    font-size: 1.5rem;
 }
 
 .nav-links {
@@ -71,29 +52,27 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-light);
+    color: #64748b;
     font-weight: 500;
     font-size: 0.95rem;
-    transition: var(--transition);
-    padding: 5px 0;
+    transition: color 0.3s;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--primary-color);
+    color: #2563eb;
 }
 
-/* ===== القسم الرئيسي ===== */
+/* القسم الرئيسي */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
-    color: var(--white);
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
     padding: 80px 0;
     text-align: center;
 }
 
 .hero h1 {
     font-size: 2.5rem;
-    font-weight: 600;
     margin-bottom: 15px;
 }
 
@@ -103,22 +82,22 @@ body {
     margin-bottom: 30px;
 }
 
-/* ===== صندوق البحث ===== */
+/* صندوق البحث */
 .search-box {
     max-width: 600px;
     margin: 0 auto 40px;
     display: flex;
-    background: var(--white);
+    background: white;
     border-radius: 50px;
     overflow: hidden;
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
 }
 
 .search-icon {
     display: flex;
     align-items: center;
     padding-right: 20px;
-    color: var(--text-light);
+    color: #64748b;
 }
 
 .search-box input {
@@ -132,21 +111,21 @@ body {
 
 .search-btn {
     padding: 16px 35px;
-    background: var(--secondary-color);
-    color: var(--white);
+    background: #f59e0b;
+    color: white;
     border: none;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 500;
     font-family: 'Cairo', sans-serif;
-    transition: var(--transition);
+    transition: background 0.3s;
 }
 
 .search-btn:hover {
     background: #d97706;
 }
 
-/* ===== الاحصائيات ===== */
+/* الاحصائيات */
 .stats {
     display: flex;
     justify-content: center;
@@ -168,46 +147,18 @@ body {
     opacity: 0.9;
 }
 
-/* ===== رؤوس الأقسام ===== */
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.section-title {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: var(--text-dark);
-}
-
-.section-link {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-size: 0.95rem;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    transition: var(--transition);
-}
-
-.section-link:hover {
-    gap: 10px;
-    color: var(--primary-dark);
-}
-
-/* ===== أقسام الصفحة ===== */
-.countries,
-.services {
+/* قسم الدول */
+.countries {
     padding: 60px 0;
 }
 
-.services {
-    background-color: var(--white);
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1e293b;
 }
 
-/* ===== شبكة الدول ===== */
 .countries-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -215,18 +166,17 @@ body {
 }
 
 .country-card {
-    background: var(--white);
+    background: white;
     border-radius: 12px;
     padding: 25px;
-    box-shadow: var(--shadow-sm);
-    border: 1px solid var(--border-color);
-    transition: var(--transition);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
 }
 
 .country-card:hover {
     transform: translateY(-5px);
-    border-color: var(--primary-color);
-    box-shadow: var(--shadow-md);
+    border-color: #2563eb;
 }
 
 .country-icon {
@@ -242,17 +192,17 @@ body {
 
 .country-icon i {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: #2563eb;
 }
 
 .country-card h3 {
     font-size: 1.2rem;
     margin-bottom: 5px;
-    color: var(--text-dark);
+    color: #1e293b;
 }
 
 .country-card p {
-    color: var(--text-light);
+    color: #64748b;
     font-size: 0.9rem;
     margin-bottom: 10px;
 }
@@ -260,109 +210,106 @@ body {
 .jobs-count {
     display: inline-block;
     background: #eef2ff;
-    color: var(--primary-color);
+    color: #2563eb;
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 500;
-    margin: 10px 0;
 }
 
-.country-link {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: var(--transition);
+/* قسم الخدمات */
+.services {
+    padding: 60px 0;
+    background-color: white;
 }
 
-.country-link:hover {
-    gap: 10px;
-}
-
-/* ===== شبكة الخدمات ===== */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .service-card {
-    background: var(--bg-light);
+    background: #f8fafc;
     border-radius: 12px;
     padding: 30px;
-    border: 1px solid var(--border-color);
-    transition: var(--transition);
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
 }
 
 .service-card:hover {
-    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    border-color: #2563eb;
+    box-shadow: 0 10px 25px rgba(37,99,235,0.1);
 }
 
 .service-icon {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     background: #eef2ff;
-    border-radius: 15px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
 }
 
 .service-icon i {
-    font-size: 1.8rem;
-    color: var(--primary-color);
+    font-size: 2rem;
+    color: #2563eb;
 }
 
 .service-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-    color: var(--text-dark);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #1e293b;
 }
 
 .service-card p {
-    color: var(--text-light);
-    font-size: 0.9rem;
-    margin-bottom: 15px;
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
 }
 
 .service-price {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 20px;
 }
 
 .service-btn {
-    display: inline-block;
-    padding: 10px 25px;
-    background: #eef2ff;
-    color: var(--primary-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px 25px;
+    background: #25D366;
+    color: white;
     text-decoration: none;
     border-radius: 8px;
-    font-weight: 500;
-    transition: var(--transition);
+    font-weight: 600;
+    transition: background 0.3s;
 }
 
 .service-btn:hover {
-    background: var(--primary-color);
-    color: var(--white);
+    background: #128C7E;
 }
 
-/* ===== تذييل الصفحة ===== */
+/* تذييل الصفحة */
 footer {
     background: #0f172a;
-    color: var(--white);
+    color: white;
     padding: 60px 0 30px;
+    margin-top: 40px;
 }
 
-.footer-grid {
+.footer-content {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
     margin-bottom: 40px;
 }
@@ -370,13 +317,12 @@ footer {
 .footer-section h4 {
     font-size: 1.1rem;
     margin-bottom: 20px;
-    color: var(--white);
+    color: white;
 }
 
 .footer-section p {
     color: #94a3b8;
     font-size: 0.9rem;
-    margin-bottom: 20px;
 }
 
 .footer-section ul {
@@ -391,32 +337,11 @@ footer {
     color: #94a3b8;
     text-decoration: none;
     font-size: 0.9rem;
-    transition: var(--transition);
+    transition: color 0.3s;
 }
 
 .footer-section a:hover {
-    color: var(--primary-color);
-}
-
-.social-links {
-    display: flex;
-    gap: 15px;
-}
-
-.social-links a {
-    width: 36px;
-    height: 36px;
-    background: #1e293b;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    transition: var(--transition);
-}
-
-.social-links a:hover {
-    background: var(--primary-color);
+    color: #2563eb;
 }
 
 .footer-bottom {
@@ -427,13 +352,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* ===== تصميم متجاوب ===== */
-@media (max-width: 1024px) {
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
+/* للجوال */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -460,15 +379,5 @@ footer {
     .search-box input,
     .search-box button {
         width: 100%;
-    }
-    
-    .section-header {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-    
-    .footer-grid {
-        grid-template-columns: 1fr;
     }
 }
