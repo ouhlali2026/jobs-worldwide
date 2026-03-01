@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وظائف على مستوى العالم - دليلك للعمل في الخارج</title>
+    <title>وظائف على مستوى العالم | دليلك للعمل في الخارج</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +18,13 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
-                <div class="logo">
-                    <i class="fas fa-globe"></i>
-                    <span>وظائف على مستوى العالم</span>
-                </div>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-briefcase"></i>
+                    <span>وظائف حول العالم</span>
+                </a>
+                <button class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">الرئيسية</a></li>
                     <li><a href="#">الإمارات</a></li>
@@ -29,12 +32,8 @@
                     <li><a href="#">قطر</a></li>
                     <li><a href="#">الكويت</a></li>
                     <li><a href="#">ألمانيا</a></li>
-                    <li><a href="#">فرنسا</a></li>
-                    <li><a href="#">إسبانيا</a></li>
-                    <li><a href="#">بلجيكا</a></li>
                     <li><a href="#">كندا</a></li>
                     <li><a href="#">أمريكا</a></li>
-                    <li><a href="#">أستراليا</a></li>
                 </ul>
             </div>
         </div>
@@ -44,74 +43,93 @@
     <header class="hero">
         <div class="container">
             <h1>وظائف على مستوى العالم</h1>
-            <p>دليلك الشامل للعمل في أي دولة في العالم - خطوة بخطوة</p>
+            <p class="hero-subtitle">دليلك الشامل للعمل في الخارج - خطوة بخطوة</p>
             
-            <!-- البحث -->
             <div class="search-box">
-                <input type="text" placeholder="ابحث عن وظائف في..." class="search-input">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="ابحث عن وظائف في...">
                 <button class="search-btn">بحث</button>
             </div>
             
-            <!-- احصائية -->
             <div class="stats">
                 <div class="stat-item">
-                    <span class="stat-number">١٢</span>
+                    <span class="stat-number">25+</span>
                     <span class="stat-label">دولة</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">١٠٠٠+</span>
+                    <span class="stat-number">1000+</span>
                     <span class="stat-label">فرصة عمل</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">١٠٠٠٠+</span>
+                    <span class="stat-number">10000+</span>
                     <span class="stat-label">مستفيد</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- قسم دول الخليج -->
-    <section class="countries">
+    <!-- قسم الخليج -->
+    <section class="section">
         <div class="container">
             <h2 class="section-title">دول الخليج</h2>
             <div class="countries-grid">
                 <!-- الإمارات -->
                 <div class="country-card">
-                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500" alt="الإمارات">
+                    <div class="card-image" style="background: linear-gradient(135deg, #0066cc, #004999);">
+                        <i class="fas fa-flag fa-3x"></i>
+                    </div>
                     <div class="card-content">
                         <h3>الإمارات</h3>
-                        <p>أكثر من ١٠٠٠ فرصة عمل في دبي وأبوظبي</p>
-                        <a href="#" class="btn-card">فرص عمل في الإمارات <i class="fas fa-arrow-left"></i></a>
+                        <p>أكثر من 500 فرصة عمل في دبي وأبوظبي</p>
+                        <a href="#" class="card-link">
+                            <span>فرص عمل في الإمارات</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
                     </div>
                 </div>
                 
                 <!-- السعودية -->
                 <div class="country-card">
-                    <img src="https://images.unsplash.com/photo-1577140879192-6fe85b38743b?w=500" alt="السعودية">
+                    <div class="card-image" style="background: linear-gradient(135deg, #1e5631, #2e8b57);">
+                        <i class="fas fa-flag fa-3x"></i>
+                    </div>
                     <div class="card-content">
                         <h3>السعودية</h3>
-                        <p>رؤية ٢٠٣٠ - فرص مميزة في الرياض وجدة</p>
-                        <a href="#" class="btn-card">فرص عمل في السعودية <i class="fas fa-arrow-left"></i></a>
+                        <p>فرص مميزة في إطار رؤية 2030</p>
+                        <a href="#" class="card-link">
+                            <span>فرص عمل في السعودية</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
                     </div>
                 </div>
                 
                 <!-- قطر -->
                 <div class="country-card">
-                    <img src="https://images.unsplash.com/photo-1624806910811-1fabc9c9e2b0?w=500" alt="قطر">
+                    <div class="card-image" style="background: linear-gradient(135deg, #8b1e3f, #b22234);">
+                        <i class="fas fa-flag fa-3x"></i>
+                    </div>
                     <div class="card-content">
                         <h3>قطر</h3>
-                        <p>اقتصاد متطور وفرص في الدوحة</p>
-                        <a href="#" class="btn-card">فرص عمل في قطر <i class="fas fa-arrow-left"></i></a>
+                        <p>اقتصاد متطور وفرص واعدة</p>
+                        <a href="#" class="card-link">
+                            <span>فرص عمل في قطر</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
                     </div>
                 </div>
                 
                 <!-- الكويت -->
                 <div class="country-card">
-                    <img src="https://images.unsplash.com/photo-1624806910811-1fabc9c9e2b0?w=500" alt="الكويت">
+                    <div class="card-image" style="background: linear-gradient(135deg, #007a3d, #ce1126);">
+                        <i class="fas fa-flag fa-3x"></i>
+                    </div>
                     <div class="card-content">
                         <h3>الكويت</h3>
-                        <p>فرص في النفط والخدمات بالكويت</p>
-                        <a href="#" class="btn-card">فرص عمل في الكويت <i class="fas fa-arrow-left"></i></a>
+                        <p>فرص في قطاع النفط والخدمات</p>
+                        <a href="#" class="card-link">
+                            <span>فرص عمل في الكويت</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -119,85 +137,120 @@
     </section>
 
     <!-- قسم أوروبا -->
-    <section class="countries">
+    <section class="section bg-light">
         <div class="container">
             <h2 class="section-title">أوروبا</h2>
             <div class="countries-grid">
                 <!-- ألمانيا -->
                 <div class="country-card">
-                    <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=500" alt="ألمانيا">
+                    <div class="card-image" style="background: linear-gradient(135deg, #000000, #dd0000);">
+                        <i class="fas fa-flag fa-3x"></i>
+                    </div>
                     <div class="card-content">
                         <h3>ألمانيا</h3>
-                        <p>فرص في الهندسة والتقنية - برلين وميونخ</p>
-                        <a href="#" class="btn-card">فرص عمل في ألمانيا <i class="fas fa-arrow-left"></i></a>
+                        <p>فرص في الهندسة والتقنية</p>
+                        <a href="#" class="card-link">
+                            <span>فرص عمل في ألمانيا</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
                     </div>
                 </div>
                 
                 <!-- فرنسا -->
                 <div class="country-card">
-                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500" alt="فرنسا">
+                    <div class="card-image" style="background: linear-gradient(90deg, #002395, #ffffff, #ed2939);">
+                        <i class="fas fa-flag fa-3x"></i>
+                    </div>
                     <div class="card-content">
                         <h3>فرنسا</h3>
-                        <p>فرص في باريس وليون - تكنولوجيا وأعمال</p>
-                        <a href="#" class="btn-card">فرص عمل في فرنسا <i class="fas fa-arrow-left"></i></a>
+                        <p>فرص في باريس وليون</p>
+                        <a href="#" class="card-link">
+                            <span>فرص عمل في فرنسا</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
                     </div>
                 </div>
                 
                 <!-- إسبانيا -->
                 <div class="country-card">
-                    <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=500" alt="إسبانيا">
+                    <div class="card-image" style="background: linear-gradient(90deg, #aa151b, #f1bf00, #aa151b);">
+                        <i class="fas fa-flag fa-3x"></i>
+                    </div>
                     <div class="card-content">
                         <h3>إسبانيا</h3>
-                        <p>فرص في مدريد وبرشلونة - سياحة وتقنية</p>
-                        <a href="#" class="btn-card">فرص عمل في إسبانيا <i class="fas fa-arrow-left"></i></a>
+                        <p>فرص في السياحة والتقنية</p>
+                        <a href="#" class="card-link">
+                            <span>فرص عمل في إسبانيا</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
                     </div>
                 </div>
                 
                 <!-- بلجيكا -->
                 <div class="country-card">
-                    <img src="https://images.unsplash.com/photo-1559583109-3e7960136c37?w=500" alt="بلجيكا">
+                    <div class="card-image" style="background: linear-gradient(90deg, #000000, #fae042, #ed2939);">
+                        <i class="fas fa-flag fa-3x"></i>
+                    </div>
                     <div class="card-content">
                         <h3>بلجيكا</h3>
-                        <p>فرص في بروكسل - الاتحاد الأوروبي والأعمال</p>
-                        <a href="#" class="btn-card">فرص عمل في بلجيكا <i class="fas fa-arrow-left"></i></a>
+                        <p>فرص في بروكسل والاتحاد الأوروبي</p>
+                        <a href="#" class="card-link">
+                            <span>فرص عمل في بلجيكا</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- قسم أمريكا الشمالية وأستراليا -->
-    <section class="countries">
+    <!-- قسم أمريكا وأستراليا -->
+    <section class="section">
         <div class="container">
-            <h2 class="section-title">أمريكا الشمالية وأستراليا</h2>
+            <h2 class="section-title">أمريكا وأستراليا</h2>
             <div class="countries-grid">
                 <!-- كندا -->
                 <div class="country-card">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500" alt="كندا">
+                    <div class="card-image" style="background: linear-gradient(135deg, #ff0000, #ffffff);">
+                        <i class="fas fa-maple-leaf fa-3x"></i>
+                    </div>
                     <div class="card-content">
                         <h3>كندا</h3>
                         <p>تورنتو - فانكوفر - مونتريال</p>
-                        <a href="#" class="btn-card">فرص عمل في كندا <i class="fas fa-arrow-left"></i></a>
+                        <a href="#" class="card-link">
+                            <span>فرص عمل في كندا</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
                     </div>
                 </div>
                 
                 <!-- أمريكا -->
                 <div class="country-card">
-                    <img src="https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=500" alt="أمريكا">
+                    <div class="card-image" style="background: linear-gradient(135deg, #b22234, #ffffff, #3c3b6e);">
+                        <i class="fas fa-star fa-3x"></i>
+                    </div>
                     <div class="card-content">
                         <h3>أمريكا</h3>
                         <p>نيويورك - كاليفورنيا - تكساس</p>
-                        <a href="#" class="btn-card">فرص عمل في أمريكا <i class="fas fa-arrow-left"></i></a>
+                        <a href="#" class="card-link">
+                            <span>فرص عمل في أمريكا</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
                     </div>
                 </div>
                 
                 <!-- أستراليا -->
                 <div class="country-card">
-                    <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=500" alt="أستراليا">
+                    <div class="card-image" style="background: linear-gradient(135deg, #00008b, #ff0000);">
+                        <i class="fas fa-flag fa-3x"></i>
+                    </div>
                     <div class="card-content">
                         <h3>أستراليا</h3>
                         <p>سيدني - ملبورن - بريزبن</p>
-                        <a href="#" class="btn-card">فرص عمل في أستراليا <i class="fas fa-arrow-left"></i></a>
+                        <a href="#" class="card-link">
+                            <span>فرص عمل في أستراليا</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -207,38 +260,43 @@
     <!-- تذييل الصفحة -->
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
+            <div class="footer-grid">
+                <div>
                     <h4>عن الموقع</h4>
-                    <p>وظائف على مستوى العالم - دليلك الشامل للعمل في أي دولة</p>
+                    <p>دليلك الشامل للعمل في أي دولة حول العالم</p>
                 </div>
-                <div class="footer-section">
+                <div>
                     <h4>الدول</h4>
                     <ul>
-                        <li><a href="#">فرص عمل في الإمارات</a></li>
-                        <li><a href="#">فرص عمل في السعودية</a></li>
-                        <li><a href="#">فرص عمل في قطر</a></li>
-                        <li><a href="#">فرص عمل في الكويت</a></li>
-                        <li><a href="#">فرص عمل في ألمانيا</a></li>
-                        <li><a href="#">فرص عمل في فرنسا</a></li>
-                        <li><a href="#">فرص عمل في إسبانيا</a></li>
-                        <li><a href="#">فرص عمل في بلجيكا</a></li>
-                        <li><a href="#">فرص عمل في كندا</a></li>
-                        <li><a href="#">فرص عمل في أمريكا</a></li>
-                        <li><a href="#">فرص عمل في أستراليا</a></li>
+                        <li><a href="#">فرص في الإمارات</a></li>
+                        <li><a href="#">فرص في السعودية</a></li>
+                        <li><a href="#">فرص في قطر</a></li>
+                        <li><a href="#">فرص في الكويت</a></li>
+                        <li><a href="#">فرص في ألمانيا</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div>
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#">فرص في كندا</a></li>
+                        <li><a href="#">فرص في أمريكا</a></li>
+                        <li><a href="#">فرص في أستراليا</a></li>
+                        <li><a href="#">فرص في فرنسا</a></li>
+                        <li><a href="#">فرص في إسبانيا</a></li>
+                    </ul>
+                </div>
+                <div>
                     <h4>تواصل معنا</h4>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>جميع الحقوق محفوظة © ٢٠٢٦</p>
+                <p>جميع الحقوق محفوظة لوظائف على مستوى العالم © 2026</p>
             </div>
         </div>
     </footer>
