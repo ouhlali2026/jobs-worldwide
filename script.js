@@ -1,7 +1,6 @@
-// انتظار تحميل الصفحة بالكامل
 document.addEventListener('DOMContentLoaded', function() {
     
-    // ===== تفعيل خاصية البحث =====
+    // تفعيل البحث
     const searchInput = document.querySelector('.search-box input');
     const searchBtn = document.querySelector('.search-btn');
     
@@ -10,9 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         function handleSearch() {
             const searchTerm = searchInput.value.trim();
             if (searchTerm !== '') {
-                alert(`جاري البحث عن وظائف في: ${searchTerm}\nهذه الخاصية قيد التطوير حالياً`);
-            } else {
-                alert('الرجاء إدخال كلمة للبحث');
+                alert('خاصية البحث قيد التطوير');
             }
         }
         
@@ -25,20 +22,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // ===== تأثيرات بسيطة للبطاقات =====
-    const cards = document.querySelectorAll('.country-card, .service-card');
-    
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-5px)';
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0)';
-        });
-    });
-    
-    // ===== رسالة ترحيب في الكونسول (للمطورين) =====
-    console.log('✅ موقع وظائف على مستوى العالم جاهز');
-    console.log('📅 الإصدار: 1.0.0');
+    console.log('✅ الموقع جاهز');
 });
