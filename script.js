@@ -1,31 +1,44 @@
-// تفعيل القائمة للجوال
+// انتظار تحميل الصفحة بالكامل
 document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const navLinks = document.querySelector('.nav-links');
     
-    if (mobileMenu) {
-        mobileMenu.addEventListener('click', function() {
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-        });
-    }
-    
-    // وظيفة البحث البسيطة
+    // ===== تفعيل خاصية البحث =====
     const searchInput = document.querySelector('.search-box input');
     const searchBtn = document.querySelector('.search-btn');
     
-    if (searchBtn) {
-        searchBtn.addEventListener('click', function() {
-            if (searchInput && searchInput.value.trim() !== '') {
-                alert(`جاري البحث عن وظائف في: ${searchInput.value}`);
+    if (searchBtn && searchInput) {
+        
+        function handleSearch() {
+            const searchTerm = searchInput.value.trim();
+            if (searchTerm !== '') {
+                alert(`جاري البحث عن وظائف في: ${searchTerm}\nهذه الخاصية قيد التطوير حالياً`);
+            } else {
+                alert('الرجاء إدخال كلمة للبحث');
+            }
+        }
+        
+        searchBtn.addEventListener('click', handleSearch);
+        
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch();
             }
         });
     }
     
-    if (searchInput) {
-        searchInput.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter' && this.value.trim() !== '') {
-                alert(`جاري البحث عن وظائف في: ${this.value}`);
-            }
+    // ===== تأثيرات بسيطة للبطاقات =====
+    const cards = document.querySelectorAll('.country-card, .service-card');
+    
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px)';
         });
-    }
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+    
+    // ===== رسالة ترحيب في الكونسول (للمطورين) =====
+    console.log('✅ موقع وظائف على مستوى العالم جاهز');
+    console.log('📅 الإصدار: 1.0.0');
 });
