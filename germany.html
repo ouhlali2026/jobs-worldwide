@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرص عمل في ألمانيا - وظائف على مستوى العالم</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- ملف التنسيقات -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .country-header {
+            background: linear-gradient(135deg, #000000, #dd0000);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .country-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0px, rgba(255,255,255,0.1) 20px, transparent 20px, transparent 40px);
+        }
+        
+        .country-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        .country-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            position: relative;
+        }
+        
+        .country-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .info-badge {
+            background: white;
+            color: #000000;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            color: #1e293b;
+            margin: 40px 0 20px;
+            position: relative;
+            padding-right: 15px;
+        }
+        
+        .section-title::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 5px;
+            background: #dd0000;
+            border-radius: 5px;
+        }
+        
+        .jobs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .job-site-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .job-site-card:hover {
+            transform: translateY(-5px);
+            border-color: #dd0000;
+            box-shadow: 0 10px 25px rgba(221,0,0,0.1);
+        }
+        
+        .job-site-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .job-site-icon {
+            width: 50px;
+            height: 50px;
+            background: #ffeeee;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .job-site-icon i {
+            font-size: 1.8rem;
+            color: #dd0000;
+        }
+        
+        .job-site-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1e293b;
+        }
+        
+        .job-site-desc {
+            color: #64748b;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+        
+        .job-site-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: #dd0000;
+            font-size: 0.95rem;
+        }
+        
+        .professions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .profession-card {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .profession-icon {
+            width: 50px;
+            height: 50px;
+            background: #ffeeee;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        
+        .profession-icon i {
+            font-size: 1.5rem;
+            color: #dd0000;
+        }
+        
+        .profession-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #1e293b;
+        }
+        
+        .profession-card p {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .requirements-box {
+            background: #ffeeee;
+            border-right: 4px solid #dd0000;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+        
+        .requirements-box h3 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+        
+        .requirements-list {
+            list-style: none;
+        }
+        
+        .requirements-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .requirements-list i {
+            color: #dd0000;
+        }
+        
+        .training-box {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            border: 2px dashed #dd0000;
+        }
+        
+        .training-box h3 {
+            color: #1e293b;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .training-box i {
+            color: #dd0000;
+            font-size: 1.2rem;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #dd0000;
+            text-decoration: none;
+            margin: 20px 0;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            color: #000000;
+        }
+        
+        .flag-icon {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+        }
+        
+        @media (max-width: 768px) {
+            .country-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-globe"></i>
+                    <span>وظائف حول العالم</span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="#" class="active">الدول</a></li>
+                    <li><a href="services.html">الخدمات</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- رأس صفحة ألمانيا -->
+    <section class="country-header">
+        <div class="container">
+            <i class="fas fa-flag flag-icon"></i>
+            <h1>فرص عمل في ألمانيا</h1>
+            <p>دليلك الشامل للعمل في برلين، ميونخ، فرانكفورت وجميع المدن الألمانية</p>
+            
+            <div class="country-info">
+                <span class="info-badge"><i class="fas fa-city"></i> 340+ فرصة</span>
+                <span class="info-badge"><i class="fas fa-language"></i> ألماني / إنجليزي</span>
+                <span class="info-badge"><i class="fas fa-euro-sign"></i> يورو (EUR)</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-right"></i> العودة للصفحة الرئيسية
+        </a>
+
+        <!-- متطلبات العمل -->
+        <div class="requirements-box">
+            <h3><i class="fas fa-passport"></i> متطلبات العمل في ألمانيا</h3>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> إتقان اللغة الألمانية (B1 على الأقل للمهن الفنية)</li>
+                <li><i class="fas fa-check-circle"></i> معادلة الشهادات المهنية (Anerkennung)</li>
+                <li><i class="fas fa-check-circle"></i> تأشيرة عمل أو الإقامة الدائمة</li>
+                <li><i class="fas fa-check-circle"></i> عقد عمل موقع من صاحب العمل الألماني</li>
+                <li><i class="fas fa-check-circle"></i> شهادة خبرة مهنية (2-5 سنوات حسب المهنة)</li>
+            </ul>
+            <p style="margin-top: 20px;">
+                <a href="https://www.make-it-in-germany.com" target="_blank" style="color: #dd0000;">
+                    الموقع الرسمي للهجرة والعمل في ألمانيا <i class="fas fa-external-link-alt"></i>
+                </a>
+            </p>
+        </div>
+
+        <!-- التدريب المهني Ausbildung -->
+        <div class="training-box">
+            <h3><i class="fas fa-graduation-cap"></i> التدريب المهني (Ausbildung) - بوابتك لدخول سوق العمل الألماني</h3>
+            <p style="color: #475569; margin-bottom: 10px;">نظام التدريب المهني الألماني يجمع بين التعليم النظري والتدريب العملي في الشركات، وهو مفتاح دخول المهن الحرفية والتمريض.</p>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> مدة التدريب: 2-3 سنوات مع راتب شهري</li>
+                <li><i class="fas fa-check-circle"></i> المجالات المتاحة: تمريض، كهرباء، سباكة، تدفئة، تكنولوجيا</li>
+                <li><i class="fas fa-check-circle"></i> فرص توظيف فورية بعد إتمام البرنامج</li>
+            </ul>
+        </div>
+
+        <!-- المهن المطلوبة -->
+        <h2 class="section-title">أهم المهن المطلوبة في ألمانيا</h2>
+        <div class="professions-grid">
+            <div class="profession-card">
+                <div class="profession-icon">
+                    <i class="fas fa-hospital"></i>
+                </div>
+                <h3>القطاع الصحي والرعاية</h3>
+                <p>ممرضون معتمدون، أطباء أخصائيون، مساعدو رعاية كبار السن (Altenpflege)</p>
+            </div>
+            
+            <div class="profession-card">
+                <div class="profession-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>تكنولوجيا المعلومات</h3>
+                <p>مطورو برمجيات، خبراء أمن سيبراني، تحليل بيانات، ذكاء اصطناعي</p>
+            </div>
+            
+            <div class="profession-card">
+                <div class="profession-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>الهندسة والتصنيع</h3>
+                <p>مهندسو ميكانيكا، كهرباء، هندسة سيارات، ميكاترونكس، فنيون صناعيون</p>
+            </div>
+            
+            <div class="profession-card">
+                <div class="profession-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>الحرف والتقنية</h3>
+                <p>كهربائيون، سباكون، فنيو تكييف وتدفئة، فنيو طاقة متجددة</p>
+            </div>
+            
+            <div class="profession-card">
+                <div class="profession-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h3>اللوجستيات والنقل</h3>
+                <p>سائقو شاحنات، موظفو مخازن، مشغلو مستودعات</p>
+            </div>
+            
+            <div class="profession-card">
+                <div class="profession-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3>التعليم والخدمات الاجتماعية</h3>
+                <p>معلمون، مربو أطفال في الحضانات (Erzieher)</p>
+            </div>
+        </div>
+
+        <!-- مواقع التوظيف الرسمية -->
+        <h2 class="section-title">مواقع التوظيف الرسمية</h2>
+        <div class="jobs-grid">
+            <a href="https://www.arbeitsagentur.de" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-bank"></i>
+                    </div>
+                    <span class="job-site-name">Bundesagentur für Arbeit</span>
+                </div>
+                <div class="job-site-desc">الوكالة الاتحادية للعمل - الموقع الرسمي والأكبر في ألمانيا</div>
+                <div class="job-site-link">www.arbeitsagentur.de <i class="fas fa-external-link-alt"></i></div>
+            </a>
+
+            <a href="https://www.make-it-in-germany.com" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <span class="job-site-name">Make it in Germany</span>
+                </div>
+                <div class="job-site-desc">البوابة الرسمية للحكومة الألمانية للهجرة والعمل</div>
+                <div class="job-site-link">www.make-it-in-germany.com <i class="fas fa-external-link-alt"></i></div>
+            </a>
+
+            <a href="https://ec.europa.eu/eures" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-euro-sign"></i>
+                    </div>
+                    <span class="job-site-name">EURES Germany</span>
+                </div>
+                <div class="job-site-desc">شبكة الوظائف الأوروبية - وظائف في كل أوروبا</div>
+                <div class="job-site-link">ec.europa.eu/eures <i class="fas fa-external-link-alt"></i></div>
+            </a>
+        </div>
+
+        <!-- أكبر منصات التوظيف -->
+        <h2 class="section-title">أكبر منصات التوظيف في ألمانيا</h2>
+        <div class="jobs-grid">
+            <a href="https://de.indeed.com" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <span class="job-site-name">Indeed Deutschland</span>
+                </div>
+                <div class="job-site-desc">أكبر محرك بحث وظائف في ألمانيا</div>
+                <div class="job-site-link">de.indeed.com <i class="fas fa-external-link-alt"></i></div>
+            </a>
+
+            <a href="https://www.stepstone.de" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="job-site-name">StepStone.de</span>
+                </div>
+                <div class="job-site-desc">ثاني أكبر موقع توظيف في ألمانيا</div>
+                <div class="job-site-link">www.stepstone.de <i class="fas fa-external-link-alt"></i></div>
+            </a>
+
+            <a href="https://www.kununu.com" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="job-site-name">Kununu</span>
+                </div>
+                <div class="job-site-desc">موقع تقييمات الشركات والوظائف</div>
+                <div class="job-site-link">www.kununu.com <i class="fas fa-external-link-alt"></i></div>
+            </a>
+
+            <a href="https://de.jooble.org" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <span class="job-site-name">Jooble.org</span>
+                </div>
+                <div class="job-site-desc">محرك بحث وظائف عالمي</div>
+                <div class="job-site-link">de.jooble.org <i class="fas fa-external-link-alt"></i></div>
+            </a>
+
+            <a href="https://www.jobrobot.de" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <span class="job-site-name">JobRobot</span>
+                </div>
+                <div class="job-site-desc">منصة بحث وظائف متقدمة</div>
+                <div class="job-site-link">www.jobrobot.de <i class="fas fa-external-link-alt"></i></div>
+            </a>
+
+            <a href="https://www.jobboerse.de" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <span class="job-site-name">Jobbörse.de</span>
+                </div>
+                <div class="job-site-desc">منصة توظيف ألمانية شاملة</div>
+                <div class="job-site-link">www.jobboerse.de <i class="fas fa-external-link-alt"></i></div>
+            </a>
+        </div>
+
+        <!-- منصات متخصصة للطلاب -->
+        <h2 class="section-title">منصات للطلاب وحديثي التخرج</h2>
+        <div class="jobs-grid">
+            <a href="https://www.studentjob.de" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <span class="job-site-name">StudentJob</span>
+                </div>
+                <div class="job-site-desc">وظائف طلابية وحديثي التخرج</div>
+                <div class="job-site-link">www.studentjob.de <i class="fas fa-external-link-alt"></i></div>
+            </a>
+
+            <a href="https://www.jobmensa.de" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <span class="job-site-name">Jobmensa</span>
+                </div>
+                <div class="job-site-desc">أكبر منصة للطلاب في ألمانيا</div>
+                <div class="job-site-link">www.jobmensa.de <i class="fas fa-external-link-alt"></i></div>
+            </a>
+
+            <a href="https://www.kleinanzeigen.de/s-jobs" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <span class="job-site-name">Kleinanzeigen Jobs</span>
+                </div>
+                <div class="job-site-desc">وظائف محلية - مجاني</div>
+                <div class="job-site-link">www.kleinanzeigen.de <i class="fas fa-external-link-alt"></i></div>
+            </a>
+        </div>
+
+        <!-- وظائف الشركات الكبرى -->
+        <h2 class="section-title">وظائف الشركات الألمانية الكبرى</h2>
+        <div class="jobs-grid">
+            <a href="https://www.telekom.com/karriere" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <span class="job-site-name">Deutsche Telekom</span>
+                </div>
+                <div class="job-site-desc">وظائف دويتشه تيليكوم</div>
+                <div class="job-site-link">www.telekom.com/karriere <i class="fas fa-external-link-alt"></i></div>
+            </a>
+
+            <a href="https://www.bahn.de/karriere" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-train"></i>
+                    </div>
+                    <span class="job-site-name">Deutsche Bahn</span>
+                </div>
+                <div class="job-site-desc">وظائف السكك الحديدية الألمانية</div>
+                <div class="job-site-link">www.bahn.de/karriere <i class="fas fa-external-link-alt"></i></div>
+            </a>
+
+            <a href="https://www.sap.com/germany/careers" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <span class="job-site-name">SAP</span>
+                </div>
+                <div class="job-site-desc">وظائف SAP</div>
+                <div class="job-site-link">www.sap.com/careers <i class="fas fa-external-link-alt"></i></div>
+            </a>
+
+            <a href="https://www.siemens.com/global/en/company/jobs.html" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <span class="job-site-name">Siemens</span>
+                </div>
+                <div class="job-site-desc">وظائف سيمنز</div>
+                <div class="job-site-link">www.siemens.com/jobs <i class="fas fa-external-link-alt"></i></div>
+            </a>
+        </div>
+
+        <!-- خدماتنا -->
+        <div style="background: #f8fafc; border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 20px;">تحتاج مساعدة في التقديم؟</h3>
+            <p style="margin-bottom: 30px;">نقدم لك خدمات احترافية بأسعار رمزية لزيادة فرص قبولك</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="services.html" style="background: #dd0000; color: white; padding: 12px 30px; border-radius: 8px; text-decoration: none;">تصميم السيرة الذاتية ($9)</a>
+                <a href="services.html" style="background: #dd0000; color: white; padding: 12px 30px; border-radius: 8px; text-decoration: none;">خطاب تقديم ($7)</a>
+                <a href="services.html" style="background: #dd0000; color: white; padding: 12px 30px; border-radius: 8px; text-decoration: none;">البحث العلمي ($10)</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>وظائف حول العالم</h4>
+                    <p>منصتك الموثوقة للبحث عن فرص عمل في مختلف دول العالم</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="#">الدول</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>الدول</h4>
+                    <ul>
+                        <li><a href="canada.html">كندا</a></li>
+                        <li><a href="germany.html">ألمانيا</a></li>
+                        <li><a href="#">الإمارات</a></li>
+                        <li><a href="#">أمريكا</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>سياسة الموقع</h4>
+                    <ul>
+                        <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">اتفاقية الاستخدام</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 وظائف على مستوى العالم - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
