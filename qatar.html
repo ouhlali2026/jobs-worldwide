@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرص عمل في قطر - وظائف على مستوى العالم</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- ملف التنسيقات -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .country-header {
+            background: linear-gradient(135deg, #8B1E3F, #B22234);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .country-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.1"><rect width="30" height="100" fill="white"/><rect x="30" width="70" height="100" fill="%238B1E3F"/><polygon points="30,0 30,100 0,100 0,70 20,50 0,30 0,0" fill="white"/></svg>');
+            background-size: 100px 100px;
+            background-repeat: repeat;
+        }
+        
+        .country-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        .country-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            position: relative;
+        }
+        
+        .country-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .info-badge {
+            background: white;
+            color: #8B1E3F;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            color: #1e293b;
+            margin: 40px 0 20px;
+            position: relative;
+            padding-right: 15px;
+        }
+        
+        .section-title::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 5px;
+            background: #8B1E3F;
+            border-radius: 5px;
+        }
+        
+        .jobs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .job-site-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .job-site-card:hover {
+            transform: translateY(-5px);
+            border-color: #8B1E3F;
+            box-shadow: 0 10px 25px rgba(139,30,63,0.1);
+        }
+        
+        .job-site-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .job-site-icon {
+            width: 50px;
+            height: 50px;
+            background: #fbe9ef;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .job-site-icon i {
+            font-size: 1.8rem;
+            color: #8B1E3F;
+        }
+        
+        .job-site-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1e293b;
+        }
+        
+        .job-site-desc {
+            color: #64748b;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+        
+        .job-site-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: #8B1E3F;
+            font-size: 0.95rem;
+        }
+        
+        .gov-box {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            border: 2px solid #8B1E3F;
+        }
+        
+        .gov-box h3 {
+            color: #1e293b;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .gov-box i {
+            color: #8B1E3F;
+            font-size: 1.2rem;
+        }
+        
+        .requirements-box {
+            background: #fbe9ef;
+            border-right: 4px solid #8B1E3F;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+        
+        .requirements-box h3 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+        
+        .requirements-list {
+            list-style: none;
+        }
+        
+        .requirements-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .requirements-list i {
+            color: #8B1E3F;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #8B1E3F;
+            text-decoration: none;
+            margin: 20px 0;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            color: #B22234;
+        }
+        
+        .flag-icon {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+        }
+        
+        .services-section {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .services-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .service-btn {
+            background: #8B1E3F;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        
+        .service-btn:hover {
+            background: #B22234;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #8B1E3F;
+        }
+        
+        .stat-label {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .tip-box {
+            background: #fff8e0;
+            border-right: 4px solid #B22234;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .country-header h1 {
+                font-size: 2rem;
+            }
+            
+            .services-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-globe"></i>
+                    <span>وظائف حول العالم</span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="#" class="active">الدول</a></li>
+                    <li><a href="services.html">الخدمات</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- رأس صفحة قطر -->
+    <section class="country-header">
+        <div class="container">
+            <i class="fas fa-flag flag-icon"></i>
+            <h1>فرص عمل في قطر</h1>
+            <p>دليلك الشامل للعمل في الدوحة، الوكرة، الخور وجميع المدن القطرية</p>
+            
+            <div class="country-info">
+                <span class="info-badge"><i class="fas fa-city"></i> فرص متنوعة</span>
+                <span class="info-badge"><i class="fas fa-language"></i> عربي / إنجليزي</span>
+                <span class="info-badge"><i class="fas fa-money-bill-wave"></i> ريال قطري (QAR)</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-right"></i> العودة للصفحة الرئيسية
+        </a>
+
+        <!-- معلومات أساسية -->
+        <div class="requirements-box">
+            <h3><i class="fas fa-info-circle"></i> معلومات أساسية عن قطر</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
+                <div><strong>العاصمة:</strong> الدوحة</div>
+                <div><strong>العملة:</strong> ريال قطري (QAR)</div>
+                <div><strong>اللغة:</strong> العربية (الإنجليزية مستخدمة)</div>
+                <div><strong>عدد السكان:</strong> ~3 ملايين</div>
+                <div><strong>الوافدون:</strong> 88% من السكان</div>
+                <div><strong>نظام الكفالة:</strong> تم إلغاؤه 2020</div>
+            </div>
+        </div>
+
+        <!-- نصائح مهمة -->
+        <div class="tip-box">
+            <p><i class="fas fa-lightbulb" style="color: #B22234;"></i> <strong>لا تدفع أبداً مقابل عروض العمل في قطر.</strong> احذر من شركات التوظيف الوهمية التي تطلب أموالاً مقابل تأشيرات عمل.</p>
+        </div>
+
+        <!-- المواقع الحكومية الرسمية -->
+        <div class="gov-box">
+            <h3><i class="fas fa-bank"></i> المواقع الحكومية الرسمية</h3>
+            
+            <div class="jobs-grid" style="margin-top: 20px;">
+                <a href="https://www.tawzeef.qa" target="_blank" class="job-site-card">
+                    <div class="job-site-header">
+                        <div class="job-site-icon">
+                            <i class="fas fa-bank"></i>
+                        </div>
+                        <span class="job-site-name">توظيف (Tawzeef)</span>
+                    </div>
+                    <div class="job-site-desc">منصة حكومية مدعومة بالذكاء الاصطناعي، تتيح التقديم على الوظائف الحكومية والخاصة</div>
+                    <div class="job-site-link">www.tawzeef.qa <i class="fas fa-external-link-alt"></i></div>
+                </a>
+
+                <a href="https://jusour.qa" target="_blank" class="job-site-card">
+                    <div class="job-site-header">
+                        <div class="job-site-icon">
+                            <i class="fas fa-bank"></i>
+                        </div>
+                        <span class="job-site-name">جسور (Jusour)</span>
+                    </div>
+                    <div class="job-site-desc">بوابة التوظيف الوطنية بدعم من الجهات الحكومية، توفر فرص عمل في القطاعين العام والخاص</div>
+                    <div class="job-site-link">jusour.qa <i class="fas fa-external-link-alt"></i></div>
+                </a>
+            </div>
+        </div>
+
+        <!-- منصات خاصة موثوقة -->
+        <h2 class="section-title">منصات توظيف خاصة موثوقة في قطر</h2>
+        <div class="jobs-grid">
+            <a href="https://www.qureos.com" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <span class="job-site-name">Qureos</span>
+                </div>
+                <div class="job-site-desc">منصة ذكاء اصطناعي، تتيح البحث حسب الجنسية والقطاع</div>
+                <div class="job-site-link">www.qureos.com <i class="fas fa-external-link-alt"></i></div>
+            </a>
+
+            <a href="https://www.gulftalent.com" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="job-site-name">GulfTalent</span>
+                </div>
+                <div class="job-site-desc">منصة خليجية رائدة للوظائف في جميع القطاعات</div>
+                <div class="job-site-link">www.gulftalent.com <i class="fas fa-external-link-alt"></i></div>
+            </a>
+
+            <a href="https://www.bayt.com" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <span class="job-site-name">Bayt (بيت.كوم)</span>
+                </div>
+                <div class="job-site-desc">أكبر منصة توظيف عربية، أكثر من 50 مليون سيرة ذاتية</div>
+                <div class="job-site-link">www.bayt.com <i class="fas fa-external-link-alt"></i></div>
+            </a>
+        </div>
+
+        <!-- القطاعات الأكثر طلباً -->
+        <h2 class="section-title">أهم القطاعات المطلوبة في قطر</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">البناء</div>
+                <div class="stat-label">مشاريع كأس العالم والبنية التحتية</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">الرعاية الصحية</div>
+                <div class="stat-label">ممرضون، أطباء، فنيون</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">التكنولوجيا</div>
+                <div class="stat-label">IT، أمن سيبراني، تحليل بيانات</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">الضيافة</div>
+                <div class="stat-label">فنادق، مطاعم، سياحة</div>
+            </div>
+        </div>
+
+        <!-- نصائح للبحث عن عمل -->
+        <div class="requirements-box">
+            <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في قطر</h3>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> <strong>استخدم الكلمات الرئيسية</strong> - ابحث بالمجال (مثل "هندسة") بدلاً من المسمى الوظيفي فقط</li>
+                <li><i class="fas fa-check-circle"></i> <strong>لينكد إن</strong> - التواصل عبر LinkedIn يمكن أن يفتح أبواباً غير متوقعة</li>
+                <li><i class="fas fa-check-circle"></i> <strong>المواقع الحكومية أولاً</strong> - ابدأ بـ Tawzeef و Jusour للمصادر الرسمية</li>
+                <li><i class="fas fa-check-circle"></i> <strong>تأكد من مصداقية الشركات</strong> - تحقق من تراخيص الشركات عبر وزارة العمل القطرية</li>
+                <li><i class="fas fa-check-circle"></i> <strong>الذكاء الاصطناعي</strong> - استخدم منصات مثل Qureos التي توفر فحصاً آلياً للمرشحين</li>
+            </ul>
+        </div>
+
+        <!-- متطلبات العمل -->
+        <div class="requirements-box">
+            <h3><i class="fas fa-clipboard-check"></i> متطلبات العمل في قطر</h3>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> <strong>نظام الكفالة</strong> - تم إلغاؤه رسمياً في 2020، الآن "نظام عقود العمل"</li>
+                <li><i class="fas fa-check-circle"></i> <strong>تصريح العمل</strong> - يتم عن طريق صاحب العمل عبر وزارة العمل</li>
+                <li><i class="fas fa-check-circle"></i> <strong>الوثائق المطلوبة</strong> - جواز سفر، شهادات مصدقة، عقد عمل</li>
+                <li><i class="fas fa-check-circle"></i> <strong>الفحص الطبي</strong> - إلزامي قبل إصدار الإقامة</li>
+                <li><i class="fas fa-check-circle"></i> <strong>بطاقة الهوية (QID)</strong> - إلزامية لجميع المقيمين</li>
+            </ul>
+        </div>
+
+        <!-- خدماتنا -->
+        <div class="services-section">
+            <h3 style="font-size: 1.5rem; margin-bottom: 20px;">تحتاج مساعدة في التقديم؟</h3>
+            <p style="margin-bottom: 30px;">نقدم لك خدمات احترافية بأسعار رمزية لزيادة فرص قبولك</p>
+            <div class="services-buttons">
+                <a href="services.html" class="service-btn">تصميم السيرة الذاتية ($9)</a>
+                <a href="services.html" class="service-btn">خطاب تقديم ($7)</a>
+                <a href="services.html" class="service-btn">البحث العلمي ($10)</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>وظائف حول العالم</h4>
+                    <p>منصتك الموثوقة للبحث عن فرص عمل في مختلف دول العالم</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="#">الدول</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>الدول</h4>
+                    <ul>
+                        <li><a href="canada.html">كندا</a></li>
+                        <li><a href="germany.html">ألمانيا</a></li>
+                        <li><a href="uae.html">الإمارات</a></li>
+                        <li><a href="australia.html">أستراليا</a></li>
+                        <li><a href="saudi.html">السعودية</a></li>
+                        <li><a href="usa.html">أمريكا</a></li>
+                        <li><a href="france.html">فرنسا</a></li>
+                        <li><a href="spain.html">إسبانيا</a></li>
+                        <li><a href="netherlands.html">هولندا</a></li>
+                        <li><a href="belgium.html">بلجيكا</a></li>
+                        <li><a href="qatar.html">قطر</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>سياسة الموقع</h4>
+                    <ul>
+                        <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">اتفاقية الاستخدام</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 وظائف على مستوى العالم - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
