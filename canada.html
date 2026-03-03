@@ -18,38 +18,15 @@
     
     <style>
         .country-header {
-            background: linear-gradient(135deg, #1A3C6B, #0066B3);
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
             color: white;
             padding: 60px 0;
             text-align: center;
-            position: relative;
-            overflow: hidden;
         }
-        
-        .country-header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.1"><polygon points="0,0 50,30 100,0 80,50 100,100 50,70 0,100 20,50 0,0" fill="white"/></svg>');
-            background-size: 80px 80px;
-            background-repeat: repeat;
-        }
-        
         .country-header h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
-            position: relative;
         }
-        
-        .country-header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            position: relative;
-        }
-        
         .country-info {
             display: flex;
             justify-content: center;
@@ -57,199 +34,105 @@
             margin: 30px 0;
             flex-wrap: wrap;
         }
-        
         .info-badge {
             background: white;
-            color: #1A3C6B;
+            color: #2563eb;
             padding: 10px 25px;
             border-radius: 50px;
             font-weight: 600;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        
         .section-title {
             font-size: 1.8rem;
             color: #1e293b;
             margin: 40px 0 20px;
-            position: relative;
+            border-right: 5px solid #2563eb;
             padding-right: 15px;
         }
-        
-        .section-title::before {
-            content: '';
-            position: absolute;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            width: 5px;
-            background: #1A3C6B;
-            border-radius: 5px;
-        }
-        
         .jobs-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
             margin: 30px 0;
         }
-        
         .job-site-card {
             background: white;
             border-radius: 12px;
             padding: 25px;
             border: 1px solid #e2e8f0;
-            transition: all 0.3s ease;
+            transition: 0.3s;
             text-decoration: none;
             color: inherit;
             display: block;
         }
-        
         .job-site-card:hover {
             transform: translateY(-5px);
-            border-color: #1A3C6B;
-            box-shadow: 0 10px 25px rgba(26,60,107,0.1);
+            border-color: #2563eb;
         }
-        
         .job-site-header {
             display: flex;
             align-items: center;
             gap: 15px;
             margin-bottom: 15px;
         }
-        
         .job-site-icon {
             width: 50px;
             height: 50px;
-            background: #e6ecf5;
+            background: #eef2ff;
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        
         .job-site-icon i {
             font-size: 1.8rem;
-            color: #1A3C6B;
+            color: #2563eb;
         }
-        
         .job-site-name {
             font-size: 1.2rem;
             font-weight: 600;
-            color: #1e293b;
         }
-        
         .job-site-desc {
             color: #64748b;
             font-size: 0.95rem;
             margin-bottom: 15px;
         }
-        
         .job-site-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-            color: #1A3C6B;
+            color: #2563eb;
             font-size: 0.95rem;
         }
-        
-        .professions-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-        
-        .profession-card {
-            background: #f8fafc;
-            border-radius: 12px;
-            padding: 25px;
-            border: 1px solid #e2e8f0;
-        }
-        
-        .profession-icon {
-            width: 50px;
-            height: 50px;
-            background: #e6ecf5;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 15px;
-        }
-        
-        .profession-icon i {
-            font-size: 1.5rem;
-            color: #1A3C6B;
-        }
-        
-        .profession-card h3 {
-            font-size: 1.1rem;
-            margin-bottom: 8px;
-            color: #1e293b;
-        }
-        
-        .profession-card p {
-            color: #64748b;
-            font-size: 0.9rem;
-            margin-bottom: 5px;
-        }
-        
-        .salary-info {
-            font-size: 0.9rem;
-            color: #1A3C6B;
-            margin-top: 8px;
-            font-weight: 600;
-        }
-        
         .requirements-box {
-            background: #e6ecf5;
-            border-right: 4px solid #1A3C6B;
+            background: #eef2ff;
+            border-right: 4px solid #2563eb;
             padding: 30px;
             border-radius: 12px;
             margin: 30px 0;
         }
-        
-        .requirements-box h3 {
-            color: #1e293b;
-            margin-bottom: 15px;
-        }
-        
         .requirements-list {
             list-style: none;
         }
-        
         .requirements-list li {
             margin-bottom: 10px;
             display: flex;
             align-items: center;
             gap: 10px;
         }
-        
         .requirements-list i {
-            color: #1A3C6B;
+            color: #2563eb;
         }
-        
         .back-link {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            color: #1A3C6B;
+            color: #2563eb;
             text-decoration: none;
             margin: 20px 0;
             font-weight: 500;
         }
-        
-        .back-link:hover {
-            color: #0066B3;
-        }
-        
         .flag-icon {
             font-size: 3rem;
             color: white;
             margin-bottom: 20px;
-            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
         }
-        
         .services-section {
             background: #f8fafc;
             border-radius: 12px;
@@ -257,7 +140,6 @@
             margin: 40px 0;
             text-align: center;
         }
-        
         .services-buttons {
             display: flex;
             gap: 20px;
@@ -265,25 +147,17 @@
             flex-wrap: wrap;
             margin-top: 20px;
         }
-        
         .service-btn {
-            background: #1A3C6B;
+            background: #2563eb;
             color: white;
             padding: 12px 30px;
             border-radius: 8px;
             text-decoration: none;
-            transition: background 0.3s;
         }
-        
-        .service-btn:hover {
-            background: #0066B3;
-        }
-        
         @media (max-width: 768px) {
             .country-header h1 {
                 font-size: 2rem;
             }
-            
             .services-buttons {
                 flex-direction: column;
             }
@@ -299,7 +173,6 @@
                     <i class="fas fa-globe"></i>
                     <span>وظائف حول العالم</span>
                 </a>
-                
                 <ul class="nav-links">
                     <li><a href="index.html">الرئيسية</a></li>
                     <li><a href="#" class="active">الدول</a></li>
@@ -310,20 +183,6 @@
             </div>
         </div>
     </nav>
-
-    <!-- إعلان 728x90 أسفل شريط التنقل -->
-    <div style="text-align: center; margin: 20px auto; max-width: 1200px;">
-        <script>
-            atOptions = {
-                'key' : '534453652668648de30578a2cad6a0fc',
-                'format' : 'iframe',
-                'height' : 90,
-                'width' : 728,
-                'params' : {}
-            };
-        </script>
-        <script src="https://www.highperformanceformat.com/534453652668648de30578a2cad6a0fc/invoke.js"></script>
-    </div>
 
     <!-- رأس صفحة كندا -->
     <section class="country-header">
@@ -357,7 +216,7 @@
                 <li><i class="fas fa-check-circle"></i> عرض عمل من صاحب عمل كندي (اختياري لكنه يزيد الفرص)</li>
             </ul>
             <p style="margin-top: 20px;">
-                <a href="https://www.canada.ca/immigration" target="_blank" style="color: #1A3C6B;">
+                <a href="https://www.canada.ca/immigration" target="_blank" style="color: #2563eb;">
                     الموقع الرسمي للهجرة الكندية <i class="fas fa-external-link-alt"></i>
                 </a>
             </p>
@@ -368,20 +227,15 @@
         <div class="jobs-grid">
             <a href="https://www.jobbank.gc.ca" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-bank"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-bank"></i></div>
                     <span class="job-site-name">Job Bank Canada</span>
                 </div>
                 <div class="job-site-desc">الموقع الرسمي للحكومة الكندية - وظائف موثقة ومعتمدة</div>
                 <div class="job-site-link">www.jobbank.gc.ca <i class="fas fa-external-link-alt"></i></div>
             </a>
-
             <a href="https://www.workbc.ca" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-bank"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-bank"></i></div>
                     <span class="job-site-name">WorkBC</span>
                 </div>
                 <div class="job-site-desc">موقع حكومة كولومبيا البريطانية - وظائف وخدمات توظيف</div>
@@ -394,64 +248,47 @@
         <div class="jobs-grid">
             <a href="https://ca.indeed.com" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-briefcase"></i></div>
                     <span class="job-site-name">Indeed Canada</span>
                 </div>
                 <div class="job-site-desc">أكبر محرك بحث للوظائف في كندا - مجاني وسهل الاستخدام</div>
                 <div class="job-site-link">ca.indeed.com <i class="fas fa-external-link-alt"></i></div>
             </a>
-
             <a href="https://www.linkedin.com" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fab fa-linkedin"></i></div>
                     <span class="job-site-name">LinkedIn</span>
                 </div>
                 <div class="job-site-desc">منصة تواصل مهني - تواصل مع مسؤولي التوظيف والشركات</div>
                 <div class="job-site-link">www.linkedin.com <i class="fas fa-external-link-alt"></i></div>
             </a>
-
             <a href="https://www.glassdoor.ca" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-star"></i></div>
                     <span class="job-site-name">Glassdoor Canada</span>
                 </div>
                 <div class="job-site-desc">وظائف + تقييمات الشركات والرواتب</div>
                 <div class="job-site-link">www.glassdoor.ca <i class="fas fa-external-link-alt"></i></div>
             </a>
-
             <a href="https://www.monster.ca" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-briefcase"></i></div>
                     <span class="job-site-name">Monster Canada</span>
                 </div>
                 <div class="job-site-desc">منصة توظيف عالمية - فرص في جميع المجالات</div>
                 <div class="job-site-link">www.monster.ca <i class="fas fa-external-link-alt"></i></div>
             </a>
-
             <a href="https://www.careerbuilder.ca" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-building"></i></div>
                     <span class="job-site-name">CareerBuilder Canada</span>
                 </div>
                 <div class="job-site-desc">موقع توظيف كبير يغطي جميع المجالات</div>
                 <div class="job-site-link">www.careerbuilder.ca <i class="fas fa-external-link-alt"></i></div>
             </a>
-
             <a href="https://www.simplyhired.ca" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-search"></i></div>
                     <span class="job-site-name">SimplyHired Canada</span>
                 </div>
                 <div class="job-site-desc">محرك بحث وظائف - تجميع من عدة مواقع</div>
@@ -464,31 +301,23 @@
         <div class="jobs-grid">
             <a href="https://workopolis.com" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-maple-leaf"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-maple-leaf"></i></div>
                     <span class="job-site-name">Workopolis</span>
                 </div>
                 <div class="job-site-desc">موقع كندي عريق - متخصص في سوق العمل الكندي</div>
                 <div class="job-site-link">workopolis.com <i class="fas fa-external-link-alt"></i></div>
             </a>
-
             <a href="https://www.eluta.ca" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-search"></i></div>
                     <span class="job-site-name">Eluta.ca</span>
                 </div>
                 <div class="job-site-desc">محرك بحث وظائف كندي - يعرض وظائف من مواقع الشركات</div>
                 <div class="job-site-link">www.eluta.ca <i class="fas fa-external-link-alt"></i></div>
             </a>
-
             <a href="https://www.wowjobs.ca" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-bolt"></i></div>
                     <span class="job-site-name">WowJobs</span>
                 </div>
                 <div class="job-site-desc">موقع كندي متخصص في جميع المجالات</div>
@@ -501,101 +330,75 @@
         <div class="jobs-grid">
             <a href="https://www.randstad.ca" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-building"></i></div>
                     <span class="job-site-name">Randstad Canada</span>
                 </div>
                 <div class="job-site-desc">تكنولوجيا، تصنيع، موارد بشرية - تورونتو</div>
-                <div class="job-site-link">www.randstad.ca <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-link">www.randstad.ca</div>
             </a>
-
             <a href="https://www.roberthalf.ca" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-building"></i></div>
                     <span class="job-site-name">Robert Half</span>
                 </div>
                 <div class="job-site-desc">محاسبة، مالية، تكنولوجيا معلومات - تورونتو</div>
-                <div class="job-site-link">www.roberthalf.ca <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-link">www.roberthalf.ca</div>
             </a>
-
             <a href="https://www.hays.ca" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-building"></i></div>
                     <span class="job-site-name">Hays Canada</span>
                 </div>
                 <div class="job-site-desc">توظيف المهنيين المهرة - تورونتو</div>
-                <div class="job-site-link">www.hays.ca <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-link">www.hays.ca</div>
             </a>
-
             <a href="https://www.kellyservices.ca" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-building"></i></div>
                     <span class="job-site-name">Kelly Services Canada</span>
                 </div>
                 <div class="job-site-desc">تكنولوجيا، علوم، هندسة - ميسيساغا</div>
-                <div class="job-site-link">www.kellyservices.ca <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-link">www.kellyservices.ca</div>
             </a>
-
             <a href="https://www.manpower.ca" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-building"></i></div>
                     <span class="job-site-name">Manpower Canada</span>
                 </div>
                 <div class="job-site-desc">تصنيع، خدمات لوجستية، تكنولوجيا - تورونتو</div>
-                <div class="job-site-link">www.manpower.ca <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-link">www.manpower.ca</div>
             </a>
-
             <a href="https://www.expresspros.com" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-building"></i></div>
                     <span class="job-site-name">Express Employment Professionals</span>
                 </div>
                 <div class="job-site-desc">إدارة، تصنيع، توزيع - تورونتو</div>
-                <div class="job-site-link">www.expresspros.com <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-link">www.expresspros.com</div>
             </a>
-
             <a href="https://www.drakeintl.com" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-building"></i></div>
                     <span class="job-site-name">Drake International</span>
                 </div>
                 <div class="job-site-desc">إدارة، مبيعات، موارد بشرية - تورونتو</div>
-                <div class="job-site-link">www.drakeintl.com <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-link">www.drakeintl.com</div>
             </a>
-
             <a href="https://www.globalhire.ca" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-building"></i></div>
                     <span class="job-site-name">Global Hire</span>
                 </div>
                 <div class="job-site-desc">رعاية صحية، شحن، لحام - إدمونتون</div>
-                <div class="job-site-link">www.globalhire.ca <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-link">www.globalhire.ca</div>
             </a>
-
             <a href="https://www.petrostaff.com" target="_blank" class="job-site-card">
                 <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
+                    <div class="job-site-icon"><i class="fas fa-building"></i></div>
                     <span class="job-site-name">Petro Staff</span>
                 </div>
                 <div class="job-site-desc">نفط وغاز - كالجاري</div>
-                <div class="job-site-link">www.petrostaff.com <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-link">www.petrostaff.com</div>
             </a>
         </div>
 
@@ -603,59 +406,59 @@
         <h2 class="section-title">خطوات التقديم على وظائف في كندا</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 30px 0;">
             <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
-                <div style="width: 30px; height: 30px; background: #1A3C6B; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: 600;">1</div>
+                <div style="width: 30px; height: 30px; background: #2563eb; color: white; border-radius: 50%; margin: 0 auto 10px; line-height: 30px;">1</div>
                 <h4>تقييم المؤهلات</h4>
                 <p style="color: #64748b;">تأكد من معادلة شهاداتك العلمية عبر منصة WES</p>
             </div>
             <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
-                <div style="width: 30px; height: 30px; background: #1A3C6B; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: 600;">2</div>
+                <div style="width: 30px; height: 30px; background: #2563eb; color: white; border-radius: 50%; margin: 0 auto 10px; line-height: 30px;">2</div>
                 <h4>اختبار اللغة</h4>
                 <p style="color: #64748b;">اجتياز اختبار IELTS أو TEF حسب متطلبات كل مقاطعة</p>
             </div>
             <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
-                <div style="width: 30px; height: 30px; background: #1A3C6B; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: 600;">3</div>
+                <div style="width: 30px; height: 30px; background: #2563eb; color: white; border-radius: 50%; margin: 0 auto 10px; line-height: 30px;">3</div>
                 <h4>تحديث السيرة الذاتية</h4>
                 <p style="color: #64748b;">صمم سيرة ذاتية احترافية تناسب السوق الكندي</p>
             </div>
             <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
-                <div style="width: 30px; height: 30px; background: #1A3C6B; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: 600;">4</div>
+                <div style="width: 30px; height: 30px; background: #2563eb; color: white; border-radius: 50%; margin: 0 auto 10px; line-height: 30px;">4</div>
                 <h4>التقديم على الوظائف</h4>
                 <p style="color: #64748b;">استخدم المواقع أعلاه للتقديم على الوظائف المناسبة</p>
             </div>
             <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
-                <div style="width: 30px; height: 30px; background: #1A3C6B; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: 600;">5</div>
+                <div style="width: 30px; height: 30px; background: #2563eb; color: white; border-radius: 50%; margin: 0 auto 10px; line-height: 30px;">5</div>
                 <h4>التقديم على التأشيرة</h4>
                 <p style="color: #64748b;">قدم على برنامج الهجرة المناسب عبر موقع الحكومة الكندية</p>
             </div>
         </div>
 
-        <!-- نصائح للباحثين عن عمل -->
+        <!-- نصائح -->
         <h2 class="section-title">نصائح للباحثين عن عمل في كندا</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 30px 0;">
             <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0;">
-                <div style="width: 50px; height: 50px; background: #e6ecf5; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
-                    <i class="fas fa-file-alt" style="color: #1A3C6B; font-size: 1.5rem;"></i>
+                <div style="width: 50px; height: 50px; background: #eef2ff; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                    <i class="fas fa-file-alt" style="color: #2563eb; font-size: 1.5rem;"></i>
                 </div>
                 <h3 style="font-size: 1.1rem;">السيرة الذاتية الكندية</h3>
                 <p style="color: #64748b;">لا تضع صورة شخصية أو تاريخ ميلاد في السيرة الذاتية (غير مطلوب في كندا)</p>
             </div>
             <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0;">
-                <div style="width: 50px; height: 50px; background: #e6ecf5; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
-                    <i class="fas fa-handshake" style="color: #1A3C6B; font-size: 1.5rem;"></i>
+                <div style="width: 50px; height: 50px; background: #eef2ff; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                    <i class="fas fa-handshake" style="color: #2563eb; font-size: 1.5rem;"></i>
                 </div>
                 <h3 style="font-size: 1.1rem;">التواصل المهني</h3>
                 <p style="color: #64748b;">أنشئ شبكة علاقات عبر LinkedIn، 70% من الوظائف تتم عن طريق المعارف</p>
             </div>
             <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0;">
-                <div style="width: 50px; height: 50px; background: #e6ecf5; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
-                    <i class="fas fa-language" style="color: #1A3C6B; font-size: 1.5rem;"></i>
+                <div style="width: 50px; height: 50px; background: #eef2ff; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                    <i class="fas fa-language" style="color: #2563eb; font-size: 1.5rem;"></i>
                 </div>
                 <h3 style="font-size: 1.1rem;">اللغة الفرنسية</h3>
                 <p style="color: #64748b;">إذا كنت تتحدث الفرنسية، فرصك في كيبيك وأوتاوا تزيد بشكل كبير</p>
             </div>
             <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0;">
-                <div style="width: 50px; height: 50px; background: #e6ecf5; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
-                    <i class="fas fa-certificate" style="color: #1A3C6B; font-size: 1.5rem;"></i>
+                <div style="width: 50px; height: 50px; background: #eef2ff; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                    <i class="fas fa-certificate" style="color: #2563eb; font-size: 1.5rem;"></i>
                 </div>
                 <h3 style="font-size: 1.1rem;">الشهادات المهنية</h3>
                 <p style="color: #64748b;">احصل على شهادات مهنية معترف بها في كندا (مثل PMP, CPA, وغيرها)</p>
@@ -682,7 +485,6 @@
                     <h4>وظائف حول العالم</h4>
                     <p>منصتك الموثوقة للبحث عن فرص عمل في مختلف دول العالم</p>
                 </div>
-                
                 <div class="footer-section">
                     <h4>روابط سريعة</h4>
                     <ul>
@@ -693,7 +495,6 @@
                         <li><a href="contact.html">اتصل بنا</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-section">
                     <h4>الدول</h4>
                     <ul>
@@ -710,7 +511,6 @@
                         <li><a href="qatar.html">قطر</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
                     <h4>سياسة الموقع</h4>
                     <ul>
@@ -719,7 +519,6 @@
                     </ul>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <p>© 2026 وظائف على مستوى العالم - جميع الحقوق محفوظة</p>
             </div>
