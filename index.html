@@ -13,28 +13,55 @@
     <!-- ملف التنسيقات -->
     <link rel="stylesheet" href="style.css">
     <style>
-        /* تنسيقات إضافية للصور والأقسام */
-        .country-card img {
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 12px 12px 0 0;
-            margin-bottom: 10px;
-            transition: transform 0.3s ease;
-        }
+        /* تنسيقات إضافية للأيقونات */
         .country-card {
-            padding: 0;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-        .country-card:hover img {
-            transform: scale(1.05);
-        }
-        .country-card .card-content {
             padding: 20px;
+            text-align: center;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
-        .search-box input {
-            flex: 1;
+        .country-card:hover {
+            transform: translateY(-5px);
+            border-color: #2563eb;
+            box-shadow: 0 10px 25px rgba(37,99,235,0.1);
+        }
+        .country-icon {
+            width: 70px;
+            height: 70px;
+            background: #eef2ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+        }
+        .country-icon i {
+            font-size: 2.5rem;
+            color: #2563eb;
+        }
+        .country-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            color: #1e293b;
+        }
+        .country-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+        .jobs-count {
+            display: inline-block;
+            background: #eef2ff;
+            color: #2563eb;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
         }
         .continent-section {
             margin-bottom: 40px;
@@ -57,6 +84,17 @@
             height: 2px;
             background: #2563eb;
         }
+        .search-box input {
+            flex: 1;
+        }
+        .ad-banner {
+            text-align: center;
+            margin: 20px 0;
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px dashed #2563eb;
+        }
     </style>
 </head>
 <body>
@@ -78,6 +116,20 @@
             </div>
         </div>
     </nav>
+
+    <!-- إعلان Banner 728x90 أسفل شريط التنقل -->
+    <div class="ad-banner">
+        <script>
+            atOptions = {
+                'key' : '534453652668648de30578a2cad6a0fc',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+            };
+        </script>
+        <script src="https://www.highperformanceformat.com/534453652668648de30578a2cad6a0fc/invoke.js"></script>
+    </div>
 
     <!-- القسم الرئيسي مع البحث -->
     <header class="hero">
@@ -119,21 +171,21 @@
                 <div class="countries-grid">
                     <!-- كندا -->
                     <a href="canada.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" alt="كندا" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=كندا'">
-                        <div class="card-content">
-                            <h3>كندا</h3>
-                            <p>تورنتو - فانكوفر - مونتريال</p>
-                            <div class="jobs-count">280+ فرصة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-maple-leaf"></i>
                         </div>
+                        <h3>كندا</h3>
+                        <p>تورنتو - فانكوفر - مونتريال</p>
+                        <div class="jobs-count">280+ فرصة</div>
                     </a>
                     <!-- أمريكا -->
                     <a href="usa.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=400" alt="أمريكا" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=أمريكا'">
-                        <div class="card-content">
-                            <h3>أمريكا</h3>
-                            <p>نيويورك - كاليفورنيا - تكساس</p>
-                            <div class="jobs-count">520+ فرصة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-star"></i>
                         </div>
+                        <h3>أمريكا</h3>
+                        <p>نيويورك - كاليفورنيا - تكساس</p>
+                        <div class="jobs-count">520+ فرصة</div>
                     </a>
                 </div>
             </div>
@@ -144,111 +196,111 @@
                 <div class="countries-grid">
                     <!-- ألمانيا -->
                     <a href="germany.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=400" alt="ألمانيا" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=ألمانيا'">
-                        <div class="card-content">
-                            <h3>ألمانيا</h3>
-                            <p>برلين - ميونخ - فرانكفورت</p>
-                            <div class="jobs-count">340+ فرصة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-flag"></i>
                         </div>
+                        <h3>ألمانيا</h3>
+                        <p>برلين - ميونخ - فرانكفورت</p>
+                        <div class="jobs-count">340+ فرصة</div>
                     </a>
                     <!-- فرنسا -->
                     <a href="france.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400" alt="فرنسا" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=فرنسا'">
-                        <div class="card-content">
-                            <h3>فرنسا</h3>
-                            <p>باريس - ليون - مرسيليا</p>
-                            <div class="jobs-count">5000+ فرصة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-flag"></i>
                         </div>
+                        <h3>فرنسا</h3>
+                        <p>باريس - ليون - مرسيليا</p>
+                        <div class="jobs-count">5000+ فرصة</div>
                     </a>
                     <!-- إسبانيا -->
                     <a href="spain.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=400" alt="إسبانيا" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=إسبانيا'">
-                        <div class="card-content">
-                            <h3>إسبانيا</h3>
-                            <p>مدريد - برشلونة - فالنسيا</p>
-                            <div class="jobs-count">480K+ فرصة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-flag"></i>
                         </div>
+                        <h3>إسبانيا</h3>
+                        <p>مدريد - برشلونة - فالنسيا</p>
+                        <div class="jobs-count">480K+ فرصة</div>
                     </a>
                     <!-- هولندا -->
                     <a href="netherlands.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1512470876302-972faa2aa9a5?w=400" alt="هولندا" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=هولندا'">
-                        <div class="card-content">
-                            <h3>هولندا</h3>
-                            <p>أمستردام - لاهاي - روتردام</p>
-                            <div class="jobs-count">فرص متنوعة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-flag"></i>
                         </div>
+                        <h3>هولندا</h3>
+                        <p>أمستردام - لاهاي - روتردام</p>
+                        <div class="jobs-count">فرص متنوعة</div>
                     </a>
                     <!-- بلجيكا -->
                     <a href="belgium.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1559583109-3e7960136c37?w=400" alt="بلجيكا" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=بلجيكا'">
-                        <div class="card-content">
-                            <h3>بلجيكا</h3>
-                            <p>بروكسل - أنتويرب - غنت</p>
-                            <div class="jobs-count">88K+ فرصة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-flag"></i>
                         </div>
+                        <h3>بلجيكا</h3>
+                        <p>بروكسل - أنتويرب - غنت</p>
+                        <div class="jobs-count">88K+ فرصة</div>
                     </a>
                     <!-- إيطاليا -->
                     <a href="italy.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400" alt="إيطاليا" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=إيطاليا'">
-                        <div class="card-content">
-                            <h3>إيطاليا</h3>
-                            <p>روما - ميلانو - نابولي</p>
-                            <div class="jobs-count">فرص متنوعة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-flag"></i>
                         </div>
+                        <h3>إيطاليا</h3>
+                        <p>روما - ميلانو - نابولي</p>
+                        <div class="jobs-count">فرص متنوعة</div>
                     </a>
                     <!-- سويسرا -->
                     <a href="switzerland.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1516942126524-10f9597d1c71?w=400" alt="سويسرا" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=سويسرا'">
-                        <div class="card-content">
-                            <h3>سويسرا</h3>
-                            <p>زيورخ - جنيف - برن</p>
-                            <div class="jobs-count">فرص متنوعة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-flag"></i>
                         </div>
+                        <h3>سويسرا</h3>
+                        <p>زيورخ - جنيف - برن</p>
+                        <div class="jobs-count">فرص متنوعة</div>
                     </a>
                     <!-- النمسا -->
                     <a href="austria.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1516550893923-42d28c91ee9c?w=400" alt="النمسا" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=النمسا'">
-                        <div class="card-content">
-                            <h3>النمسا</h3>
-                            <p>فيينا - سالزبورغ - غراتس</p>
-                            <div class="jobs-count">فرص متنوعة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-flag"></i>
                         </div>
+                        <h3>النمسا</h3>
+                        <p>فيينا - سالزبورغ - غراتس</p>
+                        <div class="jobs-count">فرص متنوعة</div>
                     </a>
                     <!-- النرويج -->
                     <a href="norway.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1520769669658-f07657f5a307?w=400" alt="النرويج" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=النرويج'">
-                        <div class="card-content">
-                            <h3>النرويج</h3>
-                            <p>أوسلو - برغن - ستافانغر</p>
-                            <div class="jobs-count">فرص متنوعة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-flag"></i>
                         </div>
+                        <h3>النرويج</h3>
+                        <p>أوسلو - برغن - ستافانغر</p>
+                        <div class="jobs-count">فرص متنوعة</div>
                     </a>
                     <!-- الدنمارك -->
                     <a href="denmark.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?w=400" alt="الدنمارك" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=الدنمارك'">
-                        <div class="card-content">
-                            <h3>الدنمارك</h3>
-                            <p>كوبنهاغن - آرهوس - أودنسه</p>
-                            <div class="jobs-count">فرص متنوعة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-flag"></i>
                         </div>
+                        <h3>الدنمارك</h3>
+                        <p>كوبنهاغن - آرهوس - أودنسه</p>
+                        <div class="jobs-count">فرص متنوعة</div>
                     </a>
                     <!-- السويد -->
                     <a href="sweden.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1509356843152-3e7d96241e11?w=400" alt="السويد" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=السويد'">
-                        <div class="card-content">
-                            <h3>السويد</h3>
-                            <p>ستوكهولم - غوتنبرغ - مالمو</p>
-                            <div class="jobs-count">103K+ فرصة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-flag"></i>
                         </div>
+                        <h3>السويد</h3>
+                        <p>ستوكهولم - غوتنبرغ - مالمو</p>
+                        <div class="jobs-count">103K+ فرصة</div>
                     </a>
                     <!-- بريطانيا -->
                     <a href="uk.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=400" alt="بريطانيا" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=بريطانيا'">
-                        <div class="card-content">
-                            <h3>بريطانيا</h3>
-                            <p>لندن - مانشستر - برمنغهام</p>
-                            <div class="jobs-count">1.2M+ فرصة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-flag"></i>
                         </div>
+                        <h3>بريطانيا</h3>
+                        <p>لندن - مانشستر - برمنغهام</p>
+                        <div class="jobs-count">1.2M+ فرصة</div>
                     </a>
                 </div>
             </div>
@@ -259,39 +311,39 @@
                 <div class="countries-grid">
                     <!-- الإمارات -->
                     <a href="uae.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400" alt="الإمارات" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=الإمارات'">
-                        <div class="card-content">
-                            <h3>الإمارات</h3>
-                            <p>دبي - أبوظبي - الشارقة</p>
-                            <div class="jobs-count">420+ فرصة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-flag"></i>
                         </div>
+                        <h3>الإمارات</h3>
+                        <p>دبي - أبوظبي - الشارقة</p>
+                        <div class="jobs-count">420+ فرصة</div>
                     </a>
                     <!-- السعودية -->
                     <a href="saudi.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1577140879192-6fe85b38743b?w=400" alt="السعودية" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=السعودية'">
-                        <div class="card-content">
-                            <h3>السعودية</h3>
-                            <p>الرياض - جدة - الدمام</p>
-                            <div class="jobs-count">310+ فرصة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-flag"></i>
                         </div>
+                        <h3>السعودية</h3>
+                        <p>الرياض - جدة - الدمام</p>
+                        <div class="jobs-count">310+ فرصة</div>
                     </a>
                     <!-- قطر -->
                     <a href="qatar.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1624806910811-1fabc9c9e2b0?w=400" alt="قطر" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=قطر'">
-                        <div class="card-content">
-                            <h3>قطر</h3>
-                            <p>الدوحة - الوكرة - الخور</p>
-                            <div class="jobs-count">فرص متنوعة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-flag"></i>
                         </div>
+                        <h3>قطر</h3>
+                        <p>الدوحة - الوكرة - الخور</p>
+                        <div class="jobs-count">فرص متنوعة</div>
                     </a>
                     <!-- الكويت -->
                     <a href="kuwait.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1594122230689-45899d9e6f69?w=400" alt="الكويت" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=الكويت'">
-                        <div class="card-content">
-                            <h3>الكويت</h3>
-                            <p>الكويت العاصمة - حولي - الجهراء</p>
-                            <div class="jobs-count">200K+ فرصة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-flag"></i>
                         </div>
+                        <h3>الكويت</h3>
+                        <p>الكويت العاصمة - حولي - الجهراء</p>
+                        <div class="jobs-count">200K+ فرصة</div>
                     </a>
                 </div>
             </div>
@@ -302,21 +354,21 @@
                 <div class="countries-grid">
                     <!-- أستراليا -->
                     <a href="australia.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=400" alt="أستراليا" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=أستراليا'">
-                        <div class="card-content">
-                            <h3>أستراليا</h3>
-                            <p>سيدني - ملبورن - بريزبن</p>
-                            <div class="jobs-count">190+ فرصة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-flag"></i>
                         </div>
+                        <h3>أستراليا</h3>
+                        <p>سيدني - ملبورن - بريزبن</p>
+                        <div class="jobs-count">190+ فرصة</div>
                     </a>
                     <!-- اليابان -->
                     <a href="japan.html" class="country-card">
-                        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400" alt="اليابان" loading="lazy" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x160?text=اليابان'">
-                        <div class="card-content">
-                            <h3>اليابان</h3>
-                            <p>طوكيو - أوساكا - يوكوهاما</p>
-                            <div class="jobs-count">فرص متنوعة</div>
+                        <div class="country-icon">
+                            <i class="fas fa-flag"></i>
                         </div>
+                        <h3>اليابان</h3>
+                        <p>طوكيو - أوساكا - يوكوهاما</p>
+                        <div class="jobs-count">فرص متنوعة</div>
                     </a>
                 </div>
             </div>
@@ -439,7 +491,7 @@
         </div>
     </footer>
 
-    <!-- كود الإعلان (Social Bar) -->
+    <!-- إعلان Social Bar (الكود الثاني) -->
     <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 
     <!-- دالة البحث المحسنة -->
@@ -451,7 +503,6 @@
                 alert('الرجاء إدخال كلمة للبحث');
                 return;
             }
-            // خريطة أسماء الدول بالعربية والإنجليزية
             const countryMap = {
                 'كندا': 'canada.html',
                 'canada': 'canada.html',
@@ -494,7 +545,6 @@
                 'السويد': 'sweden.html',
                 'sweden': 'sweden.html'
             };
-            // البحث عن تطابق
             let matchedPage = null;
             for (let key in countryMap) {
                 if (query.includes(key)) {
@@ -509,7 +559,6 @@
             }
         }
 
-        // إضافة حدث Enter
         document.addEventListener('DOMContentLoaded', function() {
             const input = document.getElementById('searchInput');
             input.addEventListener('keypress', function(e) {
