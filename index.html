@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>وظائف على مستوى العالم - دليلك للعمل في 20 دولة</title>
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <!-- ملف التنسيقات -->
     <link rel="stylesheet" href="style.css">
+    
     <style>
-        /* تنسيقات إضافية للأيقونات */
+        /* تنسيقات إضافية */
         .country-card {
-            padding: 20px;
-            text-align: center;
             background: white;
             border-radius: 12px;
+            padding: 25px;
+            text-align: center;
             border: 1px solid #e2e8f0;
             transition: all 0.3s ease;
             text-decoration: none;
             color: inherit;
             display: block;
         }
+        
         .country-card:hover {
             transform: translateY(-5px);
             border-color: #2563eb;
             box-shadow: 0 10px 25px rgba(37,99,235,0.1);
         }
+        
         .country-icon {
             width: 70px;
             height: 70px;
@@ -40,20 +46,24 @@
             justify-content: center;
             margin: 0 auto 15px;
         }
+        
         .country-icon i {
             font-size: 2.5rem;
             color: #2563eb;
         }
+        
         .country-card h3 {
             font-size: 1.3rem;
             margin-bottom: 8px;
             color: #1e293b;
         }
+        
         .country-card p {
             color: #64748b;
             font-size: 0.95rem;
             margin-bottom: 10px;
         }
+        
         .jobs-count {
             display: inline-block;
             background: #eef2ff;
@@ -63,9 +73,11 @@
             font-size: 0.85rem;
             font-weight: 500;
         }
+        
         .continent-section {
             margin-bottom: 40px;
         }
+        
         .continent-title {
             font-size: 1.8rem;
             color: #1e293b;
@@ -75,6 +87,7 @@
             border-bottom: 2px solid #e2e8f0;
             padding-bottom: 10px;
         }
+        
         .continent-title::before {
             content: '';
             position: absolute;
@@ -84,16 +97,104 @@
             height: 2px;
             background: #2563eb;
         }
-        .search-box input {
-            flex: 1;
+        
+        /* تحسين شريط التنقل */
+        .navbar {
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         }
-        .ad-banner {
-            text-align: center;
-            margin: 20px 0;
+        
+        .hero {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+        }
+        
+        /* تحسين قسم الخدمات */
+        .services {
             background: #f8fafc;
-            padding: 15px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: #eef2ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .service-icon i {
+            font-size: 2rem;
+            color: #2563eb;
+        }
+        
+        .service-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2563eb;
+            margin: 15px 0;
+        }
+        
+        .service-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
             border-radius: 8px;
-            border: 1px dashed #2563eb;
+            font-weight: 600;
+            transition: background 0.3s;
+            width: 100%;
+        }
+        
+        .service-btn:hover {
+            background: #128C7E;
+        }
+        
+        footer {
+            background: #0f172a;
+            color: white;
+        }
+        
+        .footer-section a {
+            color: #94a3b8;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: #2563eb;
+        }
+        
+        .social-links a {
+            background: #1e293b;
+            border-radius: 8px;
+            padding: 8px 15px;
+            display: inline-block;
+        }
+        
+        @media (max-width: 768px) {
+            .countries-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .search-box {
+                flex-direction: column;
+                border-radius: 12px;
+            }
         }
     </style>
 </head>
@@ -116,20 +217,6 @@
             </div>
         </div>
     </nav>
-
-    <!-- إعلان Banner 728x90 أسفل شريط التنقل -->
-    <div class="ad-banner">
-        <script>
-            atOptions = {
-                'key' : '534453652668648de30578a2cad6a0fc',
-                'format' : 'iframe',
-                'height' : 90,
-                'width' : 728,
-                'params' : {}
-            };
-        </script>
-        <script src="https://www.highperformanceformat.com/534453652668648de30578a2cad6a0fc/invoke.js"></script>
-    </div>
 
     <!-- القسم الرئيسي مع البحث -->
     <header class="hero">
@@ -375,7 +462,7 @@
         </div>
     </section>
 
-    <!-- قسم الخدمات (محدث) -->
+    <!-- قسم الخدمات -->
     <section class="services">
         <div class="container">
             <h2 class="section-title">خدماتنا بأسعار رمزية</h2>
@@ -406,13 +493,13 @@
                     </a>
                 </div>
 
-                <!-- خدمة تسجيل الزوار في مواقع التوظيف -->
+                <!-- خدمة تسجيل الزوار -->
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-user-plus"></i>
                     </div>
                     <h3>تسجيل الزوار في المواقع</h3>
-                    <p>نساعدك على إنشاء حساباتك في أهم مواقع التوظيف (LinkedIn, Bayt, GulfTalent) وإعداد ملفك الشخصي بشكل احترافي.</p>
+                    <p>نساعدك على إنشاء حساباتك في أهم مواقع التوظيف وإعداد ملفك الشخصي بشكل احترافي.</p>
                     <div class="service-price">$10</div>
                     <a href="https://wa.me/212669411021?text=أرغب%20في%20خدمة%20تسجيل%20الزوار%20في%20المواقع" class="service-btn" target="_blank">
                         <i class="fab fa-whatsapp"></i> طلب عبر واتساب
@@ -422,7 +509,7 @@
         </div>
     </section>
 
-    <!-- تذييل الصفحة (محدث مع رابط فيسبوك) -->
+    <!-- تذييل الصفحة -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -476,7 +563,7 @@
                     </ul>
                 </div>
 
-                <!-- رابط صفحة فيسبوك -->
+                <!-- صفحة فيسبوك -->
                 <div class="footer-section">
                     <h4>تابعنا</h4>
                     <div class="social-links">
@@ -491,10 +578,10 @@
         </div>
     </footer>
 
-    <!-- إعلان Social Bar (الكود الثاني) -->
+    <!-- كود الإعلان Social Bar فقط (بدون الإعلان العلوي) -->
     <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 
-    <!-- دالة البحث المحسنة -->
+    <!-- دالة البحث -->
     <script>
         function performSearch() {
             const input = document.getElementById('searchInput');
