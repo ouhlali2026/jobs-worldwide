@@ -2,10 +2,10 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فرص عمل في اليونان 2026 | المهن الأكثر طلباً والتأشيرات والرواتب</title>
-    <meta name="description" content="دليلك الشامل للعمل في اليونان 2026: أحدث قانون الهجرة 5275/2026، حصص العمالة السنوية (94,500 عامل)، المهن الأكثر طلباً (سياحة، بناء، تكنولوجيا)، رواتب محدثة، وإجراءات التقديم خطوة بخطوة.">
-    <meta name="keywords" content="فرص عمل في اليونان, وظائف اليونان 2026, تأشيرة عمل اليونان, قانون الهجرة اليوناني 5275/2026, المهن المطلوبة في اليونان, العمل في أثينا, رواتب المهندسين في اليونان, حصص العمالة اليونانية, الهجرة إلى اليونان">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>فرص عمل في اليونان 2026 | المهن المطلوبة والتأشيرات والرواتب في أثينا</title>
+    <meta name="description" content="دليلك الشامل للعمل في اليونان 2026: أحدث قانون الهجرة رقم 5275/2026، المهن الأكثر طلباً (سياحة، بناء، تكنولوجيا)، رواتب محدثة حسب القطاع، إجراءات التأشيرات الجديدة، ونصائح للباحثين عن عمل.">
+    <meta name="keywords" content="فرص عمل في اليونان, وظائف اليونان 2026, تأشيرة عمل اليونان, القانون الجديد 5275/2026, العمل في أثينا, المهن المطلوبة في اليونان, رواتب المهندسين في اليونان, الهجرة إلى اليونان">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,59 +19,84 @@
     <link rel="stylesheet" href="style.css">
     
     <style>
-        /* تنسيقات خاصة بصفحة اليونان */
+        /* تنسيقات خاصة بصفحة اليونان - مستوحاة من ألوان العلم 🇬🇷 */
+        :root {
+            --greece-blue: #0D5EAF;
+            --greece-white: #FFFFFF;
+            --greece-light-blue: #EFF7FF;
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        
         .country-header {
-            background: linear-gradient(135deg, #0D5EAF, #FFFFFF);
+            background: linear-gradient(135deg, var(--greece-blue), #0A4A8A);
             color: white;
-            padding: 60px 0;
+            padding: 35px 15px;
             text-align: center;
             position: relative;
             overflow: hidden;
         }
         
         .country-header h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 10px;
             position: relative;
-            color: #1e293b;
-            background: rgba(255,255,255,0.9);
+            color: var(--greece-white);
+            background: rgba(0,0,0,0.2);
             display: inline-block;
-            padding: 10px 30px;
+            padding: 8px 20px;
             border-radius: 50px;
+            font-weight: 700;
+            word-break: break-word;
         }
         
         .country-header p {
-            font-size: 1.1rem;
+            font-size: 1rem;
             opacity: 0.95;
             position: relative;
-            color: #1e293b;
-            background: rgba(255,255,255,0.8);
+            color: var(--greece-white);
+            background: rgba(0,0,0,0.2);
             display: inline-block;
-            padding: 5px 20px;
+            padding: 5px 15px;
             border-radius: 30px;
+            max-width: 90%;
+            margin: 10px auto;
         }
         
         .country-info {
             display: flex;
             justify-content: center;
-            gap: 30px;
-            margin: 30px 0;
+            gap: 15px;
+            margin: 20px 5px;
             flex-wrap: wrap;
         }
         
         .info-badge {
             background: white;
-            color: #0D5EAF;
-            padding: 10px 25px;
+            color: var(--greece-blue);
+            padding: 8px 18px;
             border-radius: 50px;
             font-weight: 600;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .info-badge i {
+            font-size: 1rem;
         }
         
         .section-title {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             color: #1e293b;
-            margin: 40px 0 20px;
+            margin: 25px 0 15px;
             position: relative;
             padding-right: 15px;
         }
@@ -83,21 +108,115 @@
             top: 0;
             bottom: 0;
             width: 5px;
-            background: #0D5EAF;
+            background: var(--greece-blue);
             border-radius: 5px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        
+        /* تحسينات الجوال - دقيقة جداً */
+        @media (max-width: 768px) {
+            .country-header h1 {
+                font-size: 1.6rem;
+                padding: 8px 12px;
+            }
+            
+            .country-header p {
+                font-size: 0.9rem;
+                padding: 5px 10px;
+            }
+            
+            .section-title {
+                font-size: 1.3rem;
+            }
+            
+            .info-badge {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+            
+            .jobs-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .visa-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+            
+            .jobs-table {
+                font-size: 0.85rem;
+            }
+            
+            .jobs-table th, .jobs-table td {
+                padding: 8px 5px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .country-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .info-badge {
+                width: fit-content;
+            }
+            
+            .country-header {
+                padding: 25px 10px;
+            }
+            
+            .back-link {
+                margin: 10px 0;
+                padding: 5px 10px;
+            }
+            
+            .visa-box, .requirements-box {
+                padding: 15px 10px;
+            }
+            
+            .jobs-table th, .jobs-table td {
+                padding: 6px 3px;
+                font-size: 0.8rem;
+            }
+            
+            .skill-tag {
+                padding: 3px 8px;
+                font-size: 0.75rem;
+            }
+            
+            .service-btn {
+                padding: 8px 15px;
+                font-size: 0.85rem;
+            }
         }
         
         .jobs-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
         }
         
         .job-site-card {
             background: white;
             border-radius: 12px;
-            padding: 25px;
+            padding: 18px;
             border: 1px solid #e2e8f0;
             transition: all 0.3s ease;
             text-decoration: none;
@@ -107,21 +226,21 @@
         
         .job-site-card:hover {
             transform: translateY(-5px);
-            border-color: #0D5EAF;
+            border-color: var(--greece-blue);
             box-shadow: 0 10px 25px rgba(13,94,175,0.1);
         }
         
         .job-site-header {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
+            gap: 12px;
+            margin-bottom: 10px;
         }
         
         .job-site-icon {
-            width: 50px;
-            height: 50px;
-            background: #e6f0ff;
+            width: 40px;
+            height: 40px;
+            background: #e0edff;
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -129,103 +248,109 @@
         }
         
         .job-site-icon i {
-            font-size: 1.8rem;
-            color: #0D5EAF;
+            font-size: 1.5rem;
+            color: var(--greece-blue);
         }
         
         .job-site-name {
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 600;
             color: #1e293b;
         }
         
         .job-site-desc {
             color: #64748b;
-            font-size: 0.95rem;
-            margin-bottom: 15px;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            line-height: 1.5;
         }
         
         .job-site-link {
             display: inline-flex;
             align-items: center;
             gap: 5px;
-            color: #0D5EAF;
-            font-size: 0.95rem;
+            color: var(--greece-blue);
+            font-size: 0.85rem;
         }
         
         .visa-box {
             background: #f8fafc;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 30px 0;
-            border: 2px dashed #0D5EAF;
+            border-radius: 16px;
+            padding: 20px 15px;
+            margin: 20px 0;
+            border: 2px dashed var(--greece-blue);
         }
         
         .visa-box h3 {
             color: #1e293b;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
         
         .visa-box i {
-            color: #0D5EAF;
+            color: var(--greece-blue);
             font-size: 1.2rem;
         }
         
         .visa-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
         }
         
         .visa-type {
             background: white;
-            padding: 20px;
-            border-radius: 8px;
+            padding: 15px;
+            border-radius: 12px;
             border: 1px solid #e2e8f0;
         }
         
         .visa-type h4 {
-            color: #0D5EAF;
-            margin-bottom: 5px;
+            color: var(--greece-blue);
+            margin-bottom: 8px;
+            font-size: 1rem;
         }
         
-        .visa-type .price {
-            font-weight: 600;
-            color: #1e293b;
-            margin-top: 10px;
-        }
-        
-        .visa-type .fee {
+        .visa-type p {
             font-size: 0.9rem;
-            color: #64748b;
-            margin-top: 5px;
+            color: #334155;
+            line-height: 1.5;
         }
         
         .table-container {
             overflow-x: auto;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            -webkit-overflow-scrolling: touch;
         }
         
         .jobs-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
             background: white;
-            border-radius: 8px;
+            border-radius: 12px;
             overflow: hidden;
+            min-width: 550px;
         }
         
         .jobs-table th {
-            background: #0D5EAF;
+            background: var(--greece-blue);
             color: white;
-            padding: 12px;
+            padding: 10px 8px;
             text-align: right;
+            font-weight: 600;
+            font-size: 0.9rem;
         }
         
         .jobs-table td {
-            padding: 12px;
+            padding: 8px;
             border-bottom: 1px solid #e2e8f0;
+            font-size: 0.85rem;
         }
         
         .jobs-table tr:last-child td {
@@ -233,132 +358,265 @@
         }
         
         .jobs-table tr:hover {
-            background: #f0f8ff;
+            background: var(--greece-light-blue);
         }
         
         .requirements-box {
-            background: #f0f8ff;
-            border-right: 4px solid #0D5EAF;
-            padding: 30px;
-            border-radius: 12px;
-            margin: 30px 0;
+            background: var(--greece-light-blue);
+            border-right: 4px solid var(--greece-blue);
+            padding: 20px 15px;
+            border-radius: 16px;
+            margin: 25px 0;
         }
         
         .requirements-box h3 {
             color: #1e293b;
             margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
         }
         
         .requirements-list {
             list-style: none;
+            padding: 0;
+            margin: 0;
         }
         
         .requirements-list li {
             margin-bottom: 10px;
             display: flex;
-            align-items: center;
-            gap: 10px;
+            align-items: flex-start;
+            gap: 8px;
+            line-height: 1.5;
+            font-size: 0.9rem;
         }
         
         .requirements-list i {
-            color: #0D5EAF;
+            color: var(--greece-blue);
+            margin-top: 3px;
+            min-width: 16px;
         }
         
         .back-link {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            color: #0D5EAF;
+            color: var(--greece-blue);
             text-decoration: none;
-            margin: 20px 0;
+            margin: 15px 0;
             font-weight: 500;
+            padding: 6px 12px;
+            background: var(--greece-light-blue);
+            border-radius: 30px;
+            font-size: 0.9rem;
         }
         
         .back-link:hover {
-            color: #333;
+            background: #c0d9ff;
         }
         
         .flag-icon {
-            font-size: 3rem;
-            color: #0D5EAF;
-            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: var(--greece-white);
+            margin-bottom: 10px;
             filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
         }
         
         .skill-tag {
             display: inline-block;
             background: white;
-            color: #0D5EAF;
-            padding: 5px 12px;
-            border-radius: 20px;
+            color: var(--greece-blue);
+            padding: 4px 10px;
+            border-radius: 30px;
             margin: 3px;
-            font-size: 0.85rem;
-            border: 1px solid #0D5EAF;
+            font-size: 0.8rem;
+            border: 1px solid var(--greece-blue);
+            transition: all 0.2s;
+        }
+        
+        .skill-tag:hover {
+            background: var(--greece-blue);
+            color: white;
         }
         
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin: 15px 0;
         }
         
         .stat-card {
             background: white;
-            padding: 20px;
-            border-radius: 12px;
+            padding: 15px 8px;
+            border-radius: 16px;
             text-align: center;
             border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 8px rgba(13,94,175,0.05);
         }
         
         .stat-number {
-            font-size: 1.8rem;
+            font-size: 1.3rem;
             font-weight: 700;
-            color: #0D5EAF;
+            color: var(--greece-blue);
+            line-height: 1.2;
         }
         
         .stat-label {
             color: #64748b;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
+            margin-top: 5px;
         }
         
         .services-section {
-            background: #f8fafc;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 40px 0;
+            background: var(--greece-light-blue);
+            border-radius: 24px;
+            padding: 25px 15px;
+            margin: 30px 0;
             text-align: center;
         }
         
         .services-buttons {
             display: flex;
-            gap: 20px;
+            gap: 10px;
             justify-content: center;
             flex-wrap: wrap;
             margin-top: 20px;
         }
         
         .service-btn {
-            background: #0D5EAF;
+            background: var(--greece-blue);
             color: white;
-            padding: 12px 30px;
-            border-radius: 8px;
+            padding: 10px 20px;
+            border-radius: 50px;
             text-decoration: none;
             transition: background 0.3s;
+            font-weight: 500;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
         }
         
         .service-btn:hover {
-            background: #333;
+            background: #0A4A8A;
         }
         
         @media (max-width: 768px) {
-            .country-header h1 {
-                font-size: 2rem;
-            }
-            
             .services-buttons {
                 flex-direction: column;
             }
+        }
+        
+        ul, ol {
+            padding-right: 20px;
+        }
+        
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 10px 0;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--greece-blue);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 500;
+            padding: 5px 0;
+        }
+        
+        .nav-links a.active {
+            color: var(--greece-blue);
+            border-bottom: 2px solid var(--greece-blue);
+        }
+        
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+            }
+            
+            .nav-links {
+                justify-content: center;
+            }
+        }
+        
+        footer {
+            background: #1e293b;
+            color: white;
+            padding: 30px 0 15px;
+            margin-top: 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section li {
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+        
+        .footer-section a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin-left: 8px;
+            color: white;
+            font-size: 1rem;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 15px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.8rem;
         }
     </style>
 </head>
@@ -387,13 +645,13 @@
     <section class="country-header">
         <div class="container">
             <i class="fas fa-flag flag-icon"></i>
-            <h1>فرص عمل في اليونان 2026</h1>
-            <p>الدليل الكامل للعمل في أثينا، سالونيك، كريت وجميع المدن اليونانية</p>
+            <h1>🇬🇷 فرص عمل في اليونان 2026 🇬🇷</h1>
+            <p>الدليل الكامل للعمل في أثينا، سالونيك، كريت وجميع المدن اليونانية - أحدث قانون الهجرة 5275/2026</p>
             
             <div class="country-info">
-                <span class="info-badge"><i class="fas fa-briefcase"></i> 94,500 تأشيرة سنوياً</span>
-                <span class="info-badge"><i class="fas fa-language"></i> يوناني / إنجليزي</span>
-                <span class="info-badge"><i class="fas fa-euro-sign"></i> يورو (EUR)</span>
+                <span class="info-badge"><i class="fas fa-umbrella-beach"></i> سياحة وضيافة</span>
+                <span class="info-badge"><i class="fas fa-language"></i> اليونانية / الإنجليزية</span>
+                <span class="info-badge"><i class="fas fa-money-bill-wave"></i> يورو (EUR)</span>
             </div>
         </div>
     </section>
@@ -403,479 +661,347 @@
             <i class="fas fa-arrow-right"></i> العودة للصفحة الرئيسية
         </a>
 
-        <!-- تحديثات قانون الهجرة 5275/2026 -->
+        <!-- لمحة عامة عن سوق العمل اليوناني -->
         <div class="visa-box">
-            <h3><i class="fas fa-calendar-alt"></i> تحديثات قانون الهجرة اليوناني 5275/2026 – تغييرات جذرية</h3>
-            <p>صدر قانون الهجرة الجديد 5275/2026 في بداية عام 2026، ويُحدث تغييرات جوهرية في نظام تصاريح العمل والإقامة، بهدف تسريع الإجراءات ومواكبة احتياجات سوق العمل [citation:3].</p>
-            
-            <h4 style="margin: 20px 0 10px;">أهم التغييرات في تصاريح العمل:</h4>
-            <div class="visa-grid" style="margin-top: 15px;">
-                <div class="visa-type">
-                    <h4>مدة العقد</h4>
-                    <p>تم تخفيض الحد الأدنى لمدة عقد العمل إلى 6 أشهر (بدلاً من سنة سابقاً) [citation:3].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>مدة التصريح</h4>
-                    <p>تصاريح العمل العادية (E.4) صالحة لمدة 3 سنوات، قابلة للتجديد بزيادات 5 سنوات [citation:3].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>مهلة التجديد</h4>
-                    <p>تم تمديد مهلة التجديد إلى 3 أشهر بعد انتهاء التصريح (بدلاً من شهر)، مع غرامة 100 يورو عن كل شهر تأخير [citation:3].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>تغيير صاحب العمل</h4>
-                    <p>يُسمح للموظفين بتغيير صاحب العمل بعد فترة أولية محددة، مما يعزز حرية التنقل [citation:3].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>معالجة الطلبات</h4>
-                    <p>يجب معالجة الطلبات المكتملة خلال 90 يوماً، قابلة للتمديد 30 يوماً في حالات استثنائية [citation:3].</p>
-                </div>
-            </div>
-
-            <h4 style="margin: 20px 0 10px;">مسارات هجرة جديدة:</h4>
-            <div class="visa-grid">
-                <div class="visa-type">
-                    <h4>تأشيرة التكنولوجيا (Tech Visa)</h4>
-                    <p>للكفاءات العالية في الشركات المسجلة في منصة Elevate Greece. مدة سنة واحدة قابلة للتحويل إلى تصريح عمل للكفاءات العالية. الراتب المطلوب: 1.6 ضعف المتوسط الوطني [citation:3].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>تأشيرة المواهب (Talent Visa)</h4>
-                    <p>لحاملي الماجستير والدكتوراه من جامعات مصنفة عالمياً، للبحث عن عمل أو تأسيس أعمال. مدة سنة واحدة مع إثبات القدرة المالية [citation:3].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>تأشيرة ما بعد التخرج</h4>
-                    <p>تسمح للخريجين والباحثين بالبقاء لمدة سنة واحدة للبحث عن عمل [citation:3].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>تأشيرة البدو الرقمي (Digital Nomad)</h4>
-                    <p>تم تحديث النظام: يجب الآن الحصول على تأشيرة D قبل السفر (بدلاً من التقديم من داخل اليونان). الدخل المطلوب: 3,500 يورو شهرياً [citation:3].</p>
-                </div>
-            </div>
+            <h3><i class="fas fa-chart-line"></i> نظرة على سوق العمل في اليونان 2026</h3>
+            <p>اليونان عضو في الاتحاد الأوروبي ومنطقة اليورو، وقد شهدت تحسناً اقتصادياً ملحوظاً في السنوات الأخيرة مع عودة النمو بقوة مدعوماً بقطاع السياحة الذي يمثل أحد أهم ركائز الاقتصاد. يعاني سوق العمل اليوناني من نقص حاد في العمالة الماهرة في عدة قطاعات رئيسية مثل البناء والتشييد، الضيافة، التكنولوجيا، والرعاية الصحية، مما يخلق فرصاً واعدة للعمالة الأجنبية [citation:4][citation:9].</p>
+            <p>في فبراير 2026، أصدرت اليونان قانون الهجرة الجديد رقم 5275/2026، الذي يمثل إصلاحاً شاملاً لنظام الهجرة واللجوء، بهدف تبسيط الإجراءات وجذب الكفاءات العالية وتلبية احتياجات سوق العمل [citation:1][citation:6]. يشمل القانون الجديد تأشيرات مبتكرة مثل "Tech Visa" و "Talent Visa" لخريجي الدراسات العليا، كما يمدد صلاحية البطاقة الزرقاء للاتحاد الأوروبي إلى 3 سنوات ويسمح بتغيير صاحب العمل بعد 6 أشهر فقط [citation:1][citation:8].</p>
         </div>
 
-        <!-- حصص العمالة السنوية 2026 -->
-        <div class="requirements-box">
-            <h3><i class="fas fa-chart-pie"></i> حصص العمالة الأجنبية في اليونان 2026</h3>
-            <p>حددت الحكومة اليونانية حصص دخول العمالة الأجنبية لعام 2026 بحوالي <strong>94,500 عامل</strong>، بزيادة 5,000 عن العام السابق، لمواجهة النقص الحاد في العمالة الذي يتجاوز 360,000 وظيفة شاغرة [citation:9].</p>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin: 20px 0;">
-                <div style="background: white; padding: 20px; border-radius: 8px; text-align: center;">
-                    <div style="font-size: 1.8rem; font-weight: 700; color: #0D5EAF;">44,240</div>
-                    <div>عمالة دائمة بعقود</div>
-                </div>
-                <div style="background: white; padding: 20px; border-radius: 8px; text-align: center;">
-                    <div style="font-size: 1.8rem; font-weight: 700; color: #0D5EAF;">48,000</div>
-                    <div>عمالة موسمية</div>
-                </div>
-                <div style="background: white; padding: 20px; border-radius: 8px; text-align: center;">
-                    <div style="font-size: 1.8rem; font-weight: 700; color: #0D5EAF;">2,000</div>
-                    <div>كفاءات عالية</div>
-                </div>
-            </div>
-
-            <h4 style="margin: 15px 0 10px;">توزيع العمالة الدائمة حسب القطاع:</h4>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>الزراعة والثروة الحيوانية:</strong> 19,000 عامل (عمال حقول، بيوت بلاستيكية، مزارع، غابات، صيد أسماك)</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>الصناعة التحويلية والنقل واللوجستيات:</strong> 7,640 عامل</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>عمال غير ماهرين في المنشآت الصناعية:</strong> 3,630 عامل</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>عمال وحرفيون للتشييد والتشطيب:</strong> 4,900 عامل</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>عمال بناء (بناء، حدادة، نجارة، دهان):</strong> 4,500 عامل [citation:9]</li>
-            </ul>
-
-            <h4 style="margin: 20px 0 10px;">توزيع العمالة الموسمية:</h4>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>عمال زراعيون:</strong> 32,000 عامل</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>عمال صيد أسماك:</strong> 4,000 عامل</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>عمال نظافة فنادق:</strong> 4,800 عامل</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>عمال نظافة منازل وخادمات:</strong> 4,300 عامل</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>عاملو مطاعم:</strong> 6,200 عامل</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>طهاة:</strong> 700 عامل</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>مساعدو مطبخ وعمال وجبات سريعة:</strong> 4,000 عامل [citation:9]</li>
-            </ul>
-            <p style="margin-top: 15px;">تم توزيع أكبر حصة من العمالة على منطقة أتيكا (حوالي 10,000 عامل)، تليها مقدونيا الوسطى وكريت. الطلبات المقدمة تجاوزت 400,000، مما يؤكد النقص المزمن في العمالة [citation:9].</p>
-        </div>
-
-        <!-- لمحة عامة عن سوق العمل اليوناني 2026 -->
-        <div class="requirements-box">
-            <h3><i class="fas fa-chart-line"></i> نظرة على سوق العمل اليوناني في 2026</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
-                <div><strong>الوظائف الشاغرة:</strong> أكثر من 100,000 وظيفة سنوياً [citation:8]</div>
-                <div><strong>النقص الحاد:</strong> 360,000 وظيفة شاغرة مقابل 94,500 تأشيرة فقط [citation:9]</div>
-                <div><strong>القطاعات الرئيسية:</strong> السياحة، الزراعة، البناء، الشحن البحري، الطاقة المتجددة، تكنولوجيا المعلومات</div>
-                <div><strong>المدن الرئيسية:</strong> أثينا (تكنولوجيا، خدمات)، سالونيك (صناعة)، كريت (سياحة)، بيرايوس (شحن)</div>
-            </div>
-            <p style="margin-top: 15px;">يشهد سوق العمل اليوناني نمواً مطرداً مع تعافي الاقتصاد، حيث تسجل البلاد أكثر من 100,000 وظيفة شاغرة سنوياً بسبب نقص العمالة الماهرة وشيخوخة السكان. الحكومة تفتح الباب أمام العمالة الأجنبية، خاصة في قطاعات السياحة والزراعة والبناء والتكنولوجيا، مع حصص متزايدة سنوياً [citation:8]. القطاع السياحي وحده يعاني من نقص حاد في العاملين بالفنادق والمطاعم [citation:10].</p>
-        </div>
-
-        <!-- المهن الأكثر طلباً حسب القطاعات -->
-        <h2 class="section-title">المهن الأكثر طلباً في اليونان 2026</h2>
+        <!-- المهن الأكثر طلباً والرواتب في اليونان 2026 -->
+        <h2 class="section-title">المهن الأكثر طلباً والرواتب في اليونان 2026</h2>
         
         <div class="table-container">
             <table class="jobs-table">
                 <tr>
                     <th>القطاع</th>
                     <th>المهن المطلوبة</th>
-                    <th>متوسط الراتب السنوي (يورو)</th>
+                    <th>مبتدئ (€)</th>
+                    <th>متوسط (€)</th>
+                    <th>متقدم (€)</th>
                 </tr>
                 <tr>
                     <td>السياحة والضيافة</td>
-                    <td>نادل/نادلة (أكثر وظيفة مطلوبة)، طهاة، مساعدو مطبخ، عمال نظافة فنادق، عمال صيانة فنادق، موظفو استقبال، عمال موسميون في المنتجعات السياحية [citation:10][citation:9]</td>
-                    <td>19,000 – 29,000 (مستوى متوسط) [citation:2]</td>
-                </tr>
-                <tr>
-                    <td>الزراعة والثروة الحيوانية</td>
-                    <td>عمال زراعيون، عمال بيوت بلاستيكية، عمال مزارع حيوانية، عمال غابات، عمال صيد أسماك، عمال تعبئة وتغليف منتجات زراعية [citation:9]</td>
-                    <td>13,500 – 17,500 (مستوى مبتدئ) [citation:2]</td>
+                    <td>مديرو فنادق، طهاة، نادلون، عمال منتجعات، مرشدون سياحيون، موظفو استقبال (خاصة مع اللغات الأجنبية)</td>
+                    <td>14,000 – 18,000</td>
+                    <td>18,000 – 30,000</td>
+                    <td>30,000 – 50,000+</td>
                 </tr>
                 <tr>
                     <td>البناء والتشييد</td>
-                    <td>عمال بناء (بناء، حدادة، نجارة، دهان)، عمال تشطيب، كهربائيون، سباكون، عزل، فنيو ديكور [citation:9]</td>
-                    <td>23,000 – 42,000 (مستوى متوسط) [citation:2]</td>
-                </tr>
-                <tr>
-                    <td>الصناعة التحويلية واللوجستيات</td>
-                    <td>عمال إنتاج، مشغلو آلات، فنيو صيانة، عمال مستودعات، سائقو شاحنات، منسقو لوجستيات [citation:9]</td>
-                    <td>18,000 – 25,000 (مستوى متوسط) [citation:2]</td>
-                </tr>
-                <tr>
-                    <td>تكنولوجيا المعلومات والاتصالات</td>
-                    <td>مطورو برمجيات، علماء بيانات، مهندسو أمن سيبراني، متخصصو ذكاء اصطناعي، مهندسو سحابة، متخصصو تسويق رقمي [citation:2]</td>
-                    <td>44,000 – 68,000 (مستوى كبير) [citation:2]</td>
-                </tr>
-                <tr>
-                    <td>الرعاية الصحية</td>
-                    <td>أطباء، ممرضون، مساعدو رعاية صحية، فنيو مختبرات، أخصائيو تمريض [citation:2]</td>
-                    <td>70,000+ (للتخصصات العليا) [citation:8]</td>
-                </tr>
-                <tr>
-                    <td>الهندسة</td>
-                    <td>مهندسو كهرباء، ميكانيكا، مدنيون، مهندسو طاقة متجددة، مهندسو بحري [citation:2]</td>
-                    <td>65,000 (متوسط) [citation:8]</td>
-                </tr>
-            </table>
-        </div>
-
-        <!-- الوظائف الأعلى أجراً في اليونان 2026 -->
-        <h2 class="section-title">الوظائف الأعلى أجراً في اليونان 2026</h2>
-        
-        <div class="table-container">
-            <table class="jobs-table">
-                <tr>
-                    <th>الترتيب</th>
-                    <th>المهنة</th>
-                    <th>متوسط الراتب السنوي (يورو)</th>
-                    <th>بالدولار الأمريكي</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>جراح / طبيب استشاري</td>
-                    <td>56,000 – 166,000</td>
-                    <td>61,000 – 182,000</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>قاضي</td>
-                    <td>47,000 – 139,000</td>
-                    <td>52,000 – 152,000</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>محامي</td>
-                    <td>38,000 – 113,000</td>
-                    <td>42,000 – 124,000</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>مدير بنك</td>
-                    <td>36,000 – 106,000</td>
-                    <td>39,000 – 116,000</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>رئيس تنفيذي (CEO)</td>
-                    <td>34,000 – 100,000</td>
-                    <td>37,000 – 110,000</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>مدير مالي (CFO)</td>
-                    <td>32,000 – 93,000</td>
-                    <td>35,000 – 102,000</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>أخصائي تقويم أسنان</td>
-                    <td>30,000 – 90,000</td>
-                    <td>33,000 – 99,000</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>أستاذ جامعي</td>
-                    <td>27,000 – 80,000</td>
-                    <td>30,000 – 88,000</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>طيار</td>
-                    <td>23,000 – 66,000</td>
-                    <td>25,000 – 72,000</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>مدير تسويق</td>
-                    <td>20,000 – 60,000</td>
-                    <td>22,000 – 66,000</td>
-                </tr>
-            </table>
-            <p style="margin-top: 5px;">المصدر: [citation:6]</p>
-        </div>
-
-        <!-- رواتب المهن حسب المستوى الوظيفي -->
-        <h2 class="section-title">الرواتب حسب القطاع والمستوى الوظيفي (يورو سنوياً) [citation:2]</h2>
-        
-        <div class="table-container">
-            <table class="jobs-table">
-                <tr>
-                    <th>القطاع</th>
-                    <th>مستوى مبتدئ</th>
-                    <th>مستوى متوسط</th>
-                    <th>مستوى كبير</th>
-                </tr>
-                <tr>
-                    <td>الإدارة</td>
-                    <td>13,200 – 17,000</td>
-                    <td>18,000 – 25,000</td>
-                    <td>26,000 – 40,000+</td>
+                    <td>كهربائيون، سباكون، بناءون، لحامون، مشغلو آلات، مهندسو مدني، فنيو إنشاءات </td>
+                    <td>15,000 – 20,000</td>
+                    <td>20,000 – 35,000</td>
+                    <td>35,000 – 55,000+</td>
                 </tr>
                 <tr>
                     <td>تكنولوجيا المعلومات</td>
-                    <td>15,000 – 21,000</td>
-                    <td>23,000 – 42,000</td>
-                    <td>44,000 – 68,000+</td>
+                    <td>مهندسو برمجيات (Java, Python, JavaScript)، مهندسو أمن سيبراني، علماء بيانات، متخصصو ذكاء اصطناعي [citation:5]</td>
+                    <td>25,000 – 35,000</td>
+                    <td>35,000 – 55,000</td>
+                    <td>55,000 – 80,000+</td>
                 </tr>
                 <tr>
-                    <td>التسويق والمبيعات</td>
-                    <td>12,500 – 18,500</td>
-                    <td>21,000 – 33,000</td>
-                    <td>39,000 – 62,000+</td>
+                    <td>الهندسة والصناعة</td>
+                    <td>مهندسو ميكانيكا، كهرباء، مهندسو مشاريع، فنيو صيانة، مشرفو إنتاج [citation:7]</td>
+                    <td>22,000 – 30,000</td>
+                    <td>30,000 – 45,000</td>
+                    <td>45,000 – 65,000+</td>
                 </tr>
                 <tr>
-                    <td>الهندسة</td>
-                    <td>14,000 – 20,000</td>
-                    <td>23,000 – 42,000</td>
-                    <td>44,000 – 73,000+</td>
+                    <td>الرعاية الصحية</td>
+                    <td>أطباء (جميع التخصصات)، ممرضون، صيادلة، أخصائيو علاج طبيعي، مسنون [citation:7]</td>
+                    <td>20,000 – 35,000</td>
+                    <td>35,000 – 60,000</td>
+                    <td>60,000 – 90,000+</td>
                 </tr>
                 <tr>
-                    <td>السياحة والضيافة</td>
-                    <td>13,500 – 17,500</td>
-                    <td>19,000 – 29,000</td>
-                    <td>31,000 – 50,000+</td>
+                    <td>الزراعة والصناعات الغذائية</td>
+                    <td>عمال مزارع، عمال حصاد، عمال تعبئة، فنيو أغذية، مشرفو إنتاج غذائي [citation:9]</td>
+                    <td>12,000 – 16,000</td>
+                    <td>16,000 – 25,000</td>
+                    <td>25,000 – 40,000+</td>
+                </tr>
+                <tr>
+                    <td>الشحن والنقل البحري</td>
+                    <td>بحارة، مهندسو بحري، موظفو لوجستيات، مدراء موانئ (اليونان تمتلك أكبر أسطول تجاري في العالم)</td>
+                    <td>18,000 – 28,000</td>
+                    <td>28,000 – 50,000</td>
+                    <td>50,000 – 80,000+</td>
                 </tr>
             </table>
+            <p style="margin-top: 5px;">المصادر: Playroll Salary Guide 2026 [citation:5], Pacific Prime [citation:7], تقارير التوظيف المحلية.</p>
+        </div>
+
+        <!-- الحد الأدنى للأجور والضرائب -->
+        <div class="visa-box">
+            <h3><i class="fas fa-coins"></i> الحد الأدنى للأجور والضرائب 2026</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">€922</div>
+                    <div class="stat-label">الحد الأدنى الشهري (من أبريل 2026) [citation:2]</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">22%</div>
+                    <div class="stat-label">مساهمات صاحب العمل [citation:5]</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15-45%</div>
+                    <div class="stat-label">ضريبة الدخل</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">14</div>
+                    <div class="stat-label">راتب سنوي (12 + عيدان)</div>
+                </div>
+            </div>
+            <p style="margin-top: 15px;">من المتوقع أن يرتفع الحد الأدنى للأجور في القطاع الخاص بنسبة 4.8% اعتباراً من 1 أبريل 2026، ليصل إلى 922 يورو شهرياً [citation:2]. يدفع أصحاب العمل حوالي 22% مساهمات اجتماعية إضافية على الراتب الإجمالي. يتقاضى العاملون في اليونان 14 راتباً سنوياً (12 شهراً + راتب عيد الميلاد + راتب عيد الفصح) [citation:5].</p>
+        </div>
+
+        <!-- تكلفة المعيشة -->
+        <div class="requirements-box">
+            <h3><i class="fas fa-home"></i> تكلفة المعيشة في المدن الرئيسية</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;">
+                <div><strong>أثينا:</strong> 800 – 1,300 € شهرياً</div>
+                <div><strong>سالونيك:</strong> 700 – 1,100 €</div>
+                <div><strong>كريت (هيراكليون):</strong> 650 – 1,000 €</div>
+                <div><strong>الجزر السياحية:</strong> 700 – 1,200 € (تختلف موسمياً)</div>
+                <div><strong>باتراس:</strong> 600 – 900 €</div>
+            </div>
+            <p style="margin-top: 10px;">تكاليف المعيشة في اليونان أقل بنحو 51% من الولايات المتحدة [citation:7]. الإيجار هو أكبر تكلفة، خاصة في أثينا والجزر السياحية. يمكن توفير المال بالسكن في الضواحي أو مشاركة السكن. الغذاء والمواصلات في متناول اليد مقارنة بغرب أوروبا.</p>
+        </div>
+
+        <!-- قانون الهجرة الجديد 5275/2026 -->
+        <div class="visa-box">
+            <h3><i class="fas fa-calendar-alt"></i> قانون الهجرة الجديد 5275/2026 (فبراير 2026)</h3>
+            <p>أصدرت اليونان قانوناً جديداً للهجرة في 6 فبراير 2026، يهدف إلى تحديث الإطار القانوني وتبسيط الإجراءات وجذب الكفاءات الأجنبية [citation:1][citation:8].</p>
+            
+            <h4 style="margin: 15px 0 10px;">أهم التغييرات في قانون 5275/2026:</h4>
+            <div class="visa-grid">
+                <div class="visa-type">
+                    <h4>التصريح الموحد (Single Permit)</h4>
+                    <p>إجراء موحد للحصول على تصريح الإقامة والعمل معاً، مع مهلة معالجة قصوى 90 يوماً. يشمل تصاريح E.1 (الكفاءات العالية)، E.3 (أغراض خاصة)، E.4 (العمل التابع) [citation:6][citation:8].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>Tech Visa (Z.13A)</h4>
+                    <p>تأشيرة جديدة لمدة 12 شهراً للكفاءات التقنية العالية العاملين في شركات مسجلة في منصة Elevate Greece. تشترط عقد عمل لا يقل عن 12 شهراً وراتب سنوي لا يقل عن 1.6 ضعف المتوسط الوطني [citation:1][citation:6].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>Talent Visa (Z.15)</h4>
+                    <p>تأشيرة لمدة 12 شهراً لحاملي الماجستير والدكتوراه من جامعات مصنفة عالمياً للبحث عن عمل أو تأسيس أعمال في اليونان [citation:1].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>Z.13 (فنيون متخصصون)</h4>
+                    <p>للكوادر الفنية المتخصصة في مشاريع استثمارية تتجاوز 10 ملايين يورو في قطاعات التكنولوجيا والأدوية والصناعة [citation:1].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>البطاقة الزرقاء (EU Blue Card)</h4>
+                    <p>تمديد صلاحية البطاقة الزرقاء إلى 3 سنوات (بدلاً من سنتين)، قابلة للتجديد لفترات إضافية مماثلة [citation:6][citation:8].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>البدو الرقميون (Digital Nomads)</h4>
+                    <p>لم يعد مسموحاً بدخول اليونان بتأشيرة سياحية والتقدم للتحول إلى بدو رقمي. يجب الآن الحصول على تأشيرة وطنية (D-Visa) قبل الدخول [citation:1][citation:6].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>تغيير صاحب العمل</h4>
+                    <p>يسمح للعمال بتغيير صاحب العمل بعد 6 أشهر من العمل لدى صاحب العمل الأول، أو قبل ذلك في حالات انتهاك شروط العمل [citation:6].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>وكالات العمل المؤقت</h4>
+                    <p>يُسمح لوكالات العمل المؤقتة المرخصة (برأسمال لا يقل عن مليون يورو) باستقدام عمال أجانب مباشرة [citation:1][citation:6].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>تأشيرات الخريجين</h4>
+                    <p>يُسمح للخريجين والباحثين بالبقاء في اليونان لمدة 12 شهراً بعد انتهاء دراستهم للبحث عن عمل أو تأسيس أعمال [citation:8].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>مهلة التأخير</h4>
+                    <p>تمديد مهلة تقديم طلبات التجديد المتأخرة إلى 3 أشهر بعد انتهاء التصريح، مع غرامة 100 يورو شهرياً [citation:1][citation:6].</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- نظام الحصص السنوية -->
+        <div class="requirements-box">
+            <h3><i class="fas fa-chart-bar"></i> نظام الحصص السنوية 2026</h3>
+            <p>يحدد قرار مجلس الوزراء السنوي حصص استقدام العمالة الأجنبية حسب القطاعات (وليس حسب التخصصات كما في السابق) [citation:1].</p>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> <strong>زيادة الحصص:</strong> يمكن زيادة الحصص بنسبة تصل إلى 15% (بدلاً من 10%) لتلبية الاحتياجات العاجلة وغير المتوقعة [citation:1][citation:6].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>اتفاقيات ثنائية:</strong> يمكن للقرار الوزاري تحديد دول المصدر المفضلة وحصص خاصة لكل جنسية، بناءً على العلاقات الثنائية والمصلحة الوطنية [citation:6].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>المشاريع الاستراتيجية:</strong> يمكن للكيانات القانونية استقدام حتى 500 عامل أجنبي لكل مشروع استراتيجي أو استثماري كبير [citation:1][citation:6].</li>
+            </ul>
+            <p style="margin-top: 10px;">القطاعات الأكثر طلباً في نظام الحصص: البناء والتشييد، السياحة والضيافة، الزراعة، الرعاية الصحية، والتكنولوجيا [citation:4][citation:9].</p>
+        </div>
+
+        <!-- أنواع التأشيرات وإجراءات العمل -->
+        <h2 class="section-title">تأشيرات العمل في اليونان 2026</h2>
+        <div class="visa-box">
+            <h3><i class="fas fa-passport"></i> أنواع التأشيرات الرئيسية بعد التحديث</h3>
+            
+            <div class="visa-grid">
+                <div class="visa-type">
+                    <h4>تصريح E.4 (العمل التابع)</h4>
+                    <p>للموظفين الذين لديهم عقد عمل مع شركة يونانية عبر إجراء "الاستدعاء" (metaklisi). مدة العقد الدنيا 6 أشهر. التصريح صالح لمدة 3 سنوات قابلة للتجديد لمدة 5 سنوات [citation:1].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>تصريح E.1 (الكفاءات العالية)</h4>
+                    <p>للمؤهلين تأهيلاً عالياً. يشمل البطاقة الزرقاء للاتحاد الأوروبي. صالحة لمدة 3 سنوات قابلة للتجديد. إجراءات أسرع وشروط أقل صرامة [citation:6][citation:8].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>Tech Visa (Z.13A)</h4>
+                    <p>تأشيرة وطنية لمدة 12 شهراً للعاملين في شركات ناشئة مسجلة في Elevate Greece. يمكن التحويل لاحقاً إلى تصريح E.1 مع نفس صاحب العمل [citation:1].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>Talent Visa (Z.15)</h4>
+                    <p>تأشيرة بحث عن عمل لمدة 12 شهراً لحاملي الشهادات العليا. تتطلب إثبات موارد مالية كافية. يمكن التحويل إلى تصريح عمل بعد الحصول على عقد [citation:1].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>تأشيرة العمل الموسمي</h4>
+                    <p>للعمل في قطاعات السياحة والزراعة لمدة تصل إلى 6 أشهر. إجراءات مبسطة، لكن لا تؤدي إلى الإقامة الدائمة.</p>
+                </div>
+                <div class="visa-type">
+                    <h4>تأشيرة البدو الرقمي</h4>
+                    <p>للعاملين عن بُعد لحساب شركات خارج اليونان. تشترط الحصول على تأشيرة وطنية (D-Visa) قبل الدخول. صالحة لمدة سنة قابلة للتجديد [citation:1][citation:6].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>تأشيرة خريجي الجامعات</h4>
+                    <p>للطلاب الأجانب المتخرجين من جامعات يونانية. تسمح بالبقاء لمدة 12 شهراً للبحث عن عمل أو تأسيس شركة [citation:8].</p>
+                </div>
+            </div>
+
+            <h4 style="margin: 15px 0 10px;">خطوات الحصول على تأشيرة العمل (لغير الأوروبيين):</h4>
+            <ol style="margin-right: 20px; margin-bottom: 15px;">
+                <li><strong>الحصول على عرض عمل</strong> من صاحب عمل يوناني (باستثناء تأشيرات البحث عن عمل).</li>
+                <li><strong>تقديم طلب تصريح العمل (metaklisi)</strong> من قبل صاحب العمل عبر منصة الهجرة الإلكترونية [citation:6].</li>
+                <li><strong>الموافقة على التصريح</strong> بعد التحقق من استيفاء شروط الحصص وعدم وجود مرشح محلي.</li>
+                <li><strong>تقديم طلب التأشيرة الوطنية (D-Visa)</strong> في السفارة أو القنصلية اليونانية في بلدك [citation:1].</li>
+                <li><strong>الدخول إلى اليونان</strong> خلال صلاحية التأشيرة (عادة 3-6 أشهر).</li>
+                <li><strong>استخراج تصريح الإقامة</strong> من دائرة الهجرة المحلية خلال شهر من الوصول.</li>
+            </ol>
+
+            <h4 style="margin: 15px 0 10px;">المستندات الأساسية:</h4>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> جواز سفر ساري المفعول</li>
+                <li><i class="fas fa-check-circle"></i> عقد عمل موقع (باللغة اليونانية)</li>
+                <li><i class="fas fa-check-circle"></i> الشهادات العلمية والمهنية (مترجمة لليونانية ومعتمدة) [citation:9]</li>
+                <li><i class="fas fa-check-circle"></i> شهادة خلو سوابق (صادرة خلال 3 أشهر، مترجمة) [citation:4]</li>
+                <li><i class="fas fa-check-circle"></i> شهادة طبية تثبت اللياقة الصحية [citation:9]</li>
+                <li><i class="fas fa-check-circle"></i> تأمين صحي يغطي فترة الإقامة</li>
+                <li><i class="fas fa-check-circle"></i> صور شخصية</li>
+            </ul>
+            
+            <h4 style="margin: 15px 0 10px;">الرسوم التقريبية:</h4>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> رسوم التأشيرة: 90-180 يورو</li>
+                <li><i class="fas fa-check-circle"></i> رسوم تصريح الإقامة: 150-300 يورو</li>
+                <li><i class="fas fa-check-circle"></i> مدة المعالجة: 30-90 يوماً [citation:6]</li>
+            </ul>
         </div>
 
         <!-- المهارات الأكثر طلباً -->
         <h2 class="section-title">المهارات الأكثر طلباً في السوق اليوناني</h2>
-        <div style="margin: 20px 0;">
-            <span class="skill-tag">المهارات الرقمية (برمجة، تحليل بيانات، أمن سيبراني)</span>
-            <span class="skill-tag">إتقان اللغات الأجنبية (إنجليزية، ألمانية، فرنسية)</span>
-            <span class="skill-tag">الهندسة (طاقة، بنية تحتية، بحرية)</span>
-            <span class="skill-tag">التحليل المالي وإدارة الأعمال</span>
-            <span class="skill-tag">مهارات صحية متخصصة</span>
-            <span class="skill-tag">الذكاء الاصطناعي والتعلم الآلي</span>
-            <span class="skill-tag">القدرة على التكيف والمرونة</span>
-            <span class="skill-tag">التواصل والعمل الجماعي</span>
+        <div style="margin: 15px 0;">
+            <span class="skill-tag">اليونانية (B1/B2)</span>
+            <span class="skill-tag">الإنجليزية (B2/C1)</span>
+            <span class="skill-tag">الألمانية/الفرنسية (للسياحة)</span>
+            <span class="skill-tag">Java / Python / JavaScript</span>
+            <span class="skill-tag">إدارة المشاريع</span>
+            <span class="skill-tag">البناء والتشييد</span>
+            <span class="skill-tag">اللحام والتركيبات</span>
+            <span class="skill-tag">الضيافة وإدارة الفنادق</span>
+            <span class="skill-tag">المهارات البحرية</span>
+            <span class="skill-tag">الزراعة الموسمية</span>
         </div>
-        <p style="margin-top: 5px;">تشهد اليونان طلباً متزايداً على المهارات الرقمية والهندسية، مع نقص حاد في الكفاءات التقنية المتخصصة [citation:2]. ومع ذلك، لا يزال الطلب على مهارات الذكاء الاصطناعي محدوداً نسبياً مقارنة بالدول المتقدمة، مما قد يؤدي إلى هجرة هذه الكفاءات [citation:4].</p>
+        <p style="margin-top: 5px;">اللغة اليونانية ليست ضرورية في جميع الوظائف، خاصة في قطاع السياحة والشركات الدولية حيث الإنجليزية كافية. لكن تعلم اليونانية يزيد فرصك بشكل كبير ويساعدك في الاندماج. إجادة لغات أجنبية مثل الألمانية أو الفرنسية تمنحك أفضلية كبيرة في قطاع السياحة [citation:7].</p>
 
-        <!-- أنواع التأشيرات الرئيسية -->
-        <div class="visa-box">
-            <h3><i class="fas fa-passport"></i> أنواع تصاريح العمل في اليونان 2026</h3>
-            
-            <h4 style="margin: 20px 0 10px;">تصاريح العمل الرئيسية:</h4>
-            <div class="visa-grid" style="margin-top: 15px;">
-                <div class="visa-type">
-                    <h4>تصريح العمل العادي (E.4)</h4>
-                    <p>للتوظيف في الشركات اليونانية. يتطلب عقد عمل وعرض عمل معتمد. المدة: 3 سنوات، قابلة للتجديد 5 سنوات [citation:3].</p>
-                    <div class="price">الحد الأدنى لمدة العقد: 6 أشهر</div>
-                </div>
-                <div class="visa-type">
-                    <h4>البطاقة الزرقاء (EU Blue Card)</h4>
-                    <p>للكفاءات العالية من خارج الاتحاد الأوروبي. المدة: 3 سنوات (بدلاً من سنتين سابقاً) [citation:3].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>تصريح العمل الموسمي</h4>
-                    <p>للعمل في الزراعة والسياحة خلال المواسم. تشمل حصة 48,000 عامل لعام 2026 [citation:9].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>تأشيرة التكنولوجيا (Tech Visa)</h4>
-                    <p>للكفاءات العالية في الشركات الناشئة (Elevate Greece)، مدة سنة واحدة قابلة للتحويل [citation:3].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>تأشيرة المواهب (Talent Visa)</h4>
-                    <p>للباحثين عن عمل من حملة الماجستير والدكتوراه من جامعات مرموقة، مدة سنة واحدة [citation:3].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>تأشيرة البدو الرقمي</h4>
-                    <p>للعمل عن بعد لحساب شركات خارج اليونان. الدخل المطلوب: 3,500 يورو شهرياً [citation:3].</p>
-                </div>
-            </div>
-
-            <h4 style="margin: 20px 0 10px;">متطلبات الحصول على تصريح العمل:</h4>
+        <!-- نصائح للباحثين عن عمل -->
+        <div class="requirements-box" style="background: var(--greece-light-blue);">
+            <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في اليونان</h3>
             <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> جواز سفر ساري المفعول</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> عقد عمل موقع من صاحب عمل يوناني (لمدة لا تقل عن 6 أشهر للتصريح العادي) [citation:3]</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> صور شخصية حديثة</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> شهادات علمية ومهنية مترجمة ومصدقة</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> شهادة خلو سوابق من بلد الإقامة</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> شهادة صحية تثبت اللياقة الطبية</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> إثبات القدرة المالية (للبدو الرقمي وطلاب)</li>
+                <li><i class="fas fa-check-circle"></i> <strong>تعلم أساسيات اليونانية:</strong> حتى مستوى A2/B1 يحدث فرقاً كبيراً في فرصك ويساعدك في التعاملات اليومية.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استخدم منصات التوظيف المحلية:</strong> LinkedIn، Career门户، Kariera.gr، Skywalker.gr، موقع خدمة التوظيف العامة (OAED) [citation:7].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استهدف القطاعات الأكثر طلباً:</strong> السياحة (خاصة في الجزر)، البناء (أثينا وسالونيك)، التكنولوجيا (مراكز الابتكار في أثينا) [citation:4][citation:9].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>تعرف على القانون الجديد:</strong> اطلع على قانون 5275/2026 وخيارات التأشيرات الجديدة مثل Tech Visa و Talent Visa التي قد تناسب مؤهلاتك [citation:1].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>جهز سيرتك الذاتية:</strong> السيرة الذاتية في اليونان يجب أن تتضمن صورة شخصية، وتكون من 3 إلى 5 صفحات مع خطاب تغطية، وشهاداتك مصدقة [citation:7].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>لا تدفع مقابل عروض العمل:</strong> جميع الخدمات الرسمية تتقاضى رسوماً محددة، واحذر من شركات التوظيف الوهمية التي تطلب أموالاً مقدماً.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استعد للموسمية:</strong> العديد من فرص العمل في السياحة تكون موسمية (أبريل-أكتوبر)، لكنها قد تتحول إلى عقود دائمة.</li>
             </ul>
         </div>
 
-        <!-- خطوات الحصول على تصريح العمل -->
-        <h2 class="section-title">خطوات الحصول على تصريح العمل في اليونان</h2>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 30px 0;">
-            <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
-                <div style="width: 40px; height: 40px; background: #0D5EAF; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: 700;">1</div>
-                <h4>الحصول على عرض عمل</h4>
-                <p style="color: #64748b;">من صاحب عمل يوناني مسجل</p>
-            </div>
-            <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
-                <div style="width: 40px; height: 40px; background: #0D5EAF; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: 700;">2</div>
-                <h4>تقديم طلب التأشيرة</h4>
-                <p style="color: #64748b;">في السفارة أو القنصلية اليونانية في بلدك (تأشيرة وطنية نوع D) [citation:3]</p>
-            </div>
-            <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
-                <div style="width: 40px; height: 40px; background: #0D5EAF; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: 700;">3</div>
-                <h4>الدخول إلى اليونان</h4>
-                <p style="color: #64748b;">خلال المهلة المحددة على التأشيرة</p>
-            </div>
-            <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
-                <div style="width: 40px; height: 40px; background: #0D5EAF; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: 700;">4</div>
-                <h4>تقديم طلب تصريح الإقامة</h4>
-                <p style="color: #64748b;">في مكتب الهجرة المحلي خلال شهر من الوصول [citation:3]</p>
-            </div>
-            <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
-                <div style="width: 40px; height: 40px; background: #0D5EAF; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: 700;">5</div>
-                <h4>استخراج بطاقة الإقامة</h4>
-                <p style="color: #64748b;">بعد الموافقة (المدة القصوى للمعالجة 90 يوماً) [citation:3]</p>
-            </div>
-        </div>
-
-        <!-- أفضل المدن والمناطق للعمل -->
-        <h2 class="section-title">أفضل المدن والمناطق للعمل في اليونان [citation:8]</h2>
+        <!-- أفضل المدن للعمل -->
+        <h2 class="section-title">أفضل المدن للعمل في اليونان</h2>
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-number">أثينا (أتيكا)</div>
-                <div class="stat-label">العاصمة، أكبر سوق عمل. فرص في تكنولوجيا المعلومات، الخدمات المالية، الإدارة، الخدمات اللوجستية. حوالي 10,000 حصة عمالة [citation:9]</div>
+                <div class="stat-number">أثينا</div>
+                <div class="stat-label">العاصمة وأكبر سوق عمل. مركز الأعمال، التكنولوجيا، الخدمات، الشحن. أعلى الرواتب وأعلى إيجارات.</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">سالونيك (مقدونيا الوسطى)</div>
-                <div class="stat-label">ثاني أكبر مدينة. فرص في التصنيع، تكنولوجيا المعلومات، الرعاية الصحية، التعليم، اللوجستيات</div>
+                <div class="stat-number">سالونيك</div>
+                <div class="stat-label">ثاني أكبر مدينة، مركز صناعي وتجاري، ميناء مهم، فرص في الصناعة والخدمات.</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">كريت (هيراكليون)</div>
-                <div class="stat-label">مركز سياحي رئيسي. فرص في السياحة، الضيافة، الزراعة، تجارة التجزئة، تكنولوجيا المعلومات. حوالي 3,125 حصة [citation:9]</div>
+                <div class="stat-label">أكبر جزيرة، سياحة قوية، زراعة، خدمات، تكاليف معيشة أقل.</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">بيرايوس (أتيكا)</div>
-                <div class="stat-label">أكبر ميناء في اليونان. فرص في الشحن البحري، الخدمات البحرية، اللوجستيات، الهندسة</div>
+                <div class="stat-number">جزر سياحية (ميكونوس، سانتوريني)</div>
+                <div class="stat-label">فرص موسمية ممتازة في قطاع الضيافة الفاخرة، رواتب عالية موسمياً.</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">باتراس (غرب اليونان)</div>
-                <div class="stat-label">مدينة جامعية وصناعية. فرص في البحث العلمي، الهندسة، الخدمات الرقمية، التعليم</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">رودس، سانتوريني (جنوب إيجة)</div>
-                <div class="stat-label">جزر سياحية عالمية. فرص موسمية في السياحة الفاخرة، الضيافة، الفنادق. حوالي 5,630 حصة [citation:9]</div>
+                <div class="stat-number">باتراس</div>
+                <div class="stat-label">ثالث أكبر مدينة، ميناء مهم، صناعة، خدمات لوجستية.</div>
             </div>
         </div>
 
         <!-- مزايا وتحديات العمل في اليونان -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 40px 0;">
-            <div style="background: white; border-radius: 12px; padding: 25px; border: 1px solid #e2e8f0;">
-                <h3 style="color: #0D5EAF; margin-bottom: 15px;">✅ مزايا العمل في اليونان</h3>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 30px 0;">
+            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
+                <h3 style="color: var(--greece-blue); margin-bottom: 10px;">✅ المزايا</h3>
                 <ul class="requirements-list">
-                    <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>نقص حاد في العمالة:</strong> أكثر من 360,000 وظيفة شاغرة، مع حصص متزايدة سنوياً [citation:9]</li>
-                    <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>تكاليف معيشة أقل:</strong> أقل بنسبة 51% من الولايات المتحدة [citation:6]</li>
-                    <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>موقع استراتيجي:</strong> بوابة أوروبا وآسيا وأفريقيا، مع قطاع بحري قوي [citation:2]</li>
-                    <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>نمط حياة متوسطي:</strong> مناخ معتدل، طبيعة خلابة، ثقافة غنية</li>
-                    <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>فرص في التكنولوجيا:</strong> قطاع تكنولوجي نامٍ مع دعم حكومي للشركات الناشئة [citation:2]</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--greece-blue);"></i> <strong>مناخ متوسطي:</strong> شمس مشرقة معظم أيام السنة، صيف طويل.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--greece-blue);"></i> <strong>تكاليف معيشة منخفضة:</strong> مقارنة بغرب أوروبا [citation:7].</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--greece-blue);"></i> <strong>موقع استراتيجي:</strong> بوابة أوروبا والشرق الأوسط.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--greece-blue);"></i> <strong>قطاع سياحي قوي:</strong> فرص عمل متنوعة موسمية ودائمة.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--greece-blue);"></i> <strong>قانون هجرة جديد:</strong> إجراءات أسرع وخيارات أكثر للكفاءات [citation:8].</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--greece-blue);"></i> <strong>أمان:</strong> من الدول الآمنة في أوروبا.</li>
                 </ul>
             </div>
-            <div style="background: white; border-radius: 12px; padding: 25px; border: 1px solid #e2e8f0;">
-                <h3 style="color: #0D5EAF; margin-bottom: 15px;">⚠️ تحديات للباحثين عن عمل</h3>
+            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
+                <h3 style="color: #e67e22; margin-bottom: 10px;">⚠️ التحديات</h3>
                 <ul class="requirements-list">
-                    <li><i class="fas fa-exclamation-triangle" style="color: #0D5EAF;"></i> <strong>اللغة اليونانية:</strong> أساسية لمعظم الوظائف خارج قطاع السياحة والتكنولوجيا</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #0D5EAF;"></i> <strong>البيروقراطية:</strong> الإجراءات قد تكون بطيئة رغم التحسينات الأخيرة [citation:3]</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #0D5EAF;"></i> <strong>الحصص المحدودة:</strong> 94,500 تأشيرة فقط مقابل 360,000 وظيفة شاغرة [citation:9]</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #0D5EAF;"></i> <strong>الرواتب:</strong> أقل من دول أوروبا الغربية والشمالية</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #0D5EAF;"></i> <strong>العمل الموسمي:</strong> غالبية الفرص موسمية (48,000 تأشيرة موسمية)</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>الرواتب منخفضة نسبياً:</strong> مقارنة بدول شمال أوروبا.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>البيروقراطية:</strong> إجراءات إدارية بطيئة ومعقدة أحياناً.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>اللغة اليونانية:</strong> صعبة التعلم وغير منتشرة خارج البلاد.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>البطالة:</strong> معدلات بطالة مرتفعة نسبياً بين الشباب.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>الاقتصاد الموسمي:</strong> اعتماد كبير على السياحة، فرص عمل غير مستقرة.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>الضرائب:</strong> نسب ضرائب مرتفعة على الدخل.</li>
                 </ul>
             </div>
         </div>
 
-        <!-- نصائح للباحثين عن عمل -->
-        <div class="requirements-box" style="background: #f8fafc;">
-            <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في اليونان</h3>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>ركز على القطاعات الأكثر طلباً:</strong> السياحة، الزراعة، البناء، والتكنولوجيا هي الأكثر حاجة للعمالة الأجنبية [citation:9][citation:2].</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>تعلم اللغة اليونانية الأساسية:</strong> حتى لو كنت تعمل باللغة الإنجليزية، تعلم أساسيات اليونانية يساعد في الاندماج ويزيد فرصك.</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>تأكد من حصول صاحب العمل على الحصة:</strong> الشركات يجب أن تحصل على حصة من الحكومة قبل تقديم عقد العمل [citation:3].</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>استخدم مواقع التوظيف المحلية:</strong> Kariera.gr، Skywalker.gr، LinkedIn هي الأكثر فعالية [citation:2].</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>جهز سيرتك الذاتية اليونانية:</strong> يجب أن تكون من 3-5 صفحات، وتتضمن صورة شخصية، خطاب تغطية، وشهادات مصدقة [citation:6].</li>
-                <li><i class="fas fa-check-circle" style="color: #0D5EAF;"></i> <strong>استعد لمدة معالجة طويلة:</strong> قد تستغرق إجراءات التأشيرة 4-8 أسابيع [citation:2].</li>
-            </ul>
-        </div>
-
-        <!-- إحصائيات مهمة -->
-        <h2 class="section-title">إحصائيات سوق العمل اليوناني 2026</h2>
+        <!-- إحصائيات سريعة -->
+        <h2 class="section-title">إحصائيات سريعة 2026</h2>
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-number">94,500</div>
-                <div class="stat-label">تأشيرة عمل سنوية [citation:9]</div>
+                <div class="stat-number">10.4M</div>
+                <div class="stat-label">عدد السكان</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">360,000</div>
-                <div class="stat-label">وظيفة شاغرة [citation:9]</div>
+                <div class="stat-number">10.5%</div>
+                <div class="stat-label">معدل البطالة</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">48,000</div>
-                <div class="stat-label">تأشيرة موسمية [citation:9]</div>
+                <div class="stat-number">€15,000</div>
+                <div class="stat-label">متوسط الدخل السنوي</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">70,000</div>
-                <div class="stat-label">متوسط راتب تكنولوجيا المعلومات [citation:8]</div>
+                <div class="stat-number">30-90 يوم</div>
+                <div class="stat-label">مدة التأشيرة [citation:6]</div>
             </div>
         </div>
 
-        <!-- مواقع التوظيف الرئيسية (تم التحقق منها) -->
-        <h2 class="section-title">أهم مواقع التوظيف في اليونان</h2>
+        <!-- مواقع التوظيف الرئيسية -->
+        <h2 class="section-title">مواقع توظيف موثوقة</h2>
         <div class="jobs-grid">
-            <a href="https://www.kariera.gr" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <span class="job-site-name">Kariera.gr</span>
-                </div>
-                <div class="job-site-desc">أكبر منصة توظيف في اليونان، تغطي جميع القطاعات والمدن [citation:2].</div>
-                <div class="job-site-link">www.kariera.gr <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://www.skywalker.gr" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <span class="job-site-name">Skywalker.gr</span>
-                </div>
-                <div class="job-site-desc">منصة توظيف يونانية رائدة، خاصة للوظائف الإدارية والتقنية [citation:2].</div>
-                <div class="job-site-link">www.skywalker.gr <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
             <a href="https://www.linkedin.com" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
@@ -883,56 +1009,49 @@
                     </div>
                     <span class="job-site-name">LinkedIn</span>
                 </div>
-                <div class="job-site-desc">المنصة الرئيسية للوظائف المهنية، خاصة في قطاعات التكنولوجيا والتمويل.</div>
-                <div class="job-site-link">www.linkedin.com <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">المنصة الأكثر استخداماً للوظائف المهنية في اليونان.</div>
+                <div class="job-site-link">linkedin.com <i class="fas fa-external-link-alt"></i></div>
             </a>
-
-            <a href="https://gr.indeed.com" target="_blank" class="job-site-card">
+            <a href="https://www.kariera.gr" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <span class="job-site-name">Kariera.gr</span>
+                </div>
+                <div class="job-site-desc">أكبر موقع توظيف يوناني، آلاف الوظائف في جميع القطاعات.</div>
+                <div class="job-site-link">kariera.gr <i class="fas fa-external-link-alt"></i></div>
+            </a>
+            <a href="https://www.skywalker.gr" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <span class="job-site-name">Skywalker.gr</span>
+                </div>
+                <div class="job-site-desc">منصة توظيف شعبية، تغطي جميع القطاعات والمناطق.</div>
+                <div class="job-site-link">skywalker.gr <i class="fas fa-external-link-alt"></i></div>
+            </a>
+            <a href="https://www.indeed.gr" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
                         <i class="fas fa-search"></i>
                     </div>
                     <span class="job-site-name">Indeed Greece</span>
                 </div>
-                <div class="job-site-desc">محرك بحث وظائف عالمي بتغطية واسعة للسوق اليوناني.</div>
-                <div class="job-site-link">gr.indeed.com <i class="fas fa-external-link-alt"></i></div>
-            </a>
-        </div>
-
-        <!-- المواقع الحكومية والرسمية -->
-        <h2 class="section-title">المواقع الحكومية والرسمية</h2>
-        <div class="jobs-grid">
-            <a href="https://www.migration.gov.gr" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-passport"></i>
-                    </div>
-                    <span class="job-site-name">Ministry of Migration and Asylum</span>
-                </div>
-                <div class="job-site-desc">وزارة الهجرة واللجوء – المعلومات الرسمية عن تصاريح العمل والإقامة [citation:6].</div>
-                <div class="job-site-link">www.migration.gov.gr <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://www.oaed.gr" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <span class="job-site-name">OAED (خدمة التوظيف العامة)</span>
-                </div>
-                <div class="job-site-desc">مصلحة التوظيف اليونانية، إحصاءات سوق العمل والوظائف الحكومية [citation:10].</div>
-                <div class="job-site-link">www.oaed.gr <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">محرك بحث عالمي للوظائف، يضم آلاف الإعلانات اليونانية.</div>
+                <div class="job-site-link">indeed.gr <i class="fas fa-external-link-alt"></i></div>
             </a>
         </div>
 
         <!-- خدماتنا -->
         <div class="services-section">
-            <h3 style="font-size: 1.5rem; margin-bottom: 20px;">تحتاج مساعدة في التقديم؟</h3>
-            <p style="margin-bottom: 30px;">نقدم لك خدمات احترافية بأسعار رمزية لزيادة فرص قبولك</p>
+            <h3 style="font-size: 1.3rem; margin-bottom: 15px;">خدماتنا الاحترافية</h3>
+            <p style="margin-bottom: 20px;">نساعدك في تحسين فرصك للحصول على وظيفة في اليونان</p>
             <div class="services-buttons">
-                <a href="services.html" class="service-btn">تصميم السيرة الذاتية ($9)</a>
-                <a href="services.html" class="service-btn">كتابة خطاب تقديم ($7)</a>
-                <a href="services.html" class="service-btn">تسجيل في مواقع التوظيف ($10)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-file-alt"></i> سيرة ذاتية ($9)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-envelope"></i> خطاب تقديم ($7)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-user-plus"></i> تسجيل بالمنصات ($10)</a>
             </div>
         </div>
     </div>
@@ -943,20 +1062,16 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>وظائف حول العالم</h4>
-                    <p>منصتك الموثوقة للبحث عن فرص عمل في مختلف دول العالم</p>
+                    <p>منصتك الموثوقة للبحث عن فرص عمل في 49 دولة حول العالم</p>
                 </div>
-                
                 <div class="footer-section">
                     <h4>روابط سريعة</h4>
                     <ul>
                         <li><a href="index.html">الرئيسية</a></li>
                         <li><a href="#">الدول</a></li>
                         <li><a href="services.html">الخدمات</a></li>
-                        <li><a href="about.html">من نحن</a></li>
-                        <li><a href="contact.html">اتصل بنا</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
                     <h4>سياسة الموقع</h4>
                     <ul>
@@ -964,8 +1079,6 @@
                         <li><a href="terms.html">اتفاقية الاستخدام</a></li>
                     </ul>
                 </div>
-
-                <!-- صفحة فيسبوك -->
                 <div class="footer-section">
                     <h4>تابعنا</h4>
                     <div class="social-links">
@@ -973,7 +1086,6 @@
                     </div>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة</p>
             </div>
