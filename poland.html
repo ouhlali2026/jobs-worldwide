@@ -2,10 +2,10 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فرص عمل في بولندا 2026 | المهن المطلوبة والرواتب والتأشيرات</title>
-    <meta name="description" content="دليلك الشامل للعمل في بولندا 2026: أحدث تحديثات الحد الأدنى للأجور (4,806 زلوتي)، قائمة المهن المطلوبة (329 مهنة)، رواتب تفصيلية حسب المهنة والمدينة، إجراءات التأشيرات الرقمية الجديدة، ونصائح للباحثين عن عمل.">
-    <meta name="keywords" content="فرص عمل في بولندا, وظائف بولندا 2026, تأشيرة عمل بولندا, المهن المطلوبة في بولندا, الرواتب في وارسو, العمل في أوروبا, البطاقة الزرقاء بولندا, سوق العمل البولندي">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>فرص عمل في بولندا 2026 | المهن المطلوبة والتأشيرات والرواتب في وارسو</title>
+    <meta name="description" content="دليلك الشامل للعمل في بولندا 2026: أحدث تغييرات الرواتب (4,806 زلوتي حد أدنى)، المهن الأكثر طلباً (تكنولوجيا، لوجستيات، رعاية صحية)، إجراءات تأشيرات العمل الجديدة، ونصائح للباحثين عن عمل.">
+    <meta name="keywords" content="فرص عمل في بولندا, وظائف بولندا 2026, تصريح عمل بولندا, البطاقة الزرقاء بولندا, العمل في وارسو, المهن المطلوبة في بولندا, رواتب المهندسين في بولندا, الهجرة إلى بولندا">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,59 +19,88 @@
     <link rel="stylesheet" href="style.css">
     
     <style>
-        /* تنسيقات خاصة بصفحة بولندا */
+        /* تنسيقات خاصة بصفحة بولندا - مستوحاة من ألوان العلم 🇵🇱 */
+        :root {
+            --poland-white: #FFFFFF;
+            --poland-red: #DC143C;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        
         .country-header {
-            background: linear-gradient(135deg, #DC143C, #FFFFFF);
-            color: white;
-            padding: 60px 0;
+            background: linear-gradient(135deg, var(--poland-white), var(--poland-red));
+            color: #1e293b;
+            padding: clamp(20px, 5vw, 35px) 15px;
             text-align: center;
             position: relative;
             overflow: hidden;
         }
         
         .country-header h1 {
-            font-size: 2.5rem;
+            font-size: clamp(1.6rem, 5vw, 2rem);
             margin-bottom: 10px;
             position: relative;
             color: #1e293b;
             background: rgba(255,255,255,0.9);
             display: inline-block;
-            padding: 10px 30px;
+            padding: 8px 20px;
             border-radius: 50px;
+            font-weight: 700;
+            word-break: break-word;
+            max-width: 95%;
         }
         
         .country-header p {
-            font-size: 1.1rem;
+            font-size: clamp(0.85rem, 3vw, 1rem);
             opacity: 0.95;
             position: relative;
             color: #1e293b;
             background: rgba(255,255,255,0.8);
             display: inline-block;
-            padding: 5px 20px;
+            padding: 5px 15px;
             border-radius: 30px;
+            max-width: 90%;
+            margin: 10px auto;
         }
         
         .country-info {
             display: flex;
             justify-content: center;
-            gap: 30px;
-            margin: 30px 0;
+            gap: clamp(10px, 2vw, 15px);
+            margin: 20px 5px;
             flex-wrap: wrap;
         }
         
         .info-badge {
             background: white;
-            color: #DC143C;
-            padding: 10px 25px;
+            color: var(--poland-red);
+            padding: 8px 18px;
             border-radius: 50px;
             font-weight: 600;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            font-size: clamp(0.75rem, 2.5vw, 0.9rem);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .info-badge i {
+            font-size: 1rem;
         }
         
         .section-title {
-            font-size: 1.8rem;
+            font-size: clamp(1.3rem, 4vw, 1.5rem);
             color: #1e293b;
-            margin: 40px 0 20px;
+            margin: 25px 0 15px;
             position: relative;
             padding-right: 15px;
         }
@@ -83,21 +112,131 @@
             top: 0;
             bottom: 0;
             width: 5px;
-            background: #DC143C;
+            background: var(--poland-red);
             border-radius: 5px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        
+        /* تحسينات الجوال - دقيقة جداً */
+        @media (max-width: 768px) {
+            .country-header h1 {
+                font-size: 1.6rem;
+                padding: 8px 12px;
+            }
+            
+            .country-header p {
+                font-size: 0.9rem;
+                padding: 5px 10px;
+            }
+            
+            .section-title {
+                font-size: 1.3rem;
+            }
+            
+            .info-badge {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+            
+            .jobs-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .visa-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+            
+            .jobs-table {
+                font-size: 0.85rem;
+            }
+            
+            .jobs-table th, .jobs-table td {
+                padding: 8px 5px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .country-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .info-badge {
+                width: fit-content;
+            }
+            
+            .country-header {
+                padding: 20px 10px;
+            }
+            
+            .back-link {
+                margin: 10px 0;
+                padding: 5px 10px;
+            }
+            
+            .visa-box, .requirements-box {
+                padding: 15px 10px;
+            }
+            
+            .jobs-table th, .jobs-table td {
+                padding: 6px 3px;
+                font-size: 0.75rem;
+            }
+            
+            .skill-tag {
+                padding: 3px 8px;
+                font-size: 0.7rem;
+                margin: 2px;
+            }
+            
+            .service-btn {
+                padding: 8px 15px;
+                font-size: 0.85rem;
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .stat-number {
+                font-size: 1.1rem;
+            }
+            
+            .stat-label {
+                font-size: 0.7rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
         }
         
         .jobs-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
         }
         
         .job-site-card {
             background: white;
             border-radius: 12px;
-            padding: 25px;
+            padding: 18px;
             border: 1px solid #e2e8f0;
             transition: all 0.3s ease;
             text-decoration: none;
@@ -107,125 +246,135 @@
         
         .job-site-card:hover {
             transform: translateY(-5px);
-            border-color: #DC143C;
+            border-color: var(--poland-red);
             box-shadow: 0 10px 25px rgba(220,20,60,0.1);
         }
         
         .job-site-header {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
+            gap: 12px;
+            margin-bottom: 10px;
         }
         
         .job-site-icon {
-            width: 50px;
-            height: 50px;
-            background: #ffe6e6;
+            width: 40px;
+            height: 40px;
+            background: #ffe0e0;
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-shrink: 0;
         }
         
         .job-site-icon i {
-            font-size: 1.8rem;
-            color: #DC143C;
+            font-size: 1.5rem;
+            color: var(--poland-red);
         }
         
         .job-site-name {
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 600;
             color: #1e293b;
+            word-break: break-word;
         }
         
         .job-site-desc {
             color: #64748b;
-            font-size: 0.95rem;
-            margin-bottom: 15px;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            line-height: 1.5;
         }
         
         .job-site-link {
             display: inline-flex;
             align-items: center;
             gap: 5px;
-            color: #DC143C;
-            font-size: 0.95rem;
+            color: var(--poland-red);
+            font-size: 0.85rem;
+            word-break: break-word;
         }
         
         .visa-box {
             background: #f8fafc;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 30px 0;
-            border: 2px dashed #DC143C;
+            border-radius: 16px;
+            padding: 20px 15px;
+            margin: 20px 0;
+            border: 2px dashed var(--poland-red);
         }
         
         .visa-box h3 {
             color: #1e293b;
-            font-size: 1.3rem;
+            font-size: clamp(1.1rem, 3vw, 1.2rem);
             margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
         
         .visa-box i {
-            color: #DC143C;
+            color: var(--poland-red);
             font-size: 1.2rem;
+            flex-shrink: 0;
         }
         
         .visa-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
         }
         
         .visa-type {
             background: white;
-            padding: 20px;
-            border-radius: 8px;
+            padding: 15px;
+            border-radius: 12px;
             border: 1px solid #e2e8f0;
         }
         
         .visa-type h4 {
-            color: #DC143C;
-            margin-bottom: 5px;
+            color: var(--poland-red);
+            margin-bottom: 8px;
+            font-size: 1rem;
         }
         
-        .visa-type .price {
-            font-weight: 600;
-            color: #1e293b;
-            margin-top: 10px;
-        }
-        
-        .visa-type .fee {
+        .visa-type p {
             font-size: 0.9rem;
-            color: #64748b;
-            margin-top: 5px;
+            color: #334155;
+            line-height: 1.5;
         }
         
         .table-container {
             overflow-x: auto;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            -webkit-overflow-scrolling: touch;
         }
         
         .jobs-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
             background: white;
-            border-radius: 8px;
+            border-radius: 12px;
             overflow: hidden;
+            min-width: 550px;
         }
         
         .jobs-table th {
-            background: #DC143C;
+            background: var(--poland-red);
             color: white;
-            padding: 12px;
+            padding: 10px 8px;
             text-align: right;
+            font-weight: 600;
+            font-size: clamp(0.8rem, 2.5vw, 0.9rem);
         }
         
         .jobs-table td {
-            padding: 12px;
+            padding: 8px;
             border-bottom: 1px solid #e2e8f0;
+            font-size: clamp(0.75rem, 2.5vw, 0.85rem);
         }
         
         .jobs-table tr:last-child td {
@@ -233,132 +382,265 @@
         }
         
         .jobs-table tr:hover {
-            background: #fff0f0;
+            background: #ffe0e0;
         }
         
         .requirements-box {
-            background: #f0f8ff;
-            border-right: 4px solid #DC143C;
-            padding: 30px;
-            border-radius: 12px;
-            margin: 30px 0;
+            background: #ffe0e0;
+            border-right: 4px solid var(--poland-red);
+            padding: 20px 15px;
+            border-radius: 16px;
+            margin: 25px 0;
         }
         
         .requirements-box h3 {
             color: #1e293b;
             margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: clamp(1.1rem, 3vw, 1.2rem);
         }
         
         .requirements-list {
             list-style: none;
+            padding: 0;
+            margin: 0;
         }
         
         .requirements-list li {
             margin-bottom: 10px;
             display: flex;
-            align-items: center;
-            gap: 10px;
+            align-items: flex-start;
+            gap: 8px;
+            line-height: 1.5;
+            font-size: clamp(0.8rem, 2.5vw, 0.9rem);
         }
         
         .requirements-list i {
-            color: #DC143C;
+            color: var(--poland-red);
+            margin-top: 3px;
+            min-width: 16px;
         }
         
         .back-link {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            color: #DC143C;
+            color: var(--poland-red);
             text-decoration: none;
-            margin: 20px 0;
+            margin: 15px 0;
             font-weight: 500;
+            padding: 6px 12px;
+            background: #ffe0e0;
+            border-radius: 30px;
+            font-size: 0.9rem;
         }
         
         .back-link:hover {
-            color: #333;
+            background: #ffc0c0;
         }
         
         .flag-icon {
-            font-size: 3rem;
-            color: #DC143C;
-            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: var(--poland-red);
+            margin-bottom: 10px;
             filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
         }
         
         .skill-tag {
             display: inline-block;
             background: white;
-            color: #DC143C;
-            padding: 5px 12px;
-            border-radius: 20px;
+            color: var(--poland-red);
+            padding: 4px 10px;
+            border-radius: 30px;
             margin: 3px;
-            font-size: 0.85rem;
-            border: 1px solid #DC143C;
+            font-size: clamp(0.7rem, 2vw, 0.8rem);
+            border: 1px solid var(--poland-red);
+            transition: all 0.2s;
+        }
+        
+        .skill-tag:hover {
+            background: var(--poland-red);
+            color: white;
         }
         
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin: 15px 0;
         }
         
         .stat-card {
             background: white;
-            padding: 20px;
-            border-radius: 12px;
+            padding: 15px 8px;
+            border-radius: 16px;
             text-align: center;
             border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 8px rgba(220,20,60,0.05);
         }
         
         .stat-number {
-            font-size: 1.8rem;
+            font-size: clamp(1.2rem, 3vw, 1.3rem);
             font-weight: 700;
-            color: #DC143C;
+            color: var(--poland-red);
+            line-height: 1.2;
         }
         
         .stat-label {
             color: #64748b;
-            font-size: 0.9rem;
+            font-size: clamp(0.7rem, 2vw, 0.8rem);
+            margin-top: 5px;
         }
         
         .services-section {
-            background: #f8fafc;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 40px 0;
+            background: #ffe0e0;
+            border-radius: 24px;
+            padding: 25px 15px;
+            margin: 30px 0;
             text-align: center;
         }
         
         .services-buttons {
             display: flex;
-            gap: 20px;
+            gap: 10px;
             justify-content: center;
             flex-wrap: wrap;
             margin-top: 20px;
         }
         
         .service-btn {
-            background: #DC143C;
+            background: var(--poland-red);
             color: white;
-            padding: 12px 30px;
-            border-radius: 8px;
+            padding: 10px 20px;
+            border-radius: 50px;
             text-decoration: none;
             transition: background 0.3s;
+            font-weight: 500;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
         }
         
         .service-btn:hover {
-            background: #333;
+            background: #a50d2e;
         }
         
         @media (max-width: 768px) {
-            .country-header h1 {
-                font-size: 2rem;
-            }
-            
             .services-buttons {
                 flex-direction: column;
             }
+        }
+        
+        ul, ol {
+            padding-right: 20px;
+        }
+        
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 10px 0;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--poland-red);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 500;
+            padding: 5px 0;
+        }
+        
+        .nav-links a.active {
+            color: var(--poland-red);
+            border-bottom: 2px solid var(--poland-red);
+        }
+        
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+            }
+            
+            .nav-links {
+                justify-content: center;
+            }
+        }
+        
+        footer {
+            background: #1e293b;
+            color: white;
+            padding: 30px 0 15px;
+            margin-top: 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section li {
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+        
+        .footer-section a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin-left: 8px;
+            color: white;
+            font-size: 1rem;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 15px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.8rem;
         }
     </style>
 </head>
@@ -387,12 +669,12 @@
     <section class="country-header">
         <div class="container">
             <i class="fas fa-flag flag-icon"></i>
-            <h1>فرص عمل في بولندا 2026</h1>
-            <p>الدليل الكامل للعمل في وارسو، كراكوف، فروتسواف وجميع المدن البولندية</p>
+            <h1>🇵🇱 فرص عمل في بولندا 2026 🇵🇱</h1>
+            <p>الدليل الكامل للعمل في وارسو، كراكوف، فروتسواف، غدانسك وجميع المدن البولندية</p>
             
             <div class="country-info">
-                <span class="info-badge"><i class="fas fa-briefcase"></i> 329 مهنة مطلوبة</span>
-                <span class="info-badge"><i class="fas fa-language"></i> بولندي / إنجليزي</span>
+                <span class="info-badge"><i class="fas fa-microchip"></i> تكنولوجيا</span>
+                <span class="info-badge"><i class="fas fa-language"></i> البولندية / الإنجليزية</span>
                 <span class="info-badge"><i class="fas fa-money-bill-wave"></i> زلوتي بولندي (PLN)</span>
             </div>
         </div>
@@ -403,394 +685,302 @@
             <i class="fas fa-arrow-right"></i> العودة للصفحة الرئيسية
         </a>
 
-        <!-- لمحة عامة عن سوق العمل البولندي 2026 -->
-        <div class="requirements-box">
-            <h3><i class="fas fa-chart-line"></i> نظرة على سوق العمل البولندي في 2026</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
-                <div><strong>معدل البطالة:</strong> 3% (منخفض جداً) </div>
-                <div><strong>نقص العمالة:</strong> 329 مهنة تعاني نقصاً حاداً </div>
-                <div><strong>الحد الأدنى للأجور 2026:</strong> 4,806 زلوتي شهرياً (من 1 يناير) </div>
-                <div><strong>الأجر بالساعة:</strong> 31.40 زلوتي </div>
-                <div><strong>متوسط الراتب:</strong> 7,590 زلوتي شهرياً </div>
-            </div>
-            <p style="margin-top: 15px;">يواجه سوق العمل البولندي أزمة ديموغرافية حادة، حيث يتجاوز عدد المتقاعدين عدد الداخلين الجدد إلى سوق العمل بـ 100,000 شخص سنوياً [citation:2]. مع معدل بطالة لا يتجاوز 3%، استنفدت بولندا احتياطياتها المحلية من العمالة. استجابة لهذه الأزمة، أعلنت وزارة الأسرة والعمل والسياسة الاجتماعية عن قائمة تضم 329 مهنة في 37 مجموعة مهنية تعاني نقصاً حاداً في العمالة، مع خطط لتسهيل استقدام العمالة الأجنبية عبر "مسار الأولوية" الذي يلغي اختبار سوق العمل ويسرع إجراءات التأشيرات [citation:2][citation:6].</p>
-        </div>
-
-        <!-- المهن الأكثر طلباً في بولندا 2026 (القائمة الرسمية) -->
+        <!-- لمحة عامة عن سوق العمل البولندي -->
         <div class="visa-box">
-            <h3><i class="fas fa-list"></i> قائمة المهن المطلوبة رسمياً – 329 مهنة في 37 مجموعة</h3>
-            <p>أصدرت وزارة الأسرة والعمل والسياسة الاجتماعية البولندية (MRPiPS) قائمة بالمهن التي تعاني نقصاً حاداً في العمالة، مع إطلاق "مسار الأولوية" الذي يلغي اختبار سوق العمل ويسرع إجراءات التأشيرات للعاملين في هذه المهن [citation:2][citation:6].</p>
-            
-            <div style="margin: 20px 0;">
-                <div style="background: #DC143C; color: white; padding: 10px; border-radius: 8px 8px 0 0; font-weight: bold;">قطاع البناء والبنية التحتية</div>
-                <div style="background: white; padding: 15px; border: 1px solid #e2e8f0; border-radius: 0 0 8px 8px;">
-                    عمال الخرسانة والحدادة، عمال الطوب والجص، عمال تركيب العوازل، النجارون والبناؤون، عمال التشطيب، عمال الأسقف والصفائح المعدنية [citation:2]
-                </div>
-            </div>
-            
-            <div style="margin: 20px 0;">
-                <div style="background: #DC143C; color: white; padding: 10px; border-radius: 8px 8px 0 0; font-weight: bold;">قطاع النقل واللوجستيات</div>
-                <div style="background: white; padding: 15px; border: 1px solid #e2e8f0; border-radius: 0 0 8px 8px;">
-                    سائقو الشاحنات الثقيلة، سائقو الحافلات، سائقو الجرارات [citation:2]
-                </div>
-            </div>
-            
-            <div style="margin: 20px 0;">
-                <div style="background: #DC143C; color: white; padding: 10px; border-radius: 8px 8px 0 0; font-weight: bold;">القطاع الصحي والرعاية</div>
-                <div style="background: white; padding: 15px; border: 1px solid #e2e8f0; border-radius: 0 0 8px 8px;">
-                    الأطباء، الممرضات والقابلات، أخصائيو العلاج الطبيعي، معالجو التدليك، مقدمو الرعاية للمسنين، معالجو ذوي الاحتياجات الخاصة، علماء النفس والمعالجون [citation:2]
-                </div>
-            </div>
-            
-            <div style="margin: 20px 0;">
-                <div style="background: #DC143C; color: white; padding: 10px; border-radius: 8px 8px 0 0; font-weight: bold;">قطاع الصناعة والتكنولوجيا</div>
-                <div style="background: white; padding: 15px; border: 1px solid #e2e8f0; border-radius: 0 0 8px 8px;">
-                    مشغلو آلات التشغيل، الحدادون واللحامون، كهربائيون وفنيو الطاقة، فنيو النفايات، مركبوا العوازل، أخصائيو الأتمتة والروبوتات [citation:2]
-                </div>
-            </div>
-            
-            <div style="margin: 20px 0;">
-                <div style="background: #DC143C; color: white; padding: 10px; border-radius: 8px 8px 0 0; font-weight: bold;">قطاع التعليم</div>
-                <div style="background: white; padding: 15px; border: 1px solid #e2e8f0; border-radius: 0 0 8px 8px;">
-                    معلمو المواد المهنية، معلمو التدريب العملي، معلمو التعليم العام [citation:2]
-                </div>
-            </div>
-            
-            <p style="margin-top: 15px;"><strong>المسار السريع للعمالة الأجنبية:</strong> بالنسبة لهذه المهن، تم إلغاء اختبار سوق العمل (الحصول على معلومات من المحافظة)، وسيتم معالجة طلبات التأشيرات وتصاريح العمل بشكل تفضيلي من قبل المحافظين والقناصل [citation:2].</p>
+            <h3><i class="fas fa-chart-line"></i> نظرة على سوق العمل في بولندا 2026</h3>
+            <p>بولندا هي سادس أكبر اقتصاد في الاتحاد الأوروبي، وتتمتع بنمو اقتصادي مطرد وموقع استراتيجي في قلب أوروبا. سوق العمل البولندي يشهد تحولاً كبيراً، مع زيادة الطلب على العمالة الماهرة في قطاعات متعددة مثل تكنولوجيا المعلومات والهندسة واللوجستيات والرعاية الصحية. وفقاً لتقرير Hays Poland 2026، 84% من الشركات تخطط للتوظيف هذا العام، مع تركيز متزايد على المهارات التقنية والتحليلية [citation:8].</p>
+            <p>مع ارتفاع الحد الأدنى للأجور إلى 4,806 زلوتي شهرياً اعتباراً من يناير 2026، أصبحت بولندا أكثر جاذبية للعمالة الأجنبية، خاصة مع تسهيلات جديدة في إجراءات البطاقة الزرقاء وإلغاء اختبار سوق العمل للكفاءات العالية [citation:1][citation:7]. الاقتصاد البولندي مدعوم بقطاعات قوية مثل صناعة السيارات، وتكنولوجيا المعلومات، والخدمات المشتركة، واللوجستيات التي تشهد نمواً متسارعاً بفضل موقع بولندا كمركز توزيع رئيسي لأوروبا [citation:6].</p>
         </div>
 
-        <!-- الرواتب المحدثة 2026 حسب المهنة -->
-        <h2 class="section-title">الرواتب المحدثة حسب المهنة 2026 (زلوتي شهرياً)</h2>
+        <!-- المهن الأكثر طلباً والرواتب في بولندا 2026 -->
+        <h2 class="section-title">المهن الأكثر طلباً والرواتب في بولندا 2026</h2>
         
         <div class="table-container">
             <table class="jobs-table">
                 <tr>
-                    <th>المهنة</th>
-                    <th>الراتب التقديري (زلوتي)</th>
-                    <th>المعادل بالدولار</th>
+                    <th>القطاع</th>
+                    <th>المهن المطلوبة</th>
+                    <th>مبتدئ (PLN)</th>
+                    <th>متوسط (PLN)</th>
+                    <th>متقدم (PLN)</th>
                 </tr>
                 <tr>
-                    <td>مطور برمجيات (Programmer)</td>
+                    <td>تكنولوجيا المعلومات</td>
+                    <td>مهندسو برمجيات (Java, Python, JavaScript)، مهندسو أمن سيبراني، علماء بيانات ومتخصصو ذكاء اصطناعي، مهندسو DevOps، مطورو تطبيقات </td>
+                    <td>9,000 – 12,000</td>
                     <td>12,000 – 18,000</td>
-                    <td>2,800 – 4,200 $</td>
+                    <td>18,000 – 25,000+</td>
                 </tr>
                 <tr>
-                    <td>مختبر برمجيات ومحلل أنظمة (Tester & Analyst)</td>
-                    <td>8,000 – 12,000</td>
-                    <td>1,860 – 2,800 $</td>
+                    <td>الهندسة والصناعة</td>
+                    <td>مهندسو ميكانيكا، كهرباء، مهندسو سيارات، مهندسو مشاريع، فنيو صيانة، مشرفو إنتاج </td>
+                    <td>7,500 – 10,000</td>
+                    <td>10,000 – 15,000</td>
+                    <td>15,000 – 22,000+</td>
                 </tr>
                 <tr>
-                    <td>مطور تطبيقات (Software Developer)</td>
-                    <td>22,500</td>
-                    <td>5,230 $</td>
+                    <td>اللوجستيات وسلسلة التوريد</td>
+                    <td>مدراء لوجستيات، مخططو شحن، متخصصو مشتريات، منسقو نقل، مشغلو مستودعات </td>
+                    <td>6,500 – 9,000</td>
+                    <td>9,000 – 14,000</td>
+                    <td>14,000 – 20,000+</td>
                 </tr>
                 <tr>
-                    <td>عالم بيانات (Data Scientist)</td>
-                    <td>24,350</td>
-                    <td>5,660 $</td>
+                    <td>الخدمات المالية والمشتركة</td>
+                    <td>محللون ماليون، محاسبون، متخصصو موارد بشرية، مدراء مشاريع، متخصصو الامتثال </td>
+                    <td>7,000 – 10,000</td>
+                    <td>10,000 – 15,000</td>
+                    <td>15,000 – 22,000+</td>
                 </tr>
                 <tr>
-                    <td>مهندس ميكانيكا/كهرباء</td>
-                    <td>8,333 – 12,500</td>
-                    <td>1,940 – 2,900 $</td>
+                    <td>الرعاية الصحية</td>
+                    <td>أطباء (جميع التخصصات)، ممرضون، صيادلة، أخصائيو علاج طبيعي، مسنون </td>
+                    <td>6,500 – 9,500</td>
+                    <td>9,500 – 15,000</td>
+                    <td>15,000 – 25,000+</td>
                 </tr>
                 <tr>
-                    <td>محلل مالي</td>
-                    <td>5,833 – 10,833</td>
-                    <td>1,360 – 2,520 $</td>
-                </tr>
-                <tr>
-                    <td>مدير موارد بشرية</td>
-                    <td>6,667 – 12,500</td>
-                    <td>1,550 – 2,900 $</td>
-                </tr>
-                <tr>
-                    <td>عامل بناء (Konstrukcje)</td>
-                    <td>5,000 – 8,333</td>
-                    <td>1,160 – 1,940 $</td>
-                </tr>
-                <tr>
-                    <td>عامل نظافة</td>
-                    <td>3,800 – 4,500</td>
-                    <td>880 – 1,050 $</td>
-                </tr>
-                <tr>
-                    <td>سائق/مندوب توصيل</td>
-                    <td>5,000 – 6,500</td>
-                    <td>1,160 – 1,510 $</td>
-                </tr>
-                <tr>
-                    <td>عامل تخزين وتجهيز طلبات</td>
-                    <td>4,500 – 5,500</td>
-                    <td>1,050 – 1,280 $</td>
-                </tr>
-                <tr>
-                    <td>عامل مطعم وكاشير</td>
-                    <td>4,000 – 5,000</td>
-                    <td>930 – 1,160 $</td>
-                </tr>
-                <tr>
-                    <td>عامل رعاية صحية</td>
-                    <td>6,000 – 7,000</td>
-                    <td>1,400 – 1,630 $</td>
-                </tr>
-                <tr>
-                    <td>مدرس</td>
-                    <td>5,000 – 6,500</td>
-                    <td>1,160 – 1,510 $</td>
+                    <td>البناء والتشييد</td>
+                    <td>مهندسو مدني، معماريون، كهربائيون، سباكون، نجارون، مشرفو مواقع </td>
+                    <td>6,000 – 8,500</td>
+                    <td>8,500 – 13,000</td>
+                    <td>13,000 – 18,000+</td>
                 </tr>
             </table>
-            <p style="margin-top: 5px;">المصدر: [citation:3]</p>
+            <p style="margin-top: 5px;">المصادر: Hays Poland Salary Guide 2026 [citation:8], Rivermate [citation:4], بيانات سوق العمل البولندي.</p>
         </div>
 
-        <!-- متوسط الرواتب حسب المدينة -->
-        <h2 class="section-title">متوسط الرواتب في كبرى المدن البولندية 2026</h2>
-        
-        <div class="table-container">
-            <table class="jobs-table">
-                <tr>
-                    <th>المدينة</th>
-                    <th>متوسط الراتب الشهري (زلوتي)</th>
-                    <th>المعادل بالدولار</th>
-                </tr>
-                <tr>
-                    <td>وارسو (Warsaw)</td>
-                    <td>8,550</td>
-                    <td>1,990 $</td>
-                </tr>
-                <tr>
-                    <td>كراكوف (Kraków)</td>
-                    <td>8,320</td>
-                    <td>1,935 $</td>
-                </tr>
-                <tr>
-                    <td>فروتسواف (Wrocław)</td>
-                    <td>8,090</td>
-                    <td>1,880 $</td>
-                </tr>
-                <tr>
-                    <td>غدانسك (Gdańsk)</td>
-                    <td>6,920</td>
-                    <td>1,610 $</td>
-                </tr>
-                <tr>
-                    <td>كاتوفيتسه (Katowice)</td>
-                    <td>6,310</td>
-                    <td>1,470 $</td>
-                </tr>
-                <tr>
-                    <td>لوبلين (Lublin)</td>
-                    <td>6,510</td>
-                    <td>1,515 $</td>
-                </tr>
-            </table>
-            <p style="margin-top: 5px;">المصدر: [citation:3]</p>
-        </div>
-
-        <!-- عتبات الرواتب لأنواع تصاريح العمل المختلفة -->
+        <!-- تحديثات الرواتب والحد الأدنى للأجور 2026 -->
         <div class="visa-box">
-            <h3><i class="fas fa-euro-sign"></i> عتبات الرواتب حسب نوع تصريح العمل 2026</h3>
+            <h3><i class="fas fa-coins"></i> تحديثات الرواتب والحد الأدنى للأجور 2026</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">4,806</div>
+                    <div class="stat-label">الحد الأدنى الشهري (PLN) </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">13,355</div>
+                    <div class="stat-label">البطاقة الزرقاء (شهرياً) </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5,926</div>
+                    <div class="stat-label">حد ICT في وارسو </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">28.5%</div>
+                    <div class="stat-label">مساهمات ZUS </div>
+                </div>
+            </div>
+            <p style="margin-top: 15px;">اعتباراً من 1 يناير 2026، تم رفع الحد الأدنى للأجور في بولندا إلى <strong>4,806 زلوتي شهرياً</strong> (31.40 زلوتي للساعة) [citation:1][citation:9]. هذا المبلغ يطبق على جميع تصاريح العمل العادية والتصاريح الموحدة (Single Permit). يجب أن تدفع الرواتب بالزلوتي عبر نظام الرواتب البولندي، ولا تشمل البدلات أو المزايا العينية في حساب الحد الأدنى [citation:10].</p>
+            <p><strong>البطاقة الزرقاء للاتحاد الأوروبي:</strong> تم رفع الحد الأدنى إلى 13,355 زلوتي شهرياً اعتباراً من فبراير 2026، مع إلغاء اختبار سوق العمل وتقليل مدة العقد الدنيا إلى 6 أشهر [citation:7].</p>
+            <p><strong>تصاريح نقل العمالة داخل الشركة (ICT):</strong> رواتب محددة حسب المدينة: وارسو 5,926 زلوتي، كراكوف 5,084 زلوتي، فروتسواف 5,210 زلوتي [citation:1][citation:9].</p>
+        </div>
+
+        <!-- تكلفة المعيشة -->
+        <div class="requirements-box">
+            <h3><i class="fas fa-home"></i> تكلفة المعيشة في المدن الرئيسية</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;">
+                <div><strong>وارسو:</strong> 4,500 – 6,500 PLN شهرياً</div>
+                <div><strong>كراكوف:</strong> 4,000 – 5,800 PLN</div>
+                <div><strong>فروتسواف:</strong> 4,000 – 5,800 PLN</div>
+                <div><strong>غدانسك:</strong> 3,800 – 5,500 PLN</div>
+                <div><strong>بوزنان:</strong> 3,500 – 5,000 PLN</div>
+                <div><strong>وودج:</strong> 3,200 – 4,500 PLN</div>
+            </div>
+            <p style="margin-top: 10px;">الإيجار هو أكبر تكلفة: شقة بغرفة نوم واحدة في وسط وارسو تتراوح بين 2,500 و 3,500 زلوتي شهرياً. السكن المشترك (مشاركة الشقة) خيار شائع لتوفير النفقات. الغذاء والمواصلات أقل تكلفة من غرب أوروبا، مما يجعل بولندا وجهة جذابة من حيث القوة الشرائية [citation:3].</p>
+        </div>
+
+        <!-- أنواع تصاريح العمل -->
+        <h2 class="section-title">تصاريح العمل في بولندا 2026</h2>
+        <div class="visa-box">
+            <h3><i class="fas fa-passport"></i> أنواع تصاريح العمل الرئيسية</h3>
             
             <div class="visa-grid">
                 <div class="visa-type">
-                    <h4>الحد الأدنى الوطني</h4>
-                    <p>لتصاريح العمل العادية (Type A) والعمالة الأجنبية</p>
-                    <div class="price">4,806 زلوتي شهرياً (من 1 يناير 2026)</div>
-                    <div class="fee">زيادة عن 4,666 في 2025</div>
+                    <h4>تصريح العمل النوع أ (Type A)</h4>
+                    <p>الأكثر شيوعاً، للموظفين الذين يعملون لدى شركة مسجلة في بولندا. يتطلب اختبار سوق العمل (إعلان الوظيفة لمدة 30 يوماً) إلا إذا كانت المهنة ضمن قائمة المهن الناقصة [citation:3]. مدة التصريح تصل إلى 3 سنوات قابلة للتجديد [citation:5].</p>
                 </div>
                 <div class="visa-type">
-                    <h4>عتبة تصريح ICT (النقل داخل الشركة)</h4>
-                    <p>تختلف حسب المدينة (سارية من نوفمبر 2024)</p>
-                    <div class="price">وارسو: 5,927 | كراكوف: 5,084 | فروتسواف: 5,190</div>
+                    <h4>البطاقة الزرقاء للاتحاد الأوروبي (EU Blue Card)</h4>
+                    <p>للكفاءات العالية. مزايا جديدة في 2026: إلغاء اختبار سوق العمل، مدة عقد دنيا 6 أشهر فقط، إمكانية تغيير صاحب العمل بإشعار بسيط، إقامة دائمة بعد 21 شهراً بمستوى B1 بولندي [citation:7].</p>
                 </div>
                 <div class="visa-type">
-                    <h4>البطاقة الزرقاء الأوروبية</h4>
-                    <p>150% من متوسط الراتب الوطني</p>
-                    <div class="price">12,273 زلوتي شهرياً (تقديري لـ 2026)</div>
-                </div>
-            </div>
-            <p style="margin-top: 15px;">المصادر: [citation:1][citation:8]</p>
-        </div>
-
-        <!-- تحديثات الهجرة والتأشيرات 2026 -->
-        <div class="visa-box">
-            <h3><i class="fas fa-passport"></i> تحديثات الهجرة والتأشيرات في بولندا 2026</h3>
-            
-            <h4 style="margin: 20px 0 10px;">تغييرات جوهرية في نظام الهجرة من 1 يونيو 2025:</h4>
-            
-            <div class="visa-grid" style="margin-top: 15px;">
-                <div class="visa-type">
-                    <h4>الإجراءات الرقمية الإلزامية</h4>
-                    <p>جميع إجراءات تصاريح العمل أصبحت عبر الإنترنت حصراً. لن تقبل الطلبات الورقية بعد الآن [citation:4][citation:8].</p>
+                    <h4>تصريح نقل العمالة داخل الشركة (ICT)</h4>
+                    <p>للموظفين المنقولين من شركة أم إلى فرعها في بولندا. رواتب محددة حسب المدينة (انظر أعلاه). مدة التصريح تصل إلى 3 سنوات للمديرين والمتخصصين [citation:1][citation:9].</p>
                 </div>
                 <div class="visa-type">
-                    <h4>إلغاء اختبار سوق العمل</h4>
-                    <p>تم استبدال اختبار سوق العمل بقوائم المهن المقيدة على مستوى المحافظات، بناءً على معدلات البطالة. للمهن الـ 329 المطلوبة، ألغي الاختبار تماماً [citation:2][citation:8].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>تحديث البطاقة الزرقاء</h4>
-                    <p>مدة العقد المطلوبة للبطاقة الزرقاء خُفضت من 12 إلى 6 أشهر. البطاقة أصبحت أكثر مرونة ولا تحدد صاحب عمل معين [citation:8].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>عقوبات مشددة</h4>
-                    <p>غرامات توظيف العمالة غير القانونية تصل إلى 50,000 زلوتي لكل عامل. يمكن تفتيش الشركات دون إخطار مسبق [citation:8].</p>
+                    <h4>التصريح الموحد (Single Permit)</h4>
+                    <p>يجمع بين تصريح العمل والإقامة. إجراءات موحدة عبر مكتب المحافظة (Voivodeship Office). يشترط عقد عمل لا يقل عن الحد الأدنى للأجور (4,806 زلوتي) [citation:3][citation:5].</p>
                 </div>
             </div>
 
-            <h4 style="margin: 20px 0 10px;">أنواع تصاريح العمل الرئيسية:</h4>
-            <div class="visa-grid">
-                <div class="visa-type">
-                    <h4>النوع A (الأكثر شيوعاً)</h4>
-                    <p>للعاملين لدى صاحب عمل بولندي مسجل. يتطلب عقد عمل (يفضل 6 أشهر على الأقل) واستيفاء عتبة الراتب [citation:4][citation:5].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>النوع B</h4>
-                    <p>لأعضاء مجالس الإدارة في الشركات البولندية الذين يقيمون في بولندا لأكثر من 30 يوماً خلال 12 شهراً [citation:4].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>النوع C</h4>
-                    <p>للعاملين المنتدبين من قبل صاحب عمل أجنبي لتقديم خدمات مؤقتة لعملاء بولنديين [citation:4].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>البطاقة الزرقاء</h4>
-                    <p>للكفاءات العالية مع عقد عمل وشهادة جامعية. توفر مزايا أفضل وإقامة دائمة أسرع [citation:5][citation:8].</p>
-                </div>
-            </div>
+            <h4 style="margin: 15px 0 10px;">تغييرات مهمة في 2026:</h4>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> <strong>تأشيرات الطلاب والشنغن:</strong> اعتباراً من يوليو 2025، لم يعد مسموحاً لحاملي تأشيرات الطلاب أو تأشيرات شنغن من دول أخرى بالتقدم للتصريح الموحد من داخل بولندا. يجب العودة إلى بلد المنشأ والتقديم على تأشيرة وطنية (نوع D) [citation:1].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>اختبار سوق العمل:</strong> ألغي للكفاءات العالية (البطاقة الزرقاء) والمهن الناقصة [citation:7].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>تغيير صاحب العمل:</strong> للبطاقة الزرقاء،只需 إخطار المحافظة خلال 15 يوم عمل [citation:7].</li>
+            </ul>
 
-            <h4 style="margin: 20px 0 10px;">خطوات الحصول على تصريح العمل (Type A):</h4>
-            <ol style="margin-right: 20px; margin-bottom: 20px;">
-                <li><strong>صاحب العمل يتقدم لتصريح العمل:</strong> إلى المحافظة (Voivode Office) المختصة، مع إثبات محاولة التوظيف المحلي (للمهن غير المدرجة في قائمة الأولوية) [citation:5].</li>
-                <li><strong>الحصول على تصريح العمل الأصلي:</strong> بعد الموافقة (1-3 أشهر)، يُصدر التصريح ويرسله صاحب العمل للموظف.</li>
-                <li><strong>التقديم على تأشيرة وطنية (Type D):</strong> في السفارة البولندية في بلد الإقامة، مع تصريح العمل الأصلي، جواز السفر، التأمين الصحي (30,000 يورو)، وإثبات السكن [citation:5].</li>
-                <li><strong>المقابلة والموافقة:</strong> مدة المعالجة 15-30 يوماً. التأشيرة صالحة لمدة تصل إلى سنة.</li>
-                <li><strong>التسجيل بعد الوصول:</strong> خلال 30 يوماً من الوصول، تسجيل العنوان للحصول على رقم PESEL، ثم التقديم على تصريح إقامة مؤقتة (TRC) قبل 45 يوماً من انتهاء التأشيرة [citation:5].</li>
+            <h4 style="margin: 15px 0 10px;">خطوات الحصول على تصريح العمل (النوع أ):</h4>
+            <ol style="margin-right: 20px; margin-bottom: 15px;">
+                <li><strong>الحصول على عرض عمل</strong> من صاحب عمل بولندي مسجل.</li>
+                <li><strong>صاحب العمل يتقدم بطلب تصريح العمل</strong> إلى مكتب المحافظة (Urząd Wojewódzki) المختص [citation:3].</li>
+                <li><strong>اختبار سوق العمل (إن لزم الأمر):</strong> إعلان الوظيفة لمدة 30 يوماً في مكتب العمل المحلي.</li>
+                <li><strong>إصدار تصريح العمل</strong> (يستغرق 1-3 أشهر). يرسل صاحب العمل النسخة الأصلية لك.</li>
+                <li><strong>تقديم طلب التأشيرة الوطنية (نوع D)</strong> في السفارة البولندية في بلدك، مع تصريح العمل الأصلي [citation:3].</li>
+                <li><strong>الدخول إلى بولندا</strong> خلال صلاحية التأشيرة.</li>
+                <li><strong>تسجيل الإقامة</strong> في المكتب المحلي (Urząd Gminy) خلال 30 يوماً للحصول على رقم PESEL [citation:3].</li>
+                <li><strong>التقدم لتصريح الإقامة المؤقتة (TRC)</strong> قبل 45 يوماً من انتهاء التأشيرة [citation:3].</li>
             </ol>
 
-            <h4 style="margin: 20px 0 10px;">المستندات المطلوبة للتأشيرة:</h4>
+            <h4 style="margin: 15px 0 10px;">المستندات الأساسية:</h4>
             <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> جواز سفر ساري المفعول (صلاحية ≥ 3 أشهر بعد انتهاء التأشيرة)</li>
-                <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> نموذج طلب التأشيرة الإلكتروني (مطبوع وموقع)</li>
-                <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> تصريح العمل الأصلي من المحافظة البولندية</li>
-                <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> عقد عمل موقع أو عرض عمل رسمي</li>
-                <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> صورتان شخصيتان حديثتان بخلفية بيضاء</li>
-                <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> تأمين صحي للسفر يغطي منطقة شنغن (30,000 يورو على الأقل)</li>
-                <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> إثبات السكن في بولندا (عقد إيجار، حجز فندق، دعوة)</li>
-                <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> إيصال دفع رسوم التأشيرة</li>
+                <li><i class="fas fa-check-circle"></i> جواز سفر ساري المفعول (صلاحية لا تقل عن 3 أشهر بعد انتهاء التأشيرة)</li>
+                <li><i class="fas fa-check-circle"></i> عقد عمل موقع (باللغة البولندية، أو نسخة ثنائية اللغة) [citation:5]</li>
+                <li><i class="fas fa-check-circle"></i> تصريح العمل الأصلي (من صاحب العمل)</li>
+                <li><i class="fas fa-check-circle"></i> الشهادات العلمية (مترجمة للبولندية ومعتمدة، مع تصديق أبوستيل) [citation:5]</li>
+                <li><i class="fas fa-check-circle"></i> شهادة خلو سوابق (مترجمة ومعتمدة)</li>
+                <li><i class="fas fa-check-circle"></i> تأمين صحي يغطي كامل منطقة شنغن (بحد أدنى 30,000 يورو) [citation:3]</li>
+                <li><i class="fas fa-check-circle"></i> إثبات السكن (عقد إيجار أو حجز فندق)</li>
+                <li><i class="fas fa-check-circle"></i> صور شخصية</li>
+            </ul>
+            
+            <h4 style="margin: 15px 0 10px;">الرسوم التقريبية:</h4>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> رسوم تصريح العمل: 100-440 زلوتي (حسب المدة)</li>
+                <li><i class="fas fa-check-circle"></i> رسوم التأشيرة: 80 يورو</li>
+                <li><i class="fas fa-check-circle"></i> رسوم تصريح الإقامة: 340-640 زلوتي</li>
+                <li><i class="fas fa-check-circle"></i> مدة المعالجة الإجمالية: 2-4 أشهر</li>
             </ul>
         </div>
 
-        <!-- المهارات الأكثر طلباً -->
-        <h2 class="section-title">المهارات الأكثر طلباً في السوق البولندي</h2>
-        <div style="margin: 20px 0;">
-            <span class="skill-tag">المهارات التقنية (IT, برمجة, تحليل بيانات)</span>
-            <span class="skill-tag">اللغة الإنجليزية (مستوى متقدم)</span>
-            <span class="skill-tag">اللغة البولندية (للوظائف المحلية)</span>
+        <!-- المهن الناقصة والمهارات المطلوبة -->
+        <h2 class="section-title">المهن الناقصة والمهارات الأكثر طلباً 2026</h2>
+        <div style="margin: 15px 0;">
+            <span class="skill-tag">البرمجة (Java, Python, JavaScript)</span>
             <span class="skill-tag">الأمن السيبراني</span>
-            <span class="skill-tag">الذكاء الاصطناعي</span>
-            <span class="skill-tag">إدارة المشاريع</span>
-            <span class="skill-tag">المهارات الهندسية</span>
-            <span class="skill-tag">المرونة والتكيف</span>
-            <span class="skill-tag">العمل الجماعي</span>
-            <span class="skill-tag">حل المشكلات</span>
+            <span class="skill-tag">تحليل البيانات / الذكاء الاصطناعي</span>
+            <span class="skill-tag">هندسة الطاقة المتجددة</span>
+            <span class="skill-tag">إدارة سلسلة التوريد</span>
+            <span class="skill-tag">اللغة الإنجليزية (C1)</span>
+            <span class="skill-tag">اللغة البولندية (للوظائف المحلية)</span>
+            <span class="skill-tag">الألمانية / الفرنسية (لخدمة العملاء)</span>
+            <span class="skill-tag">المهارات التقنية والحرفية</span>
+            <span class="skill-tag">الرعاية الصحية والتمريض</span>
+        </div>
+        <p style="margin-top: 5px;">تشهد بولندا طلباً متزايداً على مهندسي الطاقة المتجددة وتحول الطاقة، حيث تستثمر البلاد في تحديث شبكات الكهرباء ومصادر الطاقة النظيفة [citation:2]. قطاع اللوجستيات والتجارة الإلكترونية هو الأسرع نمواً، مع زيادة التوظيف بنسبة 5% في 2025 [citation:6]. المهارات التقنية والحرفية (مثل التركيبات الكهربائية والسباكة) مطلوبة بشدة مع استمرار مشاريع البناء والبنية التحتية [citation:2].</p>
+
+        <!-- نصائح للباحثين عن عمل -->
+        <div class="requirements-box" style="background: #ffe0e0;">
+            <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في بولندا</h3>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> <strong>تعلم البولندية:</strong> رغم أن الإنجليزية تكفي في الشركات الدولية، تعلم أساسيات البولندية (مستوى A2/B1) يزيد فرصك بشكل كبير ويساعدك في الحياة اليومية [citation:5].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استخدم منصات التوظيف المحلية:</strong> Pracuj.pl، JustJoin.it، LinkedIn، GoldenLine، وموقع خدمة التوظيف الحكومية [citation:3][citation:4].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استهدف الشركات الكبرى:</strong> في قطاع التكنولوجيا (CD Projekt، Allegro، Comarch)، الخدمات المشتركة (IBM، Capgemini، Goldman Sachs)، والصناعة (Volkswagen، Mercedes، BSH).</li>
+                <li><i class="fas fa-check-circle"></i> <strong>احصل على الاعتراف بالمؤهلات:</strong> للمهن المنظمة (طب، تمريض، تدريس، هندسة)، تحتاج إلى معادلة رسمية من الجهات البولندية المختصة [citation:5].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>جهز عقودك ثنائية اللغة:</strong> يجب أن تكون عقود العمل باللغة البولندية (أو ثنائية اللغة مع أولوية للنسخة البولندية) [citation:5].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>لا تدفع مقابل عروض العمل:</strong> جميع الخدمات الرسمية تتقاضى رسوماً محددة، والتوظيف مجاني للباحثين عن عمل [citation:3].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>سجل في ZUS فور وصولك:</strong> التأمين الاجتماعي إلزامي (28.5% من الراتب) ويشمل التأمين الصحي والضمان الاجتماعي [citation:5].</li>
+            </ul>
         </div>
 
         <!-- أفضل المدن للعمل -->
         <h2 class="section-title">أفضل المدن للعمل في بولندا</h2>
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-number">وارسو (Warsaw)</div>
-                <div class="stat-label">العاصمة وأكبر سوق عمل. أعلى الرواتب (8,550 زلوتي)، فرص في التمويل، التكنولوجيا، الإدارة، والخدمات الحكومية. من أغلى المدن تكلفة [citation:3].</div>
+                <div class="stat-number">وارسو</div>
+                <div class="stat-label">العاصمة وأكبر سوق عمل. مركز الأعمال، التمويل، التكنولوجيا، والخدمات المشتركة. أعلى الرواتب وأعلى إيجارات.</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">كراكوف (Kraków)</div>
-                <div class="stat-label">مركز تكنولوجي رئيسي ومدينة جامعية عريقة. فرص كبيرة في قطاع تكنولوجيا المعلومات ومراكز الخدمات المشتركة. متوسط الرواتب 8,320 زلوتي [citation:3].</div>
+                <div class="stat-number">كراكوف</div>
+                <div class="stat-label">ثاني أكبر مدينة، مركز تكنولوجيا المعلومات والخدمات المشتركة، صناعة السياحة، تكاليف معيشة أقل من وارسو.</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">فروتسواف (Wrocław)</div>
-                <div class="stat-label">مدينة صناعية وتقنية مزدهرة. فرص في قطاعات التكنولوجيا، الهندسة، والصناعات المتقدمة. متوسط الرواتب 8,090 زلوتي [citation:3].</div>
+                <div class="stat-number">فروتسواف</div>
+                <div class="stat-label">مدينة صناعية وتكنولوجية، استثمارات كبرى (تويوتا، ميرسيدس)، فرص في الهندسة والتصنيع.</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">غدانسك (Gdańsk)</div>
-                <div class="stat-label">مدينة ساحلية على بحر البلطيق، مركز لوجستي وبحري مهم. فرص في الشحن، اللوجستيات، والخدمات. متوسط الرواتب 6,920 زلوتي [citation:3].</div>
+                <div class="stat-number">غدانسك (ساحل البلطيق)</div>
+                <div class="stat-label">مركز اللوجستيات والنقل البحري، صناعة بناء السفن، خدمات مشتركة، طبيعة خلابة.</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">كاتوفيتسه (Katowice)</div>
-                <div class="stat-label">مركز صناعة التعدين والثقيلة في سيليزيا العليا. فرص في الصناعات الثقيلة، الطاقة، والهندسة. متوسط الرواتب 6,310 زلوتي [citation:3].</div>
+                <div class="stat-number">بوزنان</div>
+                <div class="stat-label">مركز صناعي وتجاري، معارض دولية، استثمارات ألمانية كثيفة، فرص في الصناعة والخدمات.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">وودج</div>
+                <div class="stat-label">مدينة ناشئة في قطاع الخدمات المشتركة، تكاليف معيشة منخفضة، فرص متزايدة في قطاع التكنولوجيا.</div>
             </div>
         </div>
 
         <!-- مزايا وتحديات العمل في بولندا -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 40px 0;">
-            <div style="background: white; border-radius: 12px; padding: 25px; border: 1px solid #e2e8f0;">
-                <h3 style="color: #DC143C; margin-bottom: 15px;">✅ مزايا العمل في بولندا</h3>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 30px 0;">
+            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
+                <h3 style="color: var(--poland-red); margin-bottom: 10px;">✅ المزايا</h3>
                 <ul class="requirements-list">
-                    <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> <strong>نقص حاد في العمالة:</strong> 329 مهنة مطلوبة بشدة، مع مسار سريع للعمالة الأجنبية [citation:2].</li>
-                    <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> <strong>تكاليف معيشة منخفضة:</strong> أقل بنسبة كبيرة من دول أوروبا الغربية، مع إمكانية ادخار عالية.</li>
-                    <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> <strong>موقع استراتيجي:</strong> في قلب أوروبا، مع سهولة السفر إلى دول أوروبا الغربية والوسطى.</li>
-                    <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> <strong>اقتصاد قوي ومتنامٍ:</strong> سادس أكبر اقتصاد في الاتحاد الأوروبي، مع استقرار ونمو مستمرين.</li>
-                    <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> <strong>حوافز حكومية:</strong> تقدم الحكومة حوافز مالية للعمال في المهن المطلوبة، بما في ذلك منح تصل إلى 10,000 زلوتي للانتقال [citation:2].</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--poland-red);"></i> <strong>اقتصاد قوي ومتنوع:</strong> سادس أكبر اقتصاد في الاتحاد الأوروبي، فرص متعددة في قطاعات مختلفة.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--poland-red);"></i> <strong>تكاليف معيشة منخفضة:</strong> مقارنة بغرب أوروبا، قوة شرائية جيدة للرواتب [citation:3].</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--poland-red);"></i> <strong>موقع استراتيجي:</strong> قلب أوروبا، سهولة السفر إلى ألمانيا وجمهورية التشيك ودول البلطيق.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--poland-red);"></i> <strong>بيئة آمنة ومستقرة:</strong> من الدول الآمنة في أوروبا، استقرار سياسي واقتصادي.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--poland-red);"></i> <strong>تحديثات قانونية محفزة:</strong> إلغاء اختبار سوق العمل للكفاءات، تسهيل تغيير صاحب العمل [citation:7].</li>
                 </ul>
             </div>
-            <div style="background: white; border-radius: 12px; padding: 25px; border: 1px solid #e2e8f0;">
-                <h3 style="color: #DC143C; margin-bottom: 15px;">⚠️ تحديات للباحثين عن عمل</h3>
+            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
+                <h3 style="color: #e67e22; margin-bottom: 10px;">⚠️ التحديات</h3>
                 <ul class="requirements-list">
-                    <li><i class="fas fa-exclamation-triangle" style="color: #DC143C;"></i> <strong>اللغة البولندية:</strong> أساسية لمعظم الوظائف خارج قطاع التكنولوجيا والشركات الدولية.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #DC143C;"></i> <strong>الإجراءات الرقمية الجديدة:</strong> تطلب فهماً جيداً للنظام الإلكتروني والتقديم الصحيح [citation:4].</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #DC143C;"></i> <strong>عقوبات صارمة:</strong> غرامات تصل إلى 50,000 زلوتي للشركات المخالفة، مما يجعل أصحاب العمل أكثر حذراً [citation:8].</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #DC143C;"></i> <strong>المنافسة:</strong> في المدن الكبرى مثل وارسو وكراكوف، المنافسة على الوظائف التقنية عالية.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #DC143C;"></i> <strong>الشتاء القارس:</strong> درجات حرارة منخفضة جداً في فصل الشتاء، خاصة في شرق البلاد.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>اللغة البولندية:</strong> صعبة التعلم وضرورية للاندماج الكامل والوظائف المحلية.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>البيروقراطية:</strong> إجراءات إدارية معقدة وبطيئة أحياناً، خاصة في مكاتب المحافظات.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>ارتفاع الإيجارات في المدن الكبرى:</strong> خاصة في وارسو وكراكوف [citation:5].</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>الضرائب المرتفعة:</strong> مساهمات ZUS تصل إلى 28.5% [citation:5].</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>المنافسة:</strong> خاصة في قطاع التكنولوجيا والخدمات المشتركة مع تدفق الكفاءات الأجنبية.</li>
                 </ul>
             </div>
         </div>
 
-        <!-- نصائح للباحثين عن عمل -->
-        <div class="requirements-box" style="background: #f8fafc;">
-            <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في بولندا</h3>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> <strong>استهدف المهن في القائمة المطلوبة:</strong> إذا كانت مهنتك ضمن الـ 329 مهنة، استفد من المسار السريع وإلغاء اختبار سوق العمل [citation:2].</li>
-                <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> <strong>تعلم اللغة البولندية الأساسية:</strong> حتى المستوى A2 يزيد فرصك بشكل كبير، خاصة في قطاعات الخدمات والرعاية الصحية.</li>
-                <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> <strong>استخدم منصات التوظيف البولندية:</strong> Pracuj.pl و JustJoin.it و LinkedIn هي الأكثر فعالية للبحث عن الوظائف [citation:5].</li>
-                <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> <strong>تأكد من تصريح العمل الصحيح:</strong> نوع التصريح (A, B, C) يجب أن يتوافق مع طبيعة عملك. التصريح من النوع A هو الأكثر شيوعاً للعمالة الدائمة [citation:4].</li>
-                <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> <strong>جهز وثائقك مبكراً:</strong> عملية الحصول على تصريح العمل والتأشيرة قد تستغرق 2-4 أشهر، ابدأ التحضير قبل ذلك [citation:5].</li>
-                <li><i class="fas fa-check-circle" style="color: #DC143C;"></i> <strong>الاهتمام بالرواتب:</strong> متوسط الراتب في وارسو (8,550 زلوتي) أعلى من باقي المدن، لكن تكاليف السكن أيضاً أعلى [citation:3].</li>
-            </ul>
-        </div>
-
-        <!-- إحصائيات مهمة -->
-        <h2 class="section-title">إحصائيات سوق العمل البولندي 2026</h2>
+        <!-- إحصائيات سريعة -->
+        <h2 class="section-title">إحصائيات سريعة 2026</h2>
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-number">3%</div>
-                <div class="stat-label">معدل البطالة [citation:2]</div>
+                <div class="stat-number">38M</div>
+                <div class="stat-label">عدد السكان</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">329</div>
-                <div class="stat-label">مهنة مطلوبة [citation:2]</div>
+                <div class="stat-number">5.2%</div>
+                <div class="stat-label">معدل البطالة </div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">4,806</div>
-                <div class="stat-label">الحد الأدنى للأجور (زلوتي) [citation:1]</div>
+                <div class="stat-label">الحد الأدنى (PLN) </div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">1.29M</div>
-                <div class="stat-label">عامل أجنبي قانوني (2025) [citation:6]</div>
+                <div class="stat-number">1.26M+</div>
+                <div class="stat-label">عمال أجانب مسجلين [citation:6]</div>
             </div>
         </div>
 
-        <!-- مواقع التوظيف الرئيسية (تم التحقق منها) -->
-        <h2 class="section-title">أهم مواقع التوظيف في بولندا</h2>
+        <!-- مواقع التوظيف الرئيسية -->
+        <h2 class="section-title">مواقع توظيف موثوقة</h2>
         <div class="jobs-grid">
             <a href="https://www.pracuj.pl" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
-                        <i class="fas fa-briefcase"></i>
+                        <i class="fas fa-bolt"></i>
                     </div>
                     <span class="job-site-name">Pracuj.pl</span>
                 </div>
-                <div class="job-site-desc">أكبر منصة توظيف في بولندا، تغطي جميع القطاعات والمدن. واجهة باللغة البولندية والإنجليزية.</div>
-                <div class="job-site-link">www.pracuj.pl <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">أكبر موقع توظيف في بولندا، آلاف الوظائف في جميع القطاعات [citation:4].</div>
+                <div class="job-site-link">pracuj.pl <i class="fas fa-external-link-alt"></i></div>
             </a>
-
+            <a href="https://www.justjoin.it" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <span class="job-site-name">JustJoin.it</span>
+                </div>
+                <div class="job-site-desc">منصة متخصصة في وظائف تكنولوجيا المعلومات، شفافية الرواتب [citation:4].</div>
+                <div class="job-site-link">justjoin.it <i class="fas fa-external-link-alt"></i></div>
+            </a>
             <a href="https://www.linkedin.com" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
@@ -798,78 +988,29 @@
                     </div>
                     <span class="job-site-name">LinkedIn</span>
                 </div>
-                <div class="job-site-desc">المنصة الرئيسية للوظائف المهنية، خاصة في قطاعات التكنولوجيا والتمويل والتسويق.</div>
-                <div class="job-site-link">www.linkedin.com <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">شائع جداً في قطاع الأعمال والتكنولوجيا والشركات الدولية.</div>
+                <div class="job-site-link">linkedin.com <i class="fas fa-external-link-alt"></i></div>
             </a>
-
-            <a href="https://justjoin.it" target="_blank" class="job-site-card">
+            <a href="https://www.goldenline.pl" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
-                        <i class="fas fa-bolt"></i>
+                        <i class="fas fa-network-wired"></i>
                     </div>
-                    <span class="job-site-name">JustJoin.it</span>
+                    <span class="job-site-name">GoldenLine</span>
                 </div>
-                <div class="job-site-desc">منصة متخصصة في وظائف تكنولوجيا المعلومات، مع رواتب شفافة وواجهة حديثة [citation:5].</div>
-                <div class="job-site-link">justjoin.it <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://pl.indeed.com" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <span class="job-site-name">Indeed Poland</span>
-                </div>
-                <div class="job-site-desc">محرك بحث وظائف عالمي بتغطية واسعة للسوق البولندي.</div>
-                <div class="job-site-link">pl.indeed.com <i class="fas fa-external-link-alt"></i></div>
-            </a>
-        </div>
-
-        <!-- المواقع الحكومية والرسمية -->
-        <h2 class="section-title">المواقع الحكومية والرسمية</h2>
-        <div class="jobs-grid">
-            <a href="https://www.gov.pl/web/family" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-bank"></i>
-                    </div>
-                    <span class="job-site-name">Ministerstwo Rodziny, Pracy i Polityki Społecznej</span>
-                </div>
-                <div class="job-site-desc">وزارة الأسرة والعمل والسياسة الاجتماعية – المصدر الرسمي لقرارات العمل والهجرة.</div>
-                <div class="job-site-link">www.gov.pl/web/family <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://stat.gov.pl/en/" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <span class="job-site-name">Główny Urząd Statystyczny (GUS)</span>
-                </div>
-                <div class="job-site-desc">المكتب المركزي للإحصاء – بيانات رسمية عن سوق العمل والرواتب [citation:7].</div>
-                <div class="job-site-link">stat.gov.pl <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://www.gov.pl/web/udsc" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-passport"></i>
-                    </div>
-                    <span class="job-site-name">Urząd do Spraw Cudzoziemców (UDSC)</span>
-                </div>
-                <div class="job-site-desc">مكتب شؤون الأجانب – معلومات رسمية عن الإقامة والتأشيرات.</div>
-                <div class="job-site-link">www.gov.pl/web/udsc <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">شبكة مهنية بولندية، وظائف وتواصل مع الشركات المحلية [citation:4].</div>
+                <div class="job-site-link">goldenline.pl <i class="fas fa-external-link-alt"></i></div>
             </a>
         </div>
 
         <!-- خدماتنا -->
         <div class="services-section">
-            <h3 style="font-size: 1.5rem; margin-bottom: 20px;">تحتاج مساعدة في التقديم؟</h3>
-            <p style="margin-bottom: 30px;">نقدم لك خدمات احترافية بأسعار رمزية لزيادة فرص قبولك</p>
+            <h3 style="font-size: 1.3rem; margin-bottom: 15px;">خدماتنا الاحترافية</h3>
+            <p style="margin-bottom: 20px;">نساعدك في تحسين فرصك للحصول على وظيفة في بولندا</p>
             <div class="services-buttons">
-                <a href="services.html" class="service-btn">تصميم السيرة الذاتية ($9)</a>
-                <a href="services.html" class="service-btn">كتابة خطاب تقديم ($7)</a>
-                <a href="services.html" class="service-btn">تسجيل في مواقع التوظيف ($10)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-file-alt"></i> سيرة ذاتية ($9)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-envelope"></i> خطاب تقديم ($7)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-user-plus"></i> تسجيل بالمنصات ($10)</a>
             </div>
         </div>
     </div>
@@ -880,20 +1021,16 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>وظائف حول العالم</h4>
-                    <p>منصتك الموثوقة للبحث عن فرص عمل في مختلف دول العالم</p>
+                    <p>منصتك الموثوقة للبحث عن فرص عمل في 49 دولة حول العالم</p>
                 </div>
-                
                 <div class="footer-section">
                     <h4>روابط سريعة</h4>
                     <ul>
                         <li><a href="index.html">الرئيسية</a></li>
                         <li><a href="#">الدول</a></li>
                         <li><a href="services.html">الخدمات</a></li>
-                        <li><a href="about.html">من نحن</a></li>
-                        <li><a href="contact.html">اتصل بنا</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
                     <h4>سياسة الموقع</h4>
                     <ul>
@@ -901,8 +1038,6 @@
                         <li><a href="terms.html">اتفاقية الاستخدام</a></li>
                     </ul>
                 </div>
-
-                <!-- صفحة فيسبوك -->
                 <div class="footer-section">
                     <h4>تابعنا</h4>
                     <div class="social-links">
@@ -910,7 +1045,6 @@
                     </div>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة</p>
             </div>
