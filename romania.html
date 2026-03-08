@@ -2,10 +2,10 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فرص عمل في رومانيا 2026 | المهن المطلوبة والرواتب والتأشيرات</title>
-    <meta name="description" content="دليلك الشامل للعمل في رومانيا 2026: حصة العمالة الأجنبية 90,000 عامل، المهن الأكثر طلباً (سائقو شاحنات، عمال بناء، مناولو بضائع)، رواتب محدثة حسب القطاع، إجراءات تصريح العمل والتأشيرة (Tip D)، ونصائح للباحثين عن عمل.">
-    <meta name="keywords" content="فرص عمل في رومانيا, وظائف رومانيا 2026, تأشيرة عمل رومانيا, تصريح عمل رومانيا, المهن المطلوبة في رومانيا, العمل في بوخارست, رواتب تكنولوجيا المعلومات في رومانيا, حصة العمالة الأجنبية رومانيا, الهجرة إلى رومانيا">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>فرص عمل في رومانيا 2026 | المهن المطلوبة والتأشيرات والرواتب في بوخارست</title>
+    <meta name="description" content="رومانيا 2026 تفتح أبوابها للعمالة الأجنبية: دليلك الشامل للعمل في رومانيا. المهن الأكثر طلباً (IT، بناء، لوجستيات)، رواتب محدثة، إجراءات تصاريح العمل (الحصة السنوية 90,000) ونصائح للباحثين عن عمل.">
+    <meta name="keywords" content="فرص عمل في رومانيا, وظائف رومانيا 2026, تصريح عمل رومانيا, تأشيرة عمل رومانيا, العمل في بوخارست, المهن المطلوبة في رومانيا, رواتب المهندسين في رومانيا, الهجرة إلى رومانيا, عمالة غير ماهرة رومانيا">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,59 +19,89 @@
     <link rel="stylesheet" href="style.css">
     
     <style>
-        /* تنسيقات خاصة بصفحة رومانيا */
+        /* تنسيقات خاصة بصفحة رومانيا - مستوحاة من ألوان العلم 🇷🇴 */
+        :root {
+            --romania-blue: #002B7F;
+            --romania-yellow: #FCD116;
+            --romania-red: #CE1126;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        
         .country-header {
-            background: linear-gradient(135deg, #002B7F, #FCD116, #CE1126);
+            background: linear-gradient(135deg, var(--romania-blue), var(--romania-red));
             color: white;
-            padding: 60px 0;
+            padding: clamp(20px, 5vw, 35px) 15px;
             text-align: center;
             position: relative;
             overflow: hidden;
         }
         
         .country-header h1 {
-            font-size: 2.5rem;
+            font-size: clamp(1.6rem, 5vw, 2rem);
             margin-bottom: 10px;
             position: relative;
-            color: #1e293b;
-            background: rgba(255,255,255,0.9);
+            color: white;
+            background: rgba(0,0,0,0.2);
             display: inline-block;
-            padding: 10px 30px;
+            padding: 8px 20px;
             border-radius: 50px;
+            font-weight: 700;
+            word-break: break-word;
+            max-width: 95%;
         }
         
         .country-header p {
-            font-size: 1.1rem;
+            font-size: clamp(0.85rem, 3vw, 1rem);
             opacity: 0.95;
             position: relative;
-            color: #1e293b;
-            background: rgba(255,255,255,0.8);
+            color: white;
+            background: rgba(0,0,0,0.2);
             display: inline-block;
-            padding: 5px 20px;
+            padding: 5px 15px;
             border-radius: 30px;
+            max-width: 90%;
+            margin: 10px auto;
         }
         
         .country-info {
             display: flex;
             justify-content: center;
-            gap: 30px;
-            margin: 30px 0;
+            gap: clamp(10px, 2vw, 15px);
+            margin: 20px 5px;
             flex-wrap: wrap;
         }
         
         .info-badge {
             background: white;
-            color: #002B7F;
-            padding: 10px 25px;
+            color: var(--romania-blue);
+            padding: 8px 18px;
             border-radius: 50px;
             font-weight: 600;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            font-size: clamp(0.75rem, 2.5vw, 0.9rem);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .info-badge i {
+            font-size: 1rem;
         }
         
         .section-title {
-            font-size: 1.8rem;
+            font-size: clamp(1.3rem, 4vw, 1.5rem);
             color: #1e293b;
-            margin: 40px 0 20px;
+            margin: 25px 0 15px;
             position: relative;
             padding-right: 15px;
         }
@@ -83,21 +113,131 @@
             top: 0;
             bottom: 0;
             width: 5px;
-            background: #CE1126;
+            background: var(--romania-red);
             border-radius: 5px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        
+        /* تحسينات الجوال - دقيقة جداً */
+        @media (max-width: 768px) {
+            .country-header h1 {
+                font-size: 1.6rem;
+                padding: 8px 12px;
+            }
+            
+            .country-header p {
+                font-size: 0.9rem;
+                padding: 5px 10px;
+            }
+            
+            .section-title {
+                font-size: 1.3rem;
+            }
+            
+            .info-badge {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+            
+            .jobs-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .visa-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+            
+            .jobs-table {
+                font-size: 0.85rem;
+            }
+            
+            .jobs-table th, .jobs-table td {
+                padding: 8px 5px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .country-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .info-badge {
+                width: fit-content;
+            }
+            
+            .country-header {
+                padding: 20px 10px;
+            }
+            
+            .back-link {
+                margin: 10px 0;
+                padding: 5px 10px;
+            }
+            
+            .visa-box, .requirements-box {
+                padding: 15px 10px;
+            }
+            
+            .jobs-table th, .jobs-table td {
+                padding: 6px 3px;
+                font-size: 0.75rem;
+            }
+            
+            .skill-tag {
+                padding: 3px 8px;
+                font-size: 0.7rem;
+                margin: 2px;
+            }
+            
+            .service-btn {
+                padding: 8px 15px;
+                font-size: 0.85rem;
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .stat-number {
+                font-size: 1.1rem;
+            }
+            
+            .stat-label {
+                font-size: 0.7rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
         }
         
         .jobs-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
         }
         
         .job-site-card {
             background: white;
             border-radius: 12px;
-            padding: 25px;
+            padding: 18px;
             border: 1px solid #e2e8f0;
             transition: all 0.3s ease;
             text-decoration: none;
@@ -107,125 +247,135 @@
         
         .job-site-card:hover {
             transform: translateY(-5px);
-            border-color: #CE1126;
+            border-color: var(--romania-red);
             box-shadow: 0 10px 25px rgba(206,17,38,0.1);
         }
         
         .job-site-header {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
+            gap: 12px;
+            margin-bottom: 10px;
         }
         
         .job-site-icon {
-            width: 50px;
-            height: 50px;
-            background: #ffe6e6;
+            width: 40px;
+            height: 40px;
+            background: #ffe0e0;
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-shrink: 0;
         }
         
         .job-site-icon i {
-            font-size: 1.8rem;
-            color: #CE1126;
+            font-size: 1.5rem;
+            color: var(--romania-red);
         }
         
         .job-site-name {
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 600;
             color: #1e293b;
+            word-break: break-word;
         }
         
         .job-site-desc {
             color: #64748b;
-            font-size: 0.95rem;
-            margin-bottom: 15px;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            line-height: 1.5;
         }
         
         .job-site-link {
             display: inline-flex;
             align-items: center;
             gap: 5px;
-            color: #CE1126;
-            font-size: 0.95rem;
+            color: var(--romania-red);
+            font-size: 0.85rem;
+            word-break: break-word;
         }
         
         .visa-box {
             background: #f8fafc;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 30px 0;
-            border: 2px dashed #CE1126;
+            border-radius: 16px;
+            padding: 20px 15px;
+            margin: 20px 0;
+            border: 2px dashed var(--romania-yellow);
         }
         
         .visa-box h3 {
             color: #1e293b;
-            font-size: 1.3rem;
+            font-size: clamp(1.1rem, 3vw, 1.2rem);
             margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
         
         .visa-box i {
-            color: #CE1126;
+            color: var(--romania-red);
             font-size: 1.2rem;
+            flex-shrink: 0;
         }
         
         .visa-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
         }
         
         .visa-type {
             background: white;
-            padding: 20px;
-            border-radius: 8px;
+            padding: 15px;
+            border-radius: 12px;
             border: 1px solid #e2e8f0;
         }
         
         .visa-type h4 {
-            color: #CE1126;
-            margin-bottom: 5px;
+            color: var(--romania-red);
+            margin-bottom: 8px;
+            font-size: 1rem;
         }
         
-        .visa-type .price {
-            font-weight: 600;
-            color: #002B7F;
-            margin-top: 10px;
-        }
-        
-        .visa-type .fee {
+        .visa-type p {
             font-size: 0.9rem;
-            color: #64748b;
-            margin-top: 5px;
+            color: #334155;
+            line-height: 1.5;
         }
         
         .table-container {
             overflow-x: auto;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            -webkit-overflow-scrolling: touch;
         }
         
         .jobs-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
             background: white;
-            border-radius: 8px;
+            border-radius: 12px;
             overflow: hidden;
+            min-width: 550px;
         }
         
         .jobs-table th {
-            background: #002B7F;
+            background: var(--romania-blue);
             color: white;
-            padding: 12px;
+            padding: 10px 8px;
             text-align: right;
+            font-weight: 600;
+            font-size: clamp(0.8rem, 2.5vw, 0.9rem);
         }
         
         .jobs-table td {
-            padding: 12px;
+            padding: 8px;
             border-bottom: 1px solid #e2e8f0;
+            font-size: clamp(0.75rem, 2.5vw, 0.85rem);
         }
         
         .jobs-table tr:last-child td {
@@ -233,132 +383,265 @@
         }
         
         .jobs-table tr:hover {
-            background: #f0f5ff;
+            background: #ffe0e0;
         }
         
         .requirements-box {
-            background: #f0f5ff;
-            border-right: 4px solid #002B7F;
-            padding: 30px;
-            border-radius: 12px;
-            margin: 30px 0;
+            background: #ffe0e0;
+            border-right: 4px solid var(--romania-red);
+            padding: 20px 15px;
+            border-radius: 16px;
+            margin: 25px 0;
         }
         
         .requirements-box h3 {
             color: #1e293b;
             margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: clamp(1.1rem, 3vw, 1.2rem);
         }
         
         .requirements-list {
             list-style: none;
+            padding: 0;
+            margin: 0;
         }
         
         .requirements-list li {
             margin-bottom: 10px;
             display: flex;
-            align-items: center;
-            gap: 10px;
+            align-items: flex-start;
+            gap: 8px;
+            line-height: 1.5;
+            font-size: clamp(0.8rem, 2.5vw, 0.9rem);
         }
         
         .requirements-list i {
-            color: #002B7F;
+            color: var(--romania-red);
+            margin-top: 3px;
+            min-width: 16px;
         }
         
         .back-link {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            color: #CE1126;
+            color: var(--romania-red);
             text-decoration: none;
-            margin: 20px 0;
+            margin: 15px 0;
             font-weight: 500;
+            padding: 6px 12px;
+            background: #ffe0e0;
+            border-radius: 30px;
+            font-size: 0.9rem;
         }
         
         .back-link:hover {
-            color: #002B7F;
+            background: #ffc0c0;
         }
         
         .flag-icon {
-            font-size: 3rem;
-            color: #FCD116;
-            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 10px;
             filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
         }
         
         .skill-tag {
             display: inline-block;
             background: white;
-            color: #002B7F;
-            padding: 5px 12px;
-            border-radius: 20px;
+            color: var(--romania-red);
+            padding: 4px 10px;
+            border-radius: 30px;
             margin: 3px;
-            font-size: 0.85rem;
-            border: 1px solid #002B7F;
+            font-size: clamp(0.7rem, 2vw, 0.8rem);
+            border: 1px solid var(--romania-red);
+            transition: all 0.2s;
+        }
+        
+        .skill-tag:hover {
+            background: var(--romania-red);
+            color: white;
         }
         
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin: 15px 0;
         }
         
         .stat-card {
             background: white;
-            padding: 20px;
-            border-radius: 12px;
+            padding: 15px 8px;
+            border-radius: 16px;
             text-align: center;
             border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 8px rgba(206,17,38,0.05);
         }
         
         .stat-number {
-            font-size: 1.8rem;
+            font-size: clamp(1.2rem, 3vw, 1.3rem);
             font-weight: 700;
-            color: #002B7F;
+            color: var(--romania-red);
+            line-height: 1.2;
         }
         
         .stat-label {
             color: #64748b;
-            font-size: 0.9rem;
+            font-size: clamp(0.7rem, 2vw, 0.8rem);
+            margin-top: 5px;
         }
         
         .services-section {
-            background: #f8fafc;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 40px 0;
+            background: #ffe0e0;
+            border-radius: 24px;
+            padding: 25px 15px;
+            margin: 30px 0;
             text-align: center;
         }
         
         .services-buttons {
             display: flex;
-            gap: 20px;
+            gap: 10px;
             justify-content: center;
             flex-wrap: wrap;
             margin-top: 20px;
         }
         
         .service-btn {
-            background: #002B7F;
+            background: var(--romania-blue);
             color: white;
-            padding: 12px 30px;
-            border-radius: 8px;
+            padding: 10px 20px;
+            border-radius: 50px;
             text-decoration: none;
             transition: background 0.3s;
+            font-weight: 500;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
         }
         
         .service-btn:hover {
-            background: #CE1126;
+            background: #001a4d;
         }
         
         @media (max-width: 768px) {
-            .country-header h1 {
-                font-size: 2rem;
-            }
-            
             .services-buttons {
                 flex-direction: column;
             }
+        }
+        
+        ul, ol {
+            padding-right: 20px;
+        }
+        
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 10px 0;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--romania-red);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 500;
+            padding: 5px 0;
+        }
+        
+        .nav-links a.active {
+            color: var(--romania-red);
+            border-bottom: 2px solid var(--romania-red);
+        }
+        
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+            }
+            
+            .nav-links {
+                justify-content: center;
+            }
+        }
+        
+        footer {
+            background: #1e293b;
+            color: white;
+            padding: 30px 0 15px;
+            margin-top: 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section li {
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+        
+        .footer-section a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin-left: 8px;
+            color: white;
+            font-size: 1rem;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 15px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.8rem;
         }
     </style>
 </head>
@@ -387,12 +670,12 @@
     <section class="country-header">
         <div class="container">
             <i class="fas fa-flag flag-icon"></i>
-            <h1>فرص عمل في رومانيا 2026</h1>
-            <p>الدليل الكامل للعمل في بوخارست، كلوج نابوكا، تيميشوارا وجميع المدن الرومانية</p>
+            <h1>🇷🇴 فرص عمل في رومانيا 2026 🇷🇴</h1>
+            <p>الدليل الكامل للعمل في بوخارست، كلوج نابوكا، تيميشوارا، ياش وجميع المدن الرومانية</p>
             
             <div class="country-info">
-                <span class="info-badge"><i class="fas fa-briefcase"></i> 90,000 تأشيرة سنوياً</span>
-                <span class="info-badge"><i class="fas fa-language"></i> روماني / إنجليزي</span>
+                <span class="info-badge"><i class="fas fa-microchip"></i> تكنولوجيا المعلومات</span>
+                <span class="info-badge"><i class="fas fa-language"></i> الرومانية / الإنجليزية</span>
                 <span class="info-badge"><i class="fas fa-money-bill-wave"></i> ليو روماني (RON)</span>
             </div>
         </div>
@@ -403,319 +686,213 @@
             <i class="fas fa-arrow-right"></i> العودة للصفحة الرئيسية
         </a>
 
-        <!-- حصة العمالة الأجنبية 2026 -->
+        <!-- لمحة عامة عن سوق العمل الروماني -->
         <div class="visa-box">
-            <h3><i class="fas fa-users"></i> حصة العمالة الأجنبية في رومانيا 2026 – 90,000 عامل جديد</h3>
-            <p>أقرت الحكومة الرومانية حصة استثنائية للعمالة الأجنبية لعام 2026 بإجمالي <strong>90,000 عامل جديد</strong>، لتغطية النقص الحاد في اليد العاملة في قطاعات حيوية . يأتي هذا القرار استجابة للطلبات المتكررة من أصحاب العمل الذين يعانون من صعوبات في شغل الوظائف الشاغرة بسبب هجرة العمالة الرومانية إلى دول أوروبا الغربية .</p>
-            
-            <h4 style="margin: 20px 0 10px;">القطاعات الأكثر تضرراً من نقص العمالة حسب بيانات الحكومة الرومانية :</h4>
-            <div class="table-container">
-                <table class="jobs-table">
-                    <tr>
-                        <th>القطاع</th>
-                        <th>عدد الوظائف الشاغرة (تقديرات 2026)</th>
-                    </tr>
-                    <tr>
-                        <td>سعاة (Curier)</td>
-                        <td>26,275</td>
-                    </tr>
-                    <tr>
-                        <td>مناولو بضائع (Manipulant mărfuri)</td>
-                        <td>20,912</td>
-                    </tr>
-                    <tr>
-                        <td>عمال بناء غير ماهرين (هدم، تبليط)</td>
-                        <td>20,484</td>
-                    </tr>
-                    <tr>
-                        <td>عمال إنشاءات المباني</td>
-                        <td>17,799</td>
-                    </tr>
-                    <tr>
-                        <td>بائعون تجاريون (Lucrător comercial)</td>
-                        <td>16,246</td>
-                    </tr>
-                    <tr>
-                        <td>سائقو سيارات وشاحنات صغيرة</td>
-                        <td>12,237</td>
-                    </tr>
-                    <tr>
-                        <td>مساعدو طهاة (Ajutor bucătar)</td>
-                        <td>12,077</td>
-                    </tr>
-                    <tr>
-                        <td>سائقو شاحنات نقل بضائع</td>
-                        <td>11,135</td>
-                    </tr>
-                    <tr>
-                        <td>عمال بناء غير ماهرين (قطع مواد)</td>
-                        <td>10,878</td>
-                    </tr>
-                    <tr>
-                        <td>حراس أمن (Agent de securitate)</td>
-                        <td>10,438</td>
-                    </tr>
-                </table>
-            </div>
-            <p style="margin-top: 5px;">المصادر: </p>
-            <p>حتى نهاية سبتمبر 2025، تم إصدار 83,914 تصريح عمل وتصريح انتداب للعمال الأجانب، مع 7,418 طلباً قيد المعالجة. في المقابل، صدرت 42,544 تأشيرة عمل طويلة الأجل للعمال الأجانب خلال نفس الفترة .</p>
+            <h3><i class="fas fa-chart-line"></i> نظرة على سوق العمل في رومانيا 2026</h3>
+            <p>رومانيا تشهد تحولاً اقتصادياً ملحوظاً، وأصبحت وجهة جذابة للعمالة الأجنبية بفضل النمو المستمر ونقص العمالة المحلية. الحكومة الرومانية حددت حصة رسمية لاستقدام العمال الأجانب لعام 2026 بـ <strong>90,000 تصريح عمل</strong>، مما يعكس حاجة حقيقية للكفاءات والعمالة من خارج الاتحاد الأوروبي [citation:1][citation:10]. القطاعات الأكثر تأثراً بنقص اليد العاملة تشمل خدمات البريد السريع، مناولة البضائع، البناء، التجارة، النقل البري، وخدمات الأمن [citation:10].</p>
+            <p>على الرغم من انخفاض الحصة السنوية بمقدار 10,000 مقارنة بعام 2025، إلا أن الرقم لا يزال كبيراً ويفتح مجالاً واسعاً للراغبين في العمل بأوروبا [citation:10]. سوق العمل الروماني يتميز بوجود فجوة واضحة بين توقعات المرشحين والرواتب التي تقدمها الشركات، حيث تصل هذه الفجوة إلى 30% في المتوسط، وتصل إلى 40% في قطاعات مثل البنوك والعقارات [citation:2].</p>
         </div>
 
-        <!-- لمحة عامة عن سوق العمل الروماني 2026 -->
-        <div class="requirements-box">
-            <h3><i class="fas fa-chart-line"></i> نظرة على سوق العمل الروماني في 2026</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
-                <div><strong>الوظائف الشاغرة الحالية:</strong> 32,056 وظيفة (مارس 2026) </div>
-                <div><strong>القطاعات الأعلى طلباً:</strong> النقل، التجارة، اللوجستيات، البناء </div>
-                <div><strong>الرواتب:</strong> واحد من كل 3 موظفين يتقاضى أقل من 2,700 ليو شهرياً </div>
-                <div><strong>الفجوة بين التوقعات والعروض:</strong> 30% في المتوسط </div>
-            </div>
-            <p style="margin-top: 15px;">أظهرت بيانات وكالة التوظيف الوطنية (ANOFM) وجود 32,056 وظيفة شاغرة في بداية مارس 2026، معظمها في قطاعات النقل والتجارة واللوجستيات والبناء، حيث تواصل الشركات معاناتها من نقص العمالة رغم الرواتب المنخفضة نسبياً . تظهر دراسة اتحاد أرباب العمل كونكورديا أن ثلث الموظفين في رومانيا يتقاضون أقل من 2,700 ليو (540 يورو) شهرياً، بينما يحصل 6 من كل 10 موظفين على دخل صافي أقل من 4,100 ليو (800 يورو). متوسط الأجر الصافي في رومانيا يبلغ حوالي 1,000 يورو .</p>
-            <p>تشهد البلاد تحولاً هيكلياً من نموذج قائم على الاستهلاك والعمالة الكثيفة نحو اقتصاد أكثر اعتماداً على رأس المال والإنتاجية، مع تزايد استخدام الأتمتة والذكاء الاصطناعي. يتوقع محللو ING Bank أن يبلغ نمو الناتج المحلي 0.6% فقط في 2026، مع تعافٍ معتدل في 2027. هذا التحول يعني أن خلق فرص العمل قد لا يعود مرتبطاً بشكل وثيق بنمو الناتج المحلي كما كان سابقاً، حيث تفضل الشركات زيادة الإنتاجية باستخدام التقنيات الجديدة بدلاً من التوظيف الواسع .</p>
-        </div>
-
-        <!-- المهن الأكثر طلباً حسب القطاع (تفصيلي) -->
-        <h2 class="section-title">المهن الأكثر طلباً في رومانيا 2026</h2>
+        <!-- المهن الأكثر طلباً والرواتب في رومانيا 2026 -->
+        <h2 class="section-title">المهن الأكثر طلباً والرواتب في رومانيا 2026</h2>
         
         <div class="table-container">
             <table class="jobs-table">
                 <tr>
                     <th>القطاع</th>
                     <th>المهن المطلوبة</th>
-                    <th>عدد الوظائف الشاغرة</th>
-                </tr>
-                <tr>
-                    <td>النقل والخدمات اللوجستية</td>
-                    <td>سائقو شاحنات نقل بضائع، سائقو سيارات وشاحنات صغيرة، سعاة، مناولو بضائع، عمال فرز وتحميل</td>
-                    <td>حوالي 40,000+</td>
-                </tr>
-                <tr>
-                    <td>البناء والتشييد</td>
-                    <td>عمال بناء غير ماهرين (هدم، تبليط، قطع مواد)، عمال إنشاءات المباني، عمال تركيب مواد بناء، عمال بناء متخصصون </td>
-                    <td>حوالي 30,000+</td>
-                </tr>
-                <tr>
-                    <td>التجارة والخدمات</td>
-                    <td>بائعون تجاريون، مساعدو طهاة، عمال مطاعم، عمال نظافة، حراس أمن، موظفو استقبال</td>
-                    <td>حوالي 25,000+</td>
-                </tr>
-                <tr>
-                    <td>القطاع الصناعي والتصنيع</td>
-                    <td>عمال خط إنتاج، عمال تغليف، عمال تجميع، فنيو صيانة، مشغلو آلات، عمال مستودعات</td>
-                    <td>حوالي 15,000+</td>
-                </tr>
-                <tr>
-                    <td>الزراعة والأعمال الموسمية</td>
-                    <td>عمال مزارع، عمال بيوت بلاستيكية، عمال قطف الفاكهة، عمال مزارع حيوانية</td>
-                    <td>حوالي 10,000+</td>
-                </tr>
-                <tr>
-                    <td>الرعاية الصحية والخدمات الاجتماعية</td>
-                    <td>ممرضون، مساعدو رعاية صحية، مقدم رعاية لكبار السن، معالجون طبيعيون</td>
-                    <td>حوالي 5,000+</td>
-                </tr>
-            </table>
-            <p style="margin-top: 5px;">المصادر: </p>
-        </div>
-
-        <!-- رواتب المهن حسب القطاع 2026 -->
-        <h2 class="section-title">الرواتب المحدثة حسب القطاع 2026 (ليو روماني شهرياً)</h2>
-        
-        <div class="table-container">
-            <table class="jobs-table">
-                <tr>
-                    <th>القطاع</th>
-                    <th>متوسط الراتب الصافي</th>
-                    <th>المعادل باليورو</th>
+                    <th>مبتدئ (RON)</th>
+                    <th>متوسط (RON)</th>
+                    <th>متقدم (RON)</th>
                 </tr>
                 <tr>
                     <td>تكنولوجيا المعلومات (IT)</td>
-                    <td>8,000 ليو (زيادة 15% عن 2025)</td>
-                    <td>1,600 يورو</td>
+                    <td>مهندسو برمجيات (Java, Python, JavaScript)، مهندسو أمن سيبراني، علماء بيانات، متخصصو ذكاء اصطناعي، مطورو تطبيقات </td>
+                    <td>6,500 – 7,500</td>
+                    <td>7,500 – 9,000</td>
+                    <td>9,000 – 12,000+</td>
                 </tr>
                 <tr>
                     <td>النفط والغاز</td>
-                    <td>6,800 ليو</td>
-                    <td>1,360 يورو</td>
+                    <td>مهندسو بترول، جيولوجيون، مهندسو عمليات، فنيو صيانة، مشرفو إنتاج </td>
+                    <td>5,500 – 6,500</td>
+                    <td>6,500 – 8,500</td>
+                    <td>8,500 – 11,000+</td>
                 </tr>
                 <tr>
-                    <td>الأتمتة (Automation)</td>
-                    <td>6,200 ليو</td>
-                    <td>1,240 يورو</td>
+                    <td>الأتمتة والهندسة الصناعية</td>
+                    <td>مهندسو أتمتة، مهندسو كهرباء، مهندسو ميكاترونيكس، فنيو روبوتات </td>
+                    <td>5,000 – 6,000</td>
+                    <td>6,000 – 7,500</td>
+                    <td>7,500 – 10,000+</td>
                 </tr>
                 <tr>
-                    <td>البناء، الاستشارات والتدقيق، الهندسة</td>
-                    <td>6,000 ليو</td>
-                    <td>1,200 يورو</td>
+                    <td>البناء والمقاولات</td>
+                    <td>عمال بناء غير ماهرين، كهربائيون، سباكون، نجارون، عمال هدم وتركيب مواد بناء، مشغلو آلات </td>
+                    <td>3,200 – 4,000</td>
+                    <td>4,000 – 5,500</td>
+                    <td>5,500 – 7,500+</td>
                 </tr>
                 <tr>
-                    <td>التوظيف البحري والكازينو (Crewing & Casino)</td>
-                    <td>6,000 ليو</td>
-                    <td>1,200 يورو</td>
+                    <td>النقل واللوجستيات</td>
+                    <td>سائقو شاحنات (2,249 وظيفة شاغرة)، سعاة بريد (أكثر من 2,000 وظيفة)، عمال مستودعات، مناولو بضائع، مشغلو رافعات شوكية </td>
+                    <td>3,000 – 3,800</td>
+                    <td>3,800 – 5,200</td>
+                    <td>5,200 – 7,000+</td>
+                </tr>
+                <tr>
+                    <td>التجارة والخدمات</td>
+                    <td>بائعو متاجر (1,600 وظيفة)، حراس أمن (1,300 وظيفة)، عمال نظافة، عمال مطاعم وفنادق، مساعدو طهاة </td>
+                    <td>2,800 – 3,500</td>
+                    <td>3,500 – 4,500</td>
+                    <td>4,500 – 6,000+</td>
                 </tr>
                 <tr>
                     <td>الصناعة الغذائية</td>
-                    <td>4,500 ليو</td>
-                    <td>900 يورو</td>
+                    <td>عمال خطوط إنتاج، عمال تعبئة وتغليف، فنيو أغذية، عمال مصانع </td>
+                    <td>3,000 – 3,800</td>
+                    <td>3,800 – 5,000</td>
+                    <td>5,000 – 6,500+</td>
                 </tr>
                 <tr>
-                    <td>السياحة</td>
-                    <td>4,400 ليو</td>
-                    <td>880 يورو</td>
-                </tr>
-                <tr>
-                    <td>مراكز الاتصال (Call Center/BPO)</td>
-                    <td>4,200 ليو</td>
-                    <td>840 يورو</td>
-                </tr>
-                <tr>
-                    <td>قطاع التجزئة (Retail)</td>
-                    <td>4,200 ليو</td>
-                    <td>840 يورو</td>
-                </tr>
-                <tr>
-                    <td>الأمن والحراسة</td>
-                    <td>4,000 ليو</td>
-                    <td>800 يورو</td>
-                </tr>
-                <tr>
-                    <td>صالونات التجميل والعيادات</td>
-                    <td>3,900 ليو</td>
-                    <td>780 يورو</td>
+                    <td>السياحة والضيافة</td>
+                    <td>طهاة، نادلون، عمال نظافة، موظفو استقبال فنادق </td>
+                    <td>2,900 – 3,700</td>
+                    <td>3,700 – 4,800</td>
+                    <td>4,800 – 6,500+</td>
                 </tr>
             </table>
-            <p style="margin-top: 5px;">المصادر: </p>
-            <p style="margin-top: 10px;">يُلاحظ أن الفجوة بين توقعات الموظفين والرواتب التي تقدمها الشركات تصل إلى 30% في المتوسط، وتتسع إلى 40% في قطاعي البنوك والعقارات، بينما تكون أصغر في قطاعات الصحافة (20%) والمبيعات (25%) .</p>
+            <p style="margin-top: 5px;">المصادر: Ziarul Financiar [citation:2], Romania Insider [citation:3], B1TV [citation:5].</p>
         </div>
 
-        <!-- متوسط الرواتب حسب المدينة -->
-        <h2 class="section-title">متوسط الرواتب حسب المدينة (ليو شهرياً) </h2>
-        
-        <div class="table-container">
-            <table class="jobs-table">
-                <tr>
-                    <th>المدينة / المحافظة</th>
-                    <th>متوسط الراتب الصافي</th>
-                </tr>
-                <tr>
-                    <td>بوخارست (București)</td>
-                    <td>6,000 ليو (1,200 يورو)</td>
-                </tr>
-                <tr>
-                    <td>كلوج نابوكا (Cluj)</td>
-                    <td>5,500 ليو (1,100 يورو)</td>
-                </tr>
-                <tr>
-                    <td>تيميش (Timiș)</td>
-                    <td>5,100 ليو (1,020 يورو)</td>
-                </tr>
-                <tr>
-                    <td>فرانتشيا، فالسيا، سوتشافا، كاراش-سيفيرين</td>
-                    <td>4,000 ليو (800 يورو)</td>
-                </tr>
-                <tr>
-                    <td>فاسلوي (Vaslui)</td>
-                    <td>3,800 ليو (760 يورو)</td>
-                </tr>
-            </table>
-            <p style="margin-top: 5px;">المصدر: </p>
-        </div>
-
-        <!-- المهارات الأكثر طلباً -->
-        <h2 class="section-title">المهارات الأكثر طلباً في السوق الروماني</h2>
-        <div style="margin: 20px 0;">
-            <span class="skill-tag">البرمجة وتطوير البرمجيات</span>
-            <span class="skill-tag">تحليل البيانات</span>
-            <span class="skill-tag">الأمن السيبراني</span>
-            <span class="skill-tag">الذكاء الاصطناعي والتعلم الآلي</span>
-            <span class="skill-tag">اللغة الإنجليزية (مستوى متقدم)</span>
-            <span class="skill-tag">إدارة المشاريع</span>
-            <span class="skill-tag">المهارات الهندسية</span>
-            <span class="skill-tag">قيادة الشاحنات (رخصة CE)</span>
-            <span class="skill-tag">العمل في المستودعات واللوجستيات</span>
-            <span class="skill-tag">المرونة والتكيف مع التقنيات الجديدة</span>
-        </div>
-        <p style="margin-top: 5px;">مع التحول نحو اقتصاد قائم على الإنتاجية، تزداد أهمية المهارات التقنية والقدرة على العمل مع تقنيات الأتمتة والذكاء الاصطناعي .</p>
-
-        <!-- نظام تصاريح العمل والتأشيرات -->
+        <!-- الحد الأدنى للأجور وعتبات الدخل -->
         <div class="visa-box">
-            <h3><i class="fas fa-passport"></i> نظام تصاريح العمل والتأشيرات في رومانيا 2026</h3>
+            <h3><i class="fas fa-coins"></i> الحد الأدنى للأجور وتكاليف المعيشة 2026</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">2,700</div>
+                    <div class="stat-label">حد أدنى غير رسمي (RON) </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4,100</div>
+                    <div class="stat-label">6 من 10 عمال يحصلون على أقل من </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">6,000</div>
+                    <div class="stat-label">متوسط الرواتب في بوخارست </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3,500</div>
+                    <div class="stat-label">متوسط الرواتب في فاسلوي </div>
+                </div>
+            </div>
+            <p style="margin-top: 15px;">وفقاً لتقرير اتحاد أرباب العمل Concordia، <strong>ثلث العاملين في رومانيا يحصلون على أقل من 2,700 ليو شهرياً</strong> (حوالي 540 يورو)، بينما 6 من كل 10 موظفين يتقاضون رواتب صافية أقل من 4,100 ليو (حوالي 800 يورو) [citation:3]. متوسط الراتب الصافي على المستوى الوطني يبلغ حوالي 5,000 ليو (1000 يورو)، مع تفاوت كبير بين المناطق [citation:3].</p>
+        </div>
+
+        <!-- تفاصيل الرواتب حسب المدينة -->
+        <div class="requirements-box">
+            <h3><i class="fas fa-city"></i> رواتب 2026 حسب المدينة</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;">
+                <div><strong>بوخارست:</strong> 6,000 ليو (أعلى رواتب) [citation:5]</div>
+                <div><strong>كلوج نابوكا:</strong> 5,500 ليو [citation:5]</div>
+                <div><strong>تيميشوارا:</strong> 5,100 ليو [citation:5]</div>
+                <div><strong>ياش:</strong> 4,500 - 5,000 ليو (تقديري)</div>
+                <div><strong>كونستانتسا:</strong> 4,500 - 5,000 ليو (تقديري)</div>
+                <div><strong>كرايوفا:</strong> 4,300 - 4,800 ليو (تقديري)</div>
+                <div><strong>براشوف:</strong> 4,500 - 5,000 ليو (تقديري)</div>
+                <div><strong>فاسلوي:</strong> 3,800 ليو [citation:2]</div>
+            </div>
+            <p style="margin-top: 10px;">الرواتب في العاصمة بوخارست هي الأعلى بواقع 6,000 ليو، تليها كلوج نابوكا (5,500 ليو) وتيميشوارا (5,100 ليو). في المقابل، تسجل مدن مثل فاسلوي (3,800 ليو)، فرنتشيا، فالسيا، سوتشافا وكاراش-سيفيرين أدنى الرواتب بحوالي 4,000 ليو [citation:2][citation:5].</p>
+        </div>
+
+        <!-- المهارات الأكثر طلباً في 2026 -->
+        <h2 class="section-title">المهارات الأكثر طلباً في السوق الروماني 2026</h2>
+        <div class="visa-box">
+            <p>عام 2026 هو عام التحول الحقيقي في سوق العمل الروماني، حيث لم تعد الشهادات الجامعية كافية وحدها. الشركات تبحث عن كفاءات عملية تمتلك مهارات حقيقية [citation:6].</p>
+            <div style="margin: 15px 0;">
+                <span class="skill-tag">الذكاء الاصطناعي (AI)</span>
+                <span class="skill-tag">الأمن السيبراني (NIS2)</span>
+                <span class="skill-tag">الطاقة الشمسية (فوتوفولتية)</span>
+                <span class="skill-tag">المشتريات (Procurement)</span>
+                <span class="skill-tag">الموارد البشرية (HR)</span>
+                <span class="skill-tag">تحليل البيانات</span>
+                <span class="skill-tag">اللغة الإنجليزية (C1)</span>
+                <span class="skill-tag">اللغة الرومانية (للتكامل)</span>
+                <span class="skill-tag">إدارة المشاريع</span>
+                <span class="skill-tag">المهارات التقنية والحرفية</span>
+            </div>
+            <p>خبير التدريب المهني Bogdan Fârșirotu يؤكد أن "السوق لم يعد لديه صبر على السطحية". الأكثر طلباً هم المهنيون الذين يجمعون بين <strong>مهارات الذكاء الاصطناعي، التخصصات التقنية الدقيقة، والقدرة على العمل مع الناس</strong> [citation:6]. الطلب على مهندسي أنظمة الأمن وفنيي الطاقة الشمسية يتزايد بشكل كبير، حيث يتقاضون رواتب ممتازة في القطاع الخاص [citation:6].</p>
+        </div>
+
+        <!-- نظام التأشيرات وتصاريح العمل -->
+        <h2 class="section-title">نظام التأشيرات وتصاريح العمل في رومانيا 2026</h2>
+        <div class="visa-box">
+            <h3><i class="fas fa-passport"></i> حصة تصاريح العمل 2026: 90,000 تصريح</h3>
+            <p>أقرت الحكومة الرومانية حصة <strong>90,000 تصريح عمل وتأشيرة انتداب</strong> لمواطني الدول غير الأعضاء في الاتحاد الأوروبي والمنطقة الاقتصادية الأوروبية لعام 2026 [citation:1][citation:10]. تم تحديد هذه الحصة بموجب القرار الحكومي رقم 1,169 بتاريخ 30 ديسمبر 2025، وهي أقل بمقدار 10,000 تصريح عن عام 2025 [citation:10].</p>
             
-            <h4 style="margin: 20px 0 10px;">أنواع تصاريح العمل الرئيسية:</h4>
-            <div class="visa-grid" style="margin-top: 15px;">
+            <h4 style="margin: 20px 0 10px;">أنواع التأشيرات الرئيسية:</h4>
+            <div class="visa-grid">
                 <div class="visa-type">
-                    <h4>تصريح العمل العادي (Autorizație de muncă)</h4>
-                    <p>للتوظيف طويل الأجل (عقود غير محددة المدة أو محددة). يتطلب عرض عمل من شركة رومانية مسجلة. يتم التقديم من قبل صاحب العمل لدى المفتشية العامة للهجرة (IGI) .</p>
+                    <h4>تأشيرة العمل طويلة الأجل (D/AM)</h4>
+                    <p>تأشيرة العمل القياسية للأجانب من خارج الاتحاد الأوروبي. تمنح بعد حصول صاحب العمل على تصريح عمل من مفتشية الهجرة الرومانية. المدة الأولية تصل إلى سنة قابلة للتجديد [citation:4].</p>
                 </div>
                 <div class="visa-type">
-                    <h4>تصريح العمل الموسمي (Autorizație de muncă pentru lucrători sezonieri)</h4>
-                    <p>للعمل المؤقت في الزراعة والسياحة لمدة تصل إلى 90 يوماً (قابلة للتمديد ضمن شروط) .</p>
+                    <h4>تأشيرة العمل والإجازة (جديدة)</h4>
+                    <p>مشروع قانون جديد (أمر طارئ قيد النقاش) يقترح إدخال نوع جديد من التأشيرات يجمع بين العمل والإجازة، بالإضافة إلى توضيح التزامات أصحاب العمل ووكالات تشغيل العمالة الأجنبية [citation:7].</p>
                 </div>
                 <div class="visa-type">
-                    <h4>تصريح العمل للمتدربين</h4>
-                    <p>لبرامج التدريب المهني والتطوير .</p>
+                    <h4>تأشيرات للعمالة غير الماهرة</h4>
+                    <p>بسبب النقص الحاد في العمالة، هناك طلب كبير على العمال غير المهرة في قطاعات البناء، النقل، واللوجستيات، مع إمكانية الحصول على رعاية تأشيرة من صاحب العمل [citation:4].</p>
                 </div>
                 <div class="visa-type">
-                    <h4>تصريح العمل للرياضيين</h4>
-                    <p>للرياضيين المحترفين والمدربين .</p>
+                    <h4>إجراءات أكثر صرامة للتوظيف</h4>
+                    <p>مشروع قانون جديد يهدف إلى تعزيز آليات مكافحة الإساءة في توظيف الأجانب، ويتضمن إنشاء سجل لأصحاب العمل الأجانب، وتوسيع صلاحيات الرقابة، والتزامات إضافية لحماية حقوق العمال [citation:7].</p>
                 </div>
             </div>
 
-            <h4 style="margin: 20px 0 10px;">خطوات الحصول على تأشيرة العمل طويلة الأجل (Tip D/AM):</h4>
-            <ol style="margin-right: 20px; margin-bottom: 20px;">
-                <li><strong>صاحب العمل يتقدم بطلب تصريح العمل:</strong> إلى المفتشية العامة للهجرة (IGI) مع إثبات عدم وجود مرشح روماني أو أوروبي مناسب (اختبار سوق العمل). مدة المعالجة 30-45 يوماً .</li>
-                <li><strong>استلام تصريح العمل:</strong> بعد الموافقة، يصدر تصريح العمل ويرسل للموظف.</li>
-                <li><strong>التقديم على تأشيرة العمل (Tip D/AM):</strong> في السفارة أو القنصلية الرومانية في بلد الإقامة، مع تصريح العمل الأصلي، جواز السفر، التأمين الصحي، إثبات السكن، وشهادة خلو سوابق .</li>
-                <li><strong>الدخول إلى رومانيا:</strong> التأشيرة صالحة لمدة تصل إلى 90 يوماً.</li>
-                <li><strong>التقديم على تصريح الإقامة المؤقتة (Permis de ședere):</strong> خلال 30 يوماً من تاريخ الدخول، في المفتشية العامة للهجرة. التصريح صالح لمدة سنة قابلة للتجديد .</li>
+            <h4 style="margin: 15px 0 10px;">خطوات الحصول على تأشيرة العمل (لغير الأوروبيين):</h4>
+            <ol style="margin-right: 20px; margin-bottom: 15px;">
+                <li><strong>الحصول على عرض عمل</strong> من صاحب عمل روماني مسجل.</li>
+                <li><strong>صاحب العمل يتقدم بطلب تصريح عمل</strong> إلى مفتشية الهجرة الرومانية (IGI) ضمن الحصة السنوية البالغة 90,000.</li>
+                <li><strong>إصدار تصريح العمل</strong> وإرساله للموظف (عادة خلال 30-60 يوماً).</li>
+                <li><strong>تقديم طلب تأشيرة العمل (D/AM)</strong> في السفارة أو القنصلية الرومانية في بلدك [citation:4].</li>
+                <li><strong>تجهيز المستندات المطلوبة</strong> (انظر أدناه).</li>
+                <li><strong>الدخول إلى رومانيا</strong> خلال صلاحية التأشيرة (عادة 90 يوماً).</li>
+                <li><strong>استخراج تصريح الإقامة المؤقتة</strong> من مكتب الهجرة المحلي خلال 30 يوماً من الوصول.</li>
             </ol>
 
-            <h4 style="margin: 20px 0 10px;">المستندات المطلوبة للتأشيرة طويلة الأجل :</h4>
+            <h4 style="margin: 15px 0 10px;">المستندات الأساسية:</h4>
             <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #CE1126;"></i> جواز سفر ساري المفعول (صلاحية ≥ 6 أشهر من تاريخ انتهاء التأشيرة)</li>
-                <li><i class="fas fa-check-circle" style="color: #CE1126;"></i> نموذج طلب التأشيرة مع صورة شخصية حديثة</li>
-                <li><i class="fas fa-check-circle" style="color: #CE1126;"></i> تصريح العمل الأصلي (Autorizație de muncă) من IGI</li>
-                <li><i class="fas fa-check-circle" style="color: #CE1126;"></i> إثبات السكن في رومانيا (عقد إيجار، حجز فندق، دعوة)</li>
-                <li><i class="fas fa-check-circle" style="color: #CE1126;"></i> تأمين صحي للسفر يغطي مدة التأشيرة</li>
-                <li><i class="fas fa-check-circle" style="color: #CE1126;"></i> شهادة خلو سوابق من بلد الإقامة</li>
-                <li><i class="fas fa-check-circle" style="color: #CE1126;"></i> إثبات القدرة المالية (كشف حساب بنكي)</li>
-                <li><i class="fas fa-check-circle" style="color: #CE1126;"></i> رسوم التأشيرة (تختلف حسب الجنسية)</li>
+                <li><i class="fas fa-check-circle"></i> جواز سفر ساري المفعول (صلاحية لا تقل عن 6 أشهر بعد انتهاء التأشيرة)</li>
+                <li><i class="fas fa-check-circle"></i> عقد عمل موقع من صاحب العمل الروماني (أساسي) [citation:4]</li>
+                <li><i class="fas fa-check-circle"></i> تصريح العمل الأصلي الصادر من IGI</li>
+                <li><i class="fas fa-check-circle"></i> الشهادات العلمية والمهنية (مترجمة للرومانية ومعتمدة)</li>
+                <li><i class="fas fa-check-circle"></i> شهادة خلو سوابق (صادرة خلال 6 أشهر، مترجمة) [citation:4]</li>
+                <li><i class="fas fa-check-circle"></i> شهادة طبية تثبت اللياقة الصحية [citation:4]</li>
+                <li><i class="fas fa-check-circle"></i> إثبات السكن (عقد إيجار أو خطاب من صاحب العمل) [citation:4]</li>
+                <li><i class="fas fa-check-circle"></i> صور شخصية</li>
             </ul>
-
-            <h4 style="margin: 20px 0 10px;">متطلبات التوظيف الأساسية للعمال الأجانب (من خارج الاتحاد الأوروبي) :</h4>
+            
+            <h4 style="margin: 15px 0 10px;">الرسوم التقريبية:</h4>
             <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #CE1126;"></i> <strong>حصة العمالة الأجنبية:</strong> يجب أن يكون ضمن الحصة السنوية المحددة من الحكومة (90,000 لعام 2026) .</li>
-                <li><i class="fas fa-check-circle" style="color: #CE1126;"></i> <strong>اختبار سوق العمل:</strong> يجب على صاحب العمل إثبات عدم وجود مواطن روماني أو أوروبي مناسب للوظيفة .</li>
-                <li><i class="fas fa-check-circle" style="color: #CE1126;"></i> <strong>عقد عمل فردي (CIM):</strong> يجب أن يكون العقد موقعاً ومسجلاً لدى مفتشية العمل (ITM) .</li>
-                <li><i class="fas fa-check-circle" style="color: #CE1126;"></i> <strong>الحد الأدنى للسن:</strong> 16 عاماً (باستثناءات محدودة بعمر 15 عاماً بموافقة الوالدين) .</li>
+                <li><i class="fas fa-check-circle"></i> رسوم تصريح العمل: 100-200 يورو (يدفعها صاحب العمل)</li>
+                <li><i class="fas fa-check-circle"></i> رسوم التأشيرة: 120 يورو [citation:4]</li>
+                <li><i class="fas fa-check-circle"></i> مدة المعالجة الإجمالية: 1-3 أشهر [citation:4]</li>
             </ul>
-
-            <h4 style="margin: 20px 0 10px;">الإقامة الدائمة:</h4>
-            <p>بعد الإقامة القانونية المتواصلة في رومانيا لمدة 5 سنوات، يمكن التقدم بطلب للحصول على تصريح إقامة دائمة .</p>
         </div>
 
-        <!-- مزايا وتحديات العمل في رومانيا -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 40px 0;">
-            <div style="background: white; border-radius: 12px; padding: 25px; border: 1px solid #e2e8f0;">
-                <h3 style="color: #002B7F; margin-bottom: 15px;">✅ مزايا العمل في رومانيا</h3>
-                <ul class="requirements-list">
-                    <li><i class="fas fa-check-circle" style="color: #002B7F;"></i> <strong>حصص سخية للعمالة الأجنبية:</strong> 90,000 تأشيرة سنوياً، مع تزايد الطلب على العمالة غير الماهرة والماهرة .</li>
-                    <li><i class="fas fa-check-circle" style="color: #002B7F;"></i> <strong>تكاليف معيشة منخفضة:</strong> أقل من معظم دول الاتحاد الأوروبي، مع إمكانية ادخار جيدة خاصة للمهن ذات الدخل المتوسط.</li>
-                    <li><i class="fas fa-check-circle" style="color: #002B7F;"></i> <strong>اقتصاد نامٍ:</strong> عضو في الاتحاد الأوروبي مع استثمارات أجنبية متزايدة في قطاعات التكنولوجيا والصناعة والخدمات.</li>
-                    <li><i class="fas fa-check-circle" style="color: #002B7F;"></i> <strong>فرص متنوعة:</strong> من وظائف تكنولوجيا المعلومات ذات الرواتب المرتفعة إلى فرص العمل الموسمي في الزراعة والسياحة .</li>
-                    <li><i class="fas fa-check-circle" style="color: #002B7F;"></i> <strong>موقع استراتيجي:</strong> في جنوب شرق أوروبا، مع سهولة الوصول إلى أسواق منطقة البلقان والبحر الأسود.</li>
-                </ul>
-            </div>
-            <div style="background: white; border-radius: 12px; padding: 25px; border: 1px solid #e2e8f0;">
-                <h3 style="color: #002B7F; margin-bottom: 15px;">⚠️ تحديات للباحثين عن عمل</h3>
-                <ul class="requirements-list">
-                    <li><i class="fas fa-exclamation-triangle" style="color: #002B7F;"></i> <strong>اللغة الرومانية:</strong> ضرورية لمعظم الوظائف خارج قطاع تكنولوجيا المعلومات والشركات متعددة الجنسيات.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #002B7F;"></i> <strong>البيروقراطية:</strong> إجراءات الحصول على تصريح العمل والتأشيرة تستغرق وقتاً (30-45 يوماً للمعالجة) وقد تكون معقدة .</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #002B7F;"></i> <strong>الفجوة بين التوقعات والعروض:</strong> متوسط الفجوة 30%، مما يعني أن الرواتب قد تكون أقل من المتوقع .</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #002B7F;"></i> <strong>الرواتب المنخفضة في بعض القطاعات:</strong> ثلث الموظفين يتقاضون أقل من 2,700 ليو (540 يورو) .</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #002B7F;"></i> <strong>التحول الهيكلي:</strong> الاقتصاد يتحول نحو الأتمتة وتقنيات الذكاء الاصطناعي، مما قد يحد من خلق فرص العمل الجديدة .</li>
-                </ul>
-            </div>
+        <!-- نصائح للباحثين عن عمل -->
+        <div class="requirements-box" style="background: #ffe0e0;">
+            <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في رومانيا</h3>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> <strong>لا تثق بوعود الرواتب الخيالية:</strong> تذكر أن متوسط الرواتب في رومانيا يتراوح بين 4,000-6,000 ليو، وهناك فجوة 30% بين توقعات المرشحين وعروض الشركات [citation:2].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>طور مهاراتك الرقمية والتقنية:</strong> عام 2026 هو عام الكفاءات الحقيقية. الشركات تبحث عن من يجيد الذكاء الاصطناعي، الأمن السيبراني، والمهارات التقنية العملية [citation:6].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استخدم منصات التوظيف الموثوقة:</strong> eJobs.ro (يوجد 20,000 وظيفة شاغرة)، iajob.ro (7,000 وظيفة)، LinkedIn، وموقع الوكالة الوطنية للتوظيف (ANOFM) الذي يعرض أكثر من 32,000 وظيفة [citation:2][citation:3].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>تجنب دفع رسوم لوسطاء وهميين:</strong> لا تدفع مبالغ كبيرة لشركات توظيف غير موثوقة. ابحث عن وكالات مرخصة وتعامل مع أصحاب عمل مباشرة [citation:4].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استعد لمعادلة الشهادات:</strong> للمهن المنظمة (طب، تمريض، تدريس، قانون)، تحتاج إلى معادلة رسمية من الجهات المختصة في رومانيا.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>تعلم أساسيات الرومانية:</strong> رغم أن الإنجليزية تكفي في الشركات الكبرى، تعلم الرومانية يساعدك في الحياة اليومية والوظائف المحلية.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>تحقق من تسجيل الشركة:</strong> تأكد من أن صاحب العمل مسجل رسمياً وليس لديه مخالفات سابقة في توظيف الأجانب [citation:7].</li>
+            </ul>
         </div>
 
         <!-- أفضل المدن للعمل -->
@@ -723,85 +900,74 @@
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-number">بوخارست</div>
-                <div class="stat-label">العاصمة وأكبر سوق عمل. أعلى الرواتب (6,000 ليو)، فرص في تكنولوجيا المعلومات، الخدمات المالية، الإدارة، الاستشارات، والشركات متعددة الجنسيات .</div>
+                <div class="stat-label">العاصمة وأكبر سوق عمل. مركز التكنولوجيا، المالية، الأعمال، والخدمات. أعلى الرواتب (6,000 ليو) وأكبر عدد من فرص العمل.</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">كلوج نابوكا</div>
-                <div class="stat-label">مركز تكنولوجيا المعلومات والابتكار في ترانسيلفانيا. رواتب مرتفعة (5,500 ليو)، شركات برمجيات كبرى، ومراكز بحث وتطوير .</div>
+                <div class="stat-label">وادي السيليكون الروماني، مركز تكنولوجيا المعلومات والابتكار، رواتب مرتفعة (5,500 ليو)، جالية دولية كبيرة.</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">تيميشوارا</div>
-                <div class="stat-label">مدينة صناعية وتقنية في الغرب. فرص في الهندسة، تكنولوجيا المعلومات، صناعة السيارات، والخدمات المشتركة. متوسط الرواتب 5,100 ليو .</div>
+                <div class="stat-label">مدينة صناعية وتكنولوجية، استثمارات أجنبية، صناعة السيارات، رواتب 5,100 ليو، جودة حياة عالية.</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">ياشي</div>
-                <div class="stat-label">مركز تعليمي وتكنولوجي في الشرق. فرص في تكنولوجيا المعلومات، البحث العلمي، والخدمات.</div>
+                <div class="stat-number">ياش</div>
+                <div class="stat-label">مركز تكنولوجيا المعلومات المتطور، فرص في قطاع خدمات المشتركين والصناعة.</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">براشوف</div>
-                <div class="stat-label">مدينة سياحية وصناعية في جبال الكاربات. فرص في السياحة، الصناعة، والخدمات اللوجستية.</div>
+                <div class="stat-number">كونستانتسا</div>
+                <div class="stat-label">ميناء على البحر الأسود، فرص في النقل البحري، السياحة، والخدمات اللوجستية.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">كرايوفا</div>
+                <div class="stat-label">مدينة صناعية (فورد)، فرص في قطاع السيارات والصناعات الثقيلة.</div>
             </div>
         </div>
 
-        <!-- نصائح للباحثين عن عمل -->
-        <div class="requirements-box" style="background: #f8fafc;">
-            <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في رومانيا</h3>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #002B7F;"></i> <strong>استهدف القطاعات الأعلى طلباً:</strong> النقل واللوجستيات والبناء والتجارة هي الأكثر حاجة للعمالة الأجنبية حسب بيانات ANOFM .</li>
-                <li><i class="fas fa-check-circle" style="color: #002B7F;"></i> <strong>تأكد من وجود حصة متاحة:</strong> حصة 90,000 عامل لعام 2026 كبيرة، لكن الطلب عليها يفوق العرض. تأكد من أن صاحب العمل يمكنه الحصول على تصريح عمل قبل التقديم .</li>
-                <li><i class="fas fa-check-circle" style="color: #002B7F;"></i> <strong>تعلم اللغة الرومانية الأساسية:</strong> حتى المستوى A2 يزيد فرصك بشكل كبير، خاصة خارج قطاع تكنولوجيا المعلومات.</li>
-                <li><i class="fas fa-check-circle" style="color: #002B7F;"></i> <strong>استخدم مواقع التوظيف الموثوقة:</strong> eJobs.ro، BestJobs.eu، LinkedIn، وموقع ANOFM للوظائف الحكومية .</li>
-                <li><i class="fas fa-check-circle" style="color: #002B7F;"></i> <strong>احذر من شركات التوظيف الوهمية:</strong> لا تدفع أي مبلغ مقابل تأمين وظيفة. التكاليف القانونية (رسوم التأشيرة، تصاريح العمل) يتحملها صاحب العمل عادةً .</li>
-                <li><i class="fas fa-check-circle" style="color: #002B7F;"></i> <strong>جهز وثائقك مبكراً:</strong> عملية الحصول على تصريح العمل والتأشيرة قد تستغرق 2-3 أشهر، ابدأ التحضير قبل ذلك بوقت كافٍ .</li>
-            </ul>
-        </div>
-
-        <!-- إحصائيات مهمة -->
-        <h2 class="section-title">إحصائيات سوق العمل الروماني 2026</h2>
+        <!-- إحصائيات سريعة -->
+        <h2 class="section-title">إحصائيات سريعة 2026</h2>
         <div class="stats-grid">
             <div class="stat-card">
+                <div class="stat-number">19M</div>
+                <div class="stat-label">عدد السكان</div>
+            </div>
+            <div class="stat-card">
                 <div class="stat-number">90,000</div>
-                <div class="stat-label">حصة العمالة الأجنبية </div>
+                <div class="stat-label">حصة تصاريح العمل </div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">32,056+</div>
-                <div class="stat-label">وظيفة شاغرة (مارس 2026) </div>
+                <div class="stat-number">32,000+</div>
+                <div class="stat-label">وظائف شاغرة (ANOFM) </div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">30%</div>
-                <div class="stat-label">الفجوة بين التوقعات والعروض </div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">8,000</div>
-                <div class="stat-label">متوسط راتب IT (ليو) </div>
+                <div class="stat-number">1-3 أشهر</div>
+                <div class="stat-label">مدة التأشيرة </div>
             </div>
         </div>
 
-        <!-- مواقع التوظيف الرئيسية (تم التحقق منها) -->
-        <h2 class="section-title">أهم مواقع التوظيف في رومانيا</h2>
+        <!-- مواقع التوظيف الرئيسية -->
+        <h2 class="section-title">مواقع توظيف موثوقة</h2>
         <div class="jobs-grid">
-            <a href="https://www.ejobs.ro" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <span class="job-site-name">eJobs.ro</span>
-                </div>
-                <div class="job-site-desc">أكبر منصة توظيف في رومانيا، تضم آلاف الوظائف في جميع القطاعات والمدن. حوالي 20,000 وظيفة متاحة .</div>
-                <div class="job-site-link">www.ejobs.ro <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://www.bestjobs.eu" target="_blank" class="job-site-card">
+            <a href="https://www.efin.ro" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
                         <i class="fas fa-bolt"></i>
                     </div>
-                    <span class="job-site-name">BestJobs</span>
+                    <span class="job-site-name">eJobs.ro</span>
                 </div>
-                <div class="job-site-desc">منصة توظيف رومانية رائدة، تغطي جميع القطاعات والمدن الرئيسية.</div>
-                <div class="job-site-link">www.bestjobs.eu <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">أكبر منصة توظيف في رومانيا، تضم حوالي 20,000 وظيفة شاغرة في مختلف القطاعات [citation:2].</div>
+                <div class="job-site-link">efin.ro <i class="fas fa-external-link-alt"></i></div>
             </a>
-
+            <a href="https://www.iajob.ro" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <span class="job-site-name">Iajob.ro</span>
+                </div>
+                <div class="job-site-desc">منصة توظيف رومانية شهيرة، تضم حوالي 7,000 وظيفة شاغرة [citation:2].</div>
+                <div class="job-site-link">iajob.ro <i class="fas fa-external-link-alt"></i></div>
+            </a>
             <a href="https://www.linkedin.com" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
@@ -809,67 +975,29 @@
                     </div>
                     <span class="job-site-name">LinkedIn</span>
                 </div>
-                <div class="job-site-desc">المنصة الرئيسية للوظائف المهنية، خاصة في قطاعات تكنولوجيا المعلومات والهندسة والإدارة.</div>
-                <div class="job-site-link">www.linkedin.com <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">شائع بين الشركات متعددة الجنسيات والمهنيين في قطاع التكنولوجيا والأعمال.</div>
+                <div class="job-site-link">linkedin.com <i class="fas fa-external-link-alt"></i></div>
             </a>
-
-            <a href="https://ro.indeed.com" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <span class="job-site-name">Indeed Romania</span>
-                </div>
-                <div class="job-site-desc">محرك بحث وظائف عالمي بتغطية واسعة للسوق الروماني.</div>
-                <div class="job-site-link">ro.indeed.com <i class="fas fa-external-link-alt"></i></div>
-            </a>
-        </div>
-
-        <!-- المواقع الحكومية والرسمية -->
-        <h2 class="section-title">المواقع الحكومية والرسمية</h2>
-        <div class="jobs-grid">
-            <a href="https://igi.mai.gov.ro" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-passport"></i>
-                    </div>
-                    <span class="job-site-name">Inspectoratul General pentru Imigrări (IGI)</span>
-                </div>
-                <div class="job-site-desc">المفتشية العامة للهجرة – المصدر الرسمي لتصاريح العمل والإقامة .</div>
-                <div class="job-site-link">igi.mai.gov.ro <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
             <a href="https://www.anofm.ro" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
-                        <i class="fas fa-briefcase"></i>
+                        <i class="fas fa-building"></i>
                     </div>
-                    <span class="job-site-name">Agenția Națională pentru Ocuparea Forței de Muncă (ANOFM)</span>
+                    <span class="job-site-name">ANOFM</span>
                 </div>
-                <div class="job-site-desc">الوكالة الوطنية للتوظيف – بيانات رسمية عن الوظائف الشاغرة وإحصاءات سوق العمل .</div>
-                <div class="job-site-link">www.anofm.ro <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://www.mmuncii.ro" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-bank"></i>
-                    </div>
-                    <span class="job-site-name">Ministerul Muncii și Solidarității Sociale</span>
-                </div>
-                <div class="job-site-desc">وزارة العمل والتضامن الاجتماعي – سياسات العمل والتشريعات .</div>
-                <div class="job-site-link">www.mmuncii.ro <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">الوكالة الوطنية للتوظيف، تعرض أكثر من 32,000 وظيفة شاغرة رسمية [citation:3].</div>
+                <div class="job-site-link">anofm.ro <i class="fas fa-external-link-alt"></i></div>
             </a>
         </div>
 
         <!-- خدماتنا -->
         <div class="services-section">
-            <h3 style="font-size: 1.5rem; margin-bottom: 20px;">تحتاج مساعدة في التقديم؟</h3>
-            <p style="margin-bottom: 30px;">نقدم لك خدمات احترافية بأسعار رمزية لزيادة فرص قبولك</p>
+            <h3 style="font-size: 1.3rem; margin-bottom: 15px;">خدماتنا الاحترافية</h3>
+            <p style="margin-bottom: 20px;">نساعدك في تحسين فرصك للحصول على وظيفة في رومانيا</p>
             <div class="services-buttons">
-                <a href="services.html" class="service-btn">تصميم السيرة الذاتية ($9)</a>
-                <a href="services.html" class="service-btn">كتابة خطاب تقديم ($7)</a>
-                <a href="services.html" class="service-btn">تسجيل في مواقع التوظيف ($10)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-file-alt"></i> سيرة ذاتية ($9)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-envelope"></i> خطاب تقديم ($7)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-user-plus"></i> تسجيل بالمنصات ($10)</a>
             </div>
         </div>
     </div>
@@ -880,20 +1008,16 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>وظائف حول العالم</h4>
-                    <p>منصتك الموثوقة للبحث عن فرص عمل في مختلف دول العالم</p>
+                    <p>منصتك الموثوقة للبحث عن فرص عمل في 49 دولة حول العالم</p>
                 </div>
-                
                 <div class="footer-section">
                     <h4>روابط سريعة</h4>
                     <ul>
                         <li><a href="index.html">الرئيسية</a></li>
                         <li><a href="#">الدول</a></li>
                         <li><a href="services.html">الخدمات</a></li>
-                        <li><a href="about.html">من نحن</a></li>
-                        <li><a href="contact.html">اتصل بنا</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
                     <h4>سياسة الموقع</h4>
                     <ul>
@@ -901,8 +1025,6 @@
                         <li><a href="terms.html">اتفاقية الاستخدام</a></li>
                     </ul>
                 </div>
-
-                <!-- صفحة فيسبوك -->
                 <div class="footer-section">
                     <h4>تابعنا</h4>
                     <div class="social-links">
@@ -910,7 +1032,6 @@
                     </div>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة</p>
             </div>
