@@ -2,21 +2,33 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وظائف على مستوى العالم – دليلك للعمل في 58 دولة</title>
-    <meta name="description" content="دليلك الشامل للعمل في الخارج. تعرف على المهن المطلوبة، الرواتب، التأشيرات، وروابط التوظيف في 58 دولة حول العالم. نصائح يومية للباحثين عن عمل.">
-    <meta name="keywords" content="فرص عمل في الخارج, وظائف دولية, هجرة, تأشيرة عمل, كندا, ألمانيا, الإمارات, أستراليا, بريطانيا">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>وظائف حول العالم – فرص عمل في 53 دولة</title>
+    <meta name="description" content="منصتك الموثوقة للبحث عن فرص عمل في 53 دولة حول العالم. اكتشف أحدث فرص العمل، الرواتب، التأشيرات، ونصائح التوظيف.">
+    <meta name="keywords" content="فرص عمل, وظائف, هجرة, سفر, عمل بالخارج, وظائف في أوروبا, أمريكا, آسيا, الخليج">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- ملف التنسيقات الرئيسي (سنضيف التنسيقات هنا لضمان عملها) -->
+
     <style>
+        /* تنسيقات عامة */
+        :root {
+            --primary: #1e3c72;
+            --primary-light: #2a4d7a;
+            --secondary: #f59e0b;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --border: #e2e8f0;
+            --sidebar-width: 300px;
+            --transition: all 0.3s ease;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -25,9 +37,19 @@
 
         body {
             font-family: 'Cairo', sans-serif;
-            background-color: #f8fafc;
-            color: #1e293b;
+            background-color: #f9f9f9;
+            color: var(--dark);
             line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
         }
 
         .container {
@@ -38,125 +60,97 @@
 
         /* شريط التنقل */
         .navbar {
-            background-color: white;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             position: sticky;
             top: 0;
-            z-index: 1000;
-            padding: 15px 0;
-            border-bottom: 1px solid #e2e8f0;
+            z-index: 100;
         }
 
         .nav-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 15px 0;
+            flex-wrap: wrap;
+            gap: 15px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             font-size: 1.3rem;
-            font-weight: 600;
-            color: #2563eb;
-            text-decoration: none;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .logo i {
+            color: var(--secondary);
         }
 
         .nav-links {
             display: flex;
             gap: 25px;
-            list-style: none;
+            flex-wrap: wrap;
         }
 
         .nav-links a {
-            text-decoration: none;
-            color: #475569;
             font-weight: 500;
-            transition: color 0.2s;
+            transition: var(--transition);
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
         }
 
         .nav-links a:hover,
         .nav-links a.active {
-            color: #2563eb;
+            color: var(--primary);
+            border-bottom-color: var(--primary);
         }
 
-        /* القسم الرئيسي (هيرو) */
+        /* قسم الهيرو */
         .hero {
-            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
             color: white;
             padding: 60px 0;
             text-align: center;
         }
 
         .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            margin-bottom: 15px;
         }
 
         .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            max-width: 700px;
+            margin: 0 auto 25px;
             opacity: 0.9;
         }
 
-        .search-box {
-            max-width: 600px;
-            margin: 0 auto 40px;
-            display: flex;
-            background: white;
-            border-radius: 50px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .search-box input {
-            flex: 1;
-            padding: 16px 20px;
-            border: none;
-            outline: none;
-            font-size: 1rem;
-            font-family: 'Cairo', sans-serif;
-        }
-
-        .search-box button {
-            padding: 16px 35px;
-            background: #f59e0b;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-            font-weight: 600;
-            transition: background 0.2s;
-            font-family: 'Cairo', sans-serif;
-        }
-
-        .search-box button:hover {
-            background: #d97706;
-        }
-
-        .stats {
+        .hero-stats {
             display: flex;
             justify-content: center;
-            gap: 50px;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
         }
 
         .stat-item {
+            background: rgba(255,255,255,0.1);
+            padding: 10px 25px;
+            border-radius: 50px;
+            backdrop-filter: blur(5px);
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            gap: 8px;
         }
 
-        .stat-number {
-            font-size: 2rem;
-            font-weight: 700;
+        .stat-item i {
+            color: var(--secondary);
         }
 
-        .stat-label {
-            font-size: 0.95rem;
-            opacity: 0.9;
-        }
-
-        /* تخطيط الصفحة الرئيسية */
+        /* تخطيط المحتوى الرئيسي + الشريط الجانبي */
         .main-content {
             display: flex;
             gap: 30px;
@@ -164,138 +158,173 @@
         }
 
         .countries-section {
-            flex: 2; /* 2/3 من العرض */
+            flex: 2;
+            min-width: 0; /* لمنع الفائض */
         }
 
         .sidebar {
-            flex: 1; /* 1/3 من العرض */
+            flex: 1;
+            min-width: 250px;
+        }
+
+        /* مربع البحث */
+        .search-container {
+            margin-bottom: 30px;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
             background: white;
-            border-radius: 12px;
-            padding: 20px;
-            border: 1px solid #e2e8f0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
-            height: fit-content;
+            border-radius: 50px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
-        /* عناوين الأقسام */
-        .continent-title {
-            font-size: 1.6rem;
-            color: #1e293b;
-            margin: 40px 0 20px;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 10px;
-            position: relative;
+        .search-box input {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            outline: none;
+            font-family: 'Cairo', sans-serif;
+            font-size: 1rem;
+            background: transparent;
         }
 
-        .continent-title::before {
-            content: '';
-            position: absolute;
-            right: 0;
-            bottom: -2px;
-            width: 80px;
-            height: 2px;
-            background: #2563eb;
+        .search-box button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0 25px;
+            height: 100%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
+        .search-box button:hover {
+            background: var(--primary-light);
+        }
+
+        /* شبكة الدول */
         .countries-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             gap: 20px;
         }
 
         .country-card {
             background: white;
             border-radius: 12px;
-            padding: 20px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-            text-decoration: none;
-            color: inherit;
-            display: block;
+            padding: 20px 15px;
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
         }
 
         .country-card:hover {
             transform: translateY(-5px);
-            border-color: #2563eb;
-            box-shadow: 0 5px 15px rgba(37,99,235,0.08);
+            border-color: var(--primary);
+            box-shadow: 0 10px 25px rgba(30,60,114,0.1);
         }
 
-        .country-card .country-icon {
-            width: 50px;
-            height: 50px;
+        .country-icon {
+            width: 60px;
+            height: 60px;
             background: #eef2ff;
-            border-radius: 12px;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 15px;
         }
 
-        .country-card .country-icon i {
-            font-size: 1.8rem;
-            color: #2563eb;
+        .country-icon i {
+            font-size: 2rem;
+            color: var(--primary);
         }
 
-        .country-card h3 {
-            font-size: 1.2rem;
-            margin-bottom: 5px;
-        }
-
-        .country-card p {
-            color: #64748b;
-            font-size: 0.9rem;
+        .country-name {
+            font-size: 1rem;
+            font-weight: 600;
             margin-bottom: 10px;
         }
 
-        .jobs-count {
-            display: inline-block;
-            background: #eef2ff;
-            color: #2563eb;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
+        .country-link {
+            color: var(--primary);
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+
+        .country-card:hover .country-link {
+            opacity: 1;
+            gap: 8px;
         }
 
         /* الشريط الجانبي */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
         .widget {
-            margin-bottom: 30px;
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
         }
 
         .widget-title {
             font-size: 1.2rem;
+            color: var(--primary);
             margin-bottom: 15px;
-            color: #1e293b;
-            border-right: 4px solid #2563eb;
-            padding-right: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 10px;
+        }
+
+        .widget-title i {
+            color: var(--secondary);
         }
 
         .tip-box {
-            background: #eef2ff;
-            border-radius: 8px;
+            background: #fef9e7;
             padding: 15px;
-            border-right: 4px solid #2563eb;
-        }
-
-        .top-countries-list {
-            list-style: none;
+            border-radius: 10px;
+            border-right: 4px solid var(--secondary);
         }
 
         .top-countries-list li {
+            margin-bottom: 12px;
             display: flex;
             align-items: center;
-            gap: 10px;
-            padding: 8px 0;
-            border-bottom: 1px solid #e2e8f0;
+            gap: 8px;
         }
 
-        .top-countries-list li:last-child {
-            border-bottom: none;
+        .top-countries-list a {
+            color: var(--dark);
+            transition: var(--transition);
         }
 
-        .top-countries-list i {
-            color: #2563eb;
-            width: 20px;
+        .top-countries-list a:hover {
+            color: var(--primary);
+            padding-right: 5px;
         }
 
         .service-links {
@@ -305,142 +334,172 @@
         }
 
         .service-btn {
-            background: #eef2ff;
-            color: #1e293b;
-            padding: 10px;
-            border-radius: 6px;
-            text-align: center;
-            text-decoration: none;
-            transition: background 0.2s;
-            font-weight: 500;
+            background: var(--light);
+            padding: 12px 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+            border: 1px solid var(--border);
         }
 
         .service-btn:hover {
-            background: #2563eb;
+            background: var(--primary);
             color: white;
+            border-color: var(--primary);
+        }
+
+        .service-btn i {
+            width: 20px;
         }
 
         .quick-stats {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
         }
 
         .quick-stat {
-            background: #f8fafc;
-            padding: 10px;
-            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         .quick-stat-number {
-            font-size: 1.5rem;
+            background: var(--primary);
+            color: white;
             font-weight: 700;
-            color: #2563eb;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 1rem;
         }
 
         .social-links {
             display: flex;
-            gap: 15px;
-            justify-content: center;
+            gap: 10px;
         }
 
         .social-links a {
+            width: 40px;
+            height: 40px;
+            background: var(--light);
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
-            height: 40px;
-            background: #eef2ff;
-            border-radius: 8px;
-            color: #2563eb;
-            transition: background 0.2s;
+            transition: var(--transition);
+            color: var(--dark);
         }
 
         .social-links a:hover {
-            background: #2563eb;
+            background: var(--primary);
             color: white;
         }
 
         /* تذييل الصفحة */
         footer {
-            background: #0f172a;
+            background: var(--dark);
             color: white;
-            padding: 60px 0 30px;
+            padding: 40px 0 20px;
             margin-top: 40px;
         }
 
         .footer-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
         }
 
         .footer-section h4 {
+            margin-bottom: 15px;
             font-size: 1.1rem;
-            margin-bottom: 20px;
-            color: #f1f5f9;
+            color: white;
         }
 
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section li {
-            margin-bottom: 10px;
+        .footer-section ul li {
+            margin-bottom: 8px;
         }
 
         .footer-section a {
-            color: #94a3b8;
-            text-decoration: none;
-            transition: color 0.2s;
+            color: #cbd5e1;
+            transition: var(--transition);
         }
 
         .footer-section a:hover {
-            color: #2563eb;
+            color: white;
+            padding-right: 5px;
         }
 
         .footer-bottom {
             text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid #1e293b;
-            color: #64748b;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
             font-size: 0.9rem;
         }
 
-        /* تجاوب مع الجوال */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .stats {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .search-box {
-                flex-direction: column;
-                border-radius: 12px;
-            }
-            
-            .search-box input,
-            .search-box button {
-                width: 100%;
-            }
-            
+        /* تجاوب الجوال */
+        @media (max-width: 992px) {
             .main-content {
                 flex-direction: column;
             }
-            
-            .countries-grid {
-                grid-template-columns: 1fr;
+            .sidebar {
+                order: -1;
             }
+            .countries-grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .stat-item {
+                padding: 8px 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .countries-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            .country-icon {
+                width: 50px;
+                height: 50px;
+            }
+            .country-icon i {
+                font-size: 1.6rem;
+            }
+            .country-name {
+                font-size: 0.9rem;
+            }
+            .search-box input {
+                padding: 12px 15px;
+            }
+            .search-box button {
+                padding: 0 15px;
+            }
+        }
+
+        /* تنسيق إضافي للرسالة عند عدم وجود نتائج */
+        .no-results {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            color: var(--gray);
         }
     </style>
 </head>
@@ -455,7 +514,7 @@
                 </a>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">الرئيسية</a></li>
-                    <li><a href="#">الدول</a></li>
+                    <li><a href="countries.html">الدول</a></li>
                     <li><a href="services.html">الخدمات</a></li>
                     <li><a href="about.html">من نحن</a></li>
                     <li><a href="contact.html">اتصل بنا</a></li>
@@ -464,453 +523,387 @@
         </div>
     </nav>
 
-    <!-- القسم الرئيسي مع البحث -->
-    <header class="hero">
+    <!-- قسم الهيرو -->
+    <section class="hero">
         <div class="container">
-            <h1>وظائف على مستوى العالم</h1>
-            <p>ابحث عن فرصتك في أكثر من 58 دولة حول العالم</p>
-            
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="ابحث عن وظائف في... (مثال: كندا، ألمانيا)">
-                <button class="search-btn" onclick="performSearch()">بحث</button>
-            </div>
-            
-            <div class="stats">
-                <div class="stat-item">
-                    <span class="stat-number">58+</span>
-                    <span class="stat-label">دولة</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">1000+</span>
-                    <span class="stat-label">فرصة عمل</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">10K+</span>
-                    <span class="stat-label">مستفيد</span>
-                </div>
+            <h1>اكتشف فرص العمل في 53 دولة</h1>
+            <p>دليلك الشامل للهجرة والعمل في الخارج – رواتب محدثة، إجراءات التأشيرات، ونصائح حصرية</p>
+            <div class="hero-stats">
+                <div class="stat-item"><i class="fas fa-flag"></i> 53 دولة</div>
+                <div class="stat-item"><i class="fas fa-briefcase"></i> 1000+ فرصة</div>
+                <div class="stat-item"><i class="fas fa-users"></i> 25,000 زائر</div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <!-- المحتوى الرئيسي + الشريط الجانبي -->
-    <div class="container main-content">
-        <!-- قسم الدول (الجانب الأيمن) -->
-        <section class="countries-section">
-            <!-- أوروبا الغربية -->
-            <h2 class="continent-title">🌍 أوروبا الغربية</h2>
-            <div class="countries-grid">
-                <a href="germany.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>ألمانيا</h3>
-                    <p>برلين - ميونخ - فرانكفورت</p>
-                    <div class="jobs-count">340+ فرصة</div>
-                </a>
-                <a href="france.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>فرنسا</h3>
-                    <p>باريس - ليون - مرسيليا</p>
-                    <div class="jobs-count">5000+ فرصة</div>
-                </a>
-                <a href="netherlands.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>هولندا</h3>
-                    <p>أمستردام - لاهاي - روتردام</p>
-                    <div class="jobs-count">فرص متنوعة</div>
-                </a>
-                <a href="belgium.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>بلجيكا</h3>
-                    <p>بروكسل - أنتويرب - غنت</p>
-                    <div class="jobs-count">88K+ فرصة</div>
-                </a>
-                <a href="uk.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>بريطانيا</h3>
-                    <p>لندن - مانشستر - برمنغهام</p>
-                    <div class="jobs-count">1.2M+ فرصة</div>
-                </a>
-                <a href="ireland.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>أيرلندا</h3>
-                    <p>دبلن - كورك - غالواي</p>
-                    <div class="jobs-count">2.58M+ موظف</div>
-                </a>
-                <a href="austria.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>النمسا</h3>
-                    <p>فيينا - سالزبورغ - غراتس</p>
-                    <div class="jobs-count">فرص متنوعة</div>
-                </a>
-                <a href="switzerland.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>سويسرا</h3>
-                    <p>زيورخ - جنيف - برن</p>
-                    <div class="jobs-count">فرص متنوعة</div>
-                </a>
-                <a href="italy.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>إيطاليا</h3>
-                    <p>روما - ميلانو - نابولي</p>
-                    <div class="jobs-count">فرص متنوعة</div>
-                </a>
-                <a href="spain.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>إسبانيا</h3>
-                    <p>مدريد - برشلونة - فالنسيا</p>
-                    <div class="jobs-count">480K+ فرصة</div>
-                </a>
-                <a href="portugal.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>البرتغال</h3>
-                    <p>لشبونة - بورتو - براغا</p>
-                    <div class="jobs-count">180K+ فرصة</div>
-                </a>
-                <a href="greece.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>اليونان</h3>
-                    <p>أثينا - سالونيك - كريت</p>
-                    <div class="jobs-count">94,500 تأشيرة</div>
-                </a>
-            </div>
-
-            <!-- أوروبا الشمالية -->
-            <h2 class="continent-title">❄️ أوروبا الشمالية</h2>
-            <div class="countries-grid">
-                <a href="norway.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>النرويج</h3>
-                    <p>أوسلو - برغن - ستافانغر</p>
-                    <div class="jobs-count">فرص متنوعة</div>
-                </a>
-                <a href="sweden.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>السويد</h3>
-                    <p>ستوكهولم - غوتنبرغ - مالمو</p>
-                    <div class="jobs-count">103K+ فرصة</div>
-                </a>
-                <a href="denmark.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>الدنمارك</h3>
-                    <p>كوبنهاغن - آرهوس - أودنسه</p>
-                    <div class="jobs-count">فرص متنوعة</div>
-                </a>
-                <a href="finland.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>فنلندا</h3>
-                    <p>هلسنكي - إسبو - تامبيري</p>
-                    <div class="jobs-count">فرص متنوعة</div>
-                </a>
-                <a href="latvia.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>لاتفيا</h3>
-                    <p>ريغا - داوغافبيلس - ليبايا</p>
-                    <div class="jobs-count">6.2% بطالة</div>
-                </a>
-                <a href="lithuania.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>ليتوانيا</h3>
-                    <p>فيلنيوس - كاوناس - كلايبيدا</p>
-                    <div class="jobs-count">24,830 حصة</div>
-                </a>
-                <a href="estonia.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>إستونيا</h3>
-                    <p>تالين - تارتو</p>
-                    <div class="jobs-count">فرص تقنية</div>
-                </a>
-            </div>
-
-            <!-- أوروبا الوسطى والشرقية -->
-            <h2 class="continent-title">🏰 أوروبا الوسطى والشرقية</h2>
-            <div class="countries-grid">
-                <a href="poland.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>بولندا</h3>
-                    <p>وارسو - كراكوف - فروتسواف</p>
-                    <div class="jobs-count">4,806 زلوتي</div>
-                </a>
-                <a href="czechia.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>التشيك</h3>
-                    <p>براغ - برنو - أوسترافا</p>
-                    <div class="jobs-count">38% شركات توظف</div>
-                </a>
-                <a href="hungary.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>المجر</h3>
-                    <p>بودابست - ديبريتسين</p>
-                    <div class="jobs-count">فرص متنوعة</div>
-                </a>
-                <a href="romania.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>رومانيا</h3>
-                    <p>بوخارست - كلوج - تيميشوارا</p>
-                    <div class="jobs-count">90,000 تأشيرة</div>
-                </a>
-                <a href="bulgaria.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>بلغاريا</h3>
-                    <p>صوفيا - بلوفديف - فارنا</p>
-                    <div class="jobs-count">933 ليف</div>
-                </a>
-                <a href="croatia.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>كرواتيا</h3>
-                    <p>زغرب - دوبروفنيك - سبليت</p>
-                    <div class="jobs-count">سياسات مرنة</div>
-                </a>
-                <a href="serbia.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>صربيا</h3>
-                    <p>بلغراد - نوفي ساد - نيش</p>
-                    <div class="jobs-count">1,057 يورو</div>
-                </a>
-                <a href="slovenia.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>سلوفينيا</h3>
-                    <p>ليوبليانا - ماريبور</p>
-                    <div class="jobs-count">فرص حكومية</div>
-                </a>
-            </div>
-
-            <!-- أمريكا الشمالية -->
-            <h2 class="continent-title">🌎 أمريكا الشمالية</h2>
-            <div class="countries-grid">
-                <a href="canada.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-maple-leaf"></i></div>
-                    <h3>كندا</h3>
-                    <p>تورنتو - فانكوفر - مونتريال</p>
-                    <div class="jobs-count">280+ فرصة</div>
-                </a>
-                <a href="usa.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-star"></i></div>
-                    <h3>أمريكا</h3>
-                    <p>نيويورك - كاليفورنيا - تكساس</p>
-                    <div class="jobs-count">520+ فرصة</div>
-                </a>
-            </div>
-
-            <!-- أمريكا الجنوبية -->
-            <h2 class="continent-title">🌎 أمريكا الجنوبية</h2>
-            <div class="countries-grid">
-                <a href="argentina.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>الأرجنتين</h3>
-                    <p>بوينس آيرس - قرطبة - مندوزا</p>
-                    <div class="jobs-count">45K+ فرصة</div>
-                </a>
-                <a href="brazil.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>البرازيل</h3>
-                    <p>برازيليا - ساو باولو - ريو</p>
-                    <div class="jobs-count">اقتصاد متقدم</div>
-                </a>
-                <a href="colombia.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>كولومبيا</h3>
-                    <p>بوغوتا - ميديلين - كالي</p>
-                    <div class="jobs-count">9% بطالة</div>
-                </a>
-                <a href="peru.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>بيرو</h3>
-                    <p>ليما - أريكويبا - كوسكو</p>
-                    <div class="jobs-count">+89% نمو</div>
-                </a>
-                <a href="uruguay.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>أوروغواي</h3>
-                    <p>مونتيفيديو - بونتا دل إستي</p>
-                    <div class="jobs-count">#5 إقامة</div>
-                </a>
-                <a href="chile.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>تشيلي</h3>
-                    <p>سانتياغو - فالبارايسو</p>
-                    <div class="jobs-count">فرص تعدين</div>
-                </a>
-            </div>
-
-            <!-- الخليج والشرق الأوسط -->
-            <h2 class="continent-title">🏜️ الخليج والشرق الأوسط</h2>
-            <div class="countries-grid">
-                <a href="uae.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>الإمارات</h3>
-                    <p>دبي - أبوظبي - الشارقة</p>
-                    <div class="jobs-count">420+ فرصة</div>
-                </a>
-                <a href="saudi.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>السعودية</h3>
-                    <p>الرياض - جدة - الدمام</p>
-                    <div class="jobs-count">310+ فرصة</div>
-                </a>
-                <a href="qatar.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>قطر</h3>
-                    <p>الدوحة - الوكرة - الخور</p>
-                    <div class="jobs-count">فرص متنوعة</div>
-                </a>
-                <a href="kuwait.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>الكويت</h3>
-                    <p>الكويت العاصمة - حولي</p>
-                    <div class="jobs-count">200K+ فرصة</div>
-                </a>
-                <a href="bahrain.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>البحرين</h3>
-                    <p>المنامة - المحرق - الرفاع</p>
-                    <div class="jobs-count">35K+ فرصة</div>
-                </a>
-                <a href="oman.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>عمان</h3>
-                    <p>مسقط - صلالة - صحار</p>
-                    <div class="jobs-count">طلب مرتفع</div>
-                </a>
-                <a href="egypt.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>مصر</h3>
-                    <p>القاهرة - الإسكندرية - الجيزة</p>
-                    <div class="jobs-count">فرص متنوعة</div>
-                </a>
-                <a href="turkey.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>تركيا</h3>
-                    <p>إسطنبول - أنقرة - إزمير</p>
-                    <div class="jobs-count">فرص متنوعة</div>
-                </a>
-            </div>
-
-            <!-- آسيا وأوقيانوسيا -->
-            <h2 class="continent-title">🌏 آسيا وأوقيانوسيا</h2>
-            <div class="countries-grid">
-                <a href="japan.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>اليابان</h3>
-                    <p>طوكيو - أوساكا - يوكوهاما</p>
-                    <div class="jobs-count">فرص متنوعة</div>
-                </a>
-                <a href="southkorea.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>كوريا الجنوبية</h3>
-                    <p>سيول - بوسان - إنتشون</p>
-                    <div class="jobs-count">500K+ فرصة</div>
-                </a>
-                <a href="china.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>الصين</h3>
-                    <p>بكين - شانغهاي - شنتشن</p>
-                    <div class="jobs-count">12.67M وظيفة</div>
-                </a>
-                <a href="singapore.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>سنغافورة</h3>
-                    <p>سنغافورة</p>
-                    <div class="jobs-count">فرص متنوعة</div>
-                </a>
-                <a href="malaysia.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>ماليزيا</h3>
-                    <p>كوالالمبور - بينانج - جوهور</p>
-                    <div class="jobs-count">فرص متنوعة</div>
-                </a>
-                <a href="vietnam.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>فيتنام</h3>
-                    <p>هانوي - هوشي منه - دا نانغ</p>
-                    <div class="jobs-count">+7.1% رواتب</div>
-                </a>
-                <a href="australia.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>أستراليا</h3>
-                    <p>سيدني - ملبورن - بريزبن</p>
-                    <div class="jobs-count">190+ فرصة</div>
-                </a>
-                <a href="newzealand.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>نيوزيلندا</h3>
-                    <p>أوكلاند - ويلينغتون - كرايستشيرش</p>
-                    <div class="jobs-count">23K+ فرصة</div>
-                </a>
-            </div>
-
-            <!-- أفريقيا -->
-            <h2 class="continent-title">🌍 أفريقيا</h2>
-            <div class="countries-grid">
-                <a href="southafrica.html" class="country-card">
-                    <div class="country-icon"><i class="fas fa-flag"></i></div>
-                    <h3>جنوب أفريقيا</h3>
-                    <p>جوهانسبرغ - كيب تاون - ديربان</p>
-                    <div class="jobs-count">7.8M عاطلين</div>
-                </a>
-            </div>
-        </section>
-
-        <!-- الشريط الجانبي (الأيسر) -->
-        <aside class="sidebar">
-            <!-- نصيحة اليوم -->
-            <div class="widget">
-                <h3 class="widget-title"><i class="fas fa-lightbulb"></i> نصيحة اليوم</h3>
-                <div class="tip-box">
-                    <p>70% من الوظائف في كندا تتم عبر العلاقات المهنية. عزز شبكتك على LinkedIn وكن نشطاً في المجموعات المتخصصة.</p>
-                </div>
-            </div>
-
-            <!-- أكثر الدول بحثاً -->
-            <div class="widget">
-                <h3 class="widget-title"><i class="fas fa-chart-line"></i> أكثر الدول بحثاً</h3>
-                <ul class="top-countries-list">
-                    <li><i class="fas fa-flag"></i> <a href="canada.html">كندا</a></li>
-                    <li><i class="fas fa-flag"></i> <a href="germany.html">ألمانيا</a></li>
-                    <li><i class="fas fa-flag"></i> <a href="uae.html">الإمارات</a></li>
-                    <li><i class="fas fa-flag"></i> <a href="uk.html">بريطانيا</a></li>
-                    <li><i class="fas fa-flag"></i> <a href="australia.html">أستراليا</a></li>
-                </ul>
-            </div>
-
-            <!-- خدمات سريعة -->
-            <div class="widget">
-                <h3 class="widget-title"><i class="fas fa-briefcase"></i> خدماتنا</h3>
-                <div class="service-links">
-                    <a href="services.html" class="service-btn">📄 تصميم السيرة الذاتية</a>
-                    <a href="services.html" class="service-btn">✍️ كتابة خطاب تقديم</a>
-                    <a href="services.html" class="service-btn">📝 تسجيل في مواقع التوظيف</a>
-                </div>
-            </div>
-
-            <!-- إحصائيات سريعة -->
-            <div class="widget">
-                <h3 class="widget-title"><i class="fas fa-chart-pie"></i> إحصائيات</h3>
-                <div class="quick-stats">
-                    <div class="quick-stat">
-                        <div class="quick-stat-number">58</div>
-                        <div>دولة</div>
-                    </div>
-                    <div class="quick-stat">
-                        <div class="quick-stat-number">1K+</div>
-                        <div>فرصة عمل</div>
-                    </div>
-                    <div class="quick-stat">
-                        <div class="quick-stat-number">10K+</div>
-                        <div>مستفيد</div>
+    <div class="container">
+        <!-- المحتوى الرئيسي والشريط الجانبي -->
+        <div class="main-content">
+            <!-- قسم الدول (يمين في الويب) -->
+            <div class="countries-section">
+                <!-- مربع البحث -->
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="ابحث عن دولة... (مثال: كندا، ألمانيا، المغرب)" onkeyup="filterCountries()">
+                        <button><i class="fas fa-search"></i></button>
                     </div>
                 </div>
-            </div>
 
-            <!-- تابعنا -->
-            <div class="widget">
-                <h3 class="widget-title"><i class="fas fa-share-alt"></i> تابعنا</h3>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <!-- شبكة الدول -->
+                <div class="countries-grid" id="countriesGrid">
+                    <!-- أوروبا الغربية -->
+                    <a href="germany.html" class="country-card" data-name="ألمانيا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #DD0000;"></i></div>
+                        <span class="country-name">ألمانيا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="france.html" class="country-card" data-name="فرنسا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #002395;"></i></div>
+                        <span class="country-name">فرنسا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="netherlands.html" class="country-card" data-name="هولندا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #21468B;"></i></div>
+                        <span class="country-name">هولندا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="belgium.html" class="country-card" data-name="بلجيكا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #000000;"></i></div>
+                        <span class="country-name">بلجيكا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="uk.html" class="country-card" data-name="بريطانيا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #012169;"></i></div>
+                        <span class="country-name">بريطانيا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="ireland.html" class="country-card" data-name="أيرلندا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #169B62;"></i></div>
+                        <span class="country-name">أيرلندا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="austria.html" class="country-card" data-name="النمسا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #ED2939;"></i></div>
+                        <span class="country-name">النمسا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="switzerland.html" class="country-card" data-name="سويسرا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #FF0000;"></i></div>
+                        <span class="country-name">سويسرا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="italy.html" class="country-card" data-name="إيطاليا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #009246;"></i></div>
+                        <span class="country-name">إيطاليا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="spain.html" class="country-card" data-name="إسبانيا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #AA151B;"></i></div>
+                        <span class="country-name">إسبانيا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="portugal.html" class="country-card" data-name="البرتغال">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #006600;"></i></div>
+                        <span class="country-name">البرتغال</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="greece.html" class="country-card" data-name="اليونان">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #0D5EAF;"></i></div>
+                        <span class="country-name">اليونان</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+
+                    <!-- أوروبا الشمالية -->
+                    <a href="norway.html" class="country-card" data-name="النرويج">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #BA0C2F;"></i></div>
+                        <span class="country-name">النرويج</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="sweden.html" class="country-card" data-name="السويد">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #004B87;"></i></div>
+                        <span class="country-name">السويد</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="denmark.html" class="country-card" data-name="الدنمارك">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #C8102E;"></i></div>
+                        <span class="country-name">الدنمارك</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="finland.html" class="country-card" data-name="فنلندا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #002F6C;"></i></div>
+                        <span class="country-name">فنلندا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="latvia.html" class="country-card" data-name="لاتفيا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #9E3039;"></i></div>
+                        <span class="country-name">لاتفيا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="lithuania.html" class="country-card" data-name="ليتوانيا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #FDB913;"></i></div>
+                        <span class="country-name">ليتوانيا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+
+                    <!-- أوروبا الوسطى والشرقية -->
+                    <a href="poland.html" class="country-card" data-name="بولندا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #DC143C;"></i></div>
+                        <span class="country-name">بولندا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="czechia.html" class="country-card" data-name="التشيك">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #11457E;"></i></div>
+                        <span class="country-name">التشيك</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="hungary.html" class="country-card" data-name="المجر">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #CD2A3E;"></i></div>
+                        <span class="country-name">المجر</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="romania.html" class="country-card" data-name="رومانيا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #002B7F;"></i></div>
+                        <span class="country-name">رومانيا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="bulgaria.html" class="country-card" data-name="بلغاريا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #00966E;"></i></div>
+                        <span class="country-name">بلغاريا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="croatia.html" class="country-card" data-name="كرواتيا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #FF0000;"></i></div>
+                        <span class="country-name">كرواتيا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="serbia.html" class="country-card" data-name="صربيا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #C6363C;"></i></div>
+                        <span class="country-name">صربيا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+
+                    <!-- أمريكا الشمالية -->
+                    <a href="canada.html" class="country-card" data-name="كندا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #D52B1E;"></i></div>
+                        <span class="country-name">كندا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="usa.html" class="country-card" data-name="أمريكا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #B22234;"></i></div>
+                        <span class="country-name">الولايات المتحدة</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="mexico.html" class="country-card" data-name="المكسيك">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #006341;"></i></div>
+                        <span class="country-name">المكسيك</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+
+                    <!-- أمريكا الجنوبية -->
+                    <a href="argentina.html" class="country-card" data-name="الأرجنتين">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #75AADB;"></i></div>
+                        <span class="country-name">الأرجنتين</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="brazil.html" class="country-card" data-name="البرازيل">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #009B3A;"></i></div>
+                        <span class="country-name">البرازيل</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="colombia.html" class="country-card" data-name="كولومبيا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #FCD116;"></i></div>
+                        <span class="country-name">كولومبيا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="peru.html" class="country-card" data-name="بيرو">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #D91023;"></i></div>
+                        <span class="country-name">بيرو</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="uruguay.html" class="country-card" data-name="أوروغواي">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #0038A8;"></i></div>
+                        <span class="country-name">أوروغواي</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="chile.html" class="country-card" data-name="تشيلي">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #D52B1E;"></i></div>
+                        <span class="country-name">تشيلي</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+
+                    <!-- الخليج والشرق الأوسط -->
+                    <a href="uae.html" class="country-card" data-name="الإمارات">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #FF0000;"></i></div>
+                        <span class="country-name">الإمارات</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="saudi.html" class="country-card" data-name="السعودية">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #006C35;"></i></div>
+                        <span class="country-name">السعودية</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="qatar.html" class="country-card" data-name="قطر">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #8B1E3F;"></i></div>
+                        <span class="country-name">قطر</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="kuwait.html" class="country-card" data-name="الكويت">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #007A3D;"></i></div>
+                        <span class="country-name">الكويت</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="bahrain.html" class="country-card" data-name="البحرين">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #DA291C;"></i></div>
+                        <span class="country-name">البحرين</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="oman.html" class="country-card" data-name="عمان">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #DA291C;"></i></div>
+                        <span class="country-name">عمان</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="egypt.html" class="country-card" data-name="مصر">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #C8102E;"></i></div>
+                        <span class="country-name">مصر</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="turkey.html" class="country-card" data-name="تركيا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #E30A17;"></i></div>
+                        <span class="country-name">تركيا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+
+                    <!-- آسيا وأوقيانوسيا -->
+                    <a href="japan.html" class="country-card" data-name="اليابان">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #BC002D;"></i></div>
+                        <span class="country-name">اليابان</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="southkorea.html" class="country-card" data-name="كوريا الجنوبية">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #CD2E3A;"></i></div>
+                        <span class="country-name">كوريا الجنوبية</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="china.html" class="country-card" data-name="الصين">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #DE2910;"></i></div>
+                        <span class="country-name">الصين</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="singapore.html" class="country-card" data-name="سنغافورة">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #ED2939;"></i></div>
+                        <span class="country-name">سنغافورة</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="malaysia.html" class="country-card" data-name="ماليزيا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #010066;"></i></div>
+                        <span class="country-name">ماليزيا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="vietnam.html" class="country-card" data-name="فيتنام">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #DA251D;"></i></div>
+                        <span class="country-name">فيتنام</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="australia.html" class="country-card" data-name="أستراليا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #00008B;"></i></div>
+                        <span class="country-name">أستراليا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="newzealand.html" class="country-card" data-name="نيوزيلندا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #00247D;"></i></div>
+                        <span class="country-name">نيوزيلندا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+
+                    <!-- أفريقيا -->
+                    <a href="southafrica.html" class="country-card" data-name="جنوب أفريقيا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #007A4D;"></i></div>
+                        <span class="country-name">جنوب أفريقيا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="morocco.html" class="country-card" data-name="المغرب">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #C1272D;"></i></div>
+                        <span class="country-name">المغرب</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="algeria.html" class="country-card" data-name="الجزائر">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #006233;"></i></div>
+                        <span class="country-name">الجزائر</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="tunisia.html" class="country-card" data-name="تونس">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #E70013;"></i></div>
+                        <span class="country-name">تونس</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                    <a href="libya.html" class="country-card" data-name="ليبيا">
+                        <div class="country-icon"><i class="fas fa-flag" style="color: #239E46;"></i></div>
+                        <span class="country-name">ليبيا</span>
+                        <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                </div>
+                <div id="noResults" class="no-results" style="display: none;">
+                    <i class="fas fa-search" style="font-size: 2rem; color: var(--gray);"></i>
+                    <p>لا توجد نتائج تطابق بحثك</p>
                 </div>
             </div>
-        </aside>
+
+            <!-- الشريط الجانبي (يسار في الويب) -->
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3 class="widget-title"><i class="fas fa-lightbulb"></i> نصيحة اليوم</h3>
+                    <div class="tip-box">
+                        <p>70% من الوظائف في كندا تتم عبر العلاقات المهنية. عزز شبكتك على LinkedIn وابدأ بالتواصل مع مسؤولي التوظيف اليوم.</p>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget-title"><i class="fas fa-chart-line"></i> أكثر الدول بحثاً</h3>
+                    <ul class="top-countries-list">
+                        <li><i class="fas fa-flag" style="color: #D52B1E;"></i> <a href="canada.html">كندا</a></li>
+                        <li><i class="fas fa-flag" style="color: #DD0000;"></i> <a href="germany.html">ألمانيا</a></li>
+                        <li><i class="fas fa-flag" style="color: #FF0000;"></i> <a href="uae.html">الإمارات</a></li>
+                        <li><i class="fas fa-flag" style="color: #006C35;"></i> <a href="saudi.html">السعودية</a></li>
+                        <li><i class="fas fa-flag" style="color: #00008B;"></i> <a href="australia.html">أستراليا</a></li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget-title"><i class="fas fa-briefcase"></i> خدمات سريعة</h3>
+                    <div class="service-links">
+                        <a href="services.html" class="service-btn"><i class="fas fa-file-alt"></i> تصميم السيرة الذاتية</a>
+                        <a href="services.html" class="service-btn"><i class="fas fa-envelope"></i> كتابة خطاب تقديم</a>
+                        <a href="services.html" class="service-btn"><i class="fas fa-user-plus"></i> تسجيل في مواقع التوظيف</a>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget-title"><i class="fas fa-chart-pie"></i> إحصائيات سريعة</h3>
+                    <div class="quick-stats">
+                        <div class="quick-stat">
+                            <span class="quick-stat-number">53</span>
+                            <span>دولة متاحة</span>
+                        </div>
+                        <div class="quick-stat">
+                            <span class="quick-stat-number">1000+</span>
+                            <span>فرصة عمل محدثة</span>
+                        </div>
+                        <div class="quick-stat">
+                            <span class="quick-stat-number">25k</span>
+                            <span>زائر شهرياً</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget-title"><i class="fas fa-share-alt"></i> تابعنا</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/212669411021" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </aside>
+        </div>
     </div>
 
     <!-- تذييل الصفحة -->
@@ -919,34 +912,18 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>وظائف حول العالم</h4>
-                    <p>منصتك الموثوقة للبحث عن فرص عمل في 58 دولة حول العالم. نقدم معلومات محدثة، نصائح مهنية، وخدمات احترافية بأسعار رمزية.</p>
+                    <p>منصتك الموثوقة للبحث عن فرص عمل في 53 دولة حول العالم. نقدم معلومات محدثة عن الرواتب، التأشيرات، ونصائح التوظيف.</p>
                 </div>
-                
                 <div class="footer-section">
                     <h4>روابط سريعة</h4>
                     <ul>
                         <li><a href="index.html">الرئيسية</a></li>
-                        <li><a href="#">الدول</a></li>
+                        <li><a href="countries.html">الدول</a></li>
                         <li><a href="services.html">الخدمات</a></li>
                         <li><a href="about.html">من نحن</a></li>
                         <li><a href="contact.html">اتصل بنا</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer-section">
-                    <h4>الدول</h4>
-                    <ul>
-                        <li><a href="canada.html">كندا</a></li>
-                        <li><a href="usa.html">أمريكا</a></li>
-                        <li><a href="germany.html">ألمانيا</a></li>
-                        <li><a href="uk.html">بريطانيا</a></li>
-                        <li><a href="uae.html">الإمارات</a></li>
-                        <li><a href="australia.html">أستراليا</a></li>
-                        <li><a href="japan.html">اليابان</a></li>
-                        <li><a href="china.html">الصين</a></li>
-                    </ul>
-                </div>
-
                 <div class="footer-section">
                     <h4>سياسة الموقع</h4>
                     <ul>
@@ -954,10 +931,16 @@
                         <li><a href="terms.html">اتفاقية الاستخدام</a></li>
                     </ul>
                 </div>
+                <div class="footer-section">
+                    <h4>تابعنا</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook"></i> فيسبوك</a>
+                        <a href="https://wa.me/212669411021" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة</p>
+                <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة | آخر تحديث: مارس 2026</p>
             </div>
         </div>
     </footer>
@@ -965,141 +948,31 @@
     <!-- كود الإعلان Social Bar -->
     <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 
-    <!-- دالة البحث -->
+    <!-- وظيفة البحث (JavaScript) -->
     <script>
-        function performSearch() {
+        function filterCountries() {
             const input = document.getElementById('searchInput');
-            const query = input.value.trim().toLowerCase();
-            if (!query) {
-                alert('الرجاء إدخال كلمة للبحث');
-                return;
-            }
-            const countryMap = {
-                'كندا': 'canada.html',
-                'canada': 'canada.html',
-                'ألمانيا': 'germany.html',
-                'germany': 'germany.html',
-                'الإمارات': 'uae.html',
-                'uae': 'uae.html',
-                'أستراليا': 'australia.html',
-                'australia': 'australia.html',
-                'السعودية': 'saudi.html',
-                'saudi': 'saudi.html',
-                'أمريكا': 'usa.html',
-                'usa': 'usa.html',
-                'فرنسا': 'france.html',
-                'france': 'france.html',
-                'إسبانيا': 'spain.html',
-                'spain': 'spain.html',
-                'هولندا': 'netherlands.html',
-                'netherlands': 'netherlands.html',
-                'بلجيكا': 'belgium.html',
-                'belgium': 'belgium.html',
-                'قطر': 'qatar.html',
-                'qatar': 'qatar.html',
-                'اليابان': 'japan.html',
-                'japan': 'japan.html',
-                'بريطانيا': 'uk.html',
-                'uk': 'uk.html',
-                'الكويت': 'kuwait.html',
-                'kuwait': 'kuwait.html',
-                'إيطاليا': 'italy.html',
-                'italy': 'italy.html',
-                'سويسرا': 'switzerland.html',
-                'switzerland': 'switzerland.html',
-                'النمسا': 'austria.html',
-                'austria': 'austria.html',
-                'النرويج': 'norway.html',
-                'norway': 'norway.html',
-                'الدنمارك': 'denmark.html',
-                'denmark': 'denmark.html',
-                'السويد': 'sweden.html',
-                'sweden': 'sweden.html',
-                'فنلندا': 'finland.html',
-                'finland': 'finland.html',
-                'أيرلندا': 'ireland.html',
-                'ireland': 'ireland.html',
-                'البرتغال': 'portugal.html',
-                'portugal': 'portugal.html',
-                'اليونان': 'greece.html',
-                'greece': 'greece.html',
-                'البحرين': 'bahrain.html',
-                'bahrain': 'bahrain.html',
-                'عمان': 'oman.html',
-                'oman': 'oman.html',
-                'مصر': 'egypt.html',
-                'egypt': 'egypt.html',
-                'تركيا': 'turkey.html',
-                'turkey': 'turkey.html',
-                'بولندا': 'poland.html',
-                'poland': 'poland.html',
-                'التشيك': 'czechia.html',
-                'czechia': 'czechia.html',
-                'المجر': 'hungary.html',
-                'hungary': 'hungary.html',
-                'رومانيا': 'romania.html',
-                'romania': 'romania.html',
-                'بلغاريا': 'bulgaria.html',
-                'bulgaria': 'bulgaria.html',
-                'كرواتيا': 'croatia.html',
-                'croatia': 'croatia.html',
-                'صربيا': 'serbia.html',
-                'serbia': 'serbia.html',
-                'سلوفينيا': 'slovenia.html',
-                'slovenia': 'slovenia.html',
-                'لاتفيا': 'latvia.html',
-                'latvia': 'latvia.html',
-                'ليتوانيا': 'lithuania.html',
-                'lithuania': 'lithuania.html',
-                'إستونia': 'estonia.html',
-                'estonia': 'estonia.html',
-                'الأرجنتين': 'argentina.html',
-                'argentina': 'argentina.html',
-                'البرازيل': 'brazil.html',
-                'brazil': 'brazil.html',
-                'كولومبيا': 'colombia.html',
-                'colombia': 'colombia.html',
-                'بيرو': 'peru.html',
-                'peru': 'peru.html',
-                'أوروغواي': 'uruguay.html',
-                'uruguay': 'uruguay.html',
-                'تشيلي': 'chile.html',
-                'chile': 'chile.html',
-                'جنوب أفريقيا': 'southafrica.html',
-                'southafrica': 'southafrica.html',
-                'كوريا الجنوبية': 'southkorea.html',
-                'southkorea': 'southkorea.html',
-                'سنغافورة': 'singapore.html',
-                'singapore': 'singapore.html',
-                'ماليزيا': 'malaysia.html',
-                'malaysia': 'malaysia.html',
-                'فيتنام': 'vietnam.html',
-                'vietnam': 'vietnam.html',
-                'نيوزيلندا': 'newzealand.html',
-                'newzealand': 'newzealand.html'
-            };
-            let matchedPage = null;
-            for (let key in countryMap) {
-                if (query.includes(key)) {
-                    matchedPage = countryMap[key];
-                    break;
-                }
-            }
-            if (matchedPage) {
-                window.location.href = matchedPage;
-            } else {
-                alert('لم نجد نتائج. جرب البحث باسم دولة مثل: كندا، ألمانيا، الإمارات...');
-            }
-        }
+            const filter = input.value.trim().toLowerCase();
+            const cards = document.querySelectorAll('.country-card');
+            let visibleCount = 0;
 
-        document.addEventListener('DOMContentLoaded', function() {
-            const input = document.getElementById('searchInput');
-            input.addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') {
-                    performSearch();
+            cards.forEach(card => {
+                const name = card.getAttribute('data-name').toLowerCase();
+                if (name.includes(filter) || filter === '') {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
                 }
             });
-        });
+
+            const noResultsDiv = document.getElementById('noResults');
+            if (visibleCount === 0) {
+                noResultsDiv.style.display = 'block';
+            } else {
+                noResultsDiv.style.display = 'none';
+            }
+        }
     </script>
 </body>
 </html>
