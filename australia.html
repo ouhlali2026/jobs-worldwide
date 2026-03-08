@@ -2,314 +2,619 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فرص عمل في أستراليا - وظائف على مستوى العالم</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>فرص عمل في أستراليا 2026 | المهن المطلوبة والتأشيرات والرواتب في سيدني وملبورن</title>
+    <meta name="description" content="أستراليا 2026: دليلك الشامل للعمل في أستراليا. أحدث تحديثات الرواتب (CSIT $79,499)، المهن الأكثر طلباً (تمريض، هندسة، تكنولوجيا)، تأشيرات العمل (482 Skills in Demand، 189/190)، ونصائح للباحثين عن عمل.">
+    <meta name="keywords" content="فرص عمل في أستراليا, وظائف أستراليا 2026, تأشيرة عمل أستراليا, 482 visa Australia, 189 visa, الرواتب في أستراليا, الهجرة إلى أستراليا, skilled occupation list">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- ملف التنسيقات -->
+
+    <!-- ملف التنسيقات الرئيسي -->
     <link rel="stylesheet" href="style.css">
-    
+
     <style>
+        /* تنسيقات خاصة بصفحة أستراليا - مستوحاة من ألوان العلم 🇦🇺 */
+        :root {
+            --australia-blue: #00008B;
+            --australia-red: #FF0000;
+            --australia-white: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
         .country-header {
-            background: linear-gradient(135deg, #1A3C6B, #0066B3);
+            background: linear-gradient(135deg, var(--australia-blue), var(--australia-red));
             color: white;
-            padding: 60px 0;
+            padding: clamp(20px, 5vw, 30px) 15px;
             text-align: center;
             position: relative;
             overflow: hidden;
+            width: 100%;
         }
-        
-        .country-header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.1"><polygon points="0,0 50,30 100,0 80,50 100,100 50,70 0,100 20,50 0,0" fill="white"/></svg>');
-            background-size: 80px 80px;
-            background-repeat: repeat;
-        }
-        
+
         .country-header h1 {
-            font-size: 2.5rem;
+            font-size: clamp(1.5rem, 6vw, 2.2rem);
             margin-bottom: 10px;
             position: relative;
+            color: white;
+            background: rgba(0,0,0,0.2);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: 700;
+            word-break: break-word;
+            max-width: 95%;
+            line-height: 1.3;
         }
-        
+
         .country-header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
+            font-size: clamp(0.85rem, 3vw, 1rem);
+            opacity: 0.95;
             position: relative;
+            color: white;
+            background: rgba(0,0,0,0.2);
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 30px;
+            max-width: 95%;
+            margin: 8px auto;
+            line-height: 1.5;
         }
-        
+
         .country-info {
             display: flex;
             justify-content: center;
-            gap: 30px;
-            margin: 30px 0;
+            gap: 8px;
+            margin: 15px 0 0;
             flex-wrap: wrap;
+            width: 100%;
         }
-        
+
         .info-badge {
             background: white;
-            color: #1A3C6B;
-            padding: 10px 25px;
+            color: var(--australia-blue);
+            padding: 6px 12px;
             border-radius: 50px;
             font-weight: 600;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-size: clamp(0.7rem, 2.5vw, 0.8rem);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap;
         }
-        
+
+        @media (max-width: 480px) {
+            .info-badge {
+                white-space: normal;
+                font-size: 0.7rem;
+                padding: 4px 8px;
+            }
+        }
+
+        .info-badge i {
+            font-size: 0.8rem;
+        }
+
         .section-title {
-            font-size: 1.8rem;
+            font-size: clamp(1.3rem, 5vw, 1.8rem);
             color: #1e293b;
-            margin: 40px 0 20px;
+            margin: 25px 0 15px;
             position: relative;
-            padding-right: 15px;
+            padding-right: 12px;
+            line-height: 1.3;
         }
-        
+
         .section-title::before {
             content: '';
             position: absolute;
             right: 0;
             top: 0;
             bottom: 0;
-            width: 5px;
-            background: #1A3C6B;
+            width: 4px;
+            background: var(--australia-red);
             border-radius: 5px;
         }
-        
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 12px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        /* تحسينات الجوال */
+        @media (max-width: 768px) {
+            .country-header {
+                padding: 20px 10px;
+            }
+            .container {
+                padding: 0 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .country-header h1 {
+                font-size: 1.4rem;
+                padding: 5px 10px;
+            }
+            .section-title {
+                font-size: 1.2rem;
+                padding-right: 10px;
+            }
+        }
+
         .jobs-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+            width: 100%;
         }
-        
+
         .job-site-card {
             background: white;
             border-radius: 12px;
-            padding: 25px;
+            padding: 15px;
             border: 1px solid #e2e8f0;
             transition: all 0.3s ease;
             text-decoration: none;
             color: inherit;
             display: block;
+            width: 100%;
         }
-        
+
         .job-site-card:hover {
             transform: translateY(-5px);
-            border-color: #1A3C6B;
-            box-shadow: 0 10px 25px rgba(26,60,107,0.1);
+            border-color: var(--australia-red);
+            box-shadow: 0 10px 25px rgba(255,0,0,0.1);
         }
-        
+
         .job-site-header {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
+            gap: 10px;
+            margin-bottom: 10px;
         }
-        
+
         .job-site-icon {
-            width: 50px;
-            height: 50px;
-            background: #e6ecf5;
-            border-radius: 12px;
+            width: 40px;
+            height: 40px;
+            background: #ffe0e0;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-shrink: 0;
         }
-        
+
         .job-site-icon i {
-            font-size: 1.8rem;
-            color: #1A3C6B;
+            font-size: 1.4rem;
+            color: var(--australia-red);
         }
-        
+
         .job-site-name {
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 600;
             color: #1e293b;
+            word-break: break-word;
         }
-        
+
         .job-site-desc {
             color: #64748b;
-            font-size: 0.95rem;
-            margin-bottom: 15px;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            line-height: 1.5;
         }
-        
+
         .job-site-link {
             display: inline-flex;
             align-items: center;
             gap: 5px;
-            color: #1A3C6B;
-            font-size: 0.95rem;
+            color: var(--australia-red);
+            font-size: 0.85rem;
+            word-break: break-word;
         }
-        
-        .professions-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-        
-        .profession-card {
-            background: #f8fafc;
-            border-radius: 12px;
-            padding: 25px;
-            border: 1px solid #e2e8f0;
-        }
-        
-        .profession-icon {
-            width: 50px;
-            height: 50px;
-            background: #e6ecf5;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 15px;
-        }
-        
-        .profession-icon i {
-            font-size: 1.5rem;
-            color: #1A3C6B;
-        }
-        
-        .profession-card h3 {
-            font-size: 1.1rem;
-            margin-bottom: 8px;
-            color: #1e293b;
-        }
-        
-        .profession-card p {
-            color: #64748b;
-            font-size: 0.9rem;
-            margin-bottom: 5px;
-        }
-        
-        .salary-info {
-            font-size: 0.9rem;
-            color: #1A3C6B;
-            margin-top: 8px;
-            font-weight: 600;
-        }
-        
+
         .visa-box {
             background: #f8fafc;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 30px 0;
-            border: 2px dashed #1A3C6B;
+            border-radius: 16px;
+            padding: 20px 15px;
+            margin: 20px 0;
+            border: 2px dashed var(--australia-blue);
+            width: 100%;
         }
-        
+
         .visa-box h3 {
             color: #1e293b;
-            font-size: 1.3rem;
-            margin-bottom: 15px;
+            font-size: clamp(1.1rem, 4vw, 1.3rem);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            line-height: 1.3;
         }
-        
+
         .visa-box i {
-            color: #1A3C6B;
+            color: var(--australia-red);
             font-size: 1.2rem;
+            flex-shrink: 0;
         }
-        
-        .visa-table {
+
+        .visa-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+            width: 100%;
+        }
+
+        .visa-type {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            width: 100%;
+        }
+
+        .visa-type h4 {
+            color: var(--australia-red);
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        .visa-type p {
+            font-size: 0.9rem;
+            color: #334155;
+            line-height: 1.5;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            -webkit-overflow-scrolling: touch;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .jobs-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
             background: white;
-            border-radius: 8px;
+            border-radius: 12px;
             overflow: hidden;
+            min-width: 550px;
+            table-layout: auto;
         }
-        
-        .visa-table th {
-            background: #1A3C6B;
+
+        .jobs-table th {
+            background: var(--australia-blue);
             color: white;
-            padding: 12px;
+            padding: 10px 8px;
             text-align: right;
+            font-weight: 600;
+            font-size: 0.9rem;
+            white-space: nowrap;
         }
-        
-        .visa-table td {
-            padding: 12px;
+
+        .jobs-table td {
+            padding: 10px 8px;
             border-bottom: 1px solid #e2e8f0;
+            font-size: 0.85rem;
+            word-break: break-word;
         }
-        
-        .visa-table tr:last-child td {
+
+        .jobs-table tr:last-child td {
             border-bottom: none;
         }
-        
-        .requirements-box {
-            background: #e6ecf5;
-            border-right: 4px solid #1A3C6B;
-            padding: 30px;
-            border-radius: 12px;
-            margin: 30px 0;
+
+        @media (max-width: 600px) {
+            .jobs-table th, .jobs-table td {
+                padding: 8px 6px;
+                font-size: 0.8rem;
+            }
         }
-        
+
+        .requirements-box {
+            background: #f0f7ff;
+            border-right: 4px solid var(--australia-red);
+            padding: 20px 15px;
+            border-radius: 16px;
+            margin: 20px 0;
+            width: 100%;
+        }
+
         .requirements-box h3 {
             color: #1e293b;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: clamp(1.1rem, 4vw, 1.3rem);
+            line-height: 1.3;
         }
-        
+
         .requirements-list {
             list-style: none;
+            padding: 0;
+            margin: 0;
         }
-        
+
         .requirements-list li {
             margin-bottom: 10px;
             display: flex;
-            align-items: center;
-            gap: 10px;
+            align-items: flex-start;
+            gap: 8px;
+            line-height: 1.5;
+            font-size: 0.9rem;
         }
-        
+
         .requirements-list i {
-            color: #1A3C6B;
+            color: var(--australia-red);
+            margin-top: 3px;
+            min-width: 16px;
         }
-        
+
         .back-link {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            color: #1A3C6B;
+            gap: 6px;
+            color: var(--australia-red);
             text-decoration: none;
-            margin: 20px 0;
+            margin: 15px 0;
             font-weight: 500;
+            padding: 6px 12px;
+            background: #f0f7ff;
+            border-radius: 30px;
+            font-size: 0.9rem;
         }
-        
-        .back-link:hover {
-            color: #0066B3;
-        }
-        
+
         .flag-icon {
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: white;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
         }
-        
-        .note-box {
-            background: #fff9e6;
-            border-right: 4px solid #fbbf24;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 30px 0;
+
+        .skill-tag {
+            display: inline-block;
+            background: white;
+            color: var(--australia-red);
+            padding: 5px 12px;
+            border-radius: 40px;
+            margin: 4px;
+            font-size: 0.8rem;
+            border: 1px solid var(--australia-red);
+            transition: all 0.2s;
+            font-weight: 500;
         }
-        
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 12px;
+            margin: 15px 0;
+            width: 100%;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 15px 8px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 8px rgba(255,0,0,0.05);
+            width: 100%;
+        }
+
+        .stat-number {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--australia-red);
+            line-height: 1.2;
+        }
+
+        .stat-label {
+            color: #64748b;
+            font-size: 0.8rem;
+            margin-top: 5px;
+        }
+
+        .services-section {
+            background: #f0f7ff;
+            border-radius: 24px;
+            padding: 25px 15px;
+            margin: 30px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .services-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .service-btn {
+            background: var(--australia-blue);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            border: none;
+            cursor: pointer;
+            flex: 0 1 auto;
+        }
+
+        .service-btn:hover {
+            background: #00006b;
+        }
+
+        @media (max-width: 600px) {
+            .services-buttons {
+                flex-direction: column;
+            }
+            .service-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--australia-red);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 500;
+            padding: 5px 0;
+        }
+
+        .nav-links a.active {
+            color: var(--australia-blue);
+            border-bottom: 2px solid var(--australia-blue);
+        }
+
         @media (max-width: 768px) {
-            .country-header h1 {
-                font-size: 2rem;
+            .nav-content {
+                flex-direction: column;
+                align-items: center;
             }
-            
-            .visa-table {
-                font-size: 0.9rem;
+            .nav-links {
+                justify-content: center;
             }
+        }
+
+        footer {
+            background: #1e293b;
+            color: white;
+            padding: 30px 0 15px;
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+
+        .footer-section a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-left: 8px;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 15px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 480px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        /* إصلاحات إضافية لمنع التمرير الأفقي */
+        img, iframe, video, table, div {
+            max-width: 100%;
+        }
+        p, h1, h2, h3, h4, h5, h6, li, td, th {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
     </style>
 </head>
@@ -322,7 +627,7 @@
                     <i class="fas fa-globe"></i>
                     <span>وظائف حول العالم</span>
                 </a>
-                
+
                 <ul class="nav-links">
                     <li><a href="index.html">الرئيسية</a></li>
                     <li><a href="#" class="active">الدول</a></li>
@@ -338,13 +643,13 @@
     <section class="country-header">
         <div class="container">
             <i class="fas fa-flag flag-icon"></i>
-            <h1>فرص عمل في أستراليا</h1>
-            <p>دليلك الشامل للعمل في سيدني، ملبورن، بريزبن وجميع المدن الأسترالية</p>
-            
+            <h1>🇦🇺 فرص عمل في أستراليا 2026 🇦🇺</h1>
+            <p>الدليل الكامل للعمل في سيدني، ملبورن، بريزبين، بيرث وجميع المدن الأسترالية – تحديثات يوليو 2026</p>
+
             <div class="country-info">
-                <span class="info-badge"><i class="fas fa-city"></i> 500+ فرصة</span>
-                <span class="info-badge"><i class="fas fa-language"></i> إنجليزي</span>
-                <span class="info-badge"><i class="fas fa-dollar-sign"></i> دولار أسترالي (AUD)</span>
+                <span class="info-badge"><i class="fas fa-microchip"></i> تكنولوجيا وهندسة</span>
+                <span class="info-badge"><i class="fas fa-language"></i> الإنجليزية</span>
+                <span class="info-badge"><i class="fas fa-money-bill-wave"></i> دولار أسترالي (AUD)</span>
             </div>
         </div>
     </section>
@@ -354,359 +659,364 @@
             <i class="fas fa-arrow-right"></i> العودة للصفحة الرئيسية
         </a>
 
-        <!-- تأشيرات المهارات المطلوبة 2026 -->
+        <!-- لمحة عامة عن سوق العمل الأسترالي -->
         <div class="visa-box">
-            <h3><i class="fas fa-passport"></i> تأشيرات العمل في أستراليا 2026</h3>
+            <h3><i class="fas fa-chart-line"></i> نظرة على سوق العمل في أستراليا 2026</h3>
+            <p>أستراليا تواجه تحدياً كبيراً في 2026: نقص حاد في العمالة الماهرة يغطي جميع القطاعات تقريباً. وفقاً لتقارير Hays وIndeed، تعاني البلاد من نقص في المهندسين، الممرضين، المعلمين، والمبرمجين، مما يخلق فرصاً ذهبية للباحثين عن عمل من الخارج [citation:1][citation:3]. الحكومة الأسترالية تخطط لإضافة أكثر من 300,000 وظيفة في قطاع الرعاية الصحية وحده بحلول نهاية 2026، و206,000 وظيفة في قطاع الخدمات المهنية والتقنية [citation:9]. اللغة الإنجليزية هي مفتاح الاندماج، والرواتب مرتفعة لكن تكاليف المعيشة في المدن الكبرى مرتفعة أيضاً.</p>
+        </div>
+
+        <!-- تحديثات مهمة: زيادة عتبات الرواتب للفيزا 482 (يوليو 2026) -->
+        <div class="visa-box">
+            <h3><i class="fas fa-calendar-alt"></i> 📈 تحديث هام: زيادة عتبات الرواتب للفيزا 482 اعتباراً من 1 يوليو 2026</h3>
+            <p>أعلنت الحكومة الأسترالية عن زيادة سنوية في الحد الأدنى للرواتب المطلوبة لتأشيرات العمل المدعومة من صاحب العمل (Subclass 482 و 186 و 494)، وستدخل حيز التنفيذ في 1 يوليو 2026 [citation:2][citation:8][citation:10].</p>
             
-            <h4 style="margin: 20px 0 10px;">تأشيرة المهارات المطلوبة (482 Skills in Demand)</h4>
-            <table class="visa-table">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">$79,499</div>
+                    <div class="stat-label">CSIT الجديد (Core Skills)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">$146,717</div>
+                    <div class="stat-label">SSIT الجديد (Specialist)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">+3.8%</div>
+                    <div class="stat-label">نسبة الزيادة</div>
+                </div>
+            </div>
+            <p style="margin-top: 15px;"><strong>التفاصيل:</strong> الحد الأدنى للراتب السنوي لفيزا 482 Core Skills Stream سيرتفع من 76,515 دولار إلى 79,499 دولار. لفيزا Specialist Skills Stream، سيرتفع من 141,210 دولار إلى 146,717 دولار [citation:2][citation:10]. هذه الزيادة تطبق على جميع طلبات الترشيح (Nomination) المقدمة بعد 1 يوليو 2026. إذا كنت تخطط للتقديم، قد يكون من المفيد الإسراع في الإجراءات قبل الموعد المحدد للاستفادة من العتبات الحالية [citation:2].</p>
+        </div>
+
+        <!-- المهن الأكثر طلباً والرواتب في أستراليا 2026 -->
+        <h2 class="section-title">المهن الأكثر طلباً والرواتب في أستراليا 2026</h2>
+        
+        <div class="table-container">
+            <table class="jobs-table">
                 <tr>
-                    <th>الفئة</th>
-                    <th>الراتب المطلوب</th>
-                    <th>المدة</th>
+                    <th>القطاع</th>
+                    <th>المهن المطلوبة</th>
+                    <th>مبتدئ (AUD)</th>
+                    <th>متوسط (AUD)</th>
+                    <th>متقدم (AUD)</th>
                 </tr>
                 <tr>
-                    <td>Core Skills Stream</td>
-                    <td>$76,515+</td>
-                    <td>حتى 4 سنوات</td>
+                    <td>الرعاية الصحية والتمريض</td>
+                    <td>ممرضون مسجلون، ممرضو رعاية مسنين، أطباء مقيمون، معالجون طبيعيون، أخصائيو علاج وظيفي، أخصائيو نفسيون [citation:1][citation:3][citation:7]</td>
+                    <td>65,000 – 75,000</td>
+                    <td>80,000 – 95,000</td>
+                    <td>100,000 – 130,000+</td>
                 </tr>
                 <tr>
-                    <td>Specialist Skills Stream</td>
-                    <td>$141,210+</td>
-                    <td>معالجة أسرع</td>
+                    <td>الهندسة</td>
+                    <td>مهندسو مدني، مهندسو كهرباء، مهندسو ميكانيكا، مهندسو طاقة (Grid Connection)، مهندسو جيوتقني، مهندسو تصميم [citation:1]</td>
+                    <td>70,000 – 85,000</td>
+                    <td>90,000 – 120,000</td>
+                    <td>130,000 – 200,000+</td>
+                </tr>
+                <tr>
+                    <td>تكنولوجيا المعلومات</td>
+                    <td>مطورو برمجيات (Java, .NET, Python)، مهندسو أمن سيبراني، مهندسو سحابة (Cloud)، مهندسو DevOps، محللو بيانات، متخصصو Salesforce/Oracle [citation:1][citation:7]</td>
+                    <td>70,000 – 85,000</td>
+                    <td>90,000 – 120,000</td>
+                    <td>130,000 – 180,000+</td>
+                </tr>
+                <tr>
+                    <td>المحاسبة والمالية</td>
+                    <td>محاسبون إداريون، محاسبون ماليون، مدراء ماليون، محللو ماليون، مسؤولو رواتب [citation:1]</td>
+                    <td>65,000 – 80,000</td>
+                    <td>85,000 – 110,000</td>
+                    <td>120,000 – 180,000+</td>
+                </tr>
+                <tr>
+                    <td>التعليم</td>
+                    <td>معلمو مرحلة مبكرة، معلمو مدارس ابتدائية، معلمو مدارس ثانوية، معلمو تعليم خاص [citation:1][citation:3]</td>
+                    <td>70,000 – 85,000</td>
+                    <td>90,000 – 110,000</td>
+                    <td>115,000 – 130,000+</td>
+                </tr>
+                <tr>
+                    <td>المشتريات وسلاسل التوريد</td>
+                    <td>مدراء فئات (Category Managers)، متخصصو مشتريات، مدراء توريد استراتيجي [citation:1]</td>
+                    <td>80,000 – 95,000</td>
+                    <td>100,000 – 130,000</td>
+                    <td>140,000 – 210,000+</td>
+                </tr>
+                <tr>
+                    <td>المهن الحرفية (Trades)</td>
+                    <td>كهربائيون (A-Grade)، سباكون، نجارون، ميكانيكيو سيارات، لحامون، عمال بناء [citation:1][citation:5]</td>
+                    <td>65,000 – 75,000</td>
+                    <td>80,000 – 95,000</td>
+                    <td>100,000 – 200,000+</td>
+                </tr>
+                <tr>
+                    <td>الخدمات واللوجستيات</td>
+                    <td>سائقو شاحنات (MR/HR/HC/MC)، مدراء نقل، عمال مستودعات، مدراء تجزئة [citation:1][citation:3]</td>
+                    <td>55,000 – 65,000</td>
+                    <td>70,000 – 90,000</td>
+                    <td>95,000 – 160,000+</td>
                 </tr>
             </table>
+            <p style="margin-top: 5px;">المصادر: Hays Salary Guide 2026 [citation:1], Indeed [citation:3], LinkedIn Insights [citation:5], Mars Recruitment [citation:9].</p>
+        </div>
 
-            <h4 style="margin: 20px 0 10px;">تأشيرات بدون عرض عمل</h4>
+        <!-- رواتب تفصيلية لبعض المهن -->
+        <div class="visa-box">
+            <h3><i class="fas fa-chart-bar"></i> رواتب تفصيلية لمهن مختارة (2026)</h3>
+            <div class="table-container">
+                <table class="jobs-table">
+                    <tr><th>المسمى الوظيفي</th><th>الراتب السنوي (AUD)</th></tr>
+                    <tr><td>Finance Manager (شركة إيرادات >300M)</td><td>يصل إلى 180,000 - 220,000 [citation:1]</td></tr>
+                    <tr><td>Cyber Security Architect</td><td>~ 187,000 [citation:1]</td></tr>
+                    <tr><td>Penetration Tester</td><td>يصل إلى 180,000 [citation:1]</td></tr>
+                    <tr><td>Power System Engineer</td><td>يصل إلى 200,000 [citation:1]</td></tr>
+                    <tr><td>Electrical/Design Engineer</td><td>يصل إلى 200,000 [citation:1]</td></tr>
+                    <tr><td>Senior Developer (.NET/Java)</td><td>~ 160,000 [citation:1]</td></tr>
+                    <tr><td>Infrastructure Manager</td><td>يصل إلى 170,000 [citation:1]</td></tr>
+                    <tr><td>Category Manager (Perth)</td><td>يصل إلى 200,000 [citation:1]</td></tr>
+                    <tr><td>Strategic Sourcing Manager (Perth/Melbourne)</td><td>يصل إلى 210,000 [citation:1]</td></tr>
+                    <tr><td>Electrician (WA, قطاع التعدين)</td><td>يصل إلى 200,000 [citation:1]</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- تكلفة المعيشة في المدن الرئيسية -->
+        <h2 class="section-title">تكلفة المعيشة في أستراليا 2026</h2>
+        <div class="requirements-box">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+                <div><strong>سيدني (شخص واحد):</strong> 3,500 – 5,000 AUD</div>
+                <div><strong>ملبورن (شخص واحد):</strong> 3,200 – 4,500 AUD</div>
+                <div><strong>بريزبين (شخص واحد):</strong> 2,800 – 4,000 AUD</div>
+                <div><strong>بيرث (شخص واحد):</strong> 2,800 – 4,000 AUD</div>
+                <div><strong>إيجار شقة (غرفة نوم واحدة، سيدني):</strong> 2,200 – 3,200 AUD</div>
+                <div><strong>فواتير شهرية:</strong> 250 – 400 AUD</div>
+                <div><strong>وجبة في مطعم عادي:</strong> 20 – 35 AUD</div>
+            </div>
+            <p style="margin-top: 15px;">تكاليف المعيشة في سيدني وملبورن هي الأعلى في أستراليا. المدن الإقليمية (Regional areas) أقل تكلفة وقد توفر مزايا إضافية في الهجرة (مثل فيزا 491).</p>
+        </div>
+
+        <!-- أنواع التأشيرات الرئيسية -->
+        <h2 class="section-title">تأشيرات العمل في أستراليا 2026</h2>
+        <div class="visa-box">
+            <h3><i class="fas fa-passport"></i> أشهر أنواع التأشيرات</h3>
+            
+            <div class="visa-grid">
+                <div class="visa-type">
+                    <h4>482 Skills in Demand Visa</h4>
+                    <p>تأشيرة عمل مؤقتة مدعومة من صاحب العمل (تصل إلى 4 سنوات). تسمح بالعمل لدى كفيل محدد. بعد سنتين، يمكن التقدم للإقامة الدائمة عبر 186 Transition Stream [citation:6]. تنقسم لثلاث مسارات: Specialist Skills (أي مهنة، راتب ≥146,717$)، Core Skills (مهنة في قائمة CSOL، راتب ≥79,499$)، وLabour Agreement [citation:6]. تتطلب سنة خبرة عمل.</p>
+                </div>
+                <div class="visa-type">
+                    <h4>189 Skilled Independent Visa</h4>
+                    <p>تأشيرة إقامة دائمة لا تتطلب كفيل. تعتمد على نظام النقاط (نقاط للعمر، اللغة، الخبرة، المؤهل). المهنة يجب أن تكون على قائمة MLTSSL [citation:4]. تتيح العيش والعمل في أي مكان في أستراليا.</p>
+                </div>
+                <div class="visa-type">
+                    <h4>190 Skilled Nominated Visa</h4>
+                    <p>تأشيرة إقامة دائمة تتطلب ترشيحاً من ولاية أو إقليم أسترالي. تحصل على نقاط إضافية (5-10) للترشيح. المهنة يجب أن تكون على قائمة الولاية [citation:4]. تتطلب التزاماً بالعيش في الولاية المانحة لعدة سنوات.</p>
+                </div>
+                <div class="visa-type">
+                    <h4>491 Skilled Work Regional Visa</h4>
+                    <p>تأشيرة مؤقتة (5 سنوات) للمناطق الإقليمية. تتطلب ترشيحاً من ولاية أو دعم من قريب مقيم في منطقة إقليمية. توفر مساراً للإقامة الدائمة عبر 191 Visa بعد 3 سنوات من العيش والعمل في المنطقة الإقليمية [citation:4].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>485 Temporary Graduate Visa</h4>
+                    <p>للطلاب الأجانب المتخرجين من مؤسسة تعليمية أسترالية بعد إكمال 2 سنة دراسة. تسمح بالعمل والإقامة لمدة 2-4 سنوات (حسب المؤهل)، وتعتبر خطوة أولى نحو الإقامة الدائمة [citation:4].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>462/417 Working Holiday Visa</h4>
+                    <p>للباحثين عن عمل من دول معينة (للأعمار 18-30/35). تسمح بالعمل لمدة سنة (قابلة للتمديد) لدى عدة أصحاب عمل، وتعتبر بوابة لاكتشاف أستراليا والعمل المؤقت [citation:4].</p>
+                </div>
+            </div>
+
+            <h4 style="margin: 15px 0 10px;">نظام النقاط للتأشيرات المستقلة (189/190)</h4>
             <ul class="requirements-list">
-                <li><i class="fas fa-check-circle"></i> <strong>SC189 (مستقل)</strong> - نقاط (عمر، لغة، خبرة)</li>
-                <li><i class="fas fa-check-circle"></i> <strong>SC190 (ترشيح ولاية)</strong> - ترشيح حكومي</li>
-                <li><i class="fas fa-check-circle"></i> <strong>SC491 (مناطق إقليمية)</strong> - مناطق محددة</li>
-                <li><i class="fas fa-check-circle"></i> <strong>Working Holiday</strong> - أعمار 18-30 (35 لبعض الدول)</li>
+                <li><i class="fas fa-check-circle"></i> <strong>العمر:</strong> 18-24 (25 نقطة)، 25-32 (30 نقطة)، 33-39 (25 نقطة)، 40-44 (15 نقطة).</li>
+                <li><i class="fas fa-check-circle"></i> <strong>اللغة الإنجليزية:</strong> Competent (0 نقطة)، Proficient (10 نقاط)، Superior (20 نقاط).</li>
+                <li><i class="fas fa-check-circle"></i> <strong>خبرة العمل خارج أستراليا:</strong> 3-5 سنوات (5 نقاط)، 5-8 سنوات (10 نقاط)، 8-10 سنوات (15 نقطة).</li>
+                <li><i class="fas fa-check-circle"></i> <strong>خبرة العمل داخل أستراليا:</strong> 1-3 سنوات (5 نقاط)، 3-5 سنوات (10 نقاط)، 5-8 سنوات (15 نقاط)، 8-10 سنوات (20 نقطة).</li>
+                <li><i class="fas fa-check-circle"></i> <strong>المؤهل العلمي:</strong> شهادة/دبلوم (10 نقاط)، بكالوريوس (15 نقطة)، دكتوراه (20 نقطة).</li>
+                <li><i class="fas fa-check-circle"></i> <strong>الدراسة في المناطق الإقليمية:</strong> 5 نقاط.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>الترشيح (190):</strong> 5 نقاط.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>اللغة الثانية (CLC):</strong> 5 نقاط.</li>
             </ul>
-
-            <div class="note-box">
-                <p><strong>برنامج الهجرة الدائمة 2025-26:</strong> 185,000 مقعد (71% للمهارات)</p>
-                <p style="margin-top: 10px;"><strong>الأولوية:</strong> الرعاية الصحية، التكنولوجيا، الهندسة</p>
-            </div>
-
-            <p style="margin-top: 20px;">
-                <strong>تغييرات 2026:</strong> رسوم تأشيرة الطالب $2,000 | اختبارات: IELTS, PTE, TOEFL, CELPIP | منع "القفز بين التأشيرات"
-            </p>
         </div>
 
-        <!-- المهن الأكثر طلباً - LinkedIn -->
-        <h2 class="section-title">المهن الأسرع نمواً (LinkedIn 2026)</h2>
-        <div class="professions-grid">
-            <div class="profession-card">
-                <div class="profession-icon">
-                    <i class="fas fa-robot"></i>
-                </div>
-                <h3>AI Engineer</h3>
-                <p>هندسة الذكاء الاصطناعي</p>
+        <!-- المهارات الأكثر طلباً -->
+        <h2 class="section-title">المهارات الأكثر طلباً في السوق الأسترالي 2026</h2>
+        <div style="margin: 15px 0;">
+            <span class="skill-tag">اللغة الإنجليزية (Proficient/Superior)</span>
+            <span class="skill-tag">Java / Python / .NET</span>
+            <span class="skill-tag">الأمن السيبراني</span>
+            <span class="skill-tag">Cloud (AWS, Azure)</span>
+            <span class="skill-tag">إدارة المشاريع (PMP, Agile)</span>
+            <span class="skill-tag">التمريض السريري</span>
+            <span class="skill-tag">هندسة الطاقة المتجددة</span>
+            <span class="skill-tag">المشتريات الاستراتيجية</span>
+            <span class="skill-tag">AutoCAD / الهندسة المدنية</span>
+            <span class="skill-tag">الترخيص التجاري (للمهن الحرفية)</span>
+        </div>
+        <p style="margin-top: 10px;">المهارات الرقمية والتقنية هي الأكثر طلباً. المهارات البشرية (Communication, Teamwork, Problem-Solving) ذات قيمة عالية جداً في سوق العمل الأسترالي [citation:7][citation:9].</p>
+
+        <!-- نصائح للباحثين عن عمل -->
+        <div class="requirements-box" style="background: #f0f7ff;">
+            <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في أستراليا</h3>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> <strong>تأكد من مهنتك على قائمة المهن المطلوبة (Skilled Occupation List):</strong> قبل البدء، تحقق من قوائم MLTSSL أو STSOL لمعرفة ما إذا كانت مهنتك مؤهلة للهجرة المستقلة أو الترشيح [citation:4][citation:7].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>احصل على تقييم إيجابي للمهارات (Skills Assessment):</strong> خطوة إلزامية لمعظم تأشيرات المهارات. تتقدم بها إلى جهة التقييم المختصة بمهنتك (مثل Engineers Australia، VETASSESS، TRA، ACS) [citation:5].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استخدم منصات التوظيف الموثوقة:</strong> Seek.com.au، LinkedIn، Indeed Australia هي الأكثر استخداماً [citation:7].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>لا تدفع مقابل عروض العمل:</strong> التوظيف القانوني لا يكلف الباحث عن عمل شيئاً. احذر من المحتالين.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>فكر في المناطق الإقليمية (Regional):</strong> توفر مزايا هجرة إضافية (491، 191) وتكاليف معيشة أقل [citation:4].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>ابحث عن الشركات المعتمدة (Accredited Sponsors):</strong> بعض الشركات لديها تسهيلات في رعاية العمال الأجانب [citation:6].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استشر مهاجراً قانونياً (Registered Migration Agent):</strong> إذا كانت حالتك معقدة، استشر محامي هجرة مرخص لتجنب الأخطاء المكلفة [citation:4].</li>
+            </ul>
+        </div>
+
+        <!-- أفضل المدن للعمل -->
+        <h2 class="section-title">أفضل المدن للعمل في أستراليا</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">سيدني</div>
+                <div class="stat-label">العاصمة المالية، مركز التكنولوجيا والخدمات المهنية. أعلى الرواسب وأعلى إيجارات (NSW).</div>
             </div>
-            
-            <div class="profession-card">
-                <div class="profession-icon">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <h3>Chief Risk Officer</h3>
-                <p>إدارة المخاطر</p>
+            <div class="stat-card">
+                <div class="stat-number">ملبورن</div>
+                <div class="stat-label">مركز الثقافة والرياضة والتصنيع. فرص في قطاعات التكنولوجيا والهندسة والخدمات المالية (VIC).</div>
             </div>
-            
-            <div class="profession-card">
-                <div class="profession-icon">
-                    <i class="fas fa-cogs"></i>
-                </div>
-                <h3>Mechanical Engineer</h3>
-                <p>هندسة ميكانيكية</p>
+            <div class="stat-card">
+                <div class="stat-number">بريزبين</div>
+                <div class="stat-label">عاصمة كوينزلاند، مركز التعدين والبناء، فرص في قطاع الموارد والبناء، استعداداً للأولمبياد 2032.</div>
             </div>
-            
-            <div class="profession-card">
-                <div class="profession-icon">
-                    <i class="fas fa-microchip"></i>
-                </div>
-                <h3>Director of AI</h3>
-                <p>قيادة الذكاء الاصطناعي</p>
+            <div class="stat-card">
+                <div class="stat-number">بيرث</div>
+                <div class="stat-label">عاصمة التعدين والطاقة في غرب أستراليا، رواتب مرتفعة للمهندسين والفنيين في قطاع الموارد.</div>
             </div>
-            
-            <div class="profession-card">
-                <div class="profession-icon">
-                    <i class="fas fa-bolt"></i>
-                </div>
-                <h3>Power System Engineer</h3>
-                <p>أنظمة الطاقة</p>
+            <div class="stat-card">
+                <div class="stat-number">أديلايد</div>
+                <div class="stat-label">مدينة أصغر، تكاليف معيشة منخفضة، فرص في قطاع التكنولوجيا والدفاع والصناعة.</div>
             </div>
-            
-            <div class="profession-card">
-                <div class="profession-icon">
-                    <i class="fas fa-lock"></i>
-                </div>
-                <h3>Cybersecurity Specialist</h3>
-                <p>الأمن السيبراني</p>
-                <div class="salary-info">💰 $129,000</div>
+            <div class="stat-card">
+                <div class="stat-number">كانبرا</div>
+                <div class="stat-label">العاصمة، فرص في القطاع الحكومي، الرواتب مرتفعة (خاصة للمطورين) [citation:1].</div>
             </div>
         </div>
 
-        <!-- المهن الأعلى طلباً - Indeed -->
-        <h2 class="section-title">المهن الأعلى طلباً وأجراً (Indeed 2026)</h2>
-        <div class="professions-grid">
-            <div class="profession-card">
-                <div class="profession-icon">
-                    <i class="fas fa-user-nurse"></i>
-                </div>
-                <h3>Nurse Practitioner</h3>
-                <div class="salary-info">💰 $148,000</div>
+        <!-- مزايا وتحديات العمل في أستراليا -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 25px 0;">
+            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
+                <h3 style="color: var(--australia-blue); margin-bottom: 10px;">✅ المزايا</h3>
+                <ul class="requirements-list">
+                    <li><i class="fas fa-check-circle" style="color: var(--australia-blue);"></i> <strong>رواتب عالية:</strong> من أعلى الرواتب في العالم، مع نظام ضرائب تصاعدي.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--australia-blue);"></i> <strong>جودة حياة ممتازة:</strong> نظام صحي شامل (Medicare)، تعليم قوي، بيئة نظيفة.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--australia-blue);"></i> <strong>مسار واضح للإقامة الدائمة:</strong> نظام هجرة منظم وفرص متعددة للتقديم [citation:4].</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--australia-blue);"></i> <strong>تنوع ثقافي:</strong> مجتمع متعدد الثقافات، سهولة الاندماج.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--australia-blue);"></i> <strong>مناخ متنوع:</strong> من شمس كوينزلاند إلى ثلوج فيكتوريا.</li>
+                </ul>
             </div>
-            
-            <div class="profession-card">
-                <div class="profession-icon">
-                    <i class="fas fa-volume-up"></i>
-                </div>
-                <h3>Speech Pathologist</h3>
-                <div class="salary-info">💰 $99,500</div>
-            </div>
-            
-            <div class="profession-card">
-                <div class="profession-icon">
-                    <i class="fas fa-hands"></i>
-                </div>
-                <h3>Senior Occupational Therapist</h3>
-                <div class="salary-info">💰 $116,000</div>
-            </div>
-            
-            <div class="profession-card">
-                <div class="profession-icon">
-                    <i class="fas fa-bone"></i>
-                </div>
-                <h3>Physiotherapist</h3>
-                <div class="salary-info">💰 $92,000</div>
-            </div>
-            
-            <div class="profession-card">
-                <div class="profession-icon">
-                    <i class="fas fa-foot"></i>
-                </div>
-                <h3>Podiatrist</h3>
-                <div class="salary-info">💰 $100,000</div>
-            </div>
-            
-            <div class="profession-card">
-                <div class="profession-icon">
-                    <i class="fas fa-gavel"></i>
-                </div>
-                <h3>Solicitor</h3>
-                <div class="salary-info">💰 $114,000</div>
-            </div>
-            
-            <div class="profession-card">
-                <div class="profession-icon">
-                    <i class="fas fa-user-tie"></i>
-                </div>
-                <h3>Senior Lawyer</h3>
-                <div class="salary-info">💰 $119,000</div>
-            </div>
-            
-            <div class="profession-card">
-                <div class="profession-icon">
-                    <i class="fas fa-x-ray"></i>
-                </div>
-                <h3>Radiologic Technologist</h3>
-                <div class="salary-info">💰 $105,000</div>
-            </div>
-            
-            <div class="profession-card">
-                <div class="profession-icon">
-                    <i class="fas fa-flask"></i>
-                </div>
-                <h3>Research Fellow</h3>
-                <div class="salary-info">💰 $125,000</div>
-            </div>
-            
-            <div class="profession-card">
-                <div class="profession-icon">
-                    <i class="fas fa-heartbeat"></i>
-                </div>
-                <h3>Exercise Physiologist</h3>
-                <div class="salary-info">💰 $91,000</div>
+            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
+                <h3 style="color: #e67e22; margin-bottom: 10px;">⚠️ التحديات</h3>
+                <ul class="requirements-list">
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>غلاء المعيشة:</strong> خاصة في سيدني وملبورن، الإيجار مرتفع جداً.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>البعد الجغرافي:</strong> أستراليا بعيدة عن معظم دول العالم، تكاليف السفر مرتفعة.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>نظام هجرة معقد:</strong> يتطلب متابعة دقيقة للتغييرات ونظام النقاط [citation:4].</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>المنافسة العالية:</strong> خاصة في المدن الكبرى، وجود كفاءات من جميع أنحاء العالم.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>الطقس المتطرف:</strong> موجات حر، حرائق غابات، فيضانات في بعض المناطق.</li>
+                </ul>
             </div>
         </div>
 
-        <!-- أهم مواقع التوظيف -->
-        <h2 class="section-title">أهم مواقع التوظيف في أستراليا</h2>
+        <!-- إحصائيات سريعة -->
+        <h2 class="section-title">إحصائيات سريعة 2026</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">26M</div>
+                <div class="stat-label">عدد السكان</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">4.0%</div>
+                <div class="stat-label">معدل البطالة</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">$79,499</div>
+                <div class="stat-label">CSIT (Core Skills)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">$91k</div>
+                <div class="stat-label">متوسط الراتب السنوي</div>
+            </div>
+        </div>
+
+        <!-- مواقع التوظيف الرئيسية (محدث 2026) -->
+        <h2 class="section-title">أهم مواقع التوظيف في أستراليا (محدث 2026)</h2>
         <div class="jobs-grid">
-            <a href="https://www.seek.com.au" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <span class="job-site-name">SEEK</span>
-                </div>
-                <div class="job-site-desc">#1 الأكثر زيارة في أستراليا</div>
-                <div class="job-site-link">www.seek.com.au <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://au.indeed.com" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <span class="job-site-name">Indeed Australia</span>
-                </div>
-                <div class="job-site-desc">أكبر محرك بحث وظائف</div>
-                <div class="job-site-link">au.indeed.com <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://au.jora.com" target="_blank" class="job-site-card">
+            <a href="https://www.seek.com.au" target="_blank" rel="noopener noreferrer" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
                         <i class="fas fa-bolt"></i>
                     </div>
-                    <span class="job-site-name">Jora</span>
+                    <span class="job-site-name">SEEK</span>
                 </div>
-                <div class="job-site-desc">#3 الأكثر زيارة</div>
-                <div class="job-site-link">au.jora.com <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">أكبر منصة توظيف في أستراليا، مئات الآلاف من الوظائف في جميع القطاعات.</div>
+                <div class="job-site-link">seek.com.au <i class="fas fa-external-link-alt"></i></div>
             </a>
-
-            <a href="https://www.pageuppeople.com" target="_blank" class="job-site-card">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
-                        <i class="fas fa-users"></i>
+                        <i class="fab fa-linkedin"></i>
                     </div>
-                    <span class="job-site-name">PageUp People</span>
+                    <span class="job-site-name">LinkedIn</span>
                 </div>
-                <div class="job-site-desc">للوظائف المتخصصة</div>
-                <div class="job-site-link">www.pageuppeople.com <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">المنصة المهنية الأولى، تواصل مباشر مع مسؤولي التوظيف والشركات.</div>
+                <div class="job-site-link">linkedin.com <i class="fas fa-external-link-alt"></i></div>
             </a>
-
-            <a href="https://www.workforceaustralia.gov.au" target="_blank" class="job-site-card">
+            <a href="https://www.indeed.com.au" target="_blank" rel="noopener noreferrer" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
-                        <i class="fas fa-bank"></i>
+                        <i class="fas fa-globe"></i>
                     </div>
-                    <span class="job-site-name">Workforce Australia</span>
+                    <span class="job-site-name">Indeed Australia</span>
                 </div>
-                <div class="job-site-desc">الموقع الرسمي الحكومي</div>
-                <div class="job-site-link">www.workforceaustralia.gov.au <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">محرك بحث عالمي للوظائف، يضم آلاف الإعلانات من مصادر متعددة.</div>
+                <div class="job-site-link">indeed.com.au <i class="fas fa-external-link-alt"></i></div>
             </a>
-        </div>
-
-        <!-- وظائف الشركات الكبرى -->
-        <h2 class="section-title">وظائف الشركات الأسترالية الكبرى</h2>
-        <div class="jobs-grid">
-            <a href="https://www.careers.anz.com" target="_blank" class="job-site-card">
+            <a href="https://www.jora.com.au" target="_blank" rel="noopener noreferrer" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
-                        <i class="fas fa-university"></i>
+                        <i class="fas fa-search"></i>
                     </div>
-                    <span class="job-site-name">ANZ Careers</span>
+                    <span class="job-site-name">Jora Australia</span>
                 </div>
-                <div class="job-site-desc">بنك ANZ</div>
-                <div class="job-site-link">www.careers.anz.com <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">محرك بحث يجمع الوظائف من آلاف المصادر، تغطية واسعة.</div>
+                <div class="job-site-link">jora.com.au <i class="fas fa-external-link-alt"></i></div>
             </a>
-
-            <a href="https://careers.mcdonalds.com.au" target="_blank" class="job-site-card">
+            <a href="https://www.hays.com.au" target="_blank" rel="noopener noreferrer" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
-                        <i class="fas fa-hamburger"></i>
+                        <i class="fas fa-briefcase"></i>
                     </div>
-                    <span class="job-site-name">McDonald's Careers</span>
+                    <span class="job-site-name">Hays Australia</span>
                 </div>
-                <div class="job-site-desc">ماكدونالدز أستراليا</div>
-                <div class="job-site-link">careers.mcdonalds.com.au <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">شركة توظيف عالمية، تقارير رواتب دقيقة ووظائف في جميع القطاعات [citation:1].</div>
+                <div class="job-site-link">hays.com.au <i class="fas fa-external-link-alt"></i></div>
             </a>
-
-            <a href="https://www.bhp.com/careers" target="_blank" class="job-site-card">
+            <a href="https://www.ethicaljobs.com.au" target="_blank" rel="noopener noreferrer" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
-                        <i class="fas fa-hard-hat"></i>
+                        <i class="fas fa-leaf"></i>
                     </div>
-                    <span class="job-site-name">BHP Careers</span>
+                    <span class="job-site-name">Ethical Jobs</span>
                 </div>
-                <div class="job-site-desc">شركة التعدين العالمية BHP</div>
-                <div class="job-site-link">www.bhp.com/careers <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">متخصص في وظائف القطاع غير الربحي والبيئي والمجتمعي.</div>
+                <div class="job-site-link">ethicaljobs.com.au <i class="fas fa-external-link-alt"></i></div>
             </a>
-
-            <a href="https://www.qantas.com/careers" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-plane"></i>
-                    </div>
-                    <span class="job-site-name">Qantas Careers</span>
-                </div>
-                <div class="job-site-desc">خطوط كانتاس الجوية</div>
-                <div class="job-site-link">www.qantas.com/careers <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://careers.telstra.com" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-wifi"></i>
-                    </div>
-                    <span class="job-site-name">Telstra Careers</span>
-                </div>
-                <div class="job-site-desc">أكبر شركة اتصالات</div>
-                <div class="job-site-link">careers.telstra.com <i class="fas fa-external-link-alt"></i></div>
-            </a>
-        </div>
-
-        <!-- بوابات حكومية -->
-        <h2 class="section-title">البوابات الحكومية الرسمية</h2>
-        <div class="jobs-grid">
-            <a href="https://www.jobs.act.gov.au" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <span class="job-site-name">ACT Government Jobs</span>
-                </div>
-                <div class="job-site-desc">حكومة العاصمة</div>
-                <div class="job-site-link">www.jobs.act.gov.au <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://jobs.bigbuild.vic.gov.au" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-hard-hat"></i>
-                    </div>
-                    <span class="job-site-name">Victorian Big Build</span>
-                </div>
-                <div class="job-site-desc">مشاريع فيكتوريا</div>
-                <div class="job-site-link">jobs.bigbuild.vic.gov.au <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://iworkfor.nsw.gov.au" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-city"></i>
-                    </div>
-                    <span class="job-site-name">Service NSW Jobs</span>
-                </div>
-                <div class="job-site-desc">وظائف حكومة نيو ساوث ويلز</div>
-                <div class="job-site-link">iworkfor.nsw.gov.au <i class="fas fa-external-link-alt"></i></div>
-            </a>
-        </div>
-
-        <!-- متطلبات العمل -->
-        <div class="requirements-box">
-            <h3><i class="fas fa-clipboard-check"></i> متطلبات العمل في أستراليا</h3>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle"></i> <strong>اللغة الإنجليزية</strong> - IELTS أو PTE أو TOEFL</li>
-                <li><i class="fas fa-check-circle"></i> <strong>تقييم المهارات</strong> - حسب المهنة</li>
-                <li><i class="fas fa-check-circle"></i> <strong>تأشيرة عمل</strong> - حسب البرنامج المناسب</li>
-                <li><i class="fas fa-check-circle"></i> <strong>الفحص الطبي</strong> - إلزامي</li>
-                <li><i class="fas fa-check-circle"></i> <strong>عرض عمل</strong> - مطلوب لبعض التأشيرات</li>
-            </ul>
         </div>
 
         <!-- خدماتنا -->
-        <div style="background: #f8fafc; border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center;">
-            <h3 style="font-size: 1.5rem; margin-bottom: 20px;">تحتاج مساعدة في التقديم؟</h3>
-            <p style="margin-bottom: 30px;">نقدم لك خدمات احترافية بأسعار رمزية لزيادة فرص قبولك</p>
-            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                <a href="services.html" style="background: #1A3C6B; color: white; padding: 12px 30px; border-radius: 8px; text-decoration: none;">تصميم السيرة الذاتية ($9)</a>
-                <a href="services.html" style="background: #1A3C6B; color: white; padding: 12px 30px; border-radius: 8px; text-decoration: none;">خطاب تقديم ($7)</a>
-                <a href="services.html" style="background: #1A3C6B; color: white; padding: 12px 30px; border-radius: 8px; text-decoration: none;">البحث العلمي ($10)</a>
+        <div class="services-section">
+            <h3 style="font-size: 1.3rem; margin-bottom: 15px;">🚀 خدماتنا الاحترافية</h3>
+            <p style="margin-bottom: 20px;">نساعدك في تحسين فرصك للحصول على وظيفة في أستراليا واجتياز إجراءات التأشيرة</p>
+            <div class="services-buttons">
+                <a href="services.html" class="service-btn"><i class="fas fa-file-alt"></i> سيرة ذاتية ($9)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-envelope"></i> خطاب تقديم ($7)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-user-plus"></i> تسجيل بالمنصات ($10)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-gavel"></i> استشارة تأشيرات ($15)</a>
             </div>
         </div>
     </div>
@@ -717,9 +1027,8 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>وظائف حول العالم</h4>
-                    <p>منصتك الموثوقة للبحث عن فرص عمل في مختلف دول العالم</p>
+                    <p>منصتك الموثوقة للبحث عن فرص عمل في 49 دولة حول العالم.</p>
                 </div>
-                
                 <div class="footer-section">
                     <h4>روابط سريعة</h4>
                     <ul>
@@ -730,17 +1039,6 @@
                         <li><a href="contact.html">اتصل بنا</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer-section">
-                    <h4>الدول</h4>
-                    <ul>
-                        <li><a href="canada.html">كندا</a></li>
-                        <li><a href="germany.html">ألمانيا</a></li>
-                        <li><a href="uae.html">الإمارات</a></li>
-                        <li><a href="australia.html">أستراليا</a></li>
-                    </ul>
-                </div>
-
                 <div class="footer-section">
                     <h4>سياسة الموقع</h4>
                     <ul>
@@ -748,16 +1046,21 @@
                         <li><a href="terms.html">اتفاقية الاستخدام</a></li>
                     </ul>
                 </div>
+                <div class="footer-section">
+                    <h4>تابعنا</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook"></i> فيسبوك</a>
+                        <a href="https://wa.me/212669411021" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>© 2026 وظائف على مستوى العالم - جميع الحقوق محفوظة</p>
+                <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة | آخر تحديث: مارس 2026</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
-
+    <!-- كود الإعلان Social Bar - قبل إغلاق body -->
     <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 </body>
 </html>
