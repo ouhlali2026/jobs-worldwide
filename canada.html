@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>فرص عمل في كندا 2026 | المهن المطلوبة والتأشيرات والرواتب في تورنتو وفانكوفر</title>
     <meta name="description" content="كندا 2026 تعلن تغييرات جذرية في نظام العمل: دليلك الشامل للهجرة والعمل. أحدث فئات Express Entry، تصاريح العمل المفتوحة، الرواتب حسب المهنة، تكاليف المعيشة، ونصائح للقبول السريع.">
     <meta name="keywords" content="فرص عمل في كندا, وظائف كندا 2026, الهجرة إلى كندا, Express Entry كندا, تصريح عمل مفتوح كندا, العمل في تورنتو, رواتب المهندسين في كندا, LMIA كندا, تأشيرة عمل كندا">
@@ -27,6 +27,8 @@
         
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
         
         body {
@@ -34,80 +36,91 @@
             background-color: #f9f9f9;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
+            width: 100%;
         }
         
         .country-header {
             background: linear-gradient(135deg, var(--canada-red), #8B0000);
             color: white;
-            padding: clamp(20px, 5vw, 40px) 15px;
+            padding: 30px 15px;
             text-align: center;
             position: relative;
             overflow: hidden;
+            width: 100%;
         }
         
         .country-header h1 {
-            font-size: clamp(1.8rem, 6vw, 2.5rem);
+            font-size: clamp(1.5rem, 6vw, 2.2rem);
             margin-bottom: 10px;
             position: relative;
             color: white;
             background: rgba(0,0,0,0.2);
             display: inline-block;
-            padding: 8px 20px;
+            padding: 5px 15px;
             border-radius: 50px;
             font-weight: 700;
             word-break: break-word;
             max-width: 95%;
+            line-height: 1.3;
         }
         
         .country-header p {
-            font-size: clamp(0.9rem, 3vw, 1.1rem);
+            font-size: clamp(0.85rem, 3vw, 1rem);
             opacity: 0.95;
             position: relative;
             color: white;
             background: rgba(0,0,0,0.2);
             display: inline-block;
-            padding: 5px 15px;
+            padding: 5px 12px;
             border-radius: 30px;
-            max-width: 90%;
-            margin: 10px auto;
+            max-width: 95%;
+            margin: 8px auto;
+            line-height: 1.5;
         }
         
         .country-info {
             display: flex;
             justify-content: center;
-            gap: clamp(10px, 2vw, 20px);
-            margin: 25px 5px;
+            gap: 10px;
+            margin: 15px 0 0;
             flex-wrap: wrap;
+            width: 100%;
         }
         
         .info-badge {
             background: white;
             color: var(--canada-red);
-            padding: 8px 20px;
+            padding: 6px 12px;
             border-radius: 50px;
             font-weight: 600;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-            font-size: clamp(0.8rem, 2.5vw, 1rem);
-            display: flex;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-size: 0.8rem;
+            display: inline-flex;
             align-items: center;
-            gap: 8px;
-            transition: transform 0.2s;
+            gap: 5px;
+            white-space: nowrap;
         }
         
-        .info-badge:hover {
-            transform: translateY(-2px);
+        @media (max-width: 480px) {
+            .info-badge {
+                white-space: normal;
+                font-size: 0.75rem;
+                padding: 5px 8px;
+            }
         }
         
         .info-badge i {
-            font-size: 1.1rem;
+            font-size: 0.9rem;
         }
         
         .section-title {
-            font-size: clamp(1.4rem, 4vw, 1.8rem);
+            font-size: clamp(1.3rem, 5vw, 1.8rem);
             color: #1e293b;
-            margin: 35px 0 20px;
+            margin: 25px 0 15px;
             position: relative;
-            padding-right: 15px;
+            padding-right: 12px;
+            line-height: 1.3;
         }
         
         .section-title::before {
@@ -116,7 +129,7 @@
             right: 0;
             top: 0;
             bottom: 0;
-            width: 5px;
+            width: 4px;
             background: var(--canada-red);
             border-radius: 5px;
         }
@@ -125,148 +138,64 @@
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 15px;
+            padding: 0 12px;
             box-sizing: border-box;
+            overflow-x: hidden;
         }
         
-        /* تحسينات الجوال - دقيقة جداً */
+        /* تحسينات الجوال */
         @media (max-width: 768px) {
-            .country-header h1 {
-                font-size: 1.8rem;
-                padding: 8px 12px;
+            .country-header {
+                padding: 20px 10px;
             }
-            
-            .country-header p {
-                font-size: 0.95rem;
-                padding: 5px 10px;
-            }
-            
-            .section-title {
-                font-size: 1.5rem;
-            }
-            
-            .info-badge {
-                padding: 6px 15px;
-                font-size: 0.85rem;
-            }
-            
-            .jobs-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .visa-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-            }
-            
-            .jobs-table {
-                font-size: 0.9rem;
-            }
-            
-            .jobs-table th, .jobs-table td {
-                padding: 10px 6px;
+            .container {
+                padding: 0 10px;
             }
         }
         
         @media (max-width: 480px) {
-            .stats-grid {
-                grid-template-columns: 1fr;
+            .country-header h1 {
+                font-size: 1.4rem;
+                padding: 5px 10px;
             }
-            
-            .country-info {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .info-badge {
-                width: fit-content;
-            }
-            
-            .country-header {
-                padding: 25px 10px;
-            }
-            
-            .back-link {
-                margin: 12px 0;
-                padding: 6px 12px;
-            }
-            
-            .visa-box, .requirements-box {
-                padding: 18px 12px;
-            }
-            
-            .jobs-table th, .jobs-table td {
-                padding: 8px 4px;
-                font-size: 0.8rem;
-            }
-            
-            .skill-tag {
-                padding: 4px 10px;
-                font-size: 0.75rem;
-                margin: 3px;
-            }
-            
-            .service-btn {
-                padding: 10px 18px;
-                font-size: 0.9rem;
-                width: 100%;
-                justify-content: center;
-            }
-            
-            .stat-number {
-                font-size: 1.3rem;
-            }
-            
-            .stat-label {
-                font-size: 0.8rem;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-                text-align: center;
+            .section-title {
+                font-size: 1.2rem;
+                padding-right: 10px;
             }
         }
         
         .jobs-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
-            margin: 25px 0;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+            width: 100%;
         }
         
         .job-site-card {
             background: white;
-            border-radius: 16px;
-            padding: 20px;
+            border-radius: 12px;
+            padding: 15px;
             border: 1px solid #e2e8f0;
             transition: all 0.3s ease;
             text-decoration: none;
             color: inherit;
             display: block;
-        }
-        
-        .job-site-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--canada-red);
-            box-shadow: 0 10px 25px rgba(213,43,30,0.1);
+            width: 100%;
         }
         
         .job-site-header {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 12px;
+            gap: 10px;
+            margin-bottom: 10px;
         }
         
         .job-site-icon {
-            width: 45px;
-            height: 45px;
+            width: 40px;
+            height: 40px;
             background: #ffe0e0;
-            border-radius: 12px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -274,12 +203,12 @@
         }
         
         .job-site-icon i {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             color: var(--canada-red);
         }
         
         .job-site-name {
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 600;
             color: #1e293b;
             word-break: break-word;
@@ -287,9 +216,9 @@
         
         .job-site-desc {
             color: #64748b;
-            font-size: 0.9rem;
-            margin-bottom: 12px;
-            line-height: 1.6;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            line-height: 1.5;
         }
         
         .job-site-link {
@@ -297,120 +226,124 @@
             align-items: center;
             gap: 5px;
             color: var(--canada-red);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             word-break: break-word;
         }
         
         .visa-box {
             background: #f8fafc;
-            border-radius: 20px;
-            padding: 25px 20px;
-            margin: 25px 0;
+            border-radius: 16px;
+            padding: 20px 15px;
+            margin: 20px 0;
             border: 2px dashed var(--canada-red);
+            width: 100%;
         }
         
         .visa-box h3 {
             color: #1e293b;
-            font-size: clamp(1.2rem, 3vw, 1.4rem);
-            margin-bottom: 15px;
+            font-size: clamp(1.1rem, 4vw, 1.3rem);
+            margin-bottom: 12px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
+            line-height: 1.3;
         }
         
         .visa-box i {
             color: var(--canada-red);
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             flex-shrink: 0;
         }
         
         .visa-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+            width: 100%;
         }
         
         .visa-type {
             background: white;
-            padding: 18px;
-            border-radius: 16px;
+            padding: 15px;
+            border-radius: 12px;
             border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-        
-        .visa-type:hover {
-            border-color: var(--canada-red);
-            box-shadow: 0 5px 15px rgba(213,43,30,0.05);
+            width: 100%;
         }
         
         .visa-type h4 {
             color: var(--canada-red);
-            margin-bottom: 10px;
-            font-size: 1.1rem;
+            margin-bottom: 8px;
+            font-size: 1rem;
         }
         
         .visa-type p {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             color: #334155;
-            line-height: 1.6;
+            line-height: 1.5;
         }
         
         .table-container {
             overflow-x: auto;
-            margin: 20px 0;
-            border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
             -webkit-overflow-scrolling: touch;
+            width: 100%;
         }
         
         .jobs-table {
             width: 100%;
             border-collapse: collapse;
             background: white;
-            border-radius: 16px;
+            border-radius: 12px;
             overflow: hidden;
-            min-width: 600px;
+            min-width: 550px;
         }
         
         .jobs-table th {
             background: var(--canada-red);
             color: white;
-            padding: 12px 10px;
+            padding: 10px 8px;
             text-align: right;
             font-weight: 600;
-            font-size: clamp(0.85rem, 2.5vw, 1rem);
+            font-size: 0.9rem;
         }
         
         .jobs-table td {
-            padding: 12px 10px;
+            padding: 8px;
             border-bottom: 1px solid #e2e8f0;
-            font-size: clamp(0.8rem, 2.5vw, 0.95rem);
+            font-size: 0.85rem;
         }
         
         .jobs-table tr:last-child td {
             border-bottom: none;
         }
         
-        .jobs-table tr:hover {
-            background: #fff5f5;
+        @media (max-width: 600px) {
+            .jobs-table th, .jobs-table td {
+                padding: 6px 4px;
+                font-size: 0.8rem;
+            }
         }
         
         .requirements-box {
             background: #fff5f5;
             border-right: 4px solid var(--canada-red);
-            padding: 25px 20px;
-            border-radius: 20px;
-            margin: 30px 0;
+            padding: 20px 15px;
+            border-radius: 16px;
+            margin: 20px 0;
+            width: 100%;
         }
         
         .requirements-box h3 {
             color: #1e293b;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             display: flex;
             align-items: center;
-            gap: 10px;
-            font-size: clamp(1.2rem, 3vw, 1.4rem);
+            gap: 8px;
+            font-size: clamp(1.1rem, 4vw, 1.3rem);
+            line-height: 1.3;
         }
         
         .requirements-list {
@@ -420,88 +353,74 @@
         }
         
         .requirements-list li {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             display: flex;
             align-items: flex-start;
-            gap: 10px;
-            line-height: 1.6;
-            font-size: clamp(0.9rem, 2.5vw, 1rem);
+            gap: 8px;
+            line-height: 1.5;
+            font-size: 0.9rem;
         }
         
         .requirements-list i {
             color: var(--canada-red);
-            margin-top: 4px;
-            min-width: 18px;
+            margin-top: 3px;
+            min-width: 16px;
         }
         
         .back-link {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             color: var(--canada-red);
             text-decoration: none;
-            margin: 20px 0;
+            margin: 15px 0;
             font-weight: 500;
-            padding: 8px 16px;
+            padding: 6px 12px;
             background: #fff5f5;
-            border-radius: 40px;
-            font-size: 1rem;
-            transition: all 0.2s;
-        }
-        
-        .back-link:hover {
-            background: #ffe0e0;
+            border-radius: 30px;
+            font-size: 0.9rem;
         }
         
         .flag-icon {
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: white;
-            margin-bottom: 15px;
-            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+            margin-bottom: 10px;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
         }
         
         .skill-tag {
             display: inline-block;
             background: white;
             color: var(--canada-red);
-            padding: 6px 14px;
+            padding: 5px 12px;
             border-radius: 40px;
-            margin: 5px;
-            font-size: clamp(0.8rem, 2vw, 0.9rem);
+            margin: 4px;
+            font-size: 0.8rem;
             border: 1px solid var(--canada-red);
             transition: all 0.2s;
             font-weight: 500;
         }
         
-        .skill-tag:hover {
-            background: var(--canada-red);
-            color: white;
-        }
-        
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 12px;
+            margin: 15px 0;
+            width: 100%;
         }
         
         .stat-card {
             background: white;
-            padding: 20px 12px;
-            border-radius: 20px;
+            padding: 15px 8px;
+            border-radius: 16px;
             text-align: center;
             border: 1px solid #e2e8f0;
-            box-shadow: 0 4px 12px rgba(213,43,30,0.05);
-            transition: transform 0.2s;
-        }
-        
-        .stat-card:hover {
-            transform: translateY(-3px);
-            border-color: var(--canada-red);
+            box-shadow: 0 2px 8px rgba(213,43,30,0.05);
+            width: 100%;
         }
         
         .stat-number {
-            font-size: clamp(1.4rem, 3vw, 1.8rem);
+            font-size: 1.3rem;
             font-weight: 700;
             color: var(--canada-red);
             line-height: 1.2;
@@ -509,62 +428,60 @@
         
         .stat-label {
             color: #64748b;
-            font-size: clamp(0.8rem, 2vw, 0.9rem);
-            margin-top: 8px;
+            font-size: 0.8rem;
+            margin-top: 5px;
         }
         
         .services-section {
             background: #fff5f5;
-            border-radius: 30px;
-            padding: 30px 20px;
-            margin: 40px 0;
+            border-radius: 24px;
+            padding: 25px 15px;
+            margin: 30px 0;
             text-align: center;
+            width: 100%;
         }
         
         .services-buttons {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             justify-content: center;
             flex-wrap: wrap;
-            margin-top: 25px;
+            margin-top: 20px;
+            width: 100%;
         }
         
         .service-btn {
             background: var(--canada-red);
             color: white;
-            padding: 12px 25px;
-            border-radius: 60px;
+            padding: 10px 20px;
+            border-radius: 50px;
             text-decoration: none;
             transition: all 0.3s;
             font-weight: 500;
-            font-size: 1rem;
+            font-size: 0.9rem;
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             border: none;
             cursor: pointer;
+            flex: 0 1 auto;
         }
         
-        .service-btn:hover {
-            background: #8B0000;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(213,43,30,0.3);
-        }
-        
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
             .services-buttons {
                 flex-direction: column;
             }
-        }
-        
-        ul, ol {
-            padding-right: 25px;
+            .service-btn {
+                width: 100%;
+                justify-content: center;
+            }
         }
         
         .navbar {
             background: white;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-            padding: 12px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 10px 0;
+            width: 100%;
         }
         
         .nav-content {
@@ -572,14 +489,15 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 10px;
+            width: 100%;
         }
         
         .logo {
             display: flex;
             align-items: center;
             gap: 8px;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 700;
             color: var(--canada-red);
             text-decoration: none;
@@ -587,12 +505,12 @@
         
         .nav-links {
             display: flex;
-            gap: 20px;
+            gap: 15px;
             list-style: none;
             margin: 0;
             padding: 0;
             flex-wrap: wrap;
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
         
         .nav-links a {
@@ -600,7 +518,6 @@
             color: #1e293b;
             font-weight: 500;
             padding: 5px 0;
-            transition: color 0.2s;
         }
         
         .nav-links a.active {
@@ -608,15 +525,11 @@
             border-bottom: 2px solid var(--canada-red);
         }
         
-        .nav-links a:hover {
-            color: var(--canada-red);
-        }
-        
         @media (max-width: 768px) {
             .nav-content {
                 flex-direction: column;
+                align-items: center;
             }
-            
             .nav-links {
                 justify-content: center;
             }
@@ -625,20 +538,22 @@
         footer {
             background: #1e293b;
             color: white;
-            padding: 40px 0 20px;
-            margin-top: 40px;
+            padding: 30px 0 15px;
+            margin-top: 30px;
+            width: 100%;
         }
         
         .footer-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            margin-bottom: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+            width: 100%;
         }
         
         .footer-section h4 {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
+            margin-bottom: 12px;
+            font-size: 1rem;
         }
         
         .footer-section ul {
@@ -647,33 +562,43 @@
         }
         
         .footer-section li {
-            margin-bottom: 8px;
-            font-size: 0.95rem;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
         }
         
         .footer-section a {
             color: #cbd5e1;
             text-decoration: none;
-            transition: color 0.2s;
-        }
-        
-        .footer-section a:hover {
-            color: white;
         }
         
         .social-links a {
             display: inline-block;
-            margin-left: 10px;
+            margin-left: 8px;
             color: white;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
         
         .footer-bottom {
             text-align: center;
-            padding-top: 20px;
+            padding-top: 15px;
             border-top: 1px solid #334155;
             color: #94a3b8;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
+        }
+        
+        @media (max-width: 480px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+        
+        /* إصلاحات إضافية لمنع التمرير الأفقي */
+        img, iframe, video, table, div {
+            max-width: 100%;
+        }
+        p, h1, h2, h3, h4, h5, h6 {
+            word-wrap: break-word;
         }
     </style>
 </head>
@@ -703,7 +628,7 @@
         <div class="container">
             <i class="fas fa-flag flag-icon"></i>
             <h1>🇨🇦 فرص عمل في كندا 2026 🇨🇦</h1>
-            <p>الدليل الكامل للعمل في تورنتو، فانكوفر، مونتريال، كالغاري وجميع المدن الكندية – تحديثات فبراير 2026</p>
+            <p>الدليل الكامل للعمل في تورنتو، فانكوفر، مونتريال، كالغاري وجميع المدن الكندية – تحديثات مارس 2026</p>
             
             <div class="country-info">
                 <span class="info-badge"><i class="fas fa-microchip"></i> تكنولوجيا وهندسة</span>
@@ -721,34 +646,34 @@
         <!-- لمحة عامة عن سوق العمل الكندي 2026 -->
         <div class="visa-box">
             <h3><i class="fas fa-chart-line"></i> نظرة على سوق العمل في كندا 2026</h3>
-            <p>كندا تواصل كونها وجهة الأحلام للباحثين عن عمل، لكن عام 2026 يشهد تغييرات جذرية في نظام الهجرة والعمل. الحكومة الكندية قلصت عدد تصاريح العمل المفتوحة وأدخلت نظاماً جديداً للتراخيص المرتبطة بصاحب العمل، بهدف حماية سوق العمل وضمان توظيف الكفاءات في القطاعات الأكثر احتياجاً [citation:7]. التغييرات تشمل أكثر من 1.2 مليون عامل أجنبي مؤقت، حيث سيتم استبدال المرونة السابقة بضوابط أكثر صرامة. في المقابل، تبقى كندا بحاجة ماسة للعمالة الماهرة، خاصة مع توقعات بنقص 32,000 عامل في قطاع البناء وحده بحلول 2045، مما يرفع تكاليف الإسكان ويعزز فرص العمال المهرة [citation:8].</p>
+            <p>كندا تواصل كونها وجهة الأحلام للباحثين عن عمل، لكن عام 2026 يشهد تغييرات جذرية في نظام الهجرة والعمل. الحكومة الكندية قلصت عدد تصاريح العمل المفتوحة وأدخلت نظاماً جديداً للتراخيص المرتبطة بصاحب العمل، بهدف حماية سوق العمل وضمان توظيف الكفاءات في القطاعات الأكثر احتياجاً . التغييرات تشمل أكثر من 1.2 مليون عامل أجنبي مؤقت، حيث سيتم استبدال المرونة السابقة بضوابط أكثر صرامة. في المقابل، تبقى كندا بحاجة ماسة للعمالة الماهرة، خاصة مع توقعات بنقص 32,000 عامل في قطاع البناء وحده بحلول 2045، مما يرفع تكاليف الإسكان ويعزز فرص العمال المهرة .</p>
         </div>
 
         <!-- تحديثات 2026 الكبرى في نظام العمل -->
         <div class="visa-box">
             <h3><i class="fas fa-calendar-alt"></i> تحديثات 2026 الكبرى في نظام العمل الكندي</h3>
-            <p>اعتباراً من يناير 2026، دخلت تغييرات جوهرية حيز التنفيذ تؤثر على جميع العمال الأجانب والمقيمين المؤقتين [citation:1][citation:7]:</p>
+            <p>اعتباراً من يناير 2026، دخلت تغييرات جوهرية حيز التنفيذ تؤثر على جميع العمال الأجانب والمقيمين المؤقتين :</p>
             
             <div class="visa-grid">
                 <div class="visa-type">
                     <h4>نهاية تصاريح العمل المفتوحة</h4>
-                    <p>سيتم استبدال معظم تصاريح العمل المفتوحة بتراخيص مرتبطة بصاحب عمل محدد. هذا يعني أنك لن تستطيع تغيير وظيفتك دون موافقة حكومية جديدة، مما يحد من المرونة السابقة [citation:7].</p>
+                    <p>سيتم استبدال معظم تصاريح العمل المفتوحة بتراخيص مرتبطة بصاحب عمل محدد. هذا يعني أنك لن تستطيع تغيير وظيفتك دون موافقة حكومية جديدة، مما يحد من المرونة السابقة .</p>
                 </div>
                 <div class="visa-type">
                     <h4>تصاريح الأزواج والطلاب</h4>
-                    <p>تصاريح الأزواج أصبحت مقتصرة فقط على أزواج العمال في المهن عالية المهارة (TEER 0-3) أو طلاب الماجستير والدكتوراه. الطلاب في برامج البكالوريوس أو الدبلومات القصيرة فقدوا أهلية تصاريح الأزواج [citation:1].</p>
+                    <p>تصاريح الأزواج أصبحت مقتصرة فقط على أزواج العمال في المهن عالية المهارة (TEER 0-3) أو طلاب الماجستير والدكتوراه. الطلاب في برامج البكالوريوس أو الدبلومات القصيرة فقدوا أهلية تصاريح الأزواج .</p>
                 </div>
                 <div class="visa-type">
                     <h4>فترة سماح للقدامى</h4>
-                    <p>حاملو التصاريح الحالية يمكنهم تجديدها وفق القواعد القديمة حتى 31 ديسمبر 2026. هذه فرصة أخيرة للحفاظ على المرونة [citation:7].</p>
+                    <p>حاملو التصاريح الحالية يمكنهم تجديدها وفق القواعد القديمة حتى 31 ديسمبر 2026. هذه فرصة أخيرة للحفاظ على المرونة .</p>
                 </div>
                 <div class="visa-type">
                     <h4>إلغاء نقاط عرض العمل (LMIA)</h4>
-                    <p>في مارس 2025، ألغت كندا النقاط الإضافية لعروض العمل في نظام Express Entry، مما صعّب المنافسة على العمال ذوي الخبرة الأقل في اللغة [citation:3].</p>
+                    <p>في مارس 2025، ألغت كندا النقاط الإضافية لعروض العمل في نظام Express Entry، مما صعّب المنافسة على العمال ذوي الخبرة الأقل في اللغة .</p>
                 </div>
                 <div class="visa-type">
                     <h4>تدقيق صارم للمسميات الوظيفية</h4>
-                    <p>السلطات أصبحت تدقق بدقة في تطابق المهام الفعلية مع المسمى الوظيفي في التصنيف الوطني للمهن (NOC). أي تضخيم في المسمى قد يؤدي للرفض [citation:3].</p>
+                    <p>السلطات أصبحت تدقق بدقة في تطابق المهام الفعلية مع المسمى الوظيفي في التصنيف الوطني للمهن (NOC). أي تضخيم في المسمى قد يؤدي للرفض .</p>
                 </div>
             </div>
         </div>
@@ -756,21 +681,21 @@
         <!-- فئات Express Entry 2026 (جديد) -->
         <h2 class="section-title">فئات Express Entry 2026: التخصصات المطلوبة</h2>
         <div class="requirements-box">
-            <p>في 18 فبراير 2026، أعلنت كندا عن فئات جديدة لسحب Express Entry تستهدف تحديداً الكفاءات التالية [citation:2][citation:3]:</p>
-            <div style="margin: 20px 0;">
+            <p>في 18 فبراير 2026، أعلنت كندا عن فئات جديدة لسحب Express Entry تستهدف تحديداً الكفاءات التالية :</p>
+            <div style="margin: 15px 0;">
                 <span class="skill-tag">أطباء (بخبرة كندية)</span>
                 <span class="skill-tag">باحثون وأكاديميون</span>
                 <span class="skill-tag">مدراء كبار (بخبرة كندية)</span>
                 <span class="skill-tag">طيارون ومهندسو طيران</span>
                 <span class="skill-tag">ميكانيكيو طائرات</span>
-                <span class="skill-tag">ضباط عسكريون أجانب (للقوات المسلحة)</span>
+                <span class="skill-tag">ضباط عسكريون أجانب</span>
                 <span class="skill-tag">ممرضون ورعاية صحية</span>
                 <span class="skill-tag">معلمون</span>
                 <span class="skill-tag">مهن النقل واللوجستيات</span>
                 <span class="skill-tag">مهن STEM</span>
                 <span class="skill-tag">مهنيو اللغة الفرنسية</span>
             </div>
-            <p>هذه التغييرات تعكس توجه كندا نحو استقطاب كفاءات محددة بدلاً من السحب العشوائي، مما يزيد فرص المتخصصين في المجالات المذكورة [citation:2].</p>
+            <p>هذه التغييرات تعكس توجه كندا نحو استقطاب كفاءات محددة بدلاً من السحب العشوائي، مما يزيد فرص المتخصصين في المجالات المذكورة .</p>
         </div>
 
         <!-- المهن الأكثر طلباً والرواتب في كندا 2026 -->
@@ -840,7 +765,7 @@
 
         <!-- المهارات الأكثر طلباً -->
         <h2 class="section-title">المهارات الأكثر طلباً في السوق الكندي 2026</h2>
-        <div style="margin: 20px 0;">
+        <div style="margin: 15px 0;">
             <span class="skill-tag">اللغة الإنجليزية (CLB 7+)</span>
             <span class="skill-tag">اللغة الفرنسية (ميزة كبرى)</span>
             <span class="skill-tag">Java / Python / JavaScript</span>
@@ -852,7 +777,7 @@
             <span class="skill-tag">اللحام والتركيبات</span>
             <span class="skill-tag">التمريض والرعاية</span>
         </div>
-        <p style="margin-top: 10px;">اللغة الفرنسية تمنح نقاطاً إضافية كبيرة في Express Entry، وهناك سحوبات منفصلة للمرشحين الناطقين بالفرنسية. المهارات الحرفية تشهد طلباً متزايداً بسبب نقص العمالة في قطاع البناء [citation:8].</p>
+        <p style="margin-top: 10px;">اللغة الفرنسية تمنح نقاطاً إضافية كبيرة في Express Entry، وهناك سحوبات منفصلة للمرشحين الناطقين بالفرنسية. المهارات الحرفية تشهد طلباً متزايداً بسبب نقص العمالة في قطاع البناء .</p>
 
         <!-- نظام تصاريح العمل الجديد 2026 -->
         <h2 class="section-title">نظام تصاريح العمل الجديد 2026: التفاصيل الكاملة</h2>
@@ -862,41 +787,41 @@
             <div class="visa-grid">
                 <div class="visa-type">
                     <h4>تصريح العمل المرتبط بصاحب العمل</h4>
-                    <p>النوع الأكثر شيوعاً بعد 2026. يشترط عقد عمل محدد مع صاحب عمل مسجل لدى IRCC. يحدد التصريح الوظيفة والراتب ومدة العمل. تغيير صاحب العمل يتطلب تصريحاً جديداً [citation:7].</p>
+                    <p>النوع الأكثر شيوعاً بعد 2026. يشترط عقد عمل محدد مع صاحب عمل مسجل لدى IRCC. يحدد التصريح الوظيفة والراتب ومدة العمل. تغيير صاحب العمل يتطلب تصريحاً جديداً .</p>
                 </div>
                 <div class="visa-type">
                     <h4>البطاقة الزرقاء الكندية (Global Hypergrowth Project)</h4>
-                    <p>مسار سريع للكفاءات العالية للعمل في شركات التكنولوجيا الكبرى مثل Ada, Clio, Lightspeed. مزايا: لا حاجة لـ LMIA، تصريح حتى 5 سنوات، معالجة خلال أسبوعين، وإقامة دائمة خلال 18 شهراً [citation:7].</p>
+                    <p>مسار سريع للكفاءات العالية للعمل في شركات التكنولوجيا الكبرى مثل Ada, Clio, Lightspeed. مزايا: لا حاجة لـ LMIA، تصريح حتى 5 سنوات، معالجة خلال أسبوعين، وإقامة دائمة خلال 18 شهراً .</p>
                 </div>
                 <div class="visa-type">
                     <h4>تصريح ما بعد التخرج (PGWP) الجديد</h4>
-                    <p>أصبح مشروطاً بالتخصصات المطلوبة. الخريجون يحصلون على تصريح فقط في المجالات التي تعاني نقصاً، ويجب عليهم إيجاد عمل خلال 90 يوماً من التخرج [citation:7].</p>
+                    <p>أصبح مشروطاً بالتخصصات المطلوبة. الخريجون يحصلون على تصريح فقط في المجالات التي تعاني نقصاً، ويجب عليهم إيجاد عمل خلال 90 يوماً من التخرج .</p>
                 </div>
                 <div class="visa-type">
                     <h4>تصريح العمل المفتوح (لحالات محدودة)</h4>
-                    <p>يبقى متاحاً فقط للفئات التالية: طلاب يواجهون صعوبات مالية، ضحايا سوء المعاملة، لاجئون، بعض أفراد العائلة [citation:10].</p>
+                    <p>يبقى متاحاً فقط للفئات التالية: طلاب يواجهون صعوبات مالية، ضحايا سوء المعاملة، لاجئون، بعض أفراد العائلة .</p>
                 </div>
             </div>
 
-            <h4 style="margin: 20px 0 10px;">المسار السريع: Global Skills Strategy (GSS)</h4>
-            <p>برنامج GSS يقدم معالجة خلال أسبوعين للكفاءات العالية في الحالات التالية [citation:5]:</p>
+            <h4 style="margin: 15px 0 10px;">المسار السريع: Global Skills Strategy (GSS)</h4>
+            <p>برنامج GSS يقدم معالجة خلال أسبوعين للكفاءات العالية في الحالات التالية :</p>
             <ul class="requirements-list">
                 <li><i class="fas fa-check-circle"></i> حاملي عروض عمل ضمن برنامج Global Talent Stream (LMIA إيجابي).</li>
                 <li><i class="fas fa-check-circle"></i> العمال المعفيين من LMIA (مثل بعض التحويلات داخل الشركة) في مهن TEER 0 أو 1.</li>
             </ul>
 
-            <h4 style="margin: 20px 0 10px;">شروط التقديم العامة (لجميع التصاريح):</h4>
+            <h4 style="margin: 15px 0 10px;">شروط التقديم العامة (لجميع التصاريح):</h4>
             <ul class="requirements-list">
-                <li><i class="fas fa-check-circle"></i> <strong>إثبات مالي:</strong> 15,000 دولار كندي للفرد + 5,000 لكل مرافق (زيادة عن السنوات السابقة) [citation:7].</li>
-                <li><i class="fas fa-check-circle"></i> <strong>فحوصات أمنية:</strong> شهادات خلو سوابق من كل دولة أقامت فيها أكثر من 6 أشهر خلال 10 سنوات [citation:7].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>إثبات مالي:</strong> 15,000 دولار كندي للفرد + 5,000 لكل مرافق (زيادة عن السنوات السابقة) .</li>
+                <li><i class="fas fa-check-circle"></i> <strong>فحوصات أمنية:</strong> شهادات خلو سوابق من كل دولة أقامت فيها أكثر من 6 أشهر خلال 10 سنوات .</li>
                 <li><i class="fas fa-check-circle"></i> <strong>فحص طبي:</strong> إلزامي لجميع المتقدمين، صالح لمدة 12 شهراً.</li>
                 <li><i class="fas fa-check-circle"></i> <strong>تعهد بالمغادرة:</strong> توقيع على تعهد بمغادرة كندا عند انتهاء التصريح ما لم تحصل على إقامة دائمة.</li>
                 <li><i class="fas fa-check-circle"></i> <strong>تسجيل دوري:</strong> تأكيد مستمر كل 6 أشهر عبر الإنترنت على استمرار الالتزام بشروط العمل.</li>
             </ul>
 
-            <h4 style="margin: 20px 0 10px;">خطوات التقديم (لغير الكنديين):</h4>
-            <ol style="margin-right: 20px; margin-bottom: 20px;">
-                <li><strong>الحصول على عرض عمل</strong> من صاحب عمل كندي مسجل لدى IRCC (بعد يناير 2026، يجب أن يكون صاحب العمل مسجلاً مسبقاً) [citation:7].</li>
+            <h4 style="margin: 15px 0 10px;">خطوات التقديم (لغير الكنديين):</h4>
+            <ol style="margin-right: 20px; margin-bottom: 15px;">
+                <li><strong>الحصول على عرض عمل</strong> من صاحب عمل كندي مسجل لدى IRCC (بعد يناير 2026، يجب أن يكون صاحب العمل مسجلاً مسبقاً) .</li>
                 <li><strong>تقديم طلب LMIA (إن لزم الأمر)</strong> أو التحقق من الإعفاء (مثل GTS أو NAFTA).</li>
                 <li><strong>التقديم الإلكتروني على تصريح العمل</strong> عبر موقع IRCC مع رفع جميع المستندات.</li>
                 <li><strong>دفع الرسوم</strong> (255 دولاراً للتصريح، إضافات للبيومترية).</li>
@@ -909,27 +834,27 @@
         <!-- تكلفة المعيشة في كندا 2026 -->
         <h2 class="section-title">تكلفة المعيشة في كندا 2026</h2>
         <div class="requirements-box">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px;">
-                <div><strong>تورنتو:</strong> 3,500 – 5,000 CAD شهرياً</div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+                <div><strong>تورنتو:</strong> 3,500 – 5,000 CAD</div>
                 <div><strong>فانكوفر:</strong> 3,500 – 5,000 CAD</div>
                 <div><strong>مونتريال:</strong> 2,500 – 3,800 CAD</div>
                 <div><strong>كالغاري:</strong> 2,800 – 4,000 CAD</div>
                 <div><strong>أوتاوا:</strong> 2,500 – 3,800 CAD</div>
                 <div><strong>هاليفاكس:</strong> 2,200 – 3,200 CAD</div>
             </div>
-            <p style="margin-top: 15px;">بحسب إحصائيات كانريدان، ارتفعت تكاليف السكن بنسبة 1.7% خلال عام، بينما ارتفعت أسعار الطعام بنسبة 4.8% [citation:4]. الإيجار في تورنتو وفانكوفر هو الأعلى (شقة بغرفة نوم واحدة: 2,200-2,800 CAD). مونتريال تقدم خيارات أقل كلفة مع جودة حياة عالية.</p>
+            <p style="margin-top: 15px;">بحسب إحصائيات كانريدان، ارتفعت تكاليف السكن بنسبة 1.7% خلال عام، بينما ارتفعت أسعار الطعام بنسبة 4.8% . الإيجار في تورنتو وفانكوفر هو الأعلى (شقة بغرفة نوم واحدة: 2,200-2,800 CAD). مونتريال تقدم خيارات أقل كلفة مع جودة حياة عالية.</p>
         </div>
 
         <!-- نصائح للباحثين عن عمل في كندا 2026 -->
         <div class="requirements-box" style="background: #fff5f5;">
             <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في كندا 2026</h3>
             <ul class="requirements-list">
-                <li><i class="fas fa-check-circle"></i> <strong>استعد للغة الفرنسية:</strong> إذا كنت تتقن الفرنسية، فرصك في Express Entry تزداد بشكل كبير. هناك سحوبات خاصة للناطقين بالفرنسية [citation:2].</li>
-                <li><i class="fas fa-check-circle"></i> <strong>استهدف الشركات المعتمدة (Hypergrowth):</strong> التقديم للشركات المدرجة في قائمة Global Hypergrowth Project يمنحك معالجة سريعة وإقامة دائمة خلال 18 شهراً [citation:7].</li>
-                <li><i class="fas fa-check-circle"></i> <strong>جدّد تصريحك مبكراً:</strong> إذا كنت حالياً في كندا بتصريح مفتوح، قدم على التجديد قبل 31 ديسمبر 2026 للاستفادة من القواعد القديمة [citation:7].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استعد للغة الفرنسية:</strong> إذا كنت تتقن الفرنسية، فرصك في Express Entry تزداد بشكل كبير. هناك سحوبات خاصة للناطقين بالفرنسية .</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استهدف الشركات المعتمدة (Hypergrowth):</strong> التقديم للشركات المدرجة في قائمة Global Hypergrowth Project يمنحك معالجة سريعة وإقامة دائمة خلال 18 شهراً .</li>
+                <li><i class="fas fa-check-circle"></i> <strong>جدّد تصريحك مبكراً:</strong> إذا كنت حالياً في كندا بتصريح مفتوح، قدم على التجديد قبل 31 ديسمبر 2026 للاستفادة من القواعد القديمة .</li>
                 <li><i class="fas fa-check-circle"></i> <strong>استخدم منصات التوظيف الموثوقة:</strong> LinkedIn Canada, Indeed Canada, Job Bank (الحكومي), Randstad Canada.</li>
                 <li><i class="fas fa-check-circle"></i> <strong>لا تدفع مقابل عروض العمل:</strong> احذر من شركات التوظيف الوهمية التي تطلب أموالاً مقابل تأمين وظيفة. التوظيف القانوني لا يكلفك شيئاً.</li>
-                <li><i class="fas fa-check-circle"></i> <strong>تأكد من تطابق مهامك مع NOC:</strong> التدقيق في المسمى الوظيفي أصبح صارماً جداً. تأكد أن مهام وظيفتك تطابق بالضبط وصف NOC [citation:3].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>تأكد من تطابق مهامك مع NOC:</strong> التدقيق في المسمى الوظيفي أصبح صارماً جداً. تأكد أن مهام وظيفتك تطابق بالضبط وصف NOC .</li>
                 <li><i class="fas fa-check-circle"></i> <strong>تجهيز شهاداتك وتصديقاتها:</strong> تحتاج إلى ترجمة معتمدة وتصديق لجميع الشهادات، مع تقييم الشهادات الأكاديمية (ECA) للهجرة.</li>
             </ul>
         </div>
@@ -939,50 +864,48 @@
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-number">تورنتو</div>
-                <div class="stat-label">أكبر سوق عمل في كندا. مركز التمويل، التكنولوجيا، الخدمات. أعلى الرواتب وأعلى إيجارات. فرص لا تُعد.</div>
+                <div class="stat-label">أكبر سوق عمل. مركز التمويل، التكنولوجيا، الخدمات. أعلى الرواتب وأعلى إيجارات.</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">فانكوفر</div>
-                <div class="stat-label">مركز التكنولوجيا والسينما. طبيعة خلابة، مناخ معتدل. رواتب مرتفعة وإيجارات خيالية. قطاع التكنولوجيا مزدهر.</div>
+                <div class="stat-label">مركز التكنولوجيا والسينما. طبيعة خلابة، رواتب مرتفعة وإيجارات خيالية.</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">مونتريال</div>
-                <div class="stat-label">ثنائية اللغة، تكاليف معيشة أقل من تورنتو وفانكوفر. مركز الذكاء الاصطناعي والألعاب. فرص ممتازة للناطقين بالفرنسية.</div>
+                <div class="stat-label">ثنائية اللغة، تكاليف معيشة أقل. مركز الذكاء الاصطناعي والألعاب.</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">كالغاري</div>
-                <div class="stat-label">مركز صناعة النفط والغاز، فرص كبيرة في الهندسة والطاقة. ضرائب أقل (مقاطعة ألبرتا). رواتب تنافسية.</div>
+                <div class="stat-label">مركز صناعة النفط والغاز، ضرائب أقل (ألبرتا). رواتب تنافسية.</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">أوتاوا</div>
-                <div class="stat-label">العاصمة، قطاع التكنولوجيا (سيليكون فالي الشمال)، وظائف حكومية، رواتب جيدة، إيجارات معقولة نسبياً.</div>
+                <div class="stat-label">العاصمة، قطاع التكنولوجيا (سيليكون فالي الشمال)، وظائف حكومية.</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">هاليفاكس</div>
-                <div class="stat-label">مدينة ساحلية، قطاع صحي وتعليمي، تكاليف معيشة منخفضة، فرص في التكنولوجيا والخدمات.</div>
+                <div class="stat-label">مدينة ساحلية، قطاع صحي وتعليمي، تكاليف معيشة منخفضة.</div>
             </div>
         </div>
 
         <!-- مزايا وتحديات العمل في كندا 2026 -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 40px 0;">
-            <div style="background: white; border-radius: 20px; padding: 25px; border: 1px solid #e2e8f0;">
-                <h3 style="color: var(--canada-red); margin-bottom: 15px;">✅ المزايا</h3>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 25px 0;">
+            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
+                <h3 style="color: var(--canada-red); margin-bottom: 10px;">✅ المزايا</h3>
                 <ul class="requirements-list">
-                    <li><i class="fas fa-check-circle" style="color: var(--canada-red);"></i> <strong>اقتصاد قوي ومستقر:</strong> سابع أكبر اقتصاد في العالم، فرص متنوعة في كل القطاعات.</li>
-                    <li><i class="fas fa-check-circle" style="color: var(--canada-red);"></i> <strong>جودة حياة عالية:</strong> رعاية صحية شاملة، تعليم ممتاز، أمان، بيئة نظيفة.</li>
-                    <li><i class="fas fa-check-circle" style="color: var(--canada-red);"></i> <strong>تعدد ثقافي:</strong> مجتمع منفتح على جميع الجنسيات، سهولة الاندماج.</li>
-                    <li><i class="fas fa-check-circle" style="color: var(--canada-red);"></i> <strong>رواتب تنافسية:</strong> من أعلى الرواتب عالمياً، مع حماية قانونية للعمال.</li>
-                    <li><i class="fas fa-check-circle" style="color: var(--canada-red);"></i> <strong>إجازات مدفوعة:</strong> إجازة أمومة طويلة (12-18 شهراً)، إجازات سنوية 2-3 أسابيع.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--canada-red);"></i> <strong>اقتصاد قوي:</strong> سابع أكبر اقتصاد في العالم، فرص متنوعة.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--canada-red);"></i> <strong>جودة حياة عالية:</strong> رعاية صحية شاملة، تعليم ممتاز، أمان.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--canada-red);"></i> <strong>تعدد ثقافي:</strong> مجتمع منفتح، سهولة الاندماج.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--canada-red);"></i> <strong>رواتب تنافسية:</strong> من أعلى الرواتب عالمياً.</li>
                 </ul>
             </div>
-            <div style="background: white; border-radius: 20px; padding: 25px; border: 1px solid #e2e8f0;">
-                <h3 style="color: #e67e22; margin-bottom: 15px;">⚠️ التحديات</h3>
+            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
+                <h3 style="color: #e67e22; margin-bottom: 10px;">⚠️ التحديات</h3>
                 <ul class="requirements-list">
-                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>غلاء المعيشة:</strong> ارتفاع الإيجارات والخدمات في المدن الكبرى (تورنتو، فانكوفر) [citation:4].</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>الشتاء القارس:</strong> برودة شديدة في معظم المقاطعات، قد تكون صادمة للقادمين من مناخ دافئ.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>تعقيدات الهجرة الجديدة:</strong> نظام التصاريح المرتبطة بصاحب العمل يقلل المرونة ويصعّب تغيير الوظائف [citation:7].</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>الضرائب المرتفعة:</strong> تصل إلى 33% على الدخل، بالإضافة إلى ضرائب المبيعات (GST/HST).</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>الاعتراف بالشهادات الأجنبية:</strong> بعض المهن (طب، هندسة) تتطلب معادلة قد تستغرق وقتاً.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>غلاء المعيشة:</strong> ارتفاع الإيجارات في المدن الكبرى.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>الشتاء القارس:</strong> برودة شديدة في معظم المقاطعات.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>تعقيدات الهجرة الجديدة:</strong> التصاريح المرتبطة بصاحب العمل تقلل المرونة.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>الضرائب المرتفعة:</strong> تصل إلى 33% على الدخل.</li>
                 </ul>
             </div>
         </div>
@@ -1018,7 +941,7 @@
                     </div>
                     <span class="job-site-name">Job Bank (حكومي)</span>
                 </div>
-                <div class="job-site-desc">الموقع الرسمي للحكومة الكندية، آلاف الوظائف المعتمدة من أرباب عمل مسجلين .</div>
+                <div class="job-site-desc">الموقع الرسمي للحكومة الكندية، آلاف الوظائف المعتمدة.</div>
                 <div class="job-site-link">jobbank.gc.ca <i class="fas fa-external-link-alt"></i></div>
             </a>
             <a href="https://www.linkedin.com/jobs/canada-jobs" target="_blank" class="job-site-card">
@@ -1028,7 +951,7 @@
                     </div>
                     <span class="job-site-name">LinkedIn Canada</span>
                 </div>
-                <div class="job-site-desc">أكبر منصة مهنية، آلاف الوظائف في جميع القطاعات، تواصل مباشر مع مسؤولي التوظيف.</div>
+                <div class="job-site-desc">أكبر منصة مهنية، تواصل مباشر مع مسؤولي التوظيف.</div>
                 <div class="job-site-link">linkedin.com <i class="fas fa-external-link-alt"></i></div>
             </a>
             <a href="https://www.indeed.ca" target="_blank" class="job-site-card">
@@ -1038,7 +961,7 @@
                     </div>
                     <span class="job-site-name">Indeed Canada</span>
                 </div>
-                <div class="job-site-desc">أضخم محرك بحث للوظائف، يضم ملايين الإعلانات من مختلف المصادر .</div>
+                <div class="job-site-desc">أضخم محرك بحث للوظائف، يضم ملايين الإعلانات.</div>
                 <div class="job-site-link">indeed.ca <i class="fas fa-external-link-alt"></i></div>
             </a>
             <a href="https://www.randstad.ca" target="_blank" class="job-site-card">
@@ -1048,20 +971,20 @@
                     </div>
                     <span class="job-site-name">Randstad Canada</span>
                 </div>
-                <div class="job-site-desc">أكبر شركة توظيف في كندا، فرص في جميع القطاعات، استشارات مهنية مجانية .</div>
+                <div class="job-site-desc">أكبر شركة توظيف في كندا، استشارات مهنية مجانية.</div>
                 <div class="job-site-link">randstad.ca <i class="fas fa-external-link-alt"></i></div>
             </a>
         </div>
 
         <!-- خدماتنا -->
         <div class="services-section">
-            <h3 style="font-size: 1.5rem; margin-bottom: 20px;">🚀 خدماتنا الاحترافية</h3>
-            <p style="margin-bottom: 25px;">نساعدك في تحسين فرصك للحصول على وظيفة في كندا واجتياز إجراءات الهجرة الجديدة</p>
+            <h3 style="font-size: 1.3rem; margin-bottom: 15px;">🚀 خدماتنا الاحترافية</h3>
+            <p style="margin-bottom: 20px;">نساعدك في تحسين فرصك للحصول على وظيفة في كندا واجتياز إجراءات الهجرة الجديدة</p>
             <div class="services-buttons">
-                <a href="services.html" class="service-btn"><i class="fas fa-file-alt"></i> سيرة ذاتية احترافية ($9)</a>
-                <a href="services.html" class="service-btn"><i class="fas fa-envelope"></i> خطاب تقديم مخصص ($7)</a>
-                <a href="services.html" class="service-btn"><i class="fas fa-user-plus"></i> تسجيل بمنصات التوظيف ($10)</a>
-                <a href="services.html" class="service-btn"><i class="fas fa-language"></i> تقييم الملف لـ Express Entry ($15)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-file-alt"></i> سيرة ذاتية ($9)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-envelope"></i> خطاب تقديم ($7)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-user-plus"></i> تسجيل بالمنصات ($10)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-language"></i> تقييم ملف Express Entry ($15)</a>
             </div>
         </div>
     </div>
@@ -1072,7 +995,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>وظائف حول العالم</h4>
-                    <p>منصتك الموثوقة للبحث عن فرص عمل في 49 دولة حول العالم. نساعدك على تحقيق حلمك بالعمل في الخارج.</p>
+                    <p>منصتك الموثوقة للبحث عن فرص عمل في 49 دولة حول العالم.</p>
                 </div>
                 <div class="footer-section">
                     <h4>روابط سريعة</h4>
@@ -1095,9 +1018,7 @@
                     <h4>تابعنا</h4>
                     <div class="social-links">
                         <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook"></i> فيسبوك</a>
-                    </div>
-                    <div style="margin-top: 15px;">
-                        <a href="https://wa.me/212669411021" target="_blank" style="color:#25D366;"><i class="fab fa-whatsapp"></i> واتساب</a>
+                        <a href="https://wa.me/212669411021" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
                     </div>
                 </div>
             </div>
