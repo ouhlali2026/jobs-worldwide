@@ -2,363 +2,619 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فرص عمل في سلطنة عمان 2026 | وظائف في مسقط صلالة للمهنيين</title>
-    <meta name="description" content="دليلك الشامل للعمل في سلطنة عمان: المهن المطلوبة، الرواتب المحدثة 2026، تأشيرات العمل، إجراءات وزارة العمل، مواقع التوظيف. كل ما تحتاجه للهجرة والعمل في عمان.">
-    <meta name="keywords" content="فرص عمل في عمان, وظائف سلطنة عمان 2026, تأشيرة عمل عمان, المهن المطلوبة في عمان, العمل في مسقط, وزارة العمل العمانية">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>فرص عمل في عمان 2026 | المهن المطلوبة والتأشيرات والرواتب في مسقط</title>
+    <meta name="description" content="عمان 2026: دليلك الشامل للعمل في سلطنة عمان. المهن الأكثر طلباً (نفط، هندسة، تكنولوجيا)، رواتب محدثة، تأشيرات العمل عبر شرطة عمان السلطانية، ونصائح للباحثين عن عمل.">
+    <meta name="keywords" content="فرص عمل في عمان, وظائف سلطنة عمان 2026, تأشيرة عمل عمان, العمل في مسقط, رواتب المهندسين في عمان, الهجرة إلى عمان, شرطة عمان السلطانية">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+
     <!-- ملف التنسيقات الرئيسي -->
     <link rel="stylesheet" href="style.css">
-    
+
     <style>
-        /* تنسيقات خاصة بصفحة عمان */
+        /* تنسيقات خاصة بصفحة عمان - مستوحاة من ألوان العلم 🇴🇲 */
+        :root {
+            --oman-red: #DA291C;
+            --oman-white: #FFFFFF;
+            --oman-green: #007A3D;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
         .country-header {
-            background: linear-gradient(135deg, #DA291C, #FFFFFF, #007A3D);
+            background: linear-gradient(135deg, var(--oman-red), var(--oman-green));
             color: white;
-            padding: 60px 0;
+            padding: clamp(20px, 5vw, 30px) 15px;
             text-align: center;
             position: relative;
             overflow: hidden;
+            width: 100%;
         }
-        
+
         .country-header h1 {
-            font-size: 2.5rem;
+            font-size: clamp(1.5rem, 6vw, 2.2rem);
             margin-bottom: 10px;
             position: relative;
-            color: #1e293b;
-            background: rgba(255,255,255,0.9);
+            color: white;
+            background: rgba(0,0,0,0.2);
             display: inline-block;
-            padding: 10px 30px;
+            padding: 5px 15px;
             border-radius: 50px;
+            font-weight: 700;
+            word-break: break-word;
+            max-width: 95%;
+            line-height: 1.3;
         }
-        
+
         .country-header p {
-            font-size: 1.1rem;
+            font-size: clamp(0.85rem, 3vw, 1rem);
             opacity: 0.95;
             position: relative;
-            color: #1e293b;
-            background: rgba(255,255,255,0.8);
+            color: white;
+            background: rgba(0,0,0,0.2);
             display: inline-block;
-            padding: 5px 20px;
+            padding: 5px 12px;
             border-radius: 30px;
+            max-width: 95%;
+            margin: 8px auto;
+            line-height: 1.5;
         }
-        
+
         .country-info {
             display: flex;
             justify-content: center;
-            gap: 30px;
-            margin: 30px 0;
+            gap: 8px;
+            margin: 15px 0 0;
             flex-wrap: wrap;
+            width: 100%;
         }
-        
+
         .info-badge {
             background: white;
-            color: #DA291C;
-            padding: 10px 25px;
+            color: var(--oman-red);
+            padding: 6px 12px;
             border-radius: 50px;
             font-weight: 600;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-size: clamp(0.7rem, 2.5vw, 0.8rem);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap;
         }
-        
+
+        @media (max-width: 480px) {
+            .info-badge {
+                white-space: normal;
+                font-size: 0.7rem;
+                padding: 4px 8px;
+            }
+        }
+
+        .info-badge i {
+            font-size: 0.8rem;
+        }
+
         .section-title {
-            font-size: 1.8rem;
+            font-size: clamp(1.3rem, 5vw, 1.8rem);
             color: #1e293b;
-            margin: 40px 0 20px;
+            margin: 25px 0 15px;
             position: relative;
-            padding-right: 15px;
+            padding-right: 12px;
+            line-height: 1.3;
         }
-        
+
         .section-title::before {
             content: '';
             position: absolute;
             right: 0;
             top: 0;
             bottom: 0;
-            width: 5px;
-            background: #DA291C;
+            width: 4px;
+            background: var(--oman-red);
             border-radius: 5px;
         }
-        
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 12px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        /* تحسينات الجوال */
+        @media (max-width: 768px) {
+            .country-header {
+                padding: 20px 10px;
+            }
+            .container {
+                padding: 0 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .country-header h1 {
+                font-size: 1.4rem;
+                padding: 5px 10px;
+            }
+            .section-title {
+                font-size: 1.2rem;
+                padding-right: 10px;
+            }
+        }
+
         .jobs-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+            width: 100%;
         }
-        
+
         .job-site-card {
             background: white;
             border-radius: 12px;
-            padding: 25px;
+            padding: 15px;
             border: 1px solid #e2e8f0;
             transition: all 0.3s ease;
             text-decoration: none;
             color: inherit;
             display: block;
+            width: 100%;
         }
-        
+
         .job-site-card:hover {
             transform: translateY(-5px);
-            border-color: #DA291C;
+            border-color: var(--oman-red);
             box-shadow: 0 10px 25px rgba(218,41,28,0.1);
         }
-        
+
         .job-site-header {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
+            gap: 10px;
+            margin-bottom: 10px;
         }
-        
+
         .job-site-icon {
-            width: 50px;
-            height: 50px;
-            background: #fef0f0;
-            border-radius: 12px;
+            width: 40px;
+            height: 40px;
+            background: #ffe0e0;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-shrink: 0;
         }
-        
+
         .job-site-icon i {
-            font-size: 1.8rem;
-            color: #DA291C;
+            font-size: 1.4rem;
+            color: var(--oman-red);
         }
-        
+
         .job-site-name {
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 600;
             color: #1e293b;
+            word-break: break-word;
         }
-        
+
         .job-site-desc {
             color: #64748b;
-            font-size: 0.95rem;
-            margin-bottom: 15px;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            line-height: 1.5;
         }
-        
+
         .job-site-link {
             display: inline-flex;
             align-items: center;
             gap: 5px;
-            color: #DA291C;
-            font-size: 0.95rem;
+            color: var(--oman-red);
+            font-size: 0.85rem;
+            word-break: break-word;
         }
-        
+
         .visa-box {
             background: #f8fafc;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 30px 0;
-            border: 2px dashed #DA291C;
+            border-radius: 16px;
+            padding: 20px 15px;
+            margin: 20px 0;
+            border: 2px dashed var(--oman-green);
+            width: 100%;
         }
-        
+
         .visa-box h3 {
             color: #1e293b;
-            font-size: 1.3rem;
-            margin-bottom: 15px;
+            font-size: clamp(1.1rem, 4vw, 1.3rem);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            line-height: 1.3;
         }
-        
+
         .visa-box i {
-            color: #DA291C;
+            color: var(--oman-red);
             font-size: 1.2rem;
+            flex-shrink: 0;
         }
-        
+
         .visa-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+            width: 100%;
         }
-        
+
         .visa-type {
             background: white;
-            padding: 20px;
-            border-radius: 8px;
+            padding: 15px;
+            border-radius: 12px;
             border: 1px solid #e2e8f0;
+            width: 100%;
         }
-        
+
         .visa-type h4 {
-            color: #DA291C;
-            margin-bottom: 5px;
+            color: var(--oman-red);
+            margin-bottom: 8px;
+            font-size: 1rem;
         }
-        
-        .visa-type .price {
-            font-weight: 600;
-            color: #007A3D;
-            margin-top: 10px;
-        }
-        
-        .visa-type .fee {
+
+        .visa-type p {
             font-size: 0.9rem;
-            color: #64748b;
-            margin-top: 5px;
+            color: #334155;
+            line-height: 1.5;
         }
-        
+
         .table-container {
             overflow-x: auto;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            -webkit-overflow-scrolling: touch;
+            width: 100%;
+            max-width: 100%;
         }
-        
+
         .jobs-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
             background: white;
-            border-radius: 8px;
+            border-radius: 12px;
             overflow: hidden;
+            min-width: 550px;
+            table-layout: auto;
         }
-        
+
         .jobs-table th {
-            background: #DA291C;
+            background: var(--oman-red);
             color: white;
-            padding: 12px;
+            padding: 10px 8px;
             text-align: right;
+            font-weight: 600;
+            font-size: 0.9rem;
+            white-space: nowrap;
         }
-        
+
         .jobs-table td {
-            padding: 12px;
+            padding: 10px 8px;
             border-bottom: 1px solid #e2e8f0;
+            font-size: 0.85rem;
+            word-break: break-word;
         }
-        
+
         .jobs-table tr:last-child td {
             border-bottom: none;
         }
-        
-        .jobs-table tr:hover {
-            background: #fef0f0;
+
+        @media (max-width: 600px) {
+            .jobs-table th, .jobs-table td {
+                padding: 8px 6px;
+                font-size: 0.8rem;
+            }
         }
-        
+
         .requirements-box {
-            background: #fef0f0;
-            border-right: 4px solid #DA291C;
-            padding: 30px;
-            border-radius: 12px;
-            margin: 30px 0;
+            background: #fff5f5;
+            border-right: 4px solid var(--oman-green);
+            padding: 20px 15px;
+            border-radius: 16px;
+            margin: 20px 0;
+            width: 100%;
         }
-        
+
         .requirements-box h3 {
             color: #1e293b;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: clamp(1.1rem, 4vw, 1.3rem);
+            line-height: 1.3;
         }
-        
+
         .requirements-list {
             list-style: none;
+            padding: 0;
+            margin: 0;
         }
-        
+
         .requirements-list li {
             margin-bottom: 10px;
             display: flex;
-            align-items: center;
-            gap: 10px;
+            align-items: flex-start;
+            gap: 8px;
+            line-height: 1.5;
+            font-size: 0.9rem;
         }
-        
+
         .requirements-list i {
-            color: #DA291C;
+            color: var(--oman-green);
+            margin-top: 3px;
+            min-width: 16px;
         }
-        
+
         .back-link {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            color: #DA291C;
+            gap: 6px;
+            color: var(--oman-red);
             text-decoration: none;
-            margin: 20px 0;
+            margin: 15px 0;
             font-weight: 500;
+            padding: 6px 12px;
+            background: #fff5f5;
+            border-radius: 30px;
+            font-size: 0.9rem;
         }
-        
-        .back-link:hover {
-            color: #007A3D;
-        }
-        
+
         .flag-icon {
-            font-size: 3rem;
-            color: #DA291C;
-            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 10px;
             filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
         }
-        
+
         .skill-tag {
             display: inline-block;
             background: white;
-            color: #DA291C;
+            color: var(--oman-red);
             padding: 5px 12px;
-            border-radius: 20px;
-            margin: 3px;
-            font-size: 0.85rem;
-            border: 1px solid #DA291C;
+            border-radius: 40px;
+            margin: 4px;
+            font-size: 0.8rem;
+            border: 1px solid var(--oman-red);
+            transition: all 0.2s;
+            font-weight: 500;
         }
-        
+
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 12px;
+            margin: 15px 0;
+            width: 100%;
         }
-        
+
         .stat-card {
             background: white;
-            padding: 20px;
-            border-radius: 12px;
+            padding: 15px 8px;
+            border-radius: 16px;
             text-align: center;
             border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 8px rgba(218,41,28,0.05);
+            width: 100%;
         }
-        
+
         .stat-number {
-            font-size: 1.8rem;
+            font-size: 1.3rem;
             font-weight: 700;
-            color: #DA291C;
+            color: var(--oman-red);
+            line-height: 1.2;
         }
-        
+
         .stat-label {
             color: #64748b;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
+            margin-top: 5px;
         }
-        
+
         .services-section {
-            background: #f8fafc;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 40px 0;
+            background: #fff5f5;
+            border-radius: 24px;
+            padding: 25px 15px;
+            margin: 30px 0;
             text-align: center;
+            width: 100%;
         }
-        
+
         .services-buttons {
             display: flex;
-            gap: 20px;
+            gap: 10px;
             justify-content: center;
             flex-wrap: wrap;
             margin-top: 20px;
+            width: 100%;
         }
-        
+
         .service-btn {
-            background: #DA291C;
+            background: var(--oman-green);
             color: white;
-            padding: 12px 30px;
-            border-radius: 8px;
+            padding: 10px 20px;
+            border-radius: 50px;
             text-decoration: none;
-            transition: background 0.3s;
+            transition: all 0.3s;
+            font-weight: 500;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            border: none;
+            cursor: pointer;
+            flex: 0 1 auto;
         }
-        
+
         .service-btn:hover {
-            background: #007A3D;
+            background: #005a2e;
         }
-        
-        @media (max-width: 768px) {
-            .country-header h1 {
-                font-size: 2rem;
-            }
-            
+
+        @media (max-width: 600px) {
             .services-buttons {
                 flex-direction: column;
             }
+            .service-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--oman-red);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 500;
+            padding: 5px 0;
+        }
+
+        .nav-links a.active {
+            color: var(--oman-green);
+            border-bottom: 2px solid var(--oman-green);
+        }
+
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-links {
+                justify-content: center;
+            }
+        }
+
+        footer {
+            background: #1e293b;
+            color: white;
+            padding: 30px 0 15px;
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+
+        .footer-section a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-left: 8px;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 15px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 480px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        /* إصلاحات إضافية لمنع التمرير الأفقي */
+        img, iframe, video, table, div {
+            max-width: 100%;
+        }
+        p, h1, h2, h3, h4, h5, h6, li, td, th {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
     </style>
 </head>
@@ -371,7 +627,7 @@
                     <i class="fas fa-globe"></i>
                     <span>وظائف حول العالم</span>
                 </a>
-                
+
                 <ul class="nav-links">
                     <li><a href="index.html">الرئيسية</a></li>
                     <li><a href="#" class="active">الدول</a></li>
@@ -387,12 +643,12 @@
     <section class="country-header">
         <div class="container">
             <i class="fas fa-flag flag-icon"></i>
-            <h1>فرص عمل في سلطنة عمان 2026</h1>
-            <p>دليلك الشامل للعمل في مسقط، صلالة، صحار وجميع المدن العمانية</p>
-            
+            <h1>🇴🇲 فرص عمل في سلطنة عمان 2026 🇴🇲</h1>
+            <p>الدليل الكامل للعمل في مسقط، صلالة، صحار، نزوى وجميع المحافظات العمانية</p>
+
             <div class="country-info">
-                <span class="info-badge"><i class="fas fa-briefcase"></i> طلب مرتفع</span>
-                <span class="info-badge"><i class="fas fa-language"></i> عربي / إنجليزي</span>
+                <span class="info-badge"><i class="fas fa-hard-hat"></i> نفط وغاز</span>
+                <span class="info-badge"><i class="fas fa-language"></i> العربية / الإنجليزية</span>
                 <span class="info-badge"><i class="fas fa-money-bill-wave"></i> ريال عماني (OMR)</span>
             </div>
         </div>
@@ -404,162 +660,394 @@
         </a>
 
         <!-- لمحة عامة عن سوق العمل العماني -->
-        <div class="requirements-box">
-            <h3><i class="fas fa-chart-line"></i> لمحة عامة عن سوق العمل العماني 2026</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
-                <div><strong>عدد السكان:</strong> 4.5 مليون نسمة [citation:10]</div>
-                <div><strong>نسبة الوافدين في القوى العاملة:</strong> 40% [citation:10]</div>
-                <div><strong>القطاعات الرئيسية:</strong> النفط والغاز، البناء والتشييد، تكنولوجيا المعلومات، الرعاية الصحية، السياحة، الخدمات اللوجستية [citation:4][citation:10]</div>
-                <div><strong>اللغة:</strong> العربية (الإنجليزية مستخدمة على نطاق واسع في بيئات العمل) [citation:10]</div>
-                <div><strong>رؤية عمان 2040:</strong> تركيز على تنويع الاقتصاد، الطاقة المتجددة، التحول الرقمي، وتطوير البنية التحتية [citation:4]</div>
-            </div>
-            <p style="margin-top: 15px;">تشهد سلطنة عمان نمواً اقتصادياً مستقراً بفضل تنفيذ "رؤية عمان 2040" والتوسع في مشاريع البنية التحتية والطاقة المتجددة واللوجستيات. يشكل الوافدون حوالي 40% من القوى العاملة، مع وجود طلب متزايد على المهارات المتخصصة في مختلف القطاعات [citation:4][citation:10].</p>
+        <div class="visa-box">
+            <h3><i class="fas fa-chart-line"></i> نظرة على سوق العمل في عمان 2026</h3>
+            <p>سلطنة عمان هي واحدة من أكثر دول الخليج استقراراً وترحيباً بالعمالة الوافدة، حيث يشكل الأجانب حوالي 40% من القوى العاملة [citation:5]. يتمتع الاقتصاد العماني بتنوع ملحوظ، مع قطاعات رئيسية تشمل النفط والغاز، الصناعات التحويلية، الخدمات اللوجستية، والسياحة. في إطار رؤية عمان 2040، تشهد البلاد توسعاً كبيراً في مشاريع البنية التحتية والطاقة المتجددة والتحول الرقمي، مما يخلق فرصاً واعدة للباحثين عن عمل .</p>
+            <p>تتميز عمان برواتب معفاة من الضرائب، وتكاليف معيشة منخفضة نسبياً مقارنة بجيرانها الخليجيين، مما يتيح للوافدين فرصة ادخار جيدة. معظم أصحاب العمل يقدمون مزايا إضافية تشمل السكن، النقل، تذاكر السفر السنوية، والتأمين الصحي [citation:5].</p>
         </div>
 
-        <!-- المهن الأكثر طلباً والرواتب 2026 -->
-        <h2 class="section-title">المهن الأكثر طلباً في سلطنة عمان والرواتب 2026</h2>
-        
+        <!-- المهن الأكثر طلباً والرواتب في عمان 2026 -->
+        <h2 class="section-title">المهن الأكثر طلباً والرواتب في عمان 2026</h2>
+
         <div class="table-container">
             <table class="jobs-table">
                 <tr>
                     <th>القطاع</th>
                     <th>المهن المطلوبة</th>
-                    <th>متوسط الراتب الشهري (ريال عماني)</th>
-                </tr>
-                <tr>
-                    <td>الهندسة</td>
-                    <td>مهندسو مدني، كهرباء، ميكانيكا، هندسة بترول، هندسة طاقة متجددة، مهندسو مشاريع [citation:4]</td>
-                    <td>900 - 2,000 (قد يزيد مع الخبرة) [citation:4]</td>
-                </tr>
-                <tr>
-                    <td>تكنولوجيا المعلومات والتحول الرقمي</td>
-                    <td>مطورو برمجيات، مهندسو أمن سيبراني، محللو بيانات، مهندسو سحابة (Cloud)، خبراء ذكاء اصطناعي، مسؤولو أنظمة [citation:4][citation:10]</td>
-                    <td>1,000 - 2,500 [citation:4]</td>
-                </tr>
-                <tr>
-                    <td>القطاع الصحي</td>
-                    <td>أطباء (مختلف التخصصات)، ممرضون قانونيون، فنيو مختبرات، أخصائيو علاج طبيعي، صيادلة [citation:4][citation:10]</td>
-                    <td>أطباء: 1,500 - 3,000 [citation:4]<br>تمريض: 700 - 1,200 [citation:4]</td>
+                    <th>مبتدئ (OMR)</th>
+                    <th>متوسط (OMR)</th>
+                    <th>متقدم (OMR)</th>
                 </tr>
                 <tr>
                     <td>النفط والغاز</td>
-                    <td>مهندسو بترول، فنيو حفر، مسؤولو سلامة، مشغلو منشآت، فنيو صيانة [citation:10]</td>
-                    <td>1,200 - 2,500+ (تقديري)</td>
+                    <td>مهندسو بترول، جيولوجيون، مهندسو عمليات، فنيو حفر، مشرفو سلامة</td>
+                    <td>900 – 1,300</td>
+                    <td>1,300 – 2,000</td>
+                    <td>2,000 – 3,500+</td>
                 </tr>
                 <tr>
-                    <td>التعليم والتدريب</td>
-                    <td>معلمون (رياضيات، علوم، لغة إنجليزية)، مدربون مهنيون، أساتذة جامعيون [citation:1][citation:4]</td>
-                    <td>600 - 1,500 [citation:4]</td>
+                    <td>الهندسة والبناء</td>
+                    <td>مهندسو مدني، كهرباء، ميكانيكا، معماريون، مساحو كميات، مشرفو مشاريع</td>
+                    <td>600 – 900</td>
+                    <td>900 – 1,600</td>
+                    <td>1,600 – 2,500+</td>
                 </tr>
                 <tr>
-                    <td>المحاسبة والمالية</td>
-                    <td>محاسبون، محللون ماليون، مدققو حسابات، مسؤولو موارد بشرية [citation:4][citation:10]</td>
-                    <td>800 - 1,800 [citation:4]</td>
+                    <td>تكنولوجيا المعلومات</td>
+                    <td>مهندسو برمجيات (Java, Python)، مهندسو أمن سيبراني، علماء بيانات، مطورو تطبيقات</td>
+                    <td>600 – 1,000</td>
+                    <td>1,000 – 1,800</td>
+                    <td>1,800 – 2,800+</td>
                 </tr>
                 <tr>
-                    <td>البناء والتشييد</td>
-                    <td>مهندسو موقع، مشرفو بناء، بناؤون، نجارون، كهربائيون، سباكون، مشغلو معدات ثقيلة [citation:10]</td>
-                    <td>500 - 1,200 (تقديري)</td>
+                    <td>الرعاية الصحية</td>
+                    <td>أطباء (جميع التخصصات)، ممرضون، صيادلة، أخصائيو علاج طبيعي</td>
+                    <td>700 – 1,200</td>
+                    <td>1,200 – 1,900</td>
+                    <td>1,900 – 3,000+</td>
                 </tr>
                 <tr>
-                    <td>السياحة والفندقة</td>
-                    <td>مديرو فنادق، طهاة، نادلون، موظفو استقبال، مرشدون سياحيون [citation:1][citation:4]</td>
-                    <td>500 - 1,200 [citation:4]</td>
+                    <td>المالية والمحاسبة</td>
+                    <td>محللون ماليون، محاسبون، مدققو حسابات، متخصصو امتثال</td>
+                    <td>600 – 900</td>
+                    <td>900 – 1,500</td>
+                    <td>1,500 – 2,500+</td>
                 </tr>
                 <tr>
-                    <td>اللوجستيات وسلاسل الإمداد</td>
-                    <td>مشغلو مستودعات، منسقو لوجستيات، سائقو شاحنات، مديرو موانئ [citation:4][citation:10]</td>
-                    <td>700 - 1,600 [citation:4]</td>
+                    <td>اللوجستيات والنقل</td>
+                    <td>سائقو شاحنات، عمال مستودعات، منسقو شحن، مدراء لوجستيات</td>
+                    <td>300 – 500</td>
+                    <td>500 – 800</td>
+                    <td>800 – 1,500+</td>
                 </tr>
                 <tr>
-                    <td>المبيعات والتسويق الرقمي</td>
-                    <td>مديرو مبيعات، مسوقون رقميون، مشرفو مبيعات [citation:4]</td>
-                    <td>600 - 1,500 (قد يشمل عمولات) [citation:4]</td>
+                    <td>السياحة والضيافة</td>
+                    <td>مديرو فنادق، طهاة، نادلون، مرشدون سياحيون، موظفو استقبال</td>
+                    <td>250 – 400</td>
+                    <td>400 – 700</td>
+                    <td>700 – 1,200+</td>
                 </tr>
             </table>
+            <p style="margin-top: 5px;">المصادر: تحليل سوق العمل العماني، بيانات وزارة العمل، تقارير الرواتب [citation:4][citation:5].</p>
         </div>
 
-        <!-- رواتب المهن الحرفية والعامة -->
-        <h2 class="section-title">رواتب تقديرية للعمالة العامة والحرفية</h2>
-        <div class="table-container">
-            <table class="jobs-table">
-                <tr>
-                    <th>المستوى الوظيفي</th>
-                    <th>الراتب التقديري (ريال عماني)</th>
-                </tr>
-                <tr>
-                    <td>عامل عام / مساعد</td>
-                    <td>130 - 200</td>
-                </tr>
-                <tr>
-                    <td>سائق / عامل بناء</td>
-                    <td>180 - 280</td>
-                </tr>
-                <tr>
-                    <td>حرفي ماهر (سباك، كهربائي، لحام)</td>
-                    <td>250 - 450</td>
-                </tr>
-                <tr>
-                    <td>مشرف عمال / فني أول</td>
-                    <td>450 - 700</td>
-                </tr>
-            </table>
-        </div>
-
-        <!-- المهارات الأكثر طلباً -->
-        <h2 class="section-title">المهارات الأكثر طلباً في السوق العماني</h2>
-        <div style="margin: 20px 0;">
-            <span class="skill-tag">إدارة المشاريع</span>
-            <span class="skill-tag">البرمجة (Python, Java, C++)</span>
-            <span class="skill-tag">الأمن السيبراني</span>
-            <span class="skill-tag">تحليل البيانات</span>
-            <span class="skill-tag">الذكاء الاصطناعي</span>
-            <span class="skill-tag">الحوسبة السحابية</span>
-            <span class="skill-tag">اللغة الإنجليزية (مستوى عالٍ)</span>
-            <span class="skill-tag">إدارة سلاسل الإمداد</span>
-            <span class="skill-tag">التسويق الرقمي</span>
-            <span class="skill-tag">القيادة والتواصل</span>
-            <span class="skill-tag">حل المشكلات</span>
-            <span class="skill-tag">العمل الجماعي</span>
-        </div>
-
-        <!-- نظام تأشيرات العمل في عمان -->
+        <!-- رواتب المهندسين حسب التخصص (تفصيل أكثر) -->
         <div class="visa-box">
-            <h3><i class="fas fa-passport"></i> نظام تأشيرات العمل في سلطنة عمان 2026</h3>
-            
-            <p>تتم إجراءات تأشيرات العمل في عمان برعاية صاحب العمل، وتشرف عليها وزارة العمل وشرطة عمان السلطانية [citation:3][citation:10].</p>
-            
-            <h4 style="margin: 20px 0 10px;">أنواع تأشيرات العمل الرئيسية [citation:3][citation:10]</h4>
+            <h3><i class="fas fa-chart-bar"></i> سلم رواتب المهندسين في عمان 2026 حسب التخصص</h3>
+            <p>وفقاً لأحدث البيانات، تختلف رواتب المهندسين بشكل كبير حسب التخصص والخبرة والقطاع [citation:4]:</p>
+            <div class="table-container">
+                <table class="jobs-table">
+                    <tr>
+                        <th>التخصص الهندسي</th>
+                        <th>متوسط الراتب الشهري (OMR)</th>
+                        <th>أعلى قطاع</th>
+                    </tr>
+                    <tr><td>هندسة النفط والغاز</td><td>1,500 – 3,000</td><td>شركات الطاقة</td></tr>
+                    <tr><td>هندسة البرمجيات</td><td>1,200 – 2,500</td><td>التقنية والتحول الرقمي</td></tr>
+                    <tr><td>الهندسة الكهربائية</td><td>900 – 1,800</td><td>الطاقة والمشاريع الصناعية</td></tr>
+                    <tr><td>الهندسة الميكانيكية</td><td>900 – 1,900</td><td>المصانع والنفط والغاز</td></tr>
+                    <tr><td>الهندسة المدنية</td><td>800 – 1,600</td><td>شركات المقاولات الكبرى</td></tr>
+                    <tr><td>هندسة الاتصالات</td><td>1,000 – 2,000</td><td>الاتصالات وتقنية المعلومات</td></tr>
+                    <tr><td>الهندسة الصناعية</td><td>900 – 1,700</td><td>التصنيع وسلاسل الإمداد</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- الحد الأدنى للأجور والمزايا -->
+        <div class="visa-box">
+            <h3><i class="fas fa-coins"></i> الحد الأدنى للأجور 2026</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">غير محدد</div>
+                    <div class="stat-label">حد أدنى وطني</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">225</div>
+                    <div class="stat-label">للعمالة المساعدة (OMR)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2.59</div>
+                    <div class="stat-label">OMR to USD</div>
+                </div>
+            </div>
+            <p style="margin-top: 15px;">لا يوجد حد أدنى رسمي موحد للأجور في القطاع الخاص العماني، لكنه يختلف حسب القطاع والعقد. العمالة غير الماهرة تحصل عادة على 200-300 ريال، بينما تبدأ رواتب أصحاب المهارات من 500 ريال. يقدم معظم أصحاب العمل مزايا إضافية مثل السكن (أو بدل سكن)، النقل، التأمين الصحي، وتذاكر السفر السنوية [citation:5].</p>
+        </div>
+
+        <!-- تكلفة المعيشة في المدن الرئيسية -->
+        <h2 class="section-title">تكلفة المعيشة في عمان 2026</h2>
+        <div class="requirements-box">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+                <div><strong>مسقط (شخص واحد):</strong> 350 – 550 OMR</div>
+                <div><strong>مسقط (عائلة 4 أفراد):</strong> 900 – 1,400 OMR</div>
+                <div><strong>صلالة:</strong> 300 – 450 OMR</div>
+                <div><strong>صحار:</strong> 300 – 450 OMR</div>
+                <div><strong>إيجار شقة (غرفة نوم واحدة):</strong> 200 – 350 OMR</div>
+                <div><strong>فواتير شهرية:</strong> 50 – 80 OMR</div>
+                <div><strong>وجبة في مطعم عادي:</strong> 3 – 5 OMR</div>
+            </div>
+            <p style="margin-top: 15px;">تكاليف المعيشة في عمان تعتبر معقولة جداً مقارنة بدول الخليج الأخرى [citation:5]. الإيجار هو العامل الأكبر في الميزانية، خاصة في المناطق الراقية مثل القرم والمعبيلة.</p>
+        </div>
+
+        <!-- أنواع التأشيرات (ROP) -->
+        <h2 class="section-title">تأشيرات العمل في عمان 2026 (شرطة عمان السلطانية)</h2>
+        <div class="visa-box">
+            <h3><i class="fas fa-passport"></i> نظام التأشيرات عبر شرطة عمان السلطانية</h3>
+            <p>جميع تأشيرات العمل في سلطنة عمان تصدر عبر <strong>شرطة عمان السلطانية (ROP)</strong>، ويكون صاحب العمل هو المسؤول عن التقديم نيابة عن الموظف [citation:2].</p>
+
             <div class="visa-grid">
                 <div class="visa-type">
-                    <h4>تأشيرة العمل (التوظيف)</h4>
-                    <p>الأكثر شيوعاً، تصدر للمهنيين العاملين في شركات القطاع الخاص. يكفل صاحب العمل العامل ويتقدم للحصول على تصريح عمل من وزارة العمل [citation:10].</p>
-                    <div class="price">الصلاحية: سنتان [citation:3]</div>
+                    <h4>تأشيرة العمل العادية</h4>
+                    <p>تمنح بناء على طلب صاحب العمل وتحت مسؤوليته للأجنبي القادم للعمل، بموجب ترخيص صادر من وزارة العمل. صلاحيتها سنتين من تاريخ دمغ التأشيرة على الجواز، متعددة الرحلات [citation:2].</p>
                 </div>
                 <div class="visa-type">
                     <h4>التأشيرة المهنية</h4>
-                    <p>مصممة للعمالة الماهرة كالمهندسين والأطباء والفنيين والمدراء. يشترط استيفاء المؤهلات والخبرة المطلوبة [citation:10].</p>
+                    <p>مصممة للعمالة الماهرة كالمهندسين والأطباء والفنيين والمدراء. تشترط استيفاء المؤهلات والخبرة المطلوبة. تمنح إقامة تصل إلى سنتين قابلة للتجديد [citation:5].</p>
                 </div>
                 <div class="visa-type">
                     <h4>تأشيرة المستثمر</h4>
-                    <p>للمستثمرين الذين يؤسسون أعمالاً تجارية في عمان. تتيح الإقامة والعمل طويل الأمد دون الحاجة إلى كفيل [citation:10].</p>
+                    <p>تُمنح للأفراد الذين يستثمرون أو يؤسسون أعمالاً تجارية في عمان. تتيح إقامة طويلة الأمد دون الحاجة إلى كفيل [citation:5].</p>
                 </div>
                 <div class="visa-type">
-                    <h4>تأشيرة رجال الأعمال</h4>
-                    <p>للأنشطة التجارية قصيرة الأجل (اجتماعات، مفاوضات). صالحة لمدة شهر مع إمكانية التمديد [citation:10].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>تأشيرة الانضمام للعائلة (التابعة)</h4>
-                    <p>تسمح للوافدين بإحضار أسرهم (الزوجة والأبناء). يحتاج أفراد الأسرة إلى تأشيرة عمل منفصلة للعمل [citation:10].</p>
+                    <h4>تأشيرة لم الشمل (التابعة)</h4>
+                    <p>تسمح للوافدين العاملين بشكل قانوني بإحضار أسرهم (الزوجة والأبناء) للعيش معهم في عمان، بشرط استيفاء متطلبات الدخل والسكن [citation:5].</p>
                 </div>
                 <div class="visa-type">
                     <h4>تأشيرة العمل المؤقتة</h4>
-                    <p>للعمل قصير الأجل أو مشاريع محددة، صالحة لبضعة أشهر [citation:10].</p>
+                    <p>للعقود قصيرة الأجل أو العمل ضمن مشروع محدد، عادة صالحة لبضعة أشهر [citation:5].</p>
                 </div>
             </div>
 
-            <h4 style="margin: 20px 0 10px;">متطلبات الحصول على تأشيرة العمل [citation:3][citation:10]</h4>
+            <h4 style="margin: 15px 0 10px;">إجراءات الحصول على تأشيرة العمل العادية:</h4>
+            <ol style="margin-right: 20px; margin-bottom: 15px;">
+                <li><strong>الحصول على عرض عمل:</strong> يجب أن يكون لديك عقد عمل مع شركة عمانية مسجلة لدى وزارة العمل.</li>
+                <li><strong>موافقة وزارة العمل:</strong> يتقدم صاحب العمل للحصول على موافقة مبدئية (تصريح عمل) من وزارة العمل، تؤكد عدم وجود مرشح محلي مناسب.</li>
+                <li><strong>تقديم طلب التأشيرة:</strong> صاحب العمل يتقدم بطلب تأشيرة العمل عبر موقع شرطة عمان السلطانية الإلكتروني، مع رفع المستندات المطلوبة [citation:2].</li>
+                <li><strong>دفع الرسوم:</strong> يدفع صاحب العمل الرسوم الحكومية إلكترونياً (20 ريالاً للتأشيرة) [citation:2].</li>
+                <li><strong>إصدار التأشيرة:</strong> بعد الموافقة، تصدر تأشيرة إلكترونية يمكن للعامل السفر بها.</li>
+                <li><strong>السفر إلى عمان:</strong> يجب الدخول خلال صلاحية التأشيرة.</li>
+                <li><strong>الإجراءات بعد الوصول:</strong> خلال 30 يوماً، يجب إكمال الفحص الطبي، البصمة البيومترية، واستخراج بطاقة المقيم (الهوية العمانية) [citation:5].</li>
+            </ol>
+
+            <h4 style="margin: 15px 0 10px;">المستندات الأساسية:</h4>
             <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #DA291C;"></i> جواز سفر ساري المفعول لمدة لا تقل عن 6 أشهر [citation:3]</li>
-                <li><i class="fas fa-check-circle" style="color: #DA291C;"></i> عرض عمل أو عقد عمل موثق من صاحب العمل العماني [citation:10]</li>
-                <li><i class="fas fa-check-circle" style="color: #DA291C;"></i> صور شخصية حديثة (4×6 سم) [citation:3]</li>
+                <li><i class="fas fa-check-circle"></i> جواز سفر ساري المفعول (صلاحية لا تقل عن 6 أشهر) [citation:2]</li>
+                <li><i class="fas fa-check-circle"></i> عقد عمل موقع (باللغتين العربية والإنجليزية)</li>
+                <li><i class="fas fa-check-circle"></i> صور شخصية حديثة (4×6 سم) [citation:2]</li>
+                <li><i class="fas fa-check-circle"></i> الشهادات العلمية والخبرة (مصدقة من وزارة الخارجية والسفارة العمانية)</li>
+                <li><i class="fas fa-check-circle"></i> شهادة خلو سوابق (مصدقة ومترجمة)</li>
+                <li><i class="fas fa-check-circle"></i> بطاقة الفحص الطبي للقادمين من بعض الدول (الهند، باكستان، مصر، السودان، وغيرها) [citation:2]</li>
+                <li><i class="fas fa-check-circle"></i> ترخيص العمل الصادر من وزارة العمل [citation:2]</li>
+                <li><i class="fas fa-check-circle"></i> موافقة الجهة المعنية لبعض المهن (تدريس، إعلام، طب) [citation:2]</li>
+            </ul>
+
+            <h4 style="margin: 15px 0 10px;">الرسوم التقريبية:</h4>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> رسوم تأشيرة العمل: 20 ريال عماني [citation:2]</li>
+                <li><i class="fas fa-check-circle"></i> غرامات تأخير التجديد: 50 ريالاً عن كل شهر [citation:2]</li>
+                <li><i class="fas fa-check-circle"></i> إجمالي التكاليف (شاملة الفحوصات): 100 – 300 ريال [citation:5]</li>
+                <li><i class="fas fa-check-circle"></i> مدة المعالجة: 2 – 6 أسابيع [citation:5]</li>
+            </ul>
+        </div>
+
+        <!-- المهارات الأكثر طلباً -->
+        <h2 class="section-title">المهارات الأكثر طلباً في السوق العماني 2026</h2>
+        <div style="margin: 15px 0;">
+            <span class="skill-tag">اللغة الإنجليزية (C1)</span>
+            <span class="skill-tag">اللغة العربية (للتكامل)</span>
+            <span class="skill-tag">هندسة النفط والغاز</span>
+            <span class="skill-tag">Java / Python</span>
+            <span class="skill-tag">الأمن السيبراني</span>
+            <span class="skill-tag">إدارة المشاريع (PMP)</span>
+            <span class="skill-tag">الطاقة المتجددة</span>
+            <span class="skill-tag">المهارات الحرفية (كهرباء، لحام)</span>
+            <span class="skill-tag">اللوجستيات وسلاسل الإمداد</span>
+            <span class="skill-tag">السياحة وإدارة الفنادق</span>
+        </div>
+        <p style="margin-top: 10px;">اللغة الإنجليزية هي لغة العمل الأساسية في معظم الشركات. المهارات التقنية والهندسية هي الأكثر طلباً، خاصة في قطاع النفط والغاز والطاقة المتجددة [citation:4][citation:5].</p>
+
+        <!-- نصائح للباحثين عن عمل -->
+        <div class="requirements-box" style="background: #fff5f5;">
+            <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في عمان</h3>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> <strong>تأكد من ترخيص الشركة:</strong> تعامل فقط مع شركات مسجلة في وزارة العمل العمانية لتجنب الاحتيال.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>لا تدفع مقابل عروض العمل:</strong> صاحب العمل القانوني هو من يتحمل رسوم التأشيرة وتصاريح العمل [citation:5].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استخدم منصات التوظيف الموثوقة:</strong> مثل LinkedIn، بيت.كوم، Naukrigulf، وموقع وزارة العمل العماني.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>صادق على شهاداتك مبكراً:</strong> عملية التصديق قد تستغرق وقتاً، خاصة للمهن الهندسية والطبية [citation:5].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استعد للفحص الطبي:</strong> يشمل فحص الأمراض المعدية (فيروس نقص المناعة البشرية، السل، التهاب الكبد الفيروسي) [citation:2].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>تعرف على سياسة التعمين:</strong> بعض القطاعات تعطي أولوية للعمالة الوطنية، تأكد من أن مهنتك مطلوبة للأجانب [citation:5].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>اختر السكن المناسب:</strong> ابحث عن سكن في مناطق مثل القرم أو الموج لقربها من الخدمات والمطاعم.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>احترم القوانين المحلية:</strong> الالتزام بالقوانين العمانية ضروري لاستمرار الإقامة.</li>
+            </ul>
+        </div>
+
+        <!-- أفضل المدن والمناطق للعمل -->
+        <h2 class="section-title">أفضل المدن للعمل في عمان</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">مسقط</div>
+                <div class="stat-label">العاصمة وأكبر سوق عمل. مركز المال، الأعمال، التكنولوجيا، والمقرات الرئيسية. أعلى الرواسب وأعلى إيجارات (القرم، الموج، المعبيلة).</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">صلالة</div>
+                <div class="stat-label">العاصمة السياحية في الجنوب، تشهد نمواً في قطاع السياحة والعقارات. تكاليف معيشة أقل.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">صحار</div>
+                <div class="stat-label">مدينة صناعية كبرى، ميناء صحار، منطقة حرة، فرص كبيرة في قطاع الصناعة واللوجستيات.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">نزوى</div>
+                <div class="stat-label">مركز سياحي وتجاري في الداخل، فرص في قطاع التعليم والسياحة.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">البريمي</div>
+                <div class="stat-label">منطقة حدودية، فرص في قطاع التجارة والخدمات اللوجستية.</div>
+            </div>
+        </div>
+
+        <!-- مزايا وتحديات العمل في عمان -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 25px 0;">
+            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
+                <h3 style="color: var(--oman-green); margin-bottom: 10px;">✅ المزايا</h3>
+                <ul class="requirements-list">
+                    <li><i class="fas fa-check-circle" style="color: var(--oman-green);"></i> <strong>رواتب معفاة من الضرائب:</strong> الدخل بالكامل لك [citation:5].</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--oman-green);"></i> <strong>تكاليف معيشة منخفضة:</strong> أقل من معظم دول الخليج [citation:5].</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--oman-green);"></i> <strong>مزايا إضافية:</strong> سكن، نقل، تذاكر سفر سنوية، تأمين صحي (يوفرها صاحب العمل غالباً) [citation:5].</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--oman-green);"></i> <strong>استقرار اقتصادي وأمني:</strong> من أكثر دول المنطقة أماناً واستقراراً.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--oman-green);"></i> <strong>مجتمع متنوع:</strong> جالية عربية كبيرة، سهولة التكيف.</li>
+                </ul>
+            </div>
+            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
+                <h3 style="color: #e67e22; margin-bottom: 10px;">⚠️ التحديات</h3>
+                <ul class="requirements-list">
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>نظام الكفالة:</strong> العمل مرتبط بصاحب العمل، وتغيير العمل يتطلب موافقته.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>سياسة التعمين:</strong> بعض القطاعات تعطي أولوية للعمالة الوطنية [citation:5].</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>الرواتب أقل من بعض دول الخليج:</strong> مقارنة بالإمارات أو قطر.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>الطقس الحار:</strong> صيف طويل وحار جداً.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>البيروقراطية:</strong> بعض الإجراءات الحكومية قد تكون بطيئة.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- إحصائيات سريعة -->
+        <h2 class="section-title">إحصائيات سريعة 2026</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">4.5M</div>
+                <div class="stat-label">عدد السكان [citation:5]</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">40%</div>
+                <div class="stat-label">وافدون [citation:5]</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">غير محدد</div>
+                <div class="stat-label">حد أدنى وطني</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2-6 أسابيع</div>
+                <div class="stat-label">مدة التأشيرة [citation:5]</div>
+            </div>
+        </div>
+
+        <!-- مواقع التوظيف الرئيسية (محدث 2026) -->
+        <h2 class="section-title">أهم مواقع التوظيف في عمان (محدث 2026)</h2>
+        <div class="jobs-grid">
+            <a href="https://www.linkedin.com" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <span class="job-site-name">LinkedIn</span>
+                </div>
+                <div class="job-site-desc">المنصة المهنية الأولى، تواصل مباشر مع مسؤولي التوظيف والشركات الكبرى.</div>
+                <div class="job-site-link">linkedin.com <i class="fas fa-external-link-alt"></i></div>
+            </a>
+            <a href="https://www.bayt.com" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <span class="job-site-name">بيت.كوم (Bayt)</span>
+                </div>
+                <div class="job-site-desc">أكبر منصة توظيف عربية، آلاف الوظائف في عمان بمختلف القطاعات.</div>
+                <div class="job-site-link">bayt.com <i class="fas fa-external-link-alt"></i></div>
+            </a>
+            <a href="https://www.naukrigulf.com" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="job-site-name">Naukri Gulf</span>
+                </div>
+                <div class="job-site-desc">منصة خليجية رائدة، تغطي جميع القطاعات في عمان.</div>
+                <div class="job-site-link">naukrigulf.com <i class="fas fa-external-link-alt"></i></div>
+            </a>
+            <a href="https://www.indeed.om" target="_blank" class="job-site-card">
+                <div class="job-site-header">
+                    <div class="job-site-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <span class="job-site-name">Indeed Oman</span>
+                </div>
+                <div class="job-site-desc">محرك بحث عالمي للوظائف، يضم آلاف الإعلانات من مصادر متعددة.</div>
+                <div class="job-site-link">indeed.om <i class="fas fa-external-link-alt"></i></div>
+            </a>
+        </div>
+
+        <!-- خدماتنا -->
+        <div class="services-section">
+            <h3 style="font-size: 1.3rem; margin-bottom: 15px;">🚀 خدماتنا الاحترافية</h3>
+            <p style="margin-bottom: 20px;">نساعدك في تحسين فرصك للحصول على وظيفة في عمان واجتياز إجراءات التأشيرة</p>
+            <div class="services-buttons">
+                <a href="services.html" class="service-btn"><i class="fas fa-file-alt"></i> سيرة ذاتية ($9)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-envelope"></i> خطاب تقديم ($7)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-user-plus"></i> تسجيل بالمنصات ($10)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-gavel"></i> استشارة تأشيرات ($15)</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>وظائف حول العالم</h4>
+                    <p>منصتك الموثوقة للبحث عن فرص عمل في 49 دولة حول العالم.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="#">الدول</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>سياسة الموقع</h4>
+                    <ul>
+                        <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">اتفاقية الاستخدام</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تابعنا</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook"></i> فيسبوك</a>
+                        <a href="https://wa.me/212669411021" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة | آخر تحديث: مارس 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- كود الإعلان Social Bar - قبل إغلاق body -->
+    <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
+</body>
+</html>
