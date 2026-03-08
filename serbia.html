@@ -2,10 +2,10 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فرص عمل في صربيا 2026 | المهن الأكثر طلباً والتأشيرات والرواتب</title>
-    <meta name="description" content="دليلك الشامل للعمل في صربيا 2026: معدل بطالة تاريخي 8.2%، متوسط الراتب 1,057 يورو، نظام التصريح الموحد (Single Permit)، المهن الأكثر طلباً (تكنولوجيا معلومات، مبيعات، لوجستيات)، وإجراءات التأشيرة (D visa) خطوة بخطوة.">
-    <meta name="keywords" content="فرص عمل في صربيا, وظائف صربيا 2026, تأشيرة عمل صربيا, تصريح عمل صربيا, المهن المطلوبة في صربيا, العمل في بلغراد, رواتب تكنولوجيا المعلومات في صربيا, الحد الأدنى للأجور صربيا, الهجرة إلى صربيا">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>فرص عمل في صربيا 2026 | المهن المطلوبة والتأشيرات والرواتب في بلغراد</title>
+    <meta name="description" content="صربيا 2026 تفتح أبوابها للعمالة الأجنبية: دليلك الشامل للعمل في صربيا. المهن الأكثر طلباً (IT، بناء، صناعة)، رواتب محدثة، إجراءات تصاريح العمل والإقامة الموحدة، ونصائح للباحثين عن عمل.">
+    <meta name="keywords" content="فرص عمل في صربيا, وظائف صربيا 2026, تصريح عمل صربيا, تأشيرة عمل صربيا, العمل في بلغراد, المهن المطلوبة في صربيا, رواتب المهندسين في صربيا, الهجرة إلى صربيا, عمالة أجنبية صربيا">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,59 +19,90 @@
     <link rel="stylesheet" href="style.css">
     
     <style>
-        /* تنسيقات خاصة بصفحة صربيا */
+        /* تنسيقات خاصة بصفحة صربيا - مستوحاة من ألوان العلم 🇷🇸 */
+        :root {
+            --serbia-red: #C6363C;
+            --serbia-blue: #0B4071;
+            --serbia-white: #FFFFFF;
+            --serbia-gold: #EDB92E;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        
         .country-header {
-            background: linear-gradient(135deg, #C6363C, #0C4076, #FFFFFF);
+            background: linear-gradient(135deg, var(--serbia-red), var(--serbia-blue));
             color: white;
-            padding: 60px 0;
+            padding: clamp(20px, 5vw, 35px) 15px;
             text-align: center;
             position: relative;
             overflow: hidden;
         }
         
         .country-header h1 {
-            font-size: 2.5rem;
+            font-size: clamp(1.6rem, 5vw, 2rem);
             margin-bottom: 10px;
             position: relative;
-            color: #1e293b;
-            background: rgba(255,255,255,0.9);
+            color: white;
+            background: rgba(0,0,0,0.2);
             display: inline-block;
-            padding: 10px 30px;
+            padding: 8px 20px;
             border-radius: 50px;
+            font-weight: 700;
+            word-break: break-word;
+            max-width: 95%;
         }
         
         .country-header p {
-            font-size: 1.1rem;
+            font-size: clamp(0.85rem, 3vw, 1rem);
             opacity: 0.95;
             position: relative;
-            color: #1e293b;
-            background: rgba(255,255,255,0.8);
+            color: white;
+            background: rgba(0,0,0,0.2);
             display: inline-block;
-            padding: 5px 20px;
+            padding: 5px 15px;
             border-radius: 30px;
+            max-width: 90%;
+            margin: 10px auto;
         }
         
         .country-info {
             display: flex;
             justify-content: center;
-            gap: 30px;
-            margin: 30px 0;
+            gap: clamp(10px, 2vw, 15px);
+            margin: 20px 5px;
             flex-wrap: wrap;
         }
         
         .info-badge {
             background: white;
-            color: #C6363C;
-            padding: 10px 25px;
+            color: var(--serbia-blue);
+            padding: 8px 18px;
             border-radius: 50px;
             font-weight: 600;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            font-size: clamp(0.75rem, 2.5vw, 0.9rem);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .info-badge i {
+            font-size: 1rem;
         }
         
         .section-title {
-            font-size: 1.8rem;
+            font-size: clamp(1.3rem, 4vw, 1.5rem);
             color: #1e293b;
-            margin: 40px 0 20px;
+            margin: 25px 0 15px;
             position: relative;
             padding-right: 15px;
         }
@@ -83,21 +114,131 @@
             top: 0;
             bottom: 0;
             width: 5px;
-            background: #C6363C;
+            background: var(--serbia-red);
             border-radius: 5px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        
+        /* تحسينات الجوال - دقيقة جداً */
+        @media (max-width: 768px) {
+            .country-header h1 {
+                font-size: 1.6rem;
+                padding: 8px 12px;
+            }
+            
+            .country-header p {
+                font-size: 0.9rem;
+                padding: 5px 10px;
+            }
+            
+            .section-title {
+                font-size: 1.3rem;
+            }
+            
+            .info-badge {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+            
+            .jobs-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .visa-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+            
+            .jobs-table {
+                font-size: 0.85rem;
+            }
+            
+            .jobs-table th, .jobs-table td {
+                padding: 8px 5px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .country-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .info-badge {
+                width: fit-content;
+            }
+            
+            .country-header {
+                padding: 20px 10px;
+            }
+            
+            .back-link {
+                margin: 10px 0;
+                padding: 5px 10px;
+            }
+            
+            .visa-box, .requirements-box {
+                padding: 15px 10px;
+            }
+            
+            .jobs-table th, .jobs-table td {
+                padding: 6px 3px;
+                font-size: 0.75rem;
+            }
+            
+            .skill-tag {
+                padding: 3px 8px;
+                font-size: 0.7rem;
+                margin: 2px;
+            }
+            
+            .service-btn {
+                padding: 8px 15px;
+                font-size: 0.85rem;
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .stat-number {
+                font-size: 1.1rem;
+            }
+            
+            .stat-label {
+                font-size: 0.7rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
         }
         
         .jobs-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
         }
         
         .job-site-card {
             background: white;
             border-radius: 12px;
-            padding: 25px;
+            padding: 18px;
             border: 1px solid #e2e8f0;
             transition: all 0.3s ease;
             text-decoration: none;
@@ -107,125 +248,135 @@
         
         .job-site-card:hover {
             transform: translateY(-5px);
-            border-color: #C6363C;
+            border-color: var(--serbia-red);
             box-shadow: 0 10px 25px rgba(198,54,60,0.1);
         }
         
         .job-site-header {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
+            gap: 12px;
+            margin-bottom: 10px;
         }
         
         .job-site-icon {
-            width: 50px;
-            height: 50px;
-            background: #fee6e6;
+            width: 40px;
+            height: 40px;
+            background: #ffe0e0;
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-shrink: 0;
         }
         
         .job-site-icon i {
-            font-size: 1.8rem;
-            color: #C6363C;
+            font-size: 1.5rem;
+            color: var(--serbia-red);
         }
         
         .job-site-name {
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 600;
             color: #1e293b;
+            word-break: break-word;
         }
         
         .job-site-desc {
             color: #64748b;
-            font-size: 0.95rem;
-            margin-bottom: 15px;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            line-height: 1.5;
         }
         
         .job-site-link {
             display: inline-flex;
             align-items: center;
             gap: 5px;
-            color: #C6363C;
-            font-size: 0.95rem;
+            color: var(--serbia-red);
+            font-size: 0.85rem;
+            word-break: break-word;
         }
         
         .visa-box {
             background: #f8fafc;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 30px 0;
-            border: 2px dashed #C6363C;
+            border-radius: 16px;
+            padding: 20px 15px;
+            margin: 20px 0;
+            border: 2px dashed var(--serbia-gold);
         }
         
         .visa-box h3 {
             color: #1e293b;
-            font-size: 1.3rem;
+            font-size: clamp(1.1rem, 3vw, 1.2rem);
             margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
         
         .visa-box i {
-            color: #C6363C;
+            color: var(--serbia-red);
             font-size: 1.2rem;
+            flex-shrink: 0;
         }
         
         .visa-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
         }
         
         .visa-type {
             background: white;
-            padding: 20px;
-            border-radius: 8px;
+            padding: 15px;
+            border-radius: 12px;
             border: 1px solid #e2e8f0;
         }
         
         .visa-type h4 {
-            color: #C6363C;
-            margin-bottom: 5px;
+            color: var(--serbia-red);
+            margin-bottom: 8px;
+            font-size: 1rem;
         }
         
-        .visa-type .price {
-            font-weight: 600;
-            color: #0C4076;
-            margin-top: 10px;
-        }
-        
-        .visa-type .fee {
+        .visa-type p {
             font-size: 0.9rem;
-            color: #64748b;
-            margin-top: 5px;
+            color: #334155;
+            line-height: 1.5;
         }
         
         .table-container {
             overflow-x: auto;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            -webkit-overflow-scrolling: touch;
         }
         
         .jobs-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
             background: white;
-            border-radius: 8px;
+            border-radius: 12px;
             overflow: hidden;
+            min-width: 550px;
         }
         
         .jobs-table th {
-            background: #0C4076;
+            background: var(--serbia-blue);
             color: white;
-            padding: 12px;
+            padding: 10px 8px;
             text-align: right;
+            font-weight: 600;
+            font-size: clamp(0.8rem, 2.5vw, 0.9rem);
         }
         
         .jobs-table td {
-            padding: 12px;
+            padding: 8px;
             border-bottom: 1px solid #e2e8f0;
+            font-size: clamp(0.75rem, 2.5vw, 0.85rem);
         }
         
         .jobs-table tr:last-child td {
@@ -233,132 +384,265 @@
         }
         
         .jobs-table tr:hover {
-            background: #f0f5ff;
+            background: #ffe0e0;
         }
         
         .requirements-box {
-            background: #f0f5ff;
-            border-right: 4px solid #0C4076;
-            padding: 30px;
-            border-radius: 12px;
-            margin: 30px 0;
+            background: #ffe0e0;
+            border-right: 4px solid var(--serbia-blue);
+            padding: 20px 15px;
+            border-radius: 16px;
+            margin: 25px 0;
         }
         
         .requirements-box h3 {
             color: #1e293b;
             margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: clamp(1.1rem, 3vw, 1.2rem);
         }
         
         .requirements-list {
             list-style: none;
+            padding: 0;
+            margin: 0;
         }
         
         .requirements-list li {
             margin-bottom: 10px;
             display: flex;
-            align-items: center;
-            gap: 10px;
+            align-items: flex-start;
+            gap: 8px;
+            line-height: 1.5;
+            font-size: clamp(0.8rem, 2.5vw, 0.9rem);
         }
         
         .requirements-list i {
-            color: #0C4076;
+            color: var(--serbia-blue);
+            margin-top: 3px;
+            min-width: 16px;
         }
         
         .back-link {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            color: #C6363C;
+            color: var(--serbia-red);
             text-decoration: none;
-            margin: 20px 0;
+            margin: 15px 0;
             font-weight: 500;
+            padding: 6px 12px;
+            background: #ffe0e0;
+            border-radius: 30px;
+            font-size: 0.9rem;
         }
         
         .back-link:hover {
-            color: #0C4076;
+            background: #ffc0c0;
         }
         
         .flag-icon {
-            font-size: 3rem;
-            color: #C6363C;
-            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 10px;
             filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
         }
         
         .skill-tag {
             display: inline-block;
             background: white;
-            color: #0C4076;
-            padding: 5px 12px;
-            border-radius: 20px;
+            color: var(--serbia-red);
+            padding: 4px 10px;
+            border-radius: 30px;
             margin: 3px;
-            font-size: 0.85rem;
-            border: 1px solid #0C4076;
+            font-size: clamp(0.7rem, 2vw, 0.8rem);
+            border: 1px solid var(--serbia-red);
+            transition: all 0.2s;
+        }
+        
+        .skill-tag:hover {
+            background: var(--serbia-red);
+            color: white;
         }
         
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin: 15px 0;
         }
         
         .stat-card {
             background: white;
-            padding: 20px;
-            border-radius: 12px;
+            padding: 15px 8px;
+            border-radius: 16px;
             text-align: center;
             border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 8px rgba(198,54,60,0.05);
         }
         
         .stat-number {
-            font-size: 1.8rem;
+            font-size: clamp(1.2rem, 3vw, 1.3rem);
             font-weight: 700;
-            color: #0C4076;
+            color: var(--serbia-red);
+            line-height: 1.2;
         }
         
         .stat-label {
             color: #64748b;
-            font-size: 0.9rem;
+            font-size: clamp(0.7rem, 2vw, 0.8rem);
+            margin-top: 5px;
         }
         
         .services-section {
-            background: #f8fafc;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 40px 0;
+            background: #ffe0e0;
+            border-radius: 24px;
+            padding: 25px 15px;
+            margin: 30px 0;
             text-align: center;
         }
         
         .services-buttons {
             display: flex;
-            gap: 20px;
+            gap: 10px;
             justify-content: center;
             flex-wrap: wrap;
             margin-top: 20px;
         }
         
         .service-btn {
-            background: #0C4076;
+            background: var(--serbia-blue);
             color: white;
-            padding: 12px 30px;
-            border-radius: 8px;
+            padding: 10px 20px;
+            border-radius: 50px;
             text-decoration: none;
             transition: background 0.3s;
+            font-weight: 500;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
         }
         
         .service-btn:hover {
-            background: #C6363C;
+            background: #082c4a;
         }
         
         @media (max-width: 768px) {
-            .country-header h1 {
-                font-size: 2rem;
-            }
-            
             .services-buttons {
                 flex-direction: column;
             }
+        }
+        
+        ul, ol {
+            padding-right: 20px;
+        }
+        
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 10px 0;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--serbia-red);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 500;
+            padding: 5px 0;
+        }
+        
+        .nav-links a.active {
+            color: var(--serbia-red);
+            border-bottom: 2px solid var(--serbia-red);
+        }
+        
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+            }
+            
+            .nav-links {
+                justify-content: center;
+            }
+        }
+        
+        footer {
+            background: #1e293b;
+            color: white;
+            padding: 30px 0 15px;
+            margin-top: 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section li {
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+        
+        .footer-section a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin-left: 8px;
+            color: white;
+            font-size: 1rem;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 15px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.8rem;
         }
     </style>
 </head>
@@ -387,13 +671,13 @@
     <section class="country-header">
         <div class="container">
             <i class="fas fa-flag flag-icon"></i>
-            <h1>فرص عمل في صربيا 2026</h1>
-            <p>الدليل الكامل للعمل في بلغراد، نوفي ساد، نيش وجميع المدن الصربية</p>
+            <h1>🇷🇸 فرص عمل في صربيا 2026 🇷🇸</h1>
+            <p>الدليل الكامل للعمل في بلغراد، نوفي ساد، نيش، كراغوييفاتس وجميع المدن الصربية</p>
             
             <div class="country-info">
-                <span class="info-badge"><i class="fas fa-briefcase"></i> 8.2% بطالة (أدنى مستوى)</span>
-                <span class="info-badge"><i class="fas fa-language"></i> صربي / إنجليزي</span>
-                <span class="info-badge"><i class="fas fa-money-bill-wave"></i> دينار صربي (RSD) / يورو</span>
+                <span class="info-badge"><i class="fas fa-microchip"></i> تكنولوجيا المعلومات</span>
+                <span class="info-badge"><i class="fas fa-language"></i> الصربية / الإنجليزية</span>
+                <span class="info-badge"><i class="fas fa-money-bill-wave"></i> دينار صربي (RSD)</span>
             </div>
         </div>
     </section>
@@ -403,409 +687,351 @@
             <i class="fas fa-arrow-right"></i> العودة للصفحة الرئيسية
         </a>
 
-        <!-- لمحة عامة عن سوق العمل الصربي 2026 (مصادر حكومية) -->
-        <div class="requirements-box">
-            <h3><i class="fas fa-chart-line"></i> نظرة على سوق العمل الصربي في 2026</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
-                <div><strong>معدل البطالة:</strong> 8.2% (الربع الثالث 2025 – أدنى مستوى في عقدين) </div>
-                <div><strong>متوسط الراتب (ديسمبر 2025):</strong> 1,057 يورو (أول مرة يتجاوز 1,000 يورو) </div>
-                <div><strong>الحد الأدنى للأجور 2026:</strong> 64,554 دينار (~551 يورو) – زيادة 10.1% عن 2025 </div>
-                <div><strong>نمو الناتج المحلي:</strong> المرتبة الرابعة في أوروبا </div>
-                <div><strong>انخفاض البطالة:</strong> 53% انخفاض منذ 2015 </div>
-            </div>
-            <p style="margin-top: 15px;">تشهد صربيا تحولاً اقتصادياً غير مسبوق، حيث أصبحت نموذجاً للإصلاحات الهيكلية في أوروبا. في يناير 2026، أعلنت وزيرة العمل ميلكا جورجيفيتش ستامينكوفسكي في المؤتمر العالمي لسوق العمل بالرياض أن صربيا لم تعد تنتظر التغيير، بل تصنعه من خلال التكيف والإصلاحات والمشاركة الفاعلة في تطوير حلول جديدة . نتائج هذه الإصلاحات واضحة: أدنى معدل بطالة في عقدين، ارتفاع متوسط الراتب لأول مرة فوق 1,000 يورو، وتصنيف ائتماني استثماري لأول مرة في تاريخ البلاد . مع هذه المؤشرات الإيجابية، تستمر صربيا في جذب الاستثمارات الأجنبية وتطوير قطاعات التكنولوجيا والابتكار .</p>
-        </div>
-
-        <!-- تحديثات الرواتب 2026 (مصادر حكومية) -->
+        <!-- لمحة عامة عن سوق العمل الصربي -->
         <div class="visa-box">
-            <h3><i class="fas fa-euro-sign"></i> تحديثات الرواتب في صربيا 2026</h3>
-            
-            <div class="visa-grid" style="margin-top: 15px;">
-                <div class="visa-type">
-                    <h4>الحد الأدنى للأجور 2026</h4>
-                    <p>زيادة منتظمة بنسبة 10.1% اعتباراً من 1 يناير 2026، بعد زيادة استثنائية في أكتوبر 2025 إلى 500 يورو .</p>
-                    <div class="price">64,554 دينار (551 يورو) شهرياً</div>
-                </div>
-                <div class="visa-type">
-                    <h4>متوسط الراتب (ديسمبر 2025)</h4>
-                    <p>لأول مرة في التاريخ، يتجاوز متوسط الراتب حاجز 1,000 يورو .</p>
-                    <div class="price">1,057 يورو</div>
-                </div>
-                <div class="visa-type">
-                    <h4>مستهدف 2027</h4>
-                    <p>بحلول نهاية 2027، من المتوقع أن يصل متوسط الراتب إلى 1,400 يورو .</p>
-                </div>
-            </div>
-            <p style="margin-top: 15px;">تؤكد وزيرة العمل أن زيادة الحد الأدنى للأجور بنسبة 38% خلال العام الماضي تعكس التزام الدولة بأن النمو الاقتصادي يجب أن يرافقه تحسن في مستوى المعيشة وظروف العمل اللائقة .</p>
+            <h3><i class="fas fa-chart-line"></i> نظرة على سوق العمل في صربيا 2026</h3>
+            <p>صربيا هي قلب البلقان النابض ومركزها الاقتصادي، وتشهد نمواً ملحوظاً بفضل الاستثمارات الأجنبية الضخمة، خاصة من الشركات الصينية والأوروبية التي تؤسس مصانعها ومراكزها التشغيلية هنا [citation:1]. مع مبادرة "البلقان المفتوح" التي تعزز التكامل الإقليمي، أصبحت البلاد وجهة مفضلة للباحثين عن عمل من جميع أنحاء العالم. مدن مثل بلغراد ونوفي ساد تتطور بوتيرة سريعة، مع قطاعات البناء والتكنولوجيا المزدهرة التي توفر فرصًا واسعة [citation:1].</p>
+            <p>سنوياً، تسمح صربيا بدخول آلاف العمال المهاجرين، وتتركز فرص العمل في قطاع الخدمات الذي يمثل المصدر الرئيسي للدخل، إلى جانب الصناعة والزراعة والسياحة [citation:6]. على الرغم من أن العملة المحلية هي الدينار الصربي (RSD)، فإن سهولة الإجراءات النسبية للحصول على عقد عمل مقارنة بدول الاتحاد الأوروبي، بالإضافة إلى التكاليف المعيشية المعقولة، تجعل صربيا خيارًا جذابًا [citation:1].</p>
         </div>
 
-        <!-- الرواتب حسب القطاع 2026 (تقرير Knit People) -->
-        <h2 class="section-title">الرواتب حسب القطاع 2026 (دولار أمريكي سنوياً) </h2>
-        
-        <div class="table-container">
-            <table class="jobs-table">
-                <tr>
-                    <th>القطاع / المسمى الوظيفي</th>
-                    <th>الراتب التقديري (دولار/سنة)</th>
-                </tr>
-                <tr>
-                    <td>مدير مبيعات / مدير حسابات رئيسي</td>
-                    <td>$25,061</td>
-                </tr>
-                <tr>
-                    <td>مدير مبيعات / مدير وطني</td>
-                    <td>$24,192</td>
-                </tr>
-                <tr>
-                    <td>مدير عمليات / مدير تشغيلي</td>
-                    <td>$24,609</td>
-                </tr>
-                <tr>
-                    <td>مدير إنتاج / مدير مصنع</td>
-                    <td>$22,393</td>
-                </tr>
-                <tr>
-                    <td>مهندس برمجيات (Software Development Engineer)</td>
-                    <td>$19,415</td>
-                </tr>
-                <tr>
-                    <td>مدير جودة</td>
-                    <td>$17,173</td>
-                </tr>
-                <tr>
-                    <td>مدير لوجستيات</td>
-                    <td>$16,636</td>
-                </tr>
-                <tr>
-                    <td>مهندس عمليات (Operations Engineer)</td>
-                    <td>$12,548</td>
-                </tr>
-                <tr>
-                    <td>مهندس ما قبل البيع (Pre-sales Engineer)</td>
-                    <td>$10,728</td>
-                </tr>
-                <tr>
-                    <td>خدمة عملاء (Customer Service)</td>
-                    <td>$5,414</td>
-                </tr>
-            </table>
-            <p style="margin-top: 5px;">المصدر: </p>
-        </div>
-
-        <!-- المهارات الأكثر طلباً -->
-        <h2 class="section-title">المهارات الأكثر طلباً في السوق الصربي</h2>
-        <div style="margin: 20px 0;">
-            <span class="skill-tag">تطوير البرمجيات (Software Development)</span>
-            <span class="skill-tag">المبيعات وإدارة الحسابات</span>
-            <span class="skill-tag">إدارة العمليات والإنتاج</span>
-            <span class="skill-tag">الهندسة والتصنيع</span>
-            <span class="skill-tag">اللغة الإنجليزية (طلاقة)</span>
-            <span class="skill-tag">إدارة الجودة</span>
-            <span class="skill-tag">الخدمات اللوجستية</span>
-            <span class="skill-tag">القيادة وإدارة الفرق</span>
-            <span class="skill-tag">حل المشكلات</span>
-            <span class="skill-tag">خدمة العملاء</span>
-        </div>
-
-        <!-- قطاع التكنولوجيا والابتكار -->
-        <div class="requirements-box">
-            <h3><i class="fas fa-microchip"></i> قطاع التكنولوجيا والابتكار – ريادة إقليمية</h3>
-            <p>تضع صربيا نفسها في طليعة الدول الرائدة في مجال التحول الرقمي والابتكار في جنوب شرق أوروبا. صربيا هي أول دولة في جنوب شرق أوروبا تعتمد استراتيجية تطوير الذكاء الاصطناعي وتؤسس معهداً للذكاء الاصطناعي، وهي عضو في الشراكة العالمية للذكاء الاصطناعي . هذا التوجه الاستراتيجي يخلق فرصاً متزايدة للمتخصصين في مجالات الذكاء الاصطناعي وتحليل البيانات وتطوير البرمجيات.</p>
-        </div>
-
-        <!-- نظام التأشيرات الجديد – التصريح الموحد (Single Permit) -->
-        <div class="visa-box">
-            <h3><i class="fas fa-passport"></i> نظام التصريح الموحد (Single Permit) – أحدث الإصلاحات</h3>
-            <p>أدخلت صربيا نظام التصريح الموحد (Single Permit) الذي يبسط إجراءات الإقامة والعمل للأجانب من خلال دمج تصريح العمل والإقامة في وثيقة واحدة. يعتبر هذا النظام من أهم الإصلاحات لتسهيل توظيف العمالة الأجنبية .</p>
-            
-            <h4 style="margin: 20px 0 10px;">أنواع تأشيرات العمل (D visa) حسب الغرض من الإقامة :</h4>
-            <div class="visa-grid" style="margin-top: 15px;">
-                <div class="visa-type">
-                    <h4>1. توظيف بعقد عمل</h4>
-                    <p>الأكثر شيوعاً. يعتمد على عقد عمل أو عقد مؤقت وفقاً لقانون العمل.</p>
-                    <div class="fee">المستندات: عقد عمل مقترح، شهادة تسجيل الشركة، مقتطف من لائحة التنظيم، شهادة مؤهل، موافقة المالك على التسجيل السكني</div>
-                </div>
-                <div class="visa-type">
-                    <h4>2. العمل الحر (Self-employment)</h4>
-                    <p>للمسجلين كأصحاب أعمال فرديين أو مساهمين في شركات.</p>
-                </div>
-                <div class="visa-type">
-                    <h4>3. التعاون التقني والتجاري (Referred persons)</h4>
-                    <p>لموظفي شركات أجنبية يتم إرسالهم للعمل في صربيا بموجب عقود تعاون.</p>
-                </div>
-                <div class="visa-type">
-                    <h4>4. النقل داخل الشركة (Intra-corporate transfer)</h4>
-                    <p>للمديرين والمتخصصين العاملين لدى شركة أجنبية لمدة سنة على الأقل ويتم نقلهم مؤقتاً إلى فرع أو شركة تابعة في صربيا .</p>
-                </div>
-                <div class="visa-type">
-                    <h4>5. مهني مستقل (Independent professional)</h4>
-                    <p>للعاملين لحسابهم الخاص المسجلين في الخارج والذين يعملون في صربيا بموجب عقود مع أصحاب عمل محليين.</p>
-                </div>
-                <div class="visa-type">
-                    <h4>6. تدريب وتطوير (Training and development)</h4>
-                    <p>للتخصص والتدريب المهني والتدريب الداخلي مدفوع الأجر.</p>
-                </div>
-                <div class="visa-type">
-                    <h4>7. تطوع</h4>
-                    <p>للمسجلين كمتطوعين في منظمات مرخصة لدى سجل المتطوعين.</p>
-                </div>
-                <div class="visa-type">
-                    <h4>8. صحفي أجنبي معتمد</h4>
-                    <p>للمسجلين لدى وزارة الإعلام الصربية.</p>
-                </div>
-                <div class="visa-type">
-                    <h4>9. تنفيذ مشاريع مع الحكومة</h4>
-                    <p>للخبراء المشاركين في تنفيذ مشاريع بالتعاون مع السلطات العامة.</p>
-                </div>
-                <div class="visa-type">
-                    <h4>10. إنتاج أعمال سمعية بصرية</h4>
-                    <p>لأعضاء طواقم الإنتاج الفني في صربيا.</p>
-                </div>
-            </div>
-
-            <h4 style="margin: 20px 0 10px;">المستندات المطلوبة الأساسية لجميع أنواع تأشيرات العمل (D visa) :</h4>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #C6363C;"></i> نموذج طلب التأشيرة مكتمل</li>
-                <li><i class="fas fa-check-circle" style="color: #C6363C;"></i> جواز سفر ساري المفعول (صلاحية ≥ 90 يوماً بعد تاريخ المغادرة المخطط من صربيا، صفحتان بيضاوان على الأقل، صدر خلال آخر 10 سنوات)</li>
-                <li><i class="fas fa-check-circle" style="color: #C6363C;"></i> صورة شخصية حديثة</li>
-                <li><i class="fas fa-check-circle" style="color: #C6363C;"></i> إثبات دفع رسوم التأشيرة</li>
-                <li><i class="fas fa-check-circle" style="color: #C6363C;"></i> خطاب دعوة (Invitation letter)</li>
-                <li><i class="fas fa-check-circle" style="color: #C6363C;"></i> شهادة تسجيل الكيان القانوني أو صاحب العمل</li>
-                <li><i class="fas fa-check-circle" style="color: #C6363C;"></i> مستندات تثبت الغرض من الإقامة (عقد عمل، عقد تعاون، إلخ)</li>
-                <li><i class="fas fa-check-circle" style="color: #C6363C;"></i> المؤهلات العلمية مع ترجمة معتمدة</li>
-                <li><i class="fas fa-check-circle" style="color: #C6363C;"></i> بيان من المالك بالموافقة على تسجيل العنوان السكني</li>
-            </ul>
-        </div>
-
-        <!-- إجراءات التصريح الموحد -->
-        <div class="requirements-box">
-            <h3><i class="fas fa-file-signature"></i> إجراءات التصريح الموحد (Single Permit) خطوة بخطوة</h3>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 30px 0;">
-                <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
-                    <div style="width: 40px; height: 40px; background: #0C4076; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: 700;">1</div>
-                    <h4>اختيار نوع الإقامة</h4>
-                    <p style="color: #64748b;">تحديد الغرض من الإقامة (توظيف، نقل داخل الشركة، مهني مستقل، إلخ) عبر بوابة Welcome to Serbia الإلكترونية</p>
-                </div>
-                <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
-                    <div style="width: 40px; height: 40px; background: #0C4076; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: 700;">2</div>
-                    <h4>تقديم الطلب إلكترونياً</h4>
-                    <p style="color: #64748b;">يجب تقديم طلب التصريح الموحد عبر البوابة الإلكترونية حصراً (لا يقبل التقديم الشخصي) </p>
-                </div>
-                <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
-                    <div style="width: 40px; height: 40px; background: #0C4076; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: 700;">3</div>
-                    <h4>معالجة الطلب</h4>
-                    <p style="color: #64748b;">مدة المعالجة: 15 يوماً للتصاريح الموحدة (بدلاً من 30 يوماً للتصاريح العادية) </p>
-                </div>
-                <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center;">
-                    <div style="width: 40px; height: 40px; background: #0C4076; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-weight: 700;">4</div>
-                    <h4>الموافقة والاستلام</h4>
-                    <p style="color: #64748b;">بعد الموافقة، يتم إخطار المتقدم عبر البريد الإلكتروني لتحديد موعد للبصمات والاستلام</p>
-                </div>
-            </div>
-
-            <h4 style="margin: 20px 0 10px;">مدة التصريح الموحد:</h4>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #0C4076;"></i> <strong>مدة التصريح:</strong> حتى 3 سنوات (قابلة للتجديد) </li>
-                <li><i class="fas fa-check-circle" style="color: #0C4076;"></i> <strong>الحد الأدنى لتقديم التجديد:</strong> قبل 3 أشهر من انتهاء التصريح الحالي </li>
-            </ul>
-        </div>
-
-        <!-- المهن الأكثر طلباً حسب تقارير Manpower Serbia -->
-        <h2 class="section-title">المهن الأكثر طلباً في صربيا 2026</h2>
+        <!-- المهن الأكثر طلباً والرواتب في صربيا 2026 -->
+        <h2 class="section-title">المهن الأكثر طلباً والرواتب في صربيا 2026</h2>
         
         <div class="table-container">
             <table class="jobs-table">
                 <tr>
                     <th>القطاع</th>
                     <th>المهن المطلوبة</th>
+                    <th>مبتدئ (RSD)</th>
+                    <th>متوسط (RSD)</th>
+                    <th>متقدم (RSD)</th>
                 </tr>
                 <tr>
-                    <td>تكنولوجيا المعلومات والبرمجيات</td>
-                    <td>مطورو برمجيات (Software Engineers)، مهندسو بيانات (Data Engineers)، متخصصو ذكاء اصطناعي، مهندسو أمن سيبراني، مهندسو سحابة (Cloud Architects)</td>
+                    <td>تكنولوجيا المعلومات (Silicon Serbia)</td>
+                    <td>مهندسو برمجيات (Software Engineers)، مطورو واجهات أمامية/خلفية، مطورو ألعاب (Game Development)، محللو بيانات، مختصو أمن معلومات</td>
+                    <td>90,000 – 130,000</td>
+                    <td>140,000 – 200,000</td>
+                    <td>210,000 – 300,000+</td>
                 </tr>
                 <tr>
-                    <td>المبيعات والتسويق</td>
-                    <td>مديرو مبيعات (Sales Managers)، مديرو حسابات رئيسيون (Key Account Managers)، مديرو مبيعات وطنيون (Country Sales Managers)</td>
+                    <td>الصناعة والتصنيع</td>
+                    <td>عمال مصانع (قطع غيار سيارات، كابلات)، فنيو صيانة، مهندسو صناعة، مشغلو آلات </td>
+                    <td>55,000 – 70,000</td>
+                    <td>75,000 – 100,000</td>
+                    <td>110,000 – 150,000</td>
                 </tr>
                 <tr>
-                    <td>الهندسة والتصنيع</td>
-                    <td>مهندسو إنتاج (Production Engineers)، مديرو مصانع (Factory Directors)، مديرو جودة (Quality Managers)، فنيو صيانة</td>
+                    <td>البناء والمقاولات</td>
+                    <td>عمال بناء (مهرة وغير مهرة)، كهربائيون، سباكون، نجارون، حدادون، مهندسو مدني</td>
+                    <td>65,000 – 85,000</td>
+                    <td>90,000 – 120,000</td>
+                    <td>130,000 – 180,000</td>
                 </tr>
                 <tr>
-                    <td>الخدمات اللوجستية</td>
-                    <td>مديرو لوجستيات (Logistics Managers)، منسقو سلاسل إمداد، مشغلو مستودعات</td>
+                    <td>النقل واللوجستيات</td>
+                    <td>سائقو شاحنات (C/E category)، سائقو توصيل، عمال مستودعات، مناولو بضائع</td>
+                    <td>60,000 – 80,000</td>
+                    <td>85,000 – 120,000</td>
+                    <td>130,000 – 180,000</td>
                 </tr>
                 <tr>
-                    <td>خدمة العملاء والدعم</td>
-                    <td>ممثلو خدمة عملاء، دعم فني (Technical Support) بمهارات لغوية متعددة</td>
+                    <td>السياحة والضيافة</td>
+                    <td>طهاة، نادلون، عمال فنادق، مرشدون سياحيون، موظفو استقبال</td>
+                    <td>55,000 – 70,000</td>
+                    <td>75,000 – 100,000</td>
+                    <td>110,000 – 150,000</td>
+                </tr>
+                <tr>
+                    <td>القطاع الصحي</td>
+                    <td>أطباء عامون وأخصائيون، ممرضون، صيادلة</td>
+                    <td>80,000 – 100,000</td>
+                    <td>110,000 – 160,000</td>
+                    <td>170,000 – 250,000</td>
+                </tr>
+                <tr>
+                    <td>الزراعة</td>
+                    <td>عمال موسميون (قطف التوت والفواكه)، عمال مزارع، عمال تعبئة وتغليف</td>
+                    <td>50,000 – 65,000</td>
+                    <td>65,000 – 85,000</td>
+                    <td>90,000 – 120,000</td>
                 </tr>
             </table>
+            <p style="margin-top: 5px;">المصادر: تقارير العمل الصربية، مواقع التوظيف المحلية [citation:1][citation:2].</p>
+        </div>
+
+        <!-- الحد الأدنى للأجور والضرائب -->
+        <div class="visa-box">
+            <h3><i class="fas fa-coins"></i> الحد الأدنى للأجور والضرائب 2026</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">744</div>
+                    <div class="stat-label">الحد الأدنى الشهري (€) </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10%</div>
+                    <div class="stat-label">ضريبة الدخل </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">25-30%</div>
+                    <div class="stat-label">إجمالي الاقتطاعات </div>
+                </div>
+                <div class="stat-number">95,000</div>
+                <div class="stat-label">متوسط الراتب (RSD) </div>
+            </div>
+            <p style="margin-top: 15px;">ارتفع الحد الأدنى للأجور في صربيا إلى 744 يورو شهرياً في الربع الثاني من عام 2026، مقارنة بـ 618 يورو في نهاية 2025 [citation:5]. متوسط الراتب الصافي على المستوى الوطني يبلغ حوالي 95,000 دينار صربي شهريًا (حوالي 800 يورو)، مع تفاوت كبير حسب القطاع والمدينة [citation:2]. تتميز صربيا بنظام ضريبي بسيط نسبيًا: ضريبة الدخل حوالي 10%، تضاف إليها مساهمات الضمان الاجتماعي ليصل إجمالي الاقتطاعات إلى 25-30% من الراتب الإجمالي، وهي أقل مقارنة بدول أوروبا الغربية [citation:2].</p>
+        </div>
+
+        <!-- تكلفة المعيشة -->
+        <div class="requirements-box">
+            <h3><i class="fas fa-home"></i> تكلفة المعيشة في المدن الرئيسية (2026)</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;">
+                <div><strong>بلغراد (العاصمة):</strong> 600 – 900 € شهرياً</div>
+                <div><strong>نوفي ساد:</strong> 500 – 800 €</div>
+                <div><strong>نيش:</strong> 450 – 700 €</div>
+                <div><strong>كراغوييفاتس:</strong> 400 – 650 €</div>
+            </div>
+            <p style="margin-top: 10px;">الإيجار هو أكبر تكلفة: شقة بغرفة نوم واحدة في وسط بلغراد تتراوح بين 400 و 700 يورو شهرياً، بينما تكون أقل في المدن الأخرى [citation:2]. النقل العام رخيص وميسور التكلفة مقارنة بالعديد من العواصم الأوروبية. الموظف متوسط الدخل يمكنه العيش بشكل مريح، تغطية الإيجار والمصاريف، وادخار 10% – 20% من راتبه [citation:2].</p>
+        </div>
+
+        <!-- أنواع التأشيرات وتصاريح العمل -->
+        <h2 class="section-title">تأشيرات وتصاريح العمل في صربيا 2026</h2>
+        <div class="visa-box">
+            <h3><i class="fas fa-passport"></i> نظام تصاريح العمل والإقامة الموحد</h3>
+            
+            <div class="visa-grid">
+                <div class="visa-type">
+                    <h4>تأشيرة العمل (Visa D)</h4>
+                    <p>تأشيرة وطنية للإقامة الطويلة لأغراض التوظيف. تسمح بالبقاء والعمل في صربيا لمدة أقصاها 180 يوماً [citation:3]. يمكن الحصول عليها بناءً على عقد عمل أو العمل الحر أو التدريب المهني.</p>
+                </div>
+                <div class="visa-type">
+                    <h4>تصريح الإقامة والعمل الموحد</h4>
+                    <p>تصريح واحد يجمع بين حق الإقامة والعمل، ويُمنح لمدة تصل إلى 3 سنوات [citation:3]. يشمل أنواع متعددة من التوظيف مثل العمل بعقد عمل، العمل الحر، الانتقال داخل الشركة، والتدريب [citation:3].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>النوع B: تصريح العمل للتوظيف</h4>
+                    <p>التصريح الأكثر شيوعًا للعمالة برعاية صاحب العمل. يتطلب عادةً اختبار سوق العمل (Market Test) عبر خدمة التوظيف الوطنية الصربية (NSZ) لإثبات عدم وجود مرشح محلي مناسب [citation:1][citation:9].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>النوع C: تصريح العمل الحر</h4>
+                    <p>لأصحاب المشاريع والمستقلين الذين يؤسسون أعمالهم الخاصة في صربيا. يشمل الاستشاريين والمستقلين [citation:9].</p>
+                </div>
+            </div>
+
+            <h4 style="margin: 15px 0 10px;">استثناءات تصاريح العمل (حتى 90 يوماً)</h4>
+            <p>يمكن أداء بعض المهام لمدة تصل إلى 90 يوماً دون الحاجة لتصريح عمل، مثل: حضور اجتماعات عمل، المشاركة في مؤتمرات، إقامة معارض، أعمال تركيب وإصلاح المعدات، والمشاركة في مشاريع بحثية [citation:3].</p>
+
+            <h4 style="margin: 15px 0 10px;">خطوات الحصول على تصريح العمل (لغير الأوروبيين):</h4>
+            <ol style="margin-right: 20px; margin-bottom: 15px;">
+                <li><strong>الحصول على عرض عمل</strong> من صاحب عمل صربي مسجل [citation:1].</li>
+                <li><strong>اختبار سوق العمل (Market Test):</strong> يتقدم صاحب العمل إلى خدمة التوظيف الوطنية (NSZ) لإثبات عدم وجود مرشح محلي مناسب (يستغرق حتى شهر) [citation:1][citation:6].</li>
+                <li><strong>تقديم طلب تصريح العمل</strong> إلى المنظمة المحلية المختصة (يستغرق 1-3 أشهر للمعالجة) [citation:9].</li>
+                <li><strong>تقديم طلب تأشيرة D (للإقامة الطويلة)</strong> في سفارة صربيا في بلدك [citation:6].</li>
+                <li><strong>الدخول إلى صربيا</strong> خلال صلاحية التأشيرة.</li>
+                <li><strong>استخراج بطاقة الإقامة المؤقتة</strong> من وزارة الداخلية (تصل إلى 3 سنوات) [citation:3].</li>
+                <li><strong>تسجيل الضمان الاجتماعي</strong> من قبل صاحب العمل [citation:9].</li>
+            </ol>
+
+            <h4 style="margin: 15px 0 10px;">المستندات الأساسية:</h4>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> جواز سفر ساري المفعول (صلاحية لا تقل عن 90 يومًا بعد التأشيرة)</li>
+                <li><i class="fas fa-check-circle"></i> عقد عمل موقع (يحدد الراتب، المهام، المدة)</li>
+                <li><i class="fas fa-check-circle"></i> خطاب دعوة أو عرض عمل من صاحب العمل [citation:6]</li>
+                <li><i class="fas fa-check-circle"></i> الشهادات العلمية والمهنية (مترجمة للصربية ومعتمدة)</li>
+                <li><i class="fas fa-check-circle"></i> شهادة خلو سوابق (مصدقة ومترجمة)</li>
+                <li><i class="fas fa-check-circle"></i> شهادة طبية تثبت اللياقة الصحية</li>
+                <li><i class="fas fa-check-circle"></i> إثبات السكن (عقد إيجار أو سكن من صاحب العمل) [citation:9]</li>
+                <li><i class="fas fa-check-circle"></i> تأمين صحي يغطي فترة الإقامة [citation:6]</li>
+                <li><i class="fas fa-check-circle"></i> صور شخصية</li>
+            </ul>
+            
+            <h4 style="margin: 15px 0 10px;">الرسوم التقريبية:</h4>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> رسوم تصريح العمل: حوالي 10,000 – 12,000 دينار صربي [citation:9]</li>
+                <li><i class="fas fa-check-circle"></i> رسوم التأشيرة: تختلف حسب الجنسية</li>
+                <li><i class="fas fa-check-circle"></i> مدة المعالجة الإجمالية: 1-3 أشهر [citation:9]</li>
+            </ul>
+        </div>
+
+        <!-- المهن الحرفية والمطلوبة بدون شهادة -->
+        <h2 class="section-title">المهن الحرفية والمطلوبة بدون شهادة 2026</h2>
+        <div class="visa-box">
+            <div class="visa-grid">
+                <div class="visa-type">
+                    <h4>عمال البناء</h4>
+                    <p>تشهد صربيا، وخاصة بلغراد، طفرة في قطاع البناء مع مشاريع ضخمة مثل "واجهة بلغراد البحرية" (Belgrade Waterfront). هناك طلب مرتفع على عمال البناء المهرة وغير المهرة [citation:1].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>سائقو الشاحنات</h4>
+                    <p>نقص كبير في سائقي الشاحنات المحترفين، خاصة حاملي رخص القيادة لفئات C و E للنقل المحلي والدولي [citation:1].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>عمال اللحام</h4>
+                    <p>مطلوبون في صناعات البناء، وتصنيع المعادن، وإصلاح السفن، وتتميز صربيا بقطاع صناعي يتطلب هذه المهارة [citation:1].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>عمال المصانع</h4>
+                    <p>الاستثمارات الأجنبية في قطاع التصنيع، خاصة في صناعة قطع غيار السيارات والكابلات، تخلق طلبًا على عمال المصانع [citation:1].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>الطهاة والخبازون</h4>
+                    <p>مع ازدهار قطاع السياحة والمطاعم، يوجد طلب مستمر على الطهاة والخبازين المهرة في الفنادق والمطاعم والمخابز [citation:1].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>الزراعة الموسمية</h4>
+                    <p>صربيا هي واحدة من أكبر مصدري التوت في العالم، وهناك طلب كبير على العمال الموسميين لقطف التوت والفواكه خلال مواسم الحصاد [citation:1].</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- المهارات الأكثر طلباً -->
+        <h2 class="section-title">المهارات الأكثر طلباً في السوق الصربي 2026</h2>
+        <div style="margin: 15px 0;">
+            <span class="skill-tag">اللغة الصربية (للتكامل)</span>
+            <span class="skill-tag">اللغة الإنجليزية (C1)</span>
+            <span class="skill-tag">اللغات الألمانية/الإيطالية (للسياحة)</span>
+            <span class="skill-tag">البرمجة (Java, Python, JavaScript)</span>
+            <span class="skill-tag">تطوير الألعاب</span>
+            <span class="skill-tag">الأمن السيبراني</span>
+            <span class="skill-tag">اللحام والتركيبات</span>
+            <span class="skill-tag">قيادة الشاحنات</span>
+            <span class="skill-tag">مهارات البناء</span>
+            <span class="skill-tag">خدمة العملاء</span>
+        </div>
+        <p style="margin-top: 5px;">اللغة الصربية ليست إلزامية دائمًا للشركات الدولية، لكن تعلمها يزيد فرص العمل ويساعد في الاندماج. في قطاع تكنولوجيا المعلومات، اللغة الإنجليزية كافية تمامًا [citation:2].</p>
+
+        <!-- نصائح للباحثين عن عمل -->
+        <div class="requirements-box" style="background: #ffe0e0;">
+            <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في صربيا</h3>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> <strong>اختر المدينة المناسبة:</strong> بلغراد ونوفي ساد هما مركزا الأعمال والتكنولوجيا، بينما المدن الأخرى أقل تكلفة [citation:2].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استخدم منصات التوظيف الموثوقة:</strong> LinkedIn للمهن المتخصصة [citation:1][citation:4]، وخدمة التوظيف الوطنية (NSZ) للوظائف المحلية [citation:1].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>تعلم أساسيات الصربية:</strong> يساعدك في الحياة اليومية ويزيد فرصك في الوظائف المحلية [citation:2].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>تأكد من استيفاء اختبار سوق العمل:</strong> يجب على صاحب العمل إثبات عدم وجود مرشح محلي مناسب قبل توظيفك [citation:1][citation:6].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>لا تدفع مقابل عروض العمل:</strong> احذر من شركات التوظيف الوهمية. جميع الخدمات الرسمية تتقاضى رسومًا محددة.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>ترجم وصدق مستنداتك:</strong> يجب ترجمة جميع الوثائق الرسمية إلى الصربية وتصديقها [citation:6].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>جهز ميزانية كافية:</strong> يُنصح بتوفير ما لا يقل عن 1000 دولار أمريكي عند القدوم إلى صربيا [citation:6].</li>
+            </ul>
         </div>
 
         <!-- أفضل المدن للعمل -->
         <h2 class="section-title">أفضل المدن للعمل في صربيا</h2>
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-number">بلغراد (Belgrade)</div>
-                <div class="stat-label">العاصمة وأكبر سوق عمل. مركز التكنولوجيا، التمويل، الإدارة، والخدمات. أعلى الرواتب في البلاد .</div>
+                <div class="stat-number">بلغراد</div>
+                <div class="stat-label">العاصمة والمركز الاقتصادي، أكبر وأهم الشركات الصربية والعالمية، مصرف صربيا الوطني، سوق الأوراق المالية. أعلى الرواتب وأعلى إيجارات [citation:6].</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">نوفي ساد (Novi Sad)</div>
-                <div class="stat-label">ثاني أكبر مدينة، مركز تكنولوجي وصناعي مهم. فرص في قطاع البرمجيات والصناعات الإلكترونية.</div>
+                <div class="stat-number">نوفي ساد</div>
+                <div class="stat-label">ثاني أكبر مدينة، مركز تكنولوجيا المعلومات والابتكار، جالية دولية كبيرة، جودة حياة عالية [citation:1][citation:6].</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">نيش (Niš)</div>
-                <div class="stat-label">مدينة صناعية في جنوب صربيا، فرص في قطاع التصنيع والخدمات.</div>
+                <div class="stat-number">نيش</div>
+                <div class="stat-label">ثالث أكبر مدينة، مركز صناعي وتقني، فرص في قطاع الصناعة والخدمات، تكاليف معيشة أقل [citation:2].</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">بور (Bor)</div>
-                <div class="stat-label">منطقة تعدينية مهمة، فرص في قطاع التعدين والصناعات المرتبطة به .</div>
+                <div class="stat-number">كراغوييفاتس</div>
+                <div class="stat-label">مركز صناعة السيارات، استثمارات أجنبية، فرص في قطاع التصنيع والهندسة.</div>
             </div>
         </div>
-        <p style="margin-top: 5px;">تتصدر بلغراد ونوفي ساد وبور قائمة المدن الأعلى أجراً في البلاد .</p>
 
         <!-- مزايا وتحديات العمل في صربيا -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 40px 0;">
-            <div style="background: white; border-radius: 12px; padding: 25px; border: 1px solid #e2e8f0;">
-                <h3 style="color: #0C4076; margin-bottom: 15px;">✅ مزايا العمل في صربيا</h3>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 30px 0;">
+            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
+                <h3 style="color: var(--serbia-red); margin-bottom: 10px;">✅ المزايا</h3>
                 <ul class="requirements-list">
-                    <li><i class="fas fa-check-circle" style="color: #0C4076;"></i> <strong>نمو اقتصادي قوي:</strong> المرتبة الرابعة في أوروبا من حيث نمو الناتج المحلي </li>
-                    <li><i class="fas fa-check-circle" style="color: #0C4076;"></i> <strong>أدنى معدل بطالة في عقدين:</strong> 8.2% (الربع الثالث 2025) </li>
-                    <li><i class="fas fa-check-circle" style="color: #0C4076;"></i> <strong>رواتب متنامية:</strong> متوسط الراتب تجاوز 1,000 يورو لأول مرة </li>
-                    <li><i class="fas fa-check-circle" style="color: #0C4076;"></i> <strong>نظام هجرة مبسط:</strong> التصريح الموحد (Single Permit) يسرع إجراءات العمل والإقامة </li>
-                    <li><i class="fas fa-check-circle" style="color: #0C4076;"></i> <strong>قطاع تكنولوجي واعد:</strong> استراتيجية وطنية للذكاء الاصطناعي ومعهد متخصص </li>
-                    <li><i class="fas fa-check-circle" style="color: #0C4076;"></i> <strong>تكاليف معيشة معقولة:</strong> أقل من دول الاتحاد الأوروبي الغربية</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--serbia-red);"></i> <strong>تكلفة معيشة منخفضة:</strong> مقارنة بدول الاتحاد الأوروبي [citation:2].</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--serbia-red);"></i> <strong>ضرائب معتدلة:</strong> نظام ضريبي بسيط، ضريبة دخل 10% فقط [citation:2].</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--serbia-red);"></i> <strong>فرص جيدة في IT والصناعة:</strong> قطاع التكنولوجيا مزدهر مع استثمارات كبيرة [citation:1][citation:7].</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--serbia-red);"></i> <strong>موقع جغرافي قريب من أوروبا:</strong> قلب البلقان، قرب من الاتحاد الأوروبي [citation:2].</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--serbia-red);"></i> <strong>إجراءات هجرة أوضح:</strong> نظام تصاريح موحد ومدة معالجة معقولة [citation:9].</li>
                 </ul>
             </div>
-            <div style="background: white; border-radius: 12px; padding: 25px; border: 1px solid #e2e8f0;">
-                <h3 style="color: #0C4076; margin-bottom: 15px;">⚠️ تحديات للباحثين عن عمل</h3>
+            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
+                <h3 style="color: var(--serbia-blue); margin-bottom: 10px;">⚠️ التحديات</h3>
                 <ul class="requirements-list">
-                    <li><i class="fas fa-exclamation-triangle" style="color: #0C4076;"></i> <strong>اللغة الصربية:</strong> أساسية لمعظم الوظائف خارج قطاع التكنولوجيا والشركات الدولية.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #0C4076;"></i> <strong>تحديات هيكلية:</strong> انخفاض الإنتاج الصناعي في بعض القطاعات (9.1% في يناير 2026) </li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #0C4076;"></i> <strong>المنافسة:</strong> في المدن الكبرى مثل بلغراد، المنافسة على الوظائف عالية.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #0C4076;"></i> <strong>البيروقراطية:</strong> رغم التحسينات، قد تستغرق بعض الإجراءات وقتاً.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #0C4076;"></i> <strong>تذبذب الرواتب:</strong> رواتب قطاع الخدمات منخفضة نسبياً (خدمة عملاء ~$5,400 سنوياً) </li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: var(--serbia-blue);"></i> <strong>الرواتب أقل من أوروبا الغربية:</strong> مقارنة بألمانيا أو النمسا [citation:2].</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: var(--serbia-blue);"></i> <strong>اللغة الصربية قد تشكل عائقًا:</strong> خاصة للوظائف المحلية [citation:2].</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: var(--serbia-blue);"></i> <strong>البيروقراطية:</strong> إجراءات إدارية معقدة أحيانًا، وترجمة المستندات مطلوبة [citation:9].</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: var(--serbia-blue);"></i> <strong>اختبار سوق العمل إلزامي:</strong> قد يطيل عملية التوظيف [citation:1][citation:6].</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: var(--serbia-blue);"></i> <strong>التصاريح مرتبطة بصاحب العمل:</strong> صعوبة في التغيير دون إجراءات جديدة [citation:9].</li>
                 </ul>
             </div>
         </div>
 
-        <!-- نصائح للباحثين عن عمل -->
-        <div class="requirements-box" style="background: #f8fafc;">
-            <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في صربيا</h3>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #0C4076;"></i> <strong>استهدف قطاع التكنولوجيا:</strong> صربيا تستثمر بشكل كبير في الذكاء الاصطناعي والتكنولوجيا، مما يخلق فرصاً متنامية للمتخصصين .</li>
-                <li><i class="fas fa-check-circle" style="color: #0C4076;"></i> <strong>تعلم اللغة الصربية الأساسية:</strong> حتى لو كانت وظيفتك بالإنجليزية، تعلم الأساسيات يساعد في الاندماج ويزيد فرصك.</li>
-                <li><i class="fas fa-check-circle" style="color: #0C4076;"></i> <strong>استخدم البوابة الحكومية:</strong> جميع إجراءات التصريح الموحد تتم عبر بوابة Welcome to Serbia الإلكترونية، تأكد من تقديم الطلب بالطريقة الصحيحة .</li>
-                <li><i class="fas fa-check-circle" style="color: #0C4076;"></i> <strong>جهز وثائقك مبكراً:</strong> المستندات المطلوبة (شهادات، ترجمات) يجب أن تكون جاهزة قبل بدء الإجراءات.</li>
-                <li><i class="fas fa-check-circle" style="color: #0C4076;"></i> <strong>ابحث خارج العاصمة:</strong> مدن مثل نوفي ساد تقدم فرصاً جيدة بتكاليف معيشة أقل من بلغراد .</li>
-                <li><i class="fas fa-check-circle" style="color: #0C4076;"></i> <strong>راقب الرواتب:</strong> متوسط الرواتب يختلف بشكل كبير بين القطاعات، تأكد من أن راتبك يتناسب مع مؤهلاتك .</li>
-            </ul>
-        </div>
-
-        <!-- إحصائيات مهمة -->
-        <h2 class="section-title">إحصائيات سوق العمل الصربي 2026</h2>
+        <!-- إحصائيات سريعة -->
+        <h2 class="section-title">إحصائيات سريعة 2026</h2>
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-number">8.2%</div>
-                <div class="stat-label">معدل البطالة (أدنى مستوى) </div>
+                <div class="stat-number">6.6M</div>
+                <div class="stat-label">عدد السكان [citation:5]</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">1,057 €</div>
-                <div class="stat-label">متوسط الراتب </div>
+                <div class="stat-number">8.9%</div>
+                <div class="stat-label">معدل البطالة [citation:5]</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">551 €</div>
-                <div class="stat-label">الحد الأدنى للأجور 2026 </div>
+                <div class="stat-number">744</div>
+                <div class="stat-label">الحد الأدنى (€) [citation:5]</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">15 يوماً</div>
-                <div class="stat-label">معالجة التصريح الموحد </div>
+                <div class="stat-number">1-3 أشهر</div>
+                <div class="stat-label">مدة التأشيرة [citation:9]</div>
             </div>
         </div>
 
-        <!-- مواقع التوظيف الرئيسية (تم التحقق منها) -->
-        <h2 class="section-title">أهم مواقع التوظيف في صربيا</h2>
+        <!-- مواقع التوظيف الرئيسية -->
+        <h2 class="section-title">مواقع توظيف موثوقة</h2>
         <div class="jobs-grid">
-            <a href="https://www.linkedin.com" target="_blank" class="job-site-card">
+            <a href="https://www.linkedin.com/jobs/jobs-in-serbia" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
                         <i class="fab fa-linkedin"></i>
                     </div>
-                    <span class="job-site-name">LinkedIn</span>
+                    <span class="job-site-name">LinkedIn Serbia</span>
                 </div>
-                <div class="job-site-desc">المنصة الرئيسية للوظائف المهنية، خاصة في قطاعات التكنولوجيا والتمويل والإدارة.</div>
-                <div class="job-site-link">www.linkedin.com <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">أكثر من 3,000 وظيفة في صربيا، خاصة في قطاع التكنولوجيا والشركات متعددة الجنسيات [citation:4].</div>
+                <div class="job-site-link">linkedin.com <i class="fas fa-external-link-alt"></i></div>
             </a>
-
-            <a href="https://www.infostud.com" target="_blank" class="job-site-card">
+            <a href="https://www.nsz.gov.rs" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
-                        <i class="fas fa-briefcase"></i>
+                        <i class="fas fa-building"></i>
                     </div>
-                    <span class="job-site-name">Infostud</span>
+                    <span class="job-site-name">NSZ (خدمة التوظيف الوطنية)</span>
                 </div>
-                <div class="job-site-desc">أكبر منصة توظيف في صربيا، تغطي جميع القطاعات والمدن.</div>
-                <div class="job-site-link">www.infostud.com <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">المنصة الحكومية الرسمية للتوظيف واختبار سوق العمل [citation:1].</div>
+                <div class="job-site-link">nsz.gov.rs <i class="fas fa-external-link-alt"></i></div>
             </a>
-
             <a href="https://poslovi.infostud.com" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
                         <i class="fas fa-bolt"></i>
                     </div>
-                    <span class="job-site-name">Poslovi Infostud</span>
+                    <span class="job-site-name">Infostud Poslovi</span>
                 </div>
-                <div class="job-site-desc">منصة متخصصة في الوظائف الإدارية والتقنية.</div>
-                <div class="job-site-link">poslovi.infostud.com <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">أكبر منصة توظيف محلية في صربيا، آلاف الوظائف في جميع القطاعات [citation:1].</div>
+                <div class="job-site-link">infostud.com <i class="fas fa-external-link-alt"></i></div>
             </a>
-        </div>
-
-        <!-- المواقع الحكومية والرسمية -->
-        <h2 class="section-title">المواقع الحكومية والرسمية</h2>
-        <div class="jobs-grid">
-            <a href="https://www.welcometoserbia.gov.rs" target="_blank" class="job-site-card">
+            <a href="https://www.halooglasi.com" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
-                        <i class="fas fa-passport"></i>
+                        <i class="fas fa-search"></i>
                     </div>
-                    <span class="job-site-name">Welcome to Serbia</span>
+                    <span class="job-site-name">Halo Oglasi</span>
                 </div>
-                <div class="job-site-desc">البوابة الرسمية للهجرة والتأشيرات وتصاريح الإقامة، أداة تفاعلية لتحديد المسار المناسب .</div>
-                <div class="job-site-link">www.welcometoserbia.gov.rs <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://www.minrzs.gov.rs" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <span class="job-site-name">Ministry of Labour, Employment, Veteran and Social Affairs</span>
-                </div>
-                <div class="job-site-desc">وزارة العمل – المصدر الرسمي لسياسات العمل والتوظيف .</div>
-                <div class="job-site-link">www.minrzs.gov.rs <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://www.nbs.rs" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <span class="job-site-name">National Bank of Serbia (NBS)</span>
-                </div>
-                <div class="job-site-desc">البنك الوطني الصربي – بيانات وإحصاءات اقتصادية محدثة .</div>
-                <div class="job-site-link">www.nbs.rs <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">منصة إعلانات مبوبة مع قسم وظائف نشط يغطي جميع القطاعات.</div>
+                <div class="job-site-link">halooglasi.com <i class="fas fa-external-link-alt"></i></div>
             </a>
         </div>
 
         <!-- خدماتنا -->
         <div class="services-section">
-            <h3 style="font-size: 1.5rem; margin-bottom: 20px;">تحتاج مساعدة في التقديم؟</h3>
-            <p style="margin-bottom: 30px;">نقدم لك خدمات احترافية بأسعار رمزية لزيادة فرص قبولك</p>
+            <h3 style="font-size: 1.3rem; margin-bottom: 15px;">خدماتنا الاحترافية</h3>
+            <p style="margin-bottom: 20px;">نساعدك في تحسين فرصك للحصول على وظيفة في صربيا</p>
             <div class="services-buttons">
-                <a href="services.html" class="service-btn">تصميم السيرة الذاتية ($9)</a>
-                <a href="services.html" class="service-btn">كتابة خطاب تقديم ($7)</a>
-                <a href="services.html" class="service-btn">تسجيل في مواقع التوظيف ($10)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-file-alt"></i> سيرة ذاتية ($9)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-envelope"></i> خطاب تقديم ($7)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-user-plus"></i> تسجيل بالمنصات ($10)</a>
             </div>
         </div>
     </div>
@@ -816,20 +1042,16 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>وظائف حول العالم</h4>
-                    <p>منصتك الموثوقة للبحث عن فرص عمل في مختلف دول العالم</p>
+                    <p>منصتك الموثوقة للبحث عن فرص عمل في 49 دولة حول العالم</p>
                 </div>
-                
                 <div class="footer-section">
                     <h4>روابط سريعة</h4>
                     <ul>
                         <li><a href="index.html">الرئيسية</a></li>
                         <li><a href="#">الدول</a></li>
                         <li><a href="services.html">الخدمات</a></li>
-                        <li><a href="about.html">من نحن</a></li>
-                        <li><a href="contact.html">اتصل بنا</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
                     <h4>سياسة الموقع</h4>
                     <ul>
@@ -837,8 +1059,6 @@
                         <li><a href="terms.html">اتفاقية الاستخدام</a></li>
                     </ul>
                 </div>
-
-                <!-- صفحة فيسبوك -->
                 <div class="footer-section">
                     <h4>تابعنا</h4>
                     <div class="social-links">
@@ -846,14 +1066,13 @@
                     </div>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة</p>
             </div>
         </div>
     </footer>
 
-    <!-- كود الإعلان Social Bar -->
+    <!-- كود الإعلان Social Bar - قبل إغلاق body -->
     <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 </body>
 </html>
