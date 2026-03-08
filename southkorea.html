@@ -2,363 +2,620 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فرص عمل في كوريا الجنوبية 2026 | وظائف في سيول بوسان للمهنيين</title>
-    <meta name="description" content="دليلك الشامل للعمل في كوريا الجنوبية: المهن المطلوبة، الرواتب المحدثة 2026، الحد الأدنى للأجور 10,320 وون/ساعة، حصص التأشيرات (E-9, E-7, E-8)، منصات التوظيف الجديدة للأجانب (KLiK, Vijob). كل ما تحتاجه للهجرة والعمل في كوريا.">
-    <meta name="keywords" content="فرص عمل في كوريا الجنوبية, وظائف كوريا 2026, تأشيرة عمل كوريا, E-9签证, E-7签证, العمل في سيول, الحد الأدنى للأجور كوريا, المهن المطلوبة في كوريا">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>فرص عمل في كوريا الجنوبية 2026 | المهن المطلوبة والتأشيرات والرواتب في سيول</title>
+    <meta name="description" content="كوريا الجنوبية 2026: دليلك الشامل للعمل في كوريا. المهن الأكثر طلباً (تكنولوجيا، هندسة، رعاية صحية)، رواتب محدثة، تأشيرات العمل (E-7، E-9، F-2-R، F-1-D)، ونصائح للباحثين عن عمل.">
+    <meta name="keywords" content="فرص عمل في كوريا الجنوبية, وظائف كوريا 2026, تأشيرة عمل كوريا, العمل في سيول, رواتب المهندسين في كوريا, الهجرة إلى كوريا, تأشيرة E-7 الكورية">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+
     <!-- ملف التنسيقات الرئيسي -->
     <link rel="stylesheet" href="style.css">
-    
+
     <style>
-        /* تنسيقات خاصة بصفحة كوريا الجنوبية */
+        /* تنسيقات خاصة بصفحة كوريا الجنوبية - مستوحاة من ألوان العلم 🇰🇷 */
+        :root {
+            --korea-red: #CD2E3A;
+            --korea-blue: #0047A0;
+            --korea-white: #FFFFFF;
+            --korea-black: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
         .country-header {
-            background: linear-gradient(135deg, #003478, #FFFFFF, #CD2E3A);
+            background: linear-gradient(135deg, var(--korea-blue), var(--korea-red));
             color: white;
-            padding: 60px 0;
+            padding: clamp(20px, 5vw, 30px) 15px;
             text-align: center;
             position: relative;
             overflow: hidden;
+            width: 100%;
         }
-        
+
         .country-header h1 {
-            font-size: 2.5rem;
+            font-size: clamp(1.5rem, 6vw, 2.2rem);
             margin-bottom: 10px;
             position: relative;
-            color: #1e293b;
-            background: rgba(255,255,255,0.9);
+            color: white;
+            background: rgba(0,0,0,0.2);
             display: inline-block;
-            padding: 10px 30px;
+            padding: 5px 15px;
             border-radius: 50px;
+            font-weight: 700;
+            word-break: break-word;
+            max-width: 95%;
+            line-height: 1.3;
         }
-        
+
         .country-header p {
-            font-size: 1.1rem;
+            font-size: clamp(0.85rem, 3vw, 1rem);
             opacity: 0.95;
             position: relative;
-            color: #1e293b;
-            background: rgba(255,255,255,0.8);
+            color: white;
+            background: rgba(0,0,0,0.2);
             display: inline-block;
-            padding: 5px 20px;
+            padding: 5px 12px;
             border-radius: 30px;
+            max-width: 95%;
+            margin: 8px auto;
+            line-height: 1.5;
         }
-        
+
         .country-info {
             display: flex;
             justify-content: center;
-            gap: 30px;
-            margin: 30px 0;
+            gap: 8px;
+            margin: 15px 0 0;
             flex-wrap: wrap;
+            width: 100%;
         }
-        
+
         .info-badge {
             background: white;
-            color: #003478;
-            padding: 10px 25px;
+            color: var(--korea-blue);
+            padding: 6px 12px;
             border-radius: 50px;
             font-weight: 600;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-size: clamp(0.7rem, 2.5vw, 0.8rem);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap;
         }
-        
+
+        @media (max-width: 480px) {
+            .info-badge {
+                white-space: normal;
+                font-size: 0.7rem;
+                padding: 4px 8px;
+            }
+        }
+
+        .info-badge i {
+            font-size: 0.8rem;
+        }
+
         .section-title {
-            font-size: 1.8rem;
+            font-size: clamp(1.3rem, 5vw, 1.8rem);
             color: #1e293b;
-            margin: 40px 0 20px;
+            margin: 25px 0 15px;
             position: relative;
-            padding-right: 15px;
+            padding-right: 12px;
+            line-height: 1.3;
         }
-        
+
         .section-title::before {
             content: '';
             position: absolute;
             right: 0;
             top: 0;
             bottom: 0;
-            width: 5px;
-            background: #CD2E3A;
+            width: 4px;
+            background: var(--korea-red);
             border-radius: 5px;
         }
-        
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 12px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        /* تحسينات الجوال */
+        @media (max-width: 768px) {
+            .country-header {
+                padding: 20px 10px;
+            }
+            .container {
+                padding: 0 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .country-header h1 {
+                font-size: 1.4rem;
+                padding: 5px 10px;
+            }
+            .section-title {
+                font-size: 1.2rem;
+                padding-right: 10px;
+            }
+        }
+
         .jobs-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+            width: 100%;
         }
-        
+
         .job-site-card {
             background: white;
             border-radius: 12px;
-            padding: 25px;
+            padding: 15px;
             border: 1px solid #e2e8f0;
             transition: all 0.3s ease;
             text-decoration: none;
             color: inherit;
             display: block;
+            width: 100%;
         }
-        
+
         .job-site-card:hover {
             transform: translateY(-5px);
-            border-color: #CD2E3A;
+            border-color: var(--korea-red);
             box-shadow: 0 10px 25px rgba(205,46,58,0.1);
         }
-        
+
         .job-site-header {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
+            gap: 10px;
+            margin-bottom: 10px;
         }
-        
+
         .job-site-icon {
-            width: 50px;
-            height: 50px;
-            background: #fee6e6;
-            border-radius: 12px;
+            width: 40px;
+            height: 40px;
+            background: #ffe0e0;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-shrink: 0;
         }
-        
+
         .job-site-icon i {
-            font-size: 1.8rem;
-            color: #CD2E3A;
+            font-size: 1.4rem;
+            color: var(--korea-red);
         }
-        
+
         .job-site-name {
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 600;
             color: #1e293b;
+            word-break: break-word;
         }
-        
+
         .job-site-desc {
             color: #64748b;
-            font-size: 0.95rem;
-            margin-bottom: 15px;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            line-height: 1.5;
         }
-        
+
         .job-site-link {
             display: inline-flex;
             align-items: center;
             gap: 5px;
-            color: #CD2E3A;
-            font-size: 0.95rem;
+            color: var(--korea-red);
+            font-size: 0.85rem;
+            word-break: break-word;
         }
-        
+
         .visa-box {
             background: #f8fafc;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 30px 0;
-            border: 2px dashed #CD2E3A;
+            border-radius: 16px;
+            padding: 20px 15px;
+            margin: 20px 0;
+            border: 2px dashed var(--korea-blue);
+            width: 100%;
         }
-        
+
         .visa-box h3 {
             color: #1e293b;
-            font-size: 1.3rem;
-            margin-bottom: 15px;
+            font-size: clamp(1.1rem, 4vw, 1.3rem);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            line-height: 1.3;
         }
-        
+
         .visa-box i {
-            color: #CD2E3A;
+            color: var(--korea-red);
             font-size: 1.2rem;
+            flex-shrink: 0;
         }
-        
+
         .visa-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+            width: 100%;
         }
-        
+
         .visa-type {
             background: white;
-            padding: 20px;
-            border-radius: 8px;
+            padding: 15px;
+            border-radius: 12px;
             border: 1px solid #e2e8f0;
+            width: 100%;
         }
-        
+
         .visa-type h4 {
-            color: #CD2E3A;
-            margin-bottom: 5px;
+            color: var(--korea-red);
+            margin-bottom: 8px;
+            font-size: 1rem;
         }
-        
-        .visa-type .price {
-            font-weight: 600;
-            color: #1e293b;
-            margin-top: 10px;
-        }
-        
-        .visa-type .fee {
+
+        .visa-type p {
             font-size: 0.9rem;
-            color: #64748b;
-            margin-top: 5px;
+            color: #334155;
+            line-height: 1.5;
         }
-        
+
         .table-container {
             overflow-x: auto;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            -webkit-overflow-scrolling: touch;
+            width: 100%;
+            max-width: 100%;
         }
-        
+
         .jobs-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
             background: white;
-            border-radius: 8px;
+            border-radius: 12px;
             overflow: hidden;
+            min-width: 550px;
+            table-layout: auto;
         }
-        
+
         .jobs-table th {
-            background: #003478;
+            background: var(--korea-blue);
             color: white;
-            padding: 12px;
+            padding: 10px 8px;
             text-align: right;
+            font-weight: 600;
+            font-size: 0.9rem;
+            white-space: nowrap;
         }
-        
+
         .jobs-table td {
-            padding: 12px;
+            padding: 10px 8px;
             border-bottom: 1px solid #e2e8f0;
+            font-size: 0.85rem;
+            word-break: break-word;
         }
-        
+
         .jobs-table tr:last-child td {
             border-bottom: none;
         }
-        
-        .jobs-table tr:hover {
-            background: #e6ecf5;
+
+        @media (max-width: 600px) {
+            .jobs-table th, .jobs-table td {
+                padding: 8px 6px;
+                font-size: 0.8rem;
+            }
         }
-        
+
         .requirements-box {
-            background: #e6ecf5;
-            border-right: 4px solid #003478;
-            padding: 30px;
-            border-radius: 12px;
-            margin: 30px 0;
+            background: #f0f7ff;
+            border-right: 4px solid var(--korea-red);
+            padding: 20px 15px;
+            border-radius: 16px;
+            margin: 20px 0;
+            width: 100%;
         }
-        
+
         .requirements-box h3 {
             color: #1e293b;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: clamp(1.1rem, 4vw, 1.3rem);
+            line-height: 1.3;
         }
-        
+
         .requirements-list {
             list-style: none;
+            padding: 0;
+            margin: 0;
         }
-        
+
         .requirements-list li {
             margin-bottom: 10px;
             display: flex;
-            align-items: center;
-            gap: 10px;
+            align-items: flex-start;
+            gap: 8px;
+            line-height: 1.5;
+            font-size: 0.9rem;
         }
-        
+
         .requirements-list i {
-            color: #003478;
+            color: var(--korea-red);
+            margin-top: 3px;
+            min-width: 16px;
         }
-        
+
         .back-link {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            color: #CD2E3A;
+            gap: 6px;
+            color: var(--korea-red);
             text-decoration: none;
-            margin: 20px 0;
+            margin: 15px 0;
             font-weight: 500;
+            padding: 6px 12px;
+            background: #f0f7ff;
+            border-radius: 30px;
+            font-size: 0.9rem;
         }
-        
-        .back-link:hover {
-            color: #003478;
-        }
-        
+
         .flag-icon {
-            font-size: 3rem;
-            color: #CD2E3A;
-            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 10px;
             filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
         }
-        
+
         .skill-tag {
             display: inline-block;
             background: white;
-            color: #003478;
+            color: var(--korea-red);
             padding: 5px 12px;
-            border-radius: 20px;
-            margin: 3px;
-            font-size: 0.85rem;
-            border: 1px solid #003478;
+            border-radius: 40px;
+            margin: 4px;
+            font-size: 0.8rem;
+            border: 1px solid var(--korea-red);
+            transition: all 0.2s;
+            font-weight: 500;
         }
-        
+
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 12px;
+            margin: 15px 0;
+            width: 100%;
         }
-        
+
         .stat-card {
             background: white;
-            padding: 20px;
-            border-radius: 12px;
+            padding: 15px 8px;
+            border-radius: 16px;
             text-align: center;
             border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 8px rgba(205,46,58,0.05);
+            width: 100%;
         }
-        
+
         .stat-number {
-            font-size: 1.8rem;
+            font-size: 1.3rem;
             font-weight: 700;
-            color: #003478;
+            color: var(--korea-red);
+            line-height: 1.2;
         }
-        
+
         .stat-label {
             color: #64748b;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
+            margin-top: 5px;
         }
-        
+
         .services-section {
-            background: #f8fafc;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 40px 0;
+            background: #f0f7ff;
+            border-radius: 24px;
+            padding: 25px 15px;
+            margin: 30px 0;
             text-align: center;
+            width: 100%;
         }
-        
+
         .services-buttons {
             display: flex;
-            gap: 20px;
+            gap: 10px;
             justify-content: center;
             flex-wrap: wrap;
             margin-top: 20px;
+            width: 100%;
         }
-        
+
         .service-btn {
-            background: #003478;
+            background: var(--korea-blue);
             color: white;
-            padding: 12px 30px;
-            border-radius: 8px;
+            padding: 10px 20px;
+            border-radius: 50px;
             text-decoration: none;
-            transition: background 0.3s;
+            transition: all 0.3s;
+            font-weight: 500;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            border: none;
+            cursor: pointer;
+            flex: 0 1 auto;
         }
-        
+
         .service-btn:hover {
-            background: #CD2E3A;
+            background: #002a6e;
         }
-        
-        @media (max-width: 768px) {
-            .country-header h1 {
-                font-size: 2rem;
-            }
-            
+
+        @media (max-width: 600px) {
             .services-buttons {
                 flex-direction: column;
             }
+            .service-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--korea-red);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 500;
+            padding: 5px 0;
+        }
+
+        .nav-links a.active {
+            color: var(--korea-blue);
+            border-bottom: 2px solid var(--korea-blue);
+        }
+
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-links {
+                justify-content: center;
+            }
+        }
+
+        footer {
+            background: #1e293b;
+            color: white;
+            padding: 30px 0 15px;
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+
+        .footer-section a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-left: 8px;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 15px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 480px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        /* إصلاحات إضافية لمنع التمرير الأفقي */
+        img, iframe, video, table, div {
+            max-width: 100%;
+        }
+        p, h1, h2, h3, h4, h5, h6, li, td, th {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
     </style>
 </head>
@@ -371,7 +628,7 @@
                     <i class="fas fa-globe"></i>
                     <span>وظائف حول العالم</span>
                 </a>
-                
+
                 <ul class="nav-links">
                     <li><a href="index.html">الرئيسية</a></li>
                     <li><a href="#" class="active">الدول</a></li>
@@ -387,13 +644,13 @@
     <section class="country-header">
         <div class="container">
             <i class="fas fa-flag flag-icon"></i>
-            <h1>فرص عمل في كوريا الجنوبية 2026</h1>
-            <p>دليلك الشامل للعمل في سيول، بوسان، إنتشون وجميع المدن الكورية</p>
-            
+            <h1>🇰🇷 فرص عمل في كوريا الجنوبية 2026 🇰🇷</h1>
+            <p>الدليل الكامل للعمل في سيول، بوسان، إنتشون، دايجو وجميع المدن الكورية</p>
+
             <div class="country-info">
-                <span class="info-badge"><i class="fas fa-briefcase"></i> 500,000+ فرصة</span>
-                <span class="info-badge"><i class="fas fa-language"></i> كوري / إنجليزي</span>
-                <span class="info-badge"><i class="fas fa-won-sign"></i> وون كوري (KRW)</span>
+                <span class="info-badge"><i class="fas fa-microchip"></i> تكنولوجيا وهندسة</span>
+                <span class="info-badge"><i class="fas fa-language"></i> الكورية / الإنجليزية</span>
+                <span class="info-badge"><i class="fas fa-money-bill-wave"></i> وون كوري (KRW)</span>
             </div>
         </div>
     </section>
@@ -403,435 +660,348 @@
             <i class="fas fa-arrow-right"></i> العودة للصفحة الرئيسية
         </a>
 
-        <!-- تحديثات سوق العمل الكوري 2026 (مصدر حكومي) -->
+        <!-- لمحة عامة عن سوق العمل الكوري -->
         <div class="visa-box">
-            <h3><i class="fas fa-calendar-alt"></i> تحديثات سوق العمل في كوريا الجنوبية 2026 (من 1 يناير)</h3>
-            <p>أعلنت وزارة التوظيف والعمل الكورية عن عدة تغييرات هامة لتحسين ظروف العمالة الأجنبية وتوسيع فرص العمل [citation:1][citation:4].</p>
-            
-            <div class="visa-grid" style="margin-top: 15px;">
-                <div class="visa-type">
-                    <h4>الحد الأدنى للأجور 2026</h4>
-                    <p>تم رفع الحد الأدنى للأجور بنسبة 2.9% ليصل إلى <strong>10,320 وون/ساعة</strong> (مقارنة بـ 10,030 وون في 2025).</p>
-                    <div class="price">الراتب الشهري (40 ساعة/أسبوع): 2,156,880 وون</div>
-                </div>
-                <div class="visa-type">
-                    <h4>حصص العمالة غير الماهرة (E-9)</h4>
-                    <p>تم تثبيت حصة العمالة غير الماهرة (E-9) عند <strong>80,000</strong> عامل، مع رفع سقف التوظيف الإضافي للمصانع خارج العاصمة من 20% إلى 30% [citation:1].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>تأشيرات العمل الموسمي (E-8)</h4>
-                    <p>تم رفع عدد تأشيرات العمل الموسمي إلى <strong>109,000</strong> تأشيرة (بزيادة 13,000 عن العام الماضي) لدعم المناطق الزراعية والريفية [citation:1].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>النظام الإلكتروني للتقديم</h4>
-                    <p>تم توسيع نظام "HiKorea" للإبلاغ الإلكتروني عن معلومات التوظيف، مما يسهل تمديد الإقامة وتغيير جهة العمل [citation:1].</p>
-                </div>
-            </div>
+            <h3><i class="fas fa-chart-line"></i> نظرة على سوق العمل في كوريا الجنوبية 2026</h3>
+            <p>كوريا الجنوبية هي واحدة من أكثر الاقتصادات تقدماً في آسيا، وتتميز بقوة قطاعاتها في التكنولوجيا، صناعة السيارات، أشباه الموصلات، وبناء السفن. في عام 2026، يستمر الطلب على العمالة الماهرة في مجالات الذكاء الاصطناعي، تطوير البرمجيات، الأمن السيبراني، والهندسة بمختلف فروعها . سوق العمل الكوري يتسم بالتنافسية العالية والتركيز على المؤهلات والشهادات، إلى جانب إجادة اللغة الكورية التي تعتبر مفتاحاً أساسياً للاندماج والنجاح. تواصل الحكومة الكورية سياساتها لجذب المواهب الأجنبية من خلال تسهيل إجراءات التأشيرات للمهنيين ذوي المهارات العالية ورواد الأعمال [citation:3][citation:5].</p>
         </div>
 
-        <!-- تحديثات جديدة في اختبارات E-9 2026 -->
+        <!-- تحديثات سوق العمل 2026 -->
         <div class="visa-box">
-            <h3><i class="fas fa-file-signature"></i> تحديثات اختبارات تأشيرة E-9 2026 (للعمالة غير الماهرة)</h3>
-            <p>أعلنت هيئة تطوير الموارد البشرية الكورية عن تغييرات جوهرية في اختبارات اختيار العمالة الأجنبية لتحسين مهارات اللغة الكورية والسلامة [citation:5].</p>
+            <h3><i class="fas fa-calendar-alt"></i> تحديثات سوق العمل الكوري 2026</h3>
+            <p>وفقاً لتقارير التوظيف الصادرة مؤخراً، يشهد سوق العمل الكوري تطورات مهمة :</p>
             
             <div class="visa-grid">
                 <div class="visa-type">
-                    <h4>توسيع المقابلات الشخصية</h4>
-                    <p>تم زيادة وزن المقابلات الشخصية في الاختبارات، مع التركيز على فهم تعليمات العمل والسلامة.</p>
+                    <h4>الذكاء الاصطناعي يرفع الرواتب</h4>
+                    <p>حسب تقرير JobKorea 2026، وظائف الذكاء الاصطناعي والتطوير سجلت أعلى متوسط رواتب سنوي بواقع 49.47 مليون وون، متجاوزة التخطيط الاستراتيجي (49.12 مليون) والتمويل (47.79 مليون) [citation:2].</p>
                 </div>
                 <div class="visa-type">
-                    <h4>أسئلة سلامة معمقة</h4>
-                    <p>إضافة أسئلة متعمقة حول السلامة في مكان العمل، بناءً على شكاوى 48.7% من أصحاب العمل حول ضعف مهارات العمال الأجانب في فهم التعليمات [citation:5].</p>
+                    <h4>توحيد تأشيرات F-4 للكوريين في الخارج</h4>
+                    <p>وزارة العدل الكورية وحدت تأشيرات الزيارة للعمل (H-2) وتأشيرة الكوريين في الخارج (F-4) في فئة F-4 واحدة، مع السماح لحامليها بالعمل في قطاع البناء كعمال عامة .</p>
                 </div>
                 <div class="visa-type">
-                    <h4>رفع درجة اختبار اللغة الكورية</h4>
-                    <p>تم رفع الحد الأدنى لدرجة اختبار اللغة الكورية (EPS-TOPIK) لجميع القطاعات [citation:5].</p>
+                    <h4>تشديد اختبارات E-9</h4>
+                    <p>تم توسيع جزء المقابلة وإضافة أسئلة أعمق حول السلامة في اختبارات اختيار العمال لتأشيرة E-9 (غير المهنية)، مع رفع درجة النجاح في اختبار اللغة الكورية .</p>
+                </div>
+                <div class="visa-type">
+                    <h4>رواتب الخريجين في الشركات الكبرى</h4>
+                    <p>وفقاً لاتحاد أصحاب العمل الكوري، متوسط رواتب الخريجين في الشركات الكبرى أعلى بنسبة 41% من اليابان و37% من تايوان .</p>
                 </div>
             </div>
         </div>
 
-        <!-- لمحة عامة عن سوق العمل الكوري -->
-        <div class="requirements-box">
-            <h3><i class="fas fa-chart-line"></i> لمحة عامة عن سوق العمل الكوري 2026</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
-                <div><strong>إجمالي الوظائف الشاغرة:</strong> أكثر من 500,000 وظيفة [citation:9]</div>
-                <div><strong>أعلى الرواتب (تكنولوجيا المعلومات):</strong> 85,000,000 وون سنوياً [citation:9]</div>
-                <div><strong>المناطق الأكثر طلباً:</strong> سيول، غيونغي، إنتشون، بوسان، دايغو [citation:9]</div>
-                <div><strong>تأشيرات العمل الصادرة:</strong> أكثر من 300,000 تأشيرة في العام الماضي [citation:9]</div>
-                <div><strong>نمو الناتج المحلي:</strong> 2.1% مدعوم بصناعات الإلكترونيات وأشباه الموصلات والسيارات [citation:9]</div>
-            </div>
-            <p style="margin-top: 15px;">يعاني سوق العمل الكوري من نقص حاد في العمالة بسبب شيخوخة السكان وانخفاض معدل المواليد، مما يخلق فرصاً واسعة للعمالة الأجنبية في قطاعات التصنيع، تكنولوجيا المعلومات، الرعاية الصحية، البناء، والخدمات اللوجستية [citation:9].</p>
-        </div>
-
-        <!-- المهن الأكثر طلباً والرواتب حسب المنطقة -->
-        <h2 class="section-title">المهن الأكثر طلباً والرواتب في كوريا 2026 حسب المنطقة</h2>
+        <!-- المهن الأكثر طلباً والرواتب في كوريا 2026 -->
+        <h2 class="section-title">المهن الأكثر طلباً والرواتب في كوريا 2026</h2>
         
-        <div class="table-container">
-            <table class="jobs-table">
-                <tr>
-                    <th>المنطقة</th>
-                    <th>القطاعات الرئيسية</th>
-                    <th>الرواتب السنوية (وون)</th>
-                </tr>
-                <tr>
-                    <td><strong>سيول</strong></td>
-                    <td>تكنولوجيا المعلومات، التمويل، التسويق الرقمي، التعليم، الخدمات</td>
-                    <td>45-85 مليون [citation:9]</td>
-                </tr>
-                <tr>
-                    <td><strong>غيونغي (Gyeonggi)</strong></td>
-                    <td>التصنيع، أشباه الموصلات، اللوجستيات، الصناعات الثقيلة</td>
-                    <td>40-75 مليون [citation:9]</td>
-                </tr>
-                <tr>
-                    <td><strong>إنتشون (Incheon)</strong></td>
-                    <td>اللوجستيات، خدمات المطار، الشحن، التجارة الدولية</td>
-                    <td>38-70 مليون [citation:9]</td>
-                </tr>
-                <tr>
-                    <td><strong>بوسان (Busan)</strong></td>
-                    <td>بناء السفن، التجارة البحرية، السياحة، الخدمات اللوجستية</td>
-                    <td>35-65 مليون [citation:9]</td>
-                </tr>
-                <tr>
-                    <td><strong>أولسان (Ulsan)</strong></td>
-                    <td>صناعة السيارات، البتروكيماويات، الهندسة الثقيلة</td>
-                    <td>40-75 مليون [citation:9]</td>
-                </tr>
-                <tr>
-                    <td><strong>دايجون (Daejeon)</strong></td>
-                    <td>البحث والتطوير، التكنولوجيا الحيوية، الفضاء</td>
-                    <td>40-70 مليون [citation:9]</td>
-                </tr>
-            </table>
-        </div>
-
-        <!-- متوسط الرواتب حسب القطاع -->
-        <h2 class="section-title">متوسط الرواتب السنوية حسب القطاع (وون)</h2>
         <div class="table-container">
             <table class="jobs-table">
                 <tr>
                     <th>القطاع</th>
-                    <th>متوسط الراتب</th>
+                    <th>المهن المطلوبة</th>
+                    <th>مبتدئ (KRW)</th>
+                    <th>متوسط (KRW)</th>
+                    <th>متقدم (KRW)</th>
                 </tr>
                 <tr>
-                    <td>الهندسة (Engineering)</td>
-                    <td>80,000,000 وون [citation:9]</td>
+                    <td>تكنولوجيا المعلومات (AI والبرمجيات)</td>
+                    <td>مهندسو ذكاء اصطناعي، علماء بيانات، مهندسو برمجيات، مهندسو أمن سيبراني، مهندسو بلوك تشين [citation:2][citation:6]</td>
+                    <td>40,000,000 – 50,000,000</td>
+                    <td>50,000,000 – 70,000,000</td>
+                    <td>70,000,000 – 100,000,000+</td>
                 </tr>
                 <tr>
-                    <td>تكنولوجيا المعلومات (IT)</td>
-                    <td>85,000,000 وون [citation:9]</td>
+                    <td>الهندسة (إلكترونيك، ميكانيكا، سيارات)</td>
+                    <td>مهندسو إلكترونيك، مهندسو ميكانيكا، مهندسو سيارات، مهندسو روبوتات [citation:6]</td>
+                    <td>38,000,000 – 48,000,000</td>
+                    <td>48,000,000 – 65,000,000</td>
+                    <td>65,000,000 – 90,000,000+</td>
                 </tr>
                 <tr>
-                    <td>الرعاية الصحية (Healthcare)</td>
-                    <td>70,000,000 وون [citation:9]</td>
+                    <td>أشباه الموصلات والإلكترونيات الدقيقة</td>
+                    <td>مهندسو تصنيع رقائق، مهندسو عمليات، باحثون في أشباه الموصلات [citation:6]</td>
+                    <td>45,000,000 – 55,000,000</td>
+                    <td>55,000,000 – 75,000,000</td>
+                    <td>75,000,000 – 110,000,000+</td>
                 </tr>
                 <tr>
-                    <td>التسويق والمبيعات</td>
-                    <td>65,000,000 وون [citation:9]</td>
+                    <td>التخطيط والاستراتيجية والإدارة</td>
+                    <td>مدراء مشاريع، محللو استراتيجية، مستشارو إدارة [citation:2]</td>
+                    <td>42,000,000 – 52,000,000</td>
+                    <td>52,000,000 – 70,000,000</td>
+                    <td>70,000,000 – 95,000,000+</td>
                 </tr>
                 <tr>
-                    <td>البنوك والتمويل</td>
-                    <td>75,000,000 وون [citation:9]</td>
+                    <td>التمويل والتأمين</td>
+                    <td>محللون ماليون، مدراء استثمار، متخصصو امتثال، محاسبون [citation:2]</td>
+                    <td>40,000,000 – 50,000,000</td>
+                    <td>50,000,000 – 68,000,000</td>
+                    <td>68,000,000 – 90,000,000+</td>
                 </tr>
                 <tr>
-                    <td>التمريض (Nursing)</td>
-                    <td>45,000,000 وون [citation:9]</td>
+                    <td>التصميم والهندسة المعمارية</td>
+                    <td>مصممو UX/UI، مصممو منتجات، مهندسو معماريون [citation:6]</td>
+                    <td>35,000,000 – 45,000,000</td>
+                    <td>45,000,000 – 60,000,000</td>
+                    <td>60,000,000 – 80,000,000+</td>
                 </tr>
                 <tr>
-                    <td>التعليم</td>
-                    <td>40,000,000 وون [citation:9]</td>
+                    <td>التسويق الرقمي والمبيعات</td>
+                    <td>متخصصو تسويق رقمي، مدراء علامات تجارية، مدراء مبيعات [citation:6]</td>
+                    <td>35,000,000 – 45,000,000</td>
+                    <td>45,000,000 – 60,000,000</td>
+                    <td>60,000,000 – 85,000,000+</td>
                 </tr>
                 <tr>
-                    <td>الضيافة</td>
-                    <td>38,000,000 وون [citation:9]</td>
-                </tr>
-                <tr>
-                    <td>الحرف الماهرة (Skilled Trades)</td>
-                    <td>50,000,000 وون [citation:9]</td>
+                    <td>الرعاية الصحية والتمريض</td>
+                    <td>أطباء، ممرضون، أخصائيو علاج طبيعي</td>
+                    <td>38,000,000 – 48,000,000</td>
+                    <td>48,000,000 – 65,000,000</td>
+                    <td>65,000,000 – 90,000,000+</td>
                 </tr>
             </table>
+            <p style="margin-top: 5px;">المصادر: JobKorea HR Money Report 2026 [citation:2], Robert Walters Salary Survey 2026 [citation:4], Playroll Cost Guide 2026 [citation:6].</p>
         </div>
 
-        <!-- أنواع التأشيرات الرئيسية -->
+        <!-- الحد الأدنى للأجور ومزايا العمل -->
         <div class="visa-box">
-            <h3><i class="fas fa-passport"></i> أنواع تأشيرات العمل الرئيسية في كوريا 2026</h3>
-            
-            <div class="visa-grid" style="margin-top: 15px;">
-                <div class="visa-type">
-                    <h4>E-9 (غير المهنية)</h4>
-                    <p>للعمل في قطاعات التصنيع، الزراعة، صيد الأسماك، البناء. يتطلب اجتياز اختبار EPS-TOPIK والحصول على عقد عمل [citation:5][citation:7].</p>
-                    <div class="price">المدة: حتى 4 سنوات و10 أشهر [citation:7]</div>
-                    <div class="fee">الراتب الشهري: 2,156,880 وون (الحد الأدنى)</div>
+            <h3><i class="fas fa-coins"></i> الحد الأدنى للأجور ومزايا العمل 2026</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">9,860</div>
+                    <div class="stat-label">الحد الأدنى (KRW/ساعة)</div>
                 </div>
-                <div class="visa-type">
-                    <h4>E-7 (المهنيون المهرة)</h4>
-                    <p>للمهن المتخصصة مثل المهندسين، متخصصي تكنولوجيا المعلومات، المترجمين. تم تحويلها لنظام نقاط (العمر، المؤهل، اللغة الكورية) بدلاً من شرط 5:1 للعمالة المحلية [citation:7].</p>
-                    <div class="price">الراتب المطلوب: ≥ 3.2 مليون وون شهرياً</div>
+                <div class="stat-card">
+                    <div class="stat-number">~ 2.06M</div>
+                    <div class="stat-label">شهرياً (KRW)</div>
                 </div>
-                <div class="visa-type">
-                    <h4>E-8 (العمل الموسمي)</h4>
-                    <p>للعمل في الزراعة والمناطق الريفية. تم رفع الحصة إلى 109,000 تأشيرة [citation:1].</p>
+                <div class="stat-card">
+                    <div class="stat-number">~ 7.4</div>
+                    <div class="stat-label">USD/ساعة (تقريباً)</div>
                 </div>
-                <div class="visa-type">
-                    <h4>H-2 (زيارة العمل)</h4>
-                    <p>متاحة للكوريين العرقيين (كوريو)، بنظام الحصص السنوية (تم رفعها إلى 50,000 في 2026) [citation:7].</p>
-                </div>
-                <div class="visa-type">
-                    <h4>C-4 (العمل القصير الأجل)</h4>
-                    <p>للعمل لمدة ≤ 90 يوماً في مجالات محددة مثل العروض، الخبرة، التدريب [citation:2].</p>
-                    <div class="price">مدة المعالجة: 4 أيام – أسبوعين [citation:2]</div>
+                <div class="stat-card">
+                    <div class="stat-number">20-25%</div>
+                    <div class="stat-label">مساهمات صاحب العمل</div>
                 </div>
             </div>
+            <p style="margin-top: 15px;">الحد الأدنى للأجور في كوريا لعام 2026 هو 9,860 وون للساعة (حوالي 2.06 مليون وون شهرياً). يجب على أصحاب العمل إضافة مساهمات اجتماعية إلزامية تشمل المعاش الوطني، التأمين الصحي، التأمين ضد البطالة، وتأمين الرعاية طويلة الأجل، مما يضيف حوالي 20-25% على الراتب الإجمالي [citation:6].</p>
         </div>
 
-        <!-- متطلبات الحصول على التأشيرة -->
+        <!-- تكلفة المعيشة في المدن الرئيسية -->
+        <h2 class="section-title">تكلفة المعيشة في كوريا 2026</h2>
         <div class="requirements-box">
-            <h3><i class="fas fa-clipboard-check"></i> متطلبات الحصول على تأشيرة العمل (عامة) [citation:2][citation:7]</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+                <div><strong>سيول (شخص واحد):</strong> 1,200,000 – 1,800,000 KRW</div>
+                <div><strong>سيول (عائلة 4 أفراد):</strong> 3,500,000 – 5,000,000 KRW</div>
+                <div><strong>بوسان:</strong> 1,000,000 – 1,500,000 KRW</div>
+                <div><strong>إنتشون:</strong> 950,000 – 1,400,000 KRW</div>
+                <div><strong>إيجار شقة (سيول، غرفة نوم واحدة):</strong> 500,000 – 1,000,000 KRW</div>
+                <div><strong>فواتير شهرية:</strong> 150,000 – 250,000 KRW</div>
+                <div><strong>وجبة في مطعم عادي:</strong> 8,000 – 15,000 KRW</div>
+            </div>
+            <p style="margin-top: 15px;">تكاليف المعيشة في سيول هي الأعلى في البلاد، خاصة الإيجار الذي يستهلك جزءاً كبيراً من الدخل. بوسان ومدن أخرى أقل تكلفة وتقدم جودة حياة جيدة.</p>
+        </div>
+
+        <!-- أنواع التأشيرات (وزارة الخارجية الكورية) -->
+        <h2 class="section-title">تأشيرات العمل في كوريا 2026 (وزارة الخارجية)</h2>
+        <div class="visa-box">
+            <h3><i class="fas fa-passport"></i> نظام التأشيرات الكوري</h3>
+            <p>تقدم كوريا عدة أنواع من تأشيرات العمل حسب المجال والمدة والمؤهلات [citation:1][citation:3][citation:5].</p>
+
+            <div class="visa-grid">
+                <div class="visa-type">
+                    <h4>تأشيرة قصيرة الأجل C-4-5</h4>
+                    <p>للعمل لمدة 90 يوماً أو أقل مقابل أجر. تتطلب خطاب دعوة من شركة كورية، عقد عمل، وشهادة تسجيل الشركة. رسوم المعالجة: حوالي 4 أيام عمل إلى أسبوعين [citation:1].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>تأشيرة المهنيين ذوي المهارات العالية (E-7)</h4>
+                    <p>للأجانب العاملين في مجالات متخصصة مثل التكنولوجيا، الهندسة، الإدارة، والتصميم. تتطلب عقد عمل مع شركة كورية، وشهادة جامعية وخبرة. مدة الإقامة: تصل إلى 3 سنوات قابلة للتجديد .</p>
+                </div>
+                <div class="visa-type">
+                    <h4>تأشيرة العمال غير المهرة (E-9)</h4>
+                    <p>للعمل في قطاعات الزراعة، الصناعة، البناء، ومصايد الأسماك. يشترط اجتياز اختبار اللغة الكورية (EPS-TOPIK) والحصول على عقد عمل عبر نظام تصريح العمل. مدة الإقامة: تصل إلى 4 سنوات و 10 أشهر .</p>
+                </div>
+                <div class="visa-type">
+                    <h4>تأشيرة العمل عن بعد (البدو الرقمي) F-1-D</h4>
+                    <p>للأجانب العاملين عن بُعد لدى شركات خارج كوريا. تشترط العمل لدى شركة أجنبية لمدة سنة على الأقل، ودخل يزيد عن ضعف الدخل القومي الإجمالي للفرد (84.96 مليون وون سنوياً). المدة: سنة قابلة للتمديد [citation:3][citation:5].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>تأشيرة الكوريين في الخارج (F-4 الموحدة)</h4>
+                    <p>تم توحيد تأشيرتي H-2 و F-4 في فئة F-4 واحدة، مع السماح لحامليها بالعمل في قطاع البناء كعمال عامة [citation:10].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>تأشيرة الباحثين عن عمل (D-10)</h4>
+                    <p>للأجانب من خريجي الجامعات الكورية أو حملة الشهادات العليا الباحثين عن عمل في مجالات تخصصهم. المدة: 6 أشهر إلى سنتين .</p>
+                </div>
+            </div>
+
+            <h4 style="margin: 15px 0 10px;">إجراءات الحصول على تأشيرة العمل (E-7 كمثال):</h4>
+            <ol style="margin-right: 20px; margin-bottom: 15px;">
+                <li><strong>الحصول على عرض عمل:</strong> من شركة كورية مسجلة لديها ترخيص لتوظيف أجانب.</li>
+                <li><strong>تقديم شهادة الأهلية (Certificate of Eligibility):</strong> صاحب العمل يتقدم بطلب إلى مكتب الهجرة المحلي للحصول على شهادة الأهلية نيابة عن الموظف.</li>
+                <li><strong>تقديم طلب التأشيرة:</strong> يتقدم الموظف بطلب التأشيرة في السفارة الكورية في بلده، مع تقديم شهادة الأهلية وجواز السفر والصور واستمارة الطلب.</li>
+                <li><strong>دفع الرسوم:</strong> حوالي 80-120 دولار حسب الجنسية ونوع التأشيرة [citation:1][citation:3].</li>
+                <li><strong>استلام التأشيرة والسفر:</strong> بعد الموافقة، يمكن السفر إلى كوريا. عند الوصول، يجب تسجيل البصمات واستلام بطاقة تسجيل الأجانب خلال 90 يوماً [citation:3].</li>
+            </ol>
+
+            <h4 style="margin: 15px 0 10px;">المستندات الأساسية:</h4>
             <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #003478;"></i> جواز سفر ساري المفعول (صلاحية ≥ 6 أشهر)</li>
-                <li><i class="fas fa-check-circle" style="color: #003478;"></i> استمارة طلب التأشيرة مع صورة شخصية (خلفية بيضاء)</li>
-                <li><i class="fas fa-check-circle" style="color: #003478;"></i> خطاب دعوة من الشركة الكورية (مع تفاصيل فترة ومدة الزيارة)</li>
-                <li><i class="fas fa-check-circle" style="color: #003478;"></i> شهادة تسجيل الأعمال للشركة الكورية (사업자등록증명) صادرة خلال 3 أشهر</li>
-                <li><i class="fas fa-check-circle" style="color: #003478;"></i> عقد عمل موقع يحدد الراتب والمهام</li>
-                <li><i class="fas fa-check-circle" style="color: #003478;"></i> شهادات علمية مترجمة ومصدقة</li>
-                <li><i class="fas fa-check-circle" style="color: #003478;"></i> شهادة خلو سوابق (للبعض)</li>
-                <li><i class="fas fa-check-circle" style="color: #003478;"></i> الفحص الطبي (بما في ذلك فحص السل) [citation:7]</li>
+                <li><i class="fas fa-check-circle"></i> جواز سفر ساري المفعول (صلاحية لا تقل عن 6 أشهر)</li>
+                <li><i class="fas fa-check-circle"></i> استمارة طلب التأشيرة (مع صورة شخصية حديثة 3.5×4.5 سم، خلفية بيضاء) [citation:3]</li>
+                <li><i class="fas fa-check-circle"></i> شهادة الأهلية (إن وجدت)</li>
+                <li><i class="fas fa-check-circle"></i> عقد العمل أو خطاب الدعوة من الشركة الكورية</li>
+                <li><i class="fas fa-check-circle"></i> الشهادات العلمية والخبرة (مترجمة للكورية أو الإنجليزية)</li>
+                <li><i class="fas fa-check-circle"></i> شهادة خلو سوابق (مصدقة حسب الأصول، مع أبوستيل أو تصديق من السفارة) [citation:3][citation:5]</li>
+                <li><i class="fas fa-check-circle"></i> شهادة فحص السل (TB) لمواطني 35 دولة محددة [citation:5]</li>
+                <li><i class="fas fa-check-circle"></i> شهادة تسجيل الشركة الكورية (사업자등록증명) [citation:1]</li>
             </ul>
-            <p style="margin-top: 15px;">رسوم التأشيرة: تختلف حسب النوع، حوالي 60,000 - 100,000 وون.</p>
+            
+            <h4 style="margin: 15px 0 10px;">الرسوم التقريبية:</h4>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> رسوم التأشيرة: 40-90 دولار (حسب الجنسية والنوع)</li>
+                <li><i class="fas fa-check-circle"></i> رسوم شهادة الأهلية: تختلف حسب النوع</li>
+                <li><i class="fas fa-check-circle"></i> مدة المعالجة: 5-15 يوم عمل [citation:1][citation:3]</li>
+            </ul>
+            
+            <h4 style="margin: 15px 0 10px;">تحذير هام:</h4>
+            <p>لا يمكن العمل في كوريا بتأشيرة سياحية. يجب الحصول على تأشيرة العمل المناسبة قبل السفر [citation:1].</p>
         </div>
 
         <!-- المهارات الأكثر طلباً -->
-        <h2 class="section-title">المهارات الأكثر طلباً في السوق الكوري [citation:7][citation:9]</h2>
-        <div style="margin: 20px 0;">
-            <span class="skill-tag">STEM (علوم، تكنولوجيا، هندسة، رياضيات)</span>
-            <span class="skill-tag">اللغة الكورية (TOPIK 2 للمبتدئين، TOPIK 4 للمتخصصين)</span>
-            <span class="skill-tag">الذكاء الاصطناعي وتعلم الآلة</span>
-            <span class="skill-tag">أشباه الموصلات (Semiconductors)</span>
+        <h2 class="section-title">المهارات الأكثر طلباً في السوق الكوري 2026</h2>
+        <div style="margin: 15px 0;">
+            <span class="skill-tag">اللغة الكورية (TOPIK 4+)</span>
+            <span class="skill-tag">اللغة الإنجليزية (C1)</span>
+            <span class="skill-tag">الذكاء الاصطناعي / تعلم الآلة [citation:2]</span>
+            <span class="skill-tag">تحليل البيانات الضخمة</span>
+            <span class="skill-tag">Java / Python / C++ [citation:6]</span>
             <span class="skill-tag">الأمن السيبراني</span>
-            <span class="skill-tag">تحليل البيانات</span>
-            <span class="skill-tag">إدارة المشاريع</span>
-            <span class="skill-tag">القيادة والتواصل</span>
-            <span class="skill-tag">المرونة والتكيف الثقافي</span>
-            <span class="skill-tag">مهارات العمل الجماعي</span>
+            <span class="skill-tag">إدارة المشاريع (PMP, Agile) [citation:6]</span>
+            <span class="skill-tag">التخطيط الاستراتيجي [citation:2]</span>
+            <span class="skill-tag">هندسة أشباه الموصلات [citation:6]</span>
+            <span class="skill-tag">التسويق الرقمي [citation:6]</span>
+        </div>
+        <p style="margin-top: 10px;">اللغة الكورية هي المهارة الأهم للاندماج في سوق العمل المحلي. معظم الشركات الكورية تطلب مستوى TOPIK 4 على الأقل. المهارات التقنية، خاصة في الذكاء الاصطناعي وتحليل البيانات، ترفع الرواتب بشكل كبير وتفتح أبواباً واسعة في الشركات الكبرى [citation:2].</p>
+
+        <!-- نصائح للباحثين عن عمل -->
+        <div class="requirements-box" style="background: #f0f7ff;">
+            <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في كوريا</h3>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> <strong>تعلم اللغة الكورية مبكراً:</strong> المستوى TOPIK 4 أو أعلى ضروري لمعظم الوظائف. حتى المستوى المتوسط يزيد فرصك بشكل كبير.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استخدم منصات التوظيف المتخصصة:</strong> مثل JobKorea، Saramin، LinkedIn Korea، وPeopleNjob.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استهدف الشركات الكبرى (التشيبول):</strong> مثل سامسونغ، هيونداي، LG، SK، ونيفر، فهي الأكثر دعماً للعمالة الأجنبية.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>تأكد من متطلبات التأشيرة:</strong> راجع موقع السفارة الكورية في بلدك لمعرفة أحدث المتطلبات [citation:1].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>صادق على شهاداتك:</strong> الأبوستيل والترجمة المعتمدة للكورية ضروريان للتأشيرة [citation:3][citation:5].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استعد للفحص الطبي:</strong> يشمل فحص السل (TB) لمواطني بعض الدول [citation:5].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>لا تدفع مقابل عروض العمل:</strong> احذر من شركات التوظيف الوهمية التي تطلب أموالاً مقابل تأمين وظيفة.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>اختر السكن المناسب:</strong> ابحث عن سكن قريب من محطات المترو لتسهيل التنقل.</li>
+            </ul>
         </div>
 
-        <!-- منصات التوظيف الجديدة للأجانب 2026 -->
-        <h2 class="section-title">منصات توظيف جديدة للأجانب في كوريا 2026</h2>
-        
+        <!-- أفضل المدن للعمل -->
+        <h2 class="section-title">أفضل المدن للعمل في كوريا</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">سيول</div>
+                <div class="stat-label">العاصمة وأكبر سوق عمل. مركز التكنولوجيا، المالية، الأعمال، والمقرات الرئيسية. أعلى الرواتب وأعلى إيجارات.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">بوسان</div>
+                <div class="stat-label">ثاني أكبر مدينة، ميناء رئيسي، مركز الصناعة واللوجستيات، تكاليف معيشة أقل.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">إنتشون</div>
+                <div class="stat-label">مدينة مطار دولي، منطقة حرة، مركز لوجستي وصناعي، قرب سيول.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">دايجو</div>
+                <div class="stat-label">مركز صناعة النسيج والإلكترونيات، تكاليف معيشة منخفضة.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">أولسان</div>
+                <div class="stat-label">عاصمة الصناعة الثقيلة، مصافي النفط، شركات السيارات والسفن.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">سوون</div>
+                <div class="stat-label">مدينة التكنولوجيا، مقر شركة سامسونغ للإلكترونيات.</div>
+            </div>
+        </div>
+
+        <!-- إحصائيات سريعة -->
+        <h2 class="section-title">إحصائيات سريعة 2026</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">51.7M</div>
+                <div class="stat-label">عدد السكان</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2.5%</div>
+                <div class="stat-label">معدل البطالة</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">49.47M</div>
+                <div class="stat-label">متوسط رواتب AI (KRW) [citation:2]</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5-15 يوم</div>
+                <div class="stat-label">مدة التأشيرة [citation:1]</div>
+            </div>
+        </div>
+
+        <!-- مواقع التوظيف الرئيسية -->
+        <h2 class="section-title">أهم مواقع التوظيف في كوريا</h2>
         <div class="jobs-grid">
-            <a href="https://www.klik.co.kr" target="_blank" class="job-site-card">
+            <a href="https://www.jobkorea.co.kr" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
                         <i class="fas fa-bolt"></i>
                     </div>
-                    <span class="job-site-name">KLiK (JobKorea)</span>
+                    <span class="job-site-name">JobKorea</span>
                 </div>
-                <div class="job-site-desc">أكبر منصة توظيف للأجانب في كوريا، تدعم 28 لغة مع أكثر من 10,000 فرصة عمل و 1,100 شركة مسجلة. خدمة آمنة مع شركات موثقة من Job Korea و Albamon [citation:3].</div>
-                <div class="job-site-link">www.klik.co.kr <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">أكبر منصة توظيف كورية، تغطي جميع القطاعات [citation:2].</div>
+                <div class="job-site-link">jobkorea.co.kr <i class="fas fa-external-link-alt"></i></div>
             </a>
-
-            <a href="https://www.vijob.net" target="_blank" class="job-site-card">
+            <a href="https://www.saramin.co.kr" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
                         <i class="fas fa-globe"></i>
                     </div>
-                    <span class="job-site-name">Vijob</span>
+                    <span class="job-site-name">Saramin</span>
                 </div>
-                <div class="job-site-desc">منصة توظيف متخصصة تربط الباحثين عن عمل من الخارج بأصحاب العمل الكوريين. توفر ترجمة تلقائية للتواصل وإرشادات قانونية للتوظيف [citation:8][citation:10].</div>
-                <div class="job-site-link">www.vijob.net <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">منصة توظيف رائدة، آلاف الوظائف في جميع القطاعات.</div>
+                <div class="job-site-link">saramin.co.kr <i class="fas fa-external-link-alt"></i></div>
             </a>
-
-            <a href="https://www.glow.clinkers.com" target="_blank" class="job-site-card">
+            <a href="https://www.linkedin.com" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
-                        <i class="fas fa-sun"></i>
+                        <i class="fab fa-linkedin"></i>
                     </div>
-                    <span class="job-site-name">Glow (Clinkers)</span>
+                    <span class="job-site-name">LinkedIn Korea</span>
                 </div>
-                <div class="job-site-desc">تطبيق متكامل للمغتربين في كوريا، يوفر خدمة توظيف بالشراكة مع Wanted Lab، خاصة في مجالات التكنولوجيا والتخطيط والبيانات. يتضمن منتجات مالية مخصصة لحاملي تأشيرة E-7 [citation:6].</div>
-                <div class="job-site-link">www.glow.clinkers.com <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">منصة مهنية عالمية، نشطة بشكل متزايد في كوريا خاصة في قطاع التكنولوجيا.</div>
+                <div class="job-site-link">linkedin.com <i class="fas fa-external-link-alt"></i></div>
             </a>
-        </div>
-
-        <!-- مواقع التوظيف التقليدية -->
-        <h2 class="section-title">مواقع توظيف كورية رئيسية</h2>
-        <div class="jobs-grid">
-            <a href="https://www.saramin.co.kr" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <span class="job-site-name">Saramin (사람인)</span>
-                </div>
-                <div class="job-site-desc">منصة توظيف رائدة، تغطي جميع القطاعات [citation:7].</div>
-                <div class="job-site-link">www.saramin.co.kr <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://www.jobkorea.co.kr" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <span class="job-site-name">JobKorea (잡코리아)</span>
-                </div>
-                <div class="job-site-desc">أحد أكبر مواقع التوظيف، يضم العديد من وظائف قطاع الخدمات [citation:7].</div>
-                <div class="job-site-link">www.jobkorea.co.kr <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
             <a href="https://www.work.go.kr" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
-                        <i class="fas fa-bank"></i>
+                        <i class="fas fa-building"></i>
                     </div>
-                    <span class="job-site-name">WorkNet (고용24)</span>
+                    <span class="job-site-name">WorkNet (خدمة التوظيف الحكومية)</span>
                 </div>
-                <div class="job-site-desc">الموقع الحكومي الرسمي للتوظيف، يوفر قاعدة بيانات وظائف متعددة اللغات [citation:7].</div>
-                <div class="job-site-link">www.work.go.kr <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">المنصة الرسمية للتوظيف التابعة لوزارة العمل الكورية.</div>
+                <div class="job-site-link">work.go.kr <i class="fas fa-external-link-alt"></i></div>
             </a>
-        </div>
-
-        <!-- المواقع الحكومية والرسمية -->
-        <h2 class="section-title">المواقع الحكومية والرسمية</h2>
-        <div class="jobs-grid">
-            <a href="https://www.hikorea.go.kr" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-passport"></i>
-                    </div>
-                    <span class="job-site-name">HiKorea</span>
-                </div>
-                <div class="job-site-desc">الموقع الرسمي لخدمات الهجرة الكورية، تمديد الإقامة وتقديم طلبات التأشيرة [citation:1].</div>
-                <div class="job-site-link">www.hikorea.go.kr <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://www.eps.go.kr" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-bank"></i>
-                    </div>
-                    <span class="job-site-name">EPS Korea</span>
-                </div>
-                <div class="job-site-desc">نظام تصريح التوظيف للعمالة غير الماهرة (E-9)، البوابة الرسمية لتقديم طلبات العمل [citation:7].</div>
-                <div class="job-site-link">www.eps.go.kr <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://www.moel.go.kr" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <span class="job-site-name">Ministry of Employment and Labor</span>
-                </div>
-                <div class="job-site-desc">وزارة التوظيف والعمل – السياسات العمالية وقوانين العمل [citation:1].</div>
-                <div class="job-site-link">www.moel.go.kr <i class="fas fa-external-link-alt"></i></div>
-            </a>
-        </div>
-
-        <!-- الضرائب والتأمينات الاجتماعية -->
-        <div class="requirements-box">
-            <h3><i class="fas fa-file-invoice"></i> الضرائب والتأمينات الاجتماعية في كوريا 2026 [citation:7]</h3>
-            
-            <h4 style="margin: 15px 0 10px;">شرائح ضريبة الدخل (سنوي)</h4>
-            <div class="table-container">
-                <table class="jobs-table">
-                    <tr>
-                        <th>الدخل السنوي (وون)</th>
-                        <th>معدل الضريبة</th>
-                        <th>الخصم الضريبي</th>
-                    </tr>
-                    <tr>
-                        <td>≤ 14,000,000</td>
-                        <td>6%</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>14,000,001 – 50,000,000</td>
-                        <td>15%</td>
-                        <td>126,000 وون</td>
-                    </tr>
-                    <tr>
-                        <td>50,000,001+</td>
-                        <td>24%</td>
-                        <td>582,000 وون</td>
-                    </tr>
-                </table>
-            </div>
-
-            <h4 style="margin: 20px 0 10px;">مساهمات التأمين الاجتماعي (نسبة من الراتب)</h4>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #003478;"></i> <strong>التقاعد (National Pension):</strong> 4.5% من صاحب العمل + 4.5% من الموظف</li>
-                <li><i class="fas fa-check-circle" style="color: #003478;"></i> <strong>التأمين الصحي (Health Insurance):</strong> 3.5% + 3.5%</li>
-                <li><i class="fas fa-check-circle" style="color: #003478;"></i> <strong>التأمين ضد الحوادث (Industrial Accident):</strong> 0.8-1.5% (يدفعها صاحب العمل كاملة)</li>
-            </ul>
-            <p style="margin-top: 15px;">مثال: لراتب 3,000,000 وون شهرياً، يدفع الموظف حوالي 240,000 وون شهرياً للضمان الاجتماعي [citation:7].</p>
-        </div>
-
-        <!-- ثقافة العمل والتحديات -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 40px 0;">
-            <div style="background: white; border-radius: 12px; padding: 25px; border: 1px solid #e2e8f0;">
-                <h3 style="color: #003478; margin-bottom: 15px;">✅ مزايا العمل في كوريا</h3>
-                <ul class="requirements-list">
-                    <li><i class="fas fa-check-circle" style="color: #003478;"></i> <strong>رواتب تنافسية:</strong> تكنولوجيا المعلومات حتى 85 مليون وون سنوياً [citation:9]</li>
-                    <li><i class="fas fa-check-circle" style="color: #003478;"></i> <strong>تأمين صحي شامل:</strong> تغطية 70% من التكاليف [citation:7]</li>
-                    <li><i class="fas fa-check-circle" style="color: #003478;"></i> <strong>إجازات مدفوعة:</strong> 15 يوماً في السنة الأولى [citation:7]</li>
-                    <li><i class="fas fa-check-circle" style="color: #003478;"></i> <strong>تعويض نهاية الخدمة:</strong> شهر عن كل سنة عمل [citation:7]</li>
-                    <li><i class="fas fa-check-circle" style="color: #003478;"></i> <strong>تطور تكنولوجي:</strong> العمل في بيئة متقدمة تقنياً</li>
-                </ul>
-            </div>
-            <div style="background: white; border-radius: 12px; padding: 25px; border: 1px solid #e2e8f0;">
-                <h3 style="color: #003478; margin-bottom: 15px;">⚠️ تحديات للباحثين عن عمل</h3>
-                <ul class="requirements-list">
-                    <li><i class="fas fa-exclamation-triangle" style="color: #003478;"></i> <strong>اللغة الكورية:</strong> ضرورية لمعظم الوظائف (TOPIK 2 على الأقل) [citation:7]</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #003478;"></i> <strong>ساعات العمل الطويلة:</strong> ثقافة العمل تتطلب ساعات إضافية</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #003478;"></i> <strong>التسلسل الهرمي:</strong> احترام الأقدمية في العمل</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #003478;"></i> <strong>المنافسة:</strong> سوق تنافسي خاصة في سيول</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- نصائح للباحثين عن عمل -->
-        <div class="requirements-box" style="background: #f8fafc;">
-            <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في كوريا [citation:7]</h3>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #003478;"></i> <strong>تعلم اللغة الكورية:</strong> اجتياز TOPIK 2 أساسي للوظائف غير الماهرة، و TOPIK 4 للمهن التخصصية [citation:7].</li>
-                <li><i class="fas fa-check-circle" style="color: #003478;"></i> <strong>استخدم التطبيقات الجديدة:</strong> KLiK، Vijob، و Glow توفر واجهات متعددة اللغات وخدمات مخصصة للأجانب [citation:3][citation:6][citation:8].</li>
-                <li><i class="fas fa-check-circle" style="color: #003478;"></i> <strong>تأكد من العقد بالكورية:</strong> يجب أن يحتوي عقد العمل على نسخة كورية تحدد ساعات العمل (≤40 ساعة/أسبوع) وأجر overtime (1.5x) [citation:7].</li>
-                <li><i class="fas fa-check-circle" style="color: #003478;"></i> <strong>الرقم 1350:</strong> خط المساعدة للأجانب في كوريا (متوفر بعدة لغات) لحل مشاكل العمل [citation:7].</li>
-                <li><i class="fas fa-check-circle" style="color: #003478;"></i> <strong>ابحث خارج سيول:</strong> مناطق مثل إنتشون، بوسان، ودايغو تقدم فرصاً جيدة بتكاليف معيشة أقل [citation:9].</li>
-                <li><i class="fas fa-check-circle" style="color: #003478;"></i> <strong>إتقان المصطلحات:</strong> للمهن التقنية، تعلم المصطلحات المتخصصة بالكورية (مثل 소스코드 للبرمجة) [citation:7].</li>
-            </ul>
-        </div>
-
-        <!-- إحصائيات مهمة -->
-        <h2 class="section-title">إحصائيات سوق العمل الكوري 2026</h2>
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-number">500,000+</div>
-                <div class="stat-label">وظيفة شاغرة [citation:9]</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">10,320원</div>
-                <div class="stat-label">الحد الأدنى للأجور/ساعة [citation:1]</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">80,000</div>
-                <div class="stat-label">تأشيرة E-9 (غير ماهرة) [citation:1]</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">109,000</div>
-                <div class="stat-label">تأشيرة E-8 (موسمي) [citation:1]</div>
-            </div>
         </div>
 
         <!-- خدماتنا -->
         <div class="services-section">
-            <h3 style="font-size: 1.5rem; margin-bottom: 20px;">تحتاج مساعدة في التقديم؟</h3>
-            <p style="margin-bottom: 30px;">نقدم لك خدمات احترافية بأسعار رمزية لزيادة فرص قبولك</p>
+            <h3 style="font-size: 1.3rem; margin-bottom: 15px;">🚀 خدماتنا الاحترافية</h3>
+            <p style="margin-bottom: 20px;">نساعدك في تحسين فرصك للحصول على وظيفة في كوريا واجتياز إجراءات التأشيرة</p>
             <div class="services-buttons">
-                <a href="services.html" class="service-btn">تصميم السيرة الذاتية ($9)</a>
-                <a href="services.html" class="service-btn">خطاب تقديم ($7)</a>
-                <a href="services.html" class="service-btn">تسجيل الزوار في المواقع ($10)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-file-alt"></i> سيرة ذاتية ($9)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-envelope"></i> خطاب تقديم ($7)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-user-plus"></i> تسجيل بالمنصات ($10)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-gavel"></i> استشارة تأشيرات ($15)</a>
             </div>
         </div>
     </div>
@@ -842,9 +1012,8 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>وظائف حول العالم</h4>
-                    <p>منصتك الموثوقة للبحث عن فرص عمل في مختلف دول العالم</p>
+                    <p>منصتك الموثوقة للبحث عن فرص عمل في 49 دولة حول العالم.</p>
                 </div>
-                
                 <div class="footer-section">
                     <h4>روابط سريعة</h4>
                     <ul>
@@ -855,45 +1024,6 @@
                         <li><a href="contact.html">اتصل بنا</a></li>
                     </ul>
                 </div>
-                
-                <div class="footer-section">
-                    <h4>الدول</h4>
-                    <ul>
-                        <li><a href="canada.html">كندا</a></li>
-                        <li><a href="germany.html">ألمانيا</a></li>
-                        <li><a href="uae.html">الإمارات</a></li>
-                        <li><a href="australia.html">أستراليا</a></li>
-                        <li><a href="saudi.html">السعودية</a></li>
-                        <li><a href="usa.html">أمريكا</a></li>
-                        <li><a href="france.html">فرنسا</a></li>
-                        <li><a href="spain.html">إسبانيا</a></li>
-                        <li><a href="netherlands.html">هولندا</a></li>
-                        <li><a href="belgium.html">بلجيكا</a></li>
-                        <li><a href="qatar.html">قطر</a></li>
-                        <li><a href="japan.html">اليابان</a></li>
-                        <li><a href="uk.html">بريطانيا</a></li>
-                        <li><a href="kuwait.html">الكويت</a></li>
-                        <li><a href="italy.html">إيطاليا</a></li>
-                        <li><a href="switzerland.html">سويسرا</a></li>
-                        <li><a href="austria.html">النمسا</a></li>
-                        <li><a href="norway.html">النرويج</a></li>
-                        <li><a href="denmark.html">الدنمارك</a></li>
-                        <li><a href="sweden.html">السويد</a></li>
-                        <li><a href="finland.html">فنلندا</a></li>
-                        <li><a href="ireland.html">أيرلندا</a></li>
-                        <li><a href="portugal.html">البرتغال</a></li>
-                        <li><a href="bahrain.html">البحرين</a></li>
-                        <li><a href="oman.html">عمان</a></li>
-                        <li><a href="egypt.html">مصر</a></li>
-                        <li><a href="malaysia.html">ماليزيا</a></li>
-                        <li><a href="china.html">الصين</a></li>
-                        <li><a href="singapore.html">سنغافورة</a></li>
-                        <li><a href="newzealand.html">نيوزيلندا</a></li>
-                        <li><a href="turkey.html">تركيا</a></li>
-                        <li><a href="southkorea.html">كوريا الجنوبية</a></li>
-                    </ul>
-                </div>
-
                 <div class="footer-section">
                     <h4>سياسة الموقع</h4>
                     <ul>
@@ -901,23 +1031,21 @@
                         <li><a href="terms.html">اتفاقية الاستخدام</a></li>
                     </ul>
                 </div>
-
-                <!-- صفحة فيسبوك -->
                 <div class="footer-section">
                     <h4>تابعنا</h4>
                     <div class="social-links">
                         <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook"></i> فيسبوك</a>
+                        <a href="https://wa.me/212669411021" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
                     </div>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة</p>
+                <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة | آخر تحديث: مارس 2026</p>
             </div>
         </div>
     </footer>
 
-    <!-- كود الإعلان Social Bar -->
+    <!-- كود الإعلان Social Bar - قبل إغلاق body -->
     <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 </body>
 </html>
