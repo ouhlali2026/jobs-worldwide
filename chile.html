@@ -2,10 +2,10 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>فرص عمل في تشيلي 2026 | المهن المطلوبة والتأشيرات والرواتب في سانتياغو</title>
-    <meta name="description" content="دليلك الشامل للعمل في تشيلي 2026: المهن الأكثر طلباً (تعدين، تكنولوجيا، زراعة)، رواتب محدثة حسب القطاع، إجراءات تأشيرات العمل في سانتياغو وفالبارايسو، ونصائح للباحثين عن عمل.">
-    <meta name="keywords" content="فرص عمل في تشيلي, وظائف تشيلي 2026, تأشيرة عمل تشيلي, العمل في سانتياغو, المهن المطلوبة في تشيلي, رواتب المهندسين في تشيلي, الهجرة إلى تشيلي, تعدين في تشيلي, العمل في أمريكا اللاتينية">
+    <meta name="description" content="تشيلي 2026: دليلك الشامل للعمل في تشيلي. المهن الأكثر طلباً (تعدين، تكنولوجيا، طاقة)، رواتب محدثة حسب القطاع، تأشيرات العمل الجديدة (قانون 21.325)، ونصائح للباحثين عن عمل.">
+    <meta name="keywords" content="فرص عمل في تشيلي, وظائف تشيلي 2026, تأشيرة عمل تشيلي, العمل في سانتياغو, رواتب المهندسين في تشيلي, الهجرة إلى تشيلي, التعدين في تشيلي, قانون العمل التشيلي">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,79 +26,102 @@
             --chile-white: #FFFFFF;
         }
         
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
         body {
             font-family: 'Cairo', sans-serif;
             background-color: #f9f9f9;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
+            width: 100%;
         }
         
         .country-header {
             background: linear-gradient(135deg, var(--chile-blue), var(--chile-red));
             color: white;
-            padding: 40px 15px;
+            padding: clamp(20px, 5vw, 30px) 15px;
             text-align: center;
             position: relative;
             overflow: hidden;
+            width: 100%;
         }
         
         .country-header h1 {
-            font-size: 2.2rem;
+            font-size: clamp(1.4rem, 5vw, 2rem);
             margin-bottom: 10px;
             position: relative;
-            color: var(--chile-white);
+            color: white;
             background: rgba(0,0,0,0.2);
             display: inline-block;
-            padding: 8px 20px;
+            padding: 5px 12px;
             border-radius: 50px;
             font-weight: 700;
             word-break: break-word;
+            max-width: 95%;
+            line-height: 1.3;
         }
         
         .country-header p {
-            font-size: 1rem;
+            font-size: clamp(0.8rem, 2.5vw, 0.95rem);
             opacity: 0.95;
             position: relative;
-            color: var(--chile-white);
+            color: white;
             background: rgba(0,0,0,0.2);
             display: inline-block;
-            padding: 5px 15px;
+            padding: 5px 10px;
             border-radius: 30px;
-            max-width: 90%;
-            margin: 10px auto;
+            max-width: 95%;
+            margin: 8px auto;
+            line-height: 1.5;
         }
         
         .country-info {
             display: flex;
             justify-content: center;
-            gap: 15px;
-            margin: 25px 5px;
+            gap: 8px;
+            margin: 15px 0 0;
             flex-wrap: wrap;
+            width: 100%;
         }
         
         .info-badge {
             background: white;
             color: var(--chile-blue);
-            padding: 8px 18px;
+            padding: 6px 12px;
             border-radius: 50px;
             font-weight: 600;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            font-size: 0.9rem;
-            display: flex;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-size: clamp(0.7rem, 2.5vw, 0.8rem);
+            display: inline-flex;
             align-items: center;
             gap: 5px;
+            white-space: nowrap;
+        }
+        
+        @media (max-width: 480px) {
+            .info-badge {
+                white-space: normal;
+                font-size: 0.7rem;
+                padding: 4px 8px;
+            }
         }
         
         .info-badge i {
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
         
         .section-title {
-            font-size: 1.6rem;
+            font-size: clamp(1.3rem, 5vw, 1.8rem);
             color: #1e293b;
-            margin: 30px 0 15px;
+            margin: 25px 0 15px;
             position: relative;
-            padding-right: 15px;
+            padding-right: 12px;
+            line-height: 1.3;
         }
         
         .section-title::before {
@@ -107,7 +130,7 @@
             right: 0;
             top: 0;
             bottom: 0;
-            width: 5px;
+            width: 4px;
             background: var(--chile-red);
             border-radius: 5px;
         }
@@ -116,91 +139,50 @@
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 15px;
+            padding: 0 12px;
             box-sizing: border-box;
+            overflow-x: hidden;
         }
         
-        /* تحسينات الجوال */
+        /* تحسينات الجوال - دقيقة جداً */
         @media (max-width: 768px) {
-            .country-header h1 {
-                font-size: 1.8rem;
-                padding: 8px 12px;
+            .country-header {
+                padding: 20px 10px;
             }
-            
-            .country-header p {
-                font-size: 0.9rem;
-            }
-            
-            .section-title {
-                font-size: 1.4rem;
-            }
-            
-            .info-badge {
-                padding: 6px 12px;
-                font-size: 0.8rem;
-            }
-            
-            .jobs-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .visa-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .jobs-table {
-                font-size: 0.85rem;
-            }
-            
-            .jobs-table th, .jobs-table td {
-                padding: 8px 5px;
-            }
-            
-            .requirements-list li {
-                font-size: 0.9rem;
-            }
-            
-            .service-btn {
-                width: 100%;
-                text-align: center;
+            .container {
+                padding: 0 10px;
             }
         }
         
         @media (max-width: 480px) {
-            .stats-grid {
-                grid-template-columns: 1fr;
+            .country-header h1 {
+                font-size: 1.4rem;
+                padding: 5px 10px;
             }
-            
-            .country-info {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .info-badge {
-                width: fit-content;
+            .section-title {
+                font-size: 1.2rem;
+                padding-right: 10px;
             }
         }
         
         .jobs-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 15px;
-            margin: 25px 0;
+            margin: 20px 0;
+            width: 100%;
         }
         
         .job-site-card {
             background: white;
             border-radius: 12px;
-            padding: 20px;
+            padding: 15px;
             border: 1px solid #e2e8f0;
             transition: all 0.3s ease;
             text-decoration: none;
             color: inherit;
             display: block;
+            width: 100%;
         }
         
         .job-site-card:hover {
@@ -212,35 +194,37 @@
         .job-site-header {
             display: flex;
             align-items: center;
-            gap: 12px;
-            margin-bottom: 12px;
+            gap: 10px;
+            margin-bottom: 10px;
         }
         
         .job-site-icon {
-            width: 45px;
-            height: 45px;
-            background: #ffeae8;
-            border-radius: 12px;
+            width: 40px;
+            height: 40px;
+            background: #ffe0e0;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-shrink: 0;
         }
         
         .job-site-icon i {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             color: var(--chile-red);
         }
         
         .job-site-name {
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 600;
             color: #1e293b;
+            word-break: break-word;
         }
         
         .job-site-desc {
             color: #64748b;
-            font-size: 0.9rem;
-            margin-bottom: 12px;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
             line-height: 1.5;
         }
         
@@ -249,62 +233,70 @@
             align-items: center;
             gap: 5px;
             color: var(--chile-red);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            word-break: break-word;
         }
         
         .visa-box {
             background: #f8fafc;
             border-radius: 16px;
-            padding: 25px 20px;
-            margin: 25px 0;
+            padding: 20px 15px;
+            margin: 20px 0;
             border: 2px dashed var(--chile-blue);
+            width: 100%;
         }
         
         .visa-box h3 {
             color: #1e293b;
-            font-size: 1.3rem;
-            margin-bottom: 15px;
+            font-size: clamp(1.1rem, 4vw, 1.3rem);
+            margin-bottom: 12px;
             display: flex;
             align-items: center;
             gap: 8px;
+            line-height: 1.3;
         }
         
         .visa-box i {
-            color: var(--chile-blue);
-            font-size: 1.3rem;
+            color: var(--chile-red);
+            font-size: 1.2rem;
+            flex-shrink: 0;
         }
         
         .visa-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 15px;
             margin: 15px 0;
+            width: 100%;
         }
         
         .visa-type {
             background: white;
-            padding: 18px;
+            padding: 15px;
             border-radius: 12px;
             border: 1px solid #e2e8f0;
+            width: 100%;
         }
         
         .visa-type h4 {
             color: var(--chile-red);
             margin-bottom: 8px;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
         
         .visa-type p {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             color: #334155;
             line-height: 1.5;
         }
         
         .table-container {
             overflow-x: auto;
-            margin: 20px 0;
+            margin: 15px 0;
             border-radius: 12px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            -webkit-overflow-scrolling: touch;
+            width: 100%;
         }
         
         .jobs-table {
@@ -313,46 +305,53 @@
             background: white;
             border-radius: 12px;
             overflow: hidden;
-            min-width: 600px;
+            min-width: 550px;
         }
         
         .jobs-table th {
             background: var(--chile-blue);
             color: white;
-            padding: 12px 10px;
+            padding: 10px 8px;
             text-align: right;
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+            white-space: nowrap;
         }
         
         .jobs-table td {
-            padding: 10px;
+            padding: 10px 8px;
             border-bottom: 1px solid #e2e8f0;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
         
         .jobs-table tr:last-child td {
             border-bottom: none;
         }
         
-        .jobs-table tr:hover {
-            background: #f0f0ff;
+        @media (max-width: 600px) {
+            .jobs-table th, .jobs-table td {
+                padding: 8px 6px;
+                font-size: 0.8rem;
+            }
         }
         
         .requirements-box {
-            background: #f0f0ff;
+            background: #ffe0e0;
             border-right: 4px solid var(--chile-red);
-            padding: 25px 20px;
+            padding: 20px 15px;
             border-radius: 16px;
-            margin: 30px 0;
+            margin: 20px 0;
+            width: 100%;
         }
         
         .requirements-box h3 {
             color: #1e293b;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             display: flex;
             align-items: center;
             gap: 8px;
+            font-size: clamp(1.1rem, 4vw, 1.3rem);
+            line-height: 1.3;
         }
         
         .requirements-list {
@@ -362,40 +361,38 @@
         }
         
         .requirements-list li {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             display: flex;
             align-items: flex-start;
-            gap: 10px;
+            gap: 8px;
             line-height: 1.5;
+            font-size: 0.9rem;
         }
         
         .requirements-list i {
             color: var(--chile-red);
             margin-top: 3px;
-            min-width: 18px;
+            min-width: 16px;
         }
         
         .back-link {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             color: var(--chile-red);
             text-decoration: none;
-            margin: 20px 0;
+            margin: 15px 0;
             font-weight: 500;
-            padding: 8px 15px;
-            background: #ffeae8;
+            padding: 6px 12px;
+            background: #ffe0e0;
             border-radius: 30px;
-        }
-        
-        .back-link:hover {
-            background: #ffd5d0;
+            font-size: 0.9rem;
         }
         
         .flag-icon {
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: white;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
         }
         
@@ -404,95 +401,99 @@
             background: white;
             color: var(--chile-red);
             padding: 5px 12px;
-            border-radius: 30px;
+            border-radius: 40px;
             margin: 4px;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             border: 1px solid var(--chile-red);
             transition: all 0.2s;
-        }
-        
-        .skill-tag:hover {
-            background: var(--chile-red);
-            color: white;
+            font-weight: 500;
         }
         
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
             gap: 12px;
-            margin: 20px 0;
+            margin: 15px 0;
+            width: 100%;
         }
         
         .stat-card {
             background: white;
-            padding: 18px 10px;
+            padding: 15px 8px;
             border-radius: 16px;
             text-align: center;
             border: 1px solid #e2e8f0;
             box-shadow: 0 2px 8px rgba(213,43,30,0.05);
+            width: 100%;
         }
         
         .stat-number {
-            font-size: 1.6rem;
+            font-size: 1.3rem;
             font-weight: 700;
-            color: var(--chile-blue);
+            color: var(--chile-red);
             line-height: 1.2;
         }
         
         .stat-label {
             color: #64748b;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             margin-top: 5px;
         }
         
         .services-section {
-            background: #f0f0ff;
+            background: #ffe0e0;
             border-radius: 24px;
-            padding: 30px 20px;
-            margin: 40px 0;
+            padding: 25px 15px;
+            margin: 30px 0;
             text-align: center;
+            width: 100%;
         }
         
         .services-buttons {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             justify-content: center;
             flex-wrap: wrap;
-            margin-top: 25px;
+            margin-top: 20px;
+            width: 100%;
         }
         
         .service-btn {
             background: var(--chile-blue);
             color: white;
-            padding: 12px 25px;
+            padding: 10px 20px;
             border-radius: 50px;
             text-decoration: none;
-            transition: background 0.3s;
+            transition: all 0.3s;
             font-weight: 500;
+            font-size: 0.9rem;
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
+            border: none;
+            cursor: pointer;
+            flex: 0 1 auto;
         }
         
         .service-btn:hover {
-            background: #002b80;
+            background: #002a7a;
         }
         
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
             .services-buttons {
                 flex-direction: column;
             }
-        }
-        
-        /* تحسينات القوائم والهوامش */
-        ul, ol {
-            padding-right: 20px;
+            .service-btn {
+                width: 100%;
+                justify-content: center;
+            }
         }
         
         .navbar {
             background: white;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            padding: 12px 0;
+            padding: 10px 0;
+            width: 100%;
         }
         
         .nav-content {
@@ -501,25 +502,27 @@
             align-items: center;
             flex-wrap: wrap;
             gap: 10px;
+            width: 100%;
         }
         
         .logo {
             display: flex;
             align-items: center;
             gap: 8px;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 700;
-            color: var(--chile-blue);
+            color: var(--chile-red);
             text-decoration: none;
         }
         
         .nav-links {
             display: flex;
-            gap: 20px;
+            gap: 15px;
             list-style: none;
             margin: 0;
             padding: 0;
             flex-wrap: wrap;
+            font-size: 0.9rem;
         }
         
         .nav-links a {
@@ -537,8 +540,8 @@
         @media (max-width: 768px) {
             .nav-content {
                 flex-direction: column;
+                align-items: center;
             }
-            
             .nav-links {
                 justify-content: center;
             }
@@ -547,20 +550,22 @@
         footer {
             background: #1e293b;
             color: white;
-            padding: 40px 0 20px;
-            margin-top: 40px;
+            padding: 30px 0 15px;
+            margin-top: 30px;
+            width: 100%;
         }
         
         .footer-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            margin-bottom: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+            width: 100%;
         }
         
         .footer-section h4 {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
+            margin-bottom: 12px;
+            font-size: 1rem;
         }
         
         .footer-section ul {
@@ -569,7 +574,8 @@
         }
         
         .footer-section li {
-            margin-bottom: 8px;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
         }
         
         .footer-section a {
@@ -579,17 +585,33 @@
         
         .social-links a {
             display: inline-block;
-            margin-left: 10px;
+            margin-left: 8px;
             color: white;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
         
         .footer-bottom {
             text-align: center;
-            padding-top: 20px;
+            padding-top: 15px;
             border-top: 1px solid #334155;
             color: #94a3b8;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
+        }
+        
+        @media (max-width: 480px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+        
+        /* إصلاحات إضافية لمنع التمرير الأفقي */
+        img, iframe, video, table, div {
+            max-width: 100%;
+        }
+        p, h1, h2, h3, h4, h5, h6, li, td, th {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
     </style>
 </head>
@@ -619,10 +641,10 @@
         <div class="container">
             <i class="fas fa-flag flag-icon"></i>
             <h1>🇨🇱 فرص عمل في تشيلي 2026 🇨🇱</h1>
-            <p>الدليل الكامل للعمل في سانتياغو، فالبارايسو، أنتوفاغاستا وجميع المدن التشيلية</p>
+            <p>الدليل الكامل للعمل في سانتياغو، فالبارايسو، أنتوفاغاستا وجميع المدن التشيلية – تحديثات مارس 2026</p>
             
             <div class="country-info">
-                <span class="info-badge"><i class="fas fa-hard-hat"></i> تعدين - نحاس</span>
+                <span class="info-badge"><i class="fas fa-hard-hat"></i> تعدين (نحاس)</span>
                 <span class="info-badge"><i class="fas fa-language"></i> الإسبانية أساسية</span>
                 <span class="info-badge"><i class="fas fa-money-bill-wave"></i> بيزو تشيلي (CLP)</span>
             </div>
@@ -637,12 +659,11 @@
         <!-- لمحة عامة عن سوق العمل التشيلي -->
         <div class="visa-box">
             <h3><i class="fas fa-chart-line"></i> نظرة على سوق العمل في تشيلي 2026</h3>
-            <p>تعد تشيلي واحدة من أكثر اقتصادات أمريكا اللاتينية استقراراً وانفتاحاً، وهي عضو في منظمة التعاون الاقتصادي والتنمية (OECD). يعتمد اقتصادها بشكل رئيسي على ثرواتها المعدنية، فهي أكبر منتج للنحاس في العالم. هذا القطاع يخلق آلاف الوظائف للمهندسين والفنيين، ليس فقط في المناجم، بل في الخدمات المساندة والطاقة.</p>
-            <p>في السنوات الأخيرة، برزت العاصمة سانتياغو كمركز تكنولوجي مهم، حيث تستقطب الشركات الناشئة والمستثمرين، مما زاد الطلب على مطوري البرمجيات وخبراء الأمن السيبراني وتحليل البيانات. كما أن قطاعي الزراعة والثروة السمكية يوفران فرصاً موسمية ودائمة في المناطق الجنوبية.</p>
-            <p>سوق العمل التشيلي منفتح على الأجانب، لكن اللغة الإسبانية تعد مفتاحاً أساسياً للاندماج والحصول على وظائف جيدة، خاصة خارج الشركات العالمية الكبرى.</p>
+            <p>تشيلي هي واحدة من أقوى الاقتصادات في أمريكا اللاتينية، وتتميز باستقرارها السياسي والاقتصادي الذي يجذب الباحثين عن عمل من جميع أنحاء العالم. يعتمد الاقتصاد التشيلي بشكل كبير على قطاع التعدين، حيث تُعتبر البلاد أكبر منتج للنحاس في العالم [citation:1]. إلى جانب التعدين، تشهد قطاعات التكنولوجيا والطاقة المتجددة والزراعة نمواً ملحوظاً، مما يخلق فرصاً واعدة للكفاءات الأجنبية [citation:3].</p>
+            <p>تشيلي تمتلك جالية عربية (خاصة من أصول فلسطينية) هي الأكبر خارج الشرق الأوسط، مما يخلق بيئة داعمة للمشاريع الصغيرة والمتوسطة ويسهل اندماج الوافدين العرب [citation:1]. اللغة الإسبانية هي المفتاح الأساسي للاندماج والحصول على فرص عمل جيدة، رغم أن اللغة الإنجليزية قد تكفي في بعض الشركات العالمية الكبرى الموجودة في العاصمة سانتياغو [citation:1].</p>
         </div>
 
-        <!-- المهن الأكثر طلباً والرواتب -->
+        <!-- المهن الأكثر طلباً والرواتب في تشيلي 2026 -->
         <h2 class="section-title">المهن الأكثر طلباً والرواتب في تشيلي 2026</h2>
         
         <div class="table-container">
@@ -658,162 +679,195 @@
                     <td>التعدين (النحاس)</td>
                     <td>مهندسو تعدين، جيولوجيون، مشغلو معدات ثقيلة، فنيو صيانة، مشرفو سلامة</td>
                     <td>1,200,000 – 1,800,000</td>
-                    <td>1,800,000 – 2,800,000</td>
-                    <td>2,800,000 – 4,000,000+</td>
+                    <td>2,500,000 – 3,500,000</td>
+                    <td>4,000,000+</td>
                 </tr>
                 <tr>
                     <td>تكنولوجيا المعلومات</td>
-                    <td>مهندسو برمجيات (Python, Java, .NET)، علماء بيانات، مهندسو أمن سيبراني، مهندسو ذكاء اصطناعي</td>
+                    <td>مهندسو برمجيات (Java, Python)، علماء بيانات، مهندسو أمن سيبراني، مطورو تطبيقات</td>
                     <td>1,200,000 – 1,800,000</td>
-                    <td>1,800,000 – 2,800,000</td>
-                    <td>2,800,000 – 4,000,000+</td>
+                    <td>2,000,000 – 3,000,000</td>
+                    <td>3,500,000+</td>
                 </tr>
                 <tr>
-                    <td>الهندسة والبناء</td>
-                    <td>مهندسو مدني، كهرباء، ميكانيكا، معماريون، مساحو كميات، مشرفو مشاريع</td>
+                    <td>الهندسة (مختلفة)</td>
+                    <td>مهندسو مدني، كهرباء، ميكانيكا، طاقة متجددة، مشاريع</td>
                     <td>1,000,000 – 1,500,000</td>
-                    <td>1,500,000 – 2,200,000</td>
-                    <td>2,200,000 – 3,500,000+</td>
+                    <td>1,800,000 – 2,500,000</td>
+                    <td>3,000,000+</td>
                 </tr>
                 <tr>
                     <td>الرعاية الصحية</td>
-                    <td>أطباء عامون وأخصائيون، ممرضون، صيادلة، فنيو مختبرات</td>
+                    <td>أطباء (مع معادلة الشهادات)، ممرضون، صيادلة، أخصائيو علاج طبيعي</td>
                     <td>1,200,000 – 1,800,000</td>
-                    <td>1,800,000 – 2,800,000</td>
-                    <td>2,800,000 – 4,500,000+</td>
+                    <td>2,500,000 – 3,500,000</td>
+                    <td>4,000,000+</td>
                 </tr>
                 <tr>
-                    <td>الزراعة والثروة السمكية</td>
-                    <td>مهندسو زراعة، فنيو تربية أسماك، مشرفو تصدير، عمال موسميون</td>
-                    <td>600,000 – 900,000</td>
-                    <td>900,000 – 1,500,000</td>
-                    <td>1,500,000 – 2,500,000+</td>
+                    <td>الزراعة والصناعات الغذائية</td>
+                    <td>مهندسو زراعة، فنيو أغذية، مشرفو مزارع، عمال موسميون</td>
+                    <td>550,000 – 750,000</td>
+                    <td>900,000 – 1,400,000</td>
+                    <td>1,800,000 – 2,500,000</td>
                 </tr>
                 <tr>
-                    <td>التعليم (الإنجليزية)</td>
-                    <td>مدرسو لغة إنجليزية للمعاهد والشركات</td>
-                    <td>800,000 – 1,200,000</td>
-                    <td>1,200,000 – 1,800,000</td>
-                    <td>1,800,000 – 2,500,000+</td>
+                    <td>التجارة والخدمات</td>
+                    <td>مدراء مبيعات، متخصصو تسويق، محاسبون، موظفو خدمة عملاء</td>
+                    <td>600,000 – 850,000</td>
+                    <td>900,000 – 1,300,000</td>
+                    <td>1,500,000 – 2,500,000</td>
                 </tr>
             </table>
-            <p style="margin-top: 5px;">المصادر: وزارة العمل التشيلية، منصات التوظيف المحلية.</p>
+            <p style="margin-top: 5px;">المصادر: دراسة الدليل الشامل 2026 [citation:1]، موقع فرص الهجرة 2026 [citation:3].</p>
         </div>
 
-        <!-- الحد الأدنى للأجور وتفاصيل مالية -->
+        <!-- الحد الأدنى للأجور والاستقطاعات -->
         <div class="visa-box">
-            <h3><i class="fas fa-coins"></i> الحد الأدنى للأجور والاستقطاعات</h3>
+            <h3><i class="fas fa-coins"></i> الحد الأدنى للأجور والاستقطاعات 2026</h3>
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-number">500,000</div>
-                    <div class="stat-label">حد أدنى شهري (CLP)</div>
+                    <div class="stat-number">530,000</div>
+                    <div class="stat-label">الحد الأدنى (CLP)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">~560</div>
+                    <div class="stat-label">بالدولار (USD)</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">17%</div>
-                    <div class="stat-label">استقطاعات إجبارية (تقريباً)</div>
+                    <div class="stat-label">استقطاعات إجبارية</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">7%</div>
-                    <div class="stat-label">تأمين صحي (FONASA/ISAPRE)</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">10%</div>
-                    <div class="stat-label">تقاعد (AFP)</div>
+                    <div class="stat-number">760,000</div>
+                    <div class="stat-label">متوسط الراتب الصافي</div>
                 </div>
             </div>
-            <p style="margin-top: 15px;">يُلاحظ أن الراتب المذكور في العقد هو إجمالي، ويتم خصم نسبة مئوية للضمان الاجتماعي والتأمين الصحي والتقاعد. لذا فإن الراتب الصافي يكون أقل بنحو 15-17%.</p>
+            <p style="margin-top: 15px;">الحد الأدنى للأجور في تشيلي لعام 2026 يبلغ حوالي 530,000 بيزو تشيلي شهرياً، أي ما يعادل 540 إلى 560 دولاراً أمريكياً [citation:1][citation:3]. يجب الانتباه إلى أن نظام العمل في تشيلي يتضمن استقطاعات إجبارية للتأمين الصحي (7%) وصندوق التقاعد (حوالي 10%)، مما يعني أن الراتب "الصافي" الذي يستلمه الموظف يكون أقل بنحو 15-17% من الراتب الإجمالي المتفق عليه في العقد [citation:1]. متوسط الراتب الصافي في سانتياغو يبلغ حوالي 760,000 بيزو [citation:4].</p>
         </div>
 
-        <!-- تكلفة المعيشة -->
+        <!-- تكلفة المعيشة في تشيلي -->
+        <h2 class="section-title">تكلفة المعيشة في تشيلي 2026</h2>
         <div class="requirements-box">
-            <h3><i class="fas fa-home"></i> تكلفة المعيشة في المدن الرئيسية</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
-                <div><strong>سانتياغو:</strong> 750,000 - 1,300,000 CLP شهرياً (إيجار + طعام + مواصلات)</div>
-                <div><strong>فالبارايسو:</strong> 650,000 - 1,000,000 CLP</div>
-                <div><strong>أنتوفاغاستا:</strong> 700,000 - 1,100,000 CLP</div>
-                <div><strong>كونسبسيون:</strong> 600,000 - 950,000 CLP</div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+                <div><strong>سانتياغو (شخص واحد):</strong> 800,000 – 1,200,000 CLP</div>
+                <div><strong>سانتياغو (عائلة 4 أفراد):</strong> 2,400,000 – 3,000,000 CLP</div>
+                <div><strong>إيجار شقة (وسط سانتياغو):</strong> 530,000 – 900,000 CLP</div>
+                <div><strong>إيجار شقة (خارج الوسط):</strong> 400,000 – 700,000 CLP</div>
+                <div><strong>فواتير شهرية (كهرباء، ماء، إنترنت):</strong> 135,000 – 200,000 CLP</div>
+                <div><strong>وجبة في مطعم عادي:</strong> 10,000 – 15,000 CLP</div>
+                <div><strong>تذكرة مواصلات عامة:</strong> 820 CLP</div>
+                <div><strong>اشتراك شهري للمترو:</strong> 40,500 CLP</div>
             </div>
-            <p style="margin-top: 10px;">الإيجار هو أكبر بند في المصاريف، خاصة في العاصمة. مشاركة السكن مع آخرين خيار شائع لتقليل التكاليف.</p>
+            <p style="margin-top: 15px;">تكاليف المعيشة في سانتياغو تعتبر مرتفعة نسبياً مقارنة بمدن أمريكا اللاتينية الأخرى [citation:8]. الإيجار هو أكبر بند في الميزانية، خاصة في الأحياء الراقية مثل لاس كونديس وبروفيدنسيا [citation:5]. يمكن لشخص أعزب أن يعيش حياة كريمة بميزانية تبدأ من 800 دولار، بينما تحتاج العائلات إلى ما بين 1,500 إلى 2,200 دولار للحفاظ على مستوى معيشي متوسط ومريح [citation:1].</p>
+        </div>
+
+        <!-- معلومات عن أحياء سانتياغو للمغتربين -->
+        <div class="visa-box">
+            <h3><i class="fas fa-map-marker-alt"></i> أفضل أحياء سانتياغو للمغتربين 2026</h3>
+            <div class="visa-grid">
+                <div class="visa-type">
+                    <h4>لاس كونديس (Las Condes)</h4>
+                    <p>من أكثر الأحياء الراقية والأماناً، يفضله المغتربون والعائلات. يضم منطقة إل غولف (El Golf) التجارية ومكاتب الشركات الكبرى والمدارس الدولية [citation:5].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>فيتاكورا (Vitacura)</h4>
+                    <p>حي فاخر يضم مطاعم راقية ومتاجر فاخرة، قريب من المدارس الدولية مثل Nido de Aguilas. مناسب للعائلات ذات الدخل المرتفع [citation:5].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>بروفيدنسيا (Providencia)</h4>
+                    <p>حي مركزي نابض بالحياة، قريب من وسط المدينة، يضم محطات مترو ومطاعم ومقاهي. مناسب للمغتربين الشباب والعزاب [citation:5].</p>
+                </div>
+                <div class="visa-type">
+                    <h4>نيونوا (Ñuñoa)</h4>
+                    <p>حي ناشئ يجذب المغتربين، يتميز بأجواء محلية هادئة وأسعار إيجار أقل من لاس كونديس وفيتاكورا، مع قرب من وسط المدينة [citation:5].</p>
+                </div>
+            </div>
+            <p style="margin-top: 10px;">الأحياء المذكورة تعتبر الأكثر أماناً للمغتربين في سانتياغو، مع توفر جميع الخدمات والمرافق [citation:5].</p>
         </div>
 
         <!-- أنواع التأشيرات وإجراءات العمل -->
-        <h2 class="section-title">تأشيرات العمل في تشيلي</h2>
+        <h2 class="section-title">تأشيرات العمل في تشيلي 2026</h2>
         <div class="visa-box">
-            <h3><i class="fas fa-passport"></i> أنواع التأشيرات الرئيسية</h3>
+            <h3><i class="fas fa-passport"></i> قانون الهجرة الجديد (Ley 21.325)</h3>
+            <p>منذ 2022، تخضع الهجرة إلى تشيلي لقانون جديد هو <strong>Ley 21.325 de Migración y Extranjería</strong>، والذي أحدث تغييرات جوهرية في إجراءات الحصول على تأشيرات العمل [citation:7]. لم يعد من الممكن (في معظم الحالات) الدخول كسائح ثم تغيير الحالة إلى عامل من داخل البلاد كما كان في السابق، بل يجب التقديم عبر المنصة الإلكترونية لمديرية الهجرة (Servicio Nacional de Migraciones) [citation:1].</p>
             
+            <h4 style="margin: 20px 0 10px;">أنواع التأشيرات الرئيسية:</h4>
             <div class="visa-grid">
                 <div class="visa-type">
-                    <h4>تأشيرة العقد (Sujeto a Contrato)</h4>
-                    <p>الأكثر شيوعاً، تصدر بناءً على عقد عمل مع شركة تشيلية. تسمح بالإقامة والعمل لمدة تصل إلى سنتين، قابلة للتجديد. يمكن للزوجة والأبناء الحصول على إقامة تبعية مع حق العمل.</p>
-                    <div class="price" style="font-weight:600; margin-top:8px;">مدة المعالجة: 6-8 أشهر</div>
+                    <h4>تأشيرة الإقامة المؤقتة (Residencia Temporal)</h4>
+                    <p>تصدر لمدة تصل إلى <strong>سنتين</strong> (قابلة للتمديد)، وهي من أكثر التأشيرات شيوعاً للعمال الأجانب. تمنح بناءً على عقد عمل مع شركة تشيلية [citation:2].</p>
                 </div>
                 <div class="visa-type">
-                    <h4>تأشيرة العمل الحر (Temporaria)</h4>
-                    <p>للعاملين لحسابهم الخاص أو المستقلين الذين يثبتون دخلاً كافياً. مدة الإقامة سنة قابلة للتجديد.</p>
+                    <h4>تأشيرة العمل الموسمي</h4>
+                    <p>للعمال الموسميين في قطاعات الزراعة أو السياحة، تصدر لمدة تصل إلى 5 سنوات، مع شرط ألا تتجاوز مدة الإقامة 6 أشهر في كل سنة تقويمية [citation:2].</p>
                 </div>
                 <div class="visa-type">
-                    <h4>تأشيرة المهنيين (Profesionales)</h4>
-                    <p>تستهدف الأكاديميين والباحثين والخبرات المتميزة، وتتميز بمعالجة أسرع.</p>
-                </div>
-                <div class="visa-type">
-                    <h4>تأشيرة البحث عن عمل</h4>
-                    <p>تأشيرة مؤقتة لمدة 90 يوماً للقدوم إلى تشيلي والبحث عن عمل. في حال الحصول على عقد، يتم تحويلها إلى تأشيرة عقد.</p>
+                    <h4>تأشيرة لم الشمل (Dependiente)</h4>
+                    <p>لأفراد عائلة حامل تأشيرة الإقامة المؤقتة، حيث ترتبط مدة إقامتهم بإقامة الكفيل [citation:2].</p>
                 </div>
             </div>
 
-            <h4 style="margin: 20px 0 10px;">خطوات الحصول على تأشيرة العقد:</h4>
-            <ol style="margin-right: 20px; margin-bottom: 20px;">
-                <li><strong>الحصول على عقد عمل موثق:</strong> يجب أن يكون العقد موقعاً أمام كاتب عدل تشيلي (Notario).</li>
-                <li><strong>تقديم الطلب إلكترونياً:</strong> عبر موقع خدمة الهجرة (SERVICIO NACIONAL DE MIGRACIONES).</li>
-                <li><strong>رفع المستندات المطلوبة:</strong> يتم رفعها بصيغة PDF.</li>
-                <li><strong>الانتظار للموافقة:</strong> قد تستغرق المعالجة 6-8 أشهر.</li>
-                <li><strong>دخول تشيلي:</strong> بعد الموافقة، لديك 90 يوماً للدخول.</li>
-                <li><strong>استخراج بطاقة الهوية (RUT):</strong> خلال 30 يوماً من الوصول، يجب التوجه إلى السجل المدني.</li>
-            </ol>
-
-            <h4 style="margin: 20px 0 10px;">المستندات المطلوبة:</h4>
+            <h4 style="margin: 20px 0 10px;">المستندات المطلوبة لتأشيرة الإقامة المؤقتة:</h4>
             <ul class="requirements-list">
-                <li><i class="fas fa-check-circle"></i> جواز سفر ساري المفعول (صلاحية لا تقل عن سنة)</li>
-                <li><i class="fas fa-check-circle"></i> عقد عمل موثق (مترجم للإسبانية إذا كان بلغة أخرى)</li>
-                <li><i class="fas fa-check-circle"></i> شهادة خلو سوابق من بلدك (مصدقة بأبوستيل ومترجمة)</li>
-                <li><i class="fas fa-check-circle"></i> الشهادات العلمية (مصدقة بأبوستيل ومترجمة)</li>
-                <li><i class="fas fa-check-circle"></i> صور شخصية</li>
-                <li><i class="fas fa-check-circle"></i> تأمين صحي ساري المفعول في تشيلي</li>
-                <li><i class="fas fa-check-circle"></i> إثبات خبرة (شهادات من أرباب العمل السابقين)</li>
+                <li><i class="fas fa-check-circle"></i> <strong>جواز سفر ساري المفعول:</strong> لمدة لا تقل عن سنة من تاريخ التقديم [citation:2].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>شهادة خلو سوابق عدلية:</strong> من بلد المنشأ أو البلد الذي أقامت فيه خلال الخمس سنوات الماضية، مصدقة بالأبوستيل ومترجمة للإسبانية، على ألا يزيد تاريخ إصدارها عن 60 يوماً [citation:2].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>صورة شخصية حديثة:</strong> بخلفية بيضاء، مواجهة للكاميرا، بدون نظارات أو أغطية رأس [citation:2].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>عقد عمل موثق:</strong> موقع أمام كاتب عدل في تشيلي من قبل صاحب العمل [citation:1].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>الشهادات العلمية:</strong> مصدقة بالأبوستيل ومترجمة للإسبانية (للوظائف التخصصية) [citation:1].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>إثبات القدرة المالية:</strong> أو إثبات أن صاحب العمل سيقوم بتغطية النفقات [citation:2].</li>
             </ul>
 
+            <h4 style="margin: 20px 0 10px;">خطوات التقديم:</h4>
+            <ol style="margin-right: 20px; margin-bottom: 15px;">
+                <li><strong>التقديم عبر المنصة الإلكترونية:</strong> يتم تقديم الطلب عبر بوابة SERMIG الإلكترونية (بالإسبانية فقط) [citation:2].</li>
+                <li><strong>دفع الرسوم:</strong> قبل إتمام التقديم، يجب دفع الرسوم عبر بوابة Tesorería General de la República (TGR) [citation:2].</li>
+                <li><strong>انتظار المراجعة:</strong> قد تطلب الهجرة مستندات إضافية خلال فترة المعالجة.</li>
+                <li><strong>الموافقة والتحميل الإلكتروني:</strong> بعد الموافقة، يتم تحميل التأشيرة الإلكترونية (Estampado Electrónico) [citation:2].</li>
+                <li><strong>الدخول إلى تشيلي:</strong> بعد الحصول على الموافقة، لديك 90 يوماً للدخول إلى البلاد [citation:2].</li>
+                <li><strong>استخراج بطاقة الهوية (RUT):</strong> بعد الوصول، يجب استخراج بطاقة الهوية التشيلية (RUT)، وهي الوثيقة الأهم التي تتيح فتح حساب بنكي والتعاقد على الخدمات [citation:1].</li>
+            </ol>
+            
+            <h4 style="margin: 20px 0 10px;">أسباب رفض التأشيرة:</h4>
+            <ul class="requirements-list">
+                <li><i class="fas fa-exclamation-triangle"></i> عدم استيفاء متطلبات الفئة المطلوبة [citation:2].</li>
+                <li><i class="fas fa-exclamation-triangle"></i> تقديم وثائق مزورة أو إدلاء بتصريحات كاذبة [citation:2].</li>
+                <li><i class="fas fa-exclamation-triangle"></i> عدم القدرة على إثبات وسائل العيش الكافية [citation:2].</li>
+                <li><i class="fas fa-exclamation-triangle"></i> وجود مخالفات سابقة للالتزامات الضريبية أو الضمان الاجتماعي [citation:2].</li>
+            </ul>
+            
             <h4 style="margin: 20px 0 10px;">الرسوم التقريبية:</h4>
             <ul class="requirements-list">
-                <li><i class="fas fa-check-circle"></i> رسوم التأشيرة: 150 - 250 دولار (حسب الجنسية)</li>
-                <li><i class="fas fa-check-circle"></i> رسوم التصديق والترجمة: تختلف حسب البلد</li>
+                <li><i class="fas fa-check-circle"></i> رسوم التأشيرة: حوالي 150 دولار [citation:1].</li>
+                <li><i class="fas fa-check-circle"></i> مدة المعالجة: تختلف حسب الحالة، قد تستغرق عدة أشهر [citation:1].</li>
             </ul>
         </div>
 
         <!-- المهارات الأكثر طلباً -->
-        <h2 class="section-title">المهارات الأكثر طلباً في السوق التشيلي</h2>
-        <div style="margin: 20px 0;">
-            <span class="skill-tag">الإسبانية (محادثة)</span>
-            <span class="skill-tag">إدارة مشاريع التعدين</span>
-            <span class="skill-tag">بايثون / تحليل البيانات</span>
+        <h2 class="section-title">المهارات الأكثر طلباً في السوق التشيلي 2026</h2>
+        <div style="margin: 15px 0;">
+            <span class="skill-tag">اللغة الإسبانية (B2/C1)</span>
+            <span class="skill-tag">هندسة التعدين</span>
+            <span class="skill-tag">البرمجة (Python, Java, SQL)</span>
+            <span class="skill-tag">تحليل البيانات</span>
             <span class="skill-tag">الأمن السيبراني</span>
-            <span class="skill-tag">صيانة المعدات الثقيلة</span>
-            <span class="skill-tag">اللغة الإنجليزية (للشركات العالمية)</span>
-            <span class="skill-tag">الزراعة المستدامة</span>
-            <span class="skill-tag">التسويق الرقمي</span>
-            <span class="skill-tag">القيادة وإدارة الفرق</span>
+            <span class="skill-tag">الطاقة المتجددة</span>
+            <span class="skill-tag">إدارة المشاريع (PMP, Agile)</span>
+            <span class="skill-tag">المهارات الحرفية (كهرباء، سباكة)</span>
+            <span class="skill-tag">اللغة الإنجليزية (للكبرى الشركات)</span>
         </div>
-        <p style="margin-top: 5px;">اللغة الإسبانية هي المهارة الأولى التي يجب أن يمتلكها الأجنبي. بدونها، تقل فرص العمل بشكل كبير. في قطاع التعدين، تزداد الحاجة للخبرة الفنية والشهادات المعترف بها دولياً.</p>
+        <p style="margin-top: 10px;">اللغة الإسبانية هي استثمارك الأكبر في تشيلي. حتى لو كانت لغتك متوسطة، فإن محاولتك التحدث بلغتهم تفتح لك أبواباً مغلقة [citation:1]. في قطاع التعدين والتكنولوجيا، الخبرات الفنية والشهادات المعترف بها دولياً مطلوبة بشدة.</p>
 
         <!-- نصائح للباحثين عن عمل -->
-        <div class="requirements-box" style="background: #f0f0ff;">
+        <div class="requirements-box" style="background: #ffe0e0;">
             <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في تشيلي</h3>
             <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: var(--chile-red);"></i> <strong>تعلم الإسبانية:</strong> ابدأ بدورة مكثفة قبل السفر، فمعظم إعلانات الوظائف ومقابلات العمل ستكون بالإسبانية.</li>
-                <li><i class="fas fa-check-circle" style="color: var(--chile-red);"></i> <strong>صادق على شهاداتك مبكراً:</strong> عملية الأبوستيل (Apostille) قد تستغرق عدة أسابيع، وهي ضرورية للاعتراف بمؤهلاتك.</li>
-                <li><i class="fas fa-check-circle" style="color: var(--chile-red);"></i> <strong>استخدم مواقع التوظيف المحلية:</strong> Laborum.cl، Trabajando.cl، و LinkedIn Chile هي الأكثر فعالية.</li>
-                <li><i class="fas fa-check-circle" style="color: var(--chile-red);"></i> <strong>تواصل مع الجاليات:</strong> توجد جالية عربية كبيرة في تشيلي، خاصة من أصول فلسطينية، يمكن أن تساعدك في إيجاد فرص.</li>
-                <li><i class="fas fa-check-circle" style="color: var(--chile-red);"></i> <strong>لا تدفع مقابل عروض العمل:</strong> احذر من شركات التوظيف الوهمية التي تطلب أموالاً مقابل إيهامك بوجود وظيفة.</li>
-                <li><i class="fas fa-check-circle" style="color: var(--chile-red);"></i> <strong>احصل على رقم التعريف الضريبي (RUT):</strong> بمجرد وصولك، ستحتاج إلى RUT لفتح حساب بنكي والتوقيع على العقد.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>تعلم الإسبانية قبل السفر:</strong> هي المفتاح الأساسي للاندماج والحصول على وظائف جيدة. المستوى B2 هو الحد الأدنى المطلوب للوظائف المهنية [citation:1].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>ابحث عبر المواقع المحلية:</strong> استخدم منصات Laborum.cl و LinkedIn Chile و Indeed Chile، وتواصل مع أصحاب العمل قبل السفر لضمان وجود عرض وظيفي قانوني [citation:1][citation:6].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>صادق على شهاداتك مبكراً:</strong> الأبوستيل والترجمة المعتمدة للإسبانية ضروريان للتأشيرة، وقد تستغرق وقتاً [citation:1][citation:2].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استعد للفحص الأمني:</strong> تأكد من خلو صحيفتك من السوابق العدلية، حيث يتم فحصها بدقة [citation:2].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>اختر الحي المناسب:</strong> ابحث عن سكن في الأحياء الآمنة مثل بروفيدنسيا أو لاس كونديس أو فيتاكورا، خاصة خلال الأشهر الأولى [citation:5].</li>
+                <li><i class="fas fa-check-circle"></i> <strong>لا تدفع مقابل عروض العمل:</strong> احذر من شركات التوظيف الوهمية التي تطلب أموالاً لتأمين وظيفة.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>تأكد من التسجيل في الضمان الاجتماعي:</strong> يجب على صاحب العمل دفع مساهماتك في صندوق التقاعد (AFP) والتأمين الصحي (FONASA) بانتظام [citation:1].</li>
             </ul>
         </div>
 
@@ -822,85 +876,84 @@
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-number">سانتياغو</div>
-                <div class="stat-label">العاصمة وأكبر سوق عمل. مركز الشركات، التكنولوجيا، الخدمات المالية، والتعليم. الرواتب الأعلى وتكاليف المعيشة الأعلى.</div>
+                <div class="stat-label">العاصمة وأكبر سوق عمل. مركز التكنولوجيا، المالية، الأعمال، والخدمات. أعلى الرواتب وأعلى إيجارات [citation:1].</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">أنتوفاغاستا</div>
-                <div class="stat-label">عاصمة التعدين في الشمال، فرص كبيرة للمهندسين والفنيين في قطاع النحاس.</div>
+                <div class="stat-label">عاصمة التعدين في شمال البلاد، فرص كبيرة للمهندسين والفنيين في قطاع النحاس. رواتب عالية وتكاليف معيشة أقل من سانتياغو [citation:1].</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">فالبارايسو</div>
-                <div class="stat-label">مدينة ساحلية، قطاع سياحي وخدمات، وجامعات عريقة. مناظر خلابة.</div>
+                <div class="stat-label">مدينة ساحلية رئيسية، ميناء مهم، قطاع سياحي وخدمات، وجامعات عريقة. تكاليف معيشة أقل من العاصمة [citation:1].</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">كونسبسيون</div>
-                <div class="stat-label">مركز صناعي وزراعي في الجنوب، فرص في الغابات ومصانع اللب والورق.</div>
+                <div class="stat-label">مركز صناعي وزراعي في الجنوب، فرص في قطاع الغابات ومصانع اللب والورق والصناعات الثقيلة [citation:1].</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">لا سيرينا</div>
-                <div class="stat-label">مدينة سياحية متنامية، فرص في الخدمات والبناء.</div>
+                <div class="stat-number">لا سيرينا / كوبيا بو</div>
+                <div class="stat-label">مدن سياحية نامية، فرص في قطاع السياحة والخدمات والبناء، مع تكاليف معيشة معقولة.</div>
             </div>
         </div>
 
         <!-- مزايا وتحديات العمل في تشيلي -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 40px 0;">
-            <div style="background: white; border-radius: 16px; padding: 25px; border: 1px solid #e2e8f0;">
-                <h3 style="color: var(--chile-blue); margin-bottom: 15px;">✅ مزايا العمل في تشيلي</h3>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 25px 0;">
+            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
+                <h3 style="color: var(--chile-blue); margin-bottom: 10px;">✅ المزايا</h3>
                 <ul class="requirements-list">
-                    <li><i class="fas fa-check-circle" style="color: var(--chile-blue);"></i> <strong>اقتصاد مستقر:</strong> من أكثر اقتصادات أمريكا اللاتينية أماناً.</li>
-                    <li><i class="fas fa-check-circle" style="color: var(--chile-blue);"></i> <strong>رواتب تنافسية إقليمياً:</strong> خاصة في قطاعي التعدين والتكنولوجيا.</li>
-                    <li><i class="fas fa-check-circle" style="color: var(--chile-blue);"></i> <strong>بنية تحتية متطورة:</strong> مترو، طرق، إنترنت عالي السرعة.</li>
-                    <li><i class="fas fa-check-circle" style="color: var(--chile-blue);"></i> <strong>تنوع طبيعي:</strong> صحارى، ثلوج، شواطئ، بحيرات – كل شيء قريب.</li>
-                    <li><i class="fas fa-check-circle" style="color: var(--chile-blue);"></i> <strong>انفتاح على الأجانب:</strong> قوانين هجرة واضحة وتسهيلات للعمالة الماهرة.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--chile-blue);"></i> <strong>اقتصاد مستقر:</strong> من أكثر اقتصادات أمريكا اللاتينية أماناً واستقراراً [citation:1].</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--chile-blue);"></i> <strong>رواتب تنافسية:</strong> أعلى الرواتب في أمريكا الجنوبية، خاصة في قطاعي التعدين والتكنولوجيا [citation:3].</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--chile-blue);"></i> <strong>نظام قانوني منظم:</strong> إجراءات هجرة واضحة بموجب قانون 21.325 [citation:7].</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--chile-blue);"></i> <strong>جودة حياة جيدة:</strong> نظام صحي جيد (خاصة المستشفيات الخاصة مثل UC CHRISTUS) [citation:5]، بيئة آمنة نسبياً في الأحياء الراقية.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--chile-blue);"></i> <strong>تنوع طبيعي:</strong> من صحراء أتاكاما إلى جبال الأنديز والمحيط الهادئ، مناظر طبيعية خلابة [citation:1].</li>
                 </ul>
             </div>
-            <div style="background: white; border-radius: 16px; padding: 25px; border: 1px solid #e2e8f0;">
-                <h3 style="color: var(--chile-red); margin-bottom: 15px;">⚠️ تحديات للباحثين عن عمل</h3>
+            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
+                <h3 style="color: #e67e22; margin-bottom: 10px;">⚠️ التحديات</h3>
                 <ul class="requirements-list">
-                    <li><i class="fas fa-exclamation-triangle" style="color: var(--chile-red);"></i> <strong>حاجز اللغة:</strong> الإسبانية ضرورية، ونادراً ما تجد وظيفة تتطلب الإنجليزية فقط.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: var(--chile-red);"></i> <strong>البيروقراطية:</strong> إجراءات التأشيرة قد تستغرق شهوراً، والإجراءات الحكومية بطيئة أحياناً.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: var(--chile-red);"></i> <strong>غلاء المعيشة:</strong> سانتياغو من أغلى مدن أمريكا اللاتينية.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: var(--chile-red);"></i> <strong>المنافسة:</strong> تدفق العمالة من فنزويلا وبيرو وكولومبيا يزيد التنافس على الوظائف.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: var(--chile-red);"></i> <strong>الاستقطاعات الإجبارية:</strong> الراتب الصافي أقل بنسبة 15-17% من الإجمالي.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>ارتفاع تكاليف المعيشة:</strong> خاصة في سانتياغو، الإيجار والخدمات مرتفعة [citation:8].</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>اللغة الإسبانية أساسية:</strong> قلة الوظائف التي تكتفي بالإنجليزية [citation:1].</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>الجريمة البسيطة:</strong> سرقة الهواتف والجرائم البسيطة في بعض المناطق، يجب أخذ الحيطة [citation:5].</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>البيروقراطية:</strong> إجراءات الهجرة قد تستغرق وقتاً طويلاً [citation:1].</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>الاستقطاعات الإجبارية:</strong> الراتب الصافي أقل بنسبة 15-17% من الإجمالي بسبب مساهمات الضمان الاجتماعي [citation:1].</li>
                 </ul>
             </div>
         </div>
 
-        <!-- إحصائيات مهمة -->
-        <h2 class="section-title">إحصائيات سوق العمل التشيلي 2026</h2>
+        <!-- إحصائيات سريعة -->
+        <h2 class="section-title">إحصائيات سريعة 2026</h2>
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-number">19.5M</div>
+                <div class="stat-number">19.8M</div>
                 <div class="stat-label">عدد السكان</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">500,000</div>
+                <div class="stat-number">530,000</div>
                 <div class="stat-label">الحد الأدنى (CLP)</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">6-8 شهور</div>
-                <div class="stat-label">مدة التأشيرة</div>
+                <div class="stat-number">760,000</div>
+                <div class="stat-label">متوسط الراتب [citation:4]</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">17%</div>
-                <div class="stat-label">استقطاعات الراتب</div>
+                <div class="stat-number">1.6M</div>
+                <div class="stat-label">أجانب في تشيلي [citation:5]</div>
             </div>
         </div>
 
         <!-- مواقع التوظيف الرئيسية -->
-        <h2 class="section-title">أهم مواقع التوظيف في تشيلي</h2>
+        <h2 class="section-title">مواقع توظيف موثوقة</h2>
         <div class="jobs-grid">
-            <a href="https://www.linkedin.com" target="_blank" class="job-site-card">
+            <a href="https://www.linkedin.com/jobs/chile-jobs" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
                         <i class="fab fa-linkedin"></i>
                     </div>
-                    <span class="job-site-name">LinkedIn</span>
+                    <span class="job-site-name">LinkedIn Chile</span>
                 </div>
-                <div class="job-site-desc">المنصة الأكثر استخداماً للوظائف المهنية في تشيلي، خاصة للشركات متعددة الجنسيات.</div>
-                <div class="job-site-link">www.linkedin.com <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">أكبر منصة مهنية، آلاف الوظائف في جميع القطاعات، خاصة للشركات متعددة الجنسيات [citation:6].</div>
+                <div class="job-site-link">linkedin.com <i class="fas fa-external-link-alt"></i></div>
             </a>
-
             <a href="https://www.laborum.cl" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
@@ -908,10 +961,9 @@
                     </div>
                     <span class="job-site-name">Laborum</span>
                 </div>
-                <div class="job-site-desc">أقدم وأشهر موقع توظيف محلي، يغطي جميع القطاعات.</div>
-                <div class="job-site-link">www.laborum.cl <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">أقدم وأشهر موقع توظيف محلي في تشيلي، يغطي جميع القطاعات [citation:1].</div>
+                <div class="job-site-link">laborum.cl <i class="fas fa-external-link-alt"></i></div>
             </a>
-
             <a href="https://www.trabajando.cl" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
@@ -919,10 +971,9 @@
                     </div>
                     <span class="job-site-name">Trabajando</span>
                 </div>
-                <div class="job-site-desc">منصة توظيف شعبية، تتيح إنشاء سيرة ذاتية والتقديم للوظائف.</div>
-                <div class="job-site-link">www.trabajando.cl <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">منصة توظيف شعبية، تغطي جميع القطاعات والمناطق.</div>
+                <div class="job-site-link">trabajando.cl <i class="fas fa-external-link-alt"></i></div>
             </a>
-
             <a href="https://www.indeed.cl" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
@@ -930,19 +981,20 @@
                     </div>
                     <span class="job-site-name">Indeed Chile</span>
                 </div>
-                <div class="job-site-desc">محرك بحث عالمي للوظائف، يضم آلاف الإعلانات عن فرص عمل في تشيلي.</div>
-                <div class="job-site-link">www.indeed.cl <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-desc">محرك بحث عالمي للوظائف، يضم آلاف الإعلانات من مصادر متعددة.</div>
+                <div class="job-site-link">indeed.cl <i class="fas fa-external-link-alt"></i></div>
             </a>
         </div>
 
         <!-- خدماتنا -->
         <div class="services-section">
-            <h3 style="font-size: 1.5rem; margin-bottom: 20px;">تحتاج مساعدة في التقديم؟</h3>
-            <p style="margin-bottom: 30px;">نقدم لك خدمات احترافية بأسعار رمزية لزيادة فرص قبولك</p>
+            <h3 style="font-size: 1.3rem; margin-bottom: 15px;">🚀 خدماتنا الاحترافية</h3>
+            <p style="margin-bottom: 20px;">نساعدك في تحسين فرصك للحصول على وظيفة في تشيلي واجتياز إجراءات التأشيرة</p>
             <div class="services-buttons">
-                <a href="services.html" class="service-btn"><i class="fas fa-file-alt"></i> تصميم السيرة الذاتية ($9)</a>
-                <a href="services.html" class="service-btn"><i class="fas fa-envelope"></i> كتابة خطاب تقديم ($7)</a>
-                <a href="services.html" class="service-btn"><i class="fas fa-user-plus"></i> تسجيل في مواقع التوظيف ($10)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-file-alt"></i> سيرة ذاتية ($9)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-envelope"></i> خطاب تقديم ($7)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-user-plus"></i> تسجيل بالمنصات ($10)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-gavel"></i> استشارة تأشيرات ($15)</a>
             </div>
         </div>
     </div>
@@ -953,9 +1005,8 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>وظائف حول العالم</h4>
-                    <p>منصتك الموثوقة للبحث عن فرص عمل في مختلف دول العالم</p>
+                    <p>منصتك الموثوقة للبحث عن فرص عمل في 49 دولة حول العالم.</p>
                 </div>
-                
                 <div class="footer-section">
                     <h4>روابط سريعة</h4>
                     <ul>
@@ -966,7 +1017,6 @@
                         <li><a href="contact.html">اتصل بنا</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
                     <h4>سياسة الموقع</h4>
                     <ul>
@@ -974,23 +1024,21 @@
                         <li><a href="terms.html">اتفاقية الاستخدام</a></li>
                     </ul>
                 </div>
-
-                <!-- صفحة فيسبوك -->
                 <div class="footer-section">
                     <h4>تابعنا</h4>
                     <div class="social-links">
                         <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook"></i> فيسبوك</a>
+                        <a href="https://wa.me/212669411021" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
                     </div>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة</p>
+                <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة | آخر تحديث: مارس 2026</p>
             </div>
         </div>
     </footer>
 
-    <!-- كود الإعلان Social Bar -->
+    <!-- كود الإعلان Social Bar - قبل إغلاق body -->
     <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 </body>
 </html>
