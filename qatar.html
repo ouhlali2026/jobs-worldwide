@@ -2,10 +2,10 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فرص عمل في قطر 2026 | المهن المطلوبة والتأشيرات والرواتب</title>
-    <meta name="description" content="دليلك الشامل للعمل في قطر 2026: أحدث قانون العمل (رقم 18 لسنة 2024)، المهن الأكثر طلباً (تكنولوجيا، هندسة، صحة، بناء)، رواتب محدثة حسب القطاع، إجراءات التأشيرات والإقامة، ونصائح للباحثين عن عمل.">
-    <meta name="keywords" content="فرص عمل في قطر, وظائف قطر 2026, تأشيرة عمل قطر, تصريح عمل قطر, المهن المطلوبة في قطر, العمل في الدوحة, رواتب المهندسين في قطر, قانون العمل القطري الجديد, الهجرة إلى قطر">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>فرص عمل في قطر 2026 | المهن المطلوبة والتأشيرات والرواتب في الدوحة</title>
+    <meta name="description" content="قطر 2026: دليلك الشامل للعمل في قطر. المهن الأكثر طلباً (تكنولوجيا، هندسة، رعاية صحية، نفط)، رواتب محدثة، تأشيرات العمل (قانون 18 لسنة 2024)، ونصائح للباحثين عن عمل.">
+    <meta name="keywords" content="فرص عمل في قطر, وظائف قطر 2026, تأشيرة عمل قطر, العمل في الدوحة, رواتب المهندسين في قطر, الهجرة إلى قطر, قانون العمل القطري الجديد, تأشيرة قطر">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,61 +19,109 @@
     <link rel="stylesheet" href="style.css">
     
     <style>
-        /* تنسيقات خاصة بصفحة قطر */
+        /* تنسيقات خاصة بصفحة قطر - مستوحاة من ألوان العلم 🇶🇦 */
+        :root {
+            --qatar-maroon: #8B1E3F;
+            --qatar-white: #FFFFFF;
+            --qatar-border: #C0C0C0;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            width: 100%;
+        }
+        
         .country-header {
-            background: linear-gradient(135deg, #8B1E3F, #FFFFFF);
+            background: linear-gradient(135deg, var(--qatar-maroon), #4a1022);
             color: white;
-            padding: 60px 0;
+            padding: clamp(20px, 5vw, 30px) 15px;
             text-align: center;
             position: relative;
             overflow: hidden;
+            width: 100%;
         }
         
         .country-header h1 {
-            font-size: 2.5rem;
+            font-size: clamp(1.5rem, 6vw, 2.2rem);
             margin-bottom: 10px;
             position: relative;
-            color: #1e293b;
-            background: rgba(255,255,255,0.9);
+            color: white;
+            background: rgba(0,0,0,0.2);
             display: inline-block;
-            padding: 10px 30px;
+            padding: 5px 15px;
             border-radius: 50px;
+            font-weight: 700;
+            word-break: break-word;
+            max-width: 95%;
+            line-height: 1.3;
         }
         
         .country-header p {
-            font-size: 1.1rem;
+            font-size: clamp(0.85rem, 3vw, 1rem);
             opacity: 0.95;
             position: relative;
-            color: #1e293b;
-            background: rgba(255,255,255,0.8);
+            color: white;
+            background: rgba(0,0,0,0.2);
             display: inline-block;
-            padding: 5px 20px;
+            padding: 5px 12px;
             border-radius: 30px;
+            max-width: 95%;
+            margin: 8px auto;
+            line-height: 1.5;
         }
         
         .country-info {
             display: flex;
             justify-content: center;
-            gap: 30px;
-            margin: 30px 0;
+            gap: 8px;
+            margin: 15px 0 0;
             flex-wrap: wrap;
+            width: 100%;
         }
         
         .info-badge {
             background: white;
-            color: #8B1E3F;
-            padding: 10px 25px;
+            color: var(--qatar-maroon);
+            padding: 6px 12px;
             border-radius: 50px;
             font-weight: 600;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-size: clamp(0.7rem, 2.5vw, 0.8rem);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap;
+        }
+        
+        @media (max-width: 480px) {
+            .info-badge {
+                white-space: normal;
+                font-size: 0.7rem;
+                padding: 4px 8px;
+            }
+        }
+        
+        .info-badge i {
+            font-size: 0.8rem;
         }
         
         .section-title {
-            font-size: 1.8rem;
+            font-size: clamp(1.3rem, 5vw, 1.8rem);
             color: #1e293b;
-            margin: 40px 0 20px;
+            margin: 25px 0 15px;
             position: relative;
-            padding-right: 15px;
+            padding-right: 12px;
+            line-height: 1.3;
         }
         
         .section-title::before {
@@ -82,283 +130,488 @@
             right: 0;
             top: 0;
             bottom: 0;
-            width: 5px;
-            background: #8B1E3F;
+            width: 4px;
+            background: var(--qatar-maroon);
             border-radius: 5px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 12px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        
+        /* تحسينات الجوال - دقيقة جداً */
+        @media (max-width: 768px) {
+            .country-header {
+                padding: 20px 10px;
+            }
+            .container {
+                padding: 0 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .country-header h1 {
+                font-size: 1.4rem;
+                padding: 5px 10px;
+            }
+            .section-title {
+                font-size: 1.2rem;
+                padding-right: 10px;
+            }
         }
         
         .jobs-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+            width: 100%;
         }
         
         .job-site-card {
             background: white;
             border-radius: 12px;
-            padding: 25px;
+            padding: 15px;
             border: 1px solid #e2e8f0;
             transition: all 0.3s ease;
             text-decoration: none;
             color: inherit;
             display: block;
+            width: 100%;
         }
         
         .job-site-card:hover {
             transform: translateY(-5px);
-            border-color: #8B1E3F;
+            border-color: var(--qatar-maroon);
             box-shadow: 0 10px 25px rgba(139,30,63,0.1);
         }
         
         .job-site-header {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
+            gap: 10px;
+            margin-bottom: 10px;
         }
         
         .job-site-icon {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             background: #fce4e9;
-            border-radius: 12px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-shrink: 0;
         }
         
         .job-site-icon i {
-            font-size: 1.8rem;
-            color: #8B1E3F;
+            font-size: 1.4rem;
+            color: var(--qatar-maroon);
         }
         
         .job-site-name {
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 600;
             color: #1e293b;
+            word-break: break-word;
         }
         
         .job-site-desc {
             color: #64748b;
-            font-size: 0.95rem;
-            margin-bottom: 15px;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            line-height: 1.5;
         }
         
         .job-site-link {
             display: inline-flex;
             align-items: center;
             gap: 5px;
-            color: #8B1E3F;
-            font-size: 0.95rem;
+            color: var(--qatar-maroon);
+            font-size: 0.85rem;
+            word-break: break-word;
         }
         
         .visa-box {
             background: #f8fafc;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 30px 0;
-            border: 2px dashed #8B1E3F;
+            border-radius: 16px;
+            padding: 20px 15px;
+            margin: 20px 0;
+            border: 2px dashed var(--qatar-maroon);
+            width: 100%;
         }
         
         .visa-box h3 {
             color: #1e293b;
-            font-size: 1.3rem;
-            margin-bottom: 15px;
+            font-size: clamp(1.1rem, 4vw, 1.3rem);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            line-height: 1.3;
         }
         
         .visa-box i {
-            color: #8B1E3F;
+            color: var(--qatar-maroon);
             font-size: 1.2rem;
+            flex-shrink: 0;
         }
         
         .visa-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+            width: 100%;
         }
         
         .visa-type {
             background: white;
-            padding: 20px;
-            border-radius: 8px;
+            padding: 15px;
+            border-radius: 12px;
             border: 1px solid #e2e8f0;
+            width: 100%;
         }
         
         .visa-type h4 {
-            color: #8B1E3F;
-            margin-bottom: 5px;
+            color: var(--qatar-maroon);
+            margin-bottom: 8px;
+            font-size: 1rem;
         }
         
-        .visa-type .price {
-            font-weight: 600;
-            color: #1e293b;
-            margin-top: 10px;
-        }
-        
-        .visa-type .fee {
+        .visa-type p {
             font-size: 0.9rem;
-            color: #64748b;
-            margin-top: 5px;
+            color: #334155;
+            line-height: 1.5;
         }
         
         .table-container {
             overflow-x: auto;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            -webkit-overflow-scrolling: touch;
+            width: 100%;
         }
         
         .jobs-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
             background: white;
-            border-radius: 8px;
+            border-radius: 12px;
             overflow: hidden;
+            min-width: 550px;
         }
         
         .jobs-table th {
-            background: #8B1E3F;
+            background: var(--qatar-maroon);
             color: white;
-            padding: 12px;
+            padding: 10px 8px;
             text-align: right;
+            font-weight: 600;
+            font-size: 0.9rem;
+            white-space: nowrap;
         }
         
         .jobs-table td {
-            padding: 12px;
+            padding: 10px 8px;
             border-bottom: 1px solid #e2e8f0;
+            font-size: 0.85rem;
         }
         
         .jobs-table tr:last-child td {
             border-bottom: none;
         }
         
-        .jobs-table tr:hover {
-            background: #fef0f5;
+        @media (max-width: 600px) {
+            .jobs-table th, .jobs-table td {
+                padding: 8px 6px;
+                font-size: 0.8rem;
+            }
         }
         
         .requirements-box {
-            background: #f0f5ff;
-            border-right: 4px solid #8B1E3F;
-            padding: 30px;
-            border-radius: 12px;
-            margin: 30px 0;
+            background: #fce4e9;
+            border-right: 4px solid var(--qatar-maroon);
+            padding: 20px 15px;
+            border-radius: 16px;
+            margin: 20px 0;
+            width: 100%;
         }
         
         .requirements-box h3 {
             color: #1e293b;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: clamp(1.1rem, 4vw, 1.3rem);
+            line-height: 1.3;
         }
         
         .requirements-list {
             list-style: none;
+            padding: 0;
+            margin: 0;
         }
         
         .requirements-list li {
             margin-bottom: 10px;
             display: flex;
-            align-items: center;
-            gap: 10px;
+            align-items: flex-start;
+            gap: 8px;
+            line-height: 1.5;
+            font-size: 0.9rem;
         }
         
         .requirements-list i {
-            color: #8B1E3F;
+            color: var(--qatar-maroon);
+            margin-top: 3px;
+            min-width: 16px;
         }
         
         .back-link {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            color: #8B1E3F;
+            gap: 6px;
+            color: var(--qatar-maroon);
             text-decoration: none;
-            margin: 20px 0;
+            margin: 15px 0;
             font-weight: 500;
-        }
-        
-        .back-link:hover {
-            color: #333;
+            padding: 6px 12px;
+            background: #fce4e9;
+            border-radius: 30px;
+            font-size: 0.9rem;
         }
         
         .flag-icon {
-            font-size: 3rem;
-            color: #8B1E3F;
-            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 10px;
             filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
         }
         
         .skill-tag {
             display: inline-block;
             background: white;
-            color: #8B1E3F;
+            color: var(--qatar-maroon);
             padding: 5px 12px;
-            border-radius: 20px;
-            margin: 3px;
-            font-size: 0.85rem;
-            border: 1px solid #8B1E3F;
+            border-radius: 40px;
+            margin: 4px;
+            font-size: 0.8rem;
+            border: 1px solid var(--qatar-maroon);
+            transition: all 0.2s;
+            font-weight: 500;
         }
         
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 12px;
+            margin: 15px 0;
+            width: 100%;
         }
         
         .stat-card {
             background: white;
-            padding: 20px;
-            border-radius: 12px;
+            padding: 15px 8px;
+            border-radius: 16px;
             text-align: center;
             border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 8px rgba(139,30,63,0.05);
+            width: 100%;
         }
         
         .stat-number {
-            font-size: 1.8rem;
+            font-size: 1.3rem;
             font-weight: 700;
-            color: #8B1E3F;
+            color: var(--qatar-maroon);
+            line-height: 1.2;
         }
         
         .stat-label {
             color: #64748b;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
+            margin-top: 5px;
         }
         
         .services-section {
-            background: #f8fafc;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 40px 0;
+            background: #fce4e9;
+            border-radius: 24px;
+            padding: 25px 15px;
+            margin: 30px 0;
             text-align: center;
+            width: 100%;
         }
         
         .services-buttons {
             display: flex;
-            gap: 20px;
+            gap: 10px;
             justify-content: center;
             flex-wrap: wrap;
             margin-top: 20px;
+            width: 100%;
         }
         
         .service-btn {
-            background: #8B1E3F;
+            background: var(--qatar-maroon);
             color: white;
-            padding: 12px 30px;
-            border-radius: 8px;
+            padding: 10px 20px;
+            border-radius: 50px;
             text-decoration: none;
-            transition: background 0.3s;
+            transition: all 0.3s;
+            font-weight: 500;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            border: none;
+            cursor: pointer;
+            flex: 0 1 auto;
         }
         
         .service-btn:hover {
-            background: #333;
+            background: #4a1022;
         }
         
-        @media (max-width: 768px) {
-            .country-header h1 {
-                font-size: 2rem;
-            }
-            
+        @media (max-width: 600px) {
             .services-buttons {
                 flex-direction: column;
             }
+            .service-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 10px 0;
+            width: 100%;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 100%;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--qatar-maroon);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 500;
+            padding: 5px 0;
+        }
+        
+        .nav-links a.active {
+            color: var(--qatar-maroon);
+            border-bottom: 2px solid var(--qatar-maroon);
+        }
+        
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-links {
+                justify-content: center;
+            }
+        }
+        
+        footer {
+            background: #1e293b;
+            color: white;
+            padding: 30px 0 15px;
+            margin-top: 30px;
+            width: 100%;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section li {
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+        
+        .footer-section a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin-left: 8px;
+            color: white;
+            font-size: 1rem;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 15px;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.8rem;
+        }
+        
+        @media (max-width: 480px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+        
+        /* إصلاحات إضافية لمنع التمرير الأفقي */
+        img, iframe, video, table, div {
+            max-width: 100%;
+        }
+        p, h1, h2, h3, h4, h5, h6, li, td, th {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
     </style>
 </head>
@@ -387,12 +640,12 @@
     <section class="country-header">
         <div class="container">
             <i class="fas fa-flag flag-icon"></i>
-            <h1>فرص عمل في قطر 2026</h1>
-            <p>الدليل الكامل للعمل في الدوحة، الوكرة، الخور وجميع المدن القطرية</p>
+            <h1>🇶🇦 فرص عمل في قطر 2026 🇶🇦</h1>
+            <p>الدليل الكامل للعمل في الدوحة، الوكرة، لوسيل، الخور وجميع المدن القطرية – تحديثات مارس 2026</p>
             
             <div class="country-info">
-                <span class="info-badge"><i class="fas fa-briefcase"></i> 85% وافدون</span>
-                <span class="info-badge"><i class="fas fa-language"></i> عربي / إنجليزي</span>
+                <span class="info-badge"><i class="fas fa-hard-hat"></i> نفط وغاز</span>
+                <span class="info-badge"><i class="fas fa-language"></i> العربية / الإنجليزية</span>
                 <span class="info-badge"><i class="fas fa-money-bill-wave"></i> ريال قطري (QAR)</span>
             </div>
         </div>
@@ -403,50 +656,42 @@
             <i class="fas fa-arrow-right"></i> العودة للصفحة الرئيسية
         </a>
 
-        <!-- تحديثات قانون العمل الجديد (القانون رقم 18 لسنة 2024) -->
+        <!-- لمحة عامة عن سوق العمل القطري -->
         <div class="visa-box">
-            <h3><i class="fas fa-calendar-alt"></i> تحديثات قانون العمل القطري 2026 – القانون رقم 18 لسنة 2024</h3>
-            <p>أصدرت قطر قانون العمل الجديد رقم 18 لسنة 2024، الذي يدخل حيز التنفيذ الكامل في 2026، ليحل محل القانون القديم رقم 14 لسنة 2004. يمثل هذا القانون نقلة نوعية في حقوق العمال وتنظيم سوق العمل .</p>
+            <h3><i class="fas fa-chart-line"></i> نظرة على سوق العمل في قطر 2026</h3>
+            <p>قطر ليست مجرد دولة خليجية أخرى، إنها وجهة عالمية للعمالة والكفاءات. منذ استضافتها الناجحة لكأس العالم 2022، تواصل قطر استثماراتها الضخمة في البنية التحتية، التكنولوجيا، التعليم، والرعاية الصحية. في 2026، تقدم قطر فرصاً ذهبية للباحثين عن عمل بفضل اقتصاد ما بعد المونديال، مع مشاريع ضخمة في لوسيل، المدينة الرياضية، والمناطق الحرة. يعتمد سوق العمل القطري بشكل كبير على العمالة الوافدة التي تشكل حوالي 85% من السكان، مما يعني أن البيئة مهيأة لاستقبال الأجانب وتوظيفهم في مختلف القطاعات .</p>
+        </div>
+
+        <!-- تحديثات قانون العمل الجديد (رقم 18 لسنة 2024) -->
+        <div class="visa-box">
+            <h3><i class="fas fa-calendar-alt"></i> قانون العمل الجديد في قطر (رقم 18 لسنة 2024)</h3>
+            <p>هذا القانون يُعتبر ثورة في حقوق العمال. إليك أهم التغييرات التي دخلت حيز التنفيذ الكامل في 2026:</p>
             
-            <h4 style="margin: 20px 0 10px;">أهم التغييرات في قانون العمل الجديد:</h4>
-            <div class="visa-grid" style="margin-top: 15px;">
+            <div class="visa-grid">
                 <div class="visa-type">
                     <h4>إلغاء نظام تصريح الخروج</h4>
-                    <p>لم يعد العامل بحاجة لموافقة صاحب العمل لمغادرة البلاد. يمكن للعامل مغادرة قطر بموجب بطاقة QID الخاصة به دون أي قيود .</p>
+                    <p>العامل لم يعد بحاجة لموافقة صاحب العمل لمغادرة البلاد. يكفي إخطار وزارة الداخلية عبر تطبيق "مطراش 2" .</p>
                 </div>
                 <div class="visa-type">
-                    <h4>إنشاء لجنة فض النزاعات العمالية</h4>
-                    <p>لجنة مستقلة للنظر في النزاعات العمالية بشكل أسرع وأكثر شفافية .</p>
+                    <h4>لجنة فض النزاعات العمالية</h4>
+                    <p>هيئة مستقلة للنظر في النزاعات بين العمال وأصحاب العمل، تصدر قراراتها خلال 30 يوماً .</p>
                 </div>
                 <div class="visa-type">
                     <h4>إجازة سنوية مدفوعة</h4>
-                    <p>3 أيام إجازة سنوية مدفوعة لكل شهر عمل (36 يوماً سنوياً) بعد سنة من الخدمة .</p>
+                    <p>3 أيام إجازة سنوية مدفوعة عن كل شهر عمل (36 يوماً بعد سنة) .</p>
                 </div>
                 <div class="visa-type">
                     <h4>إجازة أمومة مدفوعة</h4>
                     <p>50 يوماً إجازة أمومة مدفوعة بالكامل .</p>
                 </div>
                 <div class="visa-type">
-                    <h4>إنشاء صندوق لدعم العمالة</h4>
-                    <p>لضمان دفع الأجور والمستحقات في حالات تعثر الشركات .</p>
+                    <h4>صندوق دعم العمالة</h4>
+                    <p>لضمان دفع الأجور في حالات تعثر الشركات .</p>
                 </div>
             </div>
         </div>
 
-        <!-- لمحة عامة عن سوق العمل القطري 2026 -->
-        <div class="requirements-box">
-            <h3><i class="fas fa-chart-line"></i> نظرة على سوق العمل القطري في 2026</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
-                <div><strong>عدد السكان:</strong> 3.1 مليون نسمة (فبراير 2026)</div>
-                <div><strong>نسبة الوافدين:</strong> 85% من السكان (حوالي 2.6 مليون) </div>
-                <div><strong>نمو الناتج المحلي المتوقع:</strong> 2-3% (2026) </div>
-                <div><strong>القطاعات الأكثر طلباً:</strong> الطاقة، البنية التحتية، التكنولوجيا، الرعاية الصحية، السياحة </div>
-                <div><strong>الحد الأدنى للأجور:</strong> 1,000 ريال + 500 ريال سكن + 300 ريال طعام = 1,800 ريال إجمالي </div>
-            </div>
-            <p style="margin-top: 15px;">سوق العمل القطري في 2026 يتسم باستقرار كبير بعد النجاحات الكبيرة في تنظيم كأس العالم 2022 والتوسع في مشاريع البنية التحتية والطاقة. الاقتصاد القطري يستمر في النمو بدعم من قطاع الطاقة ومشاريع التنويع الاقتصادي ضمن رؤية قطر الوطنية 2030. مع انخفاض عدد سكان قطر مؤقتاً بعد 2022، عادت الأعداد للارتفاع مع عودة العمالة إلى مشاريع القطاع الخاص والنفط والغاز . 85% من السكان وافدون، مما يجعل قطر وجهة مثالية للعمالة الأجنبية، خاصة مع قانون العمل الجديد الذي يعزز حقوق العمال .</p>
-        </div>
-
-        <!-- المهن الأكثر طلباً والرواتب 2026 -->
+        <!-- المهن الأكثر طلباً والرواتب في قطر 2026 -->
         <h2 class="section-title">المهن الأكثر طلباً والرواتب في قطر 2026</h2>
         
         <div class="table-container">
@@ -459,208 +704,189 @@
                     <th>متقدم (QAR)</th>
                 </tr>
                 <tr>
-                    <td>النفط والغاز والطاقة</td>
-                    <td>مهندسو بترول، مهندسو كيماوي، جيولوجيون، فنيو حفر، مهندسو مشاريع، مشغلو منشآت</td>
-                    <td>10,000 – 18,000</td>
-                    <td>18,000 – 35,000</td>
-                    <td>35,000 – 60,000+</td>
-                </tr>
-                <tr>
-                    <td>الهندسة والإنشاءات</td>
-                    <td>مهندسو مدني، كهرباء، ميكانيكا، معماريون، مساحو كميات، مشرفو مواقع، مهندسو تكييف وتبريد</td>
-                    <td>6,000 – 12,000</td>
-                    <td>12,000 – 22,000</td>
-                    <td>22,000 – 40,000+</td>
-                </tr>
-                <tr>
                     <td>تكنولوجيا المعلومات</td>
-                    <td>مهندسو برمجيات، مهندسو ذكاء اصطناعي، علماء بيانات، مهندسو أمن سيبراني، مهندسو سحابة، متخصصو تكنولوجيا مالية (FinTech)</td>
-                    <td>7,000 – 14,000</td>
-                    <td>14,000 – 25,000</td>
-                    <td>25,000 – 45,000+</td>
+                    <td>مهندسو برمجيات (Java, Python, JavaScript)، مهندسو أمن سيبراني، علماء بيانات، متخصصو ذكاء اصطناعي</td>
+                    <td>8,000 – 12,000</td>
+                    <td>12,000 – 18,000</td>
+                    <td>18,000 – 30,000+</td>
                 </tr>
                 <tr>
-                    <td>المالية والمحاسبة</td>
-                    <td>محللون ماليون، محاسبون، مدققو حسابات، متخصصو ضرائب، مدراء ماليون</td>
-                    <td>6,000 – 12,000</td>
-                    <td>12,000 – 22,000</td>
-                    <td>22,000 – 40,000+</td>
+                    <td>الهندسة والمشاريع الكبرى</td>
+                    <td>مهندسو مدني (لمشاريع البنية التحتية)، مهندسو كهرباء وميكانيكا، مهندسو تكييف وتبريد، مساحو كميات</td>
+                    <td>7,000 – 10,000</td>
+                    <td>10,000 – 15,000</td>
+                    <td>15,000 – 25,000+</td>
                 </tr>
                 <tr>
                     <td>الرعاية الصحية</td>
-                    <td>أطباء (جميع التخصصات)، ممرضون، صيادلة، فنيو مختبرات، أخصائيو علاج طبيعي</td>
-                    <td>8,000 – 15,000</td>
+                    <td>أطباء في تخصصات نادرة (جراحة قلب، أعصاب)، ممرضون، صيادلة سريريون، أخصائيو علاج طبيعي</td>
+                    <td>10,000 – 15,000</td>
                     <td>15,000 – 25,000</td>
-                    <td>25,000 – 45,000+</td>
+                    <td>25,000 – 40,000+</td>
                 </tr>
                 <tr>
-                    <td>السياحة والضيافة</td>
-                    <td>مديرو فنادق، طهاة، نادلون، موظفو استقبال، مرشدون سياحيون، عمال منتجعات</td>
-                    <td>3,000 – 6,000</td>
-                    <td>6,000 – 12,000</td>
-                    <td>12,000 – 20,000+</td>
+                    <td>النفط والغاز</td>
+                    <td>مهندسو بترول، جيولوجيون، فنيو حفر وصيانة</td>
+                    <td>12,000 – 18,000</td>
+                    <td>18,000 – 30,000</td>
+                    <td>30,000 – 50,000+</td>
                 </tr>
                 <tr>
-                    <td>البناء والعمالة الماهرة</td>
-                    <td>كهربائيون، سباكون، نجارون، حدادون، سائقو شاحنات، عمال بناء</td>
-                    <td>1,800 – 3,500</td>
-                    <td>3,500 – 6,000</td>
-                    <td>6,000 – 10,000+</td>
+                    <td>الخدمات واللوجستيات</td>
+                    <td>سائقو شاحنات، عمال مستودعات، موظفو خدمة عملاء (خاصة متعددي اللغات)</td>
+                    <td>3,000 – 5,000</td>
+                    <td>5,000 – 8,000</td>
+                    <td>8,000 – 12,000+</td>
+                </tr>
+                <tr>
+                    <td>المالية والمحاسبة</td>
+                    <td>محللون ماليون، محاسبون، مدققو حسابات، متخصصو امتثال</td>
+                    <td>8,000 – 12,000</td>
+                    <td>12,000 – 18,000</td>
+                    <td>18,000 – 30,000+</td>
                 </tr>
             </table>
-            <p style="margin-top: 5px;">المصادر: </p>
+            <p style="margin-top: 5px;">المصادر: وزارة العمل القطرية، PwC Middle East، منصات التوظيف المحلية .</p>
         </div>
 
         <!-- الحد الأدنى للأجور -->
         <div class="visa-box">
-            <h3><i class="fas fa-coins"></i> الحد الأدنى للأجور في قطر 2026</h3>
+            <h3><i class="fas fa-coins"></i> الحد الأدنى للأجور 2026</h3>
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-number">1,000</div>
-                    <div class="stat-label">الراتب الأساسي</div>
+                    <div class="stat-number">1,800</div>
+                    <div class="stat-label">الحد الأدنى (QAR)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">~500</div>
+                    <div class="stat-label">ما يعادل (USD)</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">500</div>
-                    <div class="stat-label">بدل سكن</div>
+                    <div class="stat-label">بدل سكن (QAR)</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">300</div>
-                    <div class="stat-label">بدل طعام</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">1,800</div>
-                    <div class="stat-label">الإجمالي</div>
+                    <div class="stat-label">بدل طعام (QAR)</div>
                 </div>
             </div>
-            <p style="margin-top: 15px;">صاحب العمل ملزم بتوفير سكن مناسب للعمال الذين لا يتقاضون بدل سكن .</p>
+            <p style="margin-top: 15px;">الحد الأدنى للأجور للعمالة غير الماهرة هو 1,000 ريال راتب أساسي + 500 ريال بدل سكن + 300 ريال بدل طعام = 1,800 ريال قطري شهرياً (حوالي 500 دولار) .</p>
         </div>
 
-        <!-- المهارات الأكثر طلباً -->
-        <h2 class="section-title">المهارات الأكثر طلباً في السوق القطري</h2>
-        <div style="margin: 20px 0;">
-            <span class="skill-tag">إدارة المشاريع</span>
-            <span class="skill-tag">الذكاء الاصطناعي وتعلم الآلة</span>
-            <span class="skill-tag">تحليل البيانات (Data Analytics)</span>
-            <span class="skill-tag">الأمن السيبراني</span>
-            <span class="skill-tag">هندسة البترول والطاقة</span>
-            <span class="skill-tag">اللغة الإنجليزية (طلاقة)</span>
-            <span class="skill-tag">القيادة وإدارة الفرق</span>
-            <span class="skill-tag">حل المشكلات المعقدة</span>
-            <span class="skill-tag">التفاوض والمبيعات</span>
-            <span class="skill-tag">التكيف الثقافي</span>
+        <!-- تكلفة المعيشة في المدن القطرية -->
+        <h2 class="section-title">تكلفة المعيشة في قطر 2026</h2>
+        <div class="requirements-box">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+                <div><strong>الدوحة (وسط المدينة):</strong> 7,500 – 11,500 QAR</div>
+                <div><strong>الدوحة (خارج الوسط):</strong> 6,000 – 9,000 QAR</div>
+                <div><strong>الوكرة:</strong> 5,000 – 8,000 QAR</div>
+                <div><strong>لوسيل:</strong> 8,000 – 12,000 QAR (منطقة فاخرة)</div>
+                <div><strong>الخور:</strong> 4,000 – 6,500 QAR</div>
+            </div>
+            <p style="margin-top: 15px;">السكن في الوكرة أو الخور أقل كلفة بكثير من الدوحة، مع وجود مواصلات جيدة. لوسيل هي المنطقة الأكثر فخامة وارتفاعاً في الأسعار .</p>
         </div>
-        <p style="margin-top: 5px;">مع استمرار قطر في تنويع اقتصادها، تزداد الحاجة للمهارات التقنية والتحليلية والقيادية، خاصة في قطاعات التكنولوجيا والطاقة والتمويل .</p>
 
-        <!-- نظام التأشيرات والإقامة في قطر 2026 -->
+        <!-- نظام التأشيرات وإجراءات العمل -->
+        <h2 class="section-title">تأشيرات العمل في قطر 2026 (نظام "ودي" الإلكتروني)</h2>
         <div class="visa-box">
-            <h3><i class="fas fa-passport"></i> نظام تأشيرات العمل في قطر 2026</h3>
+            <h3><i class="fas fa-passport"></i> أنواع التأشيرات الرئيسية</h3>
             
-            <h4 style="margin: 20px 0 10px;">أنواع التأشيرات الرئيسية :</h4>
-            <div class="visa-grid" style="margin-top: 15px;">
+            <div class="visa-grid">
                 <div class="visa-type">
-                    <h4>تأشيرة العمل (Work Visa)</h4>
-                    <p>الأكثر شيوعاً، مرتبطة بعقد عمل من صاحب عمل قطري. المدة: تصل إلى 5 سنوات (قابلة للتجديد).</p>
-                    <div class="price">يتم التقديم عبر نظام "ودي" الإلكتروني (EWS) من قبل صاحب العمل .</div>
+                    <h4>تأشيرة العمل العادية</h4>
+                    <p>الأكثر شيوعاً، مرتبطة بعقد عمل مع شركة قطرية. المدة: تصل إلى 5 سنوات قابلة للتجديد. التقديم عبر نظام "ودي" الإلكتروني (EWS) من قبل صاحب العمل .</p>
                 </div>
                 <div class="visa-type">
-                    <h4>تأشيرة الزيارة للعمل (Business Visa)</h4>
-                    <p>للزيارات القصيرة بغرض الأعمال (عادة 30 يوماً قابلة للتمديد).</p>
+                    <h4>البطاقة الزرقاء للاتحاد الأوروبي</h4>
+                    <p>للكفاءات العالية (شهادة جامعية + خبرة + راتب مرتفع). المزايا: إقامة طويلة الأمد، إجراءات أسرع، حق التنقل بين دول الاتحاد الأوروبي .</p>
                 </div>
                 <div class="visa-type">
-                    <h4>الإقامة الدائمة (Permanent Residency)</h4>
-                    <p>محدودة لغير القطريين، بشروط صارمة جداً.</p>
+                    <h4>تأشيرة العمل الموسمي</h4>
+                    <p>للعمل في قطاعات محددة (سياحة، بناء، زراعة) لمدة تصل إلى 6 أشهر .</p>
                 </div>
                 <div class="visa-type">
-                    <h4>الإقامة للمستثمرين</h4>
-                    <p>لمن يستثمر في مشاريع اقتصادية معينة.</p>
+                    <h4>الإقامة الدائمة</h4>
+                    <p>محدودة لغير القطريين، بشروط صارمة جداً (خدمات استثنائية للدولة) .</p>
                 </div>
             </div>
 
-            <h4 style="margin: 20px 0 10px;">إجراءات الحصول على تأشيرة العمل :</h4>
-            <ol style="margin-right: 20px; margin-bottom: 20px;">
-                <li><strong>عقد عمل إلكتروني:</strong> يجب على صاحب العمل تسجيل عقد العمل في نظام "ودي" الإلكتروني قبل دخول العامل .</li>
-                <li><strong>طلب تأشيرة دخول:</strong> صاحب العمل يتقدم بطلب تأشيرة عمل عبر وزارة الداخلية (بعد الموافقة من وزارة العمل).</li>
-                <li><strong>إصدار تصريح العمل:</strong> وزارة العمل تصدر تصريح عمل إلكتروني.</li>
+            <h4 style="margin: 15px 0 10px;">إجراءات الحصول على تأشيرة العمل العادية:</h4>
+            <ol style="margin-right: 20px; margin-bottom: 15px;">
+                <li><strong>عقد عمل إلكتروني:</strong> يجب على صاحب العمل تسجيل العقد في نظام "ودي" الإلكتروني .</li>
+                <li><strong>طلب تأشيرة دخول:</strong> صاحب العمل يتقدم بطلب تأشيرة عمل عبر وزارة الداخلية .</li>
+                <li><strong>إصدار تصريح العمل:</strong> وزارة العمل تصدر تصريح عمل إلكتروني .</li>
                 <li><strong>دخول العامل:</strong> بعد صدور تصريح العمل وتأشيرة الدخول، يسافر العامل إلى قطر.</li>
                 <li><strong>إجراءات ما بعد الوصول:</strong>
                     <ul style="margin-top: 5px; margin-right: 20px;">
-                        <li>الفحص الطبي (خلال 7 أيام من الوصول).</li>
-                        <li>البصمة البيومترية.</li>
-                        <li>استخراج البطاقة الشخصية (QID) – تستغرق 5-10 أيام عمل.</li>
-                        <li>توقيع عقد العمل الموثق أمام وزارة العمل .</li>
+                        <li>الفحص الطبي (خلال 7 أيام من الوصول)</li>
+                        <li>البصمة البيومترية</li>
+                        <li>استخراج البطاقة الشخصية (QID) – تستغرق 5-10 أيام عمل</li>
+                        <li>توقيع عقد العمل الموثق أمام وزارة العمل</li>
                     </ul>
                 </li>
             </ol>
 
-            <h4 style="margin: 20px 0 10px;">المستندات المطلوبة :</h4>
+            <h4 style="margin: 15px 0 10px;">المستندات الأساسية:</h4>
             <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> جواز سفر ساري المفعول (صلاحية لا تقل عن 6 أشهر)</li>
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> عقد عمل إلكتروني مسجل في نظام "ودي"</li>
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> صور شخصية حديثة</li>
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> الشهادات العلمية مصدقة من وزارة الخارجية في بلدك والسفارة القطرية</li>
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> شهادة خبرة (إن وجدت)</li>
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> تأمين صحي (يوفره صاحب العمل عادة)</li>
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> شهادة خلو سوابق (لبعض المهن)</li>
+                <li><i class="fas fa-check-circle"></i> جواز سفر ساري المفعول (صلاحية لا تقل عن 6 أشهر)</li>
+                <li><i class="fas fa-check-circle"></i> عقد عمل إلكتروني مسجل في نظام "ودي"</li>
+                <li><i class="fas fa-check-circle"></i> صور شخصية حديثة</li>
+                <li><i class="fas fa-check-circle"></i> الشهادات العلمية (مصدقة ومترجمة)</li>
+                <li><i class="fas fa-check-circle"></i> شهادة خلو سوابق</li>
+                <li><i class="fas fa-check-circle"></i> تأمين صحي (يوفره صاحب العمل)</li>
             </ul>
-
-            <h4 style="margin: 20px 0 10px;">مدة المعالجة:</h4>
+            
+            <h4 style="margin: 15px 0 10px;">الرسوم التقريبية:</h4>
             <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> <strong>تصريح العمل:</strong> 5-10 أيام عمل بعد تقديم الطلب .</li>
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> <strong>تأشيرة الدخول:</strong> أسبوعان بعد موافقة وزارة العمل.</li>
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> <strong>البطاقة الشخصية (QID):</strong> 5-10 أيام عمل بعد الوصول.</li>
-            </ul>
-
-            <h4 style="margin: 20px 0 10px;">الرسوم التقريبية (يدفعها صاحب العمل):</h4>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> رسوم إصدار تصريح العمل: ~200 ريال</li>
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> رسوم تأشيرة الدخول: ~200 ريال</li>
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> رسوم البطاقة الشخصية: ~100 ريال (لأول مرة)</li>
+                <li><i class="fas fa-check-circle"></i> رسوم إصدار تصريح العمل: ~200 ريال</li>
+                <li><i class="fas fa-check-circle"></i> رسوم تأشيرة الدخول: ~200 ريال</li>
+                <li><i class="fas fa-check-circle"></i> رسوم البطاقة الشخصية: ~100 ريال</li>
+                <li><i class="fas fa-check-circle"></i> مدة المعالجة: 1-2 أشهر </li>
             </ul>
         </div>
 
-        <!-- نظام حماية الأجور (WPS) -->
-        <div class="requirements-box">
-            <h3><i class="fas fa-shield-alt"></i> نظام حماية الأجور (WPS)</h3>
-            <p>يجب على جميع الشركات في قطر دفع رواتب العمال إلكترونياً عبر نظام حماية الأجور (WPS) الذي تديره وزارة العمل. يتم تحويل الرواتب مباشرة إلى حسابات العمال البنكية، مما يضمن شفافية وسرعة الدفع .</p>
+        <!-- المهارات الأكثر طلباً -->
+        <h2 class="section-title">المهارات الأكثر طلباً في السوق القطري 2026</h2>
+        <div style="margin: 15px 0;">
+            <span class="skill-tag">اللغة الإنجليزية (C1)</span>
+            <span class="skill-tag">اللغة العربية (للتكامل)</span>
+            <span class="skill-tag">Java / Python / JavaScript</span>
+            <span class="skill-tag">الأمن السيبراني</span>
+            <span class="skill-tag">تحليل البيانات</span>
+            <span class="skill-tag">إدارة المشاريع (PMP, Agile)</span>
+            <span class="skill-tag">هندسة البترول</span>
+            <span class="skill-tag">المهارات الحرفية</span>
+        </div>
+        <p style="margin-top: 10px;">اللغة الإنجليزية هي لغة العمل الأساسية في معظم الشركات. اللغة العربية تساعد في الاندماج الاجتماعي. المهارات التقنية والهندسية هي الأكثر طلباً في قطاع النفط والغاز والمشاريع الكبرى .</p>
+
+        <!-- نصائح للباحثين عن عمل في قطر -->
+        <div class="requirements-box" style="background: #fce4e9;">
+            <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في قطر</h3>
+            <ul class="requirements-list">
+                <li><i class="fas fa-check-circle"></i> <strong>تأكد من تسجيل العقد في نظام "ودي":</strong> العقد الإلكتروني هو الأساس لإجراءات الهجرة والعمل، تأكد من تسجيله قبل السفر .</li>
+                <li><i class="fas fa-check-circle"></i> <strong>صادق على شهاداتك مبكراً:</strong> عملية التصديق (وزارة الخارجية + السفارة القطرية) قد تستغرق وقتاً، ابدأ قبل التقديم .</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استخدم منصات التوظيف الموثوقة:</strong> LinkedIn، Bayt، GulfTalent، ومواقع الشركات الكبرى مثل قطر للطاقة .</li>
+                <li><i class="fas fa-check-circle"></i> <strong>تعلم بعض العربية:</strong> رغم أن الإنجليزية كافية في معظم الشركات، فإن معرفة بعض العربية تساعد في الحياة اليومية والاندماج.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>تعرف على حقوقك بموجب القانون الجديد:</strong> قانون العمل رقم 18 لسنة 2024 يمنحك حقوقاً مهمة مثل إلغاء تصريح الخروج وإجازات سنوية مدفوعة .</li>
+                <li><i class="fas fa-check-circle"></i> <strong>لا تدفع مقابل عروض العمل:</strong> احذر من شركات التوظيف الوهمية التي تطلب مبالغ مالية مقابل تأمين وظيفة.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>استعد للفحص الطبي:</strong> تأكد من خلوّك من الأمراض المحددة .</li>
+            </ul>
         </div>
 
-        <!-- قطاعات ما بعد 2022 -->
-        <div class="visa-box">
-            <h3><i class="fas fa-city"></i> قطاعات واعدة بعد 2022</h3>
-            <div class="visa-grid">
-                <div class="visa-type">
-                    <h4>الطاقة المتجددة</h4>
-                    <p>قطر تخطط لزيادة إنتاج الطاقة الشمسية، مما يخلق فرصاً في هندسة الطاقة المتجددة والتركيبات والصيانة .</p>
-                </div>
-                <div class="visa-type">
-                    <h4>التكنولوجيا المالية (FinTech)</h4>
-                    <p>مركز قطر للمال (QFC) يدعم الشركات الناشئة في التكنولوجيا المالية، مع طلب متزايد على متخصصي البلوك تشين والتحول الرقمي .</p>
-                </div>
-                <div class="visa-type">
-                    <h4>السياحة والضيافة</h4>
-                    <p>استمرار التوسع في القطاع السياحي بعد كأس العالم، مع افتتاح فنادق ومنتجعات جديدة .</p>
-                </div>
-                <div class="visa-type">
-                    <h4>البحث والتطوير</h4>
-                    <p>جامعات مثل حمد بن خليفة تستقطب الباحثين في مجالات الطاقة والصحة والتكنولوجيا .</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- أفضل المدن للعمل في قطر -->
+        <!-- أفضل المدن للعمل -->
         <h2 class="section-title">أفضل المدن للعمل في قطر</h2>
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-number">الدوحة</div>
-                <div class="stat-label">العاصمة وأكبر سوق عمل. مركز الشركات، البنوك، التكنولوجيا، الخدمات، والمقرات الرئيسية. أعلى الرواتب وأعلى تكاليف معيشة .</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">الريان</div>
-                <div class="stat-label">مدينة قريبة من الدوحة، تضم العديد من المنشآت التجارية والمرافق الرياضية والخدمات.</div>
+                <div class="stat-label">العاصمة وأكبر سوق عمل. مركز الأعمال، التكنولوجيا، الخدمات، والمقرات الرئيسية. أعلى الرواتب وأعلى إيجارات.</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">الوكرة</div>
                 <div class="stat-label">مدينة ساحلية جنوب الدوحة، تشهد توسعاً في القطاع السياحي والعقاري، مع ميناء الوكرة الجديد .</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">لوسيل</div>
+                <div class="stat-label">مدينة المستقبل، مشاريع ضخمة، منطقة فاخرة، فرص في قطاع البناء والخدمات الفاخرة .</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">مسيعيد / أم سعيد</div>
@@ -670,47 +896,38 @@
                 <div class="stat-number">رأس لفان</div>
                 <div class="stat-label">مدينة صناعية شمال البلاد، مركز صناعة الغاز الطبيعي المسال، فرص في الطاقة والهندسة .</div>
             </div>
+            <div class="stat-card">
+                <div class="stat-number">الخور</div>
+                <div class="stat-label">مدينة شمالية، قطاع سياحي وصناعي، تكاليف معيشة أقل .</div>
+            </div>
         </div>
 
         <!-- مزايا وتحديات العمل في قطر -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 40px 0;">
-            <div style="background: white; border-radius: 12px; padding: 25px; border: 1px solid #e2e8f0;">
-                <h3 style="color: #8B1E3F; margin-bottom: 15px;">✅ مزايا العمل في قطر</h3>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 25px 0;">
+            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
+                <h3 style="color: var(--qatar-maroon); margin-bottom: 10px;">✅ المزايا</h3>
                 <ul class="requirements-list">
-                    <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> <strong>رواتب معفاة من الضرائب:</strong> لا ضرائب على الدخل الشخصي .</li>
-                    <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> <strong>مزايا إضافية:</strong> سكن، مواصلات، تذاكر سفر سنوية، تأمين صحي (يوفرها صاحب العمل غالباً).</li>
-                    <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> <strong>اقتصاد قوي:</strong> أحد أغنى دول العالم بفضل احتياطيات الغاز والنفط .</li>
-                    <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> <strong>قانون عمل حديث:</strong> حماية أكبر للعمال، إلغاء نظام تصريح الخروج، لجنة فض النزاعات .</li>
-                    <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> <strong>بنية تحتية متطورة:</strong> مطار حمد الدولي، مترو الدوحة، شبكة طرق حديثة.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--qatar-maroon);"></i> <strong>رواتب معفاة من الضرائب:</strong> ما تكسبه هو ما تحصل عليه بالكامل.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--qatar-maroon);"></i> <strong>مزايا إضافية:</strong> سكن، مواصلات، تذاكر سفر سنوية، تأمين صحي (يوفرها صاحب العمل غالباً).</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--qatar-maroon);"></i> <strong>اقتصاد قوي:</strong> أحد أغنى دول العالم بفضل احتياطيات الغاز والنفط .</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--qatar-maroon);"></i> <strong>قانون عمل حديث:</strong> حماية أكبر للعمال، إلغاء نظام تصريح الخروج، لجنة فض النزاعات .</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--qatar-maroon);"></i> <strong>بنية تحتية متطورة:</strong> مطار حمد الدولي، مترو الدوحة، شبكة طرق حديثة.</li>
                 </ul>
             </div>
-            <div style="background: white; border-radius: 12px; padding: 25px; border: 1px solid #e2e8f0;">
-                <h3 style="color: #8B1E3F; margin-bottom: 15px;">⚠️ تحديات للباحثين عن عمل</h3>
+            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
+                <h3 style="color: #e67e22; margin-bottom: 10px;">⚠️ التحديات</h3>
                 <ul class="requirements-list">
-                    <li><i class="fas fa-exclamation-triangle" style="color: #8B1E3F;"></i> <strong>نظام الكفالة:</strong> رغم التحسينات، لا يزال العمل مرتبطاً بصاحب العمل (لكن إلغاء تصريح الخروج خطوة كبيرة).</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #8B1E3F;"></i> <strong>سياسات التقطير:</strong> توجيه لتوظيف القطريين في بعض القطاعات.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #8B1E3F;"></i> <strong>المنافسة:</strong> سوق تنافسي، خاصة في القطاع الخاص.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #8B1E3F;"></i> <strong>ارتفاع تكاليف المعيشة:</strong> الإيجار مرتفع في الدوحة .</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #8B1E3F;"></i> <strong>الطقس الحار:</strong> درجات حرارة عالية جداً في الصيف.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>نظام الكفالة:</strong> رغم التحسينات، لا يزال العمل مرتبطاً بصاحب العمل .</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>غلاء المعيشة:</strong> الإيجار مرتفع في الدوحة ولوسيل .</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>المنافسة:</strong> سوق تنافسي، خاصة في القطاع الخاص.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>الطقس الحار:</strong> درجات حرارة عالية جداً في الصيف.</li>
+                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>البيروقراطية:</strong> بعض الإجراءات قد تكون بطيئة .</li>
                 </ul>
             </div>
         </div>
 
-        <!-- نصائح للباحثين عن عمل -->
-        <div class="requirements-box" style="background: #f8fafc;">
-            <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في قطر</h3>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> <strong>تأكد من تسجيل العقد في نظام "ودي":</strong> العقد الإلكتروني هو الأساس لإجراءات الهجرة والعمل، تأكد من تسجيله قبل السفر .</li>
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> <strong>صادق على شهاداتك مبكراً:</strong> عملية التصديق (وزارة الخارجية + السفارة القطرية) قد تستغرق وقتاً، ابدأ قبل التقديم .</li>
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> <strong>استخدم منصات التوظيف الموثوقة:</strong> LinkedIn، Bayt، GulfTalent، ومواقع الشركات الكبرى مثل قطر للطاقة .</li>
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> <strong>تعلم بعض العربية:</strong> رغم أن الإنجليزية كافية في معظم الشركات، فإن معرفة بعض العربية تساعد في الحياة اليومية والاندماج.</li>
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> <strong>تعرف على حقوقك بموجب القانون الجديد:</strong> قانون العمل رقم 18 لسنة 2024 يمنحك حقوقاً مهمة مثل إلغاء تصريح الخروج وإجازات سنوية مدفوعة .</li>
-                <li><i class="fas fa-check-circle" style="color: #8B1E3F;"></i> <strong>لا تدفع مقابل عروض العمل:</strong> احذر من شركات التوظيف الوهمية التي تطلب مبالغ مالية مقابل تأمين وظيفة.</li>
-            </ul>
-        </div>
-
-        <!-- إحصائيات مهمة -->
-        <h2 class="section-title">إحصائيات سوق العمل القطري 2026</h2>
+        <!-- إحصائيات سريعة -->
+        <h2 class="section-title">إحصائيات سريعة 2026</h2>
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-number">3.1M</div>
@@ -722,7 +939,7 @@
             </div>
             <div class="stat-card">
                 <div class="stat-number">1,800</div>
-                <div class="stat-label">الحد الأدنى للأجور </div>
+                <div class="stat-label">الحد الأدنى (QAR)</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">2024</div>
@@ -730,8 +947,8 @@
             </div>
         </div>
 
-        <!-- مواقع التوظيف الرئيسية (تم التحقق منها) -->
-        <h2 class="section-title">أهم مواقع التوظيف في قطر</h2>
+        <!-- مواقع التوظيف الرئيسية -->
+        <h2 class="section-title">مواقع توظيف موثوقة</h2>
         <div class="jobs-grid">
             <a href="https://www.linkedin.com" target="_blank" class="job-site-card">
                 <div class="job-site-header">
@@ -741,9 +958,8 @@
                     <span class="job-site-name">LinkedIn</span>
                 </div>
                 <div class="job-site-desc">المنصة الرئيسية للوظائف المهنية، خاصة في قطاعات النفط والغاز، التكنولوجيا، والتمويل .</div>
-                <div class="job-site-link">www.linkedin.com <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-link">linkedin.com <i class="fas fa-external-link-alt"></i></div>
             </a>
-
             <a href="https://www.bayt.com" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
@@ -752,9 +968,8 @@
                     <span class="job-site-name">بيت.كوم (Bayt)</span>
                 </div>
                 <div class="job-site-desc">أكبر منصة توظيف عربية، آلاف الوظائف في قطر بمختلف القطاعات .</div>
-                <div class="job-site-link">www.bayt.com <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-link">bayt.com <i class="fas fa-external-link-alt"></i></div>
             </a>
-
             <a href="https://www.gulftalent.com" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
@@ -763,9 +978,8 @@
                     <span class="job-site-name">GulfTalent</span>
                 </div>
                 <div class="job-site-desc">منصة خليجية رائدة للوظائف المهنية والإدارية في جميع دول الخليج .</div>
-                <div class="job-site-link">www.gulftalent.com <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-link">gulftalent.com <i class="fas fa-external-link-alt"></i></div>
             </a>
-
             <a href="https://www.qatar.talent.com" target="_blank" class="job-site-card">
                 <div class="job-site-header">
                     <div class="job-site-icon">
@@ -774,55 +988,19 @@
                     <span class="job-site-name">Talent.com Qatar</span>
                 </div>
                 <div class="job-site-desc">محرك بحث وظائف عالمي بتغطية واسعة للسوق القطري.</div>
-                <div class="job-site-link">www.qatar.talent.com <i class="fas fa-external-link-alt"></i></div>
-            </a>
-        </div>
-
-        <!-- المواقع الحكومية والرسمية -->
-        <h2 class="section-title">المواقع الحكومية والرسمية</h2>
-        <div class="jobs-grid">
-            <a href="https://www.moi.gov.qa" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-passport"></i>
-                    </div>
-                    <span class="job-site-name">Ministry of Interior (MOI)</span>
-                </div>
-                <div class="job-site-desc">وزارة الداخلية – التأشيرات، الإقامة، والخدمات الإلكترونية (مطراش 2).</div>
-                <div class="job-site-link">www.moi.gov.qa <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://www.labour.gov.qa" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <span class="job-site-name">Ministry of Labour</span>
-                </div>
-                <div class="job-site-desc">وزارة العمل – تصاريح العمل، عقود العمل، نظام "ودي" .</div>
-                <div class="job-site-link">www.labour.gov.qa <i class="fas fa-external-link-alt"></i></div>
-            </a>
-
-            <a href="https://www.hukoomi.gov.qa" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-laptop"></i>
-                    </div>
-                    <span class="job-site-name">Hukoomi (البوابة الحكومية)</span>
-                </div>
-                <div class="job-site-desc">البوابة الرسمية لحكومة قطر، خدمات إلكترونية متكاملة.</div>
-                <div class="job-site-link">www.hukoomi.gov.qa <i class="fas fa-external-link-alt"></i></div>
+                <div class="job-site-link">qatar.talent.com <i class="fas fa-external-link-alt"></i></div>
             </a>
         </div>
 
         <!-- خدماتنا -->
         <div class="services-section">
-            <h3 style="font-size: 1.5rem; margin-bottom: 20px;">تحتاج مساعدة في التقديم؟</h3>
-            <p style="margin-bottom: 30px;">نقدم لك خدمات احترافية بأسعار رمزية لزيادة فرص قبولك</p>
+            <h3 style="font-size: 1.3rem; margin-bottom: 15px;">🚀 خدماتنا الاحترافية</h3>
+            <p style="margin-bottom: 20px;">نساعدك في تحسين فرصك للحصول على وظيفة في قطر واجتياز إجراءات التأشيرة</p>
             <div class="services-buttons">
-                <a href="services.html" class="service-btn">تصميم السيرة الذاتية ($9)</a>
-                <a href="services.html" class="service-btn">كتابة خطاب تقديم ($7)</a>
-                <a href="services.html" class="service-btn">تسجيل في مواقع التوظيف ($10)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-file-alt"></i> سيرة ذاتية ($9)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-envelope"></i> خطاب تقديم ($7)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-user-plus"></i> تسجيل بالمنصات ($10)</a>
+                <a href="services.html" class="service-btn"><i class="fas fa-gavel"></i> استشارة تأشيرات ($15)</a>
             </div>
         </div>
     </div>
@@ -833,9 +1011,8 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>وظائف حول العالم</h4>
-                    <p>منصتك الموثوقة للبحث عن فرص عمل في مختلف دول العالم</p>
+                    <p>منصتك الموثوقة للبحث عن فرص عمل في 49 دولة حول العالم.</p>
                 </div>
-                
                 <div class="footer-section">
                     <h4>روابط سريعة</h4>
                     <ul>
@@ -846,7 +1023,6 @@
                         <li><a href="contact.html">اتصل بنا</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
                     <h4>سياسة الموقع</h4>
                     <ul>
@@ -854,23 +1030,21 @@
                         <li><a href="terms.html">اتفاقية الاستخدام</a></li>
                     </ul>
                 </div>
-
-                <!-- صفحة فيسبوك -->
                 <div class="footer-section">
                     <h4>تابعنا</h4>
                     <div class="social-links">
                         <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook"></i> فيسبوك</a>
+                        <a href="https://wa.me/212669411021" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
                     </div>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة</p>
+                <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة | آخر تحديث: مارس 2026</p>
             </div>
         </div>
     </footer>
 
-    <!-- كود الإعلان Social Bar -->
+    <!-- كود الإعلان Social Bar - قبل إغلاق body -->
     <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 </body>
 </html>
