@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-
-android-chrome-192x192.png
-   · android-chrome-512x512.png
-   · apple-touch-icon.png
-   · favicon-16x16.png
-   · favicon-32x32.png
-   · favicon.ico
-   · site.webmanifest
-
-<!-- Vercel Web Analytics -->
-<script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
-    
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <!-- تحسين وسم viewport لإزالة القيود على التكبير -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>وظائف حول العالم – فرص عمل في 53 دولة</title>
     <meta name="description" content="منصتك الموثوقة للبحث عن فرص عمل في 53 دولة حول العالم. اكتشف أحدث فرص العمل، الرواتب، التأشيرات، ونصائح التوظيف.">
     <meta name="keywords" content="فرص عمل, وظائف, هجرة, سفر, عمل بالخارج, وظائف في أوروبا, أمريكا, آسيا, الخليج">
+
+    <!-- أيقونات الموقع (Favicon) - تم إضافتها يدوياً -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -174,7 +167,7 @@ android-chrome-192x192.png
 
         .countries-section {
             flex: 2;
-            min-width: 0; /* لمنع الفائض */
+            min-width: 0;
         }
 
         .sidebar {
@@ -507,7 +500,6 @@ android-chrome-192x192.png
             }
         }
 
-        /* تنسيق إضافي للرسالة عند عدم وجود نتائج */
         .no-results {
             text-align: center;
             padding: 30px;
@@ -517,11 +509,6 @@ android-chrome-192x192.png
             color: var(--gray);
         }
     </style>
-    <!-- Vercel Web Analytics -->
-    <script>
-      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
     <!-- شريط التنقل -->
@@ -557,306 +544,344 @@ android-chrome-192x192.png
     </section>
 
     <div class="container">
-        <!-- المحتوى الرئيسي والشريط الجانبي -->
         <div class="main-content">
-            <!-- قسم الدول (يمين في الويب) -->
             <div class="countries-section">
                 <!-- مربع البحث -->
                 <div class="search-container">
                     <div class="search-box">
                         <input type="text" id="searchInput" placeholder="ابحث عن دولة... (مثال: كندا، ألمانيا، المغرب)" onkeyup="filterCountries()">
-                        <button><i class="fas fa-search"></i></button>
+                        <button aria-label="بحث"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
 
-                <!-- شبكة الدول -->
+                <!-- شبكة الدول (كل الدول + خاصية aria-label) -->
                 <div class="countries-grid" id="countriesGrid">
-                    <!-- أوروبا الغربية -->
-                    <a href="germany.html" class="country-card" data-name="ألمانيا">
+                    <!-- ألمانيا -->
+                    <a href="germany.html" class="country-card" data-name="ألمانيا" aria-label="عرض فرص عمل في ألمانيا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #DD0000;"></i></div>
                         <span class="country-name">ألمانيا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="france.html" class="country-card" data-name="فرنسا">
+                    <!-- فرنسا -->
+                    <a href="france.html" class="country-card" data-name="فرنسا" aria-label="عرض فرص عمل في فرنسا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #002395;"></i></div>
                         <span class="country-name">فرنسا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="netherlands.html" class="country-card" data-name="هولندا">
+                    <!-- هولندا -->
+                    <a href="netherlands.html" class="country-card" data-name="هولندا" aria-label="عرض فرص عمل في هولندا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #21468B;"></i></div>
                         <span class="country-name">هولندا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="belgium.html" class="country-card" data-name="بلجيكا">
+                    <!-- بلجيكا -->
+                    <a href="belgium.html" class="country-card" data-name="بلجيكا" aria-label="عرض فرص عمل في بلجيكا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #000000;"></i></div>
                         <span class="country-name">بلجيكا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="uk.html" class="country-card" data-name="بريطانيا">
+                    <!-- بريطانيا -->
+                    <a href="uk.html" class="country-card" data-name="بريطانيا" aria-label="عرض فرص عمل في بريطانيا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #012169;"></i></div>
                         <span class="country-name">بريطانيا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="ireland.html" class="country-card" data-name="أيرلندا">
+                    <!-- أيرلندا -->
+                    <a href="ireland.html" class="country-card" data-name="أيرلندا" aria-label="عرض فرص عمل في أيرلندا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #169B62;"></i></div>
                         <span class="country-name">أيرلندا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="austria.html" class="country-card" data-name="النمسا">
+                    <!-- النمسا -->
+                    <a href="austria.html" class="country-card" data-name="النمسا" aria-label="عرض فرص عمل في النمسا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #ED2939;"></i></div>
                         <span class="country-name">النمسا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="switzerland.html" class="country-card" data-name="سويسرا">
+                    <!-- سويسرا -->
+                    <a href="switzerland.html" class="country-card" data-name="سويسرا" aria-label="عرض فرص عمل في سويسرا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #FF0000;"></i></div>
                         <span class="country-name">سويسرا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="italy.html" class="country-card" data-name="إيطاليا">
+                    <!-- إيطاليا -->
+                    <a href="italy.html" class="country-card" data-name="إيطاليا" aria-label="عرض فرص عمل في إيطاليا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #009246;"></i></div>
                         <span class="country-name">إيطاليا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="spain.html" class="country-card" data-name="إسبانيا">
+                    <!-- إسبانيا -->
+                    <a href="spain.html" class="country-card" data-name="إسبانيا" aria-label="عرض فرص عمل في إسبانيا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #AA151B;"></i></div>
                         <span class="country-name">إسبانيا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="portugal.html" class="country-card" data-name="البرتغال">
+                    <!-- البرتغال -->
+                    <a href="portugal.html" class="country-card" data-name="البرتغال" aria-label="عرض فرص عمل في البرتغال">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #006600;"></i></div>
                         <span class="country-name">البرتغال</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="greece.html" class="country-card" data-name="اليونان">
+                    <!-- اليونان -->
+                    <a href="greece.html" class="country-card" data-name="اليونان" aria-label="عرض فرص عمل في اليونان">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #0D5EAF;"></i></div>
                         <span class="country-name">اليونان</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-
-                    <!-- أوروبا الشمالية -->
-                    <a href="norway.html" class="country-card" data-name="النرويج">
+                    <!-- النرويج -->
+                    <a href="norway.html" class="country-card" data-name="النرويج" aria-label="عرض فرص عمل في النرويج">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #BA0C2F;"></i></div>
                         <span class="country-name">النرويج</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="sweden.html" class="country-card" data-name="السويد">
+                    <!-- السويد -->
+                    <a href="sweden.html" class="country-card" data-name="السويد" aria-label="عرض فرص عمل في السويد">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #004B87;"></i></div>
                         <span class="country-name">السويد</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="denmark.html" class="country-card" data-name="الدنمارك">
+                    <!-- الدنمارك -->
+                    <a href="denmark.html" class="country-card" data-name="الدنمارك" aria-label="عرض فرص عمل في الدنمارك">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #C8102E;"></i></div>
                         <span class="country-name">الدنمارك</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="finland.html" class="country-card" data-name="فنلندا">
+                    <!-- فنلندا -->
+                    <a href="finland.html" class="country-card" data-name="فنلندا" aria-label="عرض فرص عمل في فنلندا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #002F6C;"></i></div>
                         <span class="country-name">فنلندا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="latvia.html" class="country-card" data-name="لاتفيا">
+                    <!-- لاتفيا -->
+                    <a href="latvia.html" class="country-card" data-name="لاتفيا" aria-label="عرض فرص عمل في لاتفيا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #9E3039;"></i></div>
                         <span class="country-name">لاتفيا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="lithuania.html" class="country-card" data-name="ليتوانيا">
+                    <!-- ليتوانيا -->
+                    <a href="lithuania.html" class="country-card" data-name="ليتوانيا" aria-label="عرض فرص عمل في ليتوانيا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #FDB913;"></i></div>
                         <span class="country-name">ليتوانيا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-
-                    <!-- أوروبا الوسطى والشرقية -->
-                    <a href="poland.html" class="country-card" data-name="بولندا">
+                    <!-- بولندا -->
+                    <a href="poland.html" class="country-card" data-name="بولندا" aria-label="عرض فرص عمل في بولندا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #DC143C;"></i></div>
                         <span class="country-name">بولندا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="czechia.html" class="country-card" data-name="التشيك">
+                    <!-- التشيك -->
+                    <a href="czechia.html" class="country-card" data-name="التشيك" aria-label="عرض فرص عمل في التشيك">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #11457E;"></i></div>
                         <span class="country-name">التشيك</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="hungary.html" class="country-card" data-name="المجر">
+                    <!-- المجر -->
+                    <a href="hungary.html" class="country-card" data-name="المجر" aria-label="عرض فرص عمل في المجر">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #CD2A3E;"></i></div>
                         <span class="country-name">المجر</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="romania.html" class="country-card" data-name="رومانيا">
+                    <!-- رومانيا -->
+                    <a href="romania.html" class="country-card" data-name="رومانيا" aria-label="عرض فرص عمل في رومانيا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #002B7F;"></i></div>
                         <span class="country-name">رومانيا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="bulgaria.html" class="country-card" data-name="بلغاريا">
+                    <!-- بلغاريا -->
+                    <a href="bulgaria.html" class="country-card" data-name="بلغاريا" aria-label="عرض فرص عمل في بلغاريا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #00966E;"></i></div>
                         <span class="country-name">بلغاريا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="croatia.html" class="country-card" data-name="كرواتيا">
+                    <!-- كرواتيا -->
+                    <a href="croatia.html" class="country-card" data-name="كرواتيا" aria-label="عرض فرص عمل في كرواتيا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #FF0000;"></i></div>
                         <span class="country-name">كرواتيا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="serbia.html" class="country-card" data-name="صربيا">
+                    <!-- صربيا -->
+                    <a href="serbia.html" class="country-card" data-name="صربيا" aria-label="عرض فرص عمل في صربيا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #C6363C;"></i></div>
                         <span class="country-name">صربيا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-
-                    <!-- أمريكا الشمالية -->
-                    <a href="canada.html" class="country-card" data-name="كندا">
+                    <!-- كندا -->
+                    <a href="canada.html" class="country-card" data-name="كندا" aria-label="عرض فرص عمل في كندا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #D52B1E;"></i></div>
                         <span class="country-name">كندا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="usa.html" class="country-card" data-name="أمريكا">
+                    <!-- الولايات المتحدة -->
+                    <a href="usa.html" class="country-card" data-name="الولايات المتحدة" aria-label="عرض فرص عمل في الولايات المتحدة">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #B22234;"></i></div>
                         <span class="country-name">الولايات المتحدة</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="mexico.html" class="country-card" data-name="المكسيك">
+                    <!-- المكسيك -->
+                    <a href="mexico.html" class="country-card" data-name="المكسيك" aria-label="عرض فرص عمل في المكسيك">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #006341;"></i></div>
                         <span class="country-name">المكسيك</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-
-                    <!-- أمريكا الجنوبية -->
-                    <a href="argentina.html" class="country-card" data-name="الأرجنتين">
+                    <!-- الأرجنتين -->
+                    <a href="argentina.html" class="country-card" data-name="الأرجنتين" aria-label="عرض فرص عمل في الأرجنتين">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #75AADB;"></i></div>
                         <span class="country-name">الأرجنتين</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="brazil.html" class="country-card" data-name="البرازيل">
+                    <!-- البرازيل -->
+                    <a href="brazil.html" class="country-card" data-name="البرازيل" aria-label="عرض فرص عمل في البرازيل">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #009B3A;"></i></div>
                         <span class="country-name">البرازيل</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="colombia.html" class="country-card" data-name="كولومبيا">
+                    <!-- كولومبيا -->
+                    <a href="colombia.html" class="country-card" data-name="كولومبيا" aria-label="عرض فرص عمل في كولومبيا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #FCD116;"></i></div>
                         <span class="country-name">كولومبيا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="peru.html" class="country-card" data-name="بيرو">
+                    <!-- بيرو -->
+                    <a href="peru.html" class="country-card" data-name="بيرو" aria-label="عرض فرص عمل في بيرو">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #D91023;"></i></div>
                         <span class="country-name">بيرو</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="uruguay.html" class="country-card" data-name="أوروغواي">
+                    <!-- أوروغواي -->
+                    <a href="uruguay.html" class="country-card" data-name="أوروغواي" aria-label="عرض فرص عمل في أوروغواي">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #0038A8;"></i></div>
                         <span class="country-name">أوروغواي</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="chile.html" class="country-card" data-name="تشيلي">
+                    <!-- تشيلي -->
+                    <a href="chile.html" class="country-card" data-name="تشيلي" aria-label="عرض فرص عمل في تشيلي">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #D52B1E;"></i></div>
                         <span class="country-name">تشيلي</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-
-                    <!-- الخليج والشرق الأوسط -->
-                    <a href="uae.html" class="country-card" data-name="الإمارات">
+                    <!-- الإمارات -->
+                    <a href="uae.html" class="country-card" data-name="الإمارات" aria-label="عرض فرص عمل في الإمارات">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #FF0000;"></i></div>
                         <span class="country-name">الإمارات</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="saudi.html" class="country-card" data-name="السعودية">
+                    <!-- السعودية -->
+                    <a href="saudi.html" class="country-card" data-name="السعودية" aria-label="عرض فرص عمل في السعودية">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #006C35;"></i></div>
                         <span class="country-name">السعودية</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="qatar.html" class="country-card" data-name="قطر">
+                    <!-- قطر -->
+                    <a href="qatar.html" class="country-card" data-name="قطر" aria-label="عرض فرص عمل في قطر">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #8B1E3F;"></i></div>
                         <span class="country-name">قطر</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="kuwait.html" class="country-card" data-name="الكويت">
+                    <!-- الكويت -->
+                    <a href="kuwait.html" class="country-card" data-name="الكويت" aria-label="عرض فرص عمل في الكويت">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #007A3D;"></i></div>
                         <span class="country-name">الكويت</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="bahrain.html" class="country-card" data-name="البحرين">
+                    <!-- البحرين -->
+                    <a href="bahrain.html" class="country-card" data-name="البحرين" aria-label="عرض فرص عمل في البحرين">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #DA291C;"></i></div>
                         <span class="country-name">البحرين</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="oman.html" class="country-card" data-name="عمان">
+                    <!-- عمان -->
+                    <a href="oman.html" class="country-card" data-name="عمان" aria-label="عرض فرص عمل في عمان">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #DA291C;"></i></div>
                         <span class="country-name">عمان</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="egypt.html" class="country-card" data-name="مصر">
+                    <!-- مصر -->
+                    <a href="egypt.html" class="country-card" data-name="مصر" aria-label="عرض فرص عمل في مصر">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #C8102E;"></i></div>
                         <span class="country-name">مصر</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="turkey.html" class="country-card" data-name="تركيا">
+                    <!-- تركيا -->
+                    <a href="turkey.html" class="country-card" data-name="تركيا" aria-label="عرض فرص عمل في تركيا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #E30A17;"></i></div>
                         <span class="country-name">تركيا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-
-                    <!-- آسيا وأوقيانوسيا -->
-                    <a href="japan.html" class="country-card" data-name="اليابان">
+                    <!-- اليابان -->
+                    <a href="japan.html" class="country-card" data-name="اليابان" aria-label="عرض فرص عمل في اليابان">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #BC002D;"></i></div>
                         <span class="country-name">اليابان</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="southkorea.html" class="country-card" data-name="كوريا الجنوبية">
+                    <!-- كوريا الجنوبية -->
+                    <a href="southkorea.html" class="country-card" data-name="كوريا الجنوبية" aria-label="عرض فرص عمل في كوريا الجنوبية">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #CD2E3A;"></i></div>
                         <span class="country-name">كوريا الجنوبية</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="china.html" class="country-card" data-name="الصين">
+                    <!-- الصين -->
+                    <a href="china.html" class="country-card" data-name="الصين" aria-label="عرض فرص عمل في الصين">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #DE2910;"></i></div>
                         <span class="country-name">الصين</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="singapore.html" class="country-card" data-name="سنغافورة">
+                    <!-- سنغافورة -->
+                    <a href="singapore.html" class="country-card" data-name="سنغافورة" aria-label="عرض فرص عمل في سنغافورة">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #ED2939;"></i></div>
                         <span class="country-name">سنغافورة</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="malaysia.html" class="country-card" data-name="ماليزيا">
+                    <!-- ماليزيا -->
+                    <a href="malaysia.html" class="country-card" data-name="ماليزيا" aria-label="عرض فرص عمل في ماليزيا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #010066;"></i></div>
                         <span class="country-name">ماليزيا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="vietnam.html" class="country-card" data-name="فيتنام">
+                    <!-- فيتنام -->
+                    <a href="vietnam.html" class="country-card" data-name="فيتنام" aria-label="عرض فرص عمل في فيتنام">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #DA251D;"></i></div>
                         <span class="country-name">فيتنام</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="australia.html" class="country-card" data-name="أستراليا">
+                    <!-- أستراليا -->
+                    <a href="australia.html" class="country-card" data-name="أستراليا" aria-label="عرض فرص عمل في أستراليا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #00008B;"></i></div>
                         <span class="country-name">أستراليا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="newzealand.html" class="country-card" data-name="نيوزيلندا">
+                    <!-- نيوزيلندا -->
+                    <a href="newzealand.html" class="country-card" data-name="نيوزيلندا" aria-label="عرض فرص عمل في نيوزيلندا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #00247D;"></i></div>
                         <span class="country-name">نيوزيلندا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-
-                    <!-- أفريقيا -->
-                    <a href="southafrica.html" class="country-card" data-name="جنوب أفريقيا">
+                    <!-- جنوب أفريقيا -->
+                    <a href="southafrica.html" class="country-card" data-name="جنوب أفريقيا" aria-label="عرض فرص عمل في جنوب أفريقيا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #007A4D;"></i></div>
                         <span class="country-name">جنوب أفريقيا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="morocco.html" class="country-card" data-name="المغرب">
+                    <!-- المغرب -->
+                    <a href="morocco.html" class="country-card" data-name="المغرب" aria-label="عرض فرص عمل في المغرب">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #C1272D;"></i></div>
                         <span class="country-name">المغرب</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="algeria.html" class="country-card" data-name="الجزائر">
+                    <!-- الجزائر -->
+                    <a href="algeria.html" class="country-card" data-name="الجزائر" aria-label="عرض فرص عمل في الجزائر">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #006233;"></i></div>
                         <span class="country-name">الجزائر</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="tunisia.html" class="country-card" data-name="تونس">
+                    <!-- تونس -->
+                    <a href="tunisia.html" class="country-card" data-name="تونس" aria-label="عرض فرص عمل في تونس">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #E70013;"></i></div>
                         <span class="country-name">تونس</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
                     </a>
-                    <a href="libya.html" class="country-card" data-name="ليبيا">
+                    <!-- ليبيا -->
+                    <a href="libya.html" class="country-card" data-name="ليبيا" aria-label="عرض فرص عمل في ليبيا">
                         <div class="country-icon"><i class="fas fa-flag" style="color: #239E46;"></i></div>
                         <span class="country-name">ليبيا</span>
                         <span class="country-link">عرض <i class="fas fa-arrow-left"></i></span>
@@ -868,7 +893,7 @@ android-chrome-192x192.png
                 </div>
             </div>
 
-            <!-- الشريط الجانبي (يسار في الويب) -->
+            <!-- الشريط الجانبي -->
             <aside class="sidebar">
                 <div class="widget">
                     <h3 class="widget-title"><i class="fas fa-lightbulb"></i> نصيحة اليوم</h3>
@@ -891,9 +916,9 @@ android-chrome-192x192.png
                 <div class="widget">
                     <h3 class="widget-title"><i class="fas fa-briefcase"></i> خدمات سريعة</h3>
                     <div class="service-links">
-                        <a href="services.html" class="service-btn"><i class="fas fa-file-alt"></i> تصميم السيرة الذاتية</a>
-                        <a href="services.html" class="service-btn"><i class="fas fa-envelope"></i> كتابة خطاب تقديم</a>
-                        <a href="services.html" class="service-btn"><i class="fas fa-user-plus"></i> تسجيل في مواقع التوظيف</a>
+                        <a href="services.html" class="service-btn" aria-label="خدمة تصميم السيرة الذاتية"><i class="fas fa-file-alt"></i> تصميم السيرة الذاتية</a>
+                        <a href="services.html" class="service-btn" aria-label="خدمة كتابة خطاب تقديم"><i class="fas fa-envelope"></i> كتابة خطاب تقديم</a>
+                        <a href="services.html" class="service-btn" aria-label="خدمة التسجيل في مواقع التوظيف"><i class="fas fa-user-plus"></i> تسجيل في مواقع التوظيف</a>
                     </div>
                 </div>
 
@@ -918,8 +943,8 @@ android-chrome-192x192.png
                 <div class="widget">
                     <h3 class="widget-title"><i class="fas fa-share-alt"></i> تابعنا</h3>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://wa.me/212669411021" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank" aria-label="تابعنا على فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/212669411021" target="_blank" aria-label="تواصل معنا على واتساب"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </aside>
@@ -932,7 +957,7 @@ android-chrome-192x192.png
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>وظائف حول العالم</h4>
-                    <p>منصتك الموثوقة للبحث عن فرص عمل في 53 دولة حول العالم. نقدم معلومات محدثة عن الرواتب، التأشيرات، ونصائح التوظيف.</p>
+                    <p>منصتك الموثوقة للبحث عن فرص عمل في 53 دولة حول العالم.</p>
                 </div>
                 <div class="footer-section">
                     <h4>روابط سريعة</h4>
@@ -954,8 +979,8 @@ android-chrome-192x192.png
                 <div class="footer-section">
                     <h4>تابعنا</h4>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook"></i> فيسبوك</a>
-                        <a href="https://wa.me/212669411021" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+                        <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank" aria-label="فيسبوك"><i class="fab fa-facebook"></i> فيسبوك</a>
+                        <a href="https://wa.me/212669411021" target="_blank" aria-label="واتساب"><i class="fab fa-whatsapp"></i> واتساب</a>
                     </div>
                 </div>
             </div>
@@ -968,7 +993,7 @@ android-chrome-192x192.png
     <!-- كود الإعلان Social Bar -->
     <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 
-    <!-- وظيفة البحث (JavaScript) -->
+    <!-- وظيفة البحث -->
     <script>
         function filterCountries() {
             const input = document.getElementById('searchInput');
