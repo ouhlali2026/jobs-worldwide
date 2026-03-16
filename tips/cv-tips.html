@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>كيف تكتب سيرة ذاتية احترافية – نصائح للباحثين عن عمل</title>
-    <meta name="description" content="دليل شامل لكتابة السيرة الذاتية: 10 نصائح ذهبية، أخطاء شائعة، وكيف تجتاز أنظمة ATS.">
-    
-    <!-- Google Fonts, Font Awesome, style.css (نفس الرابط) -->
+    <meta name="description" content="دليل شامل لكتابة السيرة الذاتية: 10 نصائح ذهبية لكتابة سيرة ذاتية تلفت انتباه مسؤولي التوظيف وتجتاز أنظمة ATS.">
+    <meta name="keywords" content="سيرة ذاتية, CV, كتابة السيرة الذاتية, نصائح مهنية, ATS, مسؤولي التوظيف">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- ملف التنسيقات الرئيسي -->
     <link rel="stylesheet" href="../style.css">
-    
+
     <style>
-        .tip-content {
+        /* تنسيقات إضافية لصفحات النصائح */
+        .tip-article {
             max-width: 800px;
             margin: 40px auto;
             padding: 30px;
@@ -22,76 +28,213 @@
             border-radius: 20px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
-        
-        .tip-content h2 {
+
+        .tip-article h1 {
+            font-size: 2rem;
+            color: #1e3c72;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f59e0b;
+            padding-bottom: 10px;
+        }
+
+        .tip-article h2 {
+            font-size: 1.5rem;
             color: #1e3c72;
             margin: 30px 0 15px;
         }
-        
-        .tip-content ul, .tip-content ol {
+
+        .tip-article p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #334155;
+        }
+
+        .tip-article ul, .tip-article ol {
             margin-right: 20px;
             margin-bottom: 20px;
         }
-        
-        .tip-content li {
+
+        .tip-article li {
             margin-bottom: 10px;
+            line-height: 1.6;
         }
-        
-        .back-to-tips {
+
+        .tip-article .highlight {
+            background: #fef9e7;
+            border-right: 4px solid #f59e0b;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .related-links {
+            margin: 40px 0;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 12px;
+        }
+
+        .related-links h3 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .related-grid a {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            color: #1e3c72;
+            text-decoration: none;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .related-grid a:hover {
+            background: #1e3c72;
+            color: white;
+            border-color: #1e3c72;
+        }
+
+        .back-link {
             display: inline-block;
             margin: 20px 0;
             color: #1e3c72;
             font-weight: 500;
         }
+
+        @media (max-width: 768px) {
+            .tip-article {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- شريط التنقل (نفس الشريط، مع تعديل الرابط النشط) -->
-    <nav class="navbar">...</nav>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-globe"></i>
+                    <span>وظائف حول العالم</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../countries.html">الدول</a></li>
+                    <li><a href="../tips.html" class="active">نصائح</a></li>
+                    <li><a href="../services.html">الخدمات</a></li>
+                    <li><a href="../about.html">من نحن</a></li>
+                    <li><a href="../contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div class="container">
-        <a href="../tips.html" class="back-to-tips"><i class="fas fa-arrow-right"></i> العودة إلى جميع النصائح</a>
-        
-        <article class="tip-content">
+        <a href="../tips.html" class="back-link"><i class="fas fa-arrow-right"></i> العودة إلى جميع النصائح</a>
+
+        <article class="tip-article">
             <h1>كيف تكتب سيرة ذاتية احترافية</h1>
-            <p>10 نصائح ذهبية لكتابة سيرة ذاتية تلفت انتباه مسؤولي التوظيف وتجتاز أنظمة ATS.</p>
             
+            <p>السيرة الذاتية هي بطاقة التعريف الخاصة بك أمام مسؤولي التوظيف. إنها أول ما يرونه عنك، وغالباً ما تكون العامل الحاسم في حصولك على مقابلة عمل أو استبعادك من المنافسة. في هذا الدليل الشامل، سنقدم لك 10 نصائح ذهبية لكتابة سيرة ذاتية احترافية تجذب انتباه مسؤولي التوظيف وتجتاز أنظمة تتبع المتقدمين (ATS).</p>
+
             <h2>1. اختر التنسيق المناسب</h2>
-            <p>هناك ثلاثة تنسيقات رئيسية: زمني عكسي (الأكثر شيوعاً)، وظيفي، مختلط. اختر ما يناسب خبراتك.</p>
-            
+            <p>هناك ثلاثة تنسيقات رئيسية للسيرة الذاتية:</p>
+            <ul>
+                <li><strong>التنسيق الزمني العكسي (Chronological):</strong> يركز على تاريخ العمل، حيث تُدرج خبراتك من الأحدث إلى الأقدم. مناسب للأشخاص ذوي الخبرة المستمرة في نفس المجال.</li>
+                <li><strong>التنسيق الوظيفي (Functional):</strong> يركز على المهارات والإنجازات بدلاً من التواريخ. مناسب للأشخاص الذين لديهم فجوات في التوظيف أو يغيرون مسارهم المهني.</li>
+                <li><strong>التنسيق المختلط (Combination):</strong> يجمع بين الاثنين. يبرز المهارات أولاً ثم يقدم تاريخ العمل باختصار.</li>
+            </ul>
+            <p>اختر التنسيق الذي يناسب حالتك، لكن في معظم الحالات يكون التنسيق الزمني العكسي هو الأكثر قبولاً.</p>
+
             <h2>2. خصص سيرتك الذاتية لكل وظيفة</h2>
-            <p>لا ترسل نفس السيرة الذاتية لكل الوظائف. أضف الكلمات المفتاحية من إعلان الوظيفة.</p>
-            
-            <h2>3. ركز على الإنجازات وليس الواجبات</h2>
-            <p>بدلاً من "كنت مسؤولاً عن..."، قل "حققت زيادة في المبيعات بنسبة 20% خلال عام".</p>
-            
-            <h2>4. أضف أرقاماً وإحصائيات</h2>
-            <p>الأرقام تجعل إنجازاتك أكثر مصداقية وتأثيراً.</p>
-            
-            <h2>5. تأكد من خلوك من الأخطاء الإملائية</h2>
-            <p>خطأ إملائي واحد قد يكون سبباً في استبعاد سيرتك الذاتية.</p>
-            
-            <h2>6. أضف كلمات مفتاحية (Keywords)</h2>
-            <p>معظم الشركات تستخدم أنظمة ATS لفلترة السير الذاتية. أضف كلمات مفتاحية من الوصف الوظيفي.</p>
-            
-            <h2>7. اجعل سيرتك الذاتية في صفحة أو صفحتين كحد أقصى</h2>
-            <p>لأصحاب الخبرات المتوسطة، صفحة واحدة كافية. للخبراء، صفحتين.</p>
-            
+            <p>أحد أكبر الأخطاء التي يرتكبها الباحثون عن عمل هو إرسال نفس السيرة الذاتية لكل الوظائف. بدلاً من ذلك، خصص كل سيرة ذاتية للوظيفة التي تتقدم إليها. اقرأ الوصف الوظيفي بعناية، وحدد الكلمات المفتاحية والمهارات المطلوبة، ثم أضفها إلى سيرتك الذاتية. هذا يزيد من فرص اجتياز أنظمة ATS التي تبحث عن تطابق بين الكلمات المفتاحية في السيرة الذاتية والوصف الوظيفي.</p>
+
+            <h2>3. ركز على الإنجازات، وليس الواجبات</h2>
+            <p>لا تكتفي بذكر المهام التي قمت بها في وظائفك السابقة. بدلاً من ذلك، ركز على الإنجازات التي حققتها. استخدم الأرقام والإحصائيات لجعل إنجازاتك أكثر تأثيراً.</p>
+            <div class="highlight">
+                <p><strong>مثال ضعيف:</strong> "كنت مسؤولاً عن زيادة المبيعات."</p>
+                <p><strong>مثال قوي:</strong> "حققت زيادة في المبيعات بنسبة 25% خلال عام واحد، مما أدى إلى تحقيق أرباح إضافية بقيمة 500,000 دولار."</p>
+            </div>
+
+            <h2>4. أضف كلمات مفتاحية (Keywords) استراتيجية</h2>
+            <p>معظم الشركات الكبرى تستخدم أنظمة تتبع المتقدمين (ATS) لفلترة السير الذاتية. هذه الأنظمة تبحث عن كلمات مفتاحية محددة تتعلق بالوظيفة. لذلك، من الضروري تضمين كلمات مفتاحية من الوصف الوظيفي في سيرتك الذاتية. اقرأ إعلان الوظيفة بعناية، وحدد الكلمات والعبارات الأكثر تكراراً، ثم أدرجها في أقسام المهارات والخبرات.</p>
+
+            <h2>5. حافظ على التنسيق البسيط والنظيف</h2>
+            <p>لا تستخدم تصاميم معقدة أو ألواناً كثيرة. اختر خطاً واضحاً مثل Arial أو Calibri بحجم 10-12 نقطة للنصوص العادية، و14-16 للعناوين. استخدم الهوامش البيضاء بشكل مناسب. التنسيق البسيط يسهل قراءة سيرتك الذاتية سواء من قبل البشر أو الأنظمة الآلية.</p>
+
+            <h2>6. تأكد من خلوها من الأخطاء الإملائية والنحوية</h2>
+            <p>خطأ إملائي واحد قد يكون سبباً كافياً لاستبعاد سيرتك الذاتية. قبل إرسالها، راجعها عدة مرات، واطلب من شخص آخر قراءتها، واستخدم أدوات التدقيق الإملائي مثل Grammarly.</p>
+
+            <h2>7. اجعلها في صفحة أو صفحتين كحد أقصى</h2>
+            <p>لأصحاب الخبرات المتوسطة، صفحة واحدة كافية. للخبراء الذين لديهم أكثر من 10 سنوات خبرة، يمكن أن تمتد إلى صفحتين. لكن تذكر، كلما كانت موجزة، زادت فرص قراءتها بالكامل.</p>
+
             <h2>8. أضف روابط لملفاتك المهنية</h2>
-            <p>رابط LinkedIn، Portfolio، GitHub (للمبرمجين).</p>
-            
-            <h2>9. تجنب الصور الشخصية (إلا في دول معينة)</h2>
-            <p>في أمريكا وكندا وأوروبا، الصور الشخصية غير مرغوب فيها. في بعض الدول العربية والخليج، قد تكون مقبولة.</p>
-            
+            <p>تأكد من تضمين رابط ملفك الشخصي على LinkedIn، ورابط GitHub إذا كنت مبرمجاً، ورابط Portfolio إذا كنت مصمماً. تأكد من أن هذه الروابط تعمل وتعكس أحدث إنجازاتك.</p>
+
+            <h2>9. تجنب الصور الشخصية (في معظم الدول)</h2>
+            <p>في أمريكا وكندا وأوروبا، الصور الشخصية غير مرغوب فيها في السيرة الذاتية لأنها قد تؤدي إلى تمييز. في بعض الدول العربية والخليجية، قد تكون مقبولة. تحقق من عادات سوق العمل في الدولة التي تستهدفها. يمكنك الاطلاع على أدلة الدول في موقعنا مثل <a href="../germany.html">ألمانيا</a> أو <a href="../canada.html">كندا</a> لمعرفة المزيد.</p>
+
             <h2>10. احفظ سيرتك الذاتية بصيغة PDF</h2>
-            <p>PDF يضمن ثبات التنسيق على جميع الأجهزة.</p>
-            
-            <p>إذا احتجت مساعدة في تصميم سيرتك الذاتية احترافياً، تواصل معنا عبر واتساب.</p>
+            <p>صيغة PDF تضمن ثبات التنسيق على جميع الأجهزة. تأكد من أن اسم الملف واضح، مثل "أحمد_محمد_سيرة_ذاتية.pdf" بدلاً من "CV.pdf".</p>
+
+            <div class="highlight">
+                <p><strong>خدمتنا:</strong> إذا كنت ترغب في الحصول على سيرة ذاتية احترافية مصممة خصيصاً لمجال عملك والدولة المستهدفة، يمكننا مساعدتك من خلال <a href="../services.html">خدمة تصميم السيرة الذاتية</a> مقابل 9 دولارات فقط. تواصل معنا عبر <a href="https://wa.me/212669411021">واتساب</a>.</p>
+            </div>
+
+            <!-- روابط داخلية لنصائح أخرى -->
+            <div class="related-links">
+                <h3>نصائح أخرى قد تهمك</h3>
+                <div class="related-grid">
+                    <a href="interview-tips.html"><i class="fas fa-users"></i> اجتياز المقابلة</a>
+                    <a href="visa-tips.html"><i class="fas fa-passport"></i> نصائح التأشيرات</a>
+                    <a href="linkedin-tips.html"><i class="fab fa-linkedin"></i> تطوير LinkedIn</a>
+                </div>
+            </div>
         </article>
     </div>
 
     <!-- تذييل الصفحة -->
-    <footer>...</footer>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>وظائف حول العالم</h4>
+                    <p>منصتك الموثوقة للبحث عن فرص عمل في 53 دولة حول العالم.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="../index.html">الرئيسية</a></li>
+                        <li><a href="../countries.html">الدول</a></li>
+                        <li><a href="../tips.html">نصائح</a></li>
+                        <li><a href="../services.html">الخدمات</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تابعنا</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61573610945491"><i class="fab fa-facebook"></i> فيسبوك</a>
+                        <a href="https://wa.me/212669411021"><i class="fab fa-whatsapp"></i> واتساب</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- كود الإعلان Social Bar -->
     <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 </body>
 </html>
