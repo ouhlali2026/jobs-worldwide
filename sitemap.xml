@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://jobs-worldwide.vercel.app/sitemap-countries.xml</loc>
-    <lastmod>2026-03-05</lastmod>
+    <loc>https://jobs-worldwide.vercel.app/sitemap-pages.xml</loc>
+    <lastmod>2026-03-16</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://jobs-worldwide.vercel.app/sitemap-pages.xml</loc>
-    <lastmod>2026-03-05</lastmod>
+    <loc>https://jobs-worldwide.vercel.app/sitemap-countries.xml</loc>
+    <lastmod>2026-03-16</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://jobs-worldwide.vercel.app/sitemap-tips.xml</loc>
+    <lastmod>2026-03-16</lastmod>
   </sitemap>
 </sitemapindex>
