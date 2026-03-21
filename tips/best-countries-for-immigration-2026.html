@@ -19,16 +19,16 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* تنسيقات خاصة بهذه الصفحة فقط – تحافظ على نفس الهيكل */
-        .country-card {
+        /* تنسيقات إضافية خاصة بهذه الصفحة – تحافظ على نفس هيكل صفحات الدول */
+        .country-feature-card {
             background: white;
             border-radius: 16px;
-            padding: 25px;
+            padding: 20px;
             margin-bottom: 25px;
             border: 1px solid #e2e8f0;
             transition: all 0.3s ease;
         }
-        .country-card:hover {
+        .country-feature-card:hover {
             transform: translateY(-3px);
             border-color: #f59e0b;
             box-shadow: 0 10px 25px rgba(0,0,0,0.05);
@@ -41,10 +41,10 @@
             border-bottom: 2px solid #e2e8f0;
             padding-bottom: 10px;
         }
-        .country-flag {
+        .country-flag-big {
             font-size: 2.5rem;
         }
-        .country-name-mini {
+        .country-title {
             font-size: 1.5rem;
             font-weight: 700;
             color: #1e3c72;
@@ -61,7 +61,7 @@
             border-radius: 20px;
             font-size: 0.85rem;
         }
-        .btn-link {
+        .btn-detail {
             display: inline-block;
             margin-top: 15px;
             color: #f59e0b;
@@ -96,7 +96,7 @@
     </style>
 </head>
 <body>
-    <!-- شريط التنقل – مطابق لبقية الصفحات -->
+    <!-- شريط التنقل – مطابق لصفحات الدول -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
@@ -131,7 +131,7 @@
     </section>
 
     <div class="container">
-        <!-- تخطيط المحتوى الرئيسي + الشريط الجانبي – مطابق تماماً لصفحات الدول -->
+        <!-- تخطيط المحتوى الرئيسي + الشريط الجانبي – مطابق لصفحات الدول -->
         <div class="main-content">
             <!-- المحتوى الرئيسي (يمين) -->
             <div class="countries-section">
@@ -140,10 +140,10 @@
                 </a>
 
                 <h2 class="section-title">🇨🇦 1. كندا – 380,000 مهاجر سنوياً</h2>
-                <div class="country-card">
+                <div class="country-feature-card">
                     <div class="country-header-mini">
-                        <span class="country-flag">🇨🇦</span>
-                        <span class="country-name-mini">كندا</span>
+                        <span class="country-flag-big">🇨🇦</span>
+                        <span class="country-title">كندا</span>
                     </div>
                     <p>تستهدف الحكومة الكندية استقبال <strong>380,000 مقيم دائم سنوياً</strong> بين 2026 و2028، مع تركيز كبير على العمالة الماهرة .</p>
                     <div class="country-stats">
@@ -155,14 +155,14 @@
                         <li><strong>برامج الهجرة:</strong> Express Entry، برامج المقاطعات (PNP)، تأشيرة العمل بعد الدراسة (PGWP).</li>
                         <li><strong>المهن الأكثر طلباً:</strong> تكنولوجيا المعلومات، الرعاية الصحية، الهندسة، التجارة الماهرة.</li>
                     </ul>
-                    <a href="canada.html" class="btn-link">📖 اقرأ دليل كندا الشامل <i class="fas fa-arrow-left"></i></a>
+                    <a href="canada.html" class="btn-detail">📖 اقرأ دليل كندا الشامل <i class="fas fa-arrow-left"></i></a>
                 </div>
 
                 <h2 class="section-title">🇩🇪 2. ألمانيا – مليون وظيفة شاغرة</h2>
-                <div class="country-card">
+                <div class="country-feature-card">
                     <div class="country-header-mini">
-                        <span class="country-flag">🇩🇪</span>
-                        <span class="country-name-mini">ألمانيا</span>
+                        <span class="country-flag-big">🇩🇪</span>
+                        <span class="country-title">ألمانيا</span>
                     </div>
                     <p>تعاني ألمانيا من نقص حاد في العمالة الماهرة، حيث يصل عدد الوظائف الشاغرة إلى أكثر من <strong>مليون وظيفة</strong> .</p>
                     <div class="country-stats">
@@ -174,14 +174,14 @@
                         <li><strong>برامج الهجرة:</strong> البطاقة الزرقاء للاتحاد الأوروبي، بطاقة الفرصة (Chancenkarte).</li>
                         <li><strong>المهن الأكثر طلباً:</strong> الهندسة، تكنولوجيا المعلومات، الرعاية الصحية.</li>
                     </ul>
-                    <a href="germany.html" class="btn-link">📖 اقرأ دليل ألمانيا الشامل <i class="fas fa-arrow-left"></i></a>
+                    <a href="germany.html" class="btn-detail">📖 اقرأ دليل ألمانيا الشامل <i class="fas fa-arrow-left"></i></a>
                 </div>
 
                 <h2 class="section-title">🇦🇺 3. أستراليا – 185,000 فرصة هجرة سنوياً</h2>
-                <div class="country-card">
+                <div class="country-feature-card">
                     <div class="country-header-mini">
-                        <span class="country-flag">🇦🇺</span>
-                        <span class="country-name-mini">أستراليا</span>
+                        <span class="country-flag-big">🇦🇺</span>
+                        <span class="country-title">أستراليا</span>
                     </div>
                     <p>أستراليا حددت سقفاً للهجرة الدائمة بـ <strong>185,000 مكان</strong> للعام 2025-2026 .</p>
                     <div class="country-stats">
@@ -193,14 +193,14 @@
                         <li><strong>برامج الهجرة:</strong> تأشيرات المهارات المستقلة (189)، الترشيح من الولاية (190).</li>
                         <li><strong>المهن الأكثر طلباً:</strong> الرعاية الصحية، التكنولوجيا الحيوية، الطاقة المتجددة.</li>
                     </ul>
-                    <a href="australia.html" class="btn-link">📖 اقرأ دليل أستراليا الشامل <i class="fas fa-arrow-left"></i></a>
+                    <a href="australia.html" class="btn-detail">📖 اقرأ دليل أستراليا الشامل <i class="fas fa-arrow-left"></i></a>
                 </div>
 
                 <h2 class="section-title">🇳🇿 4. نيوزيلندا – 87 مهنة جديدة</h2>
-                <div class="country-card">
+                <div class="country-feature-card">
                     <div class="country-header-mini">
-                        <span class="country-flag">🇳🇿</span>
-                        <span class="country-name-mini">نيوزيلندا</span>
+                        <span class="country-flag-big">🇳🇿</span>
+                        <span class="country-title">نيوزيلندا</span>
                     </div>
                     <p>أضافت نيوزيلندا <strong>87 مهنة جديدة</strong> إلى قائمة المهارات المعترف بها .</p>
                     <div class="country-stats">
@@ -212,14 +212,14 @@
                         <li><strong>برامج الهجرة:</strong> تأشيرة العمل من صاحب عمل معتمد (AEWV).</li>
                         <li><strong>المهن الأكثر طلباً:</strong> تكنولوجيا المعلومات، الهندسة، الرعاية الصحية.</li>
                     </ul>
-                    <a href="newzealand.html" class="btn-link">📖 اقرأ دليل نيوزيلندا الشامل <i class="fas fa-arrow-left"></i></a>
+                    <a href="newzealand.html" class="btn-detail">📖 اقرأ دليل نيوزيلندا الشامل <i class="fas fa-arrow-left"></i></a>
                 </div>
 
                 <h2 class="section-title">🇳🇱 5. هولندا – عمالة ماهرة بلا اختبار سوق عمل</h2>
-                <div class="country-card">
+                <div class="country-feature-card">
                     <div class="country-header-mini">
-                        <span class="country-flag">🇳🇱</span>
-                        <span class="country-name-mini">هولندا</span>
+                        <span class="country-flag-big">🇳🇱</span>
+                        <span class="country-title">هولندا</span>
                     </div>
                     <p>تأشيرة "العامل الماهر" (Highly Skilled Migrant Visa) لا تتطلب اختبار سوق العمل .</p>
                     <div class="country-stats">
@@ -231,7 +231,7 @@
                         <li><strong>برامج الهجرة:</strong> تأشيرة العامل الماهر، تأشيرة الشركات الناشئة.</li>
                         <li><strong>المهن الأكثر طلباً:</strong> تكنولوجيا المعلومات، الهندسة، المالية.</li>
                     </ul>
-                    <a href="netherlands.html" class="btn-link">📖 اقرأ دليل هولندا الشامل <i class="fas fa-arrow-left"></i></a>
+                    <a href="netherlands.html" class="btn-detail">📖 اقرأ دليل هولندا الشامل <i class="fas fa-arrow-left"></i></a>
                 </div>
 
                 <h2 class="section-title">📊 مقارنة سريعة بين أفضل الدول للمهاجرين</h2>
@@ -246,11 +246,11 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td>🇨🇦 كندا</td><td>Express Entry, PNP</td><td>40,000 – 60,000</td><td>1,500 – 2,500</td></tr>
-                            <tr><td>🇩🇪 ألمانيا</td><td>EU Blue Card, Chancenkarte</td><td>50,000 – 80,000</td><td>1,200 – 1,800</td></tr>
-                            <tr><td>🇦🇺 أستراليا</td><td>Skilled Migration</td><td>45,000 – 65,000</td><td>2,000 – 3,000</td></tr>
-                            <tr><td>🇳🇿 نيوزيلندا</td><td>AEWV, Skilled Migrant</td><td>40,000 – 60,000</td><td>1,500 – 2,200</td></tr>
-                            <tr><td>🇳🇱 هولندا</td><td>Highly Skilled Migrant</td><td>50,000 – 75,000</td><td>1,300 – 2,000</td></tr>
+                             <tr><td>🇨🇦 كندا</td><td>Express Entry, PNP</td><td>40,000 – 60,000</td><td>1,500 – 2,500</td></tr>
+                             <tr><td>🇩🇪 ألمانيا</td><td>EU Blue Card, Chancenkarte</td><td>50,000 – 80,000</td><td>1,200 – 1,800</td></tr>
+                             <tr><td>🇦🇺 أستراليا</td><td>Skilled Migration</td><td>45,000 – 65,000</td><td>2,000 – 3,000</td></tr>
+                             <tr><td>🇳🇿 نيوزيلندا</td><td>AEWV, Skilled Migrant</td><td>40,000 – 60,000</td><td>1,500 – 2,200</td></tr>
+                             <tr><td>🇳🇱 هولندا</td><td>Highly Skilled Migrant</td><td>50,000 – 75,000</td><td>1,300 – 2,000</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -268,7 +268,7 @@
                 </div>
             </div>
 
-            <!-- الشريط الجانبي – مطابق تماماً لصفحات الدول -->
+            <!-- الشريط الجانبي – مطابق لصفحات الدول -->
             <aside class="sidebar">
                 <div class="widget">
                     <h3 class="widget-title"><i class="fas fa-lightbulb"></i> نصيحة اليوم</h3>
