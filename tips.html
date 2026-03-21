@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>نصائح للباحثين عن عمل – دليلك للوظيفة الأحلام</title>
-    <meta name="description" content="نصائح عملية للباحثين عن عمل: كيف تكتب سيرة ذاتية، اجتياز المقابلات، التعامل مع التأشيرات، وأخطاء شائعة يجب تجنبها.">
-    <meta name="keywords" content="نصائح للباحثين عن عمل, سيرة ذاتية, مقابلة عمل, تأشيرة عمل, LinkedIn">
+    <meta name="description" content="نصائح عملية للباحثين عن عمل: كيف تكتب سيرة ذاتية، اجتياز المقابلات، التعامل مع التأشيرات، وأفضل الدول للهجرة في 2026.">
+    <meta name="keywords" content="نصائح للباحثين عن عمل, سيرة ذاتية, مقابلة عمل, تأشيرة عمل, LinkedIn, أفضل دول للهجرة">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,46 +19,45 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* تنسيقات إضافية للصفحة */
+        /* تنسيقات إضافية لصفحة النصائح (تتماشى مع تصميم الموقع) */
         .page-header {
             background: linear-gradient(135deg, #1e3c72, #2a4d7a);
             color: white;
             padding: clamp(20px, 5vw, 35px) 15px;
             text-align: center;
+            margin-bottom: 30px;
         }
-        
         .page-header h1 {
             font-size: clamp(1.8rem, 5vw, 2.2rem);
             margin-bottom: 10px;
         }
-        
         .tips-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
+            gap: 25px;
             margin: 30px 0;
         }
-        
         .tip-card {
             background: white;
-            border-radius: 16px;
-            padding: 20px;
+            border-radius: 12px;
+            padding: 25px;
             border: 1px solid #e2e8f0;
             transition: all 0.3s ease;
             text-decoration: none;
             color: inherit;
-            display: block;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
         }
-        
         .tip-card:hover {
             transform: translateY(-5px);
             border-color: #f59e0b;
             box-shadow: 0 10px 25px rgba(30,60,114,0.1);
         }
-        
         .tip-icon {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             background: #eef2ff;
             border-radius: 50%;
             display: flex;
@@ -66,43 +65,41 @@
             justify-content: center;
             margin-bottom: 15px;
         }
-        
         .tip-icon i {
-            font-size: 1.8rem;
+            font-size: 2rem;
             color: #1e3c72;
         }
-        
         .tip-title {
             font-size: 1.2rem;
             font-weight: 600;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             color: #1e293b;
         }
-        
         .tip-excerpt {
             color: #64748b;
             font-size: 0.9rem;
             line-height: 1.6;
             margin-bottom: 15px;
+            flex: 1;
         }
-        
         .read-more {
             display: inline-flex;
             align-items: center;
             gap: 5px;
             color: #1e3c72;
             font-weight: 500;
+            margin-top: 5px;
         }
-        
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
             .tips-grid {
                 grid-template-columns: 1fr;
+                gap: 20px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- شريط التنقل -->
+    <!-- شريط التنقل (متطابق مع بقية الموقع) -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
@@ -161,11 +158,19 @@
                 <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
             </a>
 
-            <!-- المقال الجديد: نصائح البحث عن عمل في أمريكا -->
+            <!-- المقال: نصائح للبحث عن عمل في أمريكا -->
             <a href="tips/usa-job-search-tips.html" class="tip-card">
                 <div class="tip-icon"><i class="fas fa-flag-usa"></i></div>
                 <h3 class="tip-title">نصائح للبحث عن عمل في أمريكا 2026</h3>
                 <p class="tip-excerpt">دليل شامل: كيف تبحث عن وظيفة في أمريكا؟ تجهيز السيرة الذاتية، المقابلات، LinkedIn، وفهم نظام التأشيرات.</p>
+                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+            </a>
+
+            <!-- المقال الجديد: أفضل الدول التي ترحب بالمهاجرين 2026 -->
+            <a href="tips/best-countries-for-immigration-2026.html" class="tip-card">
+                <div class="tip-icon"><i class="fas fa-globe-americas"></i></div>
+                <h3 class="tip-title">أفضل الدول التي ترحب بالمهاجرين 2026</h3>
+                <p class="tip-excerpt">دليل شامل لأفضل الدول للهجرة: كندا، ألمانيا، أستراليا، نيوزيلندا، هولندا. تعرف على سياسات الهجرة والرواتب.</p>
                 <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
             </a>
         </div>
@@ -197,7 +202,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة | آخر تحديث: مارس 2026</p>
+                <p>© 2026 وظائف حول العالم – جميع الحقوق محفوظة | آخر تحديث: مارس 2026</p>
             </div>
         </div>
     </footer>
