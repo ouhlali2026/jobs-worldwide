@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* تنسيقات إضافية خاصة بهذه الصفحة فقط */
+        /* تنسيقات خاصة بهذه الصفحة فقط – تحافظ على نفس الهيكل */
         .country-card {
             background: white;
             border-radius: 16px;
@@ -33,7 +33,7 @@
             border-color: #f59e0b;
             box-shadow: 0 10px 25px rgba(0,0,0,0.05);
         }
-        .country-header {
+        .country-header-mini {
             display: flex;
             align-items: center;
             gap: 12px;
@@ -44,7 +44,7 @@
         .country-flag {
             font-size: 2.5rem;
         }
-        .country-name {
+        .country-name-mini {
             font-size: 1.5rem;
             font-weight: 700;
             color: #1e3c72;
@@ -70,11 +70,9 @@
         .comparison-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
             background: white;
             border-radius: 12px;
-            overflow-x: auto;
-            display: block;
+            overflow: hidden;
         }
         .comparison-table th {
             background: #1e3c72;
@@ -87,7 +85,7 @@
             border-bottom: 1px solid #e2e8f0;
         }
         @media (max-width: 768px) {
-            .country-header {
+            .country-header-mini {
                 flex-direction: column;
                 text-align: center;
             }
@@ -98,7 +96,7 @@
     </style>
 </head>
 <body>
-    <!-- شريط التنقل -->
+    <!-- شريط التنقل – مطابق لبقية الصفحات -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
@@ -118,7 +116,7 @@
         </div>
     </nav>
 
-    <!-- رأس الصفحة -->
+    <!-- رأس الصفحة – بنفس تنسيق صفحات الدول -->
     <section class="country-header">
         <div class="container">
             <i class="fas fa-globe-americas" style="font-size: 3rem; margin-bottom: 15px;"></i>
@@ -133,8 +131,9 @@
     </section>
 
     <div class="container">
+        <!-- تخطيط المحتوى الرئيسي + الشريط الجانبي – مطابق تماماً لصفحات الدول -->
         <div class="main-content">
-            <!-- المحتوى الرئيسي -->
+            <!-- المحتوى الرئيسي (يمين) -->
             <div class="countries-section">
                 <a href="tips.html" class="back-link" style="display: inline-block; margin-bottom: 20px;">
                     <i class="fas fa-arrow-right"></i> العودة إلى النصائح
@@ -142,9 +141,9 @@
 
                 <h2 class="section-title">🇨🇦 1. كندا – 380,000 مهاجر سنوياً</h2>
                 <div class="country-card">
-                    <div class="country-header">
+                    <div class="country-header-mini">
                         <span class="country-flag">🇨🇦</span>
-                        <span class="country-name">كندا</span>
+                        <span class="country-name-mini">كندا</span>
                     </div>
                     <p>تستهدف الحكومة الكندية استقبال <strong>380,000 مقيم دائم سنوياً</strong> بين 2026 و2028، مع تركيز كبير على العمالة الماهرة .</p>
                     <div class="country-stats">
@@ -161,9 +160,9 @@
 
                 <h2 class="section-title">🇩🇪 2. ألمانيا – مليون وظيفة شاغرة</h2>
                 <div class="country-card">
-                    <div class="country-header">
+                    <div class="country-header-mini">
                         <span class="country-flag">🇩🇪</span>
-                        <span class="country-name">ألمانيا</span>
+                        <span class="country-name-mini">ألمانيا</span>
                     </div>
                     <p>تعاني ألمانيا من نقص حاد في العمالة الماهرة، حيث يصل عدد الوظائف الشاغرة إلى أكثر من <strong>مليون وظيفة</strong> .</p>
                     <div class="country-stats">
@@ -180,9 +179,9 @@
 
                 <h2 class="section-title">🇦🇺 3. أستراليا – 185,000 فرصة هجرة سنوياً</h2>
                 <div class="country-card">
-                    <div class="country-header">
+                    <div class="country-header-mini">
                         <span class="country-flag">🇦🇺</span>
-                        <span class="country-name">أستراليا</span>
+                        <span class="country-name-mini">أستراليا</span>
                     </div>
                     <p>أستراليا حددت سقفاً للهجرة الدائمة بـ <strong>185,000 مكان</strong> للعام 2025-2026 .</p>
                     <div class="country-stats">
@@ -199,9 +198,9 @@
 
                 <h2 class="section-title">🇳🇿 4. نيوزيلندا – 87 مهنة جديدة</h2>
                 <div class="country-card">
-                    <div class="country-header">
+                    <div class="country-header-mini">
                         <span class="country-flag">🇳🇿</span>
-                        <span class="country-name">نيوزيلندا</span>
+                        <span class="country-name-mini">نيوزيلندا</span>
                     </div>
                     <p>أضافت نيوزيلندا <strong>87 مهنة جديدة</strong> إلى قائمة المهارات المعترف بها .</p>
                     <div class="country-stats">
@@ -218,9 +217,9 @@
 
                 <h2 class="section-title">🇳🇱 5. هولندا – عمالة ماهرة بلا اختبار سوق عمل</h2>
                 <div class="country-card">
-                    <div class="country-header">
+                    <div class="country-header-mini">
                         <span class="country-flag">🇳🇱</span>
-                        <span class="country-name">هولندا</span>
+                        <span class="country-name-mini">هولندا</span>
                     </div>
                     <p>تأشيرة "العامل الماهر" (Highly Skilled Migrant Visa) لا تتطلب اختبار سوق العمل .</p>
                     <div class="country-stats">
@@ -235,34 +234,41 @@
                     <a href="netherlands.html" class="btn-link">📖 اقرأ دليل هولندا الشامل <i class="fas fa-arrow-left"></i></a>
                 </div>
 
-                <h2 class="section-title">📊 جدول مقارنة سريع</h2>
+                <h2 class="section-title">📊 مقارنة سريعة بين أفضل الدول للمهاجرين</h2>
                 <div class="table-container">
                     <table class="comparison-table">
                         <thead>
-                            <tr><th>الدولة</th><th>برنامج الهجرة</th><th>متوسط الراتب (€)</th><th>تكلفة المعيشة (€)</th></tr>
+                            <tr>
+                                <th>الدولة</th>
+                                <th>برنامج الهجرة الرئيسي</th>
+                                <th>متوسط الراتب (€)</th>
+                                <th>تكلفة المعيشة (€/شهر)</th>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr><td>🇨🇦 كندا</td><td>Express Entry, PNP</td><td>40,000 – 60,000</td><td>1,500 – 2,500</td></tr>
                             <tr><td>🇩🇪 ألمانيا</td><td>EU Blue Card, Chancenkarte</td><td>50,000 – 80,000</td><td>1,200 – 1,800</td></tr>
                             <tr><td>🇦🇺 أستراليا</td><td>Skilled Migration</td><td>45,000 – 65,000</td><td>2,000 – 3,000</td></tr>
-                            <tr><td>🇳🇿 نيوزيلندا</td><td>AEWV</td><td>40,000 – 60,000</td><td>1,500 – 2,200</td></tr>
+                            <tr><td>🇳🇿 نيوزيلندا</td><td>AEWV, Skilled Migrant</td><td>40,000 – 60,000</td><td>1,500 – 2,200</td></tr>
                             <tr><td>🇳🇱 هولندا</td><td>Highly Skilled Migrant</td><td>50,000 – 75,000</td><td>1,300 – 2,000</td></tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div class="requirements-box" style="margin-top: 30px;">
-                    <h3><i class="fas fa-lightbulb"></i> نصائح للمهاجرين</h3>
+                <!-- نصائح إضافية – بنفس تنسيق "requirements-box" في صفحات الدول -->
+                <div class="requirements-box">
+                    <h3><i class="fas fa-lightbulb"></i> نصائح للمهاجرين إلى هذه الدول</h3>
                     <ul class="requirements-list">
-                        <li><i class="fas fa-check-circle"></i> <strong>استهدف الدول التي تطالب بمهاراتك:</strong> ابحث عن قوائم المهن المطلوبة (Skill Shortage Lists).</li>
-                        <li><i class="fas fa-check-circle"></i> <strong>تعلم اللغة:</strong> إجادة اللغة المحلية تزيد فرصك بنسبة 50%.</li>
-                        <li><i class="fas fa-check-circle"></i> <strong>احصل على تقييم المهارات:</strong> معظم الدول تطلب تقييماً معترفاً به لشهاداتك.</li>
-                        <li><i class="fas fa-check-circle"></i> <strong>خطط مالياً:</strong> احسب تكلفة المعيشة لأول 6 أشهر.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>استهدف الدول التي تطالب بمهاراتك:</strong> ابحث عن قوائم المهن المطلوبة (Skill Shortage Lists) في كل دولة.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>تعلم اللغة:</strong> إجادة اللغة المحلية تزيد فرصك في الحصول على وظيفة بنسبة 50%.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>احصل على تقييم المهارات:</strong> معظم الدول تطلب تقييماً معترفاً به لشهاداتك وخبراتك.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>خطط مالياً:</strong> احسب تكلفة المعيشة لأول 6 أشهر (إيجار، مواصلات، تأمين صحي).</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>استخدم مواقع التوظيف المحلية:</strong> كل دولة لديها منصات توظيف متخصصة (مثل Indeed Canada، StepStone.de، Seek.com.au).</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- الشريط الجانبي -->
+            <!-- الشريط الجانبي – مطابق تماماً لصفحات الدول -->
             <aside class="sidebar">
                 <div class="widget">
                     <h3 class="widget-title"><i class="fas fa-lightbulb"></i> نصيحة اليوم</h3>
@@ -272,7 +278,7 @@
                 </div>
 
                 <div class="widget">
-                    <h3 class="widget-title"><i class="fas fa-chart-line"></i> أكثر الدول طلباً</h3>
+                    <h3 class="widget-title"><i class="fas fa-chart-line"></i> أكثر الدول طلباً للمهاجرين</h3>
                     <ul class="top-countries-list">
                         <li><i class="fas fa-flag" style="color: #D52B1E;"></i> <a href="canada.html">كندا</a></li>
                         <li><i class="fas fa-flag" style="color: #DD0000;"></i> <a href="germany.html">ألمانيا</a></li>
@@ -311,7 +317,7 @@
         </div>
     </div>
 
-    <!-- تذييل الصفحة -->
+    <!-- تذييل الصفحة – مطابق لبقية الصفحات -->
     <footer>
         <div class="container">
             <div class="footer-content">
