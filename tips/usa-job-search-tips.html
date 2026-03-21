@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>نصائح عملية للبحث عن عمل في أمريكا 2026 | دليل شامل للوظائف</title>
+    <title>نصائح للبحث عن عمل في أمريكا 2026 – دليل شامل</title>
     <meta name="description" content="دليل كامل للبحث عن عمل في أمريكا 2026: كيف تعد سيرتك الذاتية، تجتاز المقابلات، تستخدم LinkedIn، وتتنقل في سوق العمل الأمريكي بنجاح.">
-    <meta name="keywords" content="نصائح للبحث عن عمل في أمريكا, وظائف أمريكا, سوق العمل الأمريكي, مقابلات عمل, سيرة ذاتية أمريكية, LinkedIn, التوظيف في الولايات المتحدة">
+    <meta name="keywords" content="نصائح للبحث عن عمل في أمريكا, وظائف أمريكا, سوق العمل الأمريكي, مقابلات عمل, سيرة ذاتية أمريكية, LinkedIn">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,139 +16,130 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- ملف التنسيقات الرئيسي -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 
     <style>
+        /* نفس تنسيقات صفحات النصائح الأخرى */
         .tip-article {
             max-width: 900px;
             margin: 40px auto;
             padding: 30px;
             background: white;
-            border-radius: 24px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
         .tip-article h1 {
             font-size: 2rem;
             color: #1e3c72;
-            border-bottom: 3px solid #f59e0b;
-            padding-bottom: 15px;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f59e0b;
+            padding-bottom: 10px;
         }
         .tip-article h2 {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             color: #1e3c72;
             margin: 30px 0 15px;
+            padding-right: 12px;
             border-right: 4px solid #f59e0b;
-            padding-right: 15px;
-        }
-        .tip-article h3 {
-            font-size: 1.3rem;
-            margin: 25px 0 10px;
-            color: #2d3748;
         }
         .tip-article p {
             line-height: 1.8;
             margin-bottom: 20px;
-            color: #2d3748;
+            color: #334155;
         }
         .tip-article ul, .tip-article ol {
-            margin-right: 25px;
+            margin-right: 20px;
             margin-bottom: 20px;
         }
         .tip-article li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            line-height: 1.6;
         }
-        .highlight-box {
+        .tip-article .highlight {
             background: #fef9e7;
             border-right: 4px solid #f59e0b;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .related-links {
+            margin: 40px 0;
             padding: 20px;
+            background: #f8fafc;
             border-radius: 12px;
-            margin: 30px 0;
         }
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 25px 0;
+        .related-links h3 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .related-grid a {
             background: white;
-            border-radius: 12px;
-            overflow: hidden;
+            padding: 10px 15px;
+            border-radius: 8px;
+            color: #1e3c72;
+            text-decoration: none;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-        .comparison-table th {
+        .related-grid a:hover {
             background: #1e3c72;
             color: white;
-            padding: 12px;
-            text-align: right;
-        }
-        .comparison-table td {
-            padding: 10px;
-            border-bottom: 1px solid #e2e8f0;
+            border-color: #1e3c72;
         }
         .back-link {
             display: inline-block;
             margin: 20px 0;
             color: #1e3c72;
             font-weight: 500;
-            padding: 6px 12px;
-            background: #eef2ff;
-            border-radius: 30px;
-        }
-        .related-links {
-            margin-top: 40px;
-            padding: 20px;
-            background: #f8fafc;
-            border-radius: 16px;
-        }
-        .related-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 15px;
-        }
-        .related-grid a {
-            background: white;
-            padding: 8px 16px;
-            border-radius: 40px;
-            color: #1e3c72;
-            text-decoration: none;
-            border: 1px solid #e2e8f0;
-        }
-        .related-grid a:hover {
-            background: #1e3c72;
-            color: white;
         }
         @media (max-width: 768px) {
-            .tip-article { padding: 20px; }
-            .tip-article h1 { font-size: 1.7rem; }
-            .tip-article h2 { font-size: 1.4rem; }
+            .tip-article {
+                padding: 20px;
+            }
+            .tip-article h1 {
+                font-size: 1.7rem;
+            }
+            .tip-article h2 {
+                font-size: 1.3rem;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- شريط التنقل (مطابق لموقعنا) -->
+    <!-- شريط التنقل (مطابق لبقية الصفحات) -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
-                <a href="index.html" class="logo">
+                <a href="../index.html" class="logo">
                     <i class="fas fa-globe"></i>
                     <span>وظائف حول العالم</span>
                 </a>
                 <ul class="nav-links">
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="countries.html">الدول</a></li>
-                    <li><a href="tips.html" class="active">نصائح</a></li>
-                    <li><a href="services.html">الخدمات</a></li>
-                    <li><a href="about.html">من نحن</a></li>
-                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../countries.html">الدول</a></li>
+                    <li><a href="../tips.html" class="active">نصائح</a></li>
+                    <li><a href="../services.html">الخدمات</a></li>
+                    <li><a href="../about.html">من نحن</a></li>
+                    <li><a href="../contact.html">اتصل بنا</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <div class="container">
-        <a href="tips.html" class="back-link"><i class="fas fa-arrow-right"></i> العودة إلى جميع النصائح</a>
+        <a href="../tips.html" class="back-link"><i class="fas fa-arrow-right"></i> العودة إلى جميع النصائح</a>
 
         <article class="tip-article">
             <h1>🔍 كيف تبحث عن عمل في أمريكا 2026؟ دليل شامل ونصائح ذهبية</h1>
+            
             <p>سوق العمل الأمريكي في 2026 مليء بالفرص، لكنه يتطلب استراتيجية ذكية. سواء كنت حديث التخرج أو محترفاً ذا خبرة، فإن اتباع الخطوات الصحيحة يمكن أن يحدث فرقاً كبيراً. في هذا الدليل، سنقدم لك نصائح عملية لتنجح في رحلة بحثك عن عمل في الولايات المتحدة.</p>
 
             <h2>📌 1. أعد تصميم سيرتك الذاتية (CV) بالطريقة الأمريكية</h2>
@@ -161,7 +152,7 @@
             </ul>
 
             <h2>📌 2. استخدم LinkedIn باحترافية</h2>
-            <p>LinkedIn هو أداة البحث الأولى في أمريكا. 87% من مسؤولي التوظيف يستخدمونه للعثور على المرشحين . إليك كيف تبرز:</p>
+            <p>LinkedIn هو أداة البحث الأولى في أمريكا. 87% من مسؤولي التوظيف يستخدمونه للعثور على المرشحين. إليك كيف تبرز:</p>
             <ul>
                 <li><strong>صورة احترافية</strong> – خلفية بسيطة، وجه واضح.</li>
                 <li><strong>عنوان ملفك (Headline)</strong> – لا تكتفِ بالمسمى الوظيفي، أضف مهاراتك وقيمتك. مثال: "مهندس برمجيات | متخصص في الذكاء الاصطناعي | حاصل على شهادة AWS".</li>
@@ -180,6 +171,10 @@
             </ul>
             <p>يمكنك البحث في قاعدة بيانات <a href="https://www.myvisajobs.com/" target="_blank">MyVisaJobs</a> لمعرفة الشركات التي رعت أكبر عدد من تأشيرات H-1B في السنوات الأخيرة.</p>
 
+            <div class="highlight">
+                <p><strong>نصيحة:</strong> استخدم LinkedIn للبحث عن "Recruiter" أو "Talent Acquisition" في الشركات المستهدفة وتواصل معهم برسالة مهنية مختصرة.</p>
+            </div>
+
             <h2>📌 4. جهز نفسك للمقابلات الأمريكية</h2>
             <p>المقابلات في أمريكا تركز على المهارات السلوكية والإنجازات القابلة للقياس. استخدم أسلوب <strong>STAR</strong> للإجابة عن الأسئلة:</p>
             <ul>
@@ -188,10 +183,6 @@
                 <li><strong>A (Action):</strong> اشرح الخطوات التي اتخذتها.</li>
                 <li><strong>R (Result):</strong> تحدث عن النتائج التي حققتها بأرقام إن أمكن.</li>
             </ul>
-            <div class="highlight-box">
-                <p><strong>مثال سؤال شائع:</strong> "أخبرني عن وقت واجهت فيه تحدياً كبيراً في العمل".<br>
-                <strong>الإجابة بتقنية STAR:</strong> "في وظيفتي السابقة (S)، كان المشروع متأخراً عن الجدول بيومين (T). قمت بتشكيل فريق سريع وتوزيع المهام بشكل أكثر كفاءة، وتواصلت مع العميل لتأمين تمديد جزئي (A). نتيجة لذلك، أنجزنا المشروع في الوقت المحدد وحصلنا على تقييم 98% من العميل (R)."</p>
-            </div>
             <p>تدرب على الأسئلة السلوكية الشائعة (نقاط قوتك وضعفك، لماذا هذه الشركة، أين ترى نفسك بعد 5 سنوات).</p>
 
             <h2>📌 5. فهم نظام التأشيرات (H-1B, OPT, Green Card)</h2>
@@ -202,7 +193,7 @@
                 <li>إذا كنت طالباً داخل أمريكا بتأشيرة F-1، استغل برنامج <strong>OPT/STEM OPT</strong> (يصل إلى 36 شهراً للخريجين من تخصصات STEM).</li>
                 <li>تأشيرات <strong>O-1</strong> للأشخاص ذوي القدرات الاستثنائية، و <strong>L-1</strong> للنقل داخل الشركة.</li>
             </ul>
-            <p>لمعرفة المزيد، راجع دليل <a href="usa.html">الولايات المتحدة</a> الشامل على موقعنا.</p>
+            <p>لمعرفة المزيد، راجع دليل <a href="../usa.html">الولايات المتحدة</a> الشامل على موقعنا.</p>
 
             <h2>📌 6. استخدم منصات التوظيف الموثوقة</h2>
             <p>بالإضافة إلى LinkedIn، إليك مواقع أمريكية أساسية:</p>
@@ -214,43 +205,18 @@
                 <li><strong>USAJobs.gov</strong> – للوظائف الحكومية الفيدرالية.</li>
             </ul>
 
-            <h2>📌 7. لا تهمل الشبكات المهنية (Networking)</h2>
-            <p>في أمريكا، "ليس ما تعرفه، بل من تعرفه" له وزن كبير. انضم إلى فعاليات مهنية (حتى عبر الإنترنت)، تواصل مع خريجي جامعتك في الشركات المستهدفة، واطلب مقابلة إعلامية (Informational Interview) لمعرفة المزيد عن المجال. هذه العلاقات غالباً ما تكون مفتاح الحصول على إحالة داخلية تزيد فرص قبولك بنسبة كبيرة.</p>
-
-            <h2>📌 8. كن صبوراً وواقعياً</h2>
-            <p>سوق العمل الأمريكي كبير لكنه تنافسي. متوسط الوقت للحصول على وظيفة يمكن أن يتراوح بين 3 إلى 6 أشهر. لا تيأس من الرفض، بل اعتبر كل مقابلة تدريباً. استمر في تحسين سيرتك الذاتية، وحافظ على تحديث ملفاتك المهنية، وستجد الفرصة المناسبة إن شاء الله.</p>
-
-            <!-- جدول مقارنة سريع بين قطاعات العمل -->
-            <h2>📊 مقارنة سريعة: القطاعات الأكثر طلباً في أمريكا 2026</h2>
-            <table class="comparison-table">
-                <thead>
-                    <tr>
-                        <th>القطاع</th>
-                        <th>متوسط الراتب السنوي ($)</th>
-                        <th>متطلبات رئيسية</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>تكنولوجيا المعلومات (AI/Data)</td><td>112,000 – 140,000</td><td>خبرة في Python, SQL, Cloud</td></tr>
-                    <tr><td>الرعاية الصحية (تمريض)</td><td>85,000 – 110,000</td><td>ترخيص NCLEX، شهادة BSN</td></tr>
-                    <tr><td>الهندسة (ميكانيكا/كهرباء)</td><td>80,000 – 120,000</td><td>شهادة PE (للمتقدمين)</td></tr>
-                    <tr><td>المالية والمحاسبة</td><td>70,000 – 100,000</td><td>CPA, CFA أو خبرة</td></tr>
-                    <tr><td>المهن الحرفية (كهرباء، سباكة)</td><td>55,000 – 90,000</td><td>ترخيص الولاية + خبرة</td></tr>
-                </tbody>
-            </table>
+            <div class="highlight">
+                <p><strong>خدمتنا:</strong> إذا كنت بحاجة إلى مساعدة في تصميم سيرة ذاتية تناسب السوق الأمريكي، أو تحسين ملفك على LinkedIn، أو استشارة خاصة بالتأشيرات، تواصل معنا عبر <a href="https://wa.me/212669411021" target="_blank">واتساب</a> أو زور صفحة <a href="../services.html">الخدمات</a>.</p>
+            </div>
 
             <div class="related-links">
                 <h3>📌 مقالات ذات صلة</h3>
                 <div class="related-grid">
-                    <a href="usa.html">دليل العمل في أمريكا (الرواتب، التأشيرات)</a>
-                    <a href="tips/usa-jobs-demand.html">أكثر 10 مهن طلباً في أمريكا 2026</a>
-                    <a href="tips/interview-tips.html">كيف تجتاز مقابلة العمل بنجاح</a>
-                    <a href="tips/cv-tips.html">كتابة السيرة الذاتية الاحترافية</a>
+                    <a href="../usa.html"><i class="fas fa-flag-usa"></i> دليل العمل في أمريكا (الرواتب، التأشيرات)</a>
+                    <a href="cv-tips.html"><i class="fas fa-file-alt"></i> كتابة السيرة الذاتية</a>
+                    <a href="interview-tips.html"><i class="fas fa-users"></i> اجتياز المقابلة</a>
+                    <a href="linkedin-tips.html"><i class="fab fa-linkedin"></i> تطوير LinkedIn</a>
                 </div>
-            </div>
-
-            <div class="highlight-box">
-                <p><strong>خدماتنا:</strong> إذا كنت بحاجة إلى مساعدة في تصميم سيرة ذاتية تناسب السوق الأمريكي، أو تحسين ملفك على LinkedIn، أو استشارة خاصة بالتأشيرات، تواصل معنا عبر <a href="https://wa.me/212669411021" target="_blank">واتساب</a> أو زور صفحة <a href="services.html">الخدمات</a>.</p>
             </div>
         </article>
     </div>
@@ -266,12 +232,10 @@
                 <div class="footer-section">
                     <h4>روابط سريعة</h4>
                     <ul>
-                        <li><a href="index.html">الرئيسية</a></li>
-                        <li><a href="countries.html">الدول</a></li>
-                        <li><a href="tips.html">نصائح</a></li>
-                        <li><a href="services.html">الخدمات</a></li>
-                        <li><a href="about.html">من نحن</a></li>
-                        <li><a href="contact.html">اتصل بنا</a></li>
+                        <li><a href="../index.html">الرئيسية</a></li>
+                        <li><a href="../countries.html">الدول</a></li>
+                        <li><a href="../tips.html">نصائح</a></li>
+                        <li><a href="../services.html">الخدمات</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
