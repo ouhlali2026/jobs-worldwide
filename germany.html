@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>فرص عمل في ألمانيا 2026 | المهن المطلوبة والتأشيرات والرواتب في برلين وميونخ</title>
-    <meta name="description" content="دليلك الشامل للعمل في ألمانيا 2026: المهن الأكثر طلباً (هندسة، تكنولوجيا، رعاية صحية)، رواتب محدثة حسب القطاع، إجراءات البطاقة الزرقاء EU وتأشيرات العمل، ونصائح للباحثين عن عمل.">
+    <title>فرص عمل في ألمانيا 2026 | المهن المطلوبة والتأشيرات والرواتب</title>
+    <meta name="description" content="دليلك الشامل للعمل في ألمانيا 2026: المهن الأكثر طلباً (هندسة، تكنولوجيا، رعاية صحية)، رواتب محدثة حسب القطاع، إجراءات البطاقة الزرقاء EU، ونصائح للباحثين عن عمل.">
     <meta name="keywords" content="فرص عمل في ألمانيا, وظائف ألمانيا 2026, البطاقة الزرقاء الألمانية, تأشيرة عمل ألمانيا, العمل في برلين, المهن المطلوبة في ألمانيا, رواتب المهندسين في ألمانيا, الهجرة إلى ألمانيا">
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+
     <!-- ملف التنسيقات الرئيسي -->
     <link rel="stylesheet" href="style.css">
-    
+
     <style>
         /* تنسيقات خاصة بصفحة ألمانيا - مستوحاة من ألوان العلم 🇩🇪 */
         :root {
@@ -144,7 +144,6 @@
             overflow-x: hidden;
         }
         
-        /* تحسينات الجوال - دقيقة جداً */
         @media (max-width: 768px) {
             .country-header {
                 padding: 20px 10px;
@@ -482,14 +481,72 @@
             background: #aa0000;
         }
         
-        @media (max-width: 600px) {
-            .services-buttons {
-                flex-direction: column;
-            }
-            .service-btn {
-                width: 100%;
-                justify-content: center;
-            }
+        /* تنسيقات قسم النصائح */
+        .tips-section {
+            margin: 40px 0;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .tip-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            height: 100%;
+        }
+        
+        .tip-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--germany-red);
+            box-shadow: 0 10px 25px rgba(221,0,0,0.1);
+        }
+        
+        .tip-icon {
+            width: 50px;
+            height: 50px;
+            background: #ffe0e0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        
+        .tip-icon i {
+            font-size: 1.5rem;
+            color: var(--germany-red);
+        }
+        
+        .tip-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #1e293b;
+        }
+        
+        .tip-excerpt {
+            color: #64748b;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--germany-red);
+            font-weight: 500;
         }
         
         .navbar {
@@ -608,7 +665,6 @@
             }
         }
         
-        /* إصلاحات إضافية لمنع التمرير الأفقي */
         img, iframe, video, table, div {
             max-width: 100%;
         }
@@ -644,7 +700,7 @@
         <div class="container">
             <i class="fas fa-flag flag-icon"></i>
             <h1>🇩🇪 فرص عمل في ألمانيا 2026 🇩🇪</h1>
-            <p>الدليل الكامل للعمل في برلين، ميونخ، فرانكفورت، هامبورغ وجميع المدن الألمانية – تحديثات مارس 2026</p>
+            <p>الدليل الكامل للعمل في برلين، ميونخ، فرانكفورت، هامبورغ وجميع المدن الألمانية – تحديثات أبريل 2026</p>
             
             <div class="country-info">
                 <span class="info-badge"><i class="fas fa-microchip"></i> تكنولوجيا وهندسة</span>
@@ -659,326 +715,99 @@
             <i class="fas fa-arrow-right"></i> العودة للصفحة الرئيسية
         </a>
 
-        <!-- لمحة عامة عن سوق العمل الألماني -->
+        <!-- لمحة عامة -->
         <div class="visa-box">
             <h3><i class="fas fa-chart-line"></i> نظرة على سوق العمل في ألمانيا 2026</h3>
-            <p>ألمانيا هي أكبر اقتصاد في أوروبا ورابع أكبر اقتصاد في العالم. تشهد البلاد نقصاً حاداً في العمالة الماهرة، خاصة في مجالات الهندسة وتكنولوجيا المعلومات والرعاية الصحية. وفقاً للإحصاءات الرسمية، هناك أكثر من 1.7 مليون وظيفة شاغرة في مختلف القطاعات .</p>
-            <p>في السنوات الأخيرة، أصدرت ألمانيا <strong>قانون الهجرة الجديد (FEG)</strong> الذي يسهل بشكل كبير عملية انتقال العمال المهرة من خارج الاتحاد الأوروبي إلى ألمانيا. القانون الجديد يخفض عتبات الرواتب للبطاقة الزرقاء ويسهل لم شمل العائلات .</p>
-            <p>اللغة الألمانية هي مفتاح الاندماج في سوق العمل، خاصة للوظائف التي تتطلب تواصلاً مباشراً مع العملاء. في قطاع التكنولوجيا، يمكن لشركات كثيرة توظيف متحدثين باللغة الإنجليزية، لكن تعلم الألمانية يزيد فرصك بشكل كبير ويساعدك على الاستقرار في المجتمع.</p>
+            <p>ألمانيا هي أكبر اقتصاد في أوروبا وتشهد نقصاً حاداً في العمالة الماهرة، مع أكثر من 1.7 مليون وظيفة شاغرة. قانون الهجرة الجديد (FEG) يسهل انتقال العمال المهرة من خارج الاتحاد الأوروبي، ويخفض عتبات الرواتب للبطاقة الزرقاء ويسهل لم شمل العائلات .</p>
+            <p>اللغة الألمانية هي مفتاح الاندماج، لكن في قطاع التكنولوجيا يمكن توظيف متحدثي الإنجليزية، وتعلم الألمانية يزيد فرصك بشكل كبير.</p>
         </div>
 
-        <!-- المهن الأكثر طلباً والرواتب في ألمانيا 2026 -->
+        <!-- المهن والرواتب -->
         <h2 class="section-title">المهن الأكثر طلباً والرواتب في ألمانيا 2026</h2>
-        
         <div class="table-container">
             <table class="jobs-table">
-                <tr>
-                    <th>القطاع</th>
-                    <th>المهن المطلوبة</th>
-                    <th>مبتدئ (€)</th>
-                    <th>متوسط (€)</th>
-                    <th>متقدم (€)</th>
-                </tr>
-                <tr>
-                    <td>هندسة السيارات والميكانيكا</td>
-                    <td>مهندسو ميكانيكا، مهندسو سيارات، مهندسو إنتاج، فنيو صيانة، مهندسو كهرباء</td>
-                    <td>45,000 – 55,000</td>
-                    <td>55,000 – 75,000</td>
-                    <td>75,000 – 95,000+</td>
-                </tr>
-                <tr>
-                    <td>تكنولوجيا المعلومات</td>
-                    <td>مهندسو برمجيات (Java, Python, C++), مهندسو أمن سيبراني، علماء بيانات، متخصصو ذكاء اصطناعي، مهندسو DevOps</td>
-                    <td>48,000 – 60,000</td>
-                    <td>60,000 – 85,000</td>
-                    <td>85,000 – 110,000+</td>
-                </tr>
-                <tr>
-                    <td>الهندسة الكهربائية والإلكترونيك</td>
-                    <td>مهندسو كهرباء، مهندسو إلكترونيك، مهندسو أتمتة، مهندسو طاقة متجددة</td>
-                    <td>46,000 – 58,000</td>
-                    <td>58,000 – 78,000</td>
-                    <td>78,000 – 100,000+</td>
-                </tr>
-                <tr>
-                    <td>الرعاية الصحية والتمريض</td>
-                    <td>أطباء (جميع التخصصات)، ممرضون، صيادلة، معالجون فيزيائيون، أخصائيو علاج طبيعي</td>
-                    <td>42,000 – 52,000</td>
-                    <td>52,000 – 70,000</td>
-                    <td>70,000 – 95,000+</td>
-                </tr>
-                <tr>
-                    <td>البناء والتشييد</td>
-                    <td>مهندسو مدني، معماريون، مساحو كميات، مشرفو مواقع، فنيو بناء</td>
-                    <td>40,000 – 50,000</td>
-                    <td>50,000 – 65,000</td>
-                    <td>65,000 – 85,000+</td>
-                </tr>
-                <tr>
-                    <td>المالية والمحاسبة</td>
-                    <td>محللون ماليون، محاسبون، مدققو حسابات، متخصصو ضرائب، مدراء ماليون</td>
-                    <td>44,000 – 55,000</td>
-                    <td>55,000 – 75,000</td>
-                    <td>75,000 – 100,000+</td>
-                </tr>
+                <thead>
+                    <tr><th>القطاع</th><th>المهن المطلوبة</th><th>مبتدئ (€)</th><th>متوسط (€)</th><th>متقدم (€)</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>هندسة السيارات والميكانيكا</td><td>مهندسو ميكانيكا، سيارات، إنتاج، فنيو صيانة، كهرباء</td><td>45,000 – 55,000</td><td>55,000 – 75,000</td><td>75,000 – 95,000+</td></tr>
+                    <tr><td>تكنولوجيا المعلومات</td><td>مهندسو برمجيات (Java, Python, C++), أمن سيبراني، علماء بيانات، ذكاء اصطناعي، DevOps</td><td>48,000 – 60,000</td><td>60,000 – 85,000</td><td>85,000 – 110,000+</td></tr>
+                    <tr><td>الهندسة الكهربائية والإلكترونيك</td><td>مهندسو كهرباء، إلكترونيك، أتمتة، طاقة متجددة</td><td>46,000 – 58,000</td><td>58,000 – 78,000</td><td>78,000 – 100,000+</td></tr>
+                    <tr><td>الرعاية الصحية والتمريض</td><td>أطباء، ممرضون، صيادلة، معالجون فيزيائيون</td><td>42,000 – 52,000</td><td>52,000 – 70,000</td><td>70,000 – 95,000+</td></tr>
+                </tbody>
             </table>
-            <p style="margin-top: 5px;">المصادر: بوابة Make it in Germany، StepStone، EURES .</p>
         </div>
 
         <!-- الحد الأدنى للأجور وعتبات البطاقة الزرقاء -->
         <div class="visa-box">
             <h3><i class="fas fa-coins"></i> الحد الأدنى للأجور وعتبات البطاقة الزرقاء 2026</h3>
             <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">€12.82</div>
-                    <div class="stat-label">الحد الأدنى للساعة</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">€50,700</div>
-                    <div class="stat-label">البطاقة الزرقاء (عام)</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">€45,934</div>
-                    <div class="stat-label">البطاقة الزرقاء (مهن ناقصة)</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">€55,770</div>
-                    <div class="stat-label">لمن فوق 45 سنة</div>
-                </div>
+                <div class="stat-card"><div class="stat-number">€12.82</div><div class="stat-label">الحد الأدنى للساعة</div></div>
+                <div class="stat-card"><div class="stat-number">€50,700</div><div class="stat-label">البطاقة الزرقاء (عام)</div></div>
+                <div class="stat-card"><div class="stat-number">€45,934</div><div class="stat-label">البطاقة الزرقاء (مهن ناقصة)</div></div>
+                <div class="stat-card"><div class="stat-number">€55,770</div><div class="stat-label">لمن فوق 45 سنة</div></div>
             </div>
-            <p style="margin-top: 15px;">الحد الأدنى للأجور في ألمانيا هو 12.82 يورو في الساعة اعتباراً من 2026. للبطاقة الزرقاء، العتبة العامة هي 50,700 يورو سنوياً، أما للمهن الناقصة والخريجين الجدد فهي 45,934 يورو . لمن هم فوق 45 سنة، يجب أن لا يقل الراتب عن 55,770 يورو سنوياً .</p>
+            <p>الحد الأدنى للأجور 12.82 يورو/ساعة. للبطاقة الزرقاء، العتبة العامة 50,700 يورو سنوياً، وللمهن الناقصة 45,934 يورو .</p>
         </div>
 
         <!-- تكلفة المعيشة -->
         <div class="requirements-box">
             <h3><i class="fas fa-home"></i> تكلفة المعيشة في المدن الرئيسية</h3>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
-                <div><strong>ميونخ:</strong> 1,200 – 1,800 € شهرياً</div>
+                <div><strong>ميونخ:</strong> 1,200 – 1,800 €</div>
                 <div><strong>فرانكفورت:</strong> 1,100 – 1,700 €</div>
                 <div><strong>برلين:</strong> 1,000 – 1,600 €</div>
                 <div><strong>هامبورغ:</strong> 1,000 – 1,600 €</div>
-                <div><strong>شتوتغارت:</strong> 1,100 – 1,700 €</div>
             </div>
-            <p style="margin-top: 10px;">الإيجار هو أكبر تكلفة، خاصة في المدن الكبرى. يمكن توفير المال بمشاركة السكن (WG) أو السكن في الضواحي. التأمين الصحي إلزامي ويكلف حوالي 15% من الراتب (يشاركك صاحب العمل في نصفه).</p>
+            <p>الإيجار هو أكبر تكلفة، خاصة في المدن الكبرى. يمكن توفير المال بمشاركة السكن (WG) أو السكن في الضواحي. التأمين الصحي إلزامي ويكلف حوالي 15% من الراتب (يشاركك صاحب العمل في نصفه).</p>
         </div>
 
-        <!-- أنواع التأشيرات وإجراءات العمل -->
-        <h2 class="section-title">تأشيرات العمل في ألمانيا 2026</h2>
-        <div class="visa-box">
-            <h3><i class="fas fa-passport"></i> أنواع التأشيرات الرئيسية</h3>
-            
-            <div class="visa-grid">
-                <div class="visa-type">
-                    <h4>البطاقة الزرقاء للاتحاد الأوروبي (EU Blue Card)</h4>
-                    <p>للحاصلين على شهادات جامعية. تشترط عقد عمل براتب لا يقل عن 50,700 يورو سنوياً، أو 45,934 يورو للمهن الناقصة. مدة الإصدار تصل إلى 4 سنوات. بعد 21 شهراً (بمستوى B1 ألماني) يمكن الحصول على إقامة دائمة .</p>
-                </div>
-                <div class="visa-type">
-                    <h4>تأشيرة العمل للمؤهلين (Work Visa)</h4>
-                    <p>للحاصلين على مؤهلات مهنية (تدريب مهني لا يقل عن سنتين). تشترط عقد عمل ومصادقة على المؤهل من الغرفة التجارية. مدة الإقامة تصل إلى 4 سنوات .</p>
-                </div>
-                <div class="visa-type">
-                    <h4>بطاقة الفرصة (Chancenkarte)</h4>
-                    <p>تأشيرة جديدة للبحث عن عمل. تسمح بالبقاء في ألمانيا لمدة سنة للبحث عن عمل، مع إمكانية العمل بدوام جزئي (حتى 20 ساعة أسبوعياً). تعتمد على نظام نقاط (المؤهلات، الخبرة، اللغة، العمر) .</p>
-                </div>
-                <div class="visa-type">
-                    <h4>تأشيرة IT specialists</h4>
-                    <p>لمتخصصي تكنولوجيا المعلومات بدون شهادة جامعية. تشترط خبرة لا تقل عن 3 سنوات في السنوات السبع الماضية، وعقد عمل براتب لا يقل عن 45,934 يورو .</p>
-                </div>
-            </div>
-
-            <h4 style="margin: 15px 0 10px;">خطوات الحصول على تأشيرة العمل:</h4>
-            <ol style="margin-right: 20px; margin-bottom: 15px;">
-                <li><strong>الحصول على عقد عمل</strong> من صاحب عمل ألماني.</li>
-                <li><strong>التحقق من الاعتراف بالمؤهل</strong> (للمهن المنظمة) عبر قاعدة بيانات Anabin .</li>
-                <li><strong>تقديم طلب التأشيرة</strong> في السفارة الألمانية في بلدك (عبر TLScontact) .</li>
-                <li><strong>انتظار موافقة مكتب العمل الاتحادي</strong> (عادة 2-4 أسابيع).</li>
-                <li><strong>الدخول إلى ألمانيا</strong> خلال صلاحية التأشيرة.</li>
-                <li><strong>تسجيل العنوان (Anmeldung)</strong> خلال أسبوعين من الوصول .</li>
-                <li><strong>استخراج تصريح الإقامة (eAT)</strong> من دائرة الأجانب (Ausländerbehörde) خلال 90 يوماً .</li>
-            </ol>
-
-            <h4 style="margin: 15px 0 10px;">المستندات الأساسية:</h4>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle"></i> جواز سفر ساري المفعول</li>
-                <li><i class="fas fa-check-circle"></i> عقد عمل موقع (يحدد الراتب والمدة)</li>
-                <li><i class="fas fa-check-circle"></i> الشهادات العلمية (مترجمة ومعتمدة) </li>
-                <li><i class="fas fa-check-circle"></i> شهادة خلو سوابق (مترجمة)</li>
-                <li><i class="fas fa-check-circle"></i> تأمين صحي (يبدأ بعد الوصول) </li>
-                <li><i class="fas fa-check-circle"></i> إثبات السكن المؤقت (حجز فندق أو عقد إيجار)</li>
-                <li><i class="fas fa-check-circle"></i> صور شخصية بيومترية</li>
-            </ul>
-            
-            <h4 style="margin: 15px 0 10px;">الرسوم التقريبية:</h4>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle"></i> تأشيرة العمل: 75 يورو</li>
-                <li><i class="fas fa-check-circle"></i> تصريح الإقامة (eAT): 100 يورو </li>
-                <li><i class="fas fa-check-circle"></i> مدة المعالجة: 6-8 أسابيع </li>
-            </ul>
-        </div>
-
-        <!-- المهارات الأكثر طلباً -->
-        <h2 class="section-title">المهارات الأكثر طلباً في السوق الألماني</h2>
-        <div style="margin: 15px 0;">
-            <span class="skill-tag">الألمانية (B2/C1)</span>
-            <span class="skill-tag">الإنجليزية (C1)</span>
-            <span class="skill-tag">Java / Python / C++</span>
-            <span class="skill-tag">الأتمتة الصناعية</span>
-            <span class="skill-tag">الذكاء الاصطناعي</span>
-            <span class="skill-tag">إدارة المشاريع (PMP/Agile)</span>
-            <span class="skill-tag">هندسة السيارات</span>
-            <span class="skill-tag">الطاقة المتجددة</span>
-            <span class="skill-tag">الأمن السيبراني</span>
-        </div>
-        <p style="margin-top: 5px;">اللغة الألمانية هي المهارة الأهم، خاصة للوظائف التي تتطلب تواصلاً مع العملاء. مستويات B2-C1 مطلوبة لمعظم الوظائف. في الشركات الدولية الكبرى، اللغة الإنجليزية قد تكون كافية، لكن الألمانية تفتح لك أبواباً أكثر.</p>
-
-        <!-- نصائح للباحثين عن عمل -->
-        <div class="requirements-box" style="background: #ffe0e0;">
-            <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في ألمانيا</h3>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle"></i> <strong>تعلم الألمانية قبل السفر:</strong> حتى مستوى A2/B1 يحدث فرقاً كبيراً في فرصك.</li>
-                <li><i class="fas fa-check-circle"></i> <strong>استخدم منصات التوظيف الألمانية:</strong> StepStone.de، Indeed.de، Jobware.de، و Make it in Germany .</li>
-                <li><i class="fas fa-check-circle"></i> <strong>استعد للاعتراف بالمؤهلات:</strong> للمهن المنظمة (طب، تمريض، تدريس، هندسة)، تحتاج إلى معادلة رسمية عبر قاعدة Anabin .</li>
-                <li><i class="fas fa-check-circle"></i> <strong>قدم طلبات احترافية:</strong> السيرة الذاتية الألمانية تتضمن صورة شخصية، وتكون بترتيب زمني عكسي. خطاب التقديم يجب أن لا يتجاوز صفحة واحدة .</li>
-                <li><i class="fas fa-check-circle"></i> <strong>لا تدفع مقابل عروض العمل:</strong> جميع الخدمات الرسمية مجانية. احذر من شركات التوظيف الوهمية.</li>
-                <li><i class="fas fa-check-circle"></i> <strong>تواصل مع مكاتب Welcome Centers:</strong> في المدن الكبرى توجد مكاتب متخصصة لمساعدة الأجانب في إجراءات الإقامة والبحث عن عمل .</li>
-                <li><i class="fas fa-check-circle"></i> <strong>استفد من برامج الاندماج:</strong> معهد Goethe و VHS يقدمان دورات لغة بأسعار مخفضة للوافدين.</li>
-            </ul>
-        </div>
-
-        <!-- أفضل المدن للعمل -->
-        <h2 class="section-title">أفضل المدن للعمل في ألمانيا</h2>
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-number">برلين</div>
-                <div class="stat-label">العاصمة، مركز الشركات الناشئة، التكنولوجيا، الإعلام، والثقافة. تكاليف معيشة أقل نسبياً من المدن الأخرى.</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">ميونخ</div>
-                <div class="stat-label">مركز صناعة السيارات (BMW)، التكنولوجيا، والبحث العلمي. أعلى الرواتب وأعلى تكاليف المعيشة.</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">فرانكفورت</div>
-                <div class="stat-label">العاصمة المالية، البنك المركزي الأوروبي، البورصة، فرص في المصارف والخدمات المالية.</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">هامبورغ</div>
-                <div class="stat-label">الميناء الأكبر، صناعة الطيران، الإعلام، والخدمات اللوجستية.</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">شتوتغارت</div>
-                <div class="stat-label">مركز صناعة السيارات (Mercedes, Porsche)، الهندسة الميكانيكية.</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">كولونيا / دوسلدورف</div>
-                <div class="stat-label">مركز صناعة الإعلام، التأمين، والموضة.</div>
+        <!-- الروابط الداخلية (دول مشابهة) -->
+        <div class="requirements-box">
+            <h3><i class="fas fa-globe"></i> دول قد تهمك أيضاً</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 15px;">
+                <a href="austria.html" style="background: white; padding: 8px 16px; border-radius: 40px; color: #1e3c72; text-decoration: none; border: 1px solid #e2e8f0;">🇦🇹 النمسا</a>
+                <a href="switzerland.html" style="background: white; padding: 8px 16px; border-radius: 40px; color: #1e3c72; text-decoration: none; border: 1px solid #e2e8f0;">🇨🇭 سويسرا</a>
+                <a href="netherlands.html" style="background: white; padding: 8px 16px; border-radius: 40px; color: #1e3c72; text-decoration: none; border: 1px solid #e2e8f0;">🇳🇱 هولندا</a>
+                <a href="canada.html" style="background: white; padding: 8px 16px; border-radius: 40px; color: #1e3c72; text-decoration: none; border: 1px solid #e2e8f0;">🇨🇦 كندا</a>
+                <a href="usa.html" style="background: white; padding: 8px 16px; border-radius: 40px; color: #1e3c72; text-decoration: none; border: 1px solid #e2e8f0;">🇺🇸 الولايات المتحدة</a>
             </div>
         </div>
 
-        <!-- قسم الروابط الداخلية (دول مشابهة) – هنا نضيف رابط أمريكا -->
-        <div style="margin: 40px 0; padding: 20px; background: #f8fafc; border-radius: 12px;">
-            <h3 style="color: #1e293b; margin-bottom: 15px;">🌍 دول قد تهمك أيضاً</h3>
-            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-                <a href="austria.html" style="background: white; padding: 8px 15px; border-radius: 50px; color: #1e3c72; text-decoration: none; border: 1px solid #e2e8f0;">النمسا</a>
-                <a href="switzerland.html" style="background: white; padding: 8px 15px; border-radius: 50px; color: #1e3c72; text-decoration: none; border: 1px solid #e2e8f0;">سويسرا</a>
-                <a href="netherlands.html" style="background: white; padding: 8px 15px; border-radius: 50px; color: #1e3c72; text-decoration: none; border: 1px solid #e2e8f0;">هولندا</a>
-                <!-- رابط أمريكا الداخلي -->
-                <a href="usa.html" style="background: white; padding: 8px 15px; border-radius: 50px; color: #1e3c72; text-decoration: none; border: 1px solid #e2e8f0;">الولايات المتحدة</a>
+        <!-- قسم النصائح -->
+        <div class="tips-section">
+            <h2 class="section-title"><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل</h2>
+            <div class="tips-grid">
+                <a href="tips/cv-tips.html" class="tip-card">
+                    <div class="tip-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3 class="tip-title">كيف تكتب سيرة ذاتية احترافية</h3>
+                    <p class="tip-excerpt">10 نصائح لكتابة سيرة ذاتية تلفت انتباه مسؤولي التوظيف في ألمانيا.</p>
+                    <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+                </a>
+                <a href="tips/interview-tips.html" class="tip-card">
+                    <div class="tip-icon"><i class="fas fa-users"></i></div>
+                    <h3 class="tip-title">اجتياز مقابلة العمل</h3>
+                    <p class="tip-excerpt">أسئلة شائعة ونصائح للتحضير وترك انطباع إيجابي.</p>
+                    <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+                </a>
+                <a href="tips/linkedin-tips.html" class="tip-card">
+                    <div class="tip-icon"><i class="fab fa-linkedin"></i></div>
+                    <h3 class="tip-title">تطوير ملف LinkedIn</h3>
+                    <p class="tip-excerpt">كيف تجعل ملفك يظهر أمام مسؤولي التوظيف في الشركات الألمانية.</p>
+                    <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+                </a>
+                <a href="tips/visa-tips.html" class="tip-card">
+                    <div class="tip-icon"><i class="fas fa-passport"></i></div>
+                    <h3 class="tip-title">أخطاء في التقديم للتأشيرات</h3>
+                    <p class="tip-excerpt">تجنب الأخطاء التي تؤدي إلى رفض طلب التأشيرة الألمانية.</p>
+                    <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+                </a>
             </div>
-        </div>
-
-        <!-- مزايا وتحديات العمل في ألمانيا -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 25px 0;">
-            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
-                <h3 style="color: var(--germany-red); margin-bottom: 10px;">✅ المزايا</h3>
-                <ul class="requirements-list">
-                    <li><i class="fas fa-check-circle" style="color: var(--germany-red);"></i> <strong>اقتصاد قوي:</strong> أكبر اقتصاد أوروبي، فرص عمل كثيرة.</li>
-                    <li><i class="fas fa-check-circle" style="color: var(--germany-red);"></i> <strong>رواتب تنافسية:</strong> من أعلى الرواتب في أوروبا.</li>
-                    <li><i class="fas fa-check-circle" style="color: var(--germany-red);"></i> <strong>نظام اجتماعي ممتاز:</strong> تأمين صحي شامل، إجازات مدفوعة (24-30 يوماً)، إجازة والدية.</li>
-                    <li><i class="fas fa-check-circle" style="color: var(--germany-red);"></i> <strong>أمان وظيفي:</strong> عقود عمل مستقرة، حماية ضد الفصل التعسفي.</li>
-                    <li><i class="fas fa-check-circle" style="color: var(--germany-red);"></i> <strong>موقع مركزي:</strong> سهولة السفر داخل أوروبا.</li>
-                </ul>
-            </div>
-            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
-                <h3 style="color: var(--germany-black); margin-bottom: 10px;">⚠️ التحديات</h3>
-                <ul class="requirements-list">
-                    <li><i class="fas fa-exclamation-triangle" style="color: var(--germany-black);"></i> <strong>اللغة الألمانية:</strong> ضرورية للاندماج والوظائف غير التقنية.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: var(--germany-black);"></i> <strong>البيروقراطية:</strong> إجراءات إدارية معقدة وبطيئة أحياناً.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: var(--germany-black);"></i> <strong>الضرائب العالية:</strong> تصل إلى 42% للدخول المرتفعة.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: var(--germany-black);"></i> <strong>غلاء المعيشة:</strong> خاصة في المدن الكبرى.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: var(--germany-black);"></i> <strong>الطقس:</strong> شتاء طويل ومظلم.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- إحصائيات سريعة -->
-        <h2 class="section-title">إحصائيات سريعة 2026</h2>
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-number">84M</div>
-                <div class="stat-label">عدد السكان</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">5.7%</div>
-                <div class="stat-label">معدل البطالة</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">1.7M+</div>
-                <div class="stat-label">وظائف شاغرة</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">2-4 أسابيع</div>
-                <div class="stat-label">مدة معالجة التأشيرة</div>
-            </div>
-        </div>
-
-        <!-- مواقع التوظيف الرئيسية (تم التحقق من صلاحيتها جميعاً) -->
-        <h2 class="section-title">مواقع توظيف موثوقة</h2>
-        <div class="jobs-grid">
-            <a href="https://www.stepstone.de" target="_blank" rel="noopener noreferrer" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <span class="job-site-name">StepStone</span>
-                </div>
-                <div class="job-site-desc">أكبر موقع توظيف ألماني، آلاف الوظائف في جميع القطاعات.</div>
-                <div class="job-site-link">stepstone.de <i class="fas fa-external-link-alt"></i></div>
-            </a>
-            <a href="https://www.arbeitsagentur.de/jobsuche" target="_blank" rel="noopener noreferrer" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <span class="job-site-name">Bundesagentur für Arbeit</span>
-                </div>
-                <div class="job-site-desc">بوابة التوظيف الرسمية للحكومة الألمانية. (تم التحقق: يعمل)</div>
-                <div class="job-site-link">arbeitsagentur.de <i class="fas fa-external-link-alt"></i></div>
-            </a>
-            <a href="https://www.make-it-in-germany.com" target="_blank" rel="noopener noreferrer" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <span class="job-site-name">Make it in Germany</span>
-                </div>
-                <div class="job-site-desc">البوابة الرسمية للحكومة الألمانية للمهنيين الأجانب.</div>
-                <div class="job-site-link">make-it-in-germany.com <i class="fas fa-external-link-alt"></i></div>
-            </a>
-            <a href="https://www.indeed.de" target="_blank" rel="noopener noreferrer" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <span class="job-site-name">Indeed Deutschland</span>
-                </div>
-                <div class="job-site-desc">محرك بحث عالمي للوظائف، يضم آلاف الإعلانات الألمانية.</div>
-                <div class="job-site-link">indeed.de <i class="fas fa-external-link-alt"></i></div>
-            </a>
         </div>
 
         <!-- خدماتنا -->
         <div class="services-section">
-            <h3 style="font-size: 1.3rem; margin-bottom: 15px;">خدماتنا الاحترافية</h3>
+            <h3 style="font-size: 1.3rem; margin-bottom: 15px;">🚀 خدماتنا الاحترافية</h3>
             <p style="margin-bottom: 20px;">نساعدك في تحسين فرصك للحصول على وظيفة في ألمانيا</p>
             <div class="services-buttons">
                 <a href="services.html" class="service-btn"><i class="fas fa-file-alt"></i> سيرة ذاتية ($9)</a>
@@ -992,35 +821,11 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h4>وظائف حول العالم</h4>
-                    <p>منصتك الموثوقة للبحث عن فرص عمل في مختلف دول العالم</p>
-                </div>
-                <div class="footer-section">
-                    <h4>روابط سريعة</h4>
-                    <ul>
-                        <li><a href="index.html">الرئيسية</a></li>
-                        <li><a href="#">الدول</a></li>
-                        <li><a href="services.html">الخدمات</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>سياسة الموقع</h4>
-                    <ul>
-                        <li><a href="privacy.html">سياسة الخصوصية</a></li>
-                        <li><a href="terms.html">اتفاقية الاستخدام</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>تابعنا</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook"></i> فيسبوك</a>
-                    </div>
-                </div>
+                <div class="footer-section"><h4>وظائف حول العالم</h4><p>منصتك الموثوقة للبحث عن فرص عمل في 53 دولة حول العالم.</p></div>
+                <div class="footer-section"><h4>روابط سريعة</h4><ul><li><a href="index.html">الرئيسية</a></li><li><a href="#">الدول</a></li><li><a href="services.html">الخدمات</a></li></ul></div>
+                <div class="footer-section"><h4>تابعنا</h4><div class="social-links"><a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook"></i> فيسبوك</a><a href="https://wa.me/212669411021" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a></div></div>
             </div>
-            <div class="footer-bottom">
-                <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة</p>
-            </div>
+            <div class="footer-bottom"><p>© 2026 وظائف حول العالم – جميع الحقوق محفوظة | آخر تحديث: أبريل 2026</p></div>
         </div>
     </footer>
 
