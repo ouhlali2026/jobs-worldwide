@@ -2,22 +2,22 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>فرص عمل في كندا 2026 | المهن المطلوبة والتأشيرات والرواتب في تورنتو وفانكوفر</title>
-    <meta name="description" content="كندا 2026 تعلن تغييرات جذرية في نظام العمل: دليلك الشامل للهجرة والعمل. أحدث فئات Express Entry، تصاريح العمل المفتوحة، الرواتب حسب المهنة، تكاليف المعيشة، ونصائح للقبول السريع.">
-    <meta name="keywords" content="فرص عمل في كندا, وظائف كندا 2026, الهجرة إلى كندا, Express Entry كندا, تصريح عمل مفتوح كندا, العمل في تورنتو, رواتب المهندسين في كندا, LMIA كندا, تأشيرة عمل كندا">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>فرص عمل في كندا 2026 | المهن المطلوبة والتأشيرات والرواتب</title>
+    <meta name="description" content="دليلك الشامل للعمل في كندا 2026: المهن الأكثر طلباً (تكنولوجيا، هندسة، رعاية صحية)، رواتب محدثة حسب القطاع، إجراءات Express Entry ونصائح للباحثين عن عمل.">
+    <meta name="keywords" content="فرص عمل في كندا, وظائف كندا 2026, الهجرة إلى كندا, Express Entry كندا, العمل في تورنتو, رواتب المهندسين في كندا, تأشيرة عمل كندا">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+
     <!-- ملف التنسيقات الرئيسي -->
     <link rel="stylesheet" href="style.css">
-    
+
     <style>
         /* تنسيقات خاصة بصفحة كندا - مستوحاة من ألوان العلم 🇨🇦 */
         :root {
@@ -43,7 +43,7 @@
         .country-header {
             background: linear-gradient(135deg, var(--canada-red), #8B0000);
             color: white;
-            padding: 30px 15px;
+            padding: clamp(20px, 5vw, 30px) 15px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -82,7 +82,7 @@
         .country-info {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 8px;
             margin: 15px 0 0;
             flex-wrap: wrap;
             width: 100%;
@@ -95,7 +95,7 @@
             border-radius: 50px;
             font-weight: 600;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            font-size: 0.8rem;
+            font-size: clamp(0.7rem, 2.5vw, 0.8rem);
             display: inline-flex;
             align-items: center;
             gap: 5px;
@@ -105,13 +105,13 @@
         @media (max-width: 480px) {
             .info-badge {
                 white-space: normal;
-                font-size: 0.75rem;
-                padding: 5px 8px;
+                font-size: 0.7rem;
+                padding: 4px 8px;
             }
         }
         
         .info-badge i {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
         
         .section-title {
@@ -182,6 +182,12 @@
             color: inherit;
             display: block;
             width: 100%;
+        }
+        
+        .job-site-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--canada-red);
+            box-shadow: 0 10px 25px rgba(213,43,30,0.1);
         }
         
         .job-site-header {
@@ -290,6 +296,7 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
             -webkit-overflow-scrolling: touch;
             width: 100%;
+            max-width: 100%;
         }
         
         .jobs-table {
@@ -299,6 +306,7 @@
             border-radius: 12px;
             overflow: hidden;
             min-width: 550px;
+            table-layout: auto;
         }
         
         .jobs-table th {
@@ -308,12 +316,14 @@
             text-align: right;
             font-weight: 600;
             font-size: 0.9rem;
+            white-space: nowrap;
         }
         
         .jobs-table td {
-            padding: 8px;
+            padding: 10px 8px;
             border-bottom: 1px solid #e2e8f0;
             font-size: 0.85rem;
+            word-break: break-word;
         }
         
         .jobs-table tr:last-child td {
@@ -322,13 +332,13 @@
         
         @media (max-width: 600px) {
             .jobs-table th, .jobs-table td {
-                padding: 6px 4px;
+                padding: 8px 6px;
                 font-size: 0.8rem;
             }
         }
         
         .requirements-box {
-            background: #fff5f5;
+            background: #ffe0e0;
             border-right: 4px solid var(--canada-red);
             padding: 20px 15px;
             border-radius: 16px;
@@ -376,7 +386,7 @@
             margin: 15px 0;
             font-weight: 500;
             padding: 6px 12px;
-            background: #fff5f5;
+            background: #ffe0e0;
             border-radius: 30px;
             font-size: 0.9rem;
         }
@@ -433,7 +443,7 @@
         }
         
         .services-section {
-            background: #fff5f5;
+            background: #ffe0e0;
             border-radius: 24px;
             padding: 25px 15px;
             margin: 30px 0;
@@ -467,6 +477,10 @@
             flex: 0 1 auto;
         }
         
+        .service-btn:hover {
+            background: #8B0000;
+        }
+        
         @media (max-width: 600px) {
             .services-buttons {
                 flex-direction: column;
@@ -475,6 +489,74 @@
                 width: 100%;
                 justify-content: center;
             }
+        }
+        
+        /* تنسيقات قسم النصائح */
+        .tips-section {
+            margin: 40px 0;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .tip-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            height: 100%;
+        }
+        
+        .tip-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--canada-red);
+            box-shadow: 0 10px 25px rgba(213,43,30,0.1);
+        }
+        
+        .tip-icon {
+            width: 50px;
+            height: 50px;
+            background: #ffe0e0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        
+        .tip-icon i {
+            font-size: 1.5rem;
+            color: var(--canada-red);
+        }
+        
+        .tip-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #1e293b;
+        }
+        
+        .tip-excerpt {
+            color: #64748b;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--canada-red);
+            font-weight: 500;
         }
         
         .navbar {
@@ -593,19 +675,15 @@
             }
         }
         
-        /* إصلاحات إضافية لمنع التمرير الأفقي */
+        /* إصلاحات إضافية */
         img, iframe, video, table, div {
             max-width: 100%;
         }
-        p, h1, h2, h3, h4, h5, h6 {
+        p, h1, h2, h3, h4, h5, h6, li, td, th {
             word-wrap: break-word;
+            overflow-wrap: break-word;
         }
     </style>
-    <!-- Vercel Web Analytics -->
-    <script>
-      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
     <!-- شريط التنقل -->
@@ -633,7 +711,7 @@
         <div class="container">
             <i class="fas fa-flag flag-icon"></i>
             <h1>🇨🇦 فرص عمل في كندا 2026 🇨🇦</h1>
-            <p>الدليل الكامل للعمل في تورنتو، فانكوفر، مونتريال، كالغاري وجميع المدن الكندية – تحديثات مارس 2026</p>
+            <p>الدليل الكامل للعمل في تورنتو، فانكوفر، مونتريال، كالغاري وجميع المدن الكندية – تحديثات أبريل 2026</p>
             
             <div class="country-info">
                 <span class="info-badge"><i class="fas fa-microchip"></i> تكنولوجيا وهندسة</span>
@@ -648,348 +726,104 @@
             <i class="fas fa-arrow-right"></i> العودة للصفحة الرئيسية
         </a>
 
-        <!-- لمحة عامة عن سوق العمل الكندي 2026 -->
+        <!-- لمحة عامة عن سوق العمل الكندي -->
         <div class="visa-box">
             <h3><i class="fas fa-chart-line"></i> نظرة على سوق العمل في كندا 2026</h3>
-            <p>كندا تواصل كونها وجهة الأحلام للباحثين عن عمل، لكن عام 2026 يشهد تغييرات جذرية في نظام الهجرة والعمل. الحكومة الكندية قلصت عدد تصاريح العمل المفتوحة وأدخلت نظاماً جديداً للتراخيص المرتبطة بصاحب العمل، بهدف حماية سوق العمل وضمان توظيف الكفاءات في القطاعات الأكثر احتياجاً . التغييرات تشمل أكثر من 1.2 مليون عامل أجنبي مؤقت، حيث سيتم استبدال المرونة السابقة بضوابط أكثر صرامة. في المقابل، تبقى كندا بحاجة ماسة للعمالة الماهرة، خاصة مع توقعات بنقص 32,000 عامل في قطاع البناء وحده بحلول 2045، مما يرفع تكاليف الإسكان ويعزز فرص العمال المهرة .</p>
+            <p>كندا تواصل كونها الوجهة الأولى للباحثين عن عمل، مع خطط لاستقبال 380,000 مهاجر سنوياً حتى 2028. سوق العمل الكندي يشهد طلباً متزايداً على المهارات التقنية والرعاية الصحية والهندسة .</p>
+            <p>نظام Express Entry هو المسار الرئيسي للهجرة، مع سحوبات دورية تستهدف الكفاءات العالية. المقاطعات أيضاً تقدم برامج ترشيح خاصة (PNP) لتلبية احتياجاتها المحلية .</p>
         </div>
 
-        <!-- تحديثات 2026 الكبرى في نظام العمل -->
-        <div class="visa-box">
-            <h3><i class="fas fa-calendar-alt"></i> تحديثات 2026 الكبرى في نظام العمل الكندي</h3>
-            <p>اعتباراً من يناير 2026، دخلت تغييرات جوهرية حيز التنفيذ تؤثر على جميع العمال الأجانب والمقيمين المؤقتين :</p>
-            
-            <div class="visa-grid">
-                <div class="visa-type">
-                    <h4>نهاية تصاريح العمل المفتوحة</h4>
-                    <p>سيتم استبدال معظم تصاريح العمل المفتوحة بتراخيص مرتبطة بصاحب عمل محدد. هذا يعني أنك لن تستطيع تغيير وظيفتك دون موافقة حكومية جديدة، مما يحد من المرونة السابقة .</p>
-                </div>
-                <div class="visa-type">
-                    <h4>تصاريح الأزواج والطلاب</h4>
-                    <p>تصاريح الأزواج أصبحت مقتصرة فقط على أزواج العمال في المهن عالية المهارة (TEER 0-3) أو طلاب الماجستير والدكتوراه. الطلاب في برامج البكالوريوس أو الدبلومات القصيرة فقدوا أهلية تصاريح الأزواج .</p>
-                </div>
-                <div class="visa-type">
-                    <h4>فترة سماح للقدامى</h4>
-                    <p>حاملو التصاريح الحالية يمكنهم تجديدها وفق القواعد القديمة حتى 31 ديسمبر 2026. هذه فرصة أخيرة للحفاظ على المرونة .</p>
-                </div>
-                <div class="visa-type">
-                    <h4>إلغاء نقاط عرض العمل (LMIA)</h4>
-                    <p>في مارس 2025، ألغت كندا النقاط الإضافية لعروض العمل في نظام Express Entry، مما صعّب المنافسة على العمال ذوي الخبرة الأقل في اللغة .</p>
-                </div>
-                <div class="visa-type">
-                    <h4>تدقيق صارم للمسميات الوظيفية</h4>
-                    <p>السلطات أصبحت تدقق بدقة في تطابق المهام الفعلية مع المسمى الوظيفي في التصنيف الوطني للمهن (NOC). أي تضخيم في المسمى قد يؤدي للرفض .</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- فئات Express Entry 2026 (جديد) -->
-        <h2 class="section-title">فئات Express Entry 2026: التخصصات المطلوبة</h2>
-        <div class="requirements-box">
-            <p>في 18 فبراير 2026، أعلنت كندا عن فئات جديدة لسحب Express Entry تستهدف تحديداً الكفاءات التالية :</p>
-            <div style="margin: 15px 0;">
-                <span class="skill-tag">أطباء (بخبرة كندية)</span>
-                <span class="skill-tag">باحثون وأكاديميون</span>
-                <span class="skill-tag">مدراء كبار (بخبرة كندية)</span>
-                <span class="skill-tag">طيارون ومهندسو طيران</span>
-                <span class="skill-tag">ميكانيكيو طائرات</span>
-                <span class="skill-tag">ضباط عسكريون أجانب</span>
-                <span class="skill-tag">ممرضون ورعاية صحية</span>
-                <span class="skill-tag">معلمون</span>
-                <span class="skill-tag">مهن النقل واللوجستيات</span>
-                <span class="skill-tag">مهن STEM</span>
-                <span class="skill-tag">مهنيو اللغة الفرنسية</span>
-            </div>
-            <p>هذه التغييرات تعكس توجه كندا نحو استقطاب كفاءات محددة بدلاً من السحب العشوائي، مما يزيد فرص المتخصصين في المجالات المذكورة .</p>
-        </div>
-
-        <!-- المهن الأكثر طلباً والرواتب في كندا 2026 -->
+        <!-- المهن الأكثر طلباً والرواتب -->
         <h2 class="section-title">المهن الأكثر طلباً والرواتب في كندا 2026</h2>
         
         <div class="table-container">
             <table class="jobs-table">
-                <tr>
-                    <th>القطاع</th>
-                    <th>المهن المطلوبة</th>
-                    <th>مبتدئ (CAD)</th>
-                    <th>متوسط (CAD)</th>
-                    <th>متقدم (CAD)</th>
-                </tr>
-                <tr>
-                    <td>تكنولوجيا المعلومات</td>
-                    <td>مهندسو برمجيات (Java, Python, C++)، مهندسو أمن سيبراني، علماء بيانات، مهندسو ذكاء اصطناعي، مهندسو سحابة</td>
-                    <td>65,000 – 80,000</td>
-                    <td>85,000 – 110,000</td>
-                    <td>120,000 – 160,000+</td>
-                </tr>
-                <tr>
-                    <td>الرعاية الصحية</td>
-                    <td>أطباء عامون وأخصائيون، ممرضون، صيادلة، أخصائيو علاج طبيعي، فنيو مختبرات</td>
-                    <td>60,000 – 75,000</td>
-                    <td>80,000 – 110,000</td>
-                    <td>120,000 – 200,000+</td>
-                </tr>
-                <tr>
-                    <td>الهندسة (مختلفة)</td>
-                    <td>مهندسو مدني، كهرباء، ميكانيكا، بترول، مشاريع، أتمتة</td>
-                    <td>60,000 – 75,000</td>
-                    <td>80,000 – 100,000</td>
-                    <td>110,000 – 150,000+</td>
-                </tr>
-                <tr>
-                    <td>المالية والمحاسبة</td>
-                    <td>محللون ماليون، محاسبون قانونيون، مدققو حسابات، متخصصو ضرائب</td>
-                    <td>55,000 – 70,000</td>
-                    <td>75,000 – 95,000</td>
-                    <td>100,000 – 150,000+</td>
-                </tr>
-                <tr>
-                    <td>المهن الحرفية والبناء</td>
-                    <td>كهربائيون، سباكون، نجارون، لحامون، مشغلو آلات ثقيلة، عمال بناء ماهرون</td>
-                    <td>50,000 – 65,000</td>
-                    <td>70,000 – 90,000</td>
-                    <td>95,000 – 120,000+</td>
-                </tr>
-                <tr>
-                    <td>النقل واللوجستيات</td>
-                    <td>سائقو شاحنات، سائقو توصيل، عمال مستودعات، مناولو بضائع</td>
-                    <td>45,000 – 55,000</td>
-                    <td>60,000 – 75,000</td>
-                    <td>80,000 – 100,000+</td>
-                </tr>
-                <tr>
-                    <td>الخدمات والضيافة</td>
-                    <td>طهاة، نادلون، عمال فنادق، موظفو استقبال</td>
-                    <td>35,000 – 45,000</td>
-                    <td>45,000 – 60,000</td>
-                    <td>65,000 – 85,000+</td>
-                </tr>
+                 <thead>
+                    <tr>
+                        <th>القطاع</th>
+                        <th>المهن المطلوبة</th>
+                        <th>مبتدئ (CAD)</th>
+                        <th>متوسط (CAD)</th>
+                        <th>متقدم (CAD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>تكنولوجيا المعلومات</td>
+                        <td>مهندسو برمجيات، مهندسو أمن سيبراني، علماء بيانات، مهندسو ذكاء اصطناعي، مهندسو سحابة</td>
+                        <td>65,000 – 80,000</td>
+                        <td>85,000 – 110,000</td>
+                        <td>120,000 – 160,000+</td>
+                    </tr>
+                    <tr>
+                        <td>الرعاية الصحية</td>
+                        <td>أطباء عامون وأخصائيون، ممرضون، صيادلة، أخصائيو علاج طبيعي</td>
+                        <td>60,000 – 75,000</td>
+                        <td>80,000 – 110,000</td>
+                        <td>120,000 – 200,000+</td>
+                    </tr>
+                    <tr>
+                        <td>الهندسة</td>
+                        <td>مهندسو مدني، كهرباء، ميكانيكا، بترول، مشاريع، أتمتة</td>
+                        <td>60,000 – 75,000</td>
+                        <td>80,000 – 100,000</td>
+                        <td>110,000 – 150,000+</td>
+                    </tr>
+                </tbody>
             </table>
-            <p style="margin-top: 5px;">المصادر: إحصائيات العمل الكندية 2026، Randstad Canada، Hays Salary Guide .</p>
         </div>
 
-        <!-- المهارات الأكثر طلباً -->
-        <h2 class="section-title">المهارات الأكثر طلباً في السوق الكندي 2026</h2>
-        <div style="margin: 15px 0;">
-            <span class="skill-tag">اللغة الإنجليزية (CLB 7+)</span>
-            <span class="skill-tag">اللغة الفرنسية (ميزة كبرى)</span>
-            <span class="skill-tag">Java / Python / JavaScript</span>
-            <span class="skill-tag">الأمن السيبراني</span>
-            <span class="skill-tag">تحليل البيانات / الذكاء الاصطناعي</span>
-            <span class="skill-tag">إدارة المشاريع (PMP/Agile)</span>
-            <span class="skill-tag">القيادة والإشراف</span>
-            <span class="skill-tag">المهارات الحرفية (كهرباء، سباكة)</span>
-            <span class="skill-tag">اللحام والتركيبات</span>
-            <span class="skill-tag">التمريض والرعاية</span>
-        </div>
-        <p style="margin-top: 10px;">اللغة الفرنسية تمنح نقاطاً إضافية كبيرة في Express Entry، وهناك سحوبات منفصلة للمرشحين الناطقين بالفرنسية. المهارات الحرفية تشهد طلباً متزايداً بسبب نقص العمالة في قطاع البناء .</p>
-
-        <!-- نظام تصاريح العمل الجديد 2026 -->
-        <h2 class="section-title">نظام تصاريح العمل الجديد 2026: التفاصيل الكاملة</h2>
-        <div class="visa-box">
-            <h3><i class="fas fa-passport"></i> أنواع التصاريح الرئيسية بعد التحديث</h3>
-            
-            <div class="visa-grid">
-                <div class="visa-type">
-                    <h4>تصريح العمل المرتبط بصاحب العمل</h4>
-                    <p>النوع الأكثر شيوعاً بعد 2026. يشترط عقد عمل محدد مع صاحب عمل مسجل لدى IRCC. يحدد التصريح الوظيفة والراتب ومدة العمل. تغيير صاحب العمل يتطلب تصريحاً جديداً .</p>
-                </div>
-                <div class="visa-type">
-                    <h4>البطاقة الزرقاء الكندية (Global Hypergrowth Project)</h4>
-                    <p>مسار سريع للكفاءات العالية للعمل في شركات التكنولوجيا الكبرى مثل Ada, Clio, Lightspeed. مزايا: لا حاجة لـ LMIA، تصريح حتى 5 سنوات، معالجة خلال أسبوعين، وإقامة دائمة خلال 18 شهراً .</p>
-                </div>
-                <div class="visa-type">
-                    <h4>تصريح ما بعد التخرج (PGWP) الجديد</h4>
-                    <p>أصبح مشروطاً بالتخصصات المطلوبة. الخريجون يحصلون على تصريح فقط في المجالات التي تعاني نقصاً، ويجب عليهم إيجاد عمل خلال 90 يوماً من التخرج .</p>
-                </div>
-                <div class="visa-type">
-                    <h4>تصريح العمل المفتوح (لحالات محدودة)</h4>
-                    <p>يبقى متاحاً فقط للفئات التالية: طلاب يواجهون صعوبات مالية، ضحايا سوء المعاملة، لاجئون، بعض أفراد العائلة .</p>
-                </div>
-            </div>
-
-            <h4 style="margin: 15px 0 10px;">المسار السريع: Global Skills Strategy (GSS)</h4>
-            <p>برنامج GSS يقدم معالجة خلال أسبوعين للكفاءات العالية في الحالات التالية :</p>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle"></i> حاملي عروض عمل ضمن برنامج Global Talent Stream (LMIA إيجابي).</li>
-                <li><i class="fas fa-check-circle"></i> العمال المعفيين من LMIA (مثل بعض التحويلات داخل الشركة) في مهن TEER 0 أو 1.</li>
-            </ul>
-
-            <h4 style="margin: 15px 0 10px;">شروط التقديم العامة (لجميع التصاريح):</h4>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle"></i> <strong>إثبات مالي:</strong> 15,000 دولار كندي للفرد + 5,000 لكل مرافق (زيادة عن السنوات السابقة) .</li>
-                <li><i class="fas fa-check-circle"></i> <strong>فحوصات أمنية:</strong> شهادات خلو سوابق من كل دولة أقامت فيها أكثر من 6 أشهر خلال 10 سنوات .</li>
-                <li><i class="fas fa-check-circle"></i> <strong>فحص طبي:</strong> إلزامي لجميع المتقدمين، صالح لمدة 12 شهراً.</li>
-                <li><i class="fas fa-check-circle"></i> <strong>تعهد بالمغادرة:</strong> توقيع على تعهد بمغادرة كندا عند انتهاء التصريح ما لم تحصل على إقامة دائمة.</li>
-                <li><i class="fas fa-check-circle"></i> <strong>تسجيل دوري:</strong> تأكيد مستمر كل 6 أشهر عبر الإنترنت على استمرار الالتزام بشروط العمل.</li>
-            </ul>
-
-            <h4 style="margin: 15px 0 10px;">خطوات التقديم (لغير الكنديين):</h4>
-            <ol style="margin-right: 20px; margin-bottom: 15px;">
-                <li><strong>الحصول على عرض عمل</strong> من صاحب عمل كندي مسجل لدى IRCC (بعد يناير 2026، يجب أن يكون صاحب العمل مسجلاً مسبقاً) .</li>
-                <li><strong>تقديم طلب LMIA (إن لزم الأمر)</strong> أو التحقق من الإعفاء (مثل GTS أو NAFTA).</li>
-                <li><strong>التقديم الإلكتروني على تصريح العمل</strong> عبر موقع IRCC مع رفع جميع المستندات.</li>
-                <li><strong>دفع الرسوم</strong> (255 دولاراً للتصريح، إضافات للبيومترية).</li>
-                <li><strong>تقديم البصمات والصورة</strong> في مركز طلبات التأشيرة.</li>
-                <li><strong>انتظار القرار</strong> (المدة تختلف حسب البرنامج: GSS أسبوعان، عام 8-12 أسبوعاً).</li>
-                <li><strong>السفر إلى كندا واستلام التصريح</strong> عند المنفذ (أو بطاقة إقامة لاحقاً).</li>
-            </ol>
-        </div>
-
-        <!-- تكلفة المعيشة في كندا 2026 -->
-        <h2 class="section-title">تكلفة المعيشة في كندا 2026</h2>
+        <!-- قسم الروابط الداخلية (دول مشابهة) -->
         <div class="requirements-box">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
-                <div><strong>تورنتو:</strong> 3,500 – 5,000 CAD</div>
-                <div><strong>فانكوفر:</strong> 3,500 – 5,000 CAD</div>
-                <div><strong>مونتريال:</strong> 2,500 – 3,800 CAD</div>
-                <div><strong>كالغاري:</strong> 2,800 – 4,000 CAD</div>
-                <div><strong>أوتاوا:</strong> 2,500 – 3,800 CAD</div>
-                <div><strong>هاليفاكس:</strong> 2,200 – 3,200 CAD</div>
-            </div>
-            <p style="margin-top: 15px;">بحسب إحصائيات كانريدان، ارتفعت تكاليف السكن بنسبة 1.7% خلال عام، بينما ارتفعت أسعار الطعام بنسبة 4.8% . الإيجار في تورنتو وفانكوفر هو الأعلى (شقة بغرفة نوم واحدة: 2,200-2,800 CAD). مونتريال تقدم خيارات أقل كلفة مع جودة حياة عالية.</p>
-        </div>
-
-        <!-- نصائح للباحثين عن عمل في كندا 2026 -->
-        <div class="requirements-box" style="background: #fff5f5;">
-            <h3><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في كندا 2026</h3>
-            <ul class="requirements-list">
-                <li><i class="fas fa-check-circle"></i> <strong>استعد للغة الفرنسية:</strong> إذا كنت تتقن الفرنسية، فرصك في Express Entry تزداد بشكل كبير. هناك سحوبات خاصة للناطقين بالفرنسية .</li>
-                <li><i class="fas fa-check-circle"></i> <strong>استهدف الشركات المعتمدة (Hypergrowth):</strong> التقديم للشركات المدرجة في قائمة Global Hypergrowth Project يمنحك معالجة سريعة وإقامة دائمة خلال 18 شهراً .</li>
-                <li><i class="fas fa-check-circle"></i> <strong>جدّد تصريحك مبكراً:</strong> إذا كنت حالياً في كندا بتصريح مفتوح، قدم على التجديد قبل 31 ديسمبر 2026 للاستفادة من القواعد القديمة .</li>
-                <li><i class="fas fa-check-circle"></i> <strong>استخدم منصات التوظيف الموثوقة:</strong> LinkedIn Canada, Indeed Canada, Job Bank (الحكومي), Randstad Canada.</li>
-                <li><i class="fas fa-check-circle"></i> <strong>لا تدفع مقابل عروض العمل:</strong> احذر من شركات التوظيف الوهمية التي تطلب أموالاً مقابل تأمين وظيفة. التوظيف القانوني لا يكلفك شيئاً.</li>
-                <li><i class="fas fa-check-circle"></i> <strong>تأكد من تطابق مهامك مع NOC:</strong> التدقيق في المسمى الوظيفي أصبح صارماً جداً. تأكد أن مهام وظيفتك تطابق بالضبط وصف NOC .</li>
-                <li><i class="fas fa-check-circle"></i> <strong>تجهيز شهاداتك وتصديقاتها:</strong> تحتاج إلى ترجمة معتمدة وتصديق لجميع الشهادات، مع تقييم الشهادات الأكاديمية (ECA) للهجرة.</li>
-            </ul>
-        </div>
-
-        <!-- أفضل المدن للعمل (محدث 2026) -->
-        <h2 class="section-title">أفضل المدن للعمل في كندا 2026</h2>
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-number">تورنتو</div>
-                <div class="stat-label">أكبر سوق عمل. مركز التمويل، التكنولوجيا، الخدمات. أعلى الرواتب وأعلى إيجارات.</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">فانكوفر</div>
-                <div class="stat-label">مركز التكنولوجيا والسينما. طبيعة خلابة، رواتب مرتفعة وإيجارات خيالية.</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">مونتريال</div>
-                <div class="stat-label">ثنائية اللغة، تكاليف معيشة أقل. مركز الذكاء الاصطناعي والألعاب.</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">كالغاري</div>
-                <div class="stat-label">مركز صناعة النفط والغاز، ضرائب أقل (ألبرتا). رواتب تنافسية.</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">أوتاوا</div>
-                <div class="stat-label">العاصمة، قطاع التكنولوجيا (سيليكون فالي الشمال)، وظائف حكومية.</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">هاليفاكس</div>
-                <div class="stat-label">مدينة ساحلية، قطاع صحي وتعليمي، تكاليف معيشة منخفضة.</div>
+            <h3><i class="fas fa-globe"></i> دول قد تهمك أيضاً</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 15px;">
+                <a href="usa.html" style="background: white; padding: 8px 16px; border-radius: 40px; color: #1e3c72; text-decoration: none; border: 1px solid #e2e8f0;">🇺🇸 الولايات المتحدة</a>
+                <a href="germany.html" style="background: white; padding: 8px 16px; border-radius: 40px; color: #1e3c72; text-decoration: none; border: 1px solid #e2e8f0;">🇩🇪 ألمانيا</a>
+                <a href="australia.html" style="background: white; padding: 8px 16px; border-radius: 40px; color: #1e3c72; text-decoration: none; border: 1px solid #e2e8f0;">🇦🇺 أستراليا</a>
+                <a href="uk.html" style="background: white; padding: 8px 16px; border-radius: 40px; color: #1e3c72; text-decoration: none; border: 1px solid #e2e8f0;">🇬🇧 بريطانيا</a>
+                <a href="uae.html" style="background: white; padding: 8px 16px; border-radius: 40px; color: #1e3c72; text-decoration: none; border: 1px solid #e2e8f0;">🇦🇪 الإمارات</a>
             </div>
         </div>
 
-        <!-- مزايا وتحديات العمل في كندا 2026 -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 25px 0;">
-            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
-                <h3 style="color: var(--canada-red); margin-bottom: 10px;">✅ المزايا</h3>
-                <ul class="requirements-list">
-                    <li><i class="fas fa-check-circle" style="color: var(--canada-red);"></i> <strong>اقتصاد قوي:</strong> سابع أكبر اقتصاد في العالم، فرص متنوعة.</li>
-                    <li><i class="fas fa-check-circle" style="color: var(--canada-red);"></i> <strong>جودة حياة عالية:</strong> رعاية صحية شاملة، تعليم ممتاز، أمان.</li>
-                    <li><i class="fas fa-check-circle" style="color: var(--canada-red);"></i> <strong>تعدد ثقافي:</strong> مجتمع منفتح، سهولة الاندماج.</li>
-                    <li><i class="fas fa-check-circle" style="color: var(--canada-red);"></i> <strong>رواتب تنافسية:</strong> من أعلى الرواتب عالمياً.</li>
-                </ul>
+        <!-- قسم النصائح -->
+        <div class="tips-section">
+            <h2 class="section-title"><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل في كندا</h2>
+            <div class="tips-grid">
+                <a href="tips/cv-tips.html" class="tip-card">
+                    <div class="tip-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3 class="tip-title">كيف تكتب سيرة ذاتية احترافية</h3>
+                    <p class="tip-excerpt">10 نصائح لكتابة سيرة ذاتية تلفت انتباه مسؤولي التوظيف في كندا.</p>
+                    <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+                </a>
+                <a href="tips/interview-tips.html" class="tip-card">
+                    <div class="tip-icon"><i class="fas fa-users"></i></div>
+                    <h3 class="tip-title">اجتياز مقابلة العمل</h3>
+                    <p class="tip-excerpt">أسئلة شائعة ونصائح للتحضير وترك انطباع إيجابي.</p>
+                    <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+                </a>
+                <a href="tips/linkedin-tips.html" class="tip-card">
+                    <div class="tip-icon"><i class="fab fa-linkedin"></i></div>
+                    <h3 class="tip-title">تطوير ملف LinkedIn</h3>
+                    <p class="tip-excerpt">كيف تجعل ملفك يظهر أمام مسؤولي التوظيف في الشركات الكندية.</p>
+                    <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+                </a>
+                <a href="tips/visa-tips.html" class="tip-card">
+                    <div class="tip-icon"><i class="fas fa-passport"></i></div>
+                    <h3 class="tip-title">أخطاء في التقديم للتأشيرات</h3>
+                    <p class="tip-excerpt">تجنب الأخطاء التي تؤدي إلى رفض طلب التأشيرة الكندية.</p>
+                    <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+                </a>
             </div>
-            <div style="background: white; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0;">
-                <h3 style="color: #e67e22; margin-bottom: 10px;">⚠️ التحديات</h3>
-                <ul class="requirements-list">
-                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>غلاء المعيشة:</strong> ارتفاع الإيجارات في المدن الكبرى.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>الشتاء القارس:</strong> برودة شديدة في معظم المقاطعات.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>تعقيدات الهجرة الجديدة:</strong> التصاريح المرتبطة بصاحب العمل تقلل المرونة.</li>
-                    <li><i class="fas fa-exclamation-triangle" style="color: #e67e22;"></i> <strong>الضرائب المرتفعة:</strong> تصل إلى 33% على الدخل.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- إحصائيات سريعة 2026 -->
-        <h2 class="section-title">إحصائيات سريعة 2026</h2>
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-number">40M+</div>
-                <div class="stat-label">عدد السكان</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">5.2%</div>
-                <div class="stat-label">معدل البطالة </div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">$15,000</div>
-                <div class="stat-label">الحد الأدنى المطلوب</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">500,000+</div>
-                <div class="stat-label">مهاجر سنوياً </div>
-            </div>
-        </div>
-
-        <!-- مواقع التوظيف الرئيسية -->
-        <h2 class="section-title">مواقع توظيف موثوقة</h2>
-        <div class="jobs-grid">
-            <a href="https://www.jobbank.gc.ca" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <span class="job-site-name">Job Bank (حكومي)</span>
-                </div>
-                <div class="job-site-desc">الموقع الرسمي للحكومة الكندية، آلاف الوظائف المعتمدة.</div>
-                <div class="job-site-link">jobbank.gc.ca <i class="fas fa-external-link-alt"></i></div>
-            </a>
-            <a href="https://www.linkedin.com/jobs/canada-jobs" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                    <span class="job-site-name">LinkedIn Canada</span>
-                </div>
-                <div class="job-site-desc">أكبر منصة مهنية، تواصل مباشر مع مسؤولي التوظيف.</div>
-                <div class="job-site-link">linkedin.com <i class="fas fa-external-link-alt"></i></div>
-            </a>
-            <a href="https://www.indeed.ca" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <span class="job-site-name">Indeed Canada</span>
-                </div>
-                <div class="job-site-desc">أضخم محرك بحث للوظائف، يضم ملايين الإعلانات.</div>
-                <div class="job-site-link">indeed.ca <i class="fas fa-external-link-alt"></i></div>
-            </a>
-            <a href="https://www.randstad.ca" target="_blank" class="job-site-card">
-                <div class="job-site-header">
-                    <div class="job-site-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <span class="job-site-name">Randstad Canada</span>
-                </div>
-                <div class="job-site-desc">أكبر شركة توظيف في كندا، استشارات مهنية مجانية.</div>
-                <div class="job-site-link">randstad.ca <i class="fas fa-external-link-alt"></i></div>
-            </a>
         </div>
 
         <!-- خدماتنا -->
         <div class="services-section">
             <h3 style="font-size: 1.3rem; margin-bottom: 15px;">🚀 خدماتنا الاحترافية</h3>
-            <p style="margin-bottom: 20px;">نساعدك في تحسين فرصك للحصول على وظيفة في كندا واجتياز إجراءات الهجرة الجديدة</p>
+            <p style="margin-bottom: 20px;">نساعدك في تحسين فرصك للحصول على وظيفة في كندا</p>
             <div class="services-buttons">
                 <a href="services.html" class="service-btn"><i class="fas fa-file-alt"></i> سيرة ذاتية ($9)</a>
                 <a href="services.html" class="service-btn"><i class="fas fa-envelope"></i> خطاب تقديم ($7)</a>
                 <a href="services.html" class="service-btn"><i class="fas fa-user-plus"></i> تسجيل بالمنصات ($10)</a>
-                <a href="services.html" class="service-btn"><i class="fas fa-language"></i> تقييم ملف Express Entry ($15)</a>
             </div>
         </div>
     </div>
@@ -1000,7 +834,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>وظائف حول العالم</h4>
-                    <p>منصتك الموثوقة للبحث عن فرص عمل في 49 دولة حول العالم.</p>
+                    <p>منصتك الموثوقة للبحث عن فرص عمل في 53 دولة حول العالم.</p>
                 </div>
                 <div class="footer-section">
                     <h4>روابط سريعة</h4>
@@ -1008,8 +842,6 @@
                         <li><a href="index.html">الرئيسية</a></li>
                         <li><a href="#">الدول</a></li>
                         <li><a href="services.html">الخدمات</a></li>
-                        <li><a href="about.html">من نحن</a></li>
-                        <li><a href="contact.html">اتصل بنا</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -1028,12 +860,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة | آخر تحديث: مارس 2026</p>
+                <p>© 2026 وظائف حول العالم – جميع الحقوق محفوظة | آخر تحديث: أبريل </p>
             </div>
         </div>
     </footer>
 
-    <!-- كود الإعلان Social Bar - قبل إغلاق body -->
+    <!-- كود الإعلان Social Bar -->
     <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 </body>
 </html>
