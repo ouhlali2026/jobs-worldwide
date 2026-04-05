@@ -2,42 +2,259 @@
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>وظائف على مستوى العالم | Jobs Worldwide</title>
     <meta name="description" content="أحدث الوظائف في 60+ دولة حول العالم. فرص عمل للمغتربين والعرب 2026. تحديث يومي.">
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
-        /* تنسيقات محسنة */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; direction: rtl; }
-        .header { background: linear-gradient(135deg, #0a1a3a, #1a2a4f); color: white; padding: 20px 0; text-align: center; }
-        .header h1 { font-size: 2.2em; margin-bottom: 10px; }
-        .header p { font-size: 1.1em; opacity: 0.9; }
-        .container { max-width: 1400px; margin: 30px auto; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 30px; }
-        .main-content { flex: 3; min-width: 250px; }
-        .sidebar { flex: 1; min-width: 250px; }
-        .section-title { background: #1a2a4f; color: white; padding: 12px 20px; border-radius: 10px; margin-bottom: 20px; font-size: 1.5em; }
-        .country-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; margin-bottom: 40px; }
-        .country-card { background: white; border-radius: 12px; padding: 15px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; text-decoration: none; color: #1a2a4f; display: block; }
-        .country-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); border-bottom: 3px solid #d4a017; }
-        .country-emoji { font-size: 2.5em; display: block; margin-bottom: 8px; }
-        .country-name { font-weight: bold; font-size: 1.1em; }
-        .sidebar-card { background: white; border-radius: 15px; padding: 20px; margin-bottom: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-        .sidebar-card h3 { color: #1a2a4f; border-right: 4px solid #d4a017; padding-right: 12px; margin-bottom: 15px; }
-        .tip-text { background: #fef9e6; padding: 15px; border-radius: 10px; border-right: 3px solid #d4a017; margin: 15px 0; font-size: 0.95em; line-height: 1.6; }
-        .tips-list a, .services-list a { display: block; padding: 8px 0; color: #1a2a4f; text-decoration: none; border-bottom: 1px dashed #eee; }
-        .tips-list a:hover, .services-list a:hover { color: #d4a017; padding-right: 5px; }
-        .stat-number { font-size: 1.8em; font-weight: bold; color: #d4a017; }
-        .social-links a { display: inline-block; margin-left: 12px; color: #1a2a4f; text-decoration: none; }
-        .footer { background: #0a1a3a; color: #ccc; text-align: center; padding: 25px; margin-top: 40px; font-size: 0.9em; }
-        .footer a { color: #d4a017; text-decoration: none; }
-        @media (max-width: 768px) { .container { flex-direction: column; } }
-        .featured-section { margin-top: 30px; background: #fff8e7; border-radius: 20px; padding: 20px; border: 1px solid #ffe0a3; }
-        .featured-title { font-size: 1.5em; color: #1a2a4f; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
-        .featured-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
-        .featured-card { background: white; border-radius: 12px; padding: 12px; text-align: center; text-decoration: none; color: #1a2a4f; box-shadow: 0 1px 4px rgba(0,0,0,0.05); transition: all 0.2s; }
-        .featured-card:hover { background: #d4a017; color: white; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fb;
+            direction: rtl;
+            line-height: 1.6;
+        }
+
+        /* الهيدر */
+        .header {
+            background: linear-gradient(135deg, #0a1a3a, #1a2a4f);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* الحاوية الرئيسية */
+        .main-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        /* تنسيق الأقسام */
+        .region {
+            margin-bottom: 40px;
+        }
+
+        .region-title {
+            background: #1a2a4f;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        /* شبكة البطاقات - متجاوبة */
+        .country-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 16px;
+        }
+
+        .country-card {
+            background: white;
+            border-radius: 16px;
+            padding: 18px 12px;
+            text-align: center;
+            text-decoration: none;
+            color: #1a2a4f;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        .country-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+            border-bottom: 3px solid #d4a017;
+        }
+
+        .country-emoji {
+            font-size: 2.5rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .country-name {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        /* تنسيق الصفحة بجوارين */
+        .two-columns {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .content-main {
+            flex: 3;
+            min-width: 250px;
+        }
+
+        .sidebar {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        /* بطاقات الشريط الجانبي */
+        .side-card {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+            border: 1px solid #eef2f6;
+        }
+
+        .side-card h3 {
+            color: #1a2a4f;
+            border-right: 4px solid #d4a017;
+            padding-right: 12px;
+            margin-bottom: 18px;
+            font-size: 1.2rem;
+        }
+
+        .tip-box {
+            background: #fef9e6;
+            padding: 16px;
+            border-radius: 14px;
+            border-right: 3px solid #d4a017;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .side-links {
+            list-style: none;
+        }
+
+        .side-links li {
+            margin-bottom: 12px;
+        }
+
+        .side-links a {
+            text-decoration: none;
+            color: #1a2a4f;
+            display: block;
+            padding: 6px 0;
+            border-bottom: 1px dashed #e0e6ed;
+        }
+
+        .side-links a:hover {
+            color: #d4a017;
+            padding-right: 5px;
+        }
+
+        /* قسم قد يعجبك أيضاً */
+        .featured-section {
+            margin-top: 50px;
+            background: #fff8ed;
+            border-radius: 24px;
+            padding: 25px;
+            border: 1px solid #ffe0a3;
+        }
+
+        .featured-title {
+            font-size: 1.5rem;
+            color: #1a2a4f;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .featured-card {
+            background: white;
+            border-radius: 14px;
+            padding: 14px;
+            text-align: center;
+            text-decoration: none;
+            color: #1a2a4f;
+            font-weight: 500;
+            transition: 0.2s;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }
+
+        .featured-card:hover {
+            background: #d4a017;
+            color: white;
+        }
+
+        /* الفوتر */
+        .footer {
+            background: #0a1a3a;
+            color: #ccc;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            font-size: 0.85rem;
+        }
+
+        .footer a {
+            color: #d4a017;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        /* استجابة للجوال */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.6rem;
+            }
+
+            .region-title {
+                font-size: 1.2rem;
+            }
+
+            .country-grid {
+                grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+                gap: 12px;
+            }
+
+            .country-card {
+                padding: 12px 8px;
+            }
+
+            .country-emoji {
+                font-size: 2rem;
+            }
+
+            .featured-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .country-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .featured-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -47,174 +264,134 @@
     <p>أحدث فرص العمل للمغتربين والعرب في أكثر من 60 دولة – تحديث يومي</p>
 </div>
 
-<div class="container">
-    <!-- المحتوى الرئيسي -->
-    <div class="main-content">
-        <div class="section-title">🇸🇦 دول الخليج والشرق الأوسط</div>
-        <div class="country-grid">
-            <a href="uae.html" class="country-card"><span class="country-emoji">🇦🇪</span><span class="country-name">الإمارات</span></a>
-            <a href="saudi.html" class="country-card"><span class="country-emoji">🇸🇦</span><span class="country-name">السعودية</span></a>
-            <a href="qatar.html" class="country-card"><span class="country-emoji">🇶🇦</span><span class="country-name">قطر</span></a>
-            <a href="kuwait.html" class="country-card"><span class="country-emoji">🇰🇼</span><span class="country-name">الكويت</span></a>
-            <a href="bahrain.html" class="country-card"><span class="country-emoji">🇧🇭</span><span class="country-name">البحرين</span></a>
-            <a href="oman.html" class="country-card"><span class="country-emoji">🇴🇲</span><span class="country-name">عمان</span></a>
-            <a href="turkey.html" class="country-card"><span class="country-emoji">🇹🇷</span><span class="country-name">تركيا</span></a>
-            <a href="egypt.html" class="country-card"><span class="country-emoji">🇪🇬</span><span class="country-name">مصر</span></a>
-        </div>
-
-        <div class="section-title">🇪🇺 أوروبا الغربية والوسطى</div>
-        <div class="country-grid">
-            <a href="germany.html" class="country-card"><span class="country-emoji">🇩🇪</span><span class="country-name">ألمانيا</span></a>
-            <a href="france.html" class="country-card"><span class="country-emoji">🇫🇷</span><span class="country-name">فرنسا</span></a>
-            <a href="uk.html" class="country-card"><span class="country-emoji">🇬🇧</span><span class="country-name">بريطانيا</span></a>
-            <a href="netherlands.html" class="country-card"><span class="country-emoji">🇳🇱</span><span class="country-name">هولندا</span></a>
-            <a href="switzerland.html" class="country-card"><span class="country-emoji">🇨🇭</span><span class="country-name">سويسرا</span></a>
-            <a href="austria.html" class="country-card"><span class="country-emoji">🇦🇹</span><span class="country-name">النمسا</span></a>
-            <a href="belgium.html" class="country-card"><span class="country-emoji">🇧🇪</span><span class="country-name">بلجيكا</span></a>
-            <a href="ireland.html" class="country-card"><span class="country-emoji">🇮🇪</span><span class="country-name">أيرلندا</span></a>
-            <a href="italy.html" class="country-card"><span class="country-emoji">🇮🇹</span><span class="country-name">إيطاليا</span></a>
-            <a href="spain.html" class="country-card"><span class="country-emoji">🇪🇸</span><span class="country-name">إسبانيا</span></a>
-            <a href="portugal.html" class="country-card"><span class="country-emoji">🇵🇹</span><span class="country-name">البرتغال</span></a>
-            <a href="greece.html" class="country-card"><span class="country-emoji">🇬🇷</span><span class="country-name">اليونان</span></a>
-            <a href="poland.html" class="country-card"><span class="country-emoji">🇵🇱</span><span class="country-name">بولندا</span></a>
-            <a href="czech.html" class="country-card"><span class="country-emoji">🇨🇿</span><span class="country-name">التشيك</span></a>
-            <a href="hungary.html" class="country-card"><span class="country-emoji">🇭🇺</span><span class="country-name">المجر</span></a>
-            <a href="romania.html" class="country-card"><span class="country-emoji">🇷🇴</span><span class="country-name">رومانيا</span></a>
-            <a href="bulgaria.html" class="country-card"><span class="country-emoji">🇧🇬</span><span class="country-name">بلغاريا</span></a>
-            <a href="croatia.html" class="country-card"><span class="country-emoji">🇭🇷</span><span class="country-name">كرواتيا</span></a>
-            <a href="serbia.html" class="country-card"><span class="country-emoji">🇷🇸</span><span class="country-name">صربيا</span></a>
-            <a href="slovenia.html" class="country-card"><span class="country-emoji">🇸🇮</span><span class="country-name">سلوفينيا</span></a>
-        </div>
-
-        <div class="section-title">🇳🇴 أوروبا الشمالية</div>
-        <div class="country-grid">
-            <a href="norway.html" class="country-card"><span class="country-emoji">🇳🇴</span><span class="country-name">النرويج</span></a>
-            <a href="sweden.html" class="country-card"><span class="country-emoji">🇸🇪</span><span class="country-name">السويد</span></a>
-            <a href="denmark.html" class="country-card"><span class="country-emoji">🇩🇰</span><span class="country-name">الدنمارك</span></a>
-            <a href="finland.html" class="country-card"><span class="country-emoji">🇫🇮</span><span class="country-name">فنلندا</span></a>
-            <a href="estonia.html" class="country-card"><span class="country-emoji">🇪🇪</span><span class="country-name">إستونيا</span></a>
-            <a href="latvia.html" class="country-card"><span class="country-emoji">🇱🇻</span><span class="country-name">لاتفيا</span></a>
-            <a href="lithuania.html" class="country-card"><span class="country-emoji">🇱🇹</span><span class="country-name">ليتوانيا</span></a>
-        </div>
-
-        <div class="section-title">🇺🇸 أمريكا الشمالية والجنوبية</div>
-        <div class="country-grid">
-            <a href="usa.html" class="country-card"><span class="country-emoji">🇺🇸</span><span class="country-name">أمريكا</span></a>
-            <a href="canada.html" class="country-card"><span class="country-emoji">🇨🇦</span><span class="country-name">كندا</span></a>
-            <a href="mexico.html" class="country-card"><span class="country-emoji">🇲🇽</span><span class="country-name">المكسيك</span></a>
-            <a href="brazil.html" class="country-card"><span class="country-emoji">🇧🇷</span><span class="country-name">البرازيل</span></a>
-            <a href="argentina.html" class="country-card"><span class="country-emoji">🇦🇷</span><span class="country-name">الأرجنتين</span></a>
-            <a href="colombia.html" class="country-card"><span class="country-emoji">🇨🇴</span><span class="country-name">كولومبيا</span></a>
-            <a href="chile.html" class="country-card"><span class="country-emoji">🇨🇱</span><span class="country-name">تشيلي</span></a>
-            <a href="peru.html" class="country-card"><span class="country-emoji">🇵🇪</span><span class="country-name">بيرو</span></a>
-            <a href="uruguay.html" class="country-card"><span class="country-emoji">🇺🇾</span><span class="country-name">أوروغواي</span></a>
-        </div>
-
-        <div class="section-title">🌏 آسيا وأوقيانوسيا</div>
-        <div class="country-grid">
-            <a href="japan.html" class="country-card"><span class="country-emoji">🇯🇵</span><span class="country-name">اليابان</span></a>
-            <a href="southkorea.html" class="country-card"><span class="country-emoji">🇰🇷</span><span class="country-name">كوريا الجنوبية</span></a>
-            <a href="china.html" class="country-card"><span class="country-emoji">🇨🇳</span><span class="country-name">الصين</span></a>
-            <a href="singapore.html" class="country-card"><span class="country-emoji">🇸🇬</span><span class="country-name">سنغافورة</span></a>
-            <a href="malaysia.html" class="country-card"><span class="country-emoji">🇲🇾</span><span class="country-name">ماليزيا</span></a>
-            <a href="indonesia.html" class="country-card"><span class="country-emoji">🇮🇩</span><span class="country-name">إندونيسيا</span></a>
-            <a href="vietnam.html" class="country-card"><span class="country-emoji">🇻🇳</span><span class="country-name">فيتنام</span></a>
-            <a href="australia.html" class="country-card"><span class="country-emoji">🇦🇺</span><span class="country-name">أستراليا</span></a>
-            <a href="newzealand.html" class="country-card"><span class="country-emoji">🇳🇿</span><span class="country-name">نيوزيلندا</span></a>
-        </div>
-
-        <div class="section-title">🌍 أفريقيا والدول العربية</div>
-        <div class="country-grid">
-            <a href="morocco.html" class="country-card"><span class="country-emoji">🇲🇦</span><span class="country-name">المغرب</span></a>
-            <a href="algeria.html" class="country-card"><span class="country-emoji">🇩🇿</span><span class="country-name">الجزائر</span></a>
-            <a href="tunisia.html" class="country-card"><span class="country-emoji">🇹🇳</span><span class="country-name">تونس</span></a>
-            <a href="libya.html" class="country-card"><span class="country-emoji">🇱🇾</span><span class="country-name">ليبيا</span></a>
-            <a href="sudan.html" class="country-card"><span class="country-emoji">🇸🇩</span><span class="country-name">السودان</span></a>
-            <a href="southafrica.html" class="country-card"><span class="country-emoji">🇿🇦</span><span class="country-name">جنوب أفريقيا</span></a>
-            <a href="georgia.html" class="country-card"><span class="country-emoji">🇬🇪</span><span class="country-name">جورجيا</span></a>
-            <a href="yemen.html" class="country-card"><span class="country-emoji">🇾🇪</span><span class="country-name">اليمن</span></a>
-        </div>
-
-        <!-- قسم "قد يعجبك أيضاً" (فرص مميزة) -->
-        <div class="featured-section">
-            <div class="featured-title">
-                <span>⭐</span> قد يعجبك أيضاً – فرص عمل متميزة
+<div class="main-wrapper">
+    <div class="two-columns">
+        <!-- العمود الرئيسي: قائمة الدول -->
+        <div class="content-main">
+            <!-- الخليج -->
+            <div class="region">
+                <div class="region-title">🇸🇦 دول الخليج والشرق الأوسط</div>
+                <div class="country-grid">
+                    <a href="uae.html" class="country-card"><span class="country-emoji">🇦🇪</span><span class="country-name">الإمارات</span></a>
+                    <a href="saudi.html" class="country-card"><span class="country-emoji">🇸🇦</span><span class="country-name">السعودية</span></a>
+                    <a href="qatar.html" class="country-card"><span class="country-emoji">🇶🇦</span><span class="country-name">قطر</span></a>
+                    <a href="kuwait.html" class="country-card"><span class="country-emoji">🇰🇼</span><span class="country-name">الكويت</span></a>
+                    <a href="bahrain.html" class="country-card"><span class="country-emoji">🇧🇭</span><span class="country-name">البحرين</span></a>
+                    <a href="oman.html" class="country-card"><span class="country-emoji">🇴🇲</span><span class="country-name">عمان</span></a>
+                    <a href="turkey.html" class="country-card"><span class="country-emoji">🇹🇷</span><span class="country-name">تركيا</span></a>
+                    <a href="egypt.html" class="country-card"><span class="country-emoji">🇪🇬</span><span class="country-name">مصر</span></a>
+                </div>
             </div>
-            <div class="featured-grid">
-                <a href="tips/linkedin-job-search-tips.html" class="featured-card">💼 10 نصائح LinkedIn للوظائف</a>
-                <a href="tips.html" class="featured-card">📘 جميع نصائح البحث عن عمل</a>
-                <a href="services.html" class="featured-card">🛠️ خدمات تحسين السيرة الذاتية</a>
-                <a href="countries.html" class="featured-card">🗺️ جميع دول العالم للوظائف</a>
-                <a href="contact.html" class="featured-card">📞 تواصل مع خبراء التوظيف</a>
+
+            <!-- أوروبا -->
+            <div class="region">
+                <div class="region-title">🇪🇺 أوروبا</div>
+                <div class="country-grid">
+                    <a href="germany.html" class="country-card"><span class="country-emoji">🇩🇪</span><span class="country-name">ألمانيا</span></a>
+                    <a href="france.html" class="country-card"><span class="country-emoji">🇫🇷</span><span class="country-name">فرنسا</span></a>
+                    <a href="uk.html" class="country-card"><span class="country-emoji">🇬🇧</span><span class="country-name">بريطانيا</span></a>
+                    <a href="netherlands.html" class="country-card"><span class="country-emoji">🇳🇱</span><span class="country-name">هولندا</span></a>
+                    <a href="switzerland.html" class="country-card"><span class="country-emoji">🇨🇭</span><span class="country-name">سويسرا</span></a>
+                    <a href="austria.html" class="country-card"><span class="country-emoji">🇦🇹</span><span class="country-name">النمسا</span></a>
+                    <a href="belgium.html" class="country-card"><span class="country-emoji">🇧🇪</span><span class="country-name">بلجيكا</span></a>
+                    <a href="ireland.html" class="country-card"><span class="country-emoji">🇮🇪</span><span class="country-name">أيرلندا</span></a>
+                    <a href="italy.html" class="country-card"><span class="country-emoji">🇮🇹</span><span class="country-name">إيطاليا</span></a>
+                    <a href="spain.html" class="country-card"><span class="country-emoji">🇪🇸</span><span class="country-name">إسبانيا</span></a>
+                    <a href="portugal.html" class="country-card"><span class="country-emoji">🇵🇹</span><span class="country-name">البرتغال</span></a>
+                    <a href="greece.html" class="country-card"><span class="country-emoji">🇬🇷</span><span class="country-name">اليونان</span></a>
+                    <a href="poland.html" class="country-card"><span class="country-emoji">🇵🇱</span><span class="country-name">بولندا</span></a>
+                    <a href="czech.html" class="country-card"><span class="country-emoji">🇨🇿</span><span class="country-name">التشيك</span></a>
+                    <a href="norway.html" class="country-card"><span class="country-emoji">🇳🇴</span><span class="country-name">النرويج</span></a>
+                    <a href="sweden.html" class="country-card"><span class="country-emoji">🇸🇪</span><span class="country-name">السويد</span></a>
+                    <a href="denmark.html" class="country-card"><span class="country-emoji">🇩🇰</span><span class="country-name">الدنمارك</span></a>
+                    <a href="finland.html" class="country-card"><span class="country-emoji">🇫🇮</span><span class="country-name">فنلندا</span></a>
+                </div>
+            </div>
+
+            <!-- أمريكا وأستراليا وآسيا -->
+            <div class="region">
+                <div class="region-title">🇺🇸 أمريكا – أستراليا – آسيا</div>
+                <div class="country-grid">
+                    <a href="usa.html" class="country-card"><span class="country-emoji">🇺🇸</span><span class="country-name">أمريكا</span></a>
+                    <a href="canada.html" class="country-card"><span class="country-emoji">🇨🇦</span><span class="country-name">كندا</span></a>
+                    <a href="australia.html" class="country-card"><span class="country-emoji">🇦🇺</span><span class="country-name">أستراليا</span></a>
+                    <a href="newzealand.html" class="country-card"><span class="country-emoji">🇳🇿</span><span class="country-name">نيوزيلندا</span></a>
+                    <a href="japan.html" class="country-card"><span class="country-emoji">🇯🇵</span><span class="country-name">اليابان</span></a>
+                    <a href="southkorea.html" class="country-card"><span class="country-emoji">🇰🇷</span><span class="country-name">كوريا الجنوبية</span></a>
+                    <a href="china.html" class="country-card"><span class="country-emoji">🇨🇳</span><span class="country-name">الصين</span></a>
+                    <a href="singapore.html" class="country-card"><span class="country-emoji">🇸🇬</span><span class="country-name">سنغافورة</span></a>
+                    <a href="malaysia.html" class="country-card"><span class="country-emoji">🇲🇾</span><span class="country-name">ماليزيا</span></a>
+                    <a href="indonesia.html" class="country-card"><span class="country-emoji">🇮🇩</span><span class="country-name">إندونيسيا</span></a>
+                </div>
+            </div>
+
+            <!-- أفريقيا والعربية -->
+            <div class="region">
+                <div class="region-title">🌍 أفريقيا والدول العربية</div>
+                <div class="country-grid">
+                    <a href="morocco.html" class="country-card"><span class="country-emoji">🇲🇦</span><span class="country-name">المغرب</span></a>
+                    <a href="algeria.html" class="country-card"><span class="country-emoji">🇩🇿</span><span class="country-name">الجزائر</span></a>
+                    <a href="tunisia.html" class="country-card"><span class="country-emoji">🇹🇳</span><span class="country-name">تونس</span></a>
+                    <a href="libya.html" class="country-card"><span class="country-emoji">🇱🇾</span><span class="country-name">ليبيا</span></a>
+                    <a href="sudan.html" class="country-card"><span class="country-emoji">🇸🇩</span><span class="country-name">السودان</span></a>
+                    <a href="southafrica.html" class="country-card"><span class="country-emoji">🇿🇦</span><span class="country-name">جنوب أفريقيا</span></a>
+                    <a href="georgia.html" class="country-card"><span class="country-emoji">🇬🇪</span><span class="country-name">جورجيا</span></a>
+                    <a href="yemen.html" class="country-card"><span class="country-emoji">🇾🇪</span><span class="country-name">اليمن</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- الشريط الجانبي -->
+        <div class="sidebar">
+            <div class="side-card">
+                <h3>💡 نصيحة الأسبوع</h3>
+                <div class="tip-box">
+                    🔥 <strong>خصص سيرتك الذاتية لكل وظيفة!</strong><br>
+                    استخدم الكلمات المفتاحية من إعلان الوظيفة، وركز على الإنجازات القابلة للقياس.
+                </div>
+                <div class="tip-box">
+                    📌 فعّل خاصية "Open to Work" على LinkedIn وتابع الشركات التي تقدم تأشيرات عمل.
+                </div>
+            </div>
+
+            <div class="side-card">
+                <h3>📚 نصائح سريعة للوظائف</h3>
+                <ul class="side-links">
+                    <li><a href="tips/linkedin-job-search-tips.html">🔗 LinkedIn: دليل البحث المتقدم</a></li>
+                    <li><a href="tips.html">🎯 كيفية اجتياز المقابلة الشخصية</a></li>
+                    <li><a href="tips.html">📄 أفضل قوالب السيرة الذاتية</a></li>
+                    <li><a href="tips.html">🌐 منصات عمل عن بُعد موثوقة</a></li>
+                </ul>
+            </div>
+
+            <div class="side-card">
+                <h3>🛠️ خدمات سريعة</h3>
+                <ul class="side-links">
+                    <li><a href="services.html">✍️ كتابة السيرة الذاتية</a></li>
+                    <li><a href="services.html">🎓 دورات مجانية معتمدة</a></li>
+                    <li><a href="contact.html">📩 استشارة مجانية</a></li>
+                </ul>
             </div>
         </div>
     </div>
 
-    <!-- الشريط الجانبي -->
-    <div class="sidebar">
-        <div class="sidebar-card">
-            <h3>💡 نصيحة الأسبوع</h3>
-            <div class="tip-text">
-                🔥 <strong>خصص سيرتك الذاتية لكل وظيفة!</strong><br>
-                استخدم الكلمات المفتاحية من إعلان الوظيفة، وركز على الإنجازات القابلة للقياس. مواقع مثل <strong>LinkedIn</strong> و <strong>Indeed</strong> تمنحك أولوية إذا كانت سيرتك متوافقة بنسبة 80% فأكثر.
-            </div>
-            <div class="tip-text" style="background:#e6f7ff; border-right-color:#1a2a4f;">
-                📌 <strong>نصيحة إضافية:</strong> فعّل خاصية "Open to Work" على LinkedIn وتابع الشركات التي تقدم تأشيرات عمل.
-            </div>
+    <!-- قسم قد يعجبك أيضاً -->
+    <div class="featured-section">
+        <div class="featured-title">
+            <span>⭐</span> قد يعجبك أيضاً
         </div>
-
-        <div class="sidebar-card">
-            <h3>🔥 أكثر الدول بحثاً</h3>
-            <div class="tips-list">
-                <a href="germany.html">🇩🇪 ألمانيا – فرص لا محدودة</a>
-                <a href="canada.html">🇨🇦 كندا – هجرة سهلة</a>
-                <a href="uae.html">🇦🇪 الإمارات – رواتب معفاة من الضرائب</a>
-                <a href="australia.html">🇦🇺 أستراليا – تأشيرات عمل مرنة</a>
-                <a href="uk.html">🇬🇧 بريطانيا – قطاع الصحة والتقنية</a>
-            </div>
-        </div>
-
-        <div class="sidebar-card">
-            <h3>📚 نصائح سريعة للوظائف</h3>
-            <div class="tips-list">
-                <a href="tips/linkedin-job-search-tips.html">🔗 LinkedIn: دليل البحث المتقدم</a>
-                <a href="tips.html">🎯 كيفية اجتياز المقابلة الشخصية</a>
-                <a href="tips.html">📄 أفضل قوالب السيرة الذاتية</a>
-                <a href="tips.html">🌐 منصات عمل عن بُعد موثوقة</a>
-            </div>
-        </div>
-
-        <div class="sidebar-card">
-            <h3>🛠️ خدمات سريعة</h3>
-            <div class="services-list">
-                <a href="services.html">✍️ كتابة السيرة الذاتية</a>
-                <a href="services.html">🎓 دورات مجانية معتمدة</a>
-                <a href="contact.html">📩 استشارة مجانية</a>
-            </div>
-        </div>
-
-        <div class="sidebar-card">
-            <h3>📊 إحصائيات الموقع</h3>
-            <p>👥 متابعو فيسبوك: <span class="stat-number">200+</span></p>
-            <p>🌍 زوار الموقع: <span class="stat-number">500+</span></p>
-            <p>📄 صفحات مفهرسة: <span class="stat-number">2</span> (مؤقت)</p>
-            <p>💰 أول دولار من Adsterra: ✅</p>
-        </div>
-
-        <div class="sidebar-card">
-            <h3>📱 تابعنا</h3>
-            <div class="social-links">
-                <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank">فيسبوك</a> |
-                <a href="https://wa.me/212669411021" target="_blank">واتساب</a> |
-                <a href="https://github.com/ouhlali20" target="_blank">GitHub</a>
-            </div>
+        <div class="featured-grid">
+            <a href="tips/linkedin-job-search-tips.html" class="featured-card">💼 10 نصائح LinkedIn للوظائف</a>
+            <a href="tips.html" class="featured-card">📘 جميع نصائح البحث عن عمل</a>
+            <a href="services.html" class="featured-card">🛠️ خدمات تحسين السيرة الذاتية</a>
+            <a href="countries.html" class="featured-card">🗺️ جميع دول العالم للوظائف</a>
+            <a href="contact.html" class="featured-card">📞 تواصل مع خبراء التوظيف</a>
         </div>
     </div>
 </div>
 
 <div class="footer">
     <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة | <a href="privacy.html">سياسة الخصوصية</a> | <a href="terms.html">الشروط والأحكام</a> | <a href="contact.html">اتصل بنا</a></p>
-    <p style="font-size: 0.8em; margin-top: 10px;">تم التحديث: 5 أبريل 2026 – أضفنا أكثر من 60 دولة ونصائح LinkedIn الحصرية</p>
 </div>
 
 </body>
