@@ -3,218 +3,573 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>وظائف حول العالم – فرص عمل في 60 دولة</title>
-    <meta name="description" content="منصة سريعة وبسيطة للبحث عن وظائف في الخارج. نصائح، خدمات، وأدلة الهجرة.">
+    <title>وظائف حول العالم – بوابتك للعمل في 60 دولة</title>
+    <meta name="description" content="منصة عصرية للبحث عن وظائف في الخارج. اكتشف فرص العمل، الرواتب، التأشيرات، ونصائح الخبراء.">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- Font Awesome 6 (أيقونات) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: 'Cairo', sans-serif;
-            background: #F4F7FC;
-            color: #1E2A3A;
+            background: linear-gradient(145deg, #F9FCFE 0%, #F0F4F8 100%);
+            color: #1A2C3E;
             line-height: 1.5;
             direction: rtl;
         }
+
         .container {
-            max-width: 1100px;
+            max-width: 1300px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 24px;
         }
-        /* شريط التنقل */
+
+        /* ========== شريط التنقل ========== */
         .navbar {
-            background: white;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.03);
         }
-        .nav-flex {
+
+        .nav-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 12px 0;
+            padding: 16px 0;
             flex-wrap: wrap;
+            gap: 15px;
         }
+
         .logo {
-            font-size: 1.3rem;
-            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.5rem;
+            font-weight: 800;
             text-decoration: none;
-            color: #1E4A76;
+            background: linear-gradient(135deg, #1E4A76, #2B6A9E);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
+        .logo i {
+            background: none;
+            color: #2B6A9E;
+            font-size: 1.6rem;
+        }
+
         .nav-links {
             display: flex;
-            gap: 20px;
+            gap: 28px;
             flex-wrap: wrap;
         }
+
         .nav-links a {
             text-decoration: none;
+            font-weight: 600;
             color: #2C3E50;
-            font-weight: 500;
-            padding: 6px 0;
+            transition: 0.2s;
+            position: relative;
         }
+
         .nav-links a:hover, .nav-links a.active {
+            color: #2B6A9E;
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            right: 0;
+            width: 100%;
+            height: 2px;
+            background: #2B6A9E;
+            border-radius: 2px;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
             color: #1E4A76;
-            border-bottom: 2px solid #1E4A76;
         }
-        /* الهيرو */
+
+        /* ========== الهيرو (جذاب) ========== */
         .hero {
-            background: #1E4A76;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-            margin-bottom: 30px;
+            background: linear-gradient(120deg, #EFF6FF 0%, #FFFFFF 100%);
+            padding: 60px 0 50px;
+            border-radius: 0 0 40px 40px;
+            margin-bottom: 40px;
         }
-        .hero h1 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
         }
-        .hero p {
-            font-size: 1rem;
-            opacity: 0.9;
+
+        .hero-text {
+            flex: 1.2;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: #2B6A9E15;
+            padding: 6px 16px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #2B6A9E;
             margin-bottom: 20px;
         }
-        .btn {
-            background: white;
-            color: #1E4A76;
-            padding: 8px 20px;
+
+        .hero-text h1 {
+            font-size: clamp(1.8rem, 5vw, 2.6rem);
+            font-weight: 800;
+            color: #0F2B3D;
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 1rem;
+            color: #4B5E6C;
+            max-width: 500px;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: #2B6A9E;
+            color: white;
+            padding: 10px 26px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.2s;
+            box-shadow: 0 4px 12px rgba(43, 106, 158, 0.2);
+        }
+
+        .btn-primary:hover {
+            background: #1E4A76;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 1px solid #2B6A9E;
+            color: #2B6A9E;
+            padding: 10px 26px;
             border-radius: 40px;
             text-decoration: none;
             font-weight: 600;
-            display: inline-block;
+            transition: 0.2s;
         }
-        /* شبكة الدول (بسيطة) */
-        .section-title {
-            font-size: 1.4rem;
-            margin: 30px 0 15px;
-            color: #1E4A76;
+
+        .btn-outline:hover {
+            background: #2B6A9E;
+            color: white;
         }
-        .countries-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-        .country-card {
+
+        .hero-stats {
+            flex: 0.8;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
             background: white;
-            padding: 12px;
-            border-radius: 16px;
+            padding: 20px 25px;
+            border-radius: 40px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.04);
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat span {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #2B6A9E;
+            display: block;
+        }
+
+        .stat p {
+            font-size: 0.8rem;
+            color: #6C7A89;
+        }
+
+        /* ========== المحتوى الرئيسي + الشريط الجانبي ========== */
+        .main-flex {
+            display: flex;
+            gap: 40px;
+            margin: 40px 0 60px;
+            flex-wrap: wrap;
+        }
+
+        .content {
+            flex: 2.5;
+            min-width: 250px;
+        }
+
+        .sidebar {
+            flex: 1.2;
+            min-width: 250px;
+        }
+
+        /* ========== بطاقات الدول (جذابة) ========== */
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 25px;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
+            color: #0F2B3D;
+        }
+
+        .section-title i {
+            color: #2B6A9E;
+        }
+
+        .countries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+            gap: 22px;
+            margin-bottom: 50px;
+        }
+
+        .country-card {
+            background: white;
+            border-radius: 24px;
+            padding: 20px 12px;
+            text-align: center;
             text-decoration: none;
-            color: #1E2A3A;
+            transition: all 0.25s ease;
+            border: 1px solid #E2E8F0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+        }
+
+        .country-card:hover {
+            transform: translateY(-6px);
+            border-color: #2B6A9E;
+            box-shadow: 0 20px 25px -12px rgba(43, 106, 158, 0.15);
+        }
+
+        .country-flag {
+            font-size: 3rem;
+            margin-bottom: 12px;
+        }
+
+        .country-name {
+            font-weight: 800;
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+            color: #1A2C3E;
+        }
+
+        .country-jobs {
+            font-size: 0.75rem;
+            color: #6C7A89;
+            margin-bottom: 12px;
+        }
+
+        .country-link {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #2B6A9E;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* ========== الخدمات ========== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
             border: 1px solid #E2E8F0;
             transition: 0.2s;
         }
-        .country-card:hover {
-            border-color: #1E4A76;
-            transform: translateY(-2px);
-        }
-        .country-flag {
-            font-size: 1.8rem;
-        }
-        .country-name {
-            font-weight: 600;
-        }
-        /* الخدمات وقد يعجبك */
-        .services-grid, .suggestions-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-        .service-card, .suggestion-card {
-            background: white;
-            padding: 15px;
-            border-radius: 16px;
-            flex: 1 1 180px;
-            text-decoration: none;
-            color: #1E2A3A;
-            border: 1px solid #E2E8F0;
-            text-align: center;
-        }
-        .service-card i, .suggestion-card i {
-            font-size: 1.8rem;
-            color: #1E4A76;
-            margin-bottom: 8px;
+
+        .service-card i {
+            font-size: 2rem;
+            color: #2B6A9E;
+            margin-bottom: 12px;
             display: block;
         }
-        /* شريط جانبي (يظهر تحت المحتوى في الجوال) */
-        .main-flex {
+
+        .service-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+        }
+
+        .service-card p {
+            font-size: 0.8rem;
+            color: #6C7A89;
+            margin-bottom: 12px;
+        }
+
+        .service-card a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #2B6A9E;
+        }
+
+        /* ========== قد يعجبك أيضاً ========== */
+        .suggestions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 18px;
+            margin-bottom: 30px;
+        }
+
+        .suggestion-card {
+            background: white;
+            border-radius: 18px;
+            padding: 15px;
             display: flex;
-            gap: 30px;
-            margin: 20px 0 40px;
-            flex-wrap: wrap;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: #1A2C3E;
+            border: 1px solid #E2E8F0;
+            transition: 0.2s;
         }
-        .content {
-            flex: 2;
-            min-width: 200px;
+
+        .suggestion-card:hover {
+            border-color: #2B6A9E;
+            background: #F8FCFE;
         }
-        .sidebar {
-            flex: 1;
-            min-width: 200px;
+
+        .suggestion-card i {
+            font-size: 1.6rem;
+            color: #2B6A9E;
         }
+
+        .suggestion-card h4 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .suggestion-card p {
+            font-size: 0.75rem;
+            color: #6C7A89;
+        }
+
+        /* ========== الشريط الجانبي ========== */
         .widget {
             background: white;
-            border-radius: 20px;
-            padding: 18px;
-            margin-bottom: 20px;
+            border-radius: 28px;
+            padding: 22px;
+            margin-bottom: 28px;
             border: 1px solid #E2E8F0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
         }
+
         .widget h3 {
             font-size: 1.2rem;
-            margin-bottom: 12px;
-            color: #1E4A76;
+            font-weight: 700;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #0F2B3D;
         }
-        .widget ul {
+
+        .tip-content {
+            background: #F1F9FE;
+            padding: 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            border-right: 4px solid #2B6A9E;
+        }
+
+        .quick-links {
             list-style: none;
         }
-        .widget li {
-            margin-bottom: 10px;
+
+        .quick-links li {
+            margin-bottom: 14px;
         }
-        .widget a {
+
+        .quick-links a {
             text-decoration: none;
             color: #2C3E50;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.2s;
         }
-        .widget a:hover {
-            color: #1E4A76;
+
+        .quick-links a:hover {
+            color: #2B6A9E;
+            padding-right: 5px;
         }
-        /* تذييل */
-        footer {
-            background: #1E2A3A;
-            color: #CBD5E1;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.8rem;
-            margin-top: 40px;
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
         }
-        footer a {
-            color: #CBD5E1;
-            text-decoration: none;
-            margin: 0 5px;
+
+        .social-icons a {
+            background: #EFF2F8;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2B6A9E;
+            transition: 0.2s;
         }
-        footer a:hover {
+
+        .social-icons a:hover {
+            background: #2B6A9E;
             color: white;
         }
-        @media (max-width: 768px) {
-            .nav-flex {
-                flex-direction: column;
-                gap: 10px;
-            }
-            .hero h1 {
-                font-size: 1.5rem;
-            }
-            .countries-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
+
+        /* ========== تذييل أنيق ========== */
+        .footer {
+            background: #0F2B3D;
+            color: #CBD5E1;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            position: relative;
+            color: white;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            right: 0;
+            width: 35px;
+            height: 2px;
+            background: #2B6A9E;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col a {
+            color: #CBD5E1;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .footer-col a:hover {
+            color: #2B6A9E;
+            padding-right: 4px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.75rem;
+        }
+
+        /* ========== تجاوب متقدم ========== */
+        @media (max-width: 1024px) {
             .main-flex {
                 flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+            }
+            .mobile-menu-btn {
+                display: block;
+                align-self: flex-start;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                padding: 15px 0;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-text p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hero-buttons {
+                justify-content: center;
+            }
+            .countries-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 16px;
+            }
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .suggestions-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .countries-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
@@ -222,9 +577,13 @@
 <body>
 
 <nav class="navbar">
-    <div class="container nav-flex">
-        <a href="index.html" class="logo">🌍 وظائف حول العالم</a>
-        <div class="nav-links">
+    <div class="container nav-container">
+        <a href="index.html" class="logo">
+            <i class="fas fa-briefcase"></i> 
+            <span>وظائف<span style="color:#2B6A9E;"> عالمياً</span></span>
+        </a>
+        <button class="mobile-menu-btn" id="menuToggle"><i class="fas fa-bars"></i></button>
+        <div class="nav-links" id="navLinks">
             <a href="index.html" class="active">الرئيسية</a>
             <a href="countries.html">الدول</a>
             <a href="services.html">الخدمات</a>
@@ -236,72 +595,140 @@
 </nav>
 
 <section class="hero">
-    <div class="container">
-        <h1>ابحث عن وظيفة أحلامك في الخارج</h1>
-        <p>أكثر من 60 دولة تنتظرك – رواتب تنافسية، تأشيرات ميسرة</p>
-        <a href="countries.html" class="btn">استكشف الدول ←</a>
+    <div class="container hero-content">
+        <div class="hero-text">
+            <span class="hero-badge">✨ أكثر من 60 دولة</span>
+            <h1>ابحث عن وظيفة أحلامك <br>في الخارج بكل ثقة</h1>
+            <p>رواتب تنافسية، تأشيرات ميسرة، وإرشادات مهنية محدثة يومياً.</p>
+            <div class="hero-buttons">
+                <a href="countries.html" class="btn-primary">استكشف الدول <i class="fas fa-arrow-left"></i></a>
+                <a href="tips.html" class="btn-outline">نصائح مجانية <i class="fas fa-lightbulb"></i></a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat"><span>60+</span><p>دولة</p></div>
+            <div class="stat"><span>1000+</span><p>فرصة عمل</p></div>
+            <div class="stat"><span>35k</span><p>زائر شهرياً</p></div>
+        </div>
     </div>
 </section>
 
 <div class="container main-flex">
     <div class="content">
-        <h2 class="section-title">✨ أبرز الوجهات</h2>
+        <!-- أبرز الدول (8 دول فقط) -->
+        <h2 class="section-title"><i class="fas fa-star-of-life"></i> أبرز وجهات العمل</h2>
         <div class="countries-grid">
-            <a href="usa.html" class="country-card"><span class="country-flag">🇺🇸</span><span class="country-name">أمريكا</span></a>
-            <a href="canada.html" class="country-card"><span class="country-flag">🇨🇦</span><span class="country-name">كندا</span></a>
-            <a href="germany.html" class="country-card"><span class="country-flag">🇩🇪</span><span class="country-name">ألمانيا</span></a>
-            <a href="uk.html" class="country-card"><span class="country-flag">🇬🇧</span><span class="country-name">بريطانيا</span></a>
-            <a href="uae.html" class="country-card"><span class="country-flag">🇦🇪</span><span class="country-name">الإمارات</span></a>
-            <a href="saudi.html" class="country-card"><span class="country-flag">🇸🇦</span><span class="country-name">السعودية</span></a>
+            <a href="usa.html" class="country-card"><div class="country-flag">🇺🇸</div><div class="country-name">أمريكا</div><div class="country-jobs">12,000+ فرصة</div><span class="country-link">اكتشف ←</span></a>
+            <a href="canada.html" class="country-card"><div class="country-flag">🇨🇦</div><div class="country-name">كندا</div><div class="country-jobs">8,500+ فرصة</div><span class="country-link">اكتشف ←</span></a>
+            <a href="germany.html" class="country-card"><div class="country-flag">🇩🇪</div><div class="country-name">ألمانيا</div><div class="country-jobs">7,200+ فرصة</div><span class="country-link">اكتشف ←</span></a>
+            <a href="uk.html" class="country-card"><div class="country-flag">🇬🇧</div><div class="country-name">بريطانيا</div><div class="country-jobs">6,800+ فرصة</div><span class="country-link">اكتشف ←</span></a>
+            <a href="uae.html" class="country-card"><div class="country-flag">🇦🇪</div><div class="country-name">الإمارات</div><div class="country-jobs">5,500+ فرصة</div><span class="country-link">اكتشف ←</span></a>
+            <a href="saudi.html" class="country-card"><div class="country-flag">🇸🇦</div><div class="country-name">السعودية</div><div class="country-jobs">5,000+ فرصة</div><span class="country-link">اكتشف ←</span></a>
+            <a href="australia.html" class="country-card"><div class="country-flag">🇦🇺</div><div class="country-name">أستراليا</div><div class="country-jobs">4,700+ فرصة</div><span class="country-link">اكتشف ←</span></a>
+            <a href="turkey.html" class="country-card"><div class="country-flag">🇹🇷</div><div class="country-name">تركيا</div><div class="country-jobs">3,900+ فرصة</div><span class="country-link">اكتشف ←</span></a>
         </div>
-        <div style="text-align: center; margin-bottom: 30px;">
-            <a href="countries.html" style="color: #1E4A76; font-weight: 600;">🗺️ عرض جميع الدول الـ 60 →</a>
+        <div style="text-align: center; margin-bottom: 40px;">
+            <a href="countries.html" class="btn-outline" style="border-color:#2B6A9E;">عرض جميع الدول الـ 60 →</a>
         </div>
 
-        <h2 class="section-title">🛠️ خدمات سريعة</h2>
+        <!-- الخدمات -->
+        <h2 class="section-title"><i class="fas fa-concierge-bell"></i> خدمات احترافية</h2>
         <div class="services-grid">
-            <a href="services.html" class="service-card"><i class="fas fa-file-alt"></i> سيرة ذاتية</a>
-            <a href="services.html" class="service-card"><i class="fas fa-chalkboard-user"></i> دورات تدريبية</a>
-            <a href="contact.html" class="service-card"><i class="fas fa-headset"></i> استشارة مجانية</a>
+            <div class="service-card"><i class="fas fa-file-alt"></i><h3>سيرة ذاتية</h3><p>تصميم احترافي بنسبة قبول عالية</p><a href="services.html">اطلب الخدمة →</a></div>
+            <div class="service-card"><i class="fas fa-chalkboard-user"></i><h3>دورات تدريبية</h3><p>تطوير المهارات المطلوبة</p><a href="services.html">اكتشف الدورات →</a></div>
+            <div class="service-card"><i class="fas fa-headset"></i><h3>استشارات مهنية</h3><p>خطط وظيفية مخصصة</p><a href="contact.html">احجز استشارة →</a></div>
         </div>
 
-        <h2 class="section-title">⭐ قد يعجبك أيضاً</h2>
+        <!-- قد يعجبك أيضاً -->
+        <h2 class="section-title"><i class="fas fa-thumbs-up"></i> قد يعجبك أيضاً</h2>
         <div class="suggestions-grid">
-            <a href="tips.html" class="suggestion-card"><i class="fas fa-lightbulb"></i> نصائح ذهبية</a>
-            <a href="countries.html" class="suggestion-card"><i class="fas fa-globe"></i> جميع الدول</a>
-            <a href="about.html" class="suggestion-card"><i class="fas fa-info-circle"></i> عن الموقع</a>
+            <a href="tips.html" class="suggestion-card"><i class="fas fa-lightbulb"></i><div><h4>نصائح ذهبية للبحث</h4><p>أحدث طرق التقديم والمقابلات</p></div></a>
+            <a href="countries.html" class="suggestion-card"><i class="fas fa-globe"></i><div><h4>جميع الدول الـ 60</h4><p>اكتشف الفرص في كل دولة</p></div></a>
+            <a href="about.html" class="suggestion-card"><i class="fas fa-info-circle"></i><div><h4>عن الموقع</h4><p>تعرف على منصتنا ورؤيتنا</p></div></a>
+            <a href="contact.html" class="suggestion-card"><i class="fas fa-envelope"></i><div><h4>تواصل مع خبراء</h4><p>استشارة مجانية</p></div></a>
         </div>
     </div>
 
     <aside class="sidebar">
         <div class="widget">
-            <h3>💡 نصيحة الأسبوع</h3>
-            <p>خصص سيرتك الذاتية لكل وظيفة تقدم عليها. استخدم الكلمات المفتاحية من الإعلان وركز على إنجازاتك القابلة للقياس. هذا يزيد فرص قبولك بنسبة كبيرة.</p>
+            <h3><i class="fas fa-calendar-alt"></i> نصيحة الأسبوع</h3>
+            <div class="tip-content">
+                <strong>🔥 طور سيرتك الذاتية لكل وظيفة.</strong> أضف الكلمات المفتاحية من إعلان الوظيفة، وركز على إنجازاتك القابلة للقياس. هذا يزيد فرص قبولك بنسبة تصل إلى 70%.
+            </div>
         </div>
         <div class="widget">
-            <h3>🔗 روابط سريعة</h3>
-            <ul>
-                <li><a href="usa.html">🇺🇸 وظائف أمريكا</a></li>
-                <li><a href="canada.html">🇨🇦 وظائف كندا</a></li>
-                <li><a href="germany.html">🇩🇪 وظائف ألمانيا</a></li>
-                <li><a href="uae.html">🇦🇪 وظائف الإمارات</a></li>
-                <li><a href="tips.html">📘 كل النصائح</a></li>
-                <li><a href="about.html">ℹ️ عن الموقع</a></li>
+            <h3><i class="fas fa-link"></i> روابط سريعة</h3>
+            <ul class="quick-links">
+                <li><a href="usa.html"><i class="fas fa-flag-usa"></i> وظائف أمريكا</a></li>
+                <li><a href="canada.html"><i class="fas fa-flag-canada"></i> وظائف كندا</a></li>
+                <li><a href="germany.html"><i class="fas fa-flag-checkered"></i> وظائف ألمانيا</a></li>
+                <li><a href="uae.html"><i class="fas fa-flag"></i> وظائف الإمارات</a></li>
+                <li><a href="saudi.html"><i class="fas fa-flag"></i> وظائف السعودية</a></li>
+                <li><a href="tips.html"><i class="fas fa-lightbulb"></i> كل النصائح</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> عن الموقع</a></li>
             </ul>
         </div>
         <div class="widget">
-            <h3>📞 تواصل معنا</h3>
-            <p><a href="https://wa.me/212669411021">واتساب</a> | <a href="https://www.facebook.com/profile.php?id=61573610945491">فيسبوك</a></p>
+            <h3><i class="fas fa-share-alt"></i> تابعنا</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/212669411021" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://github.com/ouhlali20" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </aside>
 </div>
 
-<footer>
-    <div class="container">
-        <p>© 2026 وظائف حول العالم | <a href="privacy.html">الخصوصية</a> | <a href="terms.html">الشروط</a> | <a href="contact.html">اتصل بنا</a></p>
+<footer class="footer">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <h4>وظائف عالمياً</h4>
+            <p>منصتك الموثوقة للهجرة والعمل في 60 دولة. نقدم أحدث فرص العمل والنصائح المهنية.</p>
+        </div>
+        <div class="footer-col">
+            <h4>روابط مهمة</h4>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="countries.html">جميع الدول</a></li>
+                <li><a href="services.html">الخدمات</a></li>
+                <li><a href="tips.html">نصائح</a></li>
+                <li><a href="about.html">عن الموقع</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>سياسة الموقع</h4>
+            <ul>
+                <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                <li><a href="terms.html">اتفاقية الاستخدام</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>تواصل معنا</h4>
+            <div class="social-icons" style="margin-top:0">
+                <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/212669411021" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://github.com/ouhlali20" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© 2026 وظائف حول العالم – جميع الحقوق محفوظة | آخر تحديث: أبريل 2026</p>
+        </div>
     </div>
 </footer>
 
+<script>
+    // قائمة الجوال
+    const toggleBtn = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navLinks');
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    }
+</script>
 <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 </body>
 </html>
