@@ -2,9 +2,9 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>وظائف حول العالم – فرص عمل في 60 دولة</title>
-    <meta name="description" content="منصتك الموثوقة للبحث عن فرص عمل في 60 دولة حول العالم. رواتب، تأشيرات، نصائح مهنية محدثة 2026.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وظائف حول العالم – وجهتك الأولى للعمل بالخارج</title>
+    <meta name="description" content="منصة احترافية للبحث عن فرص عمل في 60 دولة. نصائح، خدمات، وإرشادات الهجرة.">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,166 +13,144 @@
 <body>
 
 <nav class="navbar">
-    <div class="container">
-        <div class="nav-content">
-            <a href="index.html" class="logo">
-                <i class="fas fa-briefcase"></i>
-                <span>وظائف<span class="highlight"> حول العالم</span></span>
-            </a>
-            <div class="nav-links">
-                <a href="index.html" class="active">الرئيسية</a>
-                <a href="countries.html">الدول</a>
-                <a href="services.html">الخدمات</a>
-                <a href="tips.html">نصائح</a>
-                <a href="contact.html">اتصل بنا</a>
-            </div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
-        </div>
+    <div class="container nav-container">
+        <a href="index.html" class="logo">
+            <i class="fas fa-briefcase"></i> 
+            <span>وظائف<span class="accent"> عالمياً</span></span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="القائمة">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="active">الرئيسية</a></li>
+            <li><a href="countries.html">الدول</a></li>
+            <li><a href="services.html">الخدمات</a></li>
+            <li><a href="tips.html">نصائح</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
     </div>
 </nav>
 
-<section class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <div class="hero-text">
-                <span class="hero-badge">✨ أكثر من 60 دولة</span>
-                <h1>ابحث عن وظيفة أحلامك <br>في الخارج بكل سهولة</h1>
-                <p>دليلك الشامل للهجرة والعمل – رواتب محدثة، تأشيرات ميسرة، وفرص حقيقية للمغتربين.</p>
-                <div class="hero-buttons">
-                    <a href="countries.html" class="btn-primary">استكشف الدول <i class="fas fa-arrow-left"></i></a>
-                    <a href="tips.html" class="btn-outline">نصائح مجانية <i class="fas fa-lightbulb"></i></a>
-                </div>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-card"><span>60+</span><p>دولة</p></div>
-                <div class="stat-card"><span>1000+</span><p>فرصة عمل</p></div>
-                <div class="stat-card"><span>35k</span><p>زائر شهرياً</p></div>
+<header class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <span class="hero-badge">✨ أكثر من 60 دولة</span>
+            <h1>ابحث عن وظيفة أحلامك <br>في الخارج بثقة</h1>
+            <p>رواتب تنافسية، تأشيرات ميسرة، وإرشادات مهنية محدثة يومياً.</p>
+            <div class="hero-buttons">
+                <a href="countries.html" class="btn-primary">استكشف الدول <i class="fas fa-arrow-left"></i></a>
+                <a href="tips.html" class="btn-outline">نصائح مجانية <i class="fas fa-lightbulb"></i></a>
             </div>
         </div>
+        <div class="hero-image">
+            <img src="https://placehold.co/500x400/1E2A47/FFFFFF?text=Work+Globally" alt="وظائف حول العالم" style="max-width:100%; border-radius: 24px;">
+        </div>
     </div>
-</section>
+</header>
 
-<div class="container">
-    <div class="main-grid">
-        <!-- القسم الرئيسي: 8 دول فقط -->
-        <main class="countries-section">
-            <div class="section-header">
-                <h2 class="section-title"><i class="fas fa-star"></i> أبرز وجهات العمل</h2>
-                <a href="countries.html" class="view-all">جميع الدول <i class="fas fa-arrow-left"></i></a>
-            </div>
-            <div class="countries-grid" id="countriesGrid">
-                <a href="usa.html" class="country-card"><div class="country-flag">🇺🇸</div><div class="country-name">الولايات المتحدة</div><div class="country-jobs">12,000+ فرصة</div><span class="country-link">تفاصيل ←</span></a>
-                <a href="canada.html" class="country-card"><div class="country-flag">🇨🇦</div><div class="country-name">كندا</div><div class="country-jobs">8,500+ فرصة</div><span class="country-link">تفاصيل ←</span></a>
-                <a href="germany.html" class="country-card"><div class="country-flag">🇩🇪</div><div class="country-name">ألمانيا</div><div class="country-jobs">7,200+ فرصة</div><span class="country-link">تفاصيل ←</span></a>
-                <a href="uk.html" class="country-card"><div class="country-flag">🇬🇧</div><div class="country-name">بريطانيا</div><div class="country-jobs">6,800+ فرصة</div><span class="country-link">تفاصيل ←</span></a>
-                <a href="uae.html" class="country-card"><div class="country-flag">🇦🇪</div><div class="country-name">الإمارات</div><div class="country-jobs">5,500+ فرصة</div><span class="country-link">تفاصيل ←</span></a>
-                <a href="saudi.html" class="country-card"><div class="country-flag">🇸🇦</div><div class="country-name">السعودية</div><div class="country-jobs">5,000+ فرصة</div><span class="country-link">تفاصيل ←</span></a>
-                <a href="australia.html" class="country-card"><div class="country-flag">🇦🇺</div><div class="country-name">أستراليا</div><div class="country-jobs">4,700+ فرصة</div><span class="country-link">تفاصيل ←</span></a>
-                <a href="turkey.html" class="country-card"><div class="country-flag">🇹🇷</div><div class="country-name">تركيا</div><div class="country-jobs">3,900+ فرصة</div><span class="country-link">تفاصيل ←</span></a>
-            </div>
+<div class="container main-grid">
+    <main class="main-content">
+        <div class="section-header">
+            <h2 class="section-title"><i class="fas fa-star-of-life"></i> أبرز الوجهات</h2>
+            <a href="countries.html" class="view-all">جميع الدول <i class="fas fa-arrow-left"></i></a>
+        </div>
+        <div class="countries-grid">
+            <a href="usa.html" class="country-card"><div class="country-flag">🇺🇸</div><div class="country-name">الولايات المتحدة</div><div class="country-jobs">أكثر من 12,000 فرصة</div><span class="country-link">اكتشف ←</span></a>
+            <a href="canada.html" class="country-card"><div class="country-flag">🇨🇦</div><div class="country-name">كندا</div><div class="country-jobs">أكثر من 8,500 فرصة</div><span class="country-link">اكتشف ←</span></a>
+            <a href="germany.html" class="country-card"><div class="country-flag">🇩🇪</div><div class="country-name">ألمانيا</div><div class="country-jobs">أكثر من 7,200 فرصة</div><span class="country-link">اكتشف ←</span></a>
+            <a href="uk.html" class="country-card"><div class="country-flag">🇬🇧</div><div class="country-name">بريطانيا</div><div class="country-jobs">أكثر من 6,800 فرصة</div><span class="country-link">اكتشف ←</span></a>
+            <a href="uae.html" class="country-card"><div class="country-flag">🇦🇪</div><div class="country-name">الإمارات</div><div class="country-jobs">أكثر من 5,500 فرصة</div><span class="country-link">اكتشف ←</span></a>
+            <a href="saudi.html" class="country-card"><div class="country-flag">🇸🇦</div><div class="country-name">السعودية</div><div class="country-jobs">أكثر من 5,000 فرصة</div><span class="country-link">اكتشف ←</span></a>
+        </div>
 
-            <!-- قسم الخدمات -->
-            <div class="services-preview">
-                <div class="section-header">
-                    <h2 class="section-title"><i class="fas fa-concierge-bell"></i> خدماتنا الاحترافية</h2>
-                </div>
-                <div class="services-grid">
-                    <div class="service-card"><i class="fas fa-file-alt"></i><h3>سيرة ذاتية</h3><p>تصميم احترافي يناسب سوق العمل</p><a href="services.html">اطلب الخدمة →</a></div>
-                    <div class="service-card"><i class="fas fa-chalkboard-user"></i><h3>دورات معتمدة</h3><p>تطوير مهاراتك لسوق العمل</p><a href="services.html">اكتشف الدورات →</a></div>
-                    <div class="service-card"><i class="fas fa-headset"></i><h3>استشارات مهنية</h3><p>توجيه وخطط مهنية مخصصة</p><a href="contact.html">احجز استشارة →</a></div>
-                </div>
+        <div class="services-showcase">
+            <h2 class="section-title"><i class="fas fa-concierge-bell"></i> خدمات احترافية</h2>
+            <div class="services-grid">
+                <div class="service-item"><i class="fas fa-file-alt"></i><div><h3>سيرة ذاتية</h3><p>تصميم احترافي بنسبة قبول عالية</p><a href="services.html">اطلب الخدمة →</a></div></div>
+                <div class="service-item"><i class="fas fa-chalkboard-user"></i><div><h3>دورات تدريبية</h3><p>تطوير المهارات المطلوبة</p><a href="services.html">اكتشف الدورات →</a></div></div>
+                <div class="service-item"><i class="fas fa-headset"></i><div><h3>استشارات مهنية</h3><p>خطط وظيفية مخصصة</p><a href="contact.html">احجز استشارة →</a></div></div>
             </div>
+        </div>
 
-            <!-- قسم "قد يعجبك أيضاً" -->
-            <div class="suggestions">
-                <div class="section-header">
-                    <h2 class="section-title"><i class="fas fa-thumbs-up"></i> قد يعجبك أيضاً</h2>
-                </div>
-                <div class="suggestions-grid">
-                    <a href="tips.html" class="suggestion-card"><i class="fas fa-lightbulb"></i><div><h4>نصائح ذهبية للبحث عن وظيفة</h4><p>أحدث طرق التقديم والمقابلات</p></div></a>
-                    <a href="countries.html" class="suggestion-card"><i class="fas fa-globe"></i><div><h4>جميع الدول المتاحة</h4><p>اكتشف فرص العمل في 60 دولة</p></div></a>
-                    <a href="contact.html" class="suggestion-card"><i class="fas fa-envelope"></i><div><h4>تواصل مع خبراء التوظيف</h4><p>استشارة مجانية</p></div></a>
-                </div>
+        <div class="suggestions">
+            <h2 class="section-title"><i class="fas fa-thumbs-up"></i> قد يعجبك أيضاً</h2>
+            <div class="suggestions-grid">
+                <a href="tips.html" class="suggestion-card"><i class="fas fa-lightbulb"></i><div><h4>نصائح ذهبية للبحث</h4><p>أحدث طرق التقديم والمقابلات</p></div></a>
+                <a href="countries.html" class="suggestion-card"><i class="fas fa-globe"></i><div><h4>جميع الدول الـ 60</h4><p>اكتشف الفرص في كل دولة</p></div></a>
+                <a href="contact.html" class="suggestion-card"><i class="fas fa-envelope"></i><div><h4>تواصل مع خبراء</h4><p>استشارة مجانية</p></div></a>
             </div>
-        </main>
+        </div>
+    </main>
 
-        <!-- الشريط الجانبي -->
-        <aside class="sidebar">
-            <!-- نصيحة الأسبوع -->
-            <div class="widget tip-widget">
-                <h3 class="widget-title"><i class="fas fa-calendar-alt"></i> نصيحة الأسبوع</h3>
-                <div class="tip-content">
-                    <p>🔥 <strong>خصص سيرتك الذاتية لكل وظيفة!</strong> استخدم الكلمات المفتاحية من إعلان الوظيفة، وركز على الإنجازات القابلة للقياس. هذا يزيد فرص قبولك بنسبة تصل إلى 70%.</p>
-                </div>
+    <aside class="sidebar">
+        <div class="widget">
+            <h3><i class="fas fa-calendar-week"></i> نصيحة الأسبوع</h3>
+            <div class="tip-content">
+                <p>🔥 <strong>خصص سيرتك الذاتية لكل وظيفة تقدم عليها.</strong> أضف الكلمات المفتاحية من إعلان الوظيفة، وركز على إنجازاتك القابلة للقياس. هذا يزيد فرص قبولك بنسبة تصل إلى 70%.</p>
             </div>
-
-            <!-- روابط سريعة في الشريط الجانبي -->
-            <div class="widget quick-links">
-                <h3 class="widget-title"><i class="fas fa-link"></i> روابط سريعة</h3>
-                <ul>
-                    <li><a href="usa.html"><i class="fas fa-flag-usa"></i> وظائف أمريكا</a></li>
-                    <li><a href="canada.html"><i class="fas fa-flag-canada"></i> وظائف كندا</a></li>
-                    <li><a href="germany.html"><i class="fas fa-flag-checkered"></i> وظائف ألمانيا</a></li>
-                    <li><a href="uae.html"><i class="fas fa-flag"></i> وظائف الإمارات</a></li>
-                    <li><a href="saudi.html"><i class="fas fa-flag"></i> وظائف السعودية</a></li>
-                    <li><a href="tips.html"><i class="fas fa-lightbulb"></i> نصائح التوظيف</a></li>
-                    <li><a href="services.html"><i class="fas fa-briefcase"></i> خدمات السيرة الذاتية</a></li>
-                </ul>
+        </div>
+        <div class="widget">
+            <h3><i class="fas fa-link"></i> روابط سريعة</h3>
+            <ul class="quick-links">
+                <li><a href="usa.html"><i class="fas fa-flag-usa"></i> وظائف أمريكا</a></li>
+                <li><a href="canada.html"><i class="fas fa-flag-canada"></i> وظائف كندا</a></li>
+                <li><a href="germany.html"><i class="fas fa-flag-checkered"></i> وظائف ألمانيا</a></li>
+                <li><a href="uae.html"><i class="fas fa-flag"></i> وظائف الإمارات</a></li>
+                <li><a href="saudi.html"><i class="fas fa-flag"></i> وظائف السعودية</a></li>
+                <li><a href="tips.html"><i class="fas fa-lightbulb"></i> كل النصائح</a></li>
+            </ul>
+        </div>
+        <div class="widget">
+            <h3><i class="fas fa-briefcase"></i> خدمات سريعة</h3>
+            <div class="service-links">
+                <a href="services.html">✍️ كتابة سيرة ذاتية</a>
+                <a href="services.html">📄 خطاب تقديم مخصص</a>
+                <a href="services.html">📈 تحسين لينكد إن</a>
             </div>
-
-            <!-- عرض الخدمات في الشريط الجانبي -->
-            <div class="widget services-sidebar">
-                <h3 class="widget-title"><i class="fas fa-tools"></i> خدمات مميزة</h3>
-                <div class="service-item"><i class="fas fa-file-signature"></i> <a href="services.html">كتابة سيرة ذاتية احترافية</a></div>
-                <div class="service-item"><i class="fas fa-envelope-open-text"></i> <a href="services.html">خطاب تقديم مخصص</a></div>
-                <div class="service-item"><i class="fas fa-chart-line"></i> <a href="services.html">تحسين لينكد إن</a></div>
-            </div>
-        </aside>
-    </div>
+        </div>
+    </aside>
 </div>
 
 <footer class="footer">
-    <div class="container">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h4>وظائف حول العالم</h4>
-                <p>منصتك الموثوقة للهجرة والعمل في 60 دولة. نقدم أحدث فرص العمل والنصائح المهنية.</p>
-            </div>
-            <div class="footer-col">
-                <h4>روابط مهمة</h4>
-                <ul>
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="countries.html">جميع الدول</a></li>
-                    <li><a href="services.html">الخدمات</a></li>
-                    <li><a href="tips.html">نصائح</a></li>
-                    <li><a href="contact.html">اتصل بنا</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>سياسة الموقع</h4>
-                <ul>
-                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
-                    <li><a href="terms.html">اتفاقية الاستخدام</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>تواصل معنا</h4>
-                <div class="footer-social">
-                    <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://wa.me/212669411021" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://github.com/ouhlali20" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-                <p class="footer-email">📧 contact@jobsworldwide.com</p>
+    <div class="container footer-content">
+        <div class="footer-col">
+            <h4>وظائف عالمياً</h4>
+            <p>منصتك الموثوقة للهجرة والعمل في 60 دولة. نقدم أحدث فرص العمل والنصائح المهنية.</p>
+        </div>
+        <div class="footer-col">
+            <h4>روابط مهمة</h4>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="countries.html">جميع الدول</a></li>
+                <li><a href="services.html">الخدمات</a></li>
+                <li><a href="tips.html">نصائح</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>سياسة الموقع</h4>
+            <ul>
+                <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                <li><a href="terms.html">اتفاقية الاستخدام</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>تابعنا</h4>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/212669411021" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://github.com/ouhlali20" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </div>
-        <div class="footer-bottom">
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
             <p>© 2026 وظائف حول العالم – جميع الحقوق محفوظة | آخر تحديث: أبريل 2026</p>
         </div>
     </div>
 </footer>
 
 <script src="script.js"></script>
-<!-- كود الإعلان Adsterra -->
 <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 </body>
 </html>
