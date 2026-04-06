@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Cairo', sans-serif;
-    background: #F8FAFE;
+    background: #FFFFFF;
     color: #1E2A3E;
     line-height: 1.5;
     direction: rtl;
@@ -18,20 +18,19 @@ body {
     padding: 0 24px;
 }
 
-/* ========== القائمة العلوية ========== */
+/* ========== شريط التنقل ========== */
 .navbar {
     background: #FFFFFF;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.03);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
-.nav-content {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0;
-    flex-wrap: wrap;
+    padding: 18px 0;
 }
 .logo {
     font-size: 1.5rem;
@@ -39,27 +38,28 @@ body {
     text-decoration: none;
     color: #0A2540;
 }
-.logo .highlight {
-    color: #D4AF37;
-}
 .logo i {
     color: #D4AF37;
-    margin-left: 8px;
+    margin-left: 6px;
 }
-.nav-links {
+.logo .accent {
+    color: #D4AF37;
+}
+.nav-menu {
     display: flex;
-    gap: 28px;
+    gap: 32px;
+    list-style: none;
 }
-.nav-links a {
+.nav-menu a {
     text-decoration: none;
     font-weight: 600;
     color: #2C3E50;
     transition: 0.2s;
 }
-.nav-links a:hover, .nav-links a.active {
+.nav-menu a:hover, .nav-menu a.active {
     color: #D4AF37;
 }
-.mobile-menu-btn {
+.mobile-toggle {
     display: none;
     background: none;
     border: none;
@@ -70,63 +70,66 @@ body {
 
 /* ========== الهيرو ========== */
 .hero {
-    background: linear-gradient(135deg, #0A2540 0%, #1B4A6F 100%);
-    color: white;
+    background: linear-gradient(120deg, #F8FAFE 0%, #FFFFFF 100%);
     padding: 70px 0;
+    border-bottom: 1px solid #EFF2F8;
 }
 .hero-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 50px;
     flex-wrap: wrap;
-    gap: 40px;
 }
 .hero-text {
     flex: 1;
 }
 .hero-badge {
     display: inline-block;
-    background: rgba(212, 175, 55, 0.2);
-    padding: 6px 16px;
+    background: rgba(212, 175, 55, 0.12);
+    padding: 6px 18px;
     border-radius: 50px;
     font-size: 0.85rem;
+    font-weight: 600;
+    color: #D4AF37;
     margin-bottom: 20px;
 }
 .hero-text h1 {
-    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    color: #0A2540;
     margin-bottom: 20px;
     line-height: 1.3;
 }
 .hero-text p {
     font-size: 1.1rem;
-    opacity: 0.9;
+    color: #4B5E77;
     margin-bottom: 30px;
     max-width: 550px;
 }
 .hero-buttons {
     display: flex;
-    gap: 15px;
+    gap: 16px;
     flex-wrap: wrap;
 }
 .btn-primary {
-    background: #D4AF37;
-    color: #0A2540;
+    background: #0A2540;
+    color: white;
     padding: 12px 28px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 700;
-    transition: 0.2s;
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    transition: 0.2s;
 }
 .btn-primary:hover {
-    background: #E6C45E;
-    transform: translateY(-2px);
+    background: #D4AF37;
+    color: #0A2540;
 }
 .btn-outline {
-    border: 1px solid #D4AF37;
-    color: #D4AF37;
+    border: 1px solid #0A2540;
+    color: #0A2540;
     padding: 12px 28px;
     border-radius: 50px;
     text-decoration: none;
@@ -134,50 +137,31 @@ body {
     transition: 0.2s;
 }
 .btn-outline:hover {
-    background: #D4AF37;
-    color: #0A2540;
+    background: #0A2540;
+    color: white;
 }
-.hero-stats {
-    display: flex;
-    gap: 30px;
-    background: rgba(255,255,255,0.1);
-    padding: 20px 30px;
-    border-radius: 30px;
-    backdrop-filter: blur(4px);
-}
-.stat-card {
+.hero-image {
+    flex: 1;
     text-align: center;
-}
-.stat-card span {
-    font-size: 1.8rem;
-    font-weight: 800;
-    display: block;
-}
-.stat-card p {
-    font-size: 0.85rem;
-    opacity: 0.8;
 }
 
 /* ========== المحتوى الرئيسي ========== */
 .main-grid {
     display: flex;
-    gap: 40px;
+    gap: 48px;
     padding: 60px 0;
 }
-.countries-section {
+.main-content {
     flex: 2.5;
 }
 .sidebar {
     flex: 1.2;
 }
-
-/* ========== بطاقات الدول ========== */
 .section-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
-    flex-wrap: wrap;
+    margin-bottom: 28px;
 }
 .section-title {
     font-size: 1.6rem;
@@ -195,36 +179,38 @@ body {
     text-decoration: none;
     font-weight: 600;
 }
+
+/* ========== بطاقات الدول ========== */
 .countries-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-    gap: 25px;
+    gap: 28px;
     margin-bottom: 50px;
 }
 .country-card {
-    background: white;
-    border-radius: 28px;
+    background: #FFFFFF;
+    border-radius: 24px;
     padding: 24px 16px;
     text-align: center;
     text-decoration: none;
     color: #1E2A3E;
     transition: all 0.25s;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.02);
     border: 1px solid #E9EDF2;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
 }
 .country-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1);
     border-color: #D4AF37;
+    box-shadow: 0 20px 30px -12px rgba(0,0,0,0.08);
 }
 .country-flag {
-    font-size: 3.2rem;
+    font-size: 3rem;
     margin-bottom: 12px;
 }
 .country-name {
     font-weight: 800;
     font-size: 1.2rem;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 .country-jobs {
     font-size: 0.8rem;
@@ -237,41 +223,44 @@ body {
     color: #D4AF37;
 }
 
-/* ========== خدماتنا ========== */
-.services-preview {
+/* ========== الخدمات ========== */
+.services-showcase {
     margin: 50px 0;
 }
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 25px;
+    gap: 24px;
 }
-.service-card {
-    background: white;
-    border-radius: 24px;
+.service-item {
+    background: #F8FAFE;
+    border-radius: 20px;
     padding: 24px;
-    text-align: center;
-    border: 1px solid #E9EDF2;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
     transition: 0.2s;
 }
-.service-card i {
-    font-size: 2.2rem;
+.service-item i {
+    font-size: 2rem;
     color: #D4AF37;
-    margin-bottom: 15px;
 }
-.service-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
+.service-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
 }
-.service-card p {
+.service-item p {
     font-size: 0.85rem;
     color: #6C7A8E;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
-.service-card a {
-    color: #D4AF37;
-    text-decoration: none;
+.service-item a {
+    color: #0A2540;
     font-weight: 600;
+    text-decoration: none;
+}
+.service-item a:hover {
+    color: #D4AF37;
 }
 
 /* ========== قد يعجبك أيضاً ========== */
@@ -284,7 +273,7 @@ body {
     gap: 20px;
 }
 .suggestion-card {
-    background: white;
+    background: #FFFFFF;
     border-radius: 20px;
     padding: 18px;
     display: flex;
@@ -314,13 +303,13 @@ body {
 
 /* ========== الشريط الجانبي ========== */
 .widget {
-    background: white;
-    border-radius: 28px;
+    background: #FFFFFF;
+    border-radius: 24px;
     padding: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     border: 1px solid #E9EDF2;
 }
-.widget-title {
+.widget h3 {
     font-size: 1.2rem;
     font-weight: 800;
     margin-bottom: 18px;
@@ -332,16 +321,16 @@ body {
 .tip-content {
     background: #F1F6FC;
     padding: 18px;
-    border-radius: 20px;
+    border-radius: 18px;
     font-size: 0.9rem;
     line-height: 1.6;
     border-right: 4px solid #D4AF37;
 }
-.quick-links ul {
+.quick-links {
     list-style: none;
 }
 .quick-links li {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 .quick-links a {
     text-decoration: none;
@@ -355,17 +344,14 @@ body {
     color: #D4AF37;
     padding-right: 5px;
 }
-.services-sidebar .service-item {
-    margin-bottom: 12px;
-    padding: 8px 0;
-    border-bottom: 1px dashed #E9EDF2;
-}
-.services-sidebar a {
+.service-links a {
+    display: block;
+    padding: 10px 0;
     text-decoration: none;
     color: #2C3E50;
-    margin-right: 8px;
+    border-bottom: 1px dashed #E9EDF2;
 }
-.services-sidebar a:hover {
+.service-links a:hover {
     color: #D4AF37;
 }
 
@@ -374,13 +360,13 @@ body {
     background: #0A2540;
     color: #CBD5E1;
     padding: 50px 0 20px;
-    margin-top: 60px;
+    margin-top: 70px;
 }
-.footer-grid {
+.footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 40px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 .footer-col h4 {
     font-size: 1.1rem;
@@ -412,12 +398,11 @@ body {
     color: #D4AF37;
     padding-right: 5px;
 }
-.footer-social {
+.social-icons {
     display: flex;
-    gap: 15px;
-    margin-bottom: 15px;
+    gap: 16px;
 }
-.footer-social a {
+.social-icons a {
     background: rgba(255,255,255,0.1);
     width: 38px;
     height: 38px;
@@ -427,13 +412,9 @@ body {
     justify-content: center;
     transition: 0.2s;
 }
-.footer-social a:hover {
+.social-icons a:hover {
     background: #D4AF37;
     color: #0A2540;
-}
-.footer-email {
-    font-size: 0.85rem;
-    margin-top: 10px;
 }
 .footer-bottom {
     text-align: center;
@@ -449,10 +430,23 @@ body {
     }
 }
 @media (max-width: 768px) {
-    .nav-links {
+    .nav-menu {
         display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: white;
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        text-align: center;
+        gap: 16px;
     }
-    .mobile-menu-btn {
+    .nav-menu.show {
+        display: flex;
+    }
+    .mobile-toggle {
         display: block;
     }
     .hero-content {
@@ -468,14 +462,14 @@ body {
     }
     .countries-grid {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-        gap: 16px;
+        gap: 20px;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
     }
 }
 @media (max-width: 480px) {
     .countries-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-    .services-grid {
-        grid-template-columns: 1fr;
     }
 }
