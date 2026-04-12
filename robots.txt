@@ -1,3 +1,13 @@
+# جميع محركات البحث مسموح لها بالزحف إلى جميع الصفحات
 User-agent: *
 Allow: /
+
+# منع الزحف إلى الصفحات غير الضرورية (اختياري)
+Disallow: /about.html
+Disallow: /contact.html
+Disallow: /privacy.html
+Disallow: /terms.html
+
+# تحديد مواقع خرائط الموقع (لـ Bing وجميع محركات البحث)
 Sitemap: https://jobs-worldwide.vercel.app/sitemap.xml
+Sitemap: https://jobs-worldwide.vercel.app/sitemap-countries.xml
