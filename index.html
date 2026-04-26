@@ -2,22 +2,14 @@
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>وظائف حول العالم | وجهتك الأولى للعمل في الخارج 2026</title>
-    <meta name="description" content="دليلك الشامل للوظائف في أمريكا، كندا، ألمانيا، بريطانيا. تأشيرات، رواتب، وخدمات كتابة السيرة الذاتية بأسعار رمزية.">
-    <meta name="keywords" content="وظائف في أمريكا, وظائف في كندا, تأشيرات العمل, H-1B, الهجرة إلى ألمانيا">
-    <link rel="canonical" href="https://jobs-worldwide.for-us.workers.dev/">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وظائف حول العالم | دليلك للعمل في أمريكا</title>
+    <meta name="description" content="دليلك الشامل للوظائف في أمريكا. تأشيرات H-1B، H-2B، الرواتب، وأفضل مواقع التوظيف. خدمات كتابة السيرة الذاتية.">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
-
-<!-- الخلفية -->
-<div class="bg-gradient"></div>
-<div class="bg-dots"></div>
 
 <!-- ========== الهيدر ========== -->
 <div class="header">
@@ -27,51 +19,18 @@
                 <i class="fas fa-globe-americas"></i> وظائف حول العالم
             </div>
             <div class="nav-links">
-                <a href="/index.html"><i class="fas fa-home"></i> الرئيسية</a>
-                <a href="/services.html"><i class="fas fa-file-alt"></i> الخدمات</a>
-                <a href="/tips.html"><i class="fas fa-lightbulb"></i> نصائح</a>
-                <a href="/about.html"><i class="fas fa-info-circle"></i> من نحن</a>
-                <a href="/contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a>
+                <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
+                <a href="services.html"><i class="fas fa-file-alt"></i> الخدمات</a>
+                <a href="tips.html"><i class="fas fa-lightbulb"></i> النصائح</a>
+                <a href="about.html"><i class="fas fa-info-circle"></i> من نحن</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a>
                 
-                <!-- القائمة المنسدلة للدول -->
                 <div class="dropdown">
-                    <button class="dropbtn">
-                        <i class="fas fa-globe"></i> تصنيف الدول 
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
+                    <a href="#" class="dropbtn"><i class="fas fa-globe"></i> تصنيف الدول ▼</a>
                     <div class="dropdown-content">
-                        <a href="/countries/usa.html">
-                            <i class="fas fa-flag-usa"></i> الولايات المتحدة
-                            <span class="badge">متاح</span>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-maple-leaf"></i> كندا
-                            <span class="badge soon">قريباً</span>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-industry"></i> ألمانيا
-                            <span class="badge soon">قريباً</span>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-crown"></i> بريطانيا
-                            <span class="badge soon">قريباً</span>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-sombrero"></i> المكسيك
-                            <span class="badge soon">قريباً</span>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-baguette"></i> فرنسا
-                            <span class="badge soon">قريباً</span>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-koala"></i> أستراليا
-                            <span class="badge soon">قريباً</span>
-                        </a>
+                        <a href="countries/usa.html">🇺🇸 الولايات المتحدة الأمريكية</a>
                     </div>
                 </div>
-                
-                <a href="/countries/usa.html" class="btn-nav">🇺🇸 أمريكا الآن</a>
             </div>
         </div>
     </div>
@@ -80,148 +39,122 @@
 <!-- ========== المحتوى الرئيسي ========== -->
 <div class="container">
     
-    <!-- القسم الرئيسي Hero -->
+    <!-- القسم الترحيبي -->
     <div class="hero">
-        <h1>وظائف <span>حول العالم</span> 2026</h1>
-        <p>دليلك الشامل للعمل في الخارج. روابط رسمية للتأشيرات، نصائح مهنية، وخدمات كتابة السيرة الذاتية بأسعار رمزية.</p>
+        <h1>وظائف <span>في أمريكا</span> 2026</h1>
+        <p>دليلك الشامل للعمل في الولايات المتحدة. تأشيرات H-1B، H-2B، الرواتب، وأفضل مواقع التوظيف الرسمية.</p>
         <div class="search-box">
-            <input type="text" placeholder="ابحث عن دولة... أمريكا، كندا، ألمانيا" id="searchInput">
+            <input type="text" id="searchInput" placeholder="ابحث عن وظائف في أمريكا... تأشيرة، راتب، مدينة">
             <button onclick="searchCountry()"><i class="fas fa-search"></i> بحث</button>
         </div>
     </div>
     
-    <!-- قسم الدول -->
-    <h2 class="section-title">أشهر <span>الوجهات</span> حول العالم</h2>
-    <p class="section-subtitle">اختر وجهتك التالية وابدأ رحلة العمل والحياة</p>
+    <!-- قسم أمريكا الرئيسي -->
+    <div class="main-country-section">
+        <a href="countries/usa.html" class="main-country-card">
+            <div class="main-country-flag">
+                <i class="fas fa-flag-usa"></i>
+            </div>
+            <div class="main-country-content">
+                <h2>🇺🇸 الولايات المتحدة الأمريكية</h2>
+                <p>دليل كامل ومفصل للوظائف والتأشيرات والرواتب في أمريكا. أكثر من 2000 كلمة من المعلومات العملية المبنية على مصادر رسمية.</p>
+                <div class="stats">
+                    <span><i class="fas fa-passport"></i> 85,000+ تأشيرة H-1B سنوياً</span>
+                    <span><i class="fas fa-dollar-sign"></i> رواتب تبدأ من 3000$ شهرياً</span>
+                    <span><i class="fas fa-building"></i> 50 ولاية للاختيار</span>
+                </div>
+                <div class="btn-main">استكشف الدليل الكامل ←</div>
+            </div>
+        </a>
+    </div>
     
-    <div class="countries-grid">
-        
-        <a href="/countries/usa.html" class="country-card">
-            <div class="card-image usa-bg">
-                <i class="fas fa-flag-usa fa-4x"></i>
-            </div>
-            <div class="card-content">
-                <h3>🇺🇸 الولايات المتحدة</h3>
-                <p>تأشيرات H-1B، H-2B، الرواتب بين 3000-13000 دولار شهرياً. دليل كامل يشمل 5 ولايات وروابط رسمية للتقديم.</p>
-                <span class="card-tag">85,000 تأشيرة سنوياً</span>
-            </div>
-        </a>
-        
-        <a href="#" class="country-card">
-            <div class="card-image canada-bg">
-                <i class="fas fa-maple-leaf fa-4x"></i>
-            </div>
-            <div class="card-content">
-                <h3>🇨🇦 كندا</h3>
-                <p>نظام Express Entry، تأشيرات العمل، رواتب بين 3500-9000 دولار كندي. دليل شامل للهجرة إلى كندا.</p>
-                <span class="card-tag">500,000 مهاجر جديد</span>
-            </div>
-        </a>
-        
-        <a href="#" class="country-card">
-            <div class="card-image germany-bg">
-                <i class="fas fa-industry fa-4x"></i>
-            </div>
-            <div class="card-content">
-                <h3>🇩🇪 ألمانيا</h3>
-                <p>تأشيرة Chancenkarte، وظائف في الطب، الهندسة، وتقنية المعلومات. رواتب بين 3000-7000 يورو.</p>
-                <span class="card-tag">بطاقة الفرصة</span>
-            </div>
-        </a>
-        
-        <a href="#" class="country-card">
-            <div class="card-image uk-bg">
-                <i class="fas fa-crown fa-4x"></i>
-            </div>
-            <div class="card-content">
-                <h3>🇬🇧 بريطانيا</h3>
-                <p>تأشيرة العمل المهرة (Skilled Worker Visa)، الرواتب تبدأ من 26,200 جنيه سنوياً. دليل كامل.</p>
-                <span class="card-tag">نظام النقاط</span>
-            </div>
-        </a>
-        
+    <!-- مقتطفات سريعة عن أمريكا -->
+    <div class="quick-info">
+        <div class="info-card">
+            <i class="fas fa-visa"></i>
+            <h3>تأشيرة H-1B</h3>
+            <p>للمهن التخصصية: تقنية، هندسة، طب. 65,000 تأشيرة + 20,000 للماجستير.</p>
+        </div>
+        <div class="info-card">
+            <i class="fas fa-money-bill-wave"></i>
+            <h3>متوسط الرواتب</h3>
+            <p>مبرمج: $10,000/شهر | ممرض: $6,500/شهر | مهندس: $8,000/شهر</p>
+        </div>
+        <div class="info-card">
+            <i class="fas fa-briefcase"></i>
+            <h3>أفضل 5 وظائف</h3>
+            <p>AI Engineer | Registered Nurse | Cybersecurity | Truck Driver | Cloud Engineer</p>
+        </div>
     </div>
     
     <!-- إعلان خدمة كتابة السيرة الذاتية -->
     <div class="ad-section">
-        <h3>📄 هل تحتاج سيرة ذاتية احترافية؟</h3>
-        <p>نكتب لك سيرة ذاتية بتصميم ATS متوافق مع أنظمة التوظيف الأمريكية والكندية والأوروبية</p>
-        <div class="price-big">15$ فقط</div>
-        <p>✅ تسليم خلال 24 ساعة | ✅ تعديلات مجانية | ✅ دعم كامل</p>
-        <a href="/services.html" class="btn-ad">📩 اطلب سيرتك الذاتية الآن</a>
+        <div class="ad-icon">📄</div>
+        <div class="ad-text">
+            <h3>سيرة ذاتية احترافية خلال 24 ساعة</h3>
+            <p>نكتب لك سيرة ذاتية بتصميم ATS متوافق مع أنظمة التوظيف الأمريكية</p>
+        </div>
+        <div class="ad-price">15$</div>
+        <a href="services.html" class="btn-ad">اطلب الآن <i class="fas fa-arrow-left"></i></a>
     </div>
     
-    <!-- قسم الخدمات -->
+    <!-- خدماتنا -->
     <h2 class="section-title">خدماتنا <span>الاحترافية</span></h2>
-    <p class="section-subtitle">نقدم لك خدمات متميزة لمساعدتك في الحصول على وظيفة أحلامك</p>
-    
     <div class="services-grid">
-        
         <div class="service-card">
-            <div class="service-icon">
-                <i class="fas fa-file-alt"></i>
-            </div>
+            <div class="service-icon"><i class="fas fa-file-alt"></i></div>
             <h3>كتابة السيرة الذاتية</h3>
-            <p>سيرة ذاتية احترافية بتصميم ATS متوافق مع أنظمة التوظيف العالمية. تزيد فرص قبولك بنسبة تصل إلى 70%.</p>
+            <p>سيرة ذاتية بتصميم ATS تزيد فرص قبولك 70%</p>
             <div class="price">15$</div>
-            <a href="/services.html" class="btn-service">اطلب الخدمة</a>
+            <a href="services.html" class="btn-service">اطلب</a>
         </div>
-        
         <div class="service-card">
-            <div class="service-icon">
-                <i class="fas fa-envelope-open-text"></i>
-            </div>
+            <div class="service-icon"><i class="fas fa-envelope-open-text"></i></div>
             <h3>خطاب التقديم</h3>
-            <p>خطاب تقديم مخصص للشركات التي تقدم عليها، يزيد فرص قبولك ويظهر اهتمامك الحقيقي بالوظيفة.</p>
+            <p>خطاب تقديم مخصص للشركات الأمريكية</p>
             <div class="price">10$</div>
-            <a href="/services.html" class="btn-service">اطلب الخدمة</a>
+            <a href="services.html" class="btn-service">اطلب</a>
         </div>
-        
         <div class="service-card">
-            <div class="service-icon">
-                <i class="fas fa-briefcase"></i>
-            </div>
-            <h3>التسجيل في المواقع</h3>
-            <p>نساعدك في إنشاء حسابات احترافية على Indeed، LinkedIn، USAJobs، والتقديم على الوظائف المناسبة لك.</p>
-            <div class="price">20$</div>
-            <a href="/services.html" class="btn-service">اطلب الخدمة</a>
+            <div class="service-icon"><i class="fas fa-chalkboard-user"></i></div>
+            <h3>التحضير للمقابلة</h3>
+            <p>أسئلة وأجوبة للمقابلات الأمريكية</p>
+            <div class="price">25$</div>
+            <a href="services.html" class="btn-service">اطلب</a>
         </div>
-        
     </div>
     
-    <!-- قسم النصائح -->
-    <div class="tips-section">
-        <h2 class="section-title" style="margin-bottom: 30px;">💡 نصائح <span>سريعة</span> للمغتربين</h2>
-        <div class="tips-grid">
-            <div class="tip-item">
-                <div class="tip-icon"><i class="fas fa-language"></i></div>
-                <div class="tip-text">
-                    <h4>تعلم الإنجليزية</h4>
-                    <p>IELTS 6.5 أو TOEFL 80+ مطلوب لمعظم التأشيرات الغربية</p>
-                </div>
-            </div>
-            <div class="tip-item">
-                <div class="tip-icon"><i class="fab fa-linkedin"></i></div>
-                <div class="tip-text">
-                    <h4>حساب LinkedIn احترافي</h4>
-                    <p>87% من مسؤولي التوظيف يستخدمونه للبحث عن مرشحين جدد</p>
-                </div>
-            </div>
-            <div class="tip-item">
-                <div class="tip-icon"><i class="fas fa-shield-alt"></i></div>
-                <div class="tip-text">
-                    <h4>لا تدفع لأي وسيط</h4>
-                    <p>التقديم على التأشيرات يكون مجاناً عبر المواقع الرسمية .gov</p>
-                </div>
-            </div>
-            <div class="tip-item">
-                <div class="tip-icon"><i class="fas fa-chart-line"></i></div>
-                <div class="tip-text">
-                    <h4>قدم على 50+ وظيفة أسبوعياً</h4>
-                    <p>متوسط عدد الطلبات قبل الحصول على عرض عمل هو 100-200</p>
-                </div>
-            </div>
-        </div>
+    <!-- أحدث النصائح من مجلد tips -->
+    <h2 class="section-title">أحدث <span>النصائح المهنية</span></h2>
+    <div class="tips-grid-home">
+        <a href="tips/usa-job-search-tips.html" class="tip-home-card">
+            <i class="fas fa-search"></i>
+            <h4>نصائح البحث عن وظائف في أمريكا</h4>
+            <p>أفضل الاستراتيجيات للعثور على وظيفة</p>
+        </a>
+        <a href="tips/visa-tips.html" class="tip-home-card">
+            <i class="fas fa-passport"></i>
+            <h4>نصائح التأشيرات الأمريكية</h4>
+            <p>كل ما تحتاج معرفته عن H-1B و H-2B</p>
+        </a>
+        <a href="tips/cv-tips.html" class="tip-home-card">
+            <i class="fas fa-file-alt"></i>
+            <h4>نصائح كتابة السيرة الذاتية</h4>
+            <p>كيف تكتب CV احترافي للشركات الأمريكية</p>
+        </a>
+        <a href="tips/interview-tips.html" class="tip-home-card">
+            <i class="fas fa-microphone"></i>
+            <h4>نصائح المقابلات الشخصية</h4>
+            <p>أسئلة متوقعة وكيف تجيب عليها</p>
+        </a>
+    </div>
+    
+    <!-- روابط سريعة لمحتوى tips -->
+    <div class="quick-links">
+        <span>📚 المزيد من النصائح:</span>
+        <a href="tips/linkedin-tips.html">نصائح LinkedIn</a>
+        <a href="tips/linkedin-job-search-tips.html">البحث عن وظائف عبر LinkedIn</a>
+        <a href="tips/best-countries-for-immigration-2026h...html">أفضل دول للهجرة 2026</a>
     </div>
     
 </div>
@@ -231,97 +164,53 @@
     <div class="container">
         <div class="footer-content">
             <div class="footer-col">
-                <h4>وظائف حول العالم</h4>
-                <a href="/index.html">الرئيسية</a>
-                <a href="/services.html">خدماتنا</a>
-                <a href="/tips.html">النصائح المهنية</a>
-                <a href="/about.html">من نحن</a>
+                <h4><i class="fas fa-globe-americas"></i> وظائف حول العالم</h4>
+                <p>دليلك الموثوق للعمل في الخارج منذ 2026</p>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <a href="index.html">الرئيسية</a>
+                <a href="services.html">خدماتنا</a>
+                <a href="tips.html">جميع النصائح</a>
+                <a href="about.html">من نحن</a>
             </div>
             <div class="footer-col">
                 <h4>الدول</h4>
-                <a href="/countries/usa.html">الولايات المتحدة</a>
-                <a href="#">كندا</a>
-                <a href="#">ألمانيا</a>
-                <a href="#">بريطانيا</a>
+                <a href="countries/usa.html">الولايات المتحدة</a>
             </div>
             <div class="footer-col">
-                <h4>روابط مهمة</h4>
-                <a href="/privacy.html">سياسة الخصوصية</a>
-                <a href="/terms.html">الشروط والأحكام</a>
-                <a href="/contact.html">اتصل بنا</a>
-                <a href="/sitemap-pages.xml">خريطة الموقع</a>
-            </div>
-            <div class="footer-col">
-                <h4>تواصل معنا</h4>
-                <a href="mailto:info@tarik-aljanah.online"><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
-                <a href="#"><i class="fab fa-facebook"></i> فيسبوك</a>
-                <a href="#"><i class="fab fa-twitter"></i> تويتر</a>
+                <h4>تواصل</h4>
+                <a href="contact.html">اتصل بنا</a>
+                <a href="privacy.html">سياسة الخصوصية</a>
+                <a href="terms.html">الشروط والأحكام</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2026 وظائف حول العالم – جميع المعلومات مأخوذة من مصادر رسمية .gov</p>
-            <p style="margin-top: 8px; font-size: 0.7rem;">⚠️ موقع إرشادي فقط، غير تابع لأي جهة حكومية</p>
+            <p>© 2026 وظائف حول العالم – جميع المعلومات من مصادر رسمية .gov</p>
         </div>
     </div>
 </footer>
 
+<!-- ========== كود إعلانات Adsterra ========== -->
+<script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
+
 <!-- ========== جافاسكريبت ========== -->
-<script src="/script.js"></script>
+<script src="script.js"></script>
 
 <script>
-    // وظيفة البحث
     function searchCountry() {
-        const input = document.getElementById('searchInput').value.toLowerCase().trim();
-        
-        const countries = {
-            'أمريكا': '/countries/usa.html',
-            'امريكا': '/countries/usa.html',
-            'الولايات المتحدة': '/countries/usa.html',
-            'usa': '/countries/usa.html',
-            'united states': '/countries/usa.html',
-            'america': '/countries/usa.html',
-            'كندا': '#',
-            'canada': '#',
-            'ألمانيا': '#',
-            'المانيا': '#',
-            'germany': '#',
-            'بريطانيا': '#',
-            'uk': '#',
-            'المكسيك': '#',
-            'mexico': '#'
-        };
-        
-        for (let key in countries) {
-            if (input.includes(key)) {
-                window.location.href = countries[key];
-                return;
-            }
-        }
-        
-        if (input.length > 0) {
-            alert('🌍 لم نجد هذه الدولة حالياً. جرب: أمريكا، كندا، ألمانيا، بريطانيا\n\nملاحظة: دول أخرى ستضاف قريباً إن شاء الله');
+        const input = document.getElementById('searchInput').value.toLowerCase();
+        if (input.includes('أمريكا') || input.includes('امريكا') || input.includes('usa') || input.includes('الولايات')) {
+            window.location.href = 'countries/usa.html';
+        } else {
+            alert('🔍 المتوفر حالياً: الولايات المتحدة الأمريكية.\nدول أخرى ستضاف قريباً.');
         }
     }
     
-    // البحث عند الضغط على Enter
-    const searchInput = document.getElementById('searchInput');
-    if (searchInput) {
-        searchInput.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                searchCountry();
-            }
-        });
-    }
-    
-    // تأثيرات عند تحميل الصفحة
-    document.addEventListener('DOMContentLoaded', function() {
-        console.log('🚀 موقع وظائف حول العالم - تم التحميل بنجاح');
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') searchCountry();
     });
 </script>
-
-<!-- ========== كود إعلانات Adsterra ========== -->
-
-<script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 
 </body>
 </html>
