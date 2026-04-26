@@ -7,10 +7,7 @@
     <meta name="description" content="دليلك الشامل للوظائف في أمريكا. نصائح مهنية، خدمات كتابة السيرة الذاتية، وروابط رسمية للتقديم.">
     <link rel="canonical" href="https://jobs-worldwide.for-us.workers.dev/">
     
-    <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
@@ -67,7 +64,7 @@
         
         .nav-links {
             display: flex;
-            gap: 28px;
+            gap: 20px;
             align-items: center;
             flex-wrap: wrap;
         }
@@ -77,10 +74,13 @@
             color: #4B5563;
             font-weight: 500;
             transition: color 0.3s;
+            padding: 8px 12px;
+            border-radius: 8px;
         }
         
         .nav-links a:hover {
             color: #10B981;
+            background: #ECFDF5;
         }
         
         .btn-nav {
@@ -92,9 +92,52 @@
         
         .btn-nav:hover {
             background: #059669;
+            color: white !important;
         }
         
-        /* ========== القسم الرئيسي (Hero) ========== */
+        /* ========== القائمة المنسدلة لتصنيف الدول ========== */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropbtn {
+            cursor: pointer;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 45px;
+            right: 0;
+            background: white;
+            min-width: 220px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 16px;
+            overflow: hidden;
+            z-index: 1000;
+            border: 1px solid #E5E7EB;
+        }
+        
+        .dropdown-content a {
+            display: block;
+            padding: 12px 18px;
+            color: #1F2937;
+            text-decoration: none;
+            border-bottom: 1px solid #F3F4F6;
+            transition: 0.2s;
+        }
+        
+        .dropdown-content a:hover {
+            background: #10B981;
+            color: white;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        /* ========== القسم الرئيسي ========== */
         .hero {
             background: linear-gradient(135deg, #1F2937 0%, #111827 100%);
             color: white;
@@ -155,11 +198,11 @@
             background: #059669;
         }
         
-        /* ========== الأقسام العامة ========== */
+        /* ========== العناوين ========== */
         .section-title {
             font-size: 2rem;
             font-weight: 700;
-            margin-bottom: 40px;
+            margin: 50px 0 30px;
             text-align: center;
         }
         
@@ -167,30 +210,12 @@
             color: #10B981;
         }
         
-        /* ========== تخطيط العمودين ========== */
-        .main-layout {
-            display: flex;
+        /* ========== بطاقات الدول ========== */
+        .countries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-            flex-wrap: wrap;
-        }
-        
-        .content {
-            flex: 3;
-            min-width: 250px;
-        }
-        
-        .sidebar {
-            flex: 1;
-            min-width: 250px;
-        }
-        
-        /* ========== البطاقات ========== */
-        .card {
-            background: white;
-            border-radius: 24px;
-            padding: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
         }
         
         .country-card {
@@ -202,7 +227,6 @@
             text-decoration: none;
             color: #1F2937;
             display: block;
-            margin-bottom: 25px;
         }
         
         .country-card:hover {
@@ -215,13 +239,13 @@
             background-size: cover;
             background-position: center;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .card-image i {
-            position: absolute;
-            bottom: 16px;
-            right: 16px;
-            font-size: 2.5rem;
+            font-size: 4rem;
             color: white;
             text-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
@@ -231,9 +255,9 @@
         }
         
         .card-content h3 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 700;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
         
         .card-content p {
@@ -253,62 +277,90 @@
         }
         
         .usa-bg { background: linear-gradient(135deg, #1E3A5F, #0F2A45); }
+        .canada-bg { background: linear-gradient(135deg, #C8102E, #8B0000); }
+        .germany-bg { background: linear-gradient(135deg, #000000, #333333); }
+        .uk-bg { background: linear-gradient(135deg, #012169, #001a4d); }
         
-        /* ========== الشريط الجانبي ========== */
-        .sidebar-card {
-            background: white;
-            border-radius: 24px;
-            padding: 24px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        /* ========== بطاقات النصائح ========== */
+        .tips-grid-home {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
         }
         
-        .sidebar-card h3 {
+        .tip-card {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            text-decoration: none;
+            color: #1F2937;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            display: block;
+            border: 1px solid #F3F4F6;
+        }
+        
+        .tip-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-color: #10B981;
+        }
+        
+        .tip-card i {
+            font-size: 2rem;
             color: #10B981;
             margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #ECFDF5;
         }
         
-        .sidebar-links {
-            list-style: none;
+        .tip-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
         }
         
-        .sidebar-links li {
-            margin-bottom: 12px;
+        .tip-card p {
+            color: #6B7280;
+            font-size: 0.85rem;
         }
         
-        .sidebar-links a {
-            color: #4B5563;
+        /* ========== روابط سريعة ========== */
+        .quick-links {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+        }
+        
+        .quick-links h3 {
+            margin-bottom: 20px;
+            color: #1F2937;
+        }
+        
+        .quick-links a {
+            display: inline-block;
+            background: #F3F4F6;
+            color: #1F2937;
             text-decoration: none;
-            display: block;
-            padding: 8px 12px;
-            background: #F9FAFB;
-            border-radius: 12px;
-            transition: all 0.3s;
+            padding: 8px 18px;
+            margin: 5px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            transition: 0.3s;
         }
         
-        .sidebar-links a:hover {
+        .quick-links a:hover {
             background: #10B981;
             color: white;
-            transform: translateX(-5px);
         }
         
-        .sidebar-links a i {
-            margin-left: 8px;
-            color: #10B981;
-        }
-        
-        .sidebar-links a:hover i {
-            color: white;
-        }
-        
-        /* ========== بطاقات الخدمات ========== */
+        /* ========== الخدمات ========== */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
-            margin-bottom: 60px;
+            margin: 40px 0;
         }
         
         .service-card {
@@ -372,53 +424,6 @@
             background: #059669;
         }
         
-        /* ========== نصائح سريعة ========== */
-        .tips-section {
-            background: white;
-            border-radius: 32px;
-            padding: 48px;
-            margin: 40px 0;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
-        }
-        
-        .tips-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        
-        .tip-item {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-        
-        .tip-icon {
-            background: #ECFDF5;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-        
-        .tip-icon i {
-            font-size: 1.5rem;
-            color: #10B981;
-        }
-        
-        .tip-text h4 {
-            font-size: 1rem;
-            margin-bottom: 4px;
-        }
-        
-        .tip-text p {
-            font-size: 0.85rem;
-            color: #6B7280;
-        }
-        
         /* ========== التذييل ========== */
         .footer {
             background: #1F2937;
@@ -466,15 +471,15 @@
             .hero h1 { font-size: 1.8rem; }
             .hero { padding: 40px 24px; }
             .section-title { font-size: 1.5rem; }
-            .tips-section { padding: 24px; }
             .nav { flex-direction: column; }
-            .main-layout { flex-direction: column; }
+            .nav-links { justify-content: center; }
+            .dropdown-content { position: fixed; top: auto; bottom: 0; left: 0; right: 0; width: 100%; border-radius: 20px 20px 0 0; }
         }
     </style>
 </head>
 <body>
 
-<!-- الهيدر -->
+<!-- ========== الهيدر ========== -->
 <div class="header">
     <div class="container">
         <div class="nav">
@@ -487,6 +492,18 @@
                 <a href="tips.html">نصائح</a>
                 <a href="about.html">من نحن</a>
                 <a href="contact.html">اتصل بنا</a>
+                
+                <!-- تصنيف الدول - قائمة منسدلة -->
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">📂 تصنيف الدول ▼</a>
+                    <div class="dropdown-content">
+                        <a href="countries/usa.html">🇺🇸 الولايات المتحدة الأمريكية</a>
+                        <a href="#">🇨🇦 كندا (قريباً)</a>
+                        <a href="#">🇩🇪 ألمانيا (قريباً)</a>
+                        <a href="#">🇬🇧 بريطانيا (قريباً)</a>
+                    </div>
+                </div>
+                
                 <a href="services.html" class="btn-nav">📄 اطلب سيرتك الذاتية</a>
             </div>
         </div>
@@ -495,161 +512,150 @@
 
 <div class="container">
     
-    <!-- القسم الرئيسي -->
+    <!-- ========== القسم الرئيسي ========== -->
     <div class="hero">
         <h1>وظائف حول العالم <span>2026</span></h1>
         <p>دليلك الشامل للعمل في الخارج. روابط رسمية، نصائح مهنية، وخدمات كتابة السيرة الذاتية بأسعار رمزية.</p>
         <div class="search-box">
-            <input type="text" placeholder="ابحث عن وظائف في أمريكا..." id="searchInput">
+            <input type="text" placeholder="ابحث عن وظائف في... أمريكا" id="searchInput">
             <button onclick="searchCountry()"><i class="fas fa-search"></i> بحث</button>
         </div>
     </div>
     
-    <!-- تخطيط العمودين -->
-    <div class="main-layout">
+    <!-- ========== قسم الدول ========== -->
+    <h2 class="section-title">أشهر <span>الوجهات حول العالم</span></h2>
+    <div class="countries-grid">
         
-        <!-- العمود الأيمن: المحتوى الرئيسي -->
-        <div class="content">
-            
-            <!-- أمريكا - الدولة الوحيدة المتاحة حالياً -->
-            <a href="countries/usa.html" class="country-card">
-                <div class="card-image usa-bg">
-                    <i class="fas fa-flag-usa"></i>
-                </div>
-                <div class="card-content">
-                    <h3>🇺🇸 الولايات المتحدة الأمريكية</h3>
-                    <p>تأشيرات H-1B، H-2B، الرواتب بين 3000-13000 دولار شهرياً. دليل كامل يشمل 5 ولايات وروابط رسمية للتقديم.</p>
-                    <span class="card-tag">85,000 تأشيرة سنوياً</span>
-                </div>
-            </a>
-            
-            <!-- معلومات سريعة عن أمريكا -->
-            <div class="card">
-                <h2>📌 حقائق سريعة عن سوق العمل الأمريكي</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px;">
-                    <div style="background: #ECFDF5; padding: 15px; border-radius: 16px; text-align: center;">
-                        <i class="fas fa-passport" style="font-size: 1.5rem; color: #10B981;"></i>
-                        <h4 style="margin: 10px 0;">تأشيرة H-1B</h4>
-                        <p style="font-size: 0.85rem;">للمهن التخصصية: تقنية، هندسة، طب</p>
-                    </div>
-                    <div style="background: #ECFDF5; padding: 15px; border-radius: 16px; text-align: center;">
-                        <i class="fas fa-dollar-sign" style="font-size: 1.5rem; color: #10B981;"></i>
-                        <h4 style="margin: 10px 0;">متوسط الرواتب</h4>
-                        <p style="font-size: 0.85rem;">مبرمج $10,000/شهر | ممرض $6,500</p>
-                    </div>
-                    <div style="background: #ECFDF5; padding: 15px; border-radius: 16px; text-align: center;">
-                        <i class="fas fa-briefcase" style="font-size: 1.5rem; color: #10B981;"></i>
-                        <h4 style="margin: 10px 0;">أفضل الوظائف</h4>
-                        <p style="font-size: 0.85rem;">AI Engineer | Cybersecurity | Nursing</p>
-                    </div>
-                </div>
+        <!-- أمريكا -->
+        <a href="countries/usa.html" class="country-card">
+            <div class="card-image usa-bg">
+                <i class="fas fa-flag-usa"></i>
             </div>
-            
-            <!-- خدماتنا -->
-            <h2 class="section-title" style="margin-top: 40px;">خدماتنا <span>الاحترافية</span></h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-file-alt"></i></div>
-                    <h3>كتابة السيرة الذاتية</h3>
-                    <p>سيرة ذاتية احترافية بتصميم ATS. تسليم خلال 24 ساعة.</p>
-                    <div class="price">15$</div>
-                    <a href="services.html" class="btn-service">اطلب الخدمة</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-envelope-open-text"></i></div>
-                    <h3>خطاب التقديم</h3>
-                    <p>خطاب تقديم مخصص يزيد فرص قبولك بنسبة 70%.</p>
-                    <div class="price">10$</div>
-                    <a href="services.html" class="btn-service">اطلب الخدمة</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-briefcase"></i></div>
-                    <h3>التسجيل في المواقع</h3>
-                    <p>نساعدك في إنشاء حسابات على Indeed، LinkedIn، USAJobs.</p>
-                    <div class="price">20$</div>
-                    <a href="services.html" class="btn-service">اطلب الخدمة</a>
-                </div>
+            <div class="card-content">
+                <h3>🇺🇸 الولايات المتحدة</h3>
+                <p>تأشيرات H-1B، H-2B، الرواتب بين 3000-13000 دولار شهرياً. دليل كامل يشمل 5 ولايات وروابط رسمية.</p>
+                <span class="card-tag">85,000 تأشيرة سنوياً</span>
+            </div>
+        </a>
+        
+        <!-- كندا (سيتم إضافتها لاحقاً) -->
+        <div class="country-card" style="opacity: 0.6;">
+            <div class="card-image canada-bg">
+                <i class="fas fa-maple-leaf"></i>
+            </div>
+            <div class="card-content">
+                <h3>🇨🇦 كندا</h3>
+                <p>نظام Express Entry، تأشيرات العمل، رواتب بين 3500-9000 دولار كندي.</p>
+                <span class="card-tag">قريباً</span>
             </div>
         </div>
         
-        <!-- العمود الأيسر: الشريط الجانبي -->
-        <div class="sidebar">
-            
-            <!-- إعلان الخدمات -->
-            <div class="sidebar-card">
-                <h3><i class="fas fa-gift"></i> عرض خاص</h3>
-                <div style="text-align: center;">
-                    <i class="fas fa-file-alt" style="font-size: 2.5rem; color: #10B981;"></i>
-                    <h3 style="margin: 10px 0;">سيرة ذاتية احترافية</h3>
-                    <div style="font-size: 2rem; font-weight: bold; color: #10B981;">15$</div>
-                    <p style="margin: 10px 0;">تسليم خلال 24 ساعة</p>
-                    <a href="services.html" style="background: #10B981; display: inline-block; padding: 10px 20px; border-radius: 30px; color: white; text-decoration: none; font-weight: bold;">اطلب الآن</a>
-                </div>
+        <!-- ألمانيا (سيتم إضافتها لاحقاً) -->
+        <div class="country-card" style="opacity: 0.6;">
+            <div class="card-image germany-bg">
+                <i class="fas fa-industry"></i>
             </div>
-            
-            <!-- روابط النصائح السريعة -->
-            <div class="sidebar-card">
-                <h3><i class="fas fa-lightbulb"></i> نصائح سريعة</h3>
-                <ul class="sidebar-links">
-                    <li><a href="tips/usa-job-search-tips.html"><i class="fas fa-search"></i> نصائح البحث عن وظائف في أمريكا</a></li>
-                    <li><a href="tips/visa-tips.html"><i class="fas fa-passport"></i> نصائح التأشيرات الأمريكية</a></li>
-                    <li><a href="tips/cv-tips.html"><i class="fas fa-file-alt"></i> نصائح كتابة السيرة الذاتية</a></li>
-                    <li><a href="tips/interview-tips.html"><i class="fas fa-microphone"></i> نصائح المقابلات الشخصية</a></li>
-                    <li><a href="tips/linkedin-tips.html"><i class="fab fa-linkedin"></i> نصائح LinkedIn الاحترافية</a></li>
-                </ul>
+            <div class="card-content">
+                <h3>🇩🇪 ألمانيا</h3>
+                <p>تأشيرة Chancenkarte، وظائف في الطب، الهندسة، وتقنية المعلومات.</p>
+                <span class="card-tag">قريباً</span>
             </div>
-            
-            <!-- روابط مفيدة -->
-            <div class="sidebar-card">
-                <h3><i class="fas fa-link"></i> روابط مفيدة</h3>
-                <ul class="sidebar-links">
-                    <li><a href="https://www.uscis.gov" target="_blank"><i class="fas fa-external-link-alt"></i> USCIS - موقع الهجرة الرسمي</a></li>
-                    <li><a href="https://www.usajobs.gov" target="_blank"><i class="fas fa-external-link-alt"></i> USAJobs - الوظائف الحكومية</a></li>
-                    <li><a href="https://travel.state.gov" target="_blank"><i class="fas fa-external-link-alt"></i> وزارة الخارجية الأمريكية</a></li>
-                </ul>
+        </div>
+        
+        <!-- بريطانيا (سيتم إضافتها لاحقاً) -->
+        <div class="country-card" style="opacity: 0.6;">
+            <div class="card-image uk-bg">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="card-content">
+                <h3>🇬🇧 بريطانيا</h3>
+                <p>تأشيرة العمل المهرة (Skilled Worker Visa)، الرواتب تبدأ من 26,200 جنيه سنوياً.</p>
+                <span class="card-tag">قريباً</span>
             </div>
         </div>
         
     </div>
     
-    <!-- نصائح سريعة -->
-    <div class="tips-section">
-        <h2 class="section-title" style="margin-bottom: 30px;">💡 نصائح <span>سريعة</span></h2>
-        <div class="tips-grid">
-            <div class="tip-item">
-                <div class="tip-icon"><i class="fas fa-language"></i></div>
-                <div class="tip-text">
-                    <h4>تعلم الإنجليزية</h4>
-                    <p>IELTS 6.5 أو TOEFL 80+ مطلوب لمعظم التأشيرات</p>
-                </div>
-            </div>
-            <div class="tip-item">
-                <div class="tip-icon"><i class="fab fa-linkedin"></i></div>
-                <div class="tip-text">
-                    <h4>حساب LinkedIn احترافي</h4>
-                    <p>87% من مسؤولي التوظيف يستخدمونه للبحث عن مرشحين</p>
-                </div>
-            </div>
-            <div class="tip-item">
-                <div class="tip-icon"><i class="fas fa-shield-alt"></i></div>
-                <div class="tip-text">
-                    <h4>لا تدفع لأي وسيط</h4>
-                    <p>التقديم على التأشيرات يكون مجاناً عبر المواقع الرسمية .gov</p>
-                </div>
-            </div>
-            <div class="tip-item">
-                <div class="tip-icon"><i class="fas fa-chart-line"></i></div>
-                <div class="tip-text">
-                    <h4>قدم على 50+ وظيفة أسبوعياً</h4>
-                    <p>متوسط عدد الطلبات قبل الحصول على عرض عمل هو 100-200</p>
-                </div>
-            </div>
+    <!-- ========== بطاقات النصائح ========== -->
+    <h2 class="section-title">نصائح <span>مهنية</span></h2>
+    <div class="tips-grid-home">
+        <a href="tips/usa-job-search-tips.html" class="tip-card">
+            <i class="fas fa-search"></i>
+            <h3>نصائح البحث عن وظائف في أمريكا</h3>
+            <p>أفضل الاستراتيجيات للعثور على وظيفة في السوق الأمريكي</p>
+        </a>
+        <a href="tips/visa-tips.html" class="tip-card">
+            <i class="fas fa-passport"></i>
+            <h3>نصائح التأشيرات الأمريكية</h3>
+            <p>كل ما تحتاج معرفته عن H-1B، H-2B، وإجراءات التقديم</p>
+        </a>
+        <a href="tips/cv-tips.html" class="tip-card">
+            <i class="fas fa-file-alt"></i>
+            <h3>نصائح كتابة السيرة الذاتية</h3>
+            <p>كيف تكتب CV احترافي للشركات الأمريكية</p>
+        </a>
+        <a href="tips/interview-tips.html" class="tip-card">
+            <i class="fas fa-microphone"></i>
+            <h3>نصائح المقابلات الشخصية</h3>
+            <p>أسئلة متوقعة وكيف تجيب عليها بثقة</p>
+        </a>
+        <a href="tips/linkedin-tips.html" class="tip-card">
+            <i class="fab fa-linkedin"></i>
+            <h3>نصائح LinkedIn الاحترافية</h3>
+            <p>كيف تبني ملف شخصي يجذب مسؤولي التوظيف</p>
+        </a>
+        <a href="tips/linkedin-job-search-tips.html" class="tip-card">
+            <i class="fab fa-linkedin"></i>
+            <h3>البحث عن وظائف عبر LinkedIn</h3>
+            <p>استراتيجيات متقدمة للعثور على وظائف</p>
+        </a>
+    </div>
+    
+    <!-- ========== روابط سريعة ========== -->
+    <div class="quick-links">
+        <h3><i class="fas fa-link"></i> روابط مفيدة وسريعة</h3>
+        <a href="https://www.uscis.gov" target="_blank">🌐 USCIS - موقع الهجرة الرسمي</a>
+        <a href="https://www.usajobs.gov" target="_blank">💼 USAJobs - الوظائف الحكومية</a>
+        <a href="https://travel.state.gov" target="_blank">🛂 وزارة الخارجية الأمريكية</a>
+        <a href="https://www.indeed.com" target="_blank">🔍 Indeed - محرك البحث عن وظائف</a>
+        <a href="https://www.linkedin.com/jobs" target="_blank">🔗 LinkedIn Jobs</a>
+        <a href="tips/best-countries-for-immigration-2026h...html">🌍 أفضل دول للهجرة 2026</a>
+        <a href="services.html">📄 خدمات كتابة السيرة الذاتية</a>
+    </div>
+    
+    <!-- ========== خدماتنا ========== -->
+    <h2 class="section-title">خدماتنا <span>الاحترافية</span></h2>
+    <div class="services-grid">
+        
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-file-alt"></i></div>
+            <h3>كتابة السيرة الذاتية</h3>
+            <p>سيرة ذاتية احترافية بتصميم ATS متوافق مع أنظمة التوظيف العالمية.</p>
+            <div class="price">15$</div>
+            <a href="services.html" class="btn-service">اطلب الخدمة</a>
         </div>
+        
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-envelope-open-text"></i></div>
+            <h3>خطاب التقديم</h3>
+            <p>خطاب تقديم مخصص للشركات التي تقدم عليها، يزيد فرص قبولك بنسبة 70%.</p>
+            <div class="price">10$</div>
+            <a href="services.html" class="btn-service">اطلب الخدمة</a>
+        </div>
+        
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+            <h3>التسجيل في المواقع</h3>
+            <p>نساعدك في إنشاء حسابات على Indeed، LinkedIn، USAJobs، والتقديم على الوظائف.</p>
+            <div class="price">20$</div>
+            <a href="services.html" class="btn-service">اطلب الخدمة</a>
+        </div>
+        
     </div>
     
 </div>
 
-<!-- التذييل -->
+<!-- ========== التذييل ========== -->
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
@@ -662,6 +668,9 @@
             <div class="footer-col">
                 <h4>الدول</h4>
                 <a href="countries/usa.html">الولايات المتحدة</a>
+                <a href="#">كندا (قريباً)</a>
+                <a href="#">ألمانيا (قريباً)</a>
+                <a href="#">بريطانيا (قريباً)</a>
             </div>
             <div class="footer-col">
                 <h4>روابط مهمة</h4>
@@ -686,13 +695,18 @@
 <!-- كود إعلانات Adsterra -->
 <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 
-<!-- جافاسكريبت -->
 <script>
     function searchCountry() {
         const input = document.getElementById('searchInput').value.toLowerCase();
         
         if (input.includes('أمريكا') || input.includes('امريكا') || input.includes('usa') || input.includes('الولايات')) {
             window.location.href = 'countries/usa.html';
+        } else if (input.includes('كندا') || input.includes('canada')) {
+            alert('🍁 كندا ستضاف قريباً - تابعنا');
+        } else if (input.includes('ألمانيا') || input.includes('المانيا') || input.includes('germany')) {
+            alert('🇩🇪 ألمانيا ستضاف قريباً - تابعنا');
+        } else if (input.includes('بريطانيا') || input.includes('uk')) {
+            alert('🇬🇧 بريطانيا ستضاف قريباً - تابعنا');
         } else if (input.length > 0) {
             alert('🌍 المتوفر حالياً: الولايات المتحدة الأمريكية.\nدول أخرى ستضاف قريباً.');
         }
