@@ -7,412 +7,24 @@
     <meta name="description" content="دليلك الشامل للوظائف في أمريكا، كندا، ألمانيا، بريطانيا والمزيد. نصائح مهنية، خدمات كتابة السيرة الذاتية، وروابط رسمية للتقديم.">
     <link rel="canonical" href="https://jobs-worldwide.for-us.workers.dev/">
     
-    <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome 6 (أيقونات مجانية) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
     
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        /* أنيميشن إضافية صغيرة */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            background: #F9FAFB;
-            color: #1F2937;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        
-        /* ========== الهيدر ========== */
-        .header {
-            background: #FFFFFF;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 0;
-            flex-wrap: wrap;
-            gap: 16px;
-        }
-        
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #10B981, #059669);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-        
-        .logo i {
-            background: none;
-            color: #10B981;
-            -webkit-background-clip: unset;
-            background-clip: unset;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 28px;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        
-        .nav-links a {
-            text-decoration: none;
-            color: #4B5563;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        .nav-links a:hover {
-            color: #10B981;
-        }
-        
-        .btn-nav {
-            background: #10B981;
-            color: white !important;
-            padding: 8px 20px;
-            border-radius: 40px;
-        }
-        
-        .btn-nav:hover {
-            background: #059669;
-        }
-        
-        /* ========== القسم الرئيسي (Hero) ========== */
-        .hero {
-            background: linear-gradient(135deg, #1F2937 0%, #111827 100%);
-            color: white;
-            border-radius: 32px;
-            padding: 60px 48px;
-            margin: 40px 0;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-        
-        .hero h1 span {
-            color: #10B981;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            color: #D1D5DB;
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
-        
-        .search-box {
-            display: flex;
-            max-width: 500px;
-            margin: 0 auto;
-            gap: 12px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        
-        .search-box input {
-            flex: 1;
-            padding: 14px 20px;
-            border: none;
-            border-radius: 50px;
-            font-size: 1rem;
-            outline: none;
-            min-width: 200px;
-        }
-        
-        .search-box button {
-            background: #10B981;
-            border: none;
-            padding: 14px 28px;
-            border-radius: 50px;
-            color: white;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        
-        .search-box button:hover {
-            background: #059669;
-        }
-        
-        /* ========== الأقسام العامة ========== */
-        .section-title {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        
-        .section-title span {
-            color: #10B981;
-        }
-        
-        /* ========== بطاقات الدول ========== */
-        .countries-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-        
-        .country-card {
-            background: white;
-            border-radius: 24px;
-            overflow: hidden;
-            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);
-            transition: transform 0.3s, box-shadow 0.3s;
-            text-decoration: none;
-            color: #1F2937;
-            display: block;
-        }
-        
-        .country-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 30px -12px rgba(0,0,0,0.15);
-        }
-        
-        .card-image {
-            height: 180px;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-        
-        .card-image i {
-            position: absolute;
-            bottom: 16px;
-            right: 16px;
-            font-size: 2.5rem;
-            color: white;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-        
-        .card-content {
-            padding: 24px;
-        }
-        
-        .card-content h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-        
-        .card-content p {
-            color: #6B7280;
-            margin-bottom: 16px;
-            font-size: 0.9rem;
-        }
-        
-        .card-tag {
-            display: inline-block;
-            background: #ECFDF5;
-            color: #059669;
-            padding: 4px 12px;
-            border-radius: 30px;
-            font-size: 0.75rem;
-            font-weight: 600;
-        }
-        
-        /* ألوان خلفيات البطاقات */
-        .usa-bg { background: linear-gradient(135deg, #1E3A5F, #0F2A45); }
-        .canada-bg { background: linear-gradient(135deg, #C8102E, #8B0000); }
-        .mexico-bg { background: linear-gradient(135deg, #006847, #004d33); }
-        .germany-bg { background: linear-gradient(135deg, #000000, #333333); }
-        .uk-bg { background: linear-gradient(135deg, #012169, #001a4d); }
-        
-        /* ========== بطاقات الخدمات ========== */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-        
-        .service-card {
-            background: white;
-            border-radius: 24px;
-            padding: 32px 24px;
-            text-align: center;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
-            transition: all 0.3s;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .service-icon {
-            background: #ECFDF5;
-            width: 70px;
-            height: 70px;
-            line-height: 70px;
-            text-align: center;
-            border-radius: 50%;
-            margin: 0 auto 20px;
-        }
-        
-        .service-icon i {
-            font-size: 2rem;
-            color: #10B981;
-        }
-        
-        .service-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 12px;
-        }
-        
-        .service-card p {
-            color: #6B7280;
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-        }
-        
-        .price {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #10B981;
-            margin-bottom: 20px;
-        }
-        
-        .btn-service {
-            background: #10B981;
-            color: white;
-            padding: 10px 24px;
-            border-radius: 40px;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-block;
-            transition: background 0.3s;
-        }
-        
-        .btn-service:hover {
-            background: #059669;
-        }
-        
-        /* ========== نصائح سريعة ========== */
-        .tips-section {
-            background: white;
-            border-radius: 32px;
-            padding: 48px;
-            margin: 40px 0;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
-        }
-        
-        .tips-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        
-        .tip-item {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-        
-        .tip-icon {
-            background: #ECFDF5;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-        
-        .tip-icon i {
-            font-size: 1.5rem;
-            color: #10B981;
-        }
-        
-        .tip-text h4 {
-            font-size: 1rem;
-            margin-bottom: 4px;
-        }
-        
-        .tip-text p {
-            font-size: 0.85rem;
-            color: #6B7280;
-        }
-        
-        /* ========== التذييل ========== */
-        .footer {
-            background: #1F2937;
-            color: #9CA3AF;
-            padding: 48px 0 24px;
-            margin-top: 60px;
-            border-radius: 32px 32px 0 0;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-col h4 {
-            color: white;
-            margin-bottom: 16px;
-            font-size: 1.1rem;
-        }
-        
-        .footer-col a {
-            display: block;
-            color: #9CA3AF;
-            text-decoration: none;
-            margin-bottom: 10px;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-        
-        .footer-col a:hover {
-            color: #10B981;
-        }
-        
-        .footer-bottom {
-            text-align: center;
-            padding-top: 24px;
-            border-top: 1px solid #374151;
-            font-size: 0.8rem;
-        }
-        
-        /* ========== تجاوب ========== */
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 1.8rem; }
-            .hero { padding: 40px 24px; }
-            .section-title { font-size: 1.5rem; }
-            .tips-section { padding: 24px; }
-            .nav { flex-direction: column; }
+        .country-card, .service-card, .tip-item {
+            animation: fadeIn 0.5s ease forwards;
         }
     </style>
 </head>
 <body>
 
-<!-- الهيدر -->
+<!-- ========== الهيدر ========== -->
 <div class="header">
     <div class="container">
         <div class="nav">
@@ -420,20 +32,23 @@
                 <i class="fas fa-globe-americas"></i> وظائف حول العالم
             </div>
             <div class="nav-links">
-                <a href="index.html">الرئيسية</a>
-                <a href="services.html">الخدمات</a>
-                <a href="tips.html">نصائح</a>
-                <a href="about.html">من نحن</a>
-                <a href="contact.html">اتصل بنا</a>
-                <a href="services.html" class="btn-nav">📄 اطلب سيرتك الذاتية</a>
+                <a href="/index.html"><i class="fas fa-home"></i> الرئيسية</a>
+                <a href="/services.html"><i class="fas fa-file-alt"></i> الخدمات</a>
+                <a href="/tips.html"><i class="fas fa-lightbulb"></i> نصائح</a>
+                <a href="/about.html"><i class="fas fa-info-circle"></i> من نحن</a>
+                <a href="/contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a>
+                <a href="/countries/usa.html" class="btn-nav">🇺🇸 أمريكا</a>
+                <a href="/countries/canada.html" class="btn-nav">🇨🇦 كندا</a>
+                <a href="/countries/germany.html" class="btn-nav">🇩🇪 ألمانيا</a>
+                <a href="/countries/uk.html" class="btn-nav">🇬🇧 بريطانيا</a>
             </div>
         </div>
     </div>
 </div>
 
+<!-- ========== المحتوى الرئيسي ========== -->
 <div class="container">
     
-    <!-- القسم الرئيسي -->
     <div class="hero">
         <h1>وظائف حول العالم <span>2026</span></h1>
         <p>دليلك الشامل للعمل في الخارج. روابط رسمية، نصائح مهنية، وخدمات كتابة السيرة الذاتية بأسعار رمزية.</p>
@@ -443,73 +58,71 @@
         </div>
     </div>
     
-    <!-- قسم الدول -->
     <h2 class="section-title">أشهر <span>الوجهات حول العالم</span></h2>
     <div class="countries-grid" id="countriesGrid">
         
-        <!-- أمريكا -->
-        <a href="countries/usa.html" class="country-card">
+        <a href="/countries/usa.html" class="country-card">
             <div class="card-image usa-bg">
                 <i class="fas fa-flag-usa"></i>
             </div>
             <div class="card-content">
                 <h3>🇺🇸 الولايات المتحدة</h3>
-                <p>تأشيرات H-1B، H-2B، الرواتب بين 3000-13000 دولار شهرياً. دليل كامل يشمل 5 ولايات وروابط رسمية.</p>
+                <p>تأشيرات H-1B، H-2B، الرواتب بين 3000-13000 دولار شهرياً.</p>
                 <span class="card-tag">85,000 تأشيرة سنوياً</span>
             </div>
         </a>
         
-        <!-- كندا -->
-        <a href="countries/canada.html" class="country-card">
+        <a href="/countries/canada.html" class="country-card">
             <div class="card-image canada-bg">
                 <i class="fas fa-maple-leaf"></i>
             </div>
             <div class="card-content">
                 <h3>🇨🇦 كندا</h3>
-                <p>نظام Express Entry، تأشيرات العمل، رواتب بين 3500-9000 دولار كندي. دليل شامل للهجرة إلى كندا.</p>
+                <p>نظام Express Entry، تأشيرات العمل، رواتب بين 3500-9000 دولار كندي.</p>
                 <span class="card-tag">500,000 مهاجر جديد</span>
             </div>
         </a>
         
-        <!-- المكسيك -->
-        <a href="countries/mexico.html" class="country-card">
+        <a href="/countries/mexico.html" class="country-card">
             <div class="card-image mexico-bg">
                 <i class="fas fa-sombrero"></i>
             </div>
             <div class="card-content">
                 <h3>🇲🇽 المكسيك</h3>
-                <p>وظائف في المصانع، السياحة، والتقنية. رواتب تبدأ من 800 دولار. قريبة من أمريكا وسهولة السفر.</p>
+                <p>وظائف في المصانع، السياحة، والتقنية. رواتب تبدأ من 800 دولار.</p>
                 <span class="card-tag">فرص للعرب</span>
             </div>
         </a>
         
-        <!-- ألمانيا -->
-        <a href="countries/germany.html" class="country-card">
+        <a href="/countries/germany.html" class="country-card">
             <div class="card-image germany-bg">
                 <i class="fas fa-industry"></i>
             </div>
             <div class="card-content">
                 <h3>🇩🇪 ألمانيا</h3>
-                <p>تأشيرة Chancenkarte، وظائف في الطب، الهندسة، وتقنية المعلومات. رواتب بين 3000-7000 يورو.</p>
+                <p>تأشيرة Chancenkarte، وظائف في الطب، الهندسة، وتقنية المعلومات.</p>
                 <span class="card-tag">بطاقة الفرصة</span>
             </div>
         </a>
         
-        <!-- بريطانيا -->
-        <a href="countries/uk.html" class="country-card">
+        <a href="/countries/uk.html" class="country-card">
             <div class="card-image uk-bg">
                 <i class="fas fa-crown"></i>
             </div>
             <div class="card-content">
                 <h3>🇬🇧 بريطانيا</h3>
-                <p>تأشيرة العمل المهرة (Skilled Worker Visa)، الرواتب تبدأ من 26,200 جنيه سنوياً. دليل كامل.</p>
+                <p>تأشيرة العمل المهرة (Skilled Worker Visa)، الرواتب تبدأ من 26,200 جنيه سنوياً.</p>
                 <span class="card-tag">نظام النقاط</span>
             </div>
         </a>
         
     </div>
     
-    <!-- قسم الخدمات -->
+    <!-- ========== إعلان Adsterra ========== -->
+    <div style="text-align: center; margin: 30px 0;">
+        <!-- كود Adsterra سيظهر هنا تلقائياً -->
+    </div>
+    
     <h2 class="section-title">خدماتنا <span>الاحترافية</span></h2>
     <div class="services-grid">
         
@@ -518,9 +131,9 @@
                 <i class="fas fa-file-alt"></i>
             </div>
             <h3>كتابة السيرة الذاتية</h3>
-            <p>سيرة ذاتية احترافية بتصميم ATS متوافق مع أنظمة التوظيف العالمية. تسليم خلال 24 ساعة.</p>
+            <p>سيرة ذاتية احترافية بتصميم ATS متوافق مع أنظمة التوظيف العالمية.</p>
             <div class="price">15$</div>
-            <a href="services.html" class="btn-service">اطلب الخدمة</a>
+            <a href="/services.html" class="btn-service">اطلب الخدمة</a>
         </div>
         
         <div class="service-card">
@@ -528,9 +141,9 @@
                 <i class="fas fa-envelope-open-text"></i>
             </div>
             <h3>خطاب التقديم</h3>
-            <p>خطاب تقديم مخصص للشركات التي تقدم عليها، يزيد فرص قبولك بنسبة تصل إلى 70%.</p>
+            <p>خطاب تقديم مخصص للشركات التي تقدم عليها، يزيد فرص قبولك.</p>
             <div class="price">10$</div>
-            <a href="services.html" class="btn-service">اطلب الخدمة</a>
+            <a href="/services.html" class="btn-service">اطلب الخدمة</a>
         </div>
         
         <div class="service-card">
@@ -538,14 +151,13 @@
                 <i class="fas fa-briefcase"></i>
             </div>
             <h3>التسجيل في المواقع</h3>
-            <p>نساعدك في إنشاء حسابات على Indeed، LinkedIn، USAJobs، والتقديم على الوظائف المناسبة لك.</p>
+            <p>نساعدك في إنشاء حسابات على Indeed، LinkedIn، USAJobs.</p>
             <div class="price">20$</div>
-            <a href="services.html" class="btn-service">اطلب الخدمة</a>
+            <a href="/services.html" class="btn-service">اطلب الخدمة</a>
         </div>
         
     </div>
     
-    <!-- نصائح سريعة -->
     <div class="tips-section">
         <h2 class="section-title" style="margin-bottom: 30px;">💡 نصائح <span>سريعة</span></h2>
         <div class="tips-grid">
@@ -567,7 +179,7 @@
                 <div class="tip-icon"><i class="fas fa-shield-alt"></i></div>
                 <div class="tip-text">
                     <h4>لا تدفع لأي وسيط</h4>
-                    <p>التقديم على التأشيرات يكون مجاناً عبر المواقع الرسمية .gov</p>
+                    <p>التقديم على التأشيرات يكون مجاناً عبر المواقع الرسمية</p>
                 </div>
             </div>
             <div class="tip-item">
@@ -582,29 +194,30 @@
     
 </div>
 
-<!-- التذييل -->
+<!-- ========== التذييل ========== -->
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
             <div class="footer-col">
                 <h4>وظائف حول العالم</h4>
-                <a href="index.html">الرئيسية</a>
-                <a href="services.html">خدماتنا</a>
-                <a href="tips.html">النصائح المهنية</a>
+                <a href="/index.html">الرئيسية</a>
+                <a href="/services.html">خدماتنا</a>
+                <a href="/tips.html">النصائح المهنية</a>
             </div>
             <div class="footer-col">
                 <h4>الدول</h4>
-                <a href="countries/usa.html">الولايات المتحدة</a>
-                <a href="countries/canada.html">كندا</a>
-                <a href="countries/germany.html">ألمانيا</a>
-                <a href="countries/uk.html">بريطانيا</a>
+                <a href="/countries/usa.html">الولايات المتحدة</a>
+                <a href="/countries/canada.html">كندا</a>
+                <a href="/countries/germany.html">ألمانيا</a>
+                <a href="/countries/uk.html">بريطانيا</a>
+                <a href="/countries/mexico.html">المكسيك</a>
             </div>
             <div class="footer-col">
                 <h4>روابط مهمة</h4>
-                <a href="privacy.html">سياسة الخصوصية</a>
-                <a href="terms.html">الشروط والأحكام</a>
-                <a href="contact.html">اتصل بنا</a>
-                <a href="sitemap-pages.xml">خريطة الموقع</a>
+                <a href="/privacy.html">سياسة الخصوصية</a>
+                <a href="/terms.html">الشروط والأحكام</a>
+                <a href="/contact.html">اتصل بنا</a>
+                <a href="/sitemap-pages.xml">خريطة الموقع</a>
             </div>
             <div class="footer-col">
                 <h4>تواصل معنا</h4>
@@ -620,25 +233,30 @@
     </div>
 </footer>
 
-<!-- جافاسكريبت بسيطة للبحث -->
+<!-- ========== كود Adsterra (في آخر الملف قبل جافاسكريبت) ========== -->
+<script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
+
+<!-- ========== جافاسكريبت ========== -->
+<script src="/script.js"></script>
+
 <script>
+    // وظيفة البحث (نسخة احتياطية)
     function searchCountry() {
         const input = document.getElementById('searchInput').value.toLowerCase();
         const countries = {
-            'أمريكا': 'countries/usa.html',
-            'امريكا': 'countries/usa.html',
-            'usa': 'countries/usa.html',
-            'الولايات المتحدة': 'countries/usa.html',
-            'كندا': 'countries/canada.html',
-            'canada': 'countries/canada.html',
-            'ألمانيا': 'countries/germany.html',
-            'المانيا': 'countries/germany.html',
-            'germany': 'countries/germany.html',
-            'بريطانيا': 'countries/uk.html',
-            'uk': 'countries/uk.html',
-            'england': 'countries/uk.html',
-            'المكسيك': 'countries/mexico.html',
-            'mexico': 'countries/mexico.html'
+            'أمريكا': '/countries/usa.html',
+            'امريكا': '/countries/usa.html',
+            'usa': '/countries/usa.html',
+            'الولايات المتحدة': '/countries/usa.html',
+            'كندا': '/countries/canada.html',
+            'canada': '/countries/canada.html',
+            'ألمانيا': '/countries/germany.html',
+            'المانيا': '/countries/germany.html',
+            'germany': '/countries/germany.html',
+            'بريطانيا': '/countries/uk.html',
+            'uk': '/countries/uk.html',
+            'المكسيك': '/countries/mexico.html',
+            'mexico': '/countries/mexico.html'
         };
         
         for (let key in countries) {
@@ -653,16 +271,12 @@
         }
     }
     
-    // البحث عند الضغط على Enter
     document.getElementById('searchInput').addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
             searchCountry();
         }
     });
 </script>
-
-    <!-- كود الإعلان Social Bar -->
-    <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 
 </body>
 </html>
