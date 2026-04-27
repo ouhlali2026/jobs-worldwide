@@ -49,22 +49,73 @@
         .section-title span { color: #10B981; }
         .section-subtitle { text-align: center; color: #6B7280; margin-bottom: 40px; }
         
-        /* بطاقات الدول - تنسيق جديد مع صور */
-        .countries-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px; }
-        .country-card { background: white; border-radius: 24px; overflow: hidden; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); transition: all 0.3s; text-decoration: none; color: #1F2937; display: block; }
-        .country-card:hover { transform: translateY(-8px); box-shadow: 0 25px 30px -12px rgba(0,0,0,0.15); }
-        .card-image { height: 200px; background-size: cover; background-position: center; position: relative; display: flex; align-items: center; justify-content: center; }
-        .card-image i { font-size: 4rem; color: white; text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
-        .card-content { padding: 24px; }
-        .card-content h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 10px; }
-        .card-content p { color: #6B7280; margin-bottom: 16px; font-size: 0.9rem; line-height: 1.6; }
-        .card-tag { display: inline-block; background: #ECFDF5; color: #059669; padding: 4px 12px; border-radius: 30px; font-size: 0.7rem; font-weight: 600; }
+        /* بطاقات الدول - تصميم جديد بأيقونات جذابة */
+        .countries-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 60px; }
         
-        /* ألوان خلفيات البطاقات */
-        .usa-bg { background: linear-gradient(135deg, #1E3A5F, #0F2A45); }
-        .canada-bg { background: linear-gradient(135deg, #C8102E, #8B0000); }
-        .germany-bg { background: linear-gradient(135deg, #000000, #333333); }
-        .uk-bg { background: linear-gradient(135deg, #012169, #001a4d); }
+        .country-card { 
+            background: white; 
+            border-radius: 28px; 
+            overflow: hidden; 
+            box-shadow: 0 10px 30px -8px rgba(0,0,0,0.08); 
+            transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1); 
+            text-decoration: none; 
+            color: #1F2937; 
+            display: block; 
+            text-align: center;
+        }
+        .country-card:hover { 
+            transform: translateY(-12px); 
+            box-shadow: 0 30px 40px -15px rgba(0,0,0,0.2); 
+        }
+        
+        .card-icon-wrapper {
+            padding: 40px 20px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .card-icon-wrapper i {
+            font-size: 5rem;
+            transition: transform 0.4s ease;
+            display: inline-block;
+        }
+        .country-card:hover .card-icon-wrapper i {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        /* ألوان أيقونات الدول */
+        .usa-icon { background: linear-gradient(135deg, #1E3A5F, #0F2A45); }
+        .canada-icon { background: linear-gradient(135deg, #C8102E, #8B0000); }
+        .germany-icon { background: linear-gradient(135deg, #000000, #333333); }
+        .uk-icon { background: linear-gradient(135deg, #012169, #001a4d); }
+        
+        .card-icon-wrapper i {
+            background: rgba(255,255,255,0.15);
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            border-radius: 50%;
+            text-align: center;
+            color: white;
+        }
+        
+        .card-content { padding: 0 24px 30px; }
+        .card-content h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 12px; }
+        .card-content p { color: #6B7280; margin-bottom: 20px; font-size: 0.9rem; line-height: 1.6; }
+        
+        .card-tag { 
+            display: inline-block; 
+            background: #ECFDF5; 
+            color: #059669; 
+            padding: 6px 16px; 
+            border-radius: 30px; 
+            font-size: 0.75rem; 
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .country-card:hover .card-tag {
+            background: #10B981;
+            color: white;
+        }
         
         /* بطاقات النصائح */
         .tips-grid-home { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 30px 0; }
@@ -117,6 +168,7 @@
             .nav { flex-direction: column; }
             .nav-links { justify-content: center; }
             .countries-grid { grid-template-columns: 1fr; }
+            .card-icon-wrapper i { width: 80px; height: 80px; line-height: 80px; font-size: 3rem; }
         }
     </style>
 </head>
@@ -161,51 +213,55 @@
     </div>
     
     <h2 class="section-title">أشهر <span>الوجهات حول العالم</span></h2>
-    <p class="section-subtitle">اختر وجهتك التالية وابدأ رحلة العمل والحياة</p>
+    <p class="section-subtitle">اختر وجهتك التالية وابدأ رحلة العمل والحياة مع دليلنا الشامل</p>
     
     <div class="countries-grid">
         
+        <!-- أمريكا -->
         <a href="countries/usa.html" class="country-card">
-            <div class="card-image usa-bg">
+            <div class="card-icon-wrapper usa-icon">
                 <i class="fas fa-flag-usa"></i>
             </div>
             <div class="card-content">
                 <h3>🇺🇸 الولايات المتحدة</h3>
-                <p>تأشيرات H-1B، H-2B، الرواتب بين 3000-13000 دولار شهرياً. دليل كامل يشمل 5 ولايات وروابط رسمية.</p>
+                <p>تأشيرات H-1B، H-2B، الرواتب بين 3000-13000 دولار شهرياً. دليل كامل وروابط رسمية.</p>
                 <span class="card-tag">85,000 تأشيرة سنوياً</span>
             </div>
         </a>
         
+        <!-- كندا -->
         <a href="countries/canada.html" class="country-card">
-            <div class="card-image canada-bg">
+            <div class="card-icon-wrapper canada-icon">
                 <i class="fas fa-maple-leaf"></i>
             </div>
             <div class="card-content">
                 <h3>🇨🇦 كندا</h3>
-                <p>نظام Express Entry، تأشيرات العمل، رواتب بين 3500-9000 دولار كندي. دليل شامل للهجرة إلى كندا.</p>
+                <p>نظام Express Entry، تأشيرات العمل، رواتب بين 3500-9000 دولار كندي. دليل شامل للهجرة.</p>
                 <span class="card-tag">500,000 مهاجر جديد</span>
             </div>
         </a>
         
+        <!-- ألمانيا -->
         <a href="countries/germany.html" class="country-card">
-            <div class="card-image germany-bg">
+            <div class="card-icon-wrapper germany-icon">
                 <i class="fas fa-industry"></i>
             </div>
             <div class="card-content">
                 <h3>🇩🇪 ألمانيا</h3>
                 <p>تأشيرة Chancenkarte، وظائف في الطب، الهندسة، وتقنية المعلومات. رواتب بين 3000-7000 يورو.</p>
-                <span class="card-tag">بطاقة الفرصة</span>
+                <span class="card-tag">بطاقة الفرصة الجديدة</span>
             </div>
         </a>
         
+        <!-- بريطانيا -->
         <a href="countries/uk.html" class="country-card">
-            <div class="card-image uk-bg">
+            <div class="card-icon-wrapper uk-icon">
                 <i class="fas fa-crown"></i>
             </div>
             <div class="card-content">
                 <h3>🇬🇧 بريطانيا</h3>
-                <p>تأشيرة العمل المهرة (Skilled Worker Visa)، الرواتب تبدأ من 26,200 جنيه سنوياً. دليل كامل.</p>
-                <span class="card-tag">نظام النقاط</span>
+                <p>تأشيرة Skilled Worker Visa، الرواتب تبدأ من 26,200 جنيه سنوياً. دليل كامل ونظام النقاط.</p>
+                <span class="card-tag">نظام الهجرة الجديد</span>
             </div>
         </a>
         
