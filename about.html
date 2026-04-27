@@ -1,326 +1,211 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>من نحن - وظائف على مستوى العالم</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>من نحن | وظائف على مستوى العالم</title>
+    <meta name="description" content="تعرف على موقع وظائف على مستوى العالم، قصتنا، رؤيتنا، وأهدافنا في مساعدة الباحثين عن عمل في الخارج.">
     
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- ملف التنسيقات -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
-        .about-header {
-            background: linear-gradient(135deg, #2563eb, #1d4ed8);
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #F8FAFC; color: #1E293B; line-height: 1.7; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
         
-        .about-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
+        /* الهيدر */
+        .header { background: #FFFFFF; border-bottom: 1px solid #E2E8F0; position: sticky; top: 0; z-index: 100; }
+        .nav { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; flex-wrap: wrap; gap: 15px; }
+        .logo { font-size: 1.3rem; font-weight: 800; background: linear-gradient(135deg, #0F172A, #1E293B); -webkit-background-clip: text; background-clip: text; color: transparent; display: flex; align-items: center; gap: 8px; }
+        .logo i { background: none; color: #3B82F6; }
+        .nav-links { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+        .nav-links a { text-decoration: none; color: #475569; font-weight: 500; font-size: 0.9rem; padding: 6px 14px; border-radius: 30px; transition: 0.2s; }
+        .nav-links a:hover { color: #3B82F6; background: #EFF6FF; }
+        .btn-nav { background: #3B82F6; color: white !important; padding: 6px 18px !important; border-radius: 30px !important; }
         
-        .about-header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content { display: none; position: absolute; top: 38px; right: 0; background: white; min-width: 200px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); border-radius: 16px; overflow: hidden; z-index: 1000; border: 1px solid #E2E8F0; }
+        .dropdown-content a { display: block; padding: 10px 16px; color: #1E293B; text-decoration: none; border-bottom: 1px solid #F1F5F9; font-size: 0.85rem; }
+        .dropdown-content a:hover { background: #EFF6FF; color: #3B82F6; }
+        .dropdown:hover .dropdown-content { display: block; }
         
-        .about-section {
-            background: white;
-            border-radius: 12px;
-            padding: 40px;
-            margin: 40px 0;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            border: 1px solid #e2e8f0;
-        }
+        /* القسم الرئيسي */
+        .hero { background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color: white; border-radius: 28px; padding: 50px 40px; margin: 35px 0; text-align: center; }
+        .hero h1 { font-size: 2.3rem; font-weight: 800; margin-bottom: 15px; }
+        .hero h1 span { color: #3B82F6; }
+        .hero p { font-size: 1rem; color: #CBD5E1; max-width: 600px; margin: 0 auto; }
         
-        .about-section h2 {
-            font-size: 1.8rem;
-            color: #1e293b;
-            margin-bottom: 20px;
-        }
+        /* محتوى من نحن */
+        .about-content { background: white; border-radius: 28px; padding: 45px; margin: 40px 0; border: 1px solid #EFF3F8; box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
+        .about-content h2 { font-size: 1.4rem; margin: 30px 0 15px; color: #1E293B; display: flex; align-items: center; gap: 10px; }
+        .about-content h2:first-of-type { margin-top: 0; }
+        .about-content h2 i { color: #3B82F6; }
+        .about-content p { margin-bottom: 15px; color: #475569; }
+        .about-content ul { margin: 15px 0 15px 25px; color: #475569; }
+        .about-content li { margin-bottom: 10px; }
         
-        .about-section p {
-            color: #475569;
-            line-height: 1.8;
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-        }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; margin: 35px 0; }
+        .stat-card { background: #F8FAFC; border-radius: 20px; padding: 25px 15px; text-align: center; transition: 0.2s; border: 1px solid #EFF3F8; }
+        .stat-card:hover { transform: translateY(-5px); border-color: #DBEAFE; }
+        .stat-card i { font-size: 2rem; color: #3B82F6; margin-bottom: 12px; display: inline-block; }
+        .stat-card h3 { font-size: 1.1rem; margin-bottom: 5px; }
+        .stat-card p { font-size: 0.8rem; color: #64748B; }
         
-        .values-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
+        .quote-box { background: linear-gradient(135deg, #EFF6FF, #FFFFFF); border-radius: 20px; padding: 30px; margin: 30px 0; text-align: center; border-right: 4px solid #3B82F6; }
+        .quote-box i { font-size: 2rem; color: #3B82F6; margin-bottom: 15px; display: inline-block; }
+        .quote-box p { font-size: 1.1rem; color: #1E293B; font-weight: 500; }
         
-        .value-card {
-            text-align: center;
-            padding: 30px;
-            background: #f8fafc;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
-        }
-        
-        .value-card i {
-            font-size: 2.5rem;
-            color: #2563eb;
-            margin-bottom: 20px;
-        }
-        
-        .value-card h3 {
-            font-size: 1.3rem;
-            color: #1e293b;
-            margin-bottom: 10px;
-        }
-        
-        .value-card p {
-            color: #64748b;
-            margin: 0;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin: 40px 0;
-            text-align: center;
-        }
-        
-        .stat-box {
-            background: #f8fafc;
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
-        }
-        
-        .stat-box .number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #2563eb;
-            margin-bottom: 10px;
-        }
-        
-        .stat-box .label {
-            color: #64748b;
-            font-size: 1rem;
-        }
-        
-        .mission-box {
-            background: #eef2ff;
-            border-right: 4px solid #2563eb;
-            padding: 30px;
-            border-radius: 12px;
-            margin: 40px 0;
-        }
-        
-        .mission-box h3 {
-            color: #1e293b;
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-        }
-        
-        .mission-box p {
-            color: #475569;
-            margin: 0;
-            font-size: 1.1rem;
-        }
-        
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: #2563eb;
-            text-decoration: none;
-            margin-bottom: 20px;
-            font-weight: 500;
-        }
-        
-        .back-link:hover {
-            color: #1d4ed8;
-        }
+        /* التذييل */
+        .footer { background: #0F172A; color: #94A3B8; padding: 40px 0 20px; margin-top: 50px; border-radius: 32px 32px 0 0; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 35px; margin-bottom: 30px; }
+        .footer-col h4 { color: white; margin-bottom: 14px; font-size: 0.95rem; }
+        .footer-col a { display: block; color: #94A3B8; text-decoration: none; margin-bottom: 8px; font-size: 0.8rem; transition: 0.2s; }
+        .footer-col a:hover { color: #3B82F6; }
+        .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #1E293B; font-size: 0.75rem; }
         
         @media (max-width: 768px) {
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .about-header h1 {
-                font-size: 2rem;
-            }
-            
-            .about-section {
-                padding: 25px;
-            }
+            .hero h1 { font-size: 1.6rem; }
+            .hero { padding: 30px 20px; }
+            .about-content { padding: 25px; }
+            .nav { flex-direction: column; }
+            .nav-links { justify-content: center; }
+            .stats-grid { grid-template-columns: 1fr; }
         }
     </style>
-    <!-- Vercel Web Analytics -->
-    <script>
-      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
-    <!-- شريط التنقل -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <a href="index.html" class="logo">
-                    <i class="fas fa-globe"></i>
-                    <span>وظائف حول العالم</span>
-                </a>
-                
-                <ul class="nav-links">
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="#">الدول</a></li>
-                    <li><a href="services.html">الخدمات</a></li>
-                    <li><a href="about.html" class="active">من نحن</a></li>
-                    <li><a href="contact.html">اتصل بنا</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- رأس الصفحة -->
-    <section class="about-header">
-        <div class="container">
-            <h1>من نحن</h1>
-            <p>نافذتك الموثوقة للبحث عن فرص العمل حول العالم</p>
-        </div>
-    </section>
-
-    <!-- المحتوى -->
+<div class="header">
     <div class="container">
-        <a href="index.html" class="back-link">
-            <i class="fas fa-arrow-right"></i> العودة للرئيسية
-        </a>
-        
-        <!-- نبذة عنا -->
-        <div class="about-section">
-            <h2>قصتنا</h2>
-            <p>بدأت فكرة "وظائف على مستوى العالم" من رغبة حقيقية في مساعدة الباحثين عن عمل للوصول إلى فرصهم في الخارج. نحن نؤمن بأن الجميع يستحق فرصة عادلة لتحقيق أحلامه المهنية، بغض النظر عن مكان وجوده.</p>
-            <p>منصة "وظائف على مستوى العالم" تقدم معلومات دقيقة ومحدثة عن فرص العمل في أكثر من 25 دولة، مع خطوات واضحة وإرشادات عملية لتسهيل رحلة البحث عن الوظيفة المناسبة.</p>
-        </div>
-
-        <!-- إحصائيات سريعة -->
-        <div class="stats-grid">
-            <div class="stat-box">
-                <div class="number">25+</div>
-                <div class="label">دولة</div>
-            </div>
-            <div class="stat-box">
-                <div class="number">1000+</div>
-                <div class="label">فرصة عمل</div>
-            </div>
-            <div class="stat-box">
-                <div class="number">10K+</div>
-                <div class="label">مستفيد</div>
-            </div>
-        </div>
-
-        <!-- رسالتنا -->
-        <div class="mission-box">
-            <h3>رسالتنا</h3>
-            <p>تمكين الباحثين عن عمل من الوصول إلى فرصهم في الخارج من خلال معلومات موثوقة، خطوات واضحة، وخدمات احترافية بأسعار في متناول الجميع.</p>
-        </div>
-
-        <!-- قيمنا -->
-        <div class="about-section">
-            <h2>قيمنا</h2>
-            <div class="values-grid">
-                <div class="value-card">
-                    <i class="fas fa-check-circle"></i>
-                    <h3>المصداقية</h3>
-                    <p>نقدم معلومات دقيقة وموثوقة عن فرص العمل ومتطلبات كل دولة</p>
+        <div class="nav">
+            <div class="logo"><i class="fas fa-globe-americas"></i> وظائف على مستوى العالم</div>
+            <div class="nav-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="services.html">الخدمات</a>
+                <a href="tips.html">نصائح</a>
+                <a href="about.html">من نحن</a>
+                <a href="contact.html">اتصل بنا</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">تصنيف الدول ▼</a>
+                    <div class="dropdown-content">
+                        <a href="countries/usa.html">🇺🇸 الولايات المتحدة</a>
+                        <a href="countries/canada.html">🇨🇦 كندا</a>
+                        <a href="countries/germany.html">🇩🇪 ألمانيا</a>
+                        <a href="countries/uk.html">🇬🇧 بريطانيا</a>
+                    </div>
                 </div>
-                <div class="value-card">
-                    <i class="fas fa-heart"></i>
-                    <h3>الشفافية</h3>
-                    <p>وضوح كامل في المعلومات والأسعار والخدمات المقدمة</p>
-                </div>
-                <div class="value-card">
-                    <i class="fas fa-users"></i>
-                    <h3>الدعم</h3>
-                    <p>نساعدك في كل خطوة من رحلة البحث عن وظيفة أحلامك</p>
-                </div>
-                <div class="value-card">
-                    <i class="fas fa-star"></i>
-                    <h3>الجودة</h3>
-                    <p>نقدم خدمات احترافية عالية الجودة بأسعار رمزية</p>
-                </div>
+                <a href="services.html" class="btn-nav">📄 اطلب خدمتك</a>
             </div>
-        </div>
-
-        <!-- خدماتنا -->
-        <div class="about-section">
-            <h2>ماذا نقدم؟</h2>
-            <p>نوفر لك كل ما تحتاجه لزيادة فرصك في الحصول على الوظيفة:</p>
-            <ul style="margin-right: 20px; margin-top: 15px;">
-                <li>معلومات محدثة عن سوق العمل في أكثر من 25 دولة</li>
-                <li>تصميم سيرة ذاتية احترافية (بأسعار رمزية)</li>
-                <li>كتابة خطابات تقديم مخصصة</li>
-                <li>مساعدة في البحث العلمي والدراسات</li>
-                <li>إرشادات خطوة بخطوة للتقديم على الوظائف</li>
-            </ul>
         </div>
     </div>
+</div>
 
-    <!-- تذييل الصفحة -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>وظائف حول العالم</h4>
-                    <p>منصتك الموثوقة للبحث عن فرص عمل في مختلف دول العالم</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>روابط سريعة</h4>
-                    <ul>
-                        <li><a href="index.html">الرئيسية</a></li>
-                        <li><a href="#">الدول</a></li>
-                        <li><a href="services.html">الخدمات</a></li>
-                        <li><a href="about.html">من نحن</a></li>
-                        <li><a href="contact.html">اتصل بنا</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>الدول</h4>
-                    <ul>
-                        <li><a href="#">كندا</a></li>
-                        <li><a href="#">ألمانيا</a></li>
-                        <li><a href="#">الإمارات</a></li>
-                        <li><a href="#">أمريكا</a></li>
-                    </ul>
-                </div>
+<div class="container">
+    
+    <div class="hero">
+        <h1>من <span>نحن</span></h1>
+        <p>تعرف على قصتنا، رؤيتنا، ولماذا نقدم لك هذا المحتوى</p>
+    </div>
 
-                <div class="footer-section">
-                    <h4>سياسة الموقع</h4>
-                    <ul>
-                        <li><a href="privacy.html">سياسة الخصوصية</a></li>
-                        <li><a href="#">اتفاقية الاستخدام</a></li>
-                    </ul>
-                </div>
+    <div class="about-content">
+        
+        <h2><i class="fas fa-rocket"></i> قصتنا</h2>
+        <p>انطلق موقع <strong>وظائف على مستوى العالم</strong> في عام 2026 من فكرة بسيطة: مساعدة الباحثين عن عمل في الخارج من خلال تقديم معلومات دقيقة وموثقة. نؤمن بأن المعلومات الصحيحة هي المفتاح الأول لفرصة عمل ناجحة، خاصة عندما يتعلق الأمر بالهجرة والتأشيرات.</p>
+        <p>بدأنا بدليل شامل للولايات المتحدة، ثم أضفنا أدلة لكندا وألمانيا وبريطانيا. اليوم، نواصل التوسع لتشمل المزيد من الدول والوجهات الواعدة.</p>
+
+        <h2><i class="fas fa-eye"></i> رؤيتنا</h2>
+        <p>أن نكون المنصة العربية الأولى الموثوقة للمعلومات حول الوظائف والتأشيرات في جميع أنحاء العالم. نطمح إلى تمكين الباحثين عن عمل من المعلومات الصحيحة لاتخاذ قراراتهم بثقة.</p>
+
+        <h2><i class="fas fa-bullseye"></i> أهدافنا</h2>
+        <ul>
+            <li><strong>المصداقية:</strong> نعتمد على مصادر رسمية (حكومية) في جميع معلوماتنا.</li>
+            <li><strong>الشفافية:</strong> نوضح بوضوح الفرق بين المحتوى المجاني والخدمات المدفوعة.</li>
+            <li><strong>التحديث المستمر:</strong> متابعة التغييرات في سياسات الهجرة والتأشيرات.</li>
+            <li><strong>الدعم:</strong> تقديم خدمات مساعدة مثل كتابة السيرة الذاتية وخطابات التقديم بأسعار رمزية.</li>
+        </ul>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="fas fa-flag-usa"></i>
+                <h3>4+ دول</h3>
+                <p>أدلة كاملة للولايات المتحدة، كندا، ألمانيا، بريطانيا</p>
             </div>
-            
-            <div class="footer-bottom">
-                <p>© 2026 وظائف على مستوى العالم - جميع الحقوق محفوظة</p>
+            <div class="stat-card">
+                <i class="fas fa-file-alt"></i>
+                <h3>10+ مقالات</h3>
+                <p>نصائح مهنية وأدلة مفصلة للمغتربين</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-users"></i>
+                <h3>خدمات متميزة</h3>
+                <p>كتابة السيرة الذاتية وخطاب التقديم والتسجيل في مواقع التأشيرات</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-link"></i>
+                <h3>روابط رسمية</h3>
+                <p>جميع الروابط تؤدي إلى مواقع حكومية رسمية .gov و .gc.ca و .de و .gov.uk</p>
             </div>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <h2><i class="fas fa-handshake"></i> ماذا نقدم لك؟</h2>
+        <ul>
+            <li><strong>📄 أدلة الدول:</strong> معلومات شاملة عن التأشيرات، الرواتب، وأفضل مواقع التوظيف.</li>
+            <li><strong>💡 نصائح مهنية:</strong> مقالات قيمة لمساعدتك في رحلتك المهنية.</li>
+            <li><strong>🛠️ خدمات مدفوعة:</strong> كتابة السيرة الذاتية (15$)، خطاب التقديم (10$)، والتسجيل في مواقع التأشيرات (20$).</li>
+            <li><strong>🔗 روابط رسمية:</strong> وصول مباشر لمواقع الهجرة والتوظيف الرسمية.</li>
+        </ul>
 
-    <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
+        <div class="quote-box">
+            <i class="fas fa-quote-right"></i>
+            <p>"المعلومات الصحيحة هي نصف الطريق إلى الوظيفة التي تحلم بها. نحن هنا لنقدم لك النصف الأول."</p>
+        </div>
+
+        <h2><i class="fas fa-envelope"></i> تواصل معنا</h2>
+        <p>نرحب باستفساراتك واقتراحاتك. يمكنك التواصل معنا عبر:</p>
+        <ul>
+            <li><i class="fab fa-whatsapp"></i> <strong>واتساب:</strong> <a href="https://wa.me/212679627332" target="_blank">+212 679 627 332</a></li>
+            <li><i class="fas fa-envelope"></i> <strong>البريد الإلكتروني:</strong> <a href="mailto:info@tarik-aljanah.online">info@tarik-aljanah.online</a></li>
+        </ul>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4><i class="fas fa-globe-americas"></i> وظائف على مستوى العالم</h4>
+                <a href="index.html">الرئيسية</a>
+                <a href="services.html">خدماتنا</a>
+                <a href="tips.html">النصائح المهنية</a>
+            </div>
+            <div class="footer-col">
+                <h4>الدول</h4>
+                <a href="countries/usa.html">الولايات المتحدة</a>
+                <a href="countries/canada.html">كندا</a>
+                <a href="countries/germany.html">ألمانيا</a>
+                <a href="countries/uk.html">بريطانيا</a>
+            </div>
+            <div class="footer-col">
+                <h4>روابط مهمة</h4>
+                <a href="privacy.html">سياسة الخصوصية</a>
+                <a href="terms.html">شروط الاستخدام</a>
+                <a href="contact.html">اتصل بنا</a>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <a href="https://wa.me/212679627332" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+                <a href="mailto:info@tarik-aljanah.online"><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 </body>
 </html>
