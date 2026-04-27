@@ -15,7 +15,6 @@
         body { font-family: 'Inter', sans-serif; background: #F8FAFC; color: #1E293B; line-height: 1.6; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         
-        /* الهيدر */
         .header { background: #FFFFFF; border-bottom: 1px solid #E2E8F0; position: sticky; top: 0; z-index: 100; }
         .nav { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; flex-wrap: wrap; gap: 15px; }
         .logo { font-size: 1.3rem; font-weight: 800; background: linear-gradient(135deg, #0F172A, #1E293B); -webkit-background-clip: text; background-clip: text; color: transparent; display: flex; align-items: center; gap: 8px; }
@@ -25,14 +24,12 @@
         .nav-links a:hover { color: #3B82F6; background: #EFF6FF; }
         .btn-nav { background: #3B82F6; color: white !important; padding: 6px 18px !important; border-radius: 30px !important; }
         
-        /* القائمة المنسدلة */
         .dropdown { position: relative; display: inline-block; }
         .dropdown-content { display: none; position: absolute; top: 38px; right: 0; background: white; min-width: 220px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); border-radius: 16px; overflow: hidden; z-index: 1000; border: 1px solid #E2E8F0; }
         .dropdown-content a { display: block; padding: 10px 18px; color: #1E293B; text-decoration: none; border-bottom: 1px solid #F1F5F9; font-size: 0.85rem; transition: 0.2s; }
         .dropdown-content a:hover { background: #EFF6FF; color: #3B82F6; }
         .dropdown:hover .dropdown-content { display: block; }
         
-        /* القسم الرئيسي */
         .hero { background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color: white; border-radius: 28px; padding: 50px 40px; margin: 35px 0; text-align: center; }
         .hero h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 15px; }
         .hero h1 span { color: #3B82F6; }
@@ -43,20 +40,16 @@
         .search-box button { background: #3B82F6; border: none; padding: 12px 24px; border-radius: 40px; color: white; font-weight: 600; cursor: pointer; transition: 0.2s; }
         .search-box button:hover { background: #2563EB; transform: scale(1.02); }
         
-        /* العناوين */
         .section-title { font-size: 1.6rem; font-weight: 700; margin: 40px 0 20px; text-align: center; }
         .section-title span { color: #3B82F6; }
         
-        /* بطاقات الدول - مع صور خلفية */
         .countries-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 40px; }
         .country-card { background: white; border-radius: 20px; overflow: hidden; transition: all 0.3s; text-decoration: none; color: #1E293B; display: block; border: 1px solid #EFF3F8; }
         .country-card:hover { transform: translateY(-6px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.12); }
         
-        /* صورة العلم في أعلى البطاقة */
-        .card-flag { height: 140px; background-size: cover; background-position: center; position: relative; display: flex; align-items: center; justify-content: center; }
+        .card-flag { height: 140px; background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; }
         .card-flag i { font-size: 4rem; color: white; text-shadow: 0 2px 10px rgba(0,0,0,0.3); background: rgba(0,0,0,0.2); width: 80px; height: 80px; line-height: 80px; text-align: center; border-radius: 50%; }
         
-        /* ألوان خلفيات الأعلام */
         .flag-usa { background: linear-gradient(135deg, #1E3A5F, #0F2A45); }
         .flag-canada { background: linear-gradient(135deg, #C8102E, #8B0000); }
         .flag-germany { background: linear-gradient(135deg, #000000, #333333); }
@@ -67,7 +60,6 @@
         .card-content p { color: #64748B; font-size: 0.85rem; margin-bottom: 12px; line-height: 1.5; }
         .card-tag { display: inline-block; background: #EFF6FF; color: #3B82F6; padding: 4px 12px; border-radius: 30px; font-size: 0.7rem; font-weight: 600; }
         
-        /* بطاقات النصائح */
         .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0; }
         .tip-card { background: white; border-radius: 20px; padding: 20px; text-decoration: none; color: #1E293B; transition: 0.2s; border: 1px solid #EFF3F8; display: flex; align-items: center; gap: 15px; }
         .tip-card:hover { transform: translateY(-3px); border-color: #DBEAFE; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
@@ -76,13 +68,11 @@
         .tip-info h4 { font-size: 0.95rem; margin-bottom: 4px; }
         .tip-info p { font-size: 0.75rem; color: #64748B; }
         
-        /* روابط سريعة */
         .quick-links { background: white; border-radius: 20px; padding: 20px; margin: 30px 0; text-align: center; border: 1px solid #EFF3F8; }
         .quick-links h3 { font-size: 1rem; margin-bottom: 15px; }
         .quick-links a { display: inline-block; background: #F1F5F9; color: #1E293B; text-decoration: none; padding: 6px 16px; margin: 4px; border-radius: 30px; font-size: 0.8rem; transition: 0.2s; }
         .quick-links a:hover { background: #3B82F6; color: white; }
         
-        /* الخدمات */
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; margin: 35px 0; }
         .service-card { background: white; border-radius: 20px; padding: 25px 20px; text-align: center; border: 1px solid #EFF3F8; transition: 0.2s; }
         .service-card:hover { transform: translateY(-4px); border-color: #DBEAFE; }
@@ -94,14 +84,12 @@
         .btn-service { background: #3B82F6; color: white; padding: 8px 22px; border-radius: 30px; text-decoration: none; font-size: 0.8rem; font-weight: 600; display: inline-block; transition: 0.2s; }
         .btn-service:hover { background: #2563EB; }
         
-        /* الإعلان */
         .ad-section { background: linear-gradient(135deg, #0F172A, #1E293B); border-radius: 24px; padding: 30px; margin: 35px 0; text-align: center; color: white; }
         .ad-section h3 { font-size: 1.2rem; margin-bottom: 8px; }
         .ad-section .price { font-size: 1.6rem; color: #FCD34D; margin: 12px 0; }
         .btn-ad { background: #FCD34D; color: #0F172A; padding: 10px 28px; border-radius: 40px; text-decoration: none; font-weight: bold; font-size: 0.85rem; display: inline-block; transition: 0.2s; }
         .btn-ad:hover { background: #F59E0B; transform: scale(1.02); }
         
-        /* التذييل */
         .footer { background: #0F172A; color: #94A3B8; padding: 40px 0 20px; margin-top: 50px; border-radius: 32px 32px 0 0; }
         .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 35px; margin-bottom: 30px; }
         .footer-col h4 { color: white; margin-bottom: 14px; font-size: 0.95rem; }
@@ -116,6 +104,7 @@
             .nav { flex-direction: column; }
             .nav-links { justify-content: center; }
             .card-flag i { font-size: 3rem; width: 60px; height: 60px; line-height: 60px; }
+            .tips-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
