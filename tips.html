@@ -1,213 +1,233 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>نصائح للباحثين عن عمل – دليلك للوظيفة الأحلام</title>
-    <meta name="description" content="نصائح عملية للباحثين عن عمل: كيف تكتب سيرة ذاتية، اجتياز المقابلات، التعامل مع التأشيرات، وأفضل الدول للهجرة في 2026.">
-    <meta name="keywords" content="نصائح للباحثين عن عمل, سيرة ذاتية, مقابلة عمل, تأشيرة عمل, LinkedIn, أفضل دول للهجرة">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <!-- ملف التنسيقات الرئيسي -->
-    <link rel="stylesheet" href="style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>النصائح المهنية | وظائف على مستوى العالم</title>
+    <meta name="description" content="مجموعة من النصائح المهنية القيمة للباحثين عن عمل في الخارج. نصائح للبحث عن وظائف، التأشيرات، كتابة السيرة الذاتية، والمقابلات الشخصية.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <style>
-        /* تنسيقات إضافية لصفحة النصائح (تتماشى مع تصميم الموقع) */
-        .page-header {
-            background: linear-gradient(135deg, #1e3c72, #2a4d7a);
-            color: white;
-            padding: clamp(20px, 5vw, 35px) 15px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .page-header h1 {
-            font-size: clamp(1.8rem, 5vw, 2.2rem);
-            margin-bottom: 10px;
-        }
-        .tips-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 25px;
-            margin: 30px 0;
-        }
-        .tip-card {
-            background: white;
-            border-radius: 12px;
-            padding: 25px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: inherit;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-        }
-        .tip-card:hover {
-            transform: translateY(-5px);
-            border-color: #f59e0b;
-            box-shadow: 0 10px 25px rgba(30,60,114,0.1);
-        }
-        .tip-icon {
-            width: 60px;
-            height: 60px;
-            background: #eef2ff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 15px;
-        }
-        .tip-icon i {
-            font-size: 2rem;
-            color: #1e3c72;
-        }
-        .tip-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-            color: #1e293b;
-        }
-        .tip-excerpt {
-            color: #64748b;
-            font-size: 0.9rem;
-            line-height: 1.6;
-            margin-bottom: 15px;
-            flex: 1;
-        }
-        .read-more {
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-            color: #1e3c72;
-            font-weight: 500;
-            margin-top: 5px;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #F8FAFC; color: #1E293B; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* الهيدر */
+        .header { background: #FFFFFF; border-bottom: 1px solid #E2E8F0; position: sticky; top: 0; z-index: 100; }
+        .nav { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; flex-wrap: wrap; gap: 15px; }
+        .logo { font-size: 1.3rem; font-weight: 800; background: linear-gradient(135deg, #0F172A, #1E293B); -webkit-background-clip: text; background-clip: text; color: transparent; display: flex; align-items: center; gap: 8px; }
+        .logo i { background: none; color: #3B82F6; }
+        .nav-links { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+        .nav-links a { text-decoration: none; color: #475569; font-weight: 500; font-size: 0.9rem; padding: 6px 14px; border-radius: 30px; transition: 0.2s; }
+        .nav-links a:hover { color: #3B82F6; background: #EFF6FF; }
+        .btn-nav { background: #3B82F6; color: white !important; padding: 6px 18px !important; border-radius: 30px !important; }
+        
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content { display: none; position: absolute; top: 38px; right: 0; background: white; min-width: 200px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); border-radius: 16px; overflow: hidden; z-index: 1000; border: 1px solid #E2E8F0; }
+        .dropdown-content a { display: block; padding: 10px 16px; color: #1E293B; text-decoration: none; border-bottom: 1px solid #F1F5F9; font-size: 0.85rem; }
+        .dropdown-content a:hover { background: #EFF6FF; color: #3B82F6; }
+        .dropdown:hover .dropdown-content { display: block; }
+        
+        /* القسم الرئيسي */
+        .hero { background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color: white; border-radius: 28px; padding: 50px 40px; margin: 35px 0; text-align: center; }
+        .hero h1 { font-size: 2.3rem; font-weight: 800; margin-bottom: 15px; }
+        .hero h1 span { color: #3B82F6; }
+        .hero p { font-size: 1rem; color: #CBD5E1; max-width: 600px; margin: 0 auto; }
+        
+        /* العناوين */
+        .section-title { font-size: 1.6rem; font-weight: 700; margin: 40px 0 20px; text-align: center; }
+        .section-title span { color: #3B82F6; }
+        
+        /* بطاقات النصائح */
+        .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin: 30px 0 50px; }
+        .tip-card { background: white; border-radius: 24px; overflow: hidden; transition: all 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.04); border: 1px solid #EFF3F8; text-decoration: none; display: block; }
+        .tip-card:hover { transform: translateY(-6px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.12); border-color: #DBEAFE; }
+        .tip-header { background: #F8FAFC; padding: 25px 25px 15px; text-align: center; border-bottom: 1px solid #EFF3F8; }
+        .tip-header i { font-size: 2.5rem; color: #3B82F6; margin-bottom: 15px; display: inline-block; }
+        .tip-header h3 { font-size: 1.2rem; font-weight: 700; color: #1E293B; }
+        .tip-body { padding: 20px 25px 25px; }
+        .tip-body p { color: #64748B; font-size: 0.85rem; margin-bottom: 20px; line-height: 1.6; }
+        .read-more { color: #3B82F6; font-weight: 600; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 5px; }
+        .tip-card:hover .read-more { gap: 8px; }
+        
+        /* التذييل */
+        .footer { background: #0F172A; color: #94A3B8; padding: 40px 0 20px; margin-top: 50px; border-radius: 32px 32px 0 0; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 35px; margin-bottom: 30px; }
+        .footer-col h4 { color: white; margin-bottom: 14px; font-size: 0.95rem; }
+        .footer-col a { display: block; color: #94A3B8; text-decoration: none; margin-bottom: 8px; font-size: 0.8rem; transition: 0.2s; }
+        .footer-col a:hover { color: #3B82F6; }
+        .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #1E293B; font-size: 0.75rem; }
+        
         @media (max-width: 768px) {
-            .tips-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
+            .hero h1 { font-size: 1.6rem; }
+            .hero { padding: 30px 20px; }
+            .section-title { font-size: 1.3rem; }
+            .nav { flex-direction: column; }
+            .nav-links { justify-content: center; }
+            .tips-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <!-- شريط التنقل (متطابق مع بقية الموقع) -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <a href="index.html" class="logo">
-                    <i class="fas fa-globe"></i>
-                    <span>وظائف حول العالم</span>
-                </a>
-                <ul class="nav-links">
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="countries.html">الدول</a></li>
-                    <li><a href="services.html">الخدمات</a></li>
-                    <li><a href="tips.html" class="active">نصائح</a></li>
-                    <li><a href="about.html">من نحن</a></li>
-                    <li><a href="contact.html">اتصل بنا</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- رأس الصفحة -->
-    <section class="page-header">
-        <div class="container">
-            <h1><i class="fas fa-lightbulb"></i> نصائح للباحثين عن عمل</h1>
-            <p>دليلك الشامل لتحسين فرصك في الحصول على الوظيفة التي تحلم بها</p>
-        </div>
-    </section>
-
+<div class="header">
     <div class="container">
-        <!-- شبكة النصائح -->
-        <div class="tips-grid">
-            <a href="tips/cv-tips.html" class="tip-card">
-                <div class="tip-icon"><i class="fas fa-file-alt"></i></div>
-                <h3 class="tip-title">كيف تكتب سيرة ذاتية احترافية</h3>
-                <p class="tip-excerpt">10 نصائح ذهبية لكتابة سيرة ذاتية تلفت انتباه مسؤولي التوظيف وتجتاز أنظمة ATS.</p>
-                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
-            </a>
-            
-            <a href="tips/interview-tips.html" class="tip-card">
-                <div class="tip-icon"><i class="fas fa-users"></i></div>
-                <h3 class="tip-title">كيف تجتاز مقابلة العمل بنجاح</h3>
-                <p class="tip-excerpt">أسئلة شائعة، نصائح للتحضير، وكيف تترك انطباعاً إيجابياً.</p>
-                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
-            </a>
-            
-            <a href="tips/visa-tips.html" class="tip-card">
-                <div class="tip-icon"><i class="fas fa-passport"></i></div>
-                <h3 class="tip-title">أخطاء شائعة في التقديم للتأشيرات</h3>
-                <p class="tip-excerpt">تجنب الأخطاء التي تؤدي إلى رفض طلب التأشيرة وزيادة فرص قبولك.</p>
-                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
-            </a>
-            
-            <a href="tips/linkedin-tips.html" class="tip-card">
-                <div class="tip-icon"><i class="fab fa-linkedin"></i></div>
-                <h3 class="tip-title">تطوير ملف LinkedIn لجذب الوظائف</h3>
-                <p class="tip-excerpt">كيف تجعل ملفك الشخصي يظهر أمام مسؤولي التوظيف والشركات.</p>
-                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
-            </a>
-
-            <!-- المقال: نصائح للبحث عن عمل في أمريكا -->
-            <a href="tips/usa-job-search-tips.html" class="tip-card">
-                <div class="tip-icon"><i class="fas fa-flag-usa"></i></div>
-                <h3 class="tip-title">نصائح للبحث عن عمل في أمريكا 2026</h3>
-                <p class="tip-excerpt">دليل شامل: كيف تبحث عن وظيفة في أمريكا؟ تجهيز السيرة الذاتية، المقابلات، LinkedIn، وفهم نظام التأشيرات.</p>
-                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
-            </a>
-
-            <!-- المقال الجديد: أفضل الدول التي ترحب بالمهاجرين 2026 -->
-            <a href="tips/best-countries-for-immigration-2026.html" class="tip-card">
-                <div class="tip-icon"><i class="fas fa-globe-americas"></i></div>
-                <h3 class="tip-title">أفضل الدول التي ترحب بالمهاجرين 2026</h3>
-                <p class="tip-excerpt">دليل شامل لأفضل الدول للهجرة: كندا، ألمانيا، أستراليا، نيوزيلندا، هولندا. تعرف على سياسات الهجرة والرواتب.</p>
-                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
-            </a>
-        </div>
-    </div>
-
-    <!-- تذييل الصفحة -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>وظائف حول العالم</h4>
-                    <p>منصتك الموثوقة للبحث عن فرص عمل في 53 دولة حول العالم.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>روابط سريعة</h4>
-                    <ul>
-                        <li><a href="index.html">الرئيسية</a></li>
-                        <li><a href="countries.html">الدول</a></li>
-                        <li><a href="services.html">الخدمات</a></li>
-                        <li><a href="tips.html">نصائح</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>تابعنا</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook"></i> فيسبوك</a>
-                        <a href="https://wa.me/212669411021" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+        <div class="nav">
+            <div class="logo"><i class="fas fa-globe-americas"></i> وظائف على مستوى العالم</div>
+            <div class="nav-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="services.html">الخدمات</a>
+                <a href="tips.html">نصائح</a>
+                <a href="about.html">من نحن</a>
+                <a href="contact.html">اتصل بنا</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">تصنيف الدول ▼</a>
+                    <div class="dropdown-content">
+                        <a href="countries/usa.html">🇺🇸 الولايات المتحدة</a>
+                        <a href="countries/canada.html">🇨🇦 كندا</a>
+                        <a href="countries/germany.html">🇩🇪 ألمانيا</a>
+                        <a href="countries/uk.html">🇬🇧 بريطانيا</a>
                     </div>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 وظائف حول العالم – جميع الحقوق محفوظة | آخر تحديث: مارس 2026</p>
+                <a href="services.html" class="btn-nav">📄 اطلب خدمتك</a>
             </div>
         </div>
-    </footer>
+    </div>
+</div>
 
-    <!-- كود الإعلان Social Bar -->
-    <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
+<div class="container">
+    
+    <div class="hero">
+        <h1>النصائح <span>المهنية</span></h1>
+        <p>مجموعة من النصائح القيمة لمساعدتك في رحلة البحث عن عمل في الخارج</p>
+    </div>
+
+    <div class="tips-grid">
+        
+        <!-- نصائح البحث عن وظائف في أمريكا -->
+        <a href="tips/usa-job-search-tips.html" class="tip-card">
+            <div class="tip-header">
+                <i class="fas fa-flag-usa"></i>
+                <h3>🇺🇸 نصائح البحث عن وظائف في أمريكا</h3>
+            </div>
+            <div class="tip-body">
+                <p>أفضل الاستراتيجيات للعثور على وظيفة في السوق الأمريكي، مواقع التوظيف الفعالة، وكيفية التقديم على تأشيرات H-1B.</p>
+                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+            </div>
+        </a>
+        
+        <!-- نصائح التأشيرات -->
+        <a href="tips/visa-tips.html" class="tip-card">
+            <div class="tip-header">
+                <i class="fas fa-passport"></i>
+                <h3>🛂 نصائح التأشيرات العالمية</h3>
+            </div>
+            <div class="tip-body">
+                <p>كل ما تحتاج معرفته عن تأشيرات H-1B الأمريكية، Express Entry الكندية، و Chancenkarte الألمانية.</p>
+                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+            </div>
+        </a>
+        
+        <!-- نصائح كتابة السيرة الذاتية -->
+        <a href="tips/cv-tips.html" class="tip-card">
+            <div class="tip-header">
+                <i class="fas fa-file-alt"></i>
+                <h3>📝 نصائح كتابة السيرة الذاتية</h3>
+            </div>
+            <div class="tip-body">
+                <p>كيف تكتب سيرة ذاتية احترافية بتصميم ATS تجذب انتباه مسؤولي التوظيف وتزيد فرص قبولك.</p>
+                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+            </div>
+        </a>
+        
+        <!-- نصائح المقابلات الشخصية -->
+        <a href="tips/interview-tips.html" class="tip-card">
+            <div class="tip-header">
+                <i class="fas fa-microphone"></i>
+                <h3>🎤 نصائح المقابلات الشخصية</h3>
+            </div>
+            <div class="tip-body">
+                <p>أسئلة متوقعة في المقابلات للوظائف العالمية، وكيف تجيب عليها بثقة واحترافية.</p>
+                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+            </div>
+        </a>
+        
+        <!-- نصائح LinkedIn -->
+        <a href="tips/linkedin-tips.html" class="tip-card">
+            <div class="tip-header">
+                <i class="fab fa-linkedin"></i>
+                <h3>🔗 نصائح LinkedIn الاحترافية</h3>
+            </div>
+            <div class="tip-body">
+                <p>كيف تبني ملف شخصي جذاب على LinkedIn يجذب مسؤولي التوظيف ويزيد فرص ظهورك.</p>
+                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+            </div>
+        </a>
+        
+        <!-- البحث عن وظائف عبر LinkedIn -->
+        <a href="tips/linkedin-job-search-tips.html" class="tip-card">
+            <div class="tip-header">
+                <i class="fab fa-linkedin"></i>
+                <h3>🔍 البحث عن وظائف عبر LinkedIn</h3>
+            </div>
+            <div class="tip-body">
+                <p>استراتيجيات متقدمة للعثور على وظائف باستخدام LinkedIn، والتواصل مع مسؤولي التوظيف.</p>
+                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+            </div>
+        </a>
+        
+        <!-- أفضل دول للهجرة 2026 -->
+        <a href="tips/best-countries-for-immigration-2026h...html" class="tip-card">
+            <div class="tip-header">
+                <i class="fas fa-globe-americas"></i>
+                <h3>🌍 أفضل دول للهجرة 2026</h3>
+            </div>
+            <div class="tip-body">
+                <p>مقارنة بين أفضل الدول للهجرة والعمل: أمريكا، كندا، ألمانيا، بريطانيا. المزايا والتكاليف.</p>
+                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+            </div>
+        </a>
+        
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4><i class="fas fa-globe-americas"></i> وظائف على مستوى العالم</h4>
+                <a href="index.html">الرئيسية</a>
+                <a href="services.html">خدماتنا</a>
+                <a href="tips.html">النصائح المهنية</a>
+            </div>
+            <div class="footer-col">
+                <h4>الدول</h4>
+                <a href="countries/usa.html">الولايات المتحدة</a>
+                <a href="countries/canada.html">كندا</a>
+                <a href="countries/germany.html">ألمانيا</a>
+                <a href="countries/uk.html">بريطانيا</a>
+            </div>
+            <div class="footer-col">
+                <h4>روابط مهمة</h4>
+                <a href="privacy.html">سياسة الخصوصية</a>
+                <a href="terms.html">شروط الاستخدام</a>
+                <a href="contact.html">اتصل بنا</a>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <a href="https://wa.me/212679627332" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+                <a href="mailto:info@tarik-aljanah.online"><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 </body>
 </html>
