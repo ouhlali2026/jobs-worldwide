@@ -1,295 +1,305 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خدماتنا الاحترافية - وظائف على مستوى العالم</title>
-    <meta name="description" content="خدماتنا بأسعار رمزية: تصميم سيرة ذاتية، كتابة خطابات تقديم، وتسجيل في أهم مواقع التوظيف. ابدأ رحلتك المهنية معنا.">
-    <meta name="keywords" content="خدمات توظيف, تصميم سيرة ذاتية, خطاب تقديم, تسجيل في مواقع التوظيف, استشارات مهنية">
-    <!-- Google Fonts & Font Awesome (كما هي) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>خدماتنا | وظائف على مستوى العالم</title>
+    <meta name="description" content="خدمات كتابة السيرة الذاتية PDF، خطاب التقديم، والتسجيل في مواقع التأشيرات. أسعار تنافسية، تسليم سريع، ودعم كامل.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <style>
-        /* تنسيقات خاصة بصفحة الخدمات */
-        .services-hero {
-            background: linear-gradient(135deg, #2563eb, #1d4ed8);
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-        .services-hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        .services-hero p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            padding: 60px 0;
-        }
-        .service-card {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            text-align: center;
-            border: 1px solid #e2e8f0;
-            transition: all 0.3s ease;
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-            border-color: #2563eb;
-            box-shadow: 0 10px 25px rgba(37,99,235,0.1);
-        }
-        .service-icon {
-            width: 70px;
-            height: 70px;
-            background: #eef2ff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-        }
-        .service-icon i {
-            font-size: 2rem;
-            color: #2563eb;
-        }
-        .service-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            color: #1e293b;
-        }
-        .service-card p {
-            color: #64748b;
-            margin-bottom: 15px;
-        }
-        .service-price {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #2563eb;
-            margin-bottom: 20px;
-        }
-        .service-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            width: 100%;
-            padding: 12px 20px;
-            background: #25D366;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: background 0.3s;
-        }
-        .service-btn:hover {
-            background: #128C7E;
-        }
-        .faq-section {
-            padding: 40px 0;
-            background: #f8fafc;
-        }
-        .faq-section h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 30px;
-        }
-        .faq-item {
-            background: white;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 15px;
-            border: 1px solid #e2e8f0;
-        }
-        .faq-item h4 {
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-            color: #1e293b;
-        }
-        .faq-item p {
-            color: #64748b;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #F8FAFC; color: #1E293B; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* الهيدر */
+        .header { background: #FFFFFF; border-bottom: 1px solid #E2E8F0; position: sticky; top: 0; z-index: 100; }
+        .nav { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; flex-wrap: wrap; gap: 15px; }
+        .logo { font-size: 1.3rem; font-weight: 800; background: linear-gradient(135deg, #0F172A, #1E293B); -webkit-background-clip: text; background-clip: text; color: transparent; display: flex; align-items: center; gap: 8px; }
+        .logo i { background: none; color: #3B82F6; }
+        .nav-links { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+        .nav-links a { text-decoration: none; color: #475569; font-weight: 500; font-size: 0.9rem; padding: 6px 14px; border-radius: 30px; transition: 0.2s; }
+        .nav-links a:hover { color: #3B82F6; background: #EFF6FF; }
+        .btn-nav { background: #3B82F6; color: white !important; padding: 6px 18px !important; border-radius: 30px !important; }
+        .btn-nav:hover { background: #2563EB; }
+        
+        /* القائمة المنسدلة */
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content { display: none; position: absolute; top: 38px; right: 0; background: white; min-width: 200px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); border-radius: 16px; overflow: hidden; z-index: 1000; border: 1px solid #E2E8F0; }
+        .dropdown-content a { display: block; padding: 10px 16px; color: #1E293B; text-decoration: none; border-bottom: 1px solid #F1F5F9; font-size: 0.85rem; }
+        .dropdown-content a:hover { background: #EFF6FF; color: #3B82F6; }
+        .dropdown:hover .dropdown-content { display: block; }
+        
+        /* القسم الرئيسي */
+        .hero { background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color: white; border-radius: 28px; padding: 50px 40px; margin: 35px 0; text-align: center; }
+        .hero h1 { font-size: 2.3rem; font-weight: 800; margin-bottom: 15px; }
+        .hero h1 span { color: #3B82F6; }
+        .hero p { font-size: 1rem; color: #CBD5E1; max-width: 600px; margin: 0 auto; }
+        
+        /* العناوين */
+        .section-title { font-size: 1.6rem; font-weight: 700; margin: 40px 0 20px; text-align: center; }
+        .section-title span { color: #3B82F6; }
+        
+        /* بطاقات الخدمات */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin: 40px 0; }
+        .service-card { background: white; border-radius: 28px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.04); border: 1px solid #EFF3F8; transition: all 0.3s; }
+        .service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); border-color: #DBEAFE; }
+        .service-header { background: #F8FAFC; padding: 25px 25px 15px; text-align: center; border-bottom: 1px solid #EFF3F8; }
+        .service-icon { width: 70px; height: 70px; line-height: 70px; background: #EFF6FF; border-radius: 50%; margin: 0 auto 15px; }
+        .service-icon i { font-size: 2rem; color: #3B82F6; }
+        .service-header h2 { font-size: 1.4rem; font-weight: 700; }
+        .service-price { font-size: 1.8rem; font-weight: 800; color: #3B82F6; margin: 10px 0 5px; }
+        .service-price small { font-size: 0.8rem; font-weight: 400; color: #64748B; }
+        .service-body { padding: 25px; }
+        .service-body h3 { font-size: 1rem; margin-bottom: 12px; color: #1E293B; }
+        .service-body ul { list-style: none; padding: 0; }
+        .service-body li { margin-bottom: 10px; padding-right: 20px; position: relative; font-size: 0.85rem; color: #475569; }
+        .service-body li i { color: #3B82F6; margin-left: 8px; }
+        .info-box { background: #EFF6FF; padding: 15px; border-radius: 16px; margin: 15px 0; font-size: 0.8rem; color: #1E40AF; }
+        .info-box i { margin-left: 6px; }
+        .btn-service { display: block; background: #3B82F6; color: white; text-align: center; padding: 12px; border-radius: 40px; text-decoration: none; font-weight: 600; margin-top: 20px; transition: 0.2s; }
+        .btn-service:hover { background: #2563EB; transform: scale(1.02); }
+        
+        /* معلومات العميل */
+        .info-section { background: white; border-radius: 24px; padding: 30px; margin: 40px 0; border: 1px solid #EFF3F8; }
+        .info-section h3 { font-size: 1.2rem; margin-bottom: 20px; color: #1E293B; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .info-item { background: #F8FAFC; padding: 15px; border-radius: 16px; }
+        .info-item i { color: #3B82F6; margin-left: 10px; }
+        .info-item p { font-size: 0.85rem; color: #64748B; margin-top: 8px; }
+        
+        /* التواصل */
+        .contact-box { background: linear-gradient(135deg, #0F172A, #1E293B); border-radius: 24px; padding: 35px; text-align: center; margin: 40px 0; color: white; }
+        .contact-box h3 { font-size: 1.3rem; margin-bottom: 10px; }
+        .contact-box p { margin-bottom: 20px; opacity: 0.8; }
+        .facebook-btn { background: #1877F2; color: white; padding: 12px 30px; border-radius: 40px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 10px; transition: 0.2s; }
+        .facebook-btn:hover { background: #155CBD; transform: scale(1.02); }
+        
+        /* أفكار إضافية */
+        .extra-ideas { background: #F1F5F9; border-radius: 24px; padding: 30px; margin: 40px 0; text-align: center; }
+        .extra-ideas h3 { margin-bottom: 15px; }
+        .extra-ideas ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; list-style: none; }
+        .extra-ideas li { background: white; padding: 8px 18px; border-radius: 30px; font-size: 0.85rem; color: #1E293B; }
+        .extra-ideas li i { color: #3B82F6; margin-left: 8px; }
+        
+        /* التذييل */
+        .footer { background: #0F172A; color: #94A3B8; padding: 40px 0 20px; margin-top: 50px; border-radius: 32px 32px 0 0; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 35px; margin-bottom: 30px; }
+        .footer-col h4 { color: white; margin-bottom: 14px; font-size: 0.95rem; }
+        .footer-col a { display: block; color: #94A3B8; text-decoration: none; margin-bottom: 8px; font-size: 0.8rem; transition: 0.2s; }
+        .footer-col a:hover { color: #3B82F6; }
+        .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #1E293B; font-size: 0.75rem; }
+        
         @media (max-width: 768px) {
-            .services-hero h1 {
-                font-size: 2rem;
-            }
+            .hero h1 { font-size: 1.6rem; }
+            .hero { padding: 30px 20px; }
+            .section-title { font-size: 1.3rem; }
+            .nav { flex-direction: column; }
+            .nav-links { justify-content: center; }
+            .services-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <!-- شريط التنقل (انسخه من index.html) -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <a href="index.html" class="logo">
-                    <i class="fas fa-globe"></i>
-                    <span>وظائف حول العالم</span>
-                </a>
-                <ul class="nav-links">
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="#">الدول</a></li>
-                    <li><a href="services.html" class="active">الخدمات</a></li>
-                    <li><a href="about.html">من نحن</a></li>
-                    <li><a href="contact.html">اتصل بنا</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- رأس صفحة الخدمات -->
-    <section class="services-hero">
-        <div class="container">
-            <h1>خدمات احترافية بأسعار رمزية</h1>
-            <p>نساعدك على تحسين فرصك للحصول على وظيفة أحلامك</p>
-        </div>
-    </section>
-
-    <!-- شبكة الخدمات -->
+<div class="header">
     <div class="container">
-        <div class="services-grid">
-            <!-- خدمة 1: السيرة الذاتية -->
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-file-alt"></i>
+        <div class="nav">
+            <div class="logo"><i class="fas fa-globe-americas"></i> وظائف على مستوى العالم</div>
+            <div class="nav-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="services.html">الخدمات</a>
+                <a href="tips.html">نصائح</a>
+                <a href="about.html">من نحن</a>
+                <a href="contact.html">اتصل بنا</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">تصنيف الدول ▼</a>
+                    <div class="dropdown-content">
+                        <a href="countries/usa.html">🇺🇸 الولايات المتحدة</a>
+                        <a href="countries/canada.html">🇨🇦 كندا</a>
+                        <a href="countries/germany.html">🇩🇪 ألمانيا</a>
+                        <a href="countries/uk.html">🇬🇧 بريطانيا</a>
+                    </div>
                 </div>
-                <h3>تصميم السيرة الذاتية</h3>
-                <p>سيرة ذاتية احترافية بتصميم عصري تجذب انتباه مسؤولي التوظيف وتزيد فرصك في القبول.</p>
-                <div class="service-price">$9</div>
-                <a href="https://wa.me/212669411021?text=أرغب%20في%20خدمة%20تصميم%20السيرة%20الذاتية" class="service-btn" target="_blank">
-                    <i class="fab fa-whatsapp"></i> طلب عبر واتساب
-                </a>
+                <a href="services.html" class="btn-nav">📄 اطلب خدمتك</a>
             </div>
-            <!-- خدمة 2: خطابات التقديم -->
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-envelope-open-text"></i>
-                </div>
-                <h3>كتابة خطابات التقديم</h3>
-                <p>خطاب تقديم مخصص لكل وظيفة يبرز مهاراتك وخبراتك بطريقة احترافية.</p>
-                <div class="service-price">$7</div>
-                <a href="https://wa.me/212669411021?text=أرغب%20في%20خدمة%20كتابة%20خطاب%20تقديم" class="service-btn" target="_blank">
-                    <i class="fab fa-whatsapp"></i> طلب عبر واتساب
-                </a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="hero">
+        <h1>خدماتنا <span>الاحترافية</span></h1>
+        <p>نساعدك في الحصول على وظيفة أحلامك من خلال خدماتنا المتميزة بأسعار رمزية</p>
+    </div>
+
+    <div class="services-grid">
+        
+        <!-- خدمة 1: كتابة خطاب التقديم -->
+        <div class="service-card">
+            <div class="service-header">
+                <div class="service-icon"><i class="fas fa-envelope-open-text"></i></div>
+                <h2>📝 كتابة خطاب التقديم</h2>
+                <div class="service-price">10$ <small>/ خدمة</small></div>
             </div>
-            <!-- خدمة 3: تسجيل في المواقع -->
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-user-plus"></i>
+            <div class="service-body">
+                <h3><i class="fas fa-check-circle"></i> ماذا نقدم لك؟</h3>
+                <ul>
+                    <li><i class="fas fa-angle-left"></i> خطاب تقديم مخصص لكل شركة</li>
+                    <li><i class="fas fa-angle-left"></i> موجه للشركات الأمريكية والكندية والأوروبية</li>
+                    <li><i class="fas fa-angle-left"></i> يركز على نقاط قوتك وإنجازاتك</li>
+                    <li><i class="fas fa-angle-left"></i> تسليم خلال 24 ساعة</li>
+                    <li><i class="fas fa-angle-left"></i> تعديلات مجانية</li>
+                </ul>
+                <div class="info-box">
+                    <i class="fas fa-info-circle"></i> سيتم إرسال الخطاب بصيغة PDF و Word
                 </div>
-                <h3>تسجيل في مواقع التوظيف</h3>
-                <p>نساعدك في إنشاء حساباتك على LinkedIn وبيت.كوم وغيرها، وتجهيز ملفك الشخصي بشكل متكامل.</p>
-                <div class="service-price">$10</div>
-                <a href="https://wa.me/212669411021?text=أرغب%20في%20خدمة%20تسجيل%20الزوار%20في%20المواقع" class="service-btn" target="_blank">
-                    <i class="fab fa-whatsapp"></i> طلب عبر واتساب
-                </a>
+                <a href="https://www.facebook.com/share/18bYjHM9i6/" target="_blank" class="btn-service"><i class="fab fa-facebook-messenger"></i> اطلب الخدمة عبر فيسبوك</a>
+            </div>
+        </div>
+
+        <!-- خدمة 2: إنشاء السيرة الذاتية PDF -->
+        <div class="service-card">
+            <div class="service-header">
+                <div class="service-icon"><i class="fas fa-file-alt"></i></div>
+                <h2>📄 سيرة ذاتية احترافية PDF</h2>
+                <div class="service-price">15$ <small>/ خدمة</small></div>
+            </div>
+            <div class="service-body">
+                <h3><i class="fas fa-check-circle"></i> ماذا نقدم لك؟</h3>
+                <ul>
+                    <li><i class="fas fa-angle-left"></i> تصميم ATS متوافق مع أنظمة التوظيف</li>
+                    <li><i class="fas fa-angle-left"></i> تنسيق عصري وجذاب على صفحتين</li>
+                    <li><i class="fas fa-angle-left"></i> تحسين الكلمات المفتاحية للمسمى الوظيفي</li>
+                    <li><i class="fas fa-angle-left"></i> تسليم بصيغة PDF + Word قابل للتعديل</li>
+                    <li><i class="fas fa-angle-left"></i> مراجعة لغوية شاملة</li>
+                </ul>
+                <div class="info-box">
+                    <i class="fas fa-info-circle"></i> سترسل السيرة الذاتية جاهزة للطباعة والتقديم
+                </div>
+                <a href="https://www.facebook.com/share/18bYjHM9i6/" target="_blank" class="btn-service"><i class="fab fa-facebook-messenger"></i> اطلب الخدمة عبر فيسبوك</a>
+            </div>
+        </div>
+
+        <!-- خدمة 3: التسجيل في مواقع التأشيرات -->
+        <div class="service-card">
+            <div class="service-header">
+                <div class="service-icon"><i class="fas fa-passport"></i></div>
+                <h2>🌍 التسجيل في مواقع التأشيرات</h2>
+                <div class="service-price">20$ <small>/ خدمة</small></div>
+            </div>
+            <div class="service-body">
+                <h3><i class="fas fa-check-circle"></i> ماذا نقدم لك؟</h3>
+                <ul>
+                    <li><i class="fas fa-angle-left"></i> إنشاء حساب على USAJobs (الوظائف الحكومية الأمريكية)</li>
+                    <li><i class="fas fa-angle-left"></i> إنشاء حساب على Job Bank كندا</li>
+                    <li><i class="fas fa-angle-left"></i> إنشاء حساب على Make it in Germany</li>
+                    <li><i class="fas fa-angle-left"></i> إنشاء حساب على Indeed و LinkedIn</li>
+                    <li><i class="fas fa-angle-left"></i> إرشادات خطوة بخطوة للتقديم على التأشيرات</li>
+                </ul>
+                <div class="info-box">
+                    <i class="fas fa-info-circle"></i> ستتلقى بيانات الدخول إلى جميع الحسابات مع شرح استخدام كل موقع
+                </div>
+                <a href="https://www.facebook.com/share/18bYjHM9i6/" target="_blank" class="btn-service"><i class="fab fa-facebook-messenger"></i> اطلب الخدمة عبر فيسبوك</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- معلومات المطلوبة من العميل -->
+    <div class="info-section">
+        <h3><i class="fas fa-clipboard-list"></i> المعلومات التي سيطلبها منك قبل بدء الخدمة</h3>
+        <div class="info-grid">
+            <div class="info-item">
+                <i class="fas fa-user"></i> <strong>الاسم الكامل</strong>
+                <p>ثلاثي أو رباعي للاستخدام الرسمي</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i> <strong>البريد الإلكتروني</strong>
+                <p>لإرسال الملفات النهائية</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-briefcase"></i> <strong>الوظيفة المستهدفة</strong>
+                <p>المسمى الوظيفي الذي تسعى إليه</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-history"></i> <strong>الخبرات السابقة</strong>
+                <p>الشركات والمسميات الوظيفية السابقة</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-graduation-cap"></i> <strong>المؤهلات العلمية</strong>
+                <p>الشهادات والدورات التدريبية</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-language"></i> <strong>اللغات والمهارات</strong>
+                <p>المستوى واللغات التي تتقنها</p>
             </div>
         </div>
     </div>
 
-    <!-- قسم الأسئلة الشائعة (لزيادة الثقة) -->
-    <section class="faq-section">
-        <div class="container">
-            <h2>أسئلة شائعة</h2>
-            <div class="faq-item">
-                <h4>كيف يتم تسليم الخدمة؟</h4>
-                <p>بعد الدفع عبر واتساب، نتواصل معك لجمع المعلومات اللازمة، ويتم تسليم الخدمة خلال 24 ساعة عبر البريد الإلكتروني أو واتساب.</p>
+    <!-- أفكار إضافية مقترحة -->
+    <div class="extra-ideas">
+        <h3><i class="fas fa-lightbulb"></i> أفكار إضافية يمكنك إضافتها مستقبلاً</h3>
+        <ul>
+            <li><i class="fas fa-chalkboard-user"></i> التحضير للمقابلات الشخصية</li>
+            <li><i class="fas fa-file-signature"></i> ترجمة السيرة الذاتية للإنجليزية</li>
+            <li><i class="fas fa-chart-line"></i> تحسين ملف LinkedIn</li>
+            <li><i class="fas fa-search"></i> البحث عن وظائف مناسبة</li>
+            <li><i class="fas fa-clock"></i> خدمة الطوارئ (تسليم خلال 6 ساعات)</li>
+            <li><i class="fas fa-handshake"></i> باقة شاملة (CV + Cover Letter + التسجيل)</li>
+        </ul>
+        <p style="margin-top: 15px; font-size: 0.8rem; color: #64748B;">💡 هل لديك فكرة أخرى؟ أخبرني لأضيفها لك</p>
+    </div>
+
+    <!-- قسم التواصل -->
+    <div class="contact-box">
+        <h3><i class="fab fa-facebook"></i> تواصل معي مباشرة</h3>
+        <p>للطلب أو الاستفسار، راسلني على فيسبوك وسأرد عليك خلال ساعات</p>
+        <a href="https://www.facebook.com/share/18bYjHM9i6/" target="_blank" class="facebook-btn">
+            <i class="fab fa-facebook"></i> راسلنا على فيسبوك
+        </a>
+        <p style="margin-top: 15px; font-size: 0.7rem;">⏰ الرد خلال 24 ساعة</p>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4><i class="fas fa-globe-americas"></i> وظائف على مستوى العالم</h4>
+                <a href="index.html">الرئيسية</a>
+                <a href="services.html">خدماتنا</a>
+                <a href="tips.html">النصائح المهنية</a>
             </div>
-            <div class="faq-item">
-                <h4>هل هناك تعديلات مجانية؟</h4>
-                <p>نعم، نقدم تعديلاً واحداً مجانياً لضمان رضاك التام عن الخدمة.</p>
+            <div class="footer-col">
+                <h4>الدول</h4>
+                <a href="countries/usa.html">الولايات المتحدة</a>
+                <a href="countries/canada.html">كندا</a>
+                <a href="countries/germany.html">ألمانيا</a>
+                <a href="countries/uk.html">بريطانيا</a>
             </div>
-            <div class="faq-item">
-                <h4>هل هذه الخدمات متاحة لجميع الدول؟</h4>
-                <p>بالتأكيد، خدماتنا متاحة لأي باحث عن عمل من أي دولة عربية. يمكنك طلب الخدمة ونحن ننفذها لك.</p>
+            <div class="footer-col">
+                <h4>روابط مهمة</h4>
+                <a href="privacy.html">سياسة الخصوصية</a>
+                <a href="terms.html">الشروط والأحكام</a>
+                <a href="contact.html">اتصل بنا</a>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <a href="https://www.facebook.com/share/18bYjHM9i6/" target="_blank"><i class="fab fa-facebook"></i> فيسبوك</a>
+                <a href="mailto:info@tarik-aljanah.online"><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
             </div>
         </div>
-    </section>
-
-    <!-- تذييل الصفحة (انسخه من index.html) -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>وظائف حول العالم</h4>
-                    <p>منصتك الموثوقة للبحث عن فرص عمل في مختلف دول العالم</p>
-                </div>
-                <div class="footer-section">
-                    <h4>روابط سريعة</h4>
-                    <ul>
-                        <li><a href="index.html">الرئيسية</a></li>
-                        <li><a href="#">الدول</a></li>
-                        <li><a href="services.html">الخدمات</a></li>
-                        <li><a href="about.html">من نحن</a></li>
-                        <li><a href="contact.html">اتصل بنا</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>الدول</h4>
-                    <ul>
-                        <li><a href="canada.html">كندا</a></li>
-                        <li><a href="germany.html">ألمانيا</a></li>
-                        <li><a href="uae.html">الإمارات</a></li>
-                        <li><a href="australia.html">أستراليا</a></li>
-                        <li><a href="saudi.html">السعودية</a></li>
-                        <li><a href="usa.html">أمريكا</a></li>
-                        <li><a href="france.html">فرنسا</a></li>
-                        <li><a href="spain.html">إسبانيا</a></li>
-                        <li><a href="netherlands.html">هولندا</a></li>
-                        <li><a href="belgium.html">بلجيكا</a></li>
-                        <li><a href="qatar.html">قطر</a></li>
-                        <li><a href="japan.html">اليابان</a></li>
-                        <li><a href="uk.html">بريطانيا</a></li>
-                        <li><a href="kuwait.html">الكويت</a></li>
-                        <li><a href="italy.html">إيطاليا</a></li>
-                        <li><a href="switzerland.html">سويسرا</a></li>
-                        <li><a href="austria.html">النمسا</a></li>
-                        <li><a href="norway.html">النرويج</a></li>
-                        <li><a href="denmark.html">الدنمارك</a></li>
-                        <li><a href="sweden.html">السويد</a></li>
-                        <li><a href="finland.html">فنلندا</a></li>
-                        <li><a href="ireland.html">أيرلندا</a></li>
-                        <li><a href="portugal.html">البرتغال</a></li>
-                        <li><a href="bahrain.html">البحرين</a></li>
-                        <li><a href="oman.html">عمان</a></li>
-                        <li><a href="egypt.html">مصر</a></li>
-                        <li><a href="malaysia.html">ماليزيا</a></li>
-                        <li><a href="china.html">الصين</a></li>
-                        <li><a href="singapore.html">سنغافورة</a></li>
-                        <li><a href="newzealand.html">نيوزيلندا</a></li>
-                        <li><a href="turkey.html">تركيا</a></li>
-                        <li><a href="southkorea.html">كوريا الجنوبية</a></li>
-                        <li><a href="argentina.html">الأرجنتين</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>سياسة الموقع</h4>
-                    <ul>
-                        <li><a href="privacy.html">سياسة الخصوصية</a></li>
-                        <li><a href="terms.html">اتفاقية الاستخدام</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>تابعنا</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook"></i> فيسبوك</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة</p>
-            </div>
+        <div class="footer-bottom">
+            <p>© 2026 وظائف على مستوى العالم – جميع الخدمات مقدمة بدقة واحترافية</p>
+            <p style="margin-top: 6px; font-size: 0.7rem;">🔒 نضمن جودة العمل والتسليم في الوقت المحدد</p>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- كود الإعلان Social Bar -->
-    <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
+<script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 </body>
 </html>
