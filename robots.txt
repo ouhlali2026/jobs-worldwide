@@ -1,6 +1,3 @@
-# روبوتس لموقع وظائف على مستوى العالم - 27 أبريل 2026
 User-agent: *
 Allow: /
-
-# خريطة الموقع الرئيسية (توجه لملف الفهرس)
 Sitemap: https://jobs-worldwide.for-us.workers.dev/sitemap.xml
