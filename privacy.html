@@ -1,224 +1,189 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سياسة الخصوصية - وظائف على مستوى العالم</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>سياسة الخصوصية | وظائف على مستوى العالم</title>
+    <meta name="description" content="سياسة الخصوصية لموقع وظائف على مستوى العالم. نوضح كيفية جمع واستخدام بياناتك، وكيفية عمل الإعلانات على موقعنا.">
     
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- ملف التنسيقات الرئيسي (نفسه) -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
-        /* تنسيقات إضافية لصفحة السياسة فقط */
-        .privacy-content {
-            background: white;
-            border-radius: 12px;
-            padding: 40px;
-            margin: 40px 0;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            border: 1px solid #e2e8f0;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #F8FAFC; color: #1E293B; line-height: 1.7; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
         
-        .privacy-content h2 {
-            font-size: 1.5rem;
-            color: #1e293b;
-            margin: 30px 0 15px;
-        }
+        /* الهيدر */
+        .header { background: #FFFFFF; border-bottom: 1px solid #E2E8F0; position: sticky; top: 0; z-index: 100; }
+        .nav { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; flex-wrap: wrap; gap: 15px; }
+        .logo { font-size: 1.3rem; font-weight: 800; background: linear-gradient(135deg, #0F172A, #1E293B); -webkit-background-clip: text; background-clip: text; color: transparent; display: flex; align-items: center; gap: 8px; }
+        .logo i { background: none; color: #3B82F6; }
+        .nav-links { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+        .nav-links a { text-decoration: none; color: #475569; font-weight: 500; font-size: 0.9rem; padding: 6px 14px; border-radius: 30px; transition: 0.2s; }
+        .nav-links a:hover { color: #3B82F6; background: #EFF6FF; }
+        .btn-nav { background: #3B82F6; color: white !important; padding: 6px 18px !important; border-radius: 30px !important; }
         
-        .privacy-content h2:first-of-type {
-            margin-top: 0;
-        }
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content { display: none; position: absolute; top: 38px; right: 0; background: white; min-width: 200px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); border-radius: 16px; overflow: hidden; z-index: 1000; border: 1px solid #E2E8F0; }
+        .dropdown-content a { display: block; padding: 10px 16px; color: #1E293B; text-decoration: none; border-bottom: 1px solid #F1F5F9; font-size: 0.85rem; }
+        .dropdown-content a:hover { background: #EFF6FF; color: #3B82F6; }
+        .dropdown:hover .dropdown-content { display: block; }
         
-        .privacy-content h3 {
-            font-size: 1.2rem;
-            color: #334155;
-            margin: 20px 0 10px;
-        }
+        /* محتوى السياسة */
+        .privacy-content { background: white; border-radius: 28px; padding: 45px; margin: 40px 0; border: 1px solid #EFF3F8; box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
+        .privacy-content h1 { font-size: 2rem; margin-bottom: 20px; color: #0F172A; }
+        .privacy-content h1 span { color: #3B82F6; }
+        .privacy-content h2 { font-size: 1.3rem; margin: 30px 0 15px; color: #1E293B; padding-bottom: 8px; border-bottom: 2px solid #EFF6FF; }
+        .privacy-content h3 { font-size: 1.1rem; margin: 20px 0 10px; color: #3B82F6; }
+        .privacy-content p { margin-bottom: 15px; color: #475569; }
+        .privacy-content ul { margin: 15px 0 15px 25px; color: #475569; }
+        .privacy-content li { margin-bottom: 8px; }
+        .privacy-content a { color: #3B82F6; text-decoration: none; }
+        .privacy-content a:hover { text-decoration: underline; }
+        .update-date { margin-top: 30px; padding-top: 20px; border-top: 1px solid #EFF3F8; font-size: 0.8rem; color: #64748B; text-align: center; }
         
-        .privacy-content p {
-            color: #475569;
-            margin-bottom: 15px;
-            line-height: 1.8;
-        }
+        /* تذييل */
+        .footer { background: #0F172A; color: #94A3B8; padding: 40px 0 20px; margin-top: 50px; border-radius: 32px 32px 0 0; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 35px; margin-bottom: 30px; }
+        .footer-col h4 { color: white; margin-bottom: 14px; font-size: 0.95rem; }
+        .footer-col a { display: block; color: #94A3B8; text-decoration: none; margin-bottom: 8px; font-size: 0.8rem; transition: 0.2s; }
+        .footer-col a:hover { color: #3B82F6; }
+        .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #1E293B; font-size: 0.75rem; }
         
-        .privacy-content ul {
-            margin: 15px 0 20px;
-            padding-right: 25px;
-        }
-        
-        .privacy-content li {
-            color: #475569;
-            margin-bottom: 8px;
-        }
-        
-        .page-header {
-            background: linear-gradient(135deg, #2563eb, #1d4ed8);
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-        
-        .page-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        
-        .page-header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: #2563eb;
-            text-decoration: none;
-            margin-bottom: 20px;
-            font-weight: 500;
-        }
-        
-        .back-link:hover {
-            color: #1d4ed8;
+        @media (max-width: 768px) {
+            .privacy-content { padding: 25px; }
+            .privacy-content h1 { font-size: 1.5rem; }
+            .nav { flex-direction: column; }
+            .nav-links { justify-content: center; }
         }
     </style>
-    <!-- Vercel Web Analytics -->
-    <script>
-      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
-    <!-- شريط التنقل (مطابق للصفحة الرئيسية) -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <a href="index.html" class="logo">
-                    <i class="fas fa-globe"></i>
-                    <span>وظائف حول العالم</span>
-                </a>
-                
-                <ul class="nav-links">
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="#">الدول</a></li>
-                    <li><a href="services.html">الخدمات</a></li>
-                    <li><a href="#">من نحن</a></li>
-                    <li><a href="#">اتصل بنا</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- رأس صفحة السياسة -->
-    <section class="page-header">
-        <div class="container">
-            <h1>سياسة الخصوصية</h1>
-            <p>كيف نحمي معلوماتك ونتعامل مع بياناتك</p>
-        </div>
-    </section>
-
-    <!-- محتوى الصفحة -->
+<div class="header">
     <div class="container">
-        <a href="index.html" class="back-link">
-            <i class="fas fa-arrow-right"></i> العودة للرئيسية
-        </a>
-        
-        <div class="privacy-content">
-            <p>آخر تحديث: 1 مارس 2026</p>
-            
-            <h2>١. المقدمة</h2>
-            <p>نحن في <strong>وظائف على مستوى العالم</strong> نلتزم بحماية خصوصيتك وبياناتك الشخصية. توضح سياسة الخصوصية هذه كيفية جمع واستخدام وحماية معلوماتك عند استخدام موقعنا.</p>
-            
-            <h2>٢. المعلومات التي نجمعها</h2>
-            <p>قد نجمع المعلومات التالية:</p>
-            <ul>
-                <li>الاسم والبريد الإلكتروني عند التواصل معنا</li>
-                <li>المعلومات التي ترسلها عبر نماذج الاتصال</li>
-                <li>بيانات الاستخدام مثل الصفحات التي تزورها</li>
-                <li>عنوان IP ونوع المتصفح</li>
-            </ul>
-            
-            <h2>٣. كيفية استخدام معلوماتك</h2>
-            <p>نستخدم المعلومات التي نجمعها للأغراض التالية:</p>
-            <ul>
-                <li>تحسين وتطوير الموقع</li>
-                <li>الرد على استفساراتك</li>
-                <li>إرسال تحديثات مهمة (بموافقتك)</li>
-                <li>تحليل كيفية استخدام الزوار للموقع</li>
-            </ul>
-            
-            <h2>٤. ملفات تعريف الارتباط (الكوكيز)</h2>
-            <p>يستخدم موقعنا ملفات تعريف الارتباط لتحسين تجربتك. ملفات تعريف الارتباط هي ملفات نصية صغيرة يتم تخزينها على جهازك. يمكنك التحكم في ملفات تعريف الارتباط من خلال إعدادات المتصفح الخاص بك.</p>
-            
-            <h2>٥. حقوقك</h2>
-            <p>لديك الحق في:</p>
-            <ul>
-                <li>طلب نسخة من البيانات التي نحتفظ بها عنك</li>
-                <li>طلب تصحيح أو حذف بياناتك</li>
-                <li>الاعتراض على معالجة بياناتك</li>
-                <li>سحب موافقتك في أي وقت</li>
-            </ul>
-            
-            <h2>٦. روابط خارجية</h2>
-            <p>قد يحتوي موقعنا على روابط لمواقع خارجية. نحن غير مسؤولين عن ممارسات الخصوصية لتلك المواقع، لذا ننصحك بمراجعة سياسات الخصوصية الخاصة بها.</p>
-            
-            <h2>٧. حماية البيانات</h2>
-            <p>نتخذ إجراءات أمنية مناسبة لحماية بياناتك من الوصول غير المصرح به أو التعديل أو الإفشاء.</p>
-            
-            <h2>٨. التغييرات على سياسة الخصوصية</h2>
-            <p>قد نقوم بتحديث هذه السياسة من وقت لآخر. سنقوم بإشعارك بأي تغييرات عبر إشعار على الموقع.</p>
-            
-            <h2>٩. الاتصال بنا</h2>
-            <p>إذا كان لديك أي أسئلة حول سياسة الخصوصية، يرجى التواصل معنا عبر صفحة <a href="contact.html">اتصل بنا</a>.</p>
-            
-            <p>باستخدامك لهذا الموقع، فإنك توافق على سياسة الخصوصية هذه.</p>
+        <div class="nav">
+            <div class="logo"><i class="fas fa-globe-americas"></i> وظائف على مستوى العالم</div>
+            <div class="nav-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="services.html">الخدمات</a>
+                <a href="tips.html">نصائح</a>
+                <a href="about.html">من نحن</a>
+                <a href="contact.html">اتصل بنا</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">تصنيف الدول ▼</a>
+                    <div class="dropdown-content">
+                        <a href="countries/usa.html">🇺🇸 الولايات المتحدة</a>
+                        <a href="countries/canada.html">🇨🇦 كندا</a>
+                        <a href="countries/germany.html">🇩🇪 ألمانيا</a>
+                        <a href="countries/uk.html">🇬🇧 بريطانيا</a>
+                    </div>
+                </div>
+                <a href="services.html" class="btn-nav">📄 اطلب خدمتك</a>
+            </div>
         </div>
     </div>
+</div>
 
-    <!-- تذييل الصفحة (مطابق للصفحة الرئيسية) -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>وظائف حول العالم</h4>
-                    <p>منصتك للبحث عن فرص عمل في مختلف دول العالم</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>روابط سريعة</h4>
-                    <ul>
-                        <li><a href="index.html">الرئيسية</a></li>
-                        <li><a href="#">الدول</a></li>
-                        <li><a href="services.html">الخدمات</a></li>
-                        <li><a href="#">اتصل بنا</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>الدول</h4>
-                    <ul>
-                        <li><a href="#">كندا</a></li>
-                        <li><a href="#">ألمانيا</a></li>
-                        <li><a href="#">الإمارات</a></li>
-                        <li><a href="#">أمريكا</a></li>
-                    </ul>
-                </div>
+<div class="container">
+    <div class="privacy-content">
+        <h1>سياسة <span>الخصوصية</span></h1>
+        
+        <p>نرحب بك في موقع <strong>وظائف على مستوى العالم</strong>. خصوصيتك مهمة بالنسبة لنا، ونحن ملتزمون بحماية بياناتك الشخصية. توضح سياسة الخصوصية هذه كيفية جمع واستخدام وحماية معلوماتك عند زيارة موقعنا.</p>
+
+        <h2>📌 المعلومات التي نجمعها</h2>
+        <p>قد نجمع الأنواع التالية من المعلومات:</p>
+        <ul>
+            <li><strong>معلومات غير شخصية:</strong> مثل عنوان IP، نوع المتصفح، نظام التشغيل، الصفحات التي تزورها، الوقت والتاريخ، ومدة الزيارة.</li>
+            <li><strong>معلومات تقنية:</strong> بيانات ملفات تعريف الارتباط (Cookies) المستخدمة لتحسين تجربة التصفح وتحليل الأداء.</li>
+            <li><strong>معلومات الاتصال:</strong> عندما تتواصل معنا عبر واتساب أو البريد الإلكتروني، قد نحتفظ بسجل التواصل لتقديم الدعم اللازم.</li>
+        </ul>
+
+        <h2>🍪 ملفات تعريف الارتباط (Cookies)</h2>
+        <p>نحن نستخدم ملفات تعريف الارتباط لتحسين تجربتك على موقعنا. تشمل أنواع ملفات تعريف الارتباط التي نستخدمها:</p>
+        <ul>
+            <li><strong>ملفات ضرورية:</strong> لتشغيل الموقع بشكل صحيح.</li>
+            <li><strong>ملفات الأداء والتحليلات:</strong> لفهم كيفية استخدام الزوار لموقعنا وتحسين المحتوى.</li>
+            <li><strong>ملفات إعلانية:</strong> لعرض إعلانات مخصصة بناءً على اهتماماتك.</li>
+        </ul>
+        <p>يمكنك تعطيل ملفات تعريف الارتباط من خلال إعدادات المتصفح الخاص بك، لكن قد يؤثر ذلك على بعض وظائف الموقع.</p>
+
+        <h2>📢 الإعلانات وشركاء الإعلان</h2>
+        <p>نحن نعرض إعلانات على موقعنا لتحقيق عائد مادي يساعدنا في الاستمرار وتقديم محتوى مجاني. نستخدم شبكات إعلانية مثل <strong>Google AdSense</strong> وغيرها من الشبكات الموثوقة. قد تستخدم هذه الشبكات ملفات تعريف الارتباط لعرض إعلانات مخصصة بناءً على زياراتك السابقة لموقعنا أو مواقع أخرى.</p>
+        
+        <h3>إعلانات Google AdSense</h3>
+        <p>يستخدم Google AdSense ملفات تعريف الارتباط لعرض إعلانات بناءً على اهتماماتك. يمكنك معرفة المزيد حول كيفية استخدام Google للبيانات من خلال زيارة:</p>
+        <ul>
+            <li><a href="https://policies.google.com/technologies/ads" target="_blank">سياسة Google للإعلانات</a></li>
+            <li><a href="https://adssettings.google.com" target="_blank">إعدادات الإعلانات من Google</a></li>
+        </ul>
+        
+        <h3>إعلانات الطرف الثالث</h3>
+        <p>قد يستخدم معلنون آخرون ملفات تعريف الارتباط وإشارات الويب لتتبع نشاطك وعرض إعلانات ذات صلة. نحن لا نتحكم في هذه التقنيات أو المعلومات التي يجمعونها.</p>
+
+        <h2>🔒 كيفية حماية معلوماتك</h2>
+        <p>نحن نتخذ تدابير أمنية معقولة لحماية معلوماتك من الوصول غير المصرح به أو التعديل أو الإفصاح أو التدمير. ومع ذلك، لا يمكننا ضمان الأمان الكامل للبيانات المرسلة عبر الإنترنت.</p>
+
+        <h2>📧 الروابط إلى مواقع خارجية</h2>
+        <p>قد يحتوي موقعنا على روابط إلى مواقع خارجية (مثل مواقع الهجرة والتوظيف الرسمية). نحن لسنا مسؤولين عن ممارسات الخصوصية لتلك المواقع. ننصحك بمراجعة سياسات الخصوصية الخاصة بهم.</p>
+
+        <h2>👶 خصوصية الأطفال</h2>
+        <p>موقعنا لا يستهدف الأطفال دون سن 13 عامًا. نحن لا نجمع عمدًا أي معلومات شخصية من الأطفال. إذا اكتشفنا أننا جمعنا معلومات من طفل دون سن 13، فسنتخذ خطوات لحذف هذه المعلومات فورًا.</p>
+
+        <h2>✍️ موافقتك</h2>
+        <p>باستخدام موقعنا، فإنك توافق على سياسة الخصوصية هذه وعلى جمع واستخدام معلوماتك كما هو موضح أعلاه.</p>
+
+        <h2>🔄 التحديثات على سياسة الخصوصية</h2>
+        <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. سيتم نشر أي تغييرات على هذه الصفحة مع تحديث تاريخ "آخر تحديث". ننصحك بمراجعة هذه الصفحة دوريًا للاطلاع على أي تغييرات.</p>
+
+        <h2>📞 اتصل بنا</h2>
+        <p>إذا كان لديك أي أسئلة أو استفسارات حول سياسة الخصوصية هذه، يمكنك التواصل معنا عبر:</p>
+        <ul>
+            <li><i class="fab fa-whatsapp"></i> واتساب: <a href="https://wa.me/212679627332" target="_blank">+212 679 627 332</a></li>
+            <li><i class="fas fa-envelope"></i> البريد الإلكتروني: <a href="mailto:info@tarik-aljanah.online">info@tarik-aljanah.online</a></li>
+        </ul>
+
+        <div class="update-date">
+            <i class="far fa-calendar-alt"></i> آخر تحديث: 27 أبريل 2026
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4><i class="fas fa-globe-americas"></i> وظائف على مستوى العالم</h4>
+                <a href="index.html">الرئيسية</a>
+                <a href="services.html">خدماتنا</a>
+                <a href="tips.html">النصائح المهنية</a>
             </div>
-            
-            <div class="footer-bottom">
-                <p>© 2026 وظائف على مستوى العالم</p>
+            <div class="footer-col">
+                <h4>الدول</h4>
+                <a href="countries/usa.html">الولايات المتحدة</a>
+                <a href="countries/canada.html">كندا</a>
+                <a href="countries/germany.html">ألمانيا</a>
+                <a href="countries/uk.html">بريطانيا</a>
+            </div>
+            <div class="footer-col">
+                <h4>روابط مهمة</h4>
+                <a href="privacy.html">سياسة الخصوصية</a>
+                <a href="terms.html">الشروط والأحكام</a>
+                <a href="contact.html">اتصل بنا</a>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <a href="https://wa.me/212679627332" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+                <a href="mailto:info@tarik-aljanah.online"><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
             </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة</p>
+        </div>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+<script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 </body>
 </html>
