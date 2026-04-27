@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>https://jobs-worldwide.for-us.workers.dev/sitemap-pages.xml</loc>
-    <lastmod>2026-04-27</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://jobs-worldwide.for-us.workers.dev/sitemap-countries.xml</loc>
-    <lastmod>2026-04-27</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://jobs-worldwide.for-us.workers.dev/sitemap-tips.xml</loc>
-    <lastmod>2026-04-27</lastmod>
-  </sitemap>
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://jobs-worldwide.for-us.workers.dev/</loc></url>
+  <url><loc>https://jobs-worldwide.for-us.workers.dev/services.html</loc></url>
+  <url><loc>https://jobs-worldwide.for-us.workers.dev/tips.html</loc></url>
+  <url><loc>https://jobs-worldwide.for-us.workers.dev/about.html</loc></url>
+  <url><loc>https://jobs-worldwide.for-us.workers.dev/contact.html</loc></url>
+  <url><loc>https://jobs-worldwide.for-us.workers.dev/privacy.html</loc></url>
+  <url><loc>https://jobs-worldwide.for-us.workers.dev/terms.html</loc></url>
+  <url><loc>https://jobs-worldwide.for-us.workers.dev/countries/usa.html</loc></url>
+  <url><loc>https://jobs-worldwide.for-us.workers.dev/countries/canada.html</loc></url>
+  <url><loc>https://jobs-worldwide.for-us.workers.dev/countries/germany.html</loc></url>
+  <url><loc>https://jobs-worldwide.for-us.workers.dev/countries/uk.html</loc></url>
+  <url><loc>https://jobs-worldwide.for-us.workers.dev/tips/usa-job-search-tips.html</loc></url>
+  <url><loc>https://jobs-worldwide.for-us.workers.dev/tips/visa-tips.html</loc></url>
+  <url><loc>https://jobs-worldwide.for-us.workers.dev/tips/cv-tips.html</loc></url>
+  <url><loc>https://jobs-worldwide.for-us.workers.dev/tips/interview-tips.html</loc></url>
+  <url><loc>https://jobs-worldwide.for-us.workers.dev/tips/linkedin-tips.html</loc></url>
+  <url><loc>https://jobs-worldwide.for-us.workers.dev/tips/linkedin-job-search-tips.html</loc></url>
+  <url><loc>https://jobs-worldwide.for-us.workers.dev/tips/best-countries-for-immigration-2026h...html</loc></url>
+</urlset>
