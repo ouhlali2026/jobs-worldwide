@@ -1,400 +1,258 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>أفضل الدول التي تطالب بالمهاجرين 2026 | دليل الهجرة والعمل</title>
-    <meta name="description" content="قائمة بأفضل الدول التي تبحث عن مهاجرين في 2026: كندا، ألمانيا، أستراليا، نيوزيلندا، هولندا. تعرف على برامج الهجرة والرواتب وتكاليف المعيشة.">
-    <meta name="keywords" content="الدول التي تطالب بالمهاجرين, الهجرة إلى كندا, الهجرة إلى ألمانيا, دول تحتاج عمالة, الهجرة 2026">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <!-- ملف التنسيقات الرئيسي -->
-    <link rel="stylesheet" href="../style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>أفضل دول للهجرة 2026 | وظائف على مستوى العالم</title>
+    <meta name="description" content="تعرف على أفضل 10 دول للهجرة والعمل في 2026: أمريكا، كندا، ألمانيا، بريطانيا، أستراليا، والسويد. مقارنة شاملة للتأشيرات والرواتب.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <style>
-        /* تنسيقات إضافية – نفس أسلوب صفحات النصائح السابقة */
-        .tip-article {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 30px;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        .tip-article h1 {
-            font-size: 2rem;
-            color: #1e3c72;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #f59e0b;
-            padding-bottom: 10px;
-        }
-        .tip-article h2 {
-            font-size: 1.5rem;
-            color: #1e3c72;
-            margin: 30px 0 15px;
-            padding-right: 12px;
-            border-right: 4px solid #f59e0b;
-        }
-        .tip-article h3 {
-            font-size: 1.2rem;
-            color: #2d3748;
-            margin: 20px 0 10px;
-        }
-        .tip-article p {
-            line-height: 1.8;
-            margin-bottom: 20px;
-            color: #334155;
-        }
-        .tip-article ul, .tip-article ol {
-            margin-right: 20px;
-            margin-bottom: 20px;
-        }
-        .tip-article li {
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-        .tip-article .highlight {
-            background: #fef9e7;
-            border-right: 4px solid #f59e0b;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-        .country-card-mini {
-            background: white;
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px 0;
-            transition: all 0.3s ease;
-        }
-        .country-card-mini:hover {
-            border-color: #f59e0b;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        .country-header-mini {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 12px;
-        }
-        .country-flag {
-            font-size: 2.2rem;
-        }
-        .country-name-mini {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #1e3c72;
-        }
-        .country-stats {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin: 15px 0;
-        }
-        .stat-badge {
-            background: #f1f5f9;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-        }
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 25px 0;
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-        }
-        .comparison-table th {
-            background: #1e3c72;
-            color: white;
-            padding: 12px;
-            text-align: right;
-        }
-        .comparison-table td {
-            padding: 10px;
-            border-bottom: 1px solid #e2e8f0;
-        }
-        .related-links {
-            margin: 40px 0;
-            padding: 20px;
-            background: #f8fafc;
-            border-radius: 12px;
-        }
-        .related-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-        .related-grid a {
-            background: white;
-            padding: 10px 15px;
-            border-radius: 8px;
-            color: #1e3c72;
-            text-decoration: none;
-            border: 1px solid #e2e8f0;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .related-grid a:hover {
-            background: #1e3c72;
-            color: white;
-            border-color: #1e3c72;
-        }
-        .back-link {
-            display: inline-block;
-            margin: 20px 0;
-            color: #1e3c72;
-            font-weight: 500;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #F8FAFC; color: #1E293B; line-height: 1.7; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        
+        /* الهيدر */
+        .header { background: #FFFFFF; border-bottom: 1px solid #E2E8F0; position: sticky; top: 0; z-index: 100; }
+        .nav { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; flex-wrap: wrap; gap: 15px; }
+        .logo { font-size: 1.3rem; font-weight: 800; background: linear-gradient(135deg, #0F172A, #1E293B); -webkit-background-clip: text; background-clip: text; color: transparent; display: flex; align-items: center; gap: 8px; }
+        .logo i { background: none; color: #3B82F6; }
+        .nav-links { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+        .nav-links a { text-decoration: none; color: #475569; font-weight: 500; font-size: 0.9rem; padding: 6px 14px; border-radius: 30px; transition: 0.2s; }
+        .nav-links a:hover { color: #3B82F6; background: #EFF6FF; }
+        .btn-nav { background: #3B82F6; color: white !important; padding: 6px 18px !important; border-radius: 30px !important; }
+        
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content { display: none; position: absolute; top: 38px; right: 0; background: white; min-width: 200px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); border-radius: 16px; overflow: hidden; z-index: 1000; border: 1px solid #E2E8F0; }
+        .dropdown-content a { display: block; padding: 10px 16px; color: #1E293B; text-decoration: none; border-bottom: 1px solid #F1F5F9; font-size: 0.85rem; }
+        .dropdown-content a:hover { background: #EFF6FF; color: #3B82F6; }
+        .dropdown:hover .dropdown-content { display: block; }
+        
+        /* القسم الرئيسي */
+        .hero { background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color: white; border-radius: 28px; padding: 50px 40px; margin: 35px 0; text-align: center; }
+        .hero h1 { font-size: 2rem; font-weight: 800; margin-bottom: 15px; }
+        .hero h1 span { color: #3B82F6; }
+        .hero p { font-size: 1rem; color: #CBD5E1; max-width: 600px; margin: 0 auto; }
+        
+        /* المحتوى */
+        .content { background: white; border-radius: 28px; padding: 45px; margin: 40px 0; border: 1px solid #EFF3F8; }
+        .content h2 { font-size: 1.5rem; margin: 30px 0 15px; color: #0F172A; }
+        .content h2:first-of-type { margin-top: 0; }
+        .content h3 { font-size: 1.2rem; margin: 20px 0 10px; color: #3B82F6; }
+        .content p { margin-bottom: 15px; color: #475569; }
+        .content ul { margin: 15px 0 15px 25px; }
+        .content li { margin-bottom: 8px; }
+        
+        .country-list { display: grid; grid-template-columns: 1fr; gap: 20px; margin: 25px 0; }
+        .country-item { background: #F8FAFC; border-radius: 20px; padding: 20px; border-right: 4px solid #3B82F6; }
+        .country-item h4 { font-size: 1.2rem; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+        .country-item p { margin-bottom: 5px; font-size: 0.9rem; }
+        
+        .comparison-table { width: 100%; border-collapse: collapse; margin: 25px 0; }
+        .comparison-table th, .comparison-table td { padding: 12px; text-align: right; border-bottom: 1px solid #E2E8F0; }
+        .comparison-table th { background: #0F172A; color: white; border-radius: 12px; }
+        
+        .btn-back { display: inline-block; background: #3B82F6; color: white; padding: 10px 25px; border-radius: 40px; text-decoration: none; margin-top: 20px; }
+        
+        .footer { background: #0F172A; color: #94A3B8; padding: 40px 0 20px; margin-top: 50px; border-radius: 32px 32px 0 0; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 35px; margin-bottom: 30px; }
+        .footer-col h4 { color: white; margin-bottom: 14px; font-size: 0.95rem; }
+        .footer-col a { display: block; color: #94A3B8; text-decoration: none; margin-bottom: 8px; font-size: 0.8rem; transition: 0.2s; }
+        .footer-col a:hover { color: #3B82F6; }
+        .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #1E293B; font-size: 0.75rem; }
+        
         @media (max-width: 768px) {
-            .tip-article {
-                padding: 20px;
-            }
-            .tip-article h1 {
-                font-size: 1.7rem;
-            }
-            .tip-article h2 {
-                font-size: 1.3rem;
-            }
-            .country-header-mini {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .country-stats {
-                justify-content: flex-start;
-            }
+            .hero h1 { font-size: 1.5rem; }
+            .hero { padding: 30px 20px; }
+            .content { padding: 25px; }
+            .nav { flex-direction: column; }
+            .nav-links { justify-content: center; }
         }
     </style>
 </head>
 <body>
-    <!-- شريط التنقل – مطابق لجميع صفحات النصائح -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <a href="../index.html" class="logo">
-                    <i class="fas fa-globe"></i>
-                    <span>وظائف حول العالم</span>
-                </a>
-                <ul class="nav-links">
-                    <li><a href="../index.html">الرئيسية</a></li>
-                    <li><a href="../countries.html">الدول</a></li>
-                    <li><a href="../tips.html" class="active">نصائح</a></li>
-                    <li><a href="../services.html">الخدمات</a></li>
-                    <li><a href="../about.html">من نحن</a></li>
-                    <li><a href="../contact.html">اتصل بنا</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
+<div class="header">
     <div class="container">
-        <a href="../tips.html" class="back-link"><i class="fas fa-arrow-right"></i> العودة إلى جميع النصائح</a>
-
-        <article class="tip-article">
-            <h1>🌍 أفضل الدول التي تطالب بالمهاجرين 2026</h1>
-            <p>مع بداية عام 2026، تشهد سياسات الهجرة تحولات كبيرة. بعض الدول تفتح أبوابها على مصراعيها للعمالة الماهرة بسبب نقص حاد في اليد العاملة. في هذا الدليل، نستعرض أبرز الدول التي تطالب بالمهاجرين، مع شرح لبرامج الهجرة، الرواتب المتوقعة، وتكاليف المعيشة.</p>
-
-            <div class="highlight">
-                <p><strong>📌 ملخص سريع:</strong> كندا، ألمانيا، أستراليا، نيوزيلندا، وهولندا هي الدول الأكثر طلباً للمهاجرين في 2026، مع برامج هجرة واضحة ومرنة للكفاءات العالية.</p>
-            </div>
-
-            <!-- كندا -->
-            <h2>🇨🇦 1. كندا – 380,000 مهاجر سنوياً</h2>
-            <div class="country-card-mini">
-                <div class="country-header-mini">
-                    <span class="country-flag">🇨🇦</span>
-                    <span class="country-name-mini">كندا</span>
-                </div>
-                <p>تستهدف الحكومة الكندية استقبال <strong>380,000 مقيم دائم سنوياً</strong> بين 2026 و2028، مع تركيز كبير على العمالة الماهرة .</p>
-                <div class="country-stats">
-                    <span class="stat-badge"><i class="fas fa-briefcase"></i> 800,000+ وظيفة شاغرة</span>
-                    <span class="stat-badge"><i class="fas fa-chart-line"></i> 65,000 – 95,000 CAD سنوياً</span>
-                    <span class="stat-badge"><i class="fas fa-home"></i> 2,500 – 3,500 CAD شهرياً</span>
-                </div>
-                <ul>
-                    <li><strong>برامج الهجرة الرئيسية:</strong> Express Entry، برامج المقاطعات (PNP)، تأشيرة العمل بعد الدراسة (PGWP).</li>
-                    <li><strong>المهن الأكثر طلباً:</strong> تكنولوجيا المعلومات، الرعاية الصحية، الهندسة، التجارة الماهرة.</li>
-                </ul>
-                <p><a href="../canada.html" style="color: #f59e0b;">📖 اقرأ دليل كندا الشامل</a></p>
-            </div>
-
-            <!-- ألمانيا -->
-            <h2>🇩🇪 2. ألمانيا – مليون وظيفة شاغرة</h2>
-            <div class="country-card-mini">
-                <div class="country-header-mini">
-                    <span class="country-flag">🇩🇪</span>
-                    <span class="country-name-mini">ألمانيا</span>
-                </div>
-                <p>تعاني ألمانيا من نقص حاد في العمالة الماهرة، حيث يصل عدد الوظائف الشاغرة إلى أكثر من <strong>مليون وظيفة</strong> .</p>
-                <div class="country-stats">
-                    <span class="stat-badge"><i class="fas fa-briefcase"></i> 1,000,000+ وظيفة شاغرة</span>
-                    <span class="stat-badge"><i class="fas fa-chart-line"></i> 50,000 – 80,000 € سنوياً</span>
-                    <span class="stat-badge"><i class="fas fa-home"></i> 1,200 – 1,800 € شهرياً</span>
-                </div>
-                <ul>
-                    <li><strong>برامج الهجرة الرئيسية:</strong> البطاقة الزرقاء للاتحاد الأوروبي (EU Blue Card)، بطاقة الفرصة (Chancenkarte).</li>
-                    <li><strong>المهن الأكثر طلباً:</strong> الهندسة، تكنولوجيا المعلومات، الرعاية الصحية.</li>
-                </ul>
-                <p><a href="../germany.html" style="color: #f59e0b;">📖 اقرأ دليل ألمانيا الشامل</a></p>
-            </div>
-
-            <!-- أستراليا -->
-            <h2>🇦🇺 3. أستراليا – 185,000 فرصة هجرة سنوياً</h2>
-            <div class="country-card-mini">
-                <div class="country-header-mini">
-                    <span class="country-flag">🇦🇺</span>
-                    <span class="country-name-mini">أستراليا</span>
-                </div>
-                <p>أستراليا حددت سقفاً للهجرة الدائمة بـ <strong>185,000 مكان</strong> للعام 2025-2026، مع تخصيص 71% من هذه المقاعد لتدفق المهارات .</p>
-                <div class="country-stats">
-                    <span class="stat-badge"><i class="fas fa-briefcase"></i> 400,000+ وظيفة شاغرة</span>
-                    <span class="stat-badge"><i class="fas fa-chart-line"></i> 70,000 – 100,000 AUD سنوياً</span>
-                    <span class="stat-badge"><i class="fas fa-home"></i> 3,000 – 4,500 AUD شهرياً</span>
-                </div>
-                <ul>
-                    <li><strong>برامج الهجرة الرئيسية:</strong> تأشيرات المهارات المستقلة (189)، الترشيح من الولاية (190).</li>
-                    <li><strong>المهن الأكثر طلباً:</strong> الرعاية الصحية، التكنولوجيا الحيوية، الطاقة المتجددة.</li>
-                </ul>
-                <p><a href="../australia.html" style="color: #f59e0b;">📖 اقرأ دليل أستراليا الشامل</a></p>
-            </div>
-
-            <!-- نيوزيلندا -->
-            <h2>🇳🇿 4. نيوزيلندا – 87 مهنة جديدة</h2>
-            <div class="country-card-mini">
-                <div class="country-header-mini">
-                    <span class="country-flag">🇳🇿</span>
-                    <span class="country-name-mini">نيوزيلندا</span>
-                </div>
-                <p>أضافت نيوزيلندا <strong>87 مهنة جديدة</strong> إلى قائمة المهارات المعترف بها، مما يسهل الحصول على تأشيرات العمل للمتخصصين .</p>
-                <div class="country-stats">
-                    <span class="stat-badge"><i class="fas fa-briefcase"></i> 50,000+ وظيفة شاغرة</span>
-                    <span class="stat-badge"><i class="fas fa-chart-line"></i> 65,000 – 90,000 NZD سنوياً</span>
-                    <span class="stat-badge"><i class="fas fa-home"></i> 2,000 – 3,000 NZD شهرياً</span>
-                </div>
-                <ul>
-                    <li><strong>برامج الهجرة الرئيسية:</strong> تأشيرة العمل من صاحب عمل معتمد (AEWV).</li>
-                    <li><strong>المهن الأكثر طلباً:</strong> تكنولوجيا المعلومات، الهندسة، الرعاية الصحية.</li>
-                </ul>
-                <p><a href="../newzealand.html" style="color: #f59e0b;">📖 اقرأ دليل نيوزيلندا الشامل</a></p>
-            </div>
-
-            <!-- هولندا -->
-            <h2>🇳🇱 5. هولندا – عمالة ماهرة بلا اختبار سوق عمل</h2>
-            <div class="country-card-mini">
-                <div class="country-header-mini">
-                    <span class="country-flag">🇳🇱</span>
-                    <span class="country-name-mini">هولندا</span>
-                </div>
-                <p>تأشيرة "العامل الماهر" (Highly Skilled Migrant Visa) في هولندا لا تتطلب اختبار سوق العمل .</p>
-                <div class="country-stats">
-                    <span class="stat-badge"><i class="fas fa-briefcase"></i> 100,000+ وظيفة شاغرة</span>
-                    <span class="stat-badge"><i class="fas fa-chart-line"></i> 50,000 – 75,000 € سنوياً</span>
-                    <span class="stat-badge"><i class="fas fa-home"></i> 1,300 – 2,000 € شهرياً</span>
-                </div>
-                <ul>
-                    <li><strong>برامج الهجرة الرئيسية:</strong> تأشيرة العامل الماهر، تأشيرة الشركات الناشئة.</li>
-                    <li><strong>المهن الأكثر طلباً:</strong> تكنولوجيا المعلومات، الهندسة، المالية.</li>
-                </ul>
-                <p><a href="../netherlands.html" style="color: #f59e0b;">📖 اقرأ دليل هولندا الشامل</a></p>
-            </div>
-
-            <!-- جدول مقارنة سريع -->
-            <h2>📊 جدول مقارنة سريع</h2>
-            <div class="table-container">
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>الدولة</th>
-                            <th>برنامج الهجرة الرئيسي</th>
-                            <th>متوسط الراتب (€)</th>
-                            <th>تكلفة المعيشة (€/شهر)</th>
-                        </thead>
-                    <tbody>
-                        <tr><td>🇨🇦 كندا</td><td>Express Entry, PNP</td><td>40,000 – 60,000</td><td>1,500 – 2,500</td></tr>
-                        <tr><td>🇩🇪 ألمانيا</td><td>EU Blue Card, Chancenkarte</td><td>50,000 – 80,000</td><td>1,200 – 1,800</td></tr>
-                        <tr><td>🇦🇺 أستراليا</td><td>Skilled Migration</td><td>45,000 – 65,000</td><td>2,000 – 3,000</td></tr>
-                        <tr><td>🇳🇿 نيوزيلندا</td><td>AEWV, Skilled Migrant</td><td>40,000 – 60,000</td><td>1,500 – 2,200</td></tr>
-                        <tr><td>🇳🇱 هولندا</td><td>Highly Skilled Migrant</td><td>50,000 – 75,000</td><td>1,300 – 2,000</td></tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <!-- نصائح عامة -->
-            <div class="highlight">
-                <p><strong>⚠️ ملاحظة مهمة:</strong> أمريكا تشهد تشديداً في سياسات الهجرة عام 2026، مع زيادة في فترة المراجعة الأمنية وتقليص مدة تأشيرات العمل. إذا كنت تخطط للهجرة إلى أمريكا، راجع <a href="../usa.html">دليل أمريكا</a> لمعرفة التحديثات الأخيرة.</p>
-            </div>
-
-            <h2>💡 نصائح مهمة للمهاجرين الجدد</h2>
-            <ul>
-                <li><strong>تعلم اللغة:</strong> إجادة اللغة المحلية تزيد فرصك في الحصول على وظيفة بنسبة 50%.</li>
-                <li><strong>احصل على تقييم المهارات:</strong> معظم الدول تطلب تقييماً معترفاً به لشهاداتك وخبراتك.</li>
-                <li><strong>خطط مالياً:</strong> احسب تكلفة المعيشة لأول 6 أشهر (إيجار، مواصلات، تأمين صحي).</li>
-                <li><strong>استخدم مواقع التوظيف المحلية:</strong> مثل Indeed Canada، StepStone.de، Seek.com.au.</li>
-                <li><strong>تواصل مع مجتمعات المغتربين:</strong> تساعدك على التأقلم السريع.</li>
-            </ul>
-
-            <!-- روابط ذات صلة -->
-            <div class="related-links">
-                <h3>📌 مقالات ذات صلة</h3>
-                <div class="related-grid">
-                    <a href="../canada.html"><i class="fas fa-flag" style="color: #D52B1E;"></i> دليل كندا</a>
-                    <a href="../germany.html"><i class="fas fa-flag" style="color: #DD0000;"></i> دليل ألمانيا</a>
-                    <a href="../australia.html"><i class="fas fa-flag" style="color: #00008B;"></i> دليل أستراليا</a>
-                    <a href="../newzealand.html"><i class="fas fa-flag" style="color: #00247D;"></i> دليل نيوزيلندا</a>
-                    <a href="../netherlands.html"><i class="fas fa-flag" style="color: #21468B;"></i> دليل هولندا</a>
-                    <a href="../usa.html"><i class="fas fa-flag" style="color: #B22234;"></i> دليل أمريكا (تحديثات 2026)</a>
-                </div>
-            </div>
-
-            <div class="highlight">
-                <p><strong>خدمتنا:</strong> إذا كنت بحاجة إلى مساعدة في تصميم سيرة ذاتية تناسب نظام الهجرة، أو استشارة خاصة ببرامج الهجرة، تواصل معنا عبر <a href="https://wa.me/212669411021" target="_blank">واتساب</a> أو زور صفحة <a href="../services.html">الخدمات</a>.</p>
-            </div>
-        </article>
-    </div>
-
-    <!-- تذييل الصفحة -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>وظائف حول العالم</h4>
-                    <p>منصتك الموثوقة للبحث عن فرص عمل في 53 دولة حول العالم.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>روابط سريعة</h4>
-                    <ul>
-                        <li><a href="../index.html">الرئيسية</a></li>
-                        <li><a href="../countries.html">الدول</a></li>
-                        <li><a href="../tips.html">نصائح</a></li>
-                        <li><a href="../services.html">الخدمات</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>تابعنا</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/profile.php?id=61573610945491" target="_blank"><i class="fab fa-facebook"></i> فيسبوك</a>
-                        <a href="https://wa.me/212669411021" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+        <div class="nav">
+            <div class="logo"><i class="fas fa-globe-americas"></i> وظائف على مستوى العالم</div>
+            <div class="nav-links">
+                <a href="../index.html">الرئيسية</a>
+                <a href="../services.html">الخدمات</a>
+                <a href="../tips.html">نصائح</a>
+                <a href="../about.html">من نحن</a>
+                <a href="../contact.html">اتصل بنا</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">تصنيف الدول ▼</a>
+                    <div class="dropdown-content">
+                        <a href="../countries/usa.html">🇺🇸 الولايات المتحدة</a>
+                        <a href="../countries/canada.html">🇨🇦 كندا</a>
+                        <a href="../countries/germany.html">🇩🇪 ألمانيا</a>
+                        <a href="../countries/uk.html">🇬🇧 بريطانيا</a>
                     </div>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 وظائف حول العالم – جميع الحقوق محفوظة | آخر تحديث: مارس 2026</p>
+                <a href="../services.html" class="btn-nav">📄 اطلب خدمتك</a>
             </div>
         </div>
-    </footer>
+    </div>
+</div>
 
-    <!-- كود الإعلان Social Bar -->
-    <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
+<div class="container">
+    
+    <div class="hero">
+        <h1>أفضل <span>دول للهجرة</span> 2026</h1>
+        <p>دليل شامل ومقارنة بين أفضل الوجهات العالمية للهجرة والعمل</p>
+    </div>
+
+    <div class="content">
+        
+        <p>يبحث الملايين حول العالم عن فرص الهجرة والعمل في الخارج. في هذا الدليل، نقدم لك أفضل 10 دول للهجرة في 2026، بناءً على سهولة الحصول على التأشيرة، جودة الحياة، الرواتب، وتكاليف المعيشة.</p>
+
+        <h2>🌍 أفضل 10 دول للهجرة 2026</h2>
+        
+        <div class="country-list">
+            <div class="country-item">
+                <h4>🇨🇦 1. كندا</h4>
+                <p><strong>نظام الهجرة:</strong> Express Entry + PNP</p>
+                <p><strong>الرواتب:</strong> $45,000 - $85,000 CAD سنوياً</p>
+                <p><strong>المميزات:</strong> نظام نقاط شفاف، رعاية صحية مجانية، مجتمع متعدد الثقافات</p>
+            </div>
+            
+            <div class="country-item">
+                <h4>🇩🇪 2. ألمانيا</h4>
+                <p><strong>نظام الهجرة:</strong> Chancenkarte (بطاقة الفرصة) + Blue Card</p>
+                <p><strong>الرواتب:</strong> €45,000 - €75,000 سنوياً</p>
+                <p><strong>المميزات:</strong> تعليم مجاني، اقتصاد قوي، نقص كبير في العمالة المهرة</p>
+            </div>
+            
+            <div class="country-item">
+                <h4>🇦🇺 3. أستراليا</h4>
+                <p><strong>نظام الهجرة:</strong> SkillSelect + نقاط</p>
+                <p><strong>الرواتب:</strong> $60,000 - $90,000 AUD سنوياً</p>
+                <p><strong>المميزات:</strong> مناخ ممتاز، رواتب عالية، نظام صحي ممتاز</p>
+            </div>
+            
+            <div class="country-item">
+                <h4>🇺🇸 4. الولايات المتحدة</h4>
+                <p><strong>نظام الهجرة:</strong> H-1B, H-2B, Green Card</p>
+                <p><strong>الرواتب:</strong> $50,000 - $120,000 سنوياً</p>
+                <p><strong>المميزات:</strong> أعلى الرواتب، تنوع وظيفي، فرص لا حصر لها</p>
+            </div>
+            
+            <div class="country-item">
+                <h4>🇬🇧 5. بريطانيا</h4>
+                <p><strong>نظام الهجرة:</strong> Skilled Worker Visa + نقاط</p>
+                <p><strong>الرواتب:</strong> £30,000 - £60,000 سنوياً</p>
+                <p><strong>المميزات:</strong> لغة إنجليزية، نظام صحي NHS، قرب من أوروبا</p>
+            </div>
+            
+            <div class="country-item">
+                <h4>🇸🇪 6. السويد</h4>
+                <p><strong>نظام الهجرة:</strong> تصريح عمل للمهن المطلوبة</p>
+                <p><strong>الرواتب:</strong> 35,000 - 55,000 كرونر شهرياً</p>
+                <p><strong>المميزات:</strong> توازن بين العمل والحياة، دعم حكومي قوي</p>
+            </div>
+            
+            <div class="country-item">
+                <h4>🇳🇿 7. نيوزيلندا</h4>
+                <p><strong>نظام الهجرة:</strong> Skilled Migrant Category</p>
+                <p><strong>الرواتب:</strong> $55,000 - $85,000 NZD سنوياً</p>
+                <p><strong>المميزات:</strong> طبيعة خلابة، مجتمع هادئ، سهولة الحصول على الإقامة</p>
+            </div>
+            
+            <div class="country-item">
+                <h4>🇸🇬 8. سنغافورة</h4>
+                <p><strong>نظام الهجرة:</strong> Employment Pass</p>
+                <p><strong>الرواتب:</strong> 60,000 - 120,000 SGD سنوياً</p>
+                <p><strong>المميزات:</strong> ضرائب منخفضة، بوابة آسيا، فرص تقنية هائلة</p>
+            </div>
+            
+            <div class="country-item">
+                <h4>🇦🇪 9. الإمارات العربية المتحدة</h4>
+                <p><strong>نظام الهجرة:</strong> تأشيرة عمل + الإقامة الذهبية</p>
+                <p><strong>الرواتب:</strong> 8,000 - 30,000 درهم شهرياً (معفاة من الضرائب)</p>
+                <p><strong>المميزات:</strong> رواتب معفاة من الضرائب، تنوع ثقافي، موقع استراتيجي</p>
+            </div>
+            
+            <div class="country-item">
+                <h4>🇨🇭 10. سويسرا</h4>
+                <p><strong>نظام الهجرة:</strong> تأشيرة عمل للمختصين</p>
+                <p><strong>الرواتب:</strong> 80,000 - 120,000 فرنك سنوياً</p>
+                <p><strong>المميزات:</strong> أعلى رواتب في العالم، جودة حياة استثنائية، مناظر طبيعية</p>
+            </div>
+        </div>
+        
+        <h2>📊 مقارنة سريعة</h2>
+        <table class="comparison-table">
+            <thead><tr><th>الدولة</th><th>نظام الهجرة</th><th>الراتب السنوي التقريبي</th><th>اللغة المطلوبة</th></tr></thead>
+            <tbody>
+                <tr><td>كندا</td><td>Express Entry</td><td>$45k - $85k</td><td>إنجليزية/فرنسية</td></tr>
+                <tr><td>ألمانيا</td><td>Chancenkarte</td><td>€45k - €75k</td><td>ألمانية B1/إنجليزية</td></tr>
+                <tr><td>أستراليا</td><td>SkillSelect</td><td>$60k - $90k</td><td>إنجليزية</td></tr>
+                <tr><td>أمريكا</td><td>H-1B</td><td>$50k - $120k</td><td>إنجليزية</td></tr>
+                <tr><td>بريطانيا</td><td>Skilled Worker</td><td>£30k - £60k</td><td>إنجليزية</td></tr>
+                <tr><td>السويد</td><td>Work Permit</td><td>35k - 55k SEK/شهر</td><td>سويدية/إنجليزية</td></tr>
+            </tbody>
+        </table>
+        
+        <h2>💡 نصائح قبل اختيار وجهتك</h2>
+        <ul>
+            <li><strong>تعلم اللغة:</strong> معظم الدول تتطلب مستوى معيناً من اللغة المحلية.</li>
+            <li><strong>ابحث عن المهن المطلوبة:</strong> كل دولة لديها قائمة بالمهن الناقصة.</li>
+            <li><strong>قدّم طلبك بنفسك:</strong> تجنب وسطاء الاحتيال، جميع الطلبات الرسمية مجانية.</li>
+            <li><strong>جهّز ملفك المهني:</strong> سيرة ذاتية احترافية وخطاب تقديم قوي.</li>
+        </ul>
+        
+        <h2>🔗 روابط مفيدة</h2>
+        <ul>
+            <li><a href="../countries/usa.html">🇺🇸 دليل الهجرة إلى أمريكا</a></li>
+            <li><a href="../countries/canada.html">🇨🇦 دليل الهجرة إلى كندا</a></li>
+            <li><a href="../countries/germany.html">🇩🇪 دليل الهجرة إلى ألمانيا</a></li>
+            <li><a href="../countries/uk.html">🇬🇧 دليل الهجرة إلى بريطانيا</a></li>
+        </ul>
+        
+        <a href="../tips.html" class="btn-back"><i class="fas fa-arrow-right"></i> العودة إلى النصائح</a>
+        
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4><i class="fas fa-globe-americas"></i> وظائف على مستوى العالم</h4>
+                <a href="../index.html">الرئيسية</a>
+                <a href="../services.html">خدماتنا</a>
+                <a href="../tips.html">النصائح المهنية</a>
+            </div>
+            <div class="footer-col">
+                <h4>الدول</h4>
+                <a href="../countries/usa.html">الولايات المتحدة</a>
+                <a href="../countries/canada.html">كندا</a>
+                <a href="../countries/germany.html">ألمانيا</a>
+                <a href="../countries/uk.html">بريطانيا</a>
+            </div>
+            <div class="footer-col">
+                <h4>روابط مهمة</h4>
+                <a href="../privacy.html">سياسة الخصوصية</a>
+                <a href="../terms.html">شروط الاستخدام</a>
+                <a href="../contact.html">اتصل بنا</a>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <a href="https://wa.me/212679627332" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+                <a href="mailto:info@tarik-aljanah.online"><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 </body>
 </html>
