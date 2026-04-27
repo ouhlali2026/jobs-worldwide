@@ -1,369 +1,186 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اتصل بنا - وظائف على مستوى العالم</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>اتصل بنا | وظائف على مستوى العالم</title>
+    <meta name="description" content="تواصل معنا عبر واتساب للاستفسار عن خدمات كتابة السيرة الذاتية وخطاب التقديم والتسجيل في مواقع التأشيرات.">
     
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- ملف التنسيقات -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
-        .contact-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin: 40px 0;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #F8FAFC; color: #1E293B; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         
-        .contact-info {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            border: 1px solid #e2e8f0;
-        }
+        /* الهيدر */
+        .header { background: #FFFFFF; border-bottom: 1px solid #E2E8F0; position: sticky; top: 0; z-index: 100; }
+        .nav { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; flex-wrap: wrap; gap: 15px; }
+        .logo { font-size: 1.3rem; font-weight: 800; background: linear-gradient(135deg, #0F172A, #1E293B); -webkit-background-clip: text; background-clip: text; color: transparent; display: flex; align-items: center; gap: 8px; }
+        .logo i { background: none; color: #3B82F6; }
+        .nav-links { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+        .nav-links a { text-decoration: none; color: #475569; font-weight: 500; font-size: 0.9rem; padding: 6px 14px; border-radius: 30px; transition: 0.2s; }
+        .nav-links a:hover { color: #3B82F6; background: #EFF6FF; }
+        .btn-nav { background: #3B82F6; color: white !important; padding: 6px 18px !important; border-radius: 30px !important; }
+        .btn-nav:hover { background: #2563EB; }
         
-        .contact-info h2 {
-            font-size: 1.5rem;
-            color: #1e293b;
-            margin-bottom: 20px;
-        }
+        /* القائمة المنسدلة */
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content { display: none; position: absolute; top: 38px; right: 0; background: white; min-width: 200px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); border-radius: 16px; overflow: hidden; z-index: 1000; border: 1px solid #E2E8F0; }
+        .dropdown-content a { display: block; padding: 10px 16px; color: #1E293B; text-decoration: none; border-bottom: 1px solid #F1F5F9; font-size: 0.85rem; }
+        .dropdown-content a:hover { background: #EFF6FF; color: #3B82F6; }
+        .dropdown:hover .dropdown-content { display: block; }
         
-        .contact-info p {
-            color: #475569;
-            margin-bottom: 30px;
-            line-height: 1.8;
-        }
+        /* القسم الرئيسي */
+        .hero { background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color: white; border-radius: 28px; padding: 50px 40px; margin: 35px 0; text-align: center; }
+        .hero h1 { font-size: 2.3rem; font-weight: 800; margin-bottom: 15px; }
+        .hero h1 span { color: #3B82F6; }
+        .hero p { font-size: 1rem; color: #CBD5E1; max-width: 600px; margin: 0 auto; }
         
-        .contact-methods {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
+        /* قسم التواصل */
+        .contact-section { background: white; border-radius: 28px; padding: 50px; margin: 40px 0; text-align: center; border: 1px solid #EFF3F8; box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
+        .contact-icon { width: 100px; height: 100px; line-height: 100px; background: #EFF6FF; border-radius: 50%; margin: 0 auto 25px; }
+        .contact-icon i { font-size: 3rem; color: #3B82F6; }
+        .contact-section h2 { font-size: 1.6rem; margin-bottom: 15px; }
+        .contact-section p { color: #64748B; margin-bottom: 30px; max-width: 500px; margin-left: auto; margin-right: auto; }
         
-        .contact-method {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            padding: 15px;
-            background: #f8fafc;
-            border-radius: 10px;
-            border: 1px solid #e2e8f0;
-        }
+        /* زر واتساب */
+        .whatsapp-btn { background: #25D366; color: white; padding: 16px 40px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.1rem; display: inline-flex; align-items: center; gap: 12px; transition: all 0.2s; box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3); }
+        .whatsapp-btn:hover { background: #128C7E; transform: scale(1.03); box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4); }
+        .whatsapp-btn i { font-size: 1.5rem; }
         
-        .contact-method i {
-            width: 40px;
-            height: 40px;
-            background: #eef2ff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #2563eb;
-            font-size: 1.2rem;
-        }
+        /* معلومات إضافية */
+        .info-boxes { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin: 40px 0; }
+        .info-box { background: white; border-radius: 20px; padding: 25px; text-align: center; border: 1px solid #EFF3F8; transition: 0.2s; }
+        .info-box:hover { transform: translateY(-5px); border-color: #DBEAFE; }
+        .info-box i { font-size: 2rem; color: #3B82F6; margin-bottom: 15px; }
+        .info-box h3 { font-size: 1.1rem; margin-bottom: 10px; }
+        .info-box p { font-size: 0.85rem; color: #64748B; }
         
-        .contact-method h3 {
-            font-size: 1.1rem;
-            color: #1e293b;
-            margin-bottom: 5px;
-        }
-        
-        .contact-method p {
-            color: #64748b;
-            margin: 0;
-        }
-        
-        .contact-method a {
-            color: #2563eb;
-            text-decoration: none;
-        }
-        
-        .contact-method a:hover {
-            text-decoration: underline;
-        }
-        
-        .contact-form {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            border: 1px solid #e2e8f0;
-        }
-        
-        .contact-form h2 {
-            font-size: 1.5rem;
-            color: #1e293b;
-            margin-bottom: 20px;
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            color: #475569;
-            font-weight: 500;
-        }
-        
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            font-family: 'Cairo', sans-serif;
-            font-size: 1rem;
-            transition: border-color 0.3s;
-        }
-        
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #2563eb;
-        }
-        
-        .form-group textarea {
-            height: 150px;
-            resize: vertical;
-        }
-        
-        .submit-btn {
-            background: #2563eb;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.3s;
-            font-family: 'Cairo', sans-serif;
-            width: 100%;
-        }
-        
-        .submit-btn:hover {
-            background: #1d4ed8;
-        }
-        
-        .success-message {
-            background: #d1fae5;
-            border-right: 4px solid #10b981;
-            padding: 15px;
-            border-radius: 8px;
-            color: #065f46;
-            margin-top: 20px;
-            display: none;
-        }
-        
-        .page-header {
-            background: linear-gradient(135deg, #2563eb, #1d4ed8);
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-        
-        .page-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: #2563eb;
-            text-decoration: none;
-            margin-bottom: 20px;
-            font-weight: 500;
-        }
-        
-        .back-link:hover {
-            color: #1d4ed8;
-        }
+        /* التذييل */
+        .footer { background: #0F172A; color: #94A3B8; padding: 40px 0 20px; margin-top: 50px; border-radius: 32px 32px 0 0; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 35px; margin-bottom: 30px; }
+        .footer-col h4 { color: white; margin-bottom: 14px; font-size: 0.95rem; }
+        .footer-col a { display: block; color: #94A3B8; text-decoration: none; margin-bottom: 8px; font-size: 0.8rem; transition: 0.2s; }
+        .footer-col a:hover { color: #3B82F6; }
+        .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #1E293B; font-size: 0.75rem; }
         
         @media (max-width: 768px) {
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
+            .hero h1 { font-size: 1.6rem; }
+            .hero { padding: 30px 20px; }
+            .contact-section { padding: 30px 20px; }
+            .nav { flex-direction: column; }
+            .nav-links { justify-content: center; }
+            .whatsapp-btn { padding: 12px 25px; font-size: 1rem; }
         }
     </style>
-    <!-- Vercel Web Analytics -->
-    <script>
-      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
-    <!-- شريط التنقل -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <a href="index.html" class="logo">
-                    <i class="fas fa-globe"></i>
-                    <span>وظائف حول العالم</span>
-                </a>
-                
-                <ul class="nav-links">
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="#">الدول</a></li>
-                    <li><a href="services.html">الخدمات</a></li>
-                    <li><a href="#">من نحن</a></li>
-                    <li><a href="contact.html" class="active">اتصل بنا</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- رأس الصفحة -->
-    <section class="page-header">
-        <div class="container">
-            <h1>اتصل بنا</h1>
-            <p>نحن هنا للإجابة على استفساراتك</p>
-        </div>
-    </section>
-
-    <!-- محتوى الصفحة -->
+<div class="header">
     <div class="container">
-        <a href="index.html" class="back-link">
-            <i class="fas fa-arrow-right"></i> العودة للرئيسية
-        </a>
-        
-        <div class="contact-container">
-            <!-- معلومات الاتصال -->
-            <div class="contact-info">
-                <h2>تواصل معنا</h2>
-                <p>يمكنك التواصل معنا عبر الطرق التالية أو إرسال رسالة مباشرة عبر النموذج.</p>
-                
-                <div class="contact-methods">
-                    <!-- واتساب (يظهر) -->
-                    <div class="contact-method">
-                        <i class="fab fa-whatsapp"></i>
-                        <div>
-                            <h3>واتساب</h3>
-                            <a href="https://wa.me/212669411021" target="_blank">+212 669 411 021</a>
-                        </div>
-                    </div>
-                    
-                    <!-- البريد الإلكتروني (مخفي - لا يظهر في الصفحة) -->
-                    <!-- تم إخفاء البريد الإلكتروني تماماً -->
-                    
-                    <!-- ساعات العمل -->
-                    <div class="contact-method">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h3>ساعات العمل</h3>
-                            <p>الرد خلال 24 ساعة</p>
-                        </div>
+        <div class="nav">
+            <div class="logo"><i class="fas fa-globe-americas"></i> وظائف على مستوى العالم</div>
+            <div class="nav-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="services.html">الخدمات</a>
+                <a href="tips.html">نصائح</a>
+                <a href="about.html">من نحن</a>
+                <a href="contact.html">اتصل بنا</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">تصنيف الدول ▼</a>
+                    <div class="dropdown-content">
+                        <a href="countries/usa.html">🇺🇸 الولايات المتحدة</a>
+                        <a href="countries/canada.html">🇨🇦 كندا</a>
+                        <a href="countries/germany.html">🇩🇪 ألمانيا</a>
+                        <a href="countries/uk.html">🇬🇧 بريطانيا</a>
                     </div>
                 </div>
-            </div>
-            
-            <!-- نموذج الاتصال -->
-            <div class="contact-form">
-                <h2>أرسل رسالة</h2>
-                
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label>الاسم</label>
-                        <input type="text" id="name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>البريد الإلكتروني</label>
-                        <input type="email" id="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>الموضوع</label>
-                        <input type="text" id="subject" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>الرسالة</label>
-                        <textarea id="message" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="submit-btn">إرسال الرسالة</button>
-                    
-                    <div class="success-message" id="successMessage">
-                        تم إرسال رسالتك بنجاح. سيتم الرد عليك قريباً.
-                    </div>
-                </form>
+                <a href="services.html" class="btn-nav">📄 اطلب خدمتك</a>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- تذييل الصفحة -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>وظائف حول العالم</h4>
-                    <p>منصتك للبحث عن فرص عمل في مختلف دول العالم</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>روابط سريعة</h4>
-                    <ul>
-                        <li><a href="index.html">الرئيسية</a></li>
-                        <li><a href="#">الدول</a></li>
-                        <li><a href="services.html">الخدمات</a></li>
-                        <li><a href="contact.html">اتصل بنا</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>الدول</h4>
-                    <ul>
-                        <li><a href="#">كندا</a></li>
-                        <li><a href="#">ألمانيا</a></li>
-                        <li><a href="#">الإمارات</a></li>
-                        <li><a href="#">أمريكا</a></li>
-                    </ul>
-                </div>
+<div class="container">
+    
+    <div class="hero">
+        <h1>تواصل <span>معنا</span></h1>
+        <p>نحن هنا للإجابة على استفساراتك ومساعدتك في طلب خدماتك</p>
+    </div>
 
-                <div class="footer-section">
-                    <h4>سياسة الموقع</h4>
-                    <ul>
-                        <li><a href="privacy.html">سياسة الخصوصية</a></li>
-                        <li><a href="#">اتفاقية الاستخدام</a></li>
-                    </ul>
-                </div>
+    <div class="contact-section">
+        <div class="contact-icon">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <h2>📱 تواصل معنا عبر واتساب</h2>
+        <p>للطلب أو الاستفسار عن خدمات كتابة السيرة الذاتية، خطاب التقديم، أو التسجيل في مواقع التأشيرات</p>
+        <a href="https://wa.me/212679627332" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> راسلنا على واتساب
+        </a>
+        <p style="margin-top: 20px; font-size: 0.8rem; color: #64748B;">📱 رقم التواصل: <strong>+212 679 627 332</strong></p>
+        <p style="font-size: 0.75rem; color: #64748B;">⏰ الرد خلال 24 ساعة</p>
+    </div>
+
+    <div class="info-boxes">
+        <div class="info-box">
+            <i class="fas fa-file-alt"></i>
+            <h3>كتابة السيرة الذاتية</h3>
+            <p>سيرة ذاتية احترافية بتصميم ATS</p>
+            <p style="margin-top: 8px; font-weight: 600; color: #3B82F6;">15$</p>
+        </div>
+        <div class="info-box">
+            <i class="fas fa-envelope-open-text"></i>
+            <h3>خطاب التقديم</h3>
+            <p>خطاب تقديم مخصص للشركات</p>
+            <p style="margin-top: 8px; font-weight: 600; color: #3B82F6;">10$</p>
+        </div>
+        <div class="info-box">
+            <i class="fas fa-passport"></i>
+            <h3>التسجيل في مواقع التأشيرات</h3>
+            <p>حسابات على USAJobs و Job Bank و LinkedIn</p>
+            <p style="margin-top: 8px; font-weight: 600; color: #3B82F6;">20$</p>
+        </div>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4><i class="fas fa-globe-americas"></i> وظائف على مستوى العالم</h4>
+                <a href="index.html">الرئيسية</a>
+                <a href="services.html">خدماتنا</a>
+                <a href="tips.html">النصائح المهنية</a>
             </div>
-            
-            <div class="footer-bottom">
-                <p>© 2026 وظائف على مستوى العالم</p>
+            <div class="footer-col">
+                <h4>الدول</h4>
+                <a href="countries/usa.html">الولايات المتحدة</a>
+                <a href="countries/canada.html">كندا</a>
+                <a href="countries/germany.html">ألمانيا</a>
+                <a href="countries/uk.html">بريطانيا</a>
+            </div>
+            <div class="footer-col">
+                <h4>روابط مهمة</h4>
+                <a href="privacy.html">سياسة الخصوصية</a>
+                <a href="terms.html">الشروط والأحكام</a>
+                <a href="contact.html">اتصل بنا</a>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <a href="https://wa.me/212679627332" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+                <a href="mailto:info@tarik-aljanah.online"><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
             </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <p>© 2026 وظائف على مستوى العالم – جميع الخدمات مقدمة بدقة واحترافية</p>
+            <p style="margin-top: 6px; font-size: 0.7rem;">🔒 نضمن جودة العمل والتسليم في الوقت المحدد</p>
+        </div>
+    </div>
+</footer>
 
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // هنا يتم إرسال البريد إلى: ouhlali7@gmail.com (مخفي - لا يظهر في الصفحة)
-            
-            document.getElementById('successMessage').style.display = 'block';
-            this.reset();
-            
-            setTimeout(function() {
-                document.getElementById('successMessage').style.display = 'none';
-            }, 5000);
-        });
-    </script>
-
-    <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
+<script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
 </body>
 </html>
