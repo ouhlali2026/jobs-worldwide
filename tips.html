@@ -40,7 +40,17 @@
         .section-title { font-size: 1.6rem; font-weight: 700; margin: 40px 0 20px; text-align: center; }
         .section-title span { color: #3B82F6; }
         
-        /* بطاقات النصائح */
+        /* بطاقة مميزة لأمريكا مع صورة */
+        .featured-card { display: flex; background: white; border-radius: 24px; overflow: hidden; margin-bottom: 40px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); transition: transform 0.2s; text-decoration: none; color: inherit; border: 1px solid #E2E8F0; }
+        .featured-card:hover { transform: translateY(-4px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.15); }
+        .featured-img { flex: 1.2; min-width: 220px; }
+        .featured-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .featured-content { flex: 2; padding: 25px; }
+        .featured-content h3 { font-size: 1.4rem; margin-bottom: 12px; color: #0F172A; display: flex; align-items: center; gap: 8px; }
+        .featured-content p { color: #475569; margin-bottom: 20px; }
+        .read-more-feat { color: #3B82F6; font-weight: 600; display: inline-flex; align-items: center; gap: 5px; }
+        
+        /* الشبكة لباقي البطاقات */
         .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin: 30px 0 50px; }
         .tip-card { background: white; border-radius: 24px; overflow: hidden; transition: all 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.04); border: 1px solid #EFF3F8; text-decoration: none; display: block; }
         .tip-card:hover { transform: translateY(-6px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.12); border-color: #DBEAFE; }
@@ -67,6 +77,9 @@
             .nav { flex-direction: column; }
             .nav-links { justify-content: center; }
             .tips-grid { grid-template-columns: 1fr; }
+            .featured-card { flex-direction: column; }
+            .featured-img { min-width: auto; max-height: 200px; }
+            .featured-content h3 { font-size: 1.2rem; }
         }
     </style>
 </head>
@@ -104,19 +117,21 @@
         <p>مجموعة من النصائح القيمة لمساعدتك في رحلة البحث عن عمل في الخارج</p>
     </div>
 
+    <!-- بطاقة مميزة لأمريكا مع الصورة المصغرة -->
+    <a href="tips/usa-job-search-tips.html" class="featured-card">
+        <div class="featured-img">
+            <img src="https://i.ibb.co/bjXcvk8J/1779500393822.png" alt="كيف تبحث عن عمل في أمريكا 2026" loading="lazy">
+        </div>
+        <div class="featured-content">
+            <h3><i class="fas fa-flag-usa"></i> كيف تبحث عن عمل في أمريكا 2026 – دليل شامل</h3>
+            <p>أفضل الاستراتيجيات للعثور على وظيفة في السوق الأمريكي، مواقع التوظيف الفعالة، أدوات الذكاء الاصطناعي لإنشاء السيرة الذاتية، وأسرار المقابلات. إضافة إلى دليل كأس العالم 2026 للجماهير العربية.</p>
+            <span class="read-more-feat">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+        </div>
+    </a>
+
     <div class="tips-grid">
         
-        <!-- نصائح البحث عن وظائف في أمريكا -->
-        <a href="tips/usa-job-search-tips.html" class="tip-card">
-            <div class="tip-header">
-                <i class="fas fa-flag-usa"></i>
-                <h3>🇺🇸 نصائح البحث عن وظائف في أمريكا</h3>
-            </div>
-            <div class="tip-body">
-                <p>أفضل الاستراتيجيات للعثور على وظيفة في السوق الأمريكي، مواقع التوظيف الفعالة، وكيفية التقديم على تأشيرات H-1B.</p>
-                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
-            </div>
-        </a>
+        <!-- باقي البطاقات بنفس النمط القديم (بدون صور) -->
         
         <!-- نصائح التأشيرات -->
         <a href="tips/visa-tips.html" class="tip-card">
@@ -178,7 +193,7 @@
             </div>
         </a>
         
-        <!-- أفضل دول للهجرة 2026 - تم تصحيح الرابط ✅ -->
+        <!-- أفضل دول للهجرة 2026 -->
         <a href="tips/best-countries-for-immigration-2026.html" class="tip-card">
             <div class="tip-header">
                 <i class="fas fa-globe-americas"></i>
