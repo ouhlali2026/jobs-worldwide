@@ -6,19 +6,19 @@
   <!-- ============================================= -->
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/</loc>
-    <lastmod>2026-05-16</lastmod>
+    <lastmod>2026-05-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/services.html</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-05-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/tips.html</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-05-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -58,7 +58,7 @@
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries/usa.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -140,7 +140,7 @@
   </url>
   
   <!-- ============================================= -->
-  <!-- الكويت (جديد) -->
+  <!-- الكويت -->
   <!-- ============================================= -->
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries/kuwait-jobs-guide-2026.html</loc>
@@ -156,7 +156,7 @@
   </url>
   
   <!-- ============================================= -->
-  <!-- إسبانيا (جديد) -->
+  <!-- إسبانيا -->
   <!-- ============================================= -->
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries/spain-seasonal-work-moroccans-2026.html</loc>
@@ -210,7 +210,7 @@
   </url>
   
   <!-- ============================================= -->
-  <!-- إسبانيا القديمة (للحفاظ على الروابط) -->
+  <!-- الروابط القديمة (للحفاظ على الروابط) -->
   <!-- ============================================= -->
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries/spain-jobs-guide-arab-2026.html</loc>
@@ -230,45 +230,45 @@
   <!-- ============================================= -->
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/tips/usa-job-search-tips.html</loc>
-    <lastmod>2026-04-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/tips/visa-tips.html</loc>
-    <lastmod>2026-04-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/tips/cv-tips.html</loc>
-    <lastmod>2026-04-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/tips/interview-tips.html</loc>
-    <lastmod>2026-04-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/tips/linkedin-tips.html</loc>
-    <lastmod>2026-04-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/tips/linkedin-job-search-tips.html</loc>
-    <lastmod>2026-04-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/tips/best-countries-for-immigration-2026.html</loc>
-    <lastmod>2026-04-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   
 </urlset>
