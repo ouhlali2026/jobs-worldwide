@@ -41,7 +41,7 @@
     .countries-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px; }
     .country-card { background: white; border-radius: 24px; overflow: hidden; transition: all 0.35s; text-decoration: none; color: #1E293B; display: flex; flex-direction: column; border: 1px solid #E2E8F0; box-shadow: 0 4px 12px rgba(0,0,0,0.03); height: 100%; }
     .country-card:hover { transform: translateY(-8px); border-color: #2563EB; box-shadow: 0 20px 35px -12px rgba(0,0,0,0.12); }
-    .card-img { width: 100%; height: 200px; object-fit: cover; display: block; background-color: #F1F5F9; transition: 0.2s; }
+    .card-img { width: 100%; height: 200px; object-fit: cover; display: block; background-color: #F1F5F9; }
     .card-content { padding: 20px; flex: 1; }
     .card-content h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 8px; color: #0F172A; }
     .card-content p { color: #475569; font-size: 0.85rem; margin-bottom: 12px; line-height: 1.5; }
@@ -78,8 +78,7 @@
     .footer-col a { display: block; color: #94A3B8; text-decoration: none; margin-bottom: 8px; font-size: 0.8rem; transition: 0.2s; }
     .footer-col a:hover { color: #2563EB; }
     .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #1E293B; font-size: 0.75rem; }
-    .loading-placeholder { width: 100%; height: 200px; background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%); background-size: 200% 100%; animation: loading 1.5s infinite; border-radius: 20px 20px 0 0; }
-    @keyframes loading { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+    .loading-placeholder { width: 100%; height: 200px; background: #E2E8F0; display: flex; align-items: center; justify-content: center; color: #94A3B8; font-size: 0.8rem; }
     @media (max-width: 768px) {
         .hero h1 { font-size: 1.6rem; }
         .hero { padding: 30px 20px; }
@@ -148,18 +147,18 @@
 
     <h2>✨ أحدث <span>الوجهات حول العالم</span></h2>
     <div id="countriesContainer" class="countries-grid">
-        <!-- البطاقات ستنشأ بواسطة JavaScript لجلب الصور -->
+        <!-- البطاقات تنشأ بواسطة JavaScript -->
     </div>
 
     <h2>📘 نصائح <span>مهنية</span></h2>
     <div class="tips-grid">
         <a href="tips/usa-job-search-tips.html" class="tip-card"><div class="tip-icon"><i class="fas fa-flag-usa"></i></div><div class="tip-info"><h4>نصائح البحث في أمريكا</h4><p>أفضل الاستراتيجيات للعثور على وظيفة</p></div></a>
-        <a href="tips/visa-tips.html" class="tip-card"><div class="tip-icon"><i class="fas fa-passport"></i></div><div class="tip-info"><h4>نصائح التأشيرات العالمية</h4><p>H-1B، Express Entry، Chancenkarte</p></div></a>
+        <a href="tips/visa-tips.html" class="tip-card"><div class="tip-icon"><i class="fas fa-passport"></i></div><div class="tip-info"><h4>نصائح التأشيرات</h4><p>H-1B، Express Entry، Chancenkarte</p></div></a>
         <a href="tips/cv-tips.html" class="tip-card"><div class="tip-icon"><i class="fas fa-file-alt"></i></div><div class="tip-info"><h4>كتابة السيرة الذاتية</h4><p>كيف تكتب CV احترافي ATS</p></div></a>
         <a href="tips/interview-tips.html" class="tip-card"><div class="tip-icon"><i class="fas fa-microphone-alt"></i></div><div class="tip-info"><h4>نصائح المقابلات</h4><p>أسئلة متوقعة وكيف تجيب عليها</p></div></a>
         <a href="tips/linkedin-tips.html" class="tip-card"><div class="tip-icon"><i class="fab fa-linkedin"></i></div><div class="tip-info"><h4>نصائح LinkedIn</h4><p>اجعل ملفك يجذب مسؤولي التوظيف</p></div></a>
         <a href="tips/linkedin-job-search-tips.html" class="tip-card"><div class="tip-icon"><i class="fab fa-linkedin"></i></div><div class="tip-info"><h4>البحث عبر LinkedIn</h4><p>استراتيجيات متقدمة للعثور على وظائف</p></div></a>
-        <a href="tips/best-countries-for-immigration-2026.html" class="tip-card"><div class="tip-icon"><i class="fas fa-globe-americas"></i></div><div class="tip-info"><h4>أفضل دول للهجرة 2026</h4><p>مقارنة بين أمريكا، كندا، ألمانيا، بريطانيا</p></div></a>
+        <a href="tips/best-countries-for-immigration-2026.html" class="tip-card"><div class="tip-icon"><i class="fas fa-globe-americas"></i></div><div class="tip-info"><h4>أفضل دول للهجرة</h4><p>مقارنة بين أمريكا، كندا، ألمانيا، بريطانيا</p></div></a>
     </div>
 
     <div class="quick-links">
@@ -208,15 +207,15 @@
 </div><div class="footer-bottom"><p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة</p></div></div></footer>
 
 <script>
-    // قائمة المقالات (الرابط، العنوان، الوصف، الوسم)
+    // قائمة المقالات (العنوان، الوصف، الوسم، الرابط)
     const articles = [
         { url: "countries/kuwait-jobs-guide-2026.html", title: "🇰🇼 الكويت (دليل عام)", desc: "دليل شامل: الرواتب، أنواع التأشيرات، منصات التوظيف، وكل ما يحتاجه الباحث عن عمل في الكويت.", tag: "رواتب تبدأ من 250 دينار" },
         { url: "countries/kuwait-jobs-beginners-no-degree-2026.html", title: "🇰🇼 الكويت (للمبتدئين)", desc: "وظائف بدون شهادة أو خبرة: سائقين، عمال بناء، مطابخ، نظافة، مستودعات، فرص للنساء.", tag: "رواتب 200 دينار + سكن" },
         { url: "countries/saudi-arabia-jobs-egyptians-2026.html", title: "🇸🇦 السعودية (للمصريين)", desc: "دليل خاص للمصريين: عقود عمل، رواتب، منصة طاقات وقوى، وشروط التأشيرة بدون وسيط.", tag: "رواتب تبدأ 4,000 ريال" },
         { url: "countries/netherlands-jobs-arabs-2026.html", title: "🇳🇱 هولندا (دليل شامل)", desc: "تأشيرة العمل للمهرة، الرواتب، وكيفية التقديم من الدول العربية.", tag: "رواتب تبدأ 45,000 يورو" },
         { url: "countries/netherlands-seasonal-jobs-2026.html", title: "🇳🇱 هولندا (وظائف موسمية)", desc: "بدون شهادة، سكن مجاني، رواتب تبدأ من 1500 يورو. فرص في الزراعة والمستودعات.", tag: "للمبتدئين" },
-        { url: "countries/spain-seasonal-work-moroccans-2026.html", title: "🇪🇸 إسبانيا (موسمي للمغاربة)", desc: "التسجيل عبر ANAPEC، عقود قانونية، سكن، رواتب، وشروط التقديم للمغاربة.", tag: "رواتب 1,400 يورو" },
         { url: "countries/spain-jobs-arabs-guide-2026.html", title: "🇪🇸 إسبانيا (دليل شامل للعرب)", desc: "عقود عمل، شروط، رواتب، تأشيرات، وكيفية التقديم من أي بلد عربي.", tag: "دليل شامل" },
+        { url: "countries/spain-seasonal-work-moroccans-2026.html", title: "🇪🇸 إسبانيا (موسمي للمغاربة)", desc: "التسجيل عبر ANAPEC، عقود قانونية، سكن، رواتب، وشروط التقديم للمغاربة.", tag: "رواتب 1,400 يورو" },
         { url: "countries/qatar.html", title: "🇶🇦 قطر (الرواتب الحقيقية)", desc: "المهن الأعلى أجراً، الرواتب المعفاة من الضرائب، وكيفية التقديم على وظائف قطر للطاقة والمطار.", tag: "رواتب تصل 60,000 ريال" },
         { url: "countries/qatar-jobs-without-experience-degree-2026.html", title: "🇶🇦 قطر (بدون خبرة أو شهادة)", desc: "شركات تقبل مبتدئين، رواتب مع سكن، وكيف تحصل على فرصتك من المغرب أو مصر.", tag: "للمبتدئين" },
         { url: "countries/qatar-jobs-for-women-2026.html", title: "🇶🇦 قطر (وظائف نسائية)", desc: "دوام جزئي وكامل، شهادة ثانوية أو بدون شهادة. فرص في صالونات، تعليم، تمريض، شرطة.", tag: "رواتب تبدأ 4,000 ريال" },
@@ -236,47 +235,16 @@
     ];
 
     const container = document.getElementById('countriesContainer');
-    container.innerHTML = ''; // فارغ
-
-    // دالة لجلب الصورة من المقال
-    async function fetchOgImage(url) {
-        try {
-            const response = await fetch(url, { cache: 'force-cache' });
-            if (!response.ok) return null;
-            const html = await response.text();
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, 'text/html');
-            const meta = doc.querySelector('meta[property="og:image"]');
-            if (meta && meta.content) {
-                // التأكد من أن الرابط مطلق أو نسبي
-                let imgUrl = meta.content;
-                if (imgUrl.startsWith('/')) imgUrl = imgUrl;
-                if (imgUrl.startsWith('http')) return imgUrl;
-                // لو كان نسبي
-                return new URL(imgUrl, window.location.origin).href;
-            }
-            // محاولة أخذ أول صورة في المقال
-            const firstImg = doc.querySelector('img');
-            if (firstImg && firstImg.src) {
-                let imgUrl = firstImg.src;
-                if (imgUrl.startsWith('/')) imgUrl = imgUrl;
-                if (imgUrl.startsWith('http')) return imgUrl;
-                return new URL(imgUrl, window.location.origin).href;
-            }
-            return null;
-        } catch(e) {
-            console.error("Error fetching image for", url, e);
-            return null;
-        }
-    }
-
-    // إنشاء البطاقات مع loading placeholders
+    container.innerHTML = '';
+    
+    // إنشاء البطاقات مع placeholders
+    const cards = [];
     articles.forEach(article => {
         const card = document.createElement('a');
         card.href = article.url;
         card.className = 'country-card';
         card.innerHTML = `
-            <div class="card-img loading-placeholder" data-url="${article.url}"></div>
+            <div class="card-img loading-placeholder" data-url="${article.url}">⏳ جاري تحميل الصورة...</div>
             <div class="card-content">
                 <h3>${article.title}</h3>
                 <p>${article.desc}</p>
@@ -284,24 +252,78 @@
             </div>
         `;
         container.appendChild(card);
+        cards.push(card);
     });
-
-    // جلب الصور لكل بطاقة بشكل غير متزامن
+    
+    // جلب الصور مع تخزين مؤقت (caching)
     async function loadImages() {
-        const imgDivs = document.querySelectorAll('.card-img.loading-placeholder');
-        for (let div of imgDivs) {
-            const url = div.getAttribute('data-url');
-            if (!url) continue;
-            const imgUrl = await fetchOgImage(url);
-            if (imgUrl) {
-                const img = document.createElement('img');
-                img.src = imgUrl;
-                img.alt = "صورة المقال";
-                img.className = "card-img";
-                img.loading = "lazy";
-                div.parentNode.replaceChild(img, div);
-            } else {
-                // أيقونة افتراضية
+        const cacheKey = 'imageCacheV1';
+        let cache = {};
+        try {
+            const saved = localStorage.getItem(cacheKey);
+            if (saved) cache = JSON.parse(saved);
+        } catch(e) { console.warn("Cache read error"); }
+        
+        const promises = cards.map(async (card) => {
+            const imgDiv = card.querySelector('.card-img.loading-placeholder');
+            if (!imgDiv) return;
+            const url = imgDiv.getAttribute('data-url');
+            if (!url) return;
+            
+            // استخدام الصورة من الكاش إذا وجدت ولم تنته صلاحيتها
+            if (cache[url] && cache[url].expiry > Date.now()) {
+                const imgUrl = cache[url].imgUrl;
+                if (imgUrl) {
+                    const img = document.createElement('img');
+                    img.src = imgUrl;
+                    img.alt = "صورة المقال";
+                    img.className = "card-img";
+                    img.loading = "lazy";
+                    imgDiv.parentNode.replaceChild(img, imgDiv);
+                    return;
+                }
+            }
+            
+            try {
+                const response = await fetch(url, { cache: 'force-cache' });
+                if (!response.ok) throw new Error('HTTP ' + response.status);
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                let imgUrl = null;
+                const meta = doc.querySelector('meta[property="og:image"]');
+                if (meta && meta.content) imgUrl = meta.content;
+                if (!imgUrl) {
+                    const firstImg = doc.querySelector('img');
+                    if (firstImg && firstImg.src) imgUrl = firstImg.src;
+                }
+                if (imgUrl) {
+                    if (!imgUrl.startsWith('http')) imgUrl = new URL(imgUrl, window.location.origin).href;
+                    const img = document.createElement('img');
+                    img.src = imgUrl;
+                    img.alt = "صورة المقال";
+                    img.className = "card-img";
+                    img.loading = "lazy";
+                    imgDiv.parentNode.replaceChild(img, imgDiv);
+                    // حفظ في الكاش لمدة 24 ساعة
+                    cache[url] = { imgUrl: imgUrl, expiry: Date.now() + 86400000 };
+                    localStorage.setItem(cacheKey, JSON.stringify(cache));
+                } else {
+                    // أيقونة افتراضية
+                    const fallback = document.createElement('div');
+                    fallback.className = "card-img";
+                    fallback.style.background = "#EFF6FF";
+                    fallback.style.display = "flex";
+                    fallback.style.alignItems = "center";
+                    fallback.style.justifyContent = "center";
+                    fallback.innerHTML = '<i class="fas fa-briefcase" style="font-size: 3rem; color: #2563EB;"></i>';
+                    imgDiv.parentNode.replaceChild(fallback, imgDiv);
+                    // حفظ أن المقال بلا صورة لن نحاول مرة أخرى قريباً
+                    cache[url] = { imgUrl: null, expiry: Date.now() + 86400000 };
+                    localStorage.setItem(cacheKey, JSON.stringify(cache));
+                }
+            } catch(e) {
+                console.error("Image fetch error for", url, e);
                 const fallback = document.createElement('div');
                 fallback.className = "card-img";
                 fallback.style.background = "#EFF6FF";
@@ -309,10 +331,12 @@
                 fallback.style.alignItems = "center";
                 fallback.style.justifyContent = "center";
                 fallback.innerHTML = '<i class="fas fa-briefcase" style="font-size: 3rem; color: #2563EB;"></i>';
-                div.parentNode.replaceChild(fallback, div);
+                imgDiv.parentNode.replaceChild(fallback, imgDiv);
             }
-        }
+        });
+        await Promise.all(promises);
     }
+    
     loadImages();
 </script>
 
