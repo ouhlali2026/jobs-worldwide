@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>تصنيف الدول | وظائف على مستوى العالم</title>
+<meta name="description" content="دليل شامل لجميع الدول المتوفرة على موقع وظائف على مستوى العالم. فرص عمل في الخليج، أوروبا، أمريكا، كندا، والبرازيل.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #F8FAFC; color: #1E293B; line-height: 1.6; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+    .header { background: #FFFFFF; border-bottom: 1px solid #E2E8F0; position: sticky; top: 0; z-index: 100; }
+    .nav { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; flex-wrap: wrap; gap: 16px; }
+    .logo { font-size: 1.4rem; font-weight: 800; background: linear-gradient(135deg, #0F172A, #1E293B); -webkit-background-clip: text; background-clip: text; color: transparent; display: flex; align-items: center; gap: 8px; }
+    .logo i { background: none; color: #2563EB; }
+    .nav-links { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .nav-links a { text-decoration: none; color: #475569; font-weight: 500; font-size: 0.9rem; padding: 6px 14px; border-radius: 40px; transition: 0.2s; }
+    .nav-links a:hover { color: #2563EB; background: #EFF6FF; }
+    .btn-nav { background: #2563EB; color: white !important; padding: 6px 20px !important; border-radius: 40px !important; }
+    .dropdown { position: relative; display: inline-block; }
+    .dropdown-content { display: none; position: absolute; top: 40px; right: 0; background: white; min-width: 280px; box-shadow: 0 12px 25px rgba(0,0,0,0.1); border-radius: 20px; overflow: hidden; z-index: 1000; border: 1px solid #E2E8F0; }
+    .dropdown-content a { display: block; padding: 12px 18px; color: #1E293B; text-decoration: none; border-bottom: 1px solid #F1F5F9; font-size: 0.85rem; transition: 0.2s; }
+    .dropdown-content a:hover { background: #EFF6FF; color: #2563EB; }
+    .dropdown:hover .dropdown-content { display: block; }
+    .hero { background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color: white; border-radius: 32px; padding: 50px 40px; margin: 35px 0; text-align: center; }
+    .hero h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 15px; }
+    .hero h1 span { color: #FCD34D; }
+    .hero p { font-size: 1rem; color: #CBD5E1; max-width: 700px; margin: 0 auto; }
+    h2 { font-size: 1.6rem; font-weight: 700; margin: 40px 0 20px; color: #0F172A; border-right: 4px solid #FCD34D; padding-right: 15px; }
+    .countries-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px; }
+    .country-card { background: white; border-radius: 24px; overflow: hidden; transition: all 0.35s; text-decoration: none; color: #1E293B; display: flex; flex-direction: column; border: 1px solid #E2E8F0; box-shadow: 0 4px 12px rgba(0,0,0,0.03); height: 100%; }
+    .country-card:hover { transform: translateY(-8px); border-color: #2563EB; box-shadow: 0 20px 35px -12px rgba(0,0,0,0.12); }
+    .card-img { width: 100%; height: 200px; object-fit: cover; display: block; background-color: #F1F5F9; }
+    .card-content { padding: 20px; flex: 1; }
+    .card-content h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 8px; color: #0F172A; }
+    .card-content p { color: #475569; font-size: 0.8rem; margin-bottom: 12px; line-height: 1.5; }
+    .card-tag { display: inline-block; background: #EFF6FF; color: #2563EB; padding: 4px 12px; border-radius: 30px; font-size: 0.7rem; font-weight: 600; }
+    .loading-placeholder { width: 100%; height: 200px; background: #E2E8F0; display: flex; align-items: center; justify-content: center; color: #94A3B8; font-size: 0.8rem; }
+    .footer { background: #0F172A; color: #94A3B8; padding: 48px 0 24px; margin-top: 60px; border-radius: 32px 32px 0 0; }
+    .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 35px; margin-bottom: 30px; }
+    .footer-col h4 { color: white; margin-bottom: 14px; font-size: 0.95rem; }
+    .footer-col a { display: block; color: #94A3B8; text-decoration: none; margin-bottom: 8px; font-size: 0.8rem; transition: 0.2s; }
+    .footer-col a:hover { color: #2563EB; }
+    .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #1E293B; font-size: 0.75rem; }
+    @media (max-width: 768px) {
+        .hero h1 { font-size: 1.6rem; }
+        .hero { padding: 30px 20px; }
+        h2 { font-size: 1.3rem; }
+        .nav { flex-direction: column; text-align: center; }
+        .nav-links { justify-content: center; }
+        .countries-grid { grid-template-columns: 1fr; }
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <div class="nav">
+            <div class="logo"><i class="fas fa-globe-americas"></i> وظائف على مستوى العالم</div>
+            <div class="nav-links">
+                <a href="index.html">🏠 الرئيسية</a>
+                <a href="services.html">📄 الخدمات</a>
+                <a href="tips.html">💡 نصائح</a>
+                <a href="countries.html">🌍 تصنيف الدول</a>
+                <a href="about.html">ℹ️ من نحن</a>
+                <a href="contact.html">📞 اتصل بنا</a>
+                <a href="services.html" class="btn-nav">✨ اطلب خدمتك</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    
+    <div class="hero">
+        <h1>تصنيف <span>الدول</span></h1>
+        <p>دليل شامل لجميع الوجهات المتاحة – اختر وجهتك وابدأ رحلة العمل والهجرة</p>
+    </div>
+
+    <h2>🇦🇪 دول الخليج العربي</h2>
+    <div id="gulfContainer" class="countries-grid"></div>
+
+    <h2>🇪🇺 دول أوروبا</h2>
+    <div id="europeContainer" class="countries-grid"></div>
+
+    <h2>🌎 أمريكا الشمالية والبرازيل</h2>
+    <div id="americasContainer" class="countries-grid"></div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col"><h4>🌐 وظائف على مستوى العالم</h4><a href="index.html">الرئيسية</a><a href="services.html">خدماتنا</a><a href="tips.html">النصائح المهنية</a><a href="countries.html">تصنيف الدول</a></div>
+            <div class="footer-col"><h4>📌 الدول</h4>
+                <a href="countries/kuwait-jobs-guide-2026.html">🇰🇼 الكويت</a>
+                <a href="countries/saudi-arabia-contracts-guide-2026.html">🇸🇦 السعودية</a>
+                <a href="countries/qatar.html">🇶🇦 قطر</a>
+                <a href="countries/uae-jobs-without-degree-2026.html">🇦🇪 الإمارات</a>
+                <a href="countries/netherlands-jobs-arabs-2026.html">🇳🇱 هولندا</a>
+                <a href="countries/spain-jobs-arabs-guide-2026.html">🇪🇸 إسبانيا</a>
+                <a href="countries/france-contracts-guide-2026.html">🇫🇷 فرنسا</a>
+                <a href="countries/germany.html">🇩🇪 ألمانيا</a>
+                <a href="countries/usa.html">🇺🇸 أمريكا</a>
+                <a href="countries/canada.html">🇨🇦 كندا</a>
+            </div>
+            <div class="footer-col"><h4>⚖️ روابط مهمة</h4><a href="privacy.html">سياسة الخصوصية</a><a href="terms.html">شروط الاستخدام</a><a href="contact.html">اتصل بنا</a></div>
+            <div class="footer-col"><h4>📱 تواصل معنا</h4><a href="https://wa.me/212679627332" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a><a href="mailto:info@tarik-aljanah.online"><i class="fas fa-envelope"></i> البريد الإلكتروني</a></div>
+        </div>
+        <div class="footer-bottom"><p>© 2026 وظائف على مستوى العالم – جميع الحقوق محفوظة</p></div>
+    </div>
+</footer>
+
+<script>
+    // قائمة جميع الدول (مقسمة حسب المناطق)
+    const gulfCountries = [
+        { url: "countries/kuwait-jobs-guide-2026.html", title: "🇰🇼 الكويت (دليل عام)", desc: "دليل شامل: الرواتب، أنواع التأشيرات، منصات التوظيف.", tag: "رواتب تبدأ من 250 دينار" },
+        { url: "countries/kuwait-jobs-beginners-no-degree-2026.html", title: "🇰🇼 الكويت (للمبتدئين)", desc: "وظائف بدون شهادة أو خبرة: سائقين، عمال بناء، مطابخ.", tag: "رواتب 200 دينار + سكن" },
+        { url: "countries/saudi-arabia-contracts-guide-2026.html", title: "🇸🇦 السعودية (دليل عام)", desc: "عقود عمل في مشاريع نيوم، القدية، والبحر الأحمر.", tag: "رؤية 2030" },
+        { url: "countries/saudi-arabia-jobs-egyptians-2026.html", title: "🇸🇦 السعودية (للمصريين)", desc: "دليل خاص للمصريين: عقود عمل، رواتب، منصة طاقات وقوى.", tag: "رواتب تبدأ 4,000 ريال" },
+        { url: "countries/qatar.html", title: "🇶🇦 قطر (الرواتب الحقيقية)", desc: "المهن الأعلى أجراً، الرواتب المعفاة من الضرائب.", tag: "رواتب تصل 60,000 ريال" },
+        { url: "countries/qatar-jobs-without-experience-degree-2026.html", title: "🇶🇦 قطر (بدون خبرة أو شهادة)", desc: "شركات تقبل مبتدئين، رواتب مع سكن.", tag: "للمبتدئين" },
+        { url: "countries/qatar-jobs-for-women-2026.html", title: "🇶🇦 قطر (وظائف نسائية)", desc: "دوام جزئي وكامل، شهادة ثانوية أو بدون شهادة.", tag: "رواتب تبدأ 4,000 ريال" },
+        { url: "countries/uae-jobs-without-degree-2026.html", title: "🇦🇪 الإمارات (بدون شهادة)", desc: "وظائف في دبي وأبوظبي لا تتطلب شهادة جامعية.", tag: "فرص للجميع" },
+        { url: "countries/uae-jobs-without-experience-2026.html", title: "🇦🇪 الإمارات (بدون خبرة)", desc: "أول وظيفة لك في الإمارات: قطاعات تقبل المبتدئين.", tag: "للمبتدئين" }
+    ];
+
+    const europeCountries = [
+        { url: "countries/europe-jobs-without-degree-2026.html", title: "🇪🇺 أوروبا (بدون شهادة)", desc: "دليل شامل لوظائف في ألمانيا، إيطاليا، فرنسا، هولندا.", tag: "وظائف عملية" },
+        { url: "countries/netherlands-jobs-arabs-2026.html", title: "🇳🇱 هولندا (دليل شامل)", desc: "تأشيرة العمل للمهرة، الرواتب، وكيفية التقديم.", tag: "رواتب تبدأ 45,000 يورو" },
+        { url: "countries/netherlands-seasonal-jobs-2026.html", title: "🇳🇱 هولندا (وظائف موسمية)", desc: "بدون شهادة، سكن مجاني، رواتب تبدأ من 1500 يورو.", tag: "للمبتدئين" },
+        { url: "countries/spain-jobs-arabs-guide-2026.html", title: "🇪🇸 إسبانيا (دليل شامل للعرب)", desc: "عقود عمل، شروط، رواتب، تأشيرات، وكيفية التقديم.", tag: "دليل شامل" },
+        { url: "countries/spain-seasonal-work-moroccans-2026.html", title: "🇪🇸 إسبانيا (موسمي للمغاربة)", desc: "التسجيل عبر ANAPEC، عقود قانونية، سكن، رواتب.", tag: "رواتب 1,400 يورو" },
+        { url: "countries/france-contracts-guide-2026.html", title: "🇫🇷 فرنسا", desc: "عقود CDI و CDD، عقود موسمية في السياحة والفلاحة.", tag: "عقود رسمية" },
+        { url: "countries/italy-contracts-guide-2026.html", title: "🇮🇹 إيطاليا", desc: "عقود موسمية في الزراعة والسياحة عبر منصة Click Lavoro.", tag: "تأشيرة سريعة" },
+        { url: "countries/germany.html", title: "🇩🇪 ألمانيا", desc: "تأشيرة Chancenkarte. وظائف في الطب، الهندسة والتقنية.", tag: "بطاقة الفرصة" },
+        { url: "countries/uk.html", title: "🇬🇧 بريطانيا", desc: "تأشيرة Skilled Worker Visa. نظام النقاط.", tag: "نظام النقاط" },
+        { url: "countries/albania-jobs-guide-2026.html", title: "🇦🇱 ألبانيا", desc: "تأشيرة موحدة عبر e-Albania، فرص في السياحة والتكنولوجيا.", tag: "تصريح عمل+إقامة" }
+    ];
+
+    const americasCountries = [
+        { url: "countries/usa.html", title: "🇺🇸 الولايات المتحدة", desc: "تأشيرات H-1B و H-2B. رواتب بين 3000-13000 دولار شهرياً.", tag: "85,000 تأشيرة" },
+        { url: "countries/canada.html", title: "🇨🇦 كندا", desc: "نظام Express Entry، رواتب بين 3500-9000 دولار كندي.", tag: "500,000 مهاجر" },
+        { url: "countries/brazil-work-visa-guide-2026.html", title: "🇧🇷 البرازيل (عمل)", desc: "تأشيرة VITEM V والمهن المطلوبة.", tag: "فيزا عمل" },
+        { url: "countries/asylum-brazil-guide-2026.html", title: "🇧🇷 البرازيل (لجوء)", desc: "طلب اللجوء الإنساني والسياسي. شروط بروتوكول اللجوء.", tag: "بروتوكول اللجوء" }
+    ];
+
+    // دالة إنشاء البطاقات
+    function createCard(article) {
+        const card = document.createElement('a');
+        card.href = article.url;
+        card.className = 'country-card';
+        card.innerHTML = `
+            <div class="card-img loading-placeholder" data-url="${article.url}">⏳ جاري تحميل الصورة...</div>
+            <div class="card-content">
+                <h3>${article.title}</h3>
+                <p>${article.desc}</p>
+                <span class="card-tag">${article.tag}</span>
+            </div>
+        `;
+        return card;
+    }
+
+    // دالة جلب الصورة من المقال مع تخزين مؤقت
+    async function loadImageForCard(card) {
+        const imgDiv = card.querySelector('.card-img.loading-placeholder');
+        if (!imgDiv) return;
+        const url = imgDiv.getAttribute('data-url');
+        if (!url) return;
+        
+        const cacheKey = 'imageCacheCountriesV1';
+        let cache = {};
+        try {
+            const saved = localStorage.getItem(cacheKey);
+            if (saved) cache = JSON.parse(saved);
+        } catch(e) {}
+        
+        if (cache[url] && cache[url].expiry > Date.now()) {
+            const imgUrl = cache[url].imgUrl;
+            if (imgUrl) {
+                const img = document.createElement('img');
+                img.src = imgUrl;
+                img.alt = "صورة المقال";
+                img.className = "card-img";
+                img.loading = "lazy";
+                imgDiv.parentNode.replaceChild(img, imgDiv);
+                return;
+            } else {
+                const fallback = document.createElement('div');
+                fallback.className = "card-img";
+                fallback.style.background = "#EFF6FF";
+                fallback.style.display = "flex";
+                fallback.style.alignItems = "center";
+                fallback.style.justifyContent = "center";
+                fallback.innerHTML = '<i class="fas fa-briefcase" style="font-size: 3rem; color: #2563EB;"></i>';
+                imgDiv.parentNode.replaceChild(fallback, imgDiv);
+                return;
+            }
+        }
+        
+        try {
+            const response = await fetch(url, { cache: 'force-cache' });
+            if (!response.ok) throw new Error();
+            const html = await response.text();
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            let imgUrl = null;
+            const meta = doc.querySelector('meta[property="og:image"]');
+            if (meta && meta.content) imgUrl = meta.content;
+            if (!imgUrl) {
+                const firstImg = doc.querySelector('img');
+                if (firstImg && firstImg.src) imgUrl = firstImg.src;
+            }
+            if (imgUrl) {
+                if (!imgUrl.startsWith('http')) imgUrl = new URL(imgUrl, window.location.origin).href;
+                const img = document.createElement('img');
+                img.src = imgUrl;
+                img.alt = "صورة المقال";
+                img.className = "card-img";
+                img.loading = "lazy";
+                imgDiv.parentNode.replaceChild(img, imgDiv);
+                cache[url] = { imgUrl: imgUrl, expiry: Date.now() + 86400000 };
+                localStorage.setItem(cacheKey, JSON.stringify(cache));
+            } else {
+                const fallback = document.createElement('div');
+                fallback.className = "card-img";
+                fallback.style.background = "#EFF6FF";
+                fallback.style.display = "flex";
+                fallback.style.alignItems = "center";
+                fallback.style.justifyContent = "center";
+                fallback.innerHTML = '<i class="fas fa-briefcase" style="font-size: 3rem; color: #2563EB;"></i>';
+                imgDiv.parentNode.replaceChild(fallback, imgDiv);
+                cache[url] = { imgUrl: null, expiry: Date.now() + 86400000 };
+                localStorage.setItem(cacheKey, JSON.stringify(cache));
+            }
+        } catch(e) {
+            const fallback = document.createElement('div');
+            fallback.className = "card-img";
+            fallback.style.background = "#EFF6FF";
+            fallback.style.display = "flex";
+            fallback.style.alignItems = "center";
+            fallback.style.justifyContent = "center";
+            fallback.innerHTML = '<i class="fas fa-briefcase" style="font-size: 3rem; color: #2563EB;"></i>';
+            imgDiv.parentNode.replaceChild(fallback, imgDiv);
+        }
+    }
+
+    // عرض البطاقات وجلب الصور
+    const gulfContainer = document.getElementById('gulfContainer');
+    const europeContainer = document.getElementById('europeContainer');
+    const americasContainer = document.getElementById('americasContainer');
+    
+    const allCards = [];
+    
+    gulfCountries.forEach(c => {
+        const card = createCard(c);
+        gulfContainer.appendChild(card);
+        allCards.push(card);
+    });
+    
+    europeCountries.forEach(c => {
+        const card = createCard(c);
+        europeContainer.appendChild(card);
+        allCards.push(card);
+    });
+    
+    americasCountries.forEach(c => {
+        const card = createCard(c);
+        americasContainer.appendChild(card);
+        allCards.push(card);
+    });
+    
+    // جلب الصور بشكل متوازي مع تأخير بسيط لتجنب الضغط
+    setTimeout(() => {
+        allCards.forEach(card => loadImageForCard(card));
+    }, 100);
+</script>
+
+<script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
+</body>
+</html>
