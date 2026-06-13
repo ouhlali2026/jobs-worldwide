@@ -7,6 +7,10 @@
 
     // قائمة الدول (أضف أي دولة جديدة هنا مع تاريخ اليوم)
     const featuredCountries = [
+
+{ url: "countries/morocco-jobs-guide-2026.html", title: "🇲🇦 وظائف في المغرب (دليل شامل)", desc: "أفضل مواقع التوظيف، المهن المطلوبة، الرواتب، وظائف بدون شهادة، والوظيفة العمومية.", tag: "جديد", dateAdded: "2026-06-13" },
+
+
         { url: "countries/belgium-work-guide-2026.html", title: "🇧🇪 بلجيكا 2026", desc: "تأشيرة Single Permit، رواتب تبدأ 1,800 يورو – دليل شامل للمغاربة والعرب.", tag: "جديد", dateAdded: "2026-06-05" },
         { url: "countries/romania-work-visa-guide-2026.html", title: "🇷🇴 رومانيا 2026", desc: "عقود عمل برواتب 600-1,500 يورو – إجابات على أسئلة العرب.", tag: "جديد", dateAdded: "2026-06-04" },
         { url: "countries/canada.html", title: "🇨🇦 كندا 2026", desc: "نظام Express Entry، رواتب بين 3500-9000 دولار كندي، هجرة منظمة.", tag: "500,000 مهاجر", dateAdded: "2026-05-23" },
