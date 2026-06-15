@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, view-fit=cover">
     <title>النصائح المهنية | وظائف على مستوى العالم</title>
-    <meta name="description" content="مجموعة من النصائح المهنية القيمة للباحثين عن عمل في الخارج. نصائح للبحث عن وظائف، التأشيرات، كتابة السيرة الذاتية، والمقابلات الشخصية.">
+    <meta name="description" content="مجموعة من النصائح المهنية القيمة للباحثين عن عمل في الخارج. نصائح للبحث عن وظائف، التأشيرات، كتابة السيرة الذاتية، والمقابلات الشخصية، وعقود العمل.">
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -30,29 +30,19 @@
         .dropdown-content a:hover { background: #EFF6FF; color: #3B82F6; }
         .dropdown:hover .dropdown-content { display: block; }
         
-        /* القسم الرئيسي */
         .hero { background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color: white; border-radius: 28px; padding: 50px 40px; margin: 35px 0; text-align: center; }
         .hero h1 { font-size: 2.3rem; font-weight: 800; margin-bottom: 15px; }
         .hero h1 span { color: #3B82F6; }
         .hero p { font-size: 1rem; color: #CBD5E1; max-width: 600px; margin: 0 auto; }
         
-        /* العناوين */
-        .section-title { font-size: 1.6rem; font-weight: 700; margin: 40px 0 20px; text-align: center; }
-        .section-title span { color: #3B82F6; }
+        .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 30px 0 50px; }
+        .tip-card { background: white; border-radius: 20px; padding: 18px; text-decoration: none; color: #1E293B; transition: 0.2s; border: 1px solid #E2E8F0; display: flex; align-items: center; gap: 15px; }
+        .tip-card:hover { transform: translateY(-3px); border-color: #3B82F6; background: #FFFFFF; }
+        .tip-icon { width: 48px; height: 48px; background: #EFF6FF; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .tip-icon i { font-size: 1.3rem; color: #3B82F6; }
+        .tip-info h4 { font-size: 0.95rem; margin-bottom: 4px; color: #0F172A; }
+        .tip-info p { font-size: 0.75rem; color: #475569; }
         
-        /* بطاقات النصائح */
-        .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 30px 0 50px; }
-        .tip-card { background: white; border-radius: 24px; overflow: hidden; transition: all 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.04); border: 1px solid #EFF3F8; text-decoration: none; display: block; }
-        .tip-card:hover { transform: translateY(-6px); box-shadow: 0 20px 30px -12px rgba(0,0,0,0.12); border-color: #DBEAFE; }
-        .tip-header { background: #F8FAFC; padding: 25px 25px 15px; text-align: center; border-bottom: 1px solid #EFF3F8; }
-        .tip-header i { font-size: 2.5rem; color: #3B82F6; margin-bottom: 15px; display: inline-block; }
-        .tip-header h3 { font-size: 1.2rem; font-weight: 700; color: #1E293B; }
-        .tip-body { padding: 20px 25px 25px; }
-        .tip-body p { color: #64748B; font-size: 0.85rem; margin-bottom: 20px; line-height: 1.6; }
-        .read-more { color: #3B82F6; font-weight: 600; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 5px; }
-        .tip-card:hover .read-more { gap: 8px; }
-        
-        /* التذييل */
         .footer { background: #0F172A; color: #94A3B8; padding: 40px 0 20px; margin-top: 50px; border-radius: 32px 32px 0 0; }
         .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 35px; margin-bottom: 30px; }
         .footer-col h4 { color: white; margin-bottom: 14px; font-size: 0.95rem; }
@@ -63,8 +53,7 @@
         @media (max-width: 768px) {
             .hero h1 { font-size: 1.6rem; }
             .hero { padding: 30px 20px; }
-            .section-title { font-size: 1.3rem; }
-            .nav { flex-direction: column; }
+            .nav { flex-direction: column; text-align: center; }
             .nav-links { justify-content: center; }
             .tips-grid { grid-template-columns: 1fr; }
         }
@@ -77,13 +66,13 @@
         <div class="nav">
             <div class="logo"><i class="fas fa-globe-americas"></i> وظائف على مستوى العالم</div>
             <div class="nav-links">
-                <a href="index.html">الرئيسية</a>
-                <a href="services.html">الخدمات</a>
-                <a href="tips.html">نصائح</a>
-                <a href="about.html">من نحن</a>
-                <a href="contact.html">اتصل بنا</a>
+                <a href="index.html">🏠 الرئيسية</a>
+                <a href="services.html">📄 الخدمات</a>
+                <a href="tips.html">💡 نصائح</a>
+                <a href="about.html">ℹ️ من نحن</a>
+                <a href="contact.html">📞 اتصل بنا</a>
                 <div class="dropdown">
-                    <a href="#" class="dropbtn">تصنيف الدول ▼</a>
+                    <a href="#" class="dropbtn">🌍 تصنيف الدول ▼</a>
                     <div class="dropdown-content">
                         <a href="countries/usa.html">🇺🇸 الولايات المتحدة</a>
                         <a href="countries/canada.html">🇨🇦 كندا</a>
@@ -99,7 +88,10 @@
                         <a href="countries/kuwait-jobs-guide-2026.html">🇰🇼 الكويت</a>
                         <a href="countries/uae-jobs-without-degree-2026.html">🇦🇪 الإمارات</a>
                         <a href="countries/netherlands-jobs-arabs-2026.html">🇳🇱 هولندا</a>
-                        <a href="countries/france-seasonal-work-moroccans-2026.html">🇫🇷 فرنسا (موسمي للمغاربة)</a>
+                        <a href="countries/romania-work-visa-guide-2026.html">🇷🇴 رومانيا</a>
+                        <a href="countries/belgium-work-guide-2026.html">🇧🇪 بلجيكا</a>
+                        <a href="countries/sweden-job-seeker-visa-2026.html">🇸🇪 السويد</a>
+                        <a href="countries/morocco-jobs-guide-2026.html">🇲🇦 المغرب</a>
                     </div>
                 </div>
                 <a href="services.html" class="btn-nav">📄 اطلب خدمتك</a>
@@ -116,120 +108,94 @@
     </div>
 
     <div class="tips-grid">
-
-<a href="tips/job-contract-tips.html" class="tip-card">
-    <div class="tip-icon"><i class="fas fa-file-signature"></i></div>
-    <div class="tip-info">
-        <h4>📄 نصائح عقود العمل – نماذج جاهزة وأخطاء قاتلة</h4>
-        <p>نموذج عقد عمل word و pdf، صيغ قانونية، وأخطاء ترفض بسببها الفرص.</p>
-    </div>
-</a>
         
         <!-- نصائح البحث عن وظائف في أمريكا -->
         <a href="tips/usa-job-search-tips.html" class="tip-card">
-            <div class="tip-header">
-                <i class="fas fa-flag-usa"></i>
-                <h3>🇺🇸 نصائح البحث عن وظائف في أمريكا</h3>
-            </div>
-            <div class="tip-body">
-                <p>أفضل الاستراتيجيات للعثور على وظيفة في السوق الأمريكي، مواقع التوظيف الفعالة، وكيفية التقديم على تأشيرات H-1B.</p>
-                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+            <div class="tip-icon"><i class="fas fa-flag-usa"></i></div>
+            <div class="tip-info">
+                <h4>🇺🇸 نصائح البحث في أمريكا</h4>
+                <p>أفضل الاستراتيجيات للعثور على وظيفة</p>
             </div>
         </a>
         
         <!-- نصائح التأشيرات -->
         <a href="tips/visa-tips.html" class="tip-card">
-            <div class="tip-header">
-                <i class="fas fa-passport"></i>
-                <h3>🛂 نصائح التأشيرات العالمية</h3>
-            </div>
-            <div class="tip-body">
-                <p>كل ما تحتاج معرفته عن تأشيرات H-1B الأمريكية، Express Entry الكندية، و Chancenkarte الألمانية.</p>
-                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+            <div class="tip-icon"><i class="fas fa-passport"></i></div>
+            <div class="tip-info">
+                <h4>🛂 نصائح التأشيرات العالمية</h4>
+                <p>H-1B، Express Entry، Chancenkarte</p>
             </div>
         </a>
         
         <!-- نصائح كتابة السيرة الذاتية -->
         <a href="tips/cv-tips.html" class="tip-card">
-            <div class="tip-header">
-                <i class="fas fa-file-alt"></i>
-                <h3>📝 نصائح كتابة السيرة الذاتية</h3>
-            </div>
-            <div class="tip-body">
-                <p>كيف تكتب سيرة ذاتية احترافية بتصميم ATS تجذب انتباه مسؤولي التوظيف وتزيد فرص قبولك.</p>
-                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+            <div class="tip-icon"><i class="fas fa-file-alt"></i></div>
+            <div class="tip-info">
+                <h4>📝 كتابة السيرة الذاتية</h4>
+                <p>كيف تكتب CV احترافي ATS</p>
             </div>
         </a>
         
         <!-- نصائح المقابلات الشخصية -->
         <a href="tips/interview-tips.html" class="tip-card">
-            <div class="tip-header">
-                <i class="fas fa-microphone"></i>
-                <h3>🎤 نصائح المقابلات الشخصية</h3>
-            </div>
-            <div class="tip-body">
-                <p>أسئلة متوقعة في المقابلات للوظائف العالمية، وكيف تجيب عليها بثقة واحترافية.</p>
-                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+            <div class="tip-icon"><i class="fas fa-microphone-alt"></i></div>
+            <div class="tip-info">
+                <h4>🎤 نصائح المقابلات الشخصية</h4>
+                <p>أسئلة متوقعة وكيف تجيب عليها</p>
             </div>
         </a>
         
         <!-- نصائح LinkedIn -->
         <a href="tips/linkedin-tips.html" class="tip-card">
-            <div class="tip-header">
-                <i class="fab fa-linkedin"></i>
-                <h3>🔗 نصائح LinkedIn الاحترافية</h3>
-            </div>
-            <div class="tip-body">
-                <p>كيف تبني ملف شخصي جذاب على LinkedIn يجذب مسؤولي التوظيف ويزيد فرص ظهورك.</p>
-                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+            <div class="tip-icon"><i class="fab fa-linkedin"></i></div>
+            <div class="tip-info">
+                <h4>🔗 نصائح LinkedIn الاحترافية</h4>
+                <p>اجعل ملفك يجذب مسؤولي التوظيف</p>
             </div>
         </a>
         
         <!-- البحث عن وظائف عبر LinkedIn -->
         <a href="tips/linkedin-job-search-tips.html" class="tip-card">
-            <div class="tip-header">
-                <i class="fab fa-linkedin"></i>
-                <h3>🔍 البحث عن وظائف عبر LinkedIn</h3>
-            </div>
-            <div class="tip-body">
-                <p>استراتيجيات متقدمة للعثور على وظائف باستخدام LinkedIn، والتواصل مع مسؤولي التوظيف.</p>
-                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+            <div class="tip-icon"><i class="fab fa-linkedin"></i></div>
+            <div class="tip-info">
+                <h4>🔍 البحث عن وظائف عبر LinkedIn</h4>
+                <p>استراتيجيات متقدمة للعثور على وظائف</p>
             </div>
         </a>
         
         <!-- أفضل دول للهجرة 2026 -->
         <a href="tips/best-countries-for-immigration-2026.html" class="tip-card">
-            <div class="tip-header">
-                <i class="fas fa-globe-americas"></i>
-                <h3>🌍 أفضل دول للهجرة 2026</h3>
-            </div>
-            <div class="tip-body">
-                <p>مقارنة بين أفضل الدول للهجرة والعمل: أمريكا، كندا، ألمانيا، بريطانيا. المزايا والتكاليف.</p>
-                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+            <div class="tip-icon"><i class="fas fa-globe-americas"></i></div>
+            <div class="tip-info">
+                <h4>🌍 أفضل دول للهجرة 2026</h4>
+                <p>مقارنة بين أمريكا، كندا، ألمانيا، بريطانيا</p>
             </div>
         </a>
 
-        <!-- جديد: عقود موسمية في فرنسا للمغاربة -->
+        <!-- عقود موسمية في فرنسا للمغاربة -->
         <a href="countries/france-seasonal-work-moroccans-2026.html" class="tip-card">
-            <div class="tip-header">
-                <i class="fas fa-tractor"></i>
-                <h3>🇫🇷 عقود موسمية في فرنسا للمغاربة 2026</h3>
-            </div>
-            <div class="tip-body">
-                <p>دليل حصري للمغاربة: التسجيل عبر ANAPEC، الرواتب الحقيقية (SMIC 12.31€/ساعة)، والسكن المجاني.</p>
-                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+            <div class="tip-icon"><i class="fas fa-tractor"></i></div>
+            <div class="tip-info">
+                <h4>🇫🇷 عقود موسمية في فرنسا للمغاربة 2026</h4>
+                <p>التسجيل عبر ANAPEC، رواتب حقيقية وسكن مجاني</p>
             </div>
         </a>
 
-        <!-- جديد: مقارنة فرنسا vs إسبانيا -->
+        <!-- مقارنة فرنسا vs إسبانيا -->
         <a href="tips/france-vs-spain-comparison.html" class="tip-card">
-            <div class="tip-header">
-                <i class="fas fa-balance-scale"></i>
-                <h3>🇫🇷🇪🇸 أيهما أفضل: فرنسا أم إسبانيا؟</h3>
+            <div class="tip-icon"><i class="fas fa-balance-scale"></i></div>
+            <div class="tip-info">
+                <h4>🇫🇷🇪🇸 أيهما أفضل: فرنسا أم إسبانيا؟</h4>
+                <p>مقارنة شاملة للرواتب والتأشيرات وتكاليف المعيشة</p>
             </div>
-            <div class="tip-body">
-                <p>مقارنة شاملة للرواتب، التأشيرات، تكاليف المعيشة، وسهولة الحصول على الإقامة الدائمة والجنسية.</p>
-                <span class="read-more">اقرأ المزيد <i class="fas fa-arrow-left"></i></span>
+        </a>
+
+        <!-- جديد: نصائح عقود العمل (نماذج جاهزة) -->
+        <a href="tips/job-contract-tips.html" class="tip-card">
+            <div class="tip-icon"><i class="fas fa-file-signature"></i></div>
+            <div class="tip-info">
+                <h4>📄 نصائح عقود العمل – نماذج جاهزة</h4>
+                <p>قوالب word و pdf، أخطاء قاتلة، ونصائح قانونية قبل التوقيع</p>
             </div>
         </a>
         
@@ -247,7 +213,7 @@
                 <a href="tips.html">النصائح المهنية</a>
             </div>
             <div class="footer-col">
-                <h4>الدول</h4>
+                <h4>📌 الدول</h4>
                 <a href="countries/usa.html">الولايات المتحدة</a>
                 <a href="countries/canada.html">كندا</a>
                 <a href="countries/germany.html">ألمانيا</a>
@@ -256,15 +222,20 @@
                 <a href="countries/spain-jobs-arabs-guide-2026.html">إسبانيا</a>
                 <a href="countries/qatar.html">قطر</a>
                 <a href="countries/albania-jobs-guide-2026.html">ألبانيا</a>
+                <a href="countries/brazil-work-visa-guide-2026.html">البرازيل</a>
+                <a href="countries/romania-work-visa-guide-2026.html">رومانيا</a>
+                <a href="countries/belgium-work-guide-2026.html">بلجيكا</a>
+                <a href="countries/sweden-job-seeker-visa-2026.html">السويد</a>
+                <a href="countries/morocco-jobs-guide-2026.html">المغرب</a>
             </div>
             <div class="footer-col">
-                <h4>روابط مهمة</h4>
+                <h4>⚖️ روابط مهمة</h4>
                 <a href="privacy.html">سياسة الخصوصية</a>
                 <a href="terms.html">شروط الاستخدام</a>
                 <a href="contact.html">اتصل بنا</a>
             </div>
             <div class="footer-col">
-                <h4>تواصل معنا</h4>
+                <h4>📱 تواصل معنا</h4>
                 <a href="https://wa.me/212679627332" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
                 <a href="mailto:info@tarik-aljanah.online"><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
             </div>
