@@ -6,7 +6,7 @@
   <!-- ============================================= -->
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/</loc>
-    <lastmod>2026-06-04</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/tips.html</loc>
-    <lastmod>2026-06-04</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -54,20 +54,8 @@
   </url>
   
   <!-- ============================================= -->
-  <!-- أدلة أوروبا والعالم الجديد (بما فيها رومانيا وبلجيكا) -->
+  <!-- أدلة أوروبا والعالم الجديد -->
   <!-- ============================================= -->
-  <url>
-    <loc>https://jobs-worldwide.for-us.workers.dev/countries/belgium-work-guide-2026.html</loc>
-    <lastmod>2026-06-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://jobs-worldwide.for-us.workers.dev/countries/romania-work-visa-guide-2026.html</loc>
-    <lastmod>2026-06-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries/europe-jobs-without-degree-2026.html</loc>
     <lastmod>2026-05-08</lastmod>
@@ -234,6 +222,22 @@
   </url>
   
   <!-- ============================================= -->
+  <!-- الدول الجديدة (السويد، المغرب) -->
+  <!-- ============================================= -->
+  <url>
+    <loc>https://jobs-worldwide.for-us.workers.dev/countries/sweden-job-seeker-visa-2026.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://jobs-worldwide.for-us.workers.dev/countries/morocco-jobs-guide-2026.html</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- ============================================= -->
   <!-- الروابط القديمة (للحفاظ على الروابط) -->
   <!-- ============================================= -->
   <url>
@@ -300,18 +304,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
-<url>
-    <loc>https://jobs-worldwide.for-us.workers.dev/countries/sweden-job-seeker-visa-2026.html</loc>
-    <lastmod>2026-06-11</lastmod>
+  <url>
+    <loc>https://jobs-worldwide.for-us.workers.dev/tips/job-contract-tips.html</loc>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-</url>
-<url>
-    <loc>https://jobs-worldwide.for-us.workers.dev/countries/morocco-jobs-guide-2026.html</loc>
-    <lastmod>2026-06-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-</url>
+    <priority>0.8</priority>
+  </url>
   
 </urlset>
