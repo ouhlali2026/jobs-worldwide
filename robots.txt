@@ -14,10 +14,12 @@ Allow: /
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 5
+Crawl-delay: 2
 
 User-agent: Yandex
 Allow: /
-Crawl-delay: 5
+Crawl-delay: 2
+
+Host: https://jobs-worldwide.for-us.workers.dev
 
 Sitemap: https://jobs-worldwide.for-us.workers.dev/sitemap.xml
