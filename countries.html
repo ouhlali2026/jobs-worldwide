@@ -10,7 +10,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>تصنيف الدول | وظائف على مستوى العالم</title>
-<meta name="description" content="دليل شامل لجميع الدول المتوفرة على موقع وظائف على مستوى العالم. فرص عمل في الخليج، أوروبا، أمريكا، كندا، والبرازيل.">
+<meta name="description" content="دليل شامل لجميع الدول المتوفرة على موقع وظائف على مستوى العالم. فرص عمل في الخليج، أوروبا، أمريكا، كندا، البرازيل، والمغرب.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
@@ -92,6 +92,9 @@
     <h2>🇪🇺 دول أوروبا</h2>
     <div id="europeContainer" class="countries-grid"></div>
 
+    <h2>🇲🇦 دول شمال أفريقيا</h2>
+    <div id="northAfricaContainer" class="countries-grid"></div>
+
     <h2>🌎 أمريكا الشمالية والبرازيل</h2>
     <div id="americasContainer" class="countries-grid"></div>
 
@@ -113,6 +116,10 @@
                 <a href="countries/usa.html">🇺🇸 أمريكا</a>
                 <a href="countries/canada.html">🇨🇦 كندا</a>
                 <a href="countries/denmark-job-seeker-visa-2026.html">🇩🇰 الدنمارك</a>
+                <a href="countries/belgium-work-guide-2026.html">🇧🇪 بلجيكا</a>
+                <a href="countries/romania-work-visa-guide-2026.html">🇷🇴 رومانيا</a>
+                <a href="countries/sweden-job-seeker-visa-2026.html">🇸🇪 السويد</a>
+                <a href="countries/morocco-jobs-guide-2026.html">🇲🇦 المغرب</a>
             </div>
             <div class="footer-col"><h4>⚖️ روابط مهمة</h4><a href="privacy.html">سياسة الخصوصية</a><a href="terms.html">شروط الاستخدام</a><a href="contact.html">اتصل بنا</a></div>
             <div class="footer-col"><h4>📱 تواصل معنا</h4><a href="https://wa.me/212679627332" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a><a href="mailto:info@tarik-aljanah.online"><i class="fas fa-envelope"></i> البريد الإلكتروني</a></div>
@@ -146,7 +153,15 @@
         { url: "countries/germany.html", title: "🇩🇪 ألمانيا", desc: "تأشيرة Chancenkarte. وظائف في الطب، الهندسة والتقنية.", tag: "بطاقة الفرصة" },
         { url: "countries/uk.html", title: "🇬🇧 بريطانيا", desc: "تأشيرة Skilled Worker Visa. نظام النقاط.", tag: "نظام النقاط" },
         { url: "countries/albania-jobs-guide-2026.html", title: "🇦🇱 ألبانيا", desc: "تأشيرة موحدة عبر e-Albania، فرص في السياحة والتكنولوجيا.", tag: "تصريح عمل+إقامة" },
-        { url: "countries/denmark-job-seeker-visa-2026.html", title: "🇩🇰 الدنمارك (فيزا البحث عن عمل)", desc: "تأشيرة بحث عن عمل لمدة سنتين بدون عقد مسبق، المهن المطلوبة، والرواتب.", tag: "جديد" }
+        { url: "countries/denmark-job-seeker-visa-2026.html", title: "🇩🇰 الدنمارك (فيزا البحث عن عمل)", desc: "تأشيرة بحث عن عمل لمدة سنتين بدون عقد مسبق، المهن المطلوبة، والرواتب.", tag: "جديد" },
+        // الدول المضافة حديثاً
+        { url: "countries/belgium-work-guide-2026.html", title: "🇧🇪 بلجيكا (تأشيرة Single Permit)", desc: "تصريح عمل وإقامة موحد، رواتب تبدأ 1,800 يورو، دليل شامل للعرب.", tag: "فرص جديدة" },
+        { url: "countries/romania-work-visa-guide-2026.html", title: "🇷🇴 رومانيا (عقود عمل)", desc: "إجابات على أسئلة العرب: الرواتب، المهن المطلوبة، وتكاليف المعيشة.", tag: "فرص جديدة" },
+        { url: "countries/sweden-job-seeker-visa-2026.html", title: "🇸🇪 السويد (فيزا البحث عن عمل)", desc: "تأشيرة بحث عن عمل لمدة 9 أشهر بدون عقد مسبق، المهن المطلوبة، والرواتب.", tag: "جديد" }
+    ];
+
+    const northAfricaCountries = [
+        { url: "countries/morocco-jobs-guide-2026.html", title: "🇲🇦 المغرب (دليل وظائف)", desc: "أفضل مواقع التوظيف، المهن المطلوبة، الرواتب، وظائف بدون شهادة، والوظيفة العمومية.", tag: "جديد" }
     ];
 
     const americasCountries = [
@@ -259,6 +274,7 @@
     // عرض البطاقات وجلب الصور
     const gulfContainer = document.getElementById('gulfContainer');
     const europeContainer = document.getElementById('europeContainer');
+    const northAfricaContainer = document.getElementById('northAfricaContainer');
     const americasContainer = document.getElementById('americasContainer');
     
     const allCards = [];
@@ -272,6 +288,12 @@
     europeCountries.forEach(c => {
         const card = createCard(c);
         europeContainer.appendChild(card);
+        allCards.push(card);
+    });
+    
+    northAfricaCountries.forEach(c => {
+        const card = createCard(c);
+        northAfricaContainer.appendChild(card);
         allCards.push(card);
     });
     
