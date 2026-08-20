@@ -27,7 +27,7 @@
 <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 
-<!-- الأنماط الأساسية (مضمنة لتجنب حظر العرض) -->
+<!-- الأنماط الأساسية (مضمنة) -->
 <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Inter', sans-serif; background: #F8FAFC; color: #1E293B; line-height: 1.6; }
@@ -105,10 +105,10 @@
         .nav { flex-direction: column; text-align: center; }
         .nav-links { justify-content: center; }
         .countries-grid { grid-template-columns: 1fr; }
+        .dropdown-content { min-width: 260px; right: auto; left: 0; max-width: 90vw; }
+        .footer-content { grid-template-columns: 1fr 1fr; gap: 20px; }
     }
 </style>
-
-<!-- إضافة defer للسكريبتات -->
 </head>
 <body>
 <div class="header">
@@ -285,70 +285,265 @@
         if (e.key === 'Enter') searchCountry();
     });
 
-    // بيانات الدول (مرتبة من الأحدث إلى الأقدم)
+    // قائمة الدول (مرتبة من الأحدث إلى الأقدم مع روابط صور مباشرة)
     const countries = [
-        // 1. أستراليا (أحدث دولة)
-        { url: "countries/australia.html", title: "🇦🇺 أستراليا (فيزا عقد عمل)", desc: "دليل شامل لتأشيرة العمل، المهن المطلوبة، الرواتب، وشروط التقديم للعرب.", tag: "جديد 🔥" },
+        // 1. أستراليا
+        {
+            url: "countries/australia.html",
+            title: "🇦🇺 أستراليا (فيزا عقد عمل)",
+            desc: "دليل شامل لتأشيرة العمل، المهن المطلوبة، الرواتب، وشروط التقديم للعرب.",
+            tag: "جديد 🔥",
+            img: "https://i.ibb.co/your-image-australia.jpg"
+        },
         // 2. المغرب
-        { url: "countries/morocco-jobs-guide-2026.html", title: "🇲🇦 المغرب (دليل وظائف)", desc: "أفضل مواقع التوظيف، المهن المطلوبة، الرواتب، وظائف بدون شهادة، والوظيفة العمومية.", tag: "جديد 🔥" },
+        {
+            url: "countries/morocco-jobs-guide-2026.html",
+            title: "🇲🇦 المغرب (دليل وظائف)",
+            desc: "أفضل مواقع التوظيف، المهن المطلوبة، الرواتب، وظائف بدون شهادة، والوظيفة العمومية.",
+            tag: "جديد 🔥",
+            img: "https://i.ibb.co/your-image-morocco.jpg"
+        },
         // 3. السويد
-        { url: "countries/sweden-job-seeker-visa-2026.html", title: "🇸🇪 السويد (فيزا البحث عن عمل)", desc: "تأشيرة بحث عن عمل لمدة 9 أشهر بدون عقد مسبق، المهن المطلوبة، والرواتب.", tag: "جديد 🔥" },
+        {
+            url: "countries/sweden-job-seeker-visa-2026.html",
+            title: "🇸🇪 السويد (فيزا البحث عن عمل)",
+            desc: "تأشيرة بحث عن عمل لمدة 9 أشهر بدون عقد مسبق، المهن المطلوبة، والرواتب.",
+            tag: "جديد 🔥",
+            img: "https://i.ibb.co/your-image-sweden.jpg"
+        },
         // 4. الدنمارك
-        { url: "countries/denmark-job-seeker-visa-2026.html", title: "🇩🇰 الدنمارك (فيزا البحث عن عمل)", desc: "تأشيرة بحث عن عمل لمدة سنتين بدون عقد مسبق، المهن المطلوبة، والرواتب.", tag: "جديد 🔥" },
+        {
+            url: "countries/denmark-job-seeker-visa-2026.html",
+            title: "🇩🇰 الدنمارك (فيزا البحث عن عمل)",
+            desc: "تأشيرة بحث عن عمل لمدة سنتين بدون عقد مسبق، المهن المطلوبة، والرواتب.",
+            tag: "جديد 🔥",
+            img: "https://i.ibb.co/your-image-denmark.jpg"
+        },
         // 5. رومانيا
-        { url: "countries/romania-work-visa-guide-2026.html", title: "🇷🇴 رومانيا (عقود عمل)", desc: "إجابات على أسئلة العرب: الرواتب، المهن المطلوبة، وتكاليف المعيشة.", tag: "جديد" },
+        {
+            url: "countries/romania-work-visa-guide-2026.html",
+            title: "🇷🇴 رومانيا (عقود عمل)",
+            desc: "إجابات على أسئلة العرب: الرواتب، المهن المطلوبة، وتكاليف المعيشة.",
+            tag: "جديد",
+            img: "https://i.ibb.co/your-image-romania.jpg"
+        },
         // 6. بلجيكا
-        { url: "countries/belgium-work-guide-2026.html", title: "🇧🇪 بلجيكا (تأشيرة Single Permit)", desc: "تصريح عمل وإقامة موحد، رواتب تبدأ 1,800 يورو، دليل شامل للعرب.", tag: "جديد" },
+        {
+            url: "countries/belgium-work-guide-2026.html",
+            title: "🇧🇪 بلجيكا (تأشيرة Single Permit)",
+            desc: "تصريح عمل وإقامة موحد، رواتب تبدأ 1,800 يورو، دليل شامل للعرب.",
+            tag: "جديد",
+            img: "https://i.ibb.co/your-image-belgium.jpg"
+        },
         // 7. فرنسا (موسمي للمغاربة)
-        { url: "countries/france-seasonal-work-moroccans-2026.html", title: "🇫🇷🇲🇦 فرنسا (موسمي للمغاربة)", desc: "عقود موسمية عبر ANAPEC، رواتب تبدأ 1,400 يورو، سكن مجاني.", tag: "عقود موسمية" },
+        {
+            url: "countries/france-seasonal-work-moroccans-2026.html",
+            title: "🇫🇷🇲🇦 فرنسا (موسمي للمغاربة)",
+            desc: "عقود موسمية عبر ANAPEC، رواتب تبدأ 1,400 يورو، سكن مجاني.",
+            tag: "عقود موسمية",
+            img: "https://i.ibb.co/your-image-france-seasonal.jpg"
+        },
         // 8. إسبانيا (موسمي للمغاربة)
-        { url: "countries/spain-seasonal-work-moroccans-2026.html", title: "🇪🇸🇲🇦 إسبانيا (موسمي للمغاربة)", desc: "التسجيل عبر ANAPEC، عقود قانونية، سكن، رواتب 1,400 يورو.", tag: "موسمي" },
+        {
+            url: "countries/spain-seasonal-work-moroccans-2026.html",
+            title: "🇪🇸🇲🇦 إسبانيا (موسمي للمغاربة)",
+            desc: "التسجيل عبر ANAPEC، عقود قانونية، سكن، رواتب 1,400 يورو.",
+            tag: "موسمي",
+            img: "https://i.ibb.co/your-image-spain-seasonal.jpg"
+        },
         // 9. هولندا (موسمي)
-        { url: "countries/netherlands-seasonal-jobs-2026.html", title: "🇳🇱 هولندا (وظائف موسمية)", desc: "بدون شهادة، سكن مجاني، رواتب تبدأ من 1500 يورو.", tag: "للمبتدئين" },
-        // 10. فرنسا (عام)
-        { url: "countries/france-contracts-guide-2026.html", title: "🇫🇷 فرنسا (عقود عمل)", desc: "عقود CDI و CDD، عقود موسمية في السياحة والفلاحة.", tag: "عقود رسمية" },
+        {
+            url: "countries/netherlands-seasonal-jobs-2026.html",
+            title: "🇳🇱 هولندا (وظائف موسمية)",
+            desc: "بدون شهادة، سكن مجاني، رواتب تبدأ من 1500 يورو.",
+            tag: "للمبتدئين",
+            img: "https://i.ibb.co/your-image-netherlands-seasonal.jpg"
+        },
+        // 10. فرنسا
+        {
+            url: "countries/france-contracts-guide-2026.html",
+            title: "🇫🇷 فرنسا (عقود عمل)",
+            desc: "عقود CDI و CDD، عقود موسمية في السياحة والفلاحة.",
+            tag: "عقود رسمية",
+            img: "https://i.ibb.co/your-image-france.jpg"
+        },
         // 11. إيطاليا
-        { url: "countries/italy-contracts-guide-2026.html", title: "🇮🇹 إيطاليا (عقود موسمية)", desc: "عقود موسمية في الزراعة والسياحة عبر منصة Click Lavoro.", tag: "تأشيرة سريعة" },
-        // 12. إسبانيا (دليل شامل)
-        { url: "countries/spain-jobs-arabs-guide-2026.html", title: "🇪🇸 إسبانيا (دليل شامل للعرب)", desc: "عقود عمل، شروط، رواتب، تأشيرات، وكيفية التقديم.", tag: "دليل شامل" },
-        // 13. هولندا (دليل شامل)
-        { url: "countries/netherlands-jobs-arabs-2026.html", title: "🇳🇱 هولندا (دليل شامل)", desc: "تأشيرة العمل للمهرة، الرواتب، وكيفية التقديم.", tag: "رواتب تبدأ 45,000 يورو" },
+        {
+            url: "countries/italy-contracts-guide-2026.html",
+            title: "🇮🇹 إيطاليا (عقود موسمية)",
+            desc: "عقود موسمية في الزراعة والسياحة عبر منصة Click Lavoro.",
+            tag: "تأشيرة سريعة",
+            img: "https://i.ibb.co/your-image-italy.jpg"
+        },
+        // 12. إسبانيا
+        {
+            url: "countries/spain-jobs-arabs-guide-2026.html",
+            title: "🇪🇸 إسبانيا (دليل شامل للعرب)",
+            desc: "عقود عمل، شروط، رواتب، تأشيرات، وكيفية التقديم.",
+            tag: "دليل شامل",
+            img: "https://i.ibb.co/your-image-spain.jpg"
+        },
+        // 13. هولندا
+        {
+            url: "countries/netherlands-jobs-arabs-2026.html",
+            title: "🇳🇱 هولندا (دليل شامل)",
+            desc: "تأشيرة العمل للمهرة، الرواتب، وكيفية التقديم.",
+            tag: "رواتب تبدأ 45,000 يورو",
+            img: "https://i.ibb.co/your-image-netherlands.jpg"
+        },
         // 14. ألمانيا
-        { url: "countries/germany.html", title: "🇩🇪 ألمانيا (دليل شامل)", desc: "تأشيرة Chancenkarte. وظائف في الطب، الهندسة والتقنية.", tag: "بطاقة الفرصة" },
+        {
+            url: "countries/germany.html",
+            title: "🇩🇪 ألمانيا (دليل شامل)",
+            desc: "تأشيرة Chancenkarte. وظائف في الطب، الهندسة والتقنية.",
+            tag: "بطاقة الفرصة",
+            img: "https://i.ibb.co/your-image-germany.jpg"
+        },
         // 15. بريطانيا
-        { url: "countries/uk.html", title: "🇬🇧 بريطانيا (تأشيرات عمل)", desc: "تأشيرة Skilled Worker Visa. نظام النقاط.", tag: "نظام النقاط" },
+        {
+            url: "countries/uk.html",
+            title: "🇬🇧 بريطانيا (تأشيرات عمل)",
+            desc: "تأشيرة Skilled Worker Visa. نظام النقاط.",
+            tag: "نظام النقاط",
+            img: "https://i.ibb.co/your-image-uk.jpg"
+        },
         // 16. أوروبا بدون شهادة
-        { url: "countries/europe-jobs-without-degree-2026.html", title: "🇪🇺 أوروبا (بدون شهادة)", desc: "دليل شامل لوظائف في ألمانيا، إيطاليا، فرنسا، هولندا.", tag: "وظائف عملية" },
+        {
+            url: "countries/europe-jobs-without-degree-2026.html",
+            title: "🇪🇺 أوروبا (بدون شهادة)",
+            desc: "دليل شامل لوظائف في ألمانيا، إيطاليا، فرنسا، هولندا.",
+            tag: "وظائف عملية",
+            img: "https://i.ibb.co/your-image-europe.jpg"
+        },
         // 17. ألبانيا
-        { url: "countries/albania-jobs-guide-2026.html", title: "🇦🇱 ألبانيا (تأشيرة موحدة)", desc: "تأشيرة موحدة عبر e-Albania، فرص في السياحة والتكنولوجيا.", tag: "تصريح عمل+إقامة" },
-        // 18-20. قطر
-        { url: "countries/qatar-jobs-for-women-2026.html", title: "🇶🇦 قطر (وظائف نسائية)", desc: "دوام جزئي وكامل، شهادة ثانوية أو بدون شهادة.", tag: "رواتب تبدأ 4,000 ريال" },
-        { url: "countries/qatar-jobs-without-experience-degree-2026.html", title: "🇶🇦 قطر (بدون خبرة أو شهادة)", desc: "شركات تقبل مبتدئين، رواتب مع سكن.", tag: "للمبتدئين" },
-        { url: "countries/qatar.html", title: "🇶🇦 قطر (الرواتب الحقيقية)", desc: "المهن الأعلى أجراً، الرواتب المعفاة من الضرائب.", tag: "رواتب تصل 60,000 ريال" },
-        // 21-22. الإمارات
-        { url: "countries/uae-jobs-without-experience-2026.html", title: "🇦🇪 الإمارات (بدون خبرة)", desc: "أول وظيفة لك في الإمارات: قطاعات تقبل المبتدئين.", tag: "للمبتدئين" },
-        { url: "countries/uae-jobs-without-degree-2026.html", title: "🇦🇪 الإمارات (بدون شهادة)", desc: "وظائف في دبي وأبوظبي لا تتطلب شهادة جامعية.", tag: "فرص للجميع" },
-        // 23-24. الكويت
-        { url: "countries/kuwait-jobs-beginners-no-degree-2026.html", title: "🇰🇼 الكويت (للمبتدئين)", desc: "وظائف بدون شهادة أو خبرة: سائقين، عمال بناء، مطابخ.", tag: "رواتب 200 دينار + سكن" },
-        { url: "countries/kuwait-jobs-guide-2026.html", title: "🇰🇼 الكويت (دليل عام)", desc: "دليل شامل: الرواتب، أنواع التأشيرات، منصات التوظيف.", tag: "رواتب تبدأ من 250 دينار" },
-        // 25-26. السعودية
-        { url: "countries/saudi-arabia-jobs-egyptians-2026.html", title: "🇸🇦 السعودية (للمصريين)", desc: "دليل خاص للمصريين: عقود عمل، رواتب، منصة طاقات وقوى.", tag: "رواتب تبدأ 4,000 ريال" },
-        { url: "countries/saudi-arabia-contracts-guide-2026.html", title: "🇸🇦 السعودية (دليل عام)", desc: "عقود عمل في مشاريع نيوم، القدية، والبحر الأحمر.", tag: "رؤية 2030" },
-        // 27-28. كندا وأمريكا
-        { url: "countries/canada.html", title: "🇨🇦 كندا (Express Entry)", desc: "نظام Express Entry، رواتب بين 3500-9000 دولار كندي.", tag: "500,000 مهاجر" },
-        { url: "countries/usa.html", title: "🇺🇸 الولايات المتحدة", desc: "تأشيرات H-1B و H-2B. رواتب بين 3000-13000 دولار شهرياً.", tag: "85,000 تأشيرة" },
-        // 29-30. البرازيل
-        { url: "countries/brazil-work-visa-guide-2026.html", title: "🇧🇷 البرازيل (تأشيرة عمل)", desc: "تأشيرة VITEM V والمهن المطلوبة.", tag: "فيزا عمل" },
-        { url: "countries/asylum-brazil-guide-2026.html", title: "🇧🇷 البرازيل (لجوء)", desc: "طلب اللجوء الإنساني والسياسي. شروط بروتوكول اللجوء.", tag: "بروتوكول اللجوء" }
+        {
+            url: "countries/albania-jobs-guide-2026.html",
+            title: "🇦🇱 ألبانيا (تأشيرة موحدة)",
+            desc: "تأشيرة موحدة عبر e-Albania، فرص في السياحة والتكنولوجيا.",
+            tag: "تصريح عمل+إقامة",
+            img: "https://i.ibb.co/your-image-albania.jpg"
+        },
+        // 18. قطر (وظائف نسائية)
+        {
+            url: "countries/qatar-jobs-for-women-2026.html",
+            title: "🇶🇦 قطر (وظائف نسائية)",
+            desc: "دوام جزئي وكامل، شهادة ثانوية أو بدون شهادة.",
+            tag: "رواتب تبدأ 4,000 ريال",
+            img: "https://i.ibb.co/your-image-qatar-women.jpg"
+        },
+        // 19. قطر (بدون خبرة/شهادة)
+        {
+            url: "countries/qatar-jobs-without-experience-degree-2026.html",
+            title: "🇶🇦 قطر (بدون خبرة أو شهادة)",
+            desc: "شركات تقبل مبتدئين، رواتب مع سكن.",
+            tag: "للمبتدئين",
+            img: "https://i.ibb.co/your-image-qatar-no-experience.jpg"
+        },
+        // 20. قطر (الرواتب الحقيقية)
+        {
+            url: "countries/qatar.html",
+            title: "🇶🇦 قطر (الرواتب الحقيقية)",
+            desc: "المهن الأعلى أجراً، الرواتب المعفاة من الضرائب.",
+            tag: "رواتب تصل 60,000 ريال",
+            img: "https://i.ibb.co/your-image-qatar.jpg"
+        },
+        // 21. الإمارات (بدون خبرة)
+        {
+            url: "countries/uae-jobs-without-experience-2026.html",
+            title: "🇦🇪 الإمارات (بدون خبرة)",
+            desc: "أول وظيفة لك في الإمارات: قطاعات تقبل المبتدئين.",
+            tag: "للمبتدئين",
+            img: "https://i.ibb.co/your-image-uae-no-experience.jpg"
+        },
+        // 22. الإمارات (بدون شهادة)
+        {
+            url: "countries/uae-jobs-without-degree-2026.html",
+            title: "🇦🇪 الإمارات (بدون شهادة)",
+            desc: "وظائف في دبي وأبوظبي لا تتطلب شهادة جامعية.",
+            tag: "فرص للجميع",
+            img: "https://i.ibb.co/your-image-uae-no-degree.jpg"
+        },
+        // 23. الكويت (للمبتدئين)
+        {
+            url: "countries/kuwait-jobs-beginners-no-degree-2026.html",
+            title: "🇰🇼 الكويت (للمبتدئين)",
+            desc: "وظائف بدون شهادة أو خبرة: سائقين، عمال بناء، مطابخ.",
+            tag: "رواتب 200 دينار + سكن",
+            img: "https://i.ibb.co/your-image-kuwait-beginners.jpg"
+        },
+        // 24. الكويت (دليل عام)
+        {
+            url: "countries/kuwait-jobs-guide-2026.html",
+            title: "🇰🇼 الكويت (دليل عام)",
+            desc: "دليل شامل: الرواتب، أنواع التأشيرات، منصات التوظيف.",
+            tag: "رواتب تبدأ من 250 دينار",
+            img: "https://i.ibb.co/your-image-kuwait.jpg"
+        },
+        // 25. السعودية (للمصريين)
+        {
+            url: "countries/saudi-arabia-jobs-egyptians-2026.html",
+            title: "🇸🇦 السعودية (للمصريين)",
+            desc: "دليل خاص للمصريين: عقود عمل، رواتب، منصة طاقات وقوى.",
+            tag: "رواتب تبدأ 4,000 ريال",
+            img: "https://i.ibb.co/your-image-saudi-egyptians.jpg"
+        },
+        // 26. السعودية (دليل عام)
+        {
+            url: "countries/saudi-arabia-contracts-guide-2026.html",
+            title: "🇸🇦 السعودية (دليل عام)",
+            desc: "عقود عمل في مشاريع نيوم، القدية، والبحر الأحمر.",
+            tag: "رؤية 2030",
+            img: "https://i.ibb.co/your-image-saudi.jpg"
+        },
+        // 27. كندا
+        {
+            url: "countries/canada.html",
+            title: "🇨🇦 كندا (Express Entry)",
+            desc: "نظام Express Entry، رواتب بين 3500-9000 دولار كندي.",
+            tag: "500,000 مهاجر",
+            img: "https://i.ibb.co/your-image-canada.jpg"
+        },
+        // 28. الولايات المتحدة
+        {
+            url: "countries/usa.html",
+            title: "🇺🇸 الولايات المتحدة",
+            desc: "تأشيرات H-1B و H-2B. رواتب بين 3000-13000 دولار شهرياً.",
+            tag: "85,000 تأشيرة",
+            img: "https://i.ibb.co/your-image-usa.jpg"
+        },
+        // 29. البرازيل (عمل)
+        {
+            url: "countries/brazil-work-visa-guide-2026.html",
+            title: "🇧🇷 البرازيل (تأشيرة عمل)",
+            desc: "تأشيرة VITEM V والمهن المطلوبة.",
+            tag: "فيزا عمل",
+            img: "https://i.ibb.co/your-image-brazil-work.jpg"
+        },
+        // 30. البرازيل (لجوء)
+        {
+            url: "countries/asylum-brazil-guide-2026.html",
+            title: "🇧🇷 البرازيل (لجوء)",
+            desc: "طلب اللجوء الإنساني والسياسي. شروط بروتوكول اللجوء.",
+            tag: "بروتوكول اللجوء",
+            img: "https://i.ibb.co/your-image-brazil-asylum.jpg"
+        }
     ];
 
     const container = document.getElementById('countriesContainer');
+    if (!container) return;
+
     countries.forEach(c => {
         const card = document.createElement('a');
         card.href = c.url;
         card.className = 'country-card';
+        
+        // عرض الصورة المباشرة إن وجدت
+        const imgHtml = c.img 
+            ? `<img src="${c.img}" alt="${c.title}" class="card-img" loading="lazy" width="300" height="169" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22169%22%3E%3Crect width=%22300%22 height=%22169%22 fill=%22%23E2E8F0%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-family=%22sans-serif%22 font-size=%2216%22 text-anchor=%22middle%22 dominant-baseline=%22central%22 fill=%22%2394A3B8%22%3Eصورة%3C/text%3E%3C/svg%3E';">`
+            : `<div class="card-img loading-placeholder"></div>`;
+
         card.innerHTML = `
-            <img class="card-img" src="" alt="Loading..." loading="lazy" width="300" height="169" style="background:#E2E8F0;">
+            ${imgHtml}
             <div class="card-content">
                 <h3>${c.title}</h3>
                 <p>${c.desc}</p>
@@ -356,22 +551,10 @@
             </div>
         `;
         container.appendChild(card);
-        // جلب الصورة من الصفحة باستخدام og:image
-        fetch(c.url, { cache: 'force-cache' })
-            .then(res => res.text())
-            .then(html => {
-                const doc = new DOMParser().parseFromString(html, 'text/html');
-                const img = doc.querySelector('meta[property="og:image"]');
-                if (img && img.content) {
-                    const imgElement = card.querySelector('.card-img');
-                    imgElement.src = img.content;
-                    imgElement.alt = c.title;
-                }
-            })
-            .catch(() => {});
     });
 </script>
 
+<!-- السكريبتات الخارجية -->
 <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js" defer></script>
 <script src="/indexnow.js" defer></script>
 
