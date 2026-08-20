@@ -1,6 +1,6 @@
 // =============================================
 // script.js - إدارة الدول في الصفحة الرئيسية
-// الإصدار: 2.5 - تاريخ: 20 أغسطس 2026
+// الإصدار: 2.6 - تاريخ: 20 أغسطس 2026
 // =============================================
 
 (function() {
@@ -40,15 +40,23 @@
         { url: "countries/asylum-brazil-guide-2026.html", title: "🇧🇷 البرازيل (لجوء)", desc: "طلب اللجوء الإنساني والسياسي. شروط بروتوكول اللجوء.", tag: "بروتوكول اللجوء", dateAdded: "2026-02-05" }
     ];
 
+    // ترتيب تنازلي حسب التاريخ
     const sorted = [...featuredCountries].sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
 
     const container = document.getElementById('countriesContainer');
     if (!container) return;
 
-    // عرض البطاقات مع Placeholder فوري
+    // ===== عرض البطاقات =====
     function renderCards() {
         container.innerHTML = '';
-        sorted.forEach(c => {
+        
+        // 🔥 عدد الدول المعروضة في الصفحة الرئيسية
+        const MAX_DISPLAY = 7; // يمكنك تغيير الرقم إلى 6 أو 8 أو أي عدد تراه مناسباً
+        
+        // خذ فقط أول 7 دول من القائمة المرتبة (الأحدث أولاً)
+        const displayed = sorted.slice(0, MAX_DISPLAY);
+        
+        displayed.forEach(c => {
             const card = document.createElement('a');
             card.href = c.url;
             card.className = 'country-card';
@@ -62,6 +70,7 @@
             `;
             container.appendChild(card);
         });
+        
         // بدء تحميل الصور بعد عرض البطاقات مباشرة
         loadImages();
     }
@@ -160,6 +169,6 @@
         div.parentNode.replaceChild(fallback, div);
     }
 
-    // تهيئة البطاقات
+    // ===== تهيئة البطاقات =====
     renderCards();
 })();
