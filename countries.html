@@ -2,6 +2,8 @@
 <html lang="ar" dir="rtl">
 <head>
 
+<script src="/indexnow.js"></script>
+
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -10,7 +12,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>تصنيف الدول | وظائف على مستوى العالم</title>
-<meta name="description" content="دليل شامل لجميع الدول المتوفرة على موقع وظائف على مستوى العالم. فرص عمل في الخليج، أوروبا، أمريكا، كندا، البرازيل، والمغرب.">
+<meta name="description" content="دليل شامل لجميع الدول المتوفرة على موقع وظائف على مستوى العالم. فرص عمل في الخليج، أوروبا، أمريكا، كندا، البرازيل، أستراليا، والمغرب.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
@@ -98,6 +100,9 @@
     <h2>🌎 أمريكا الشمالية والبرازيل</h2>
     <div id="americasContainer" class="countries-grid"></div>
 
+    <h2>🇦🇺 أستراليا وأوقيانوسيا</h2>
+    <div id="oceaniaContainer" class="countries-grid"></div>
+
 </div>
 
 <footer class="footer">
@@ -119,6 +124,7 @@
                 <a href="countries/belgium-work-guide-2026.html">🇧🇪 بلجيكا</a>
                 <a href="countries/romania-work-visa-guide-2026.html">🇷🇴 رومانيا</a>
                 <a href="countries/sweden-job-seeker-visa-2026.html">🇸🇪 السويد</a>
+                <a href="countries/australia.html">🇦🇺 أستراليا</a>
                 <a href="countries/morocco-jobs-guide-2026.html">🇲🇦 المغرب</a>
             </div>
             <div class="footer-col"><h4>⚖️ روابط مهمة</h4><a href="privacy.html">سياسة الخصوصية</a><a href="terms.html">شروط الاستخدام</a><a href="contact.html">اتصل بنا</a></div>
@@ -149,12 +155,12 @@
         { url: "countries/spain-jobs-arabs-guide-2026.html", title: "🇪🇸 إسبانيا (دليل شامل للعرب)", desc: "عقود عمل، شروط، رواتب، تأشيرات، وكيفية التقديم.", tag: "دليل شامل" },
         { url: "countries/spain-seasonal-work-moroccans-2026.html", title: "🇪🇸 إسبانيا (موسمي للمغاربة)", desc: "التسجيل عبر ANAPEC، عقود قانونية، سكن، رواتب.", tag: "رواتب 1,400 يورو" },
         { url: "countries/france-contracts-guide-2026.html", title: "🇫🇷 فرنسا", desc: "عقود CDI و CDD، عقود موسمية في السياحة والفلاحة.", tag: "عقود رسمية" },
+        { url: "countries/france-seasonal-work-moroccans-2026.html", title: "🇫🇷🇲🇦 فرنسا (موسمي للمغاربة)", desc: "عقود موسمية عبر ANAPEC، رواتب تبدأ 1,400 يورو، سكن مجاني.", tag: "عقود موسمية" },
         { url: "countries/italy-contracts-guide-2026.html", title: "🇮🇹 إيطاليا", desc: "عقود موسمية في الزراعة والسياحة عبر منصة Click Lavoro.", tag: "تأشيرة سريعة" },
         { url: "countries/germany.html", title: "🇩🇪 ألمانيا", desc: "تأشيرة Chancenkarte. وظائف في الطب، الهندسة والتقنية.", tag: "بطاقة الفرصة" },
         { url: "countries/uk.html", title: "🇬🇧 بريطانيا", desc: "تأشيرة Skilled Worker Visa. نظام النقاط.", tag: "نظام النقاط" },
         { url: "countries/albania-jobs-guide-2026.html", title: "🇦🇱 ألبانيا", desc: "تأشيرة موحدة عبر e-Albania، فرص في السياحة والتكنولوجيا.", tag: "تصريح عمل+إقامة" },
         { url: "countries/denmark-job-seeker-visa-2026.html", title: "🇩🇰 الدنمارك (فيزا البحث عن عمل)", desc: "تأشيرة بحث عن عمل لمدة سنتين بدون عقد مسبق، المهن المطلوبة، والرواتب.", tag: "جديد" },
-        // الدول المضافة حديثاً
         { url: "countries/belgium-work-guide-2026.html", title: "🇧🇪 بلجيكا (تأشيرة Single Permit)", desc: "تصريح عمل وإقامة موحد، رواتب تبدأ 1,800 يورو، دليل شامل للعرب.", tag: "فرص جديدة" },
         { url: "countries/romania-work-visa-guide-2026.html", title: "🇷🇴 رومانيا (عقود عمل)", desc: "إجابات على أسئلة العرب: الرواتب، المهن المطلوبة، وتكاليف المعيشة.", tag: "فرص جديدة" },
         { url: "countries/sweden-job-seeker-visa-2026.html", title: "🇸🇪 السويد (فيزا البحث عن عمل)", desc: "تأشيرة بحث عن عمل لمدة 9 أشهر بدون عقد مسبق، المهن المطلوبة، والرواتب.", tag: "جديد" }
@@ -169,6 +175,10 @@
         { url: "countries/canada.html", title: "🇨🇦 كندا", desc: "نظام Express Entry، رواتب بين 3500-9000 دولار كندي.", tag: "500,000 مهاجر" },
         { url: "countries/brazil-work-visa-guide-2026.html", title: "🇧🇷 البرازيل (عمل)", desc: "تأشيرة VITEM V والمهن المطلوبة.", tag: "فيزا عمل" },
         { url: "countries/asylum-brazil-guide-2026.html", title: "🇧🇷 البرازيل (لجوء)", desc: "طلب اللجوء الإنساني والسياسي. شروط بروتوكول اللجوء.", tag: "بروتوكول اللجوء" }
+    ];
+
+    const oceaniaCountries = [
+        { url: "countries/australia.html", title: "🇦🇺 أستراليا (فيزا عقد عمل)", desc: "دليل شامل لتأشيرة العمل، المهن المطلوبة، الرواتب، وشروط التقديم للعرب.", tag: "فيزا عمل" }
     ];
 
     // دالة إنشاء البطاقات
@@ -276,6 +286,7 @@
     const europeContainer = document.getElementById('europeContainer');
     const northAfricaContainer = document.getElementById('northAfricaContainer');
     const americasContainer = document.getElementById('americasContainer');
+    const oceaniaContainer = document.getElementById('oceaniaContainer');
     
     const allCards = [];
     
@@ -303,13 +314,19 @@
         allCards.push(card);
     });
     
+    oceaniaCountries.forEach(c => {
+        const card = createCard(c);
+        oceaniaContainer.appendChild(card);
+        allCards.push(card);
+    });
+    
     // جلب الصور بشكل متوازي مع تأخير بسيط لتجنب الضغط
     setTimeout(() => {
         allCards.forEach(card => loadImageForCard(card));
     }, 100);
 </script>
 
-<script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
+<script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js" defer></script>
 
 <script src="/indexnow.js"></script>
 
