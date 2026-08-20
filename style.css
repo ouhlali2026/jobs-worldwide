@@ -1,6 +1,6 @@
 /* ============================================= */
 /* style.css - التصميم العام لموقع وظائف على مستوى العالم */
-/* الإصدار: 2.0 - تاريخ: 5 يونيو 2026 */
+/* الإصدار: 2.1 - تاريخ: 20 أغسطس 2026 */
 /* ============================================= */
 
 /* -------------------- المتغيرات -------------------- */
@@ -167,6 +167,18 @@ a {
     color: var(--primary);
 }
 
+.btn-nav {
+    background: var(--primary);
+    color: white !important;
+    padding: 6px 20px !important;
+    border-radius: 40px !important;
+}
+
+.btn-nav:hover {
+    background: var(--primary-dark) !important;
+    color: white !important;
+}
+
 /* القائمة المنسدلة */
 .dropdown {
     position: relative;
@@ -178,7 +190,7 @@ a {
     top: 45px;
     right: 0;
     background: var(--bg-white);
-    min-width: 280px;
+    min-width: 320px;
     box-shadow: var(--shadow-lg);
     border-radius: var(--radius-lg);
     overflow: hidden;
@@ -200,7 +212,8 @@ a {
     color: var(--primary);
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown.active .dropdown-content {
     display: block;
 }
 
@@ -250,6 +263,7 @@ a {
     outline: none;
     background: white;
     color: var(--dark);
+    min-width: 180px;
 }
 
 .search-box button {
@@ -349,6 +363,28 @@ a {
     border-radius: 30px;
     font-size: 0.7rem;
     font-weight: 600;
+}
+
+/* زر عرض كل الدول */
+.show-all-btn {
+    text-align: center;
+    margin: 10px 0 50px;
+}
+
+.show-all-btn a {
+    display: inline-block;
+    background: var(--border);
+    color: var(--dark);
+    padding: 10px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.show-all-btn a:hover {
+    background: #CBD5E1;
+    transform: translateY(-2px);
 }
 
 /* -------------------- بطاقات النصائح -------------------- */
@@ -608,6 +644,11 @@ a {
     gap: 8px;
 }
 
+.whatsapp:hover {
+    transform: scale(1.05);
+    background: #20b85f;
+}
+
 /* -------------------- شاشة التحميل المؤقتة -------------------- */
 .loading-placeholder {
     width: 100%;
@@ -627,7 +668,7 @@ a {
     100% { background-position: -200% 0; }
 }
 
-/* -------------------- التجاوب مع الهواتف -------------------- */
+/* -------------------- التجاوب مع الهواتف (Mobile First) -------------------- */
 @media (max-width: 768px) {
     .container {
         padding: 0 16px;
@@ -662,15 +703,32 @@ a {
         min-width: 260px;
         right: auto;
         left: 0;
+        max-width: 90vw;
     }
     
     .footer-content {
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
+    
+    .whatsapp {
+        padding: 10px 16px;
+        font-size: 0.75rem;
+        bottom: 16px;
+        left: 16px;
+    }
+    
+    .search-box input {
+        min-width: 140px;
+        padding: 12px 16px;
+    }
+    
+    .search-box button {
+        padding: 12px 20px;
+    }
 }
 
-/* -------------------- شاشات متوسطة -------------------- */
+/* -------------------- شاشات متوسطة (Tablets) -------------------- */
 @media (min-width: 769px) and (max-width: 1024px) {
     .countries-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -679,4 +737,69 @@ a {
     .tips-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+/* -------------------- شاشات كبيرة -------------------- */
+@media (min-width: 1025px) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+}
+
+/* -------------------- دعم وضع التصفح المظلم -------------------- */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-light: #0F172A;
+        --bg-white: #1E293B;
+        --border: #334155;
+        --gray: #94A3B8;
+        --gray-light: #64748B;
+        --dark: #F1F5F9;
+    }
+    
+    .hero {
+        background: linear-gradient(135deg, #0A0F1A 0%, #1A1F2E 100%);
+    }
+    
+    .country-card,
+    .tip-card,
+    .service-card,
+    .quick-links,
+    .card {
+        background: #1E293B;
+    }
+    
+    .footer {
+        background: #0A0F1A;
+    }
+    
+    .logo {
+        background: linear-gradient(135deg, #F1F5F9, #CBD5E1);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+/* -------------------- تحسينات إضافية -------------------- */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
 }
