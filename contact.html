@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>اتصل بنا | وظائف على مستوى العالم</title>
-    <meta name="description" content="تواصل معنا عبر واتساب للاستفسار عن خدمات كتابة السيرة الذاتية وخطاب التقديم والتسجيل في مواقع التأشيرات.">
+    <meta name="description" content="تواصل معنا عبر واتساب للاستفسار عن خدمات كتابة السيرة الذاتية وخطاب التقديم والتسجيل في مواقع التأشيرات بأسعار تنافسية.">
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -33,7 +33,7 @@
         
         /* القائمة المنسدلة */
         .dropdown { position: relative; display: inline-block; }
-        .dropdown-content { display: none; position: absolute; top: 38px; right: 0; background: white; min-width: 200px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); border-radius: 16px; overflow: hidden; z-index: 1000; border: 1px solid #E2E8F0; }
+        .dropdown-content { display: none; position: absolute; top: 38px; right: 0; background: white; min-width: 220px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); border-radius: 16px; overflow: hidden; z-index: 1000; border: 1px solid #E2E8F0; max-height: 300px; overflow-y: auto; }
         .dropdown-content a { display: block; padding: 10px 16px; color: #1E293B; text-decoration: none; border-bottom: 1px solid #F1F5F9; font-size: 0.85rem; }
         .dropdown-content a:hover { background: #EFF6FF; color: #3B82F6; }
         .dropdown:hover .dropdown-content { display: block; }
@@ -51,7 +51,7 @@
         .contact-section h2 { font-size: 1.6rem; margin-bottom: 15px; }
         .contact-section p { color: #64748B; margin-bottom: 30px; max-width: 500px; margin-left: auto; margin-right: auto; }
         
-        /* زر واتساب */
+        /* زر واتساب الرئيسي في الصفحة */
         .whatsapp-btn { background: #25D366; color: white; padding: 16px 40px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.1rem; display: inline-flex; align-items: center; gap: 12px; transition: all 0.2s; box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3); }
         .whatsapp-btn:hover { background: #128C7E; transform: scale(1.03); box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4); }
         .whatsapp-btn i { font-size: 1.5rem; }
@@ -63,6 +63,15 @@
         .info-box i { font-size: 2rem; color: #3B82F6; margin-bottom: 15px; }
         .info-box h3 { font-size: 1.1rem; margin-bottom: 10px; }
         .info-box p { font-size: 0.85rem; color: #64748B; }
+        
+        /* زر واتساب الثابت (الفلوت) */
+        .whatsapp-float {
+            position: fixed; bottom: 25px; left: 25px; background: #25D366; color: white;
+            padding: 14px 22px; border-radius: 50px; font-weight: 700; font-size: 0.95rem;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4); text-decoration: none; z-index: 999;
+            display: inline-flex; align-items: center; gap: 10px; transition: 0.3s; border: none; direction: rtl;
+        }
+        .whatsapp-float:hover { transform: scale(1.05); background: #1EBE5D; color: white; }
         
         /* التذييل */
         .footer { background: #0F172A; color: #94A3B8; padding: 40px 0 20px; margin-top: 50px; border-radius: 32px 32px 0 0; }
@@ -79,6 +88,7 @@
             .nav { flex-direction: column; }
             .nav-links { justify-content: center; }
             .whatsapp-btn { padding: 12px 25px; font-size: 1rem; }
+            .whatsapp-float { padding: 12px 18px; font-size: 0.85rem; left: 15px; bottom: 15px; }
         }
     </style>
 </head>
@@ -101,6 +111,10 @@
                         <a href="countries/canada.html">🇨🇦 كندا</a>
                         <a href="countries/germany.html">🇩🇪 ألمانيا</a>
                         <a href="countries/uk.html">🇬🇧 بريطانيا</a>
+                        <a href="countries/france-work-contracts-2026.html">🇫🇷 فرنسا</a>
+                        <a href="countries/spain-jobs-arabs-guide-2026.html">🇪🇸 إسبانيا</a>
+                        <a href="countries/netherlands.html">🇳🇱 هولندا</a>
+                        <a href="countries/portugal-guide.html">🇵🇹 البرتغال</a>
                     </div>
                 </div>
                 <a href="services.html" class="btn-nav">📄 اطلب خدمتك</a>
@@ -134,19 +148,19 @@
             <i class="fas fa-file-alt"></i>
             <h3>كتابة السيرة الذاتية</h3>
             <p>سيرة ذاتية احترافية بتصميم ATS</p>
-            <p style="margin-top: 8px; font-weight: 600; color: #3B82F6;">15$</p>
+            <p style="margin-top: 8px; font-weight: 600; color: #3B82F6;">7$</p>
         </div>
         <div class="info-box">
             <i class="fas fa-envelope-open-text"></i>
             <h3>خطاب التقديم</h3>
             <p>خطاب تقديم مخصص للشركات</p>
-            <p style="margin-top: 8px; font-weight: 600; color: #3B82F6;">10$</p>
+            <p style="margin-top: 8px; font-weight: 600; color: #3B82F6;">5$</p>
         </div>
         <div class="info-box">
             <i class="fas fa-passport"></i>
             <h3>التسجيل في مواقع التأشيرات</h3>
             <p>حسابات على USAJobs و Job Bank و LinkedIn</p>
-            <p style="margin-top: 8px; font-weight: 600; color: #3B82F6;">20$</p>
+            <p style="margin-top: 8px; font-weight: 600; color: #3B82F6;">15$</p>
         </div>
     </div>
 
@@ -167,11 +181,15 @@
                 <a href="countries/canada.html">كندا</a>
                 <a href="countries/germany.html">ألمانيا</a>
                 <a href="countries/uk.html">بريطانيا</a>
+                <a href="countries/france-work-contracts-2026.html">فرنسا</a>
+                <a href="countries/spain-jobs-arabs-guide-2026.html">إسبانيا</a>
+                <a href="countries/netherlands.html">هولندا</a>
+                <a href="countries/portugal-guide.html">البرتغال</a>
             </div>
             <div class="footer-col">
                 <h4>روابط مهمة</h4>
                 <a href="privacy.html">سياسة الخصوصية</a>
-                <a href="terms.html">الشروط والأحكام</a>
+                <a href="terms.html">شروط الاستخدام</a>
                 <a href="contact.html">اتصل بنا</a>
             </div>
             <div class="footer-col">
@@ -187,6 +205,14 @@
     </div>
 </footer>
 
-<script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
+<!-- إعلان Adsterra (ثابت مع defer) -->
+<script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js" defer></script>
+
+<!-- IndexNow (ثابت) -->
+<script src="/indexnow.js"></script>
+
+<!-- زر واتساب الثابت -->
+<a href="https://wa.me/212679627332" class="whatsapp-float" target="_blank">📱 واتساب – استشارات سريعة</a>
+
 </body>
 </html>
