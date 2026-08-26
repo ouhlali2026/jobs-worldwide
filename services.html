@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>خدمات كتابة السيرة والتأشيرات | وظائف على مستوى العالم</title>
-    <meta name="description" content="احصل على سيرة ذاتية احترافية، خطاب تقديم، ومساعدة في التأشيرات. أسعار تنافسية وخدمات مضمونة لدول أوروبا وأمريكا والخليج.">
+    <meta name="description" content="خدمات كتابة السيرة الذاتية وخطاب التقديم بأسعار تبدأ من 5$ فقط. خدمات الهجرة والتأشيرات بأسعار مناسبة للجميع.">
 
     <!-- أيقونات الموقع (ثابتة) -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -36,72 +36,76 @@
         .dropdown-content a:hover { background: #EFF6FF; color: #3B82F6; }
         .dropdown:hover .dropdown-content { display: block; }
 
-        /* قسم البطل (Hero) */
-        .hero { background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color: white; border-radius: 32px; padding: 60px 50px; margin: 40px 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 30px; }
-        .hero-text { flex: 1 1 300px; }
-        .hero-text h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 15px; }
-        .hero-text h1 span { color: #60A5FA; }
-        .hero-text p { font-size: 1.1rem; color: #CBD5E1; margin-bottom: 20px; max-width: 500px; }
-        .hero-text .hero-btn { background: #3B82F6; color: white; padding: 14px 35px; border-radius: 50px; font-weight: 600; text-decoration: none; display: inline-block; transition: 0.3s; }
-        .hero-text .hero-btn:hover { background: #2563EB; transform: scale(1.03); }
-        .hero-img { flex: 1 1 200px; text-align: center; }
-        .hero-img img { max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        /* القسم العلوي */
+        .hero { background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color: white; border-radius: 32px; padding: 50px 40px; margin: 40px 0; text-align: center; }
+        .hero h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 10px; }
+        .hero h1 span { color: #60A5FA; }
+        .hero p { font-size: 1.1rem; color: #CBD5E1; max-width: 600px; margin: 0 auto 20px; }
+        .hero .hero-btn { background: #3B82F6; color: white; padding: 12px 30px; border-radius: 50px; font-weight: 600; text-decoration: none; display: inline-block; transition: 0.3s; }
+        .hero .hero-btn:hover { background: #2563EB; transform: scale(1.03); }
 
-        /* الخدمات */
-        .section-title { text-align: center; font-size: 2rem; font-weight: 700; margin: 50px 0 15px; }
+        .section-title { text-align: center; font-size: 2rem; font-weight: 700; margin: 40px 0 10px; }
         .section-title span { color: #3B82F6; }
-        .section-sub { text-align: center; color: #64748B; margin-bottom: 40px; }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 30px 0 50px; }
-        .service-card { background: white; border-radius: 24px; padding: 30px 25px; border: 1px solid #EFF3F8; box-shadow: 0 4px 15px rgba(0,0,0,0.02); transition: 0.3s; text-align: center; }
-        .service-card:hover { transform: translateY(-6px); box-shadow: 0 15px 35px rgba(0,0,0,0.06); border-color: #DBEAFE; }
-        .service-card .icon { font-size: 3rem; color: #3B82F6; margin-bottom: 15px; display: block; }
-        .service-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
-        .service-card p { color: #475569; font-size: 0.9rem; margin-bottom: 15px; }
-        .service-card .price { font-size: 1.8rem; font-weight: 800; color: #0F172A; }
-        .service-card .price small { font-size: 0.9rem; font-weight: 400; color: #64748B; }
-        .service-card .badge { display: inline-block; background: #FEF3C7; color: #D97706; font-weight: 600; font-size: 0.75rem; padding: 4px 12px; border-radius: 30px; margin-bottom: 12px; }
-        .service-card a { display: inline-block; margin-top: 15px; background: #EFF6FF; color: #3B82F6; padding: 10px 25px; border-radius: 50px; text-decoration: none; font-weight: 600; transition: 0.2s; }
+        .section-sub { text-align: center; color: #64748B; margin-bottom: 30px; }
+
+        /* شبكة الخدمات */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 20px 0 40px; }
+        .service-card { background: white; border-radius: 24px; padding: 25px 20px; border: 1px solid #EFF3F8; box-shadow: 0 4px 12px rgba(0,0,0,0.02); transition: 0.3s; text-align: center; }
+        .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.05); border-color: #DBEAFE; }
+        .service-card .icon { font-size: 2.5rem; color: #3B82F6; margin-bottom: 10px; display: block; }
+        .service-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
+        .service-card p { color: #475569; font-size: 0.9rem; margin-bottom: 12px; }
+        .service-card .price { font-size: 1.6rem; font-weight: 800; color: #0F172A; }
+        .service-card .price small { font-size: 0.8rem; font-weight: 400; color: #64748B; }
+        .service-card .badge { display: inline-block; background: #FEF3C7; color: #D97706; font-weight: 600; font-size: 0.7rem; padding: 3px 12px; border-radius: 30px; margin-bottom: 10px; }
+        .service-card a { display: inline-block; margin-top: 12px; background: #EFF6FF; color: #3B82F6; padding: 8px 22px; border-radius: 50px; text-decoration: none; font-weight: 600; transition: 0.2s; font-size: 0.9rem; }
         .service-card a:hover { background: #3B82F6; color: white; }
 
-        /* قسم المميزات */
-        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; background: white; border-radius: 28px; padding: 40px; margin: 40px 0; border: 1px solid #EFF3F8; }
+        /* المميزات */
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; background: white; border-radius: 28px; padding: 30px; margin: 30px 0; border: 1px solid #EFF3F8; }
         .feature-item { text-align: center; }
-        .feature-item i { font-size: 2.2rem; color: #3B82F6; margin-bottom: 10px; }
-        .feature-item h4 { font-weight: 600; }
+        .feature-item i { font-size: 1.8rem; color: #3B82F6; margin-bottom: 8px; }
+        .feature-item h4 { font-size: 1rem; font-weight: 600; }
 
-        /* الأسئلة الشائعة (FAQ) */
-        .faq-section { background: white; border-radius: 28px; padding: 40px; margin: 40px 0; border: 1px solid #EFF3F8; }
-        .faq-section h2 { text-align: center; margin-bottom: 30px; }
-        .faq-item { border-bottom: 1px solid #F1F5F9; padding: 18px 0; }
+        /* FAQ */
+        .faq-section { background: white; border-radius: 28px; padding: 35px; margin: 30px 0; border: 1px solid #EFF3F8; }
+        .faq-section h2 { text-align: center; margin-bottom: 25px; font-size: 1.6rem; }
+        .faq-item { border-bottom: 1px solid #F1F5F9; padding: 15px 0; }
         .faq-item:last-child { border-bottom: 0; }
-        .faq-item h4 { font-weight: 600; font-size: 1rem; margin-bottom: 5px; color: #0F172A; }
-        .faq-item p { color: #475569; font-size: 0.95rem; }
+        .faq-item h4 { font-weight: 600; font-size: 0.95rem; margin-bottom: 4px; color: #0F172A; }
+        .faq-item p { color: #475569; font-size: 0.9rem; }
+
+        /* دعوة أخيرة */
+        .cta-box { background: #EFF6FF; border-radius: 28px; padding: 25px; text-align: center; margin: 30px 0; }
+        .cta-box h3 { color: #0F172A; margin-bottom: 8px; }
+        .cta-box p { color: #475569; margin-bottom: 15px; }
+        .cta-box a { display: inline-block; background: #25D366; color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: 700; }
 
         /* تذييل */
-        .footer { background: #0F172A; color: #94A3B8; padding: 40px 0 20px; margin-top: 50px; border-radius: 32px 32px 0 0; }
-        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 35px; margin-bottom: 30px; }
-        .footer-col h4 { color: white; margin-bottom: 14px; font-size: 0.95rem; }
-        .footer-col a { display: block; color: #94A3B8; text-decoration: none; margin-bottom: 8px; font-size: 0.8rem; transition: 0.2s; }
+        .footer { background: #0F172A; color: #94A3B8; padding: 35px 0 15px; margin-top: 40px; border-radius: 32px 32px 0 0; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 30px; margin-bottom: 25px; }
+        .footer-col h4 { color: white; margin-bottom: 12px; font-size: 0.9rem; }
+        .footer-col a { display: block; color: #94A3B8; text-decoration: none; margin-bottom: 6px; font-size: 0.8rem; transition: 0.2s; }
         .footer-col a:hover { color: #3B82F6; }
-        .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #1E293B; font-size: 0.75rem; }
+        .footer-bottom { text-align: center; padding-top: 15px; border-top: 1px solid #1E293B; font-size: 0.7rem; }
 
         /* زر واتساب */
         .whatsapp {
             position: fixed; bottom: 25px; left: 25px; background: #25D366; color: white;
-            padding: 14px 22px; border-radius: 50px; font-weight: 700; font-size: 0.95rem;
+            padding: 12px 20px; border-radius: 50px; font-weight: 700; font-size: 0.9rem;
             box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4); text-decoration: none; z-index: 999;
-            display: inline-flex; align-items: center; gap: 10px; transition: 0.3s; border: none; direction: rtl;
+            display: inline-flex; align-items: center; gap: 8px; transition: 0.3s; direction: rtl;
         }
         .whatsapp:hover { transform: scale(1.05); background: #1EBE5D; color: white; }
 
         @media (max-width: 768px) {
-            .hero { padding: 30px 20px; text-align: center; }
-            .hero-text h1 { font-size: 1.8rem; }
+            .hero { padding: 30px 20px; }
+            .hero h1 { font-size: 1.7rem; }
             .services-grid { grid-template-columns: 1fr; }
             .features { grid-template-columns: 1fr 1fr; }
             .nav { flex-direction: column; }
             .nav-links { justify-content: center; }
-            .whatsapp { padding: 12px 18px; font-size: 0.85rem; left: 15px; bottom: 15px; }
+            .whatsapp { padding: 10px 16px; font-size: 0.8rem; left: 15px; bottom: 15px; }
         }
     </style>
 </head>
@@ -136,20 +140,15 @@
 </div>
 
 <div class="container">
-    <!-- قسم البطل -->
+    <!-- القسم العلوي -->
     <div class="hero">
-        <div class="hero-text">
-            <h1>خدمات احترافية لـ <span>مستقبلك المهني</span></h1>
-            <p>سواء كنت تبحث عن وظيفة في الخليج أو أوروبا أو أمريكا، نقدم لك خدمات كتابة السيرة الذاتية، خطابات التقديم، والمساعدة في التأشيرات بأسعار تنافسية.</p>
-            <a href="#services" class="hero-btn">استعرض الخدمات <i class="fas fa-arrow-down"></i></a>
-        </div>
-        <div class="hero-img">
-            <img src="https://picsum.photos/seed/services-hero/500/300" alt="خدمات وظائف على مستوى العالم" title="خدمات التوظيف والهجرة" loading="lazy">
-        </div>
+        <h1>خدمات مهنية بأسعار <span>تنافسية</span></h1>
+        <p>سواء كنت تبحث عن وظيفة في الخليج، أوروبا، أو أمريكا، نقدم لك خدمات كتابة السيرة الذاتية، خطابات التقديم، والمساعدة في التأشيرات بأسعار تبدأ من 5$ فقط.</p>
+        <a href="#services" class="hero-btn">استعرض الخدمات <i class="fas fa-arrow-down"></i></a>
     </div>
 
     <h2 class="section-title">خدماتنا <span>المميزة</span></h2>
-    <p class="section-sub">اختر الخدمة المناسبة لك، واسعَ نحو وظيفة أحلامك بثقة.</p>
+    <p class="section-sub">اختر الخدمة المناسبة لك، واستثمر في مستقبلك المهني بتكلفة بسيطة.</p>
 
     <!-- شبكة الخدمات -->
     <div class="services-grid" id="services">
@@ -158,8 +157,8 @@
             <span class="icon"><i class="fas fa-file-pen"></i></span>
             <span class="badge">الأكثر طلباً</span>
             <h3>كتابة السيرة الذاتية (CV)</h3>
-            <p>سيرة ذاتية احترافية مخصصة حسب المجال والدولة المستهدفة، مع تحسين الكلمات المفتاحية لأنظمة ATS.</p>
-            <div class="price">$49 <small>للخدمة</small></div>
+            <p>سيرة ذاتية احترافية مخصصة حسب المجال والدولة، مع تحسين الكلمات المفتاحية لأنظمة ATS.</p>
+            <div class="price">$7 <small>للخدمة</small></div>
             <a href="https://wa.me/212679627332" target="_blank">اطلب الآن <i class="fas fa-arrow-right"></i></a>
         </div>
 
@@ -167,8 +166,8 @@
         <div class="service-card">
             <span class="icon"><i class="fas fa-envelope-open-text"></i></span>
             <h3>خطاب التقديم (Cover Letter)</h3>
-            <p>خطاب تقديم مقنع ومخصص لكل وظيفة، يُبرز نقاط قوتك ويُجذب انتباه مسؤولي التوظيف.</p>
-            <div class="price">$29 <small>للخدمة</small></div>
+            <p>خطاب تقديم مقنع ومخصص لكل وظيفة، يبرز نقاط قوتك ويجذب انتباه مسؤولي التوظيف.</p>
+            <div class="price">$5 <small>للخدمة</small></div>
             <a href="https://wa.me/212679627332" target="_blank">اطلب الآن <i class="fas fa-arrow-right"></i></a>
         </div>
 
@@ -177,8 +176,8 @@
             <span class="icon"><i class="fas fa-layer-group"></i></span>
             <span class="badge" style="background: #DBEAFE; color: #1D4ED8;">أفضل قيمة</span>
             <h3>حزمة السيرة + الخطاب</h3>
-            <p>احصل على سيرة ذاتية وخطاب تقديم معاً بسعر مخفض. خدمة متكاملة لتعزيز فرصك في الحصول على المقابلة.</p>
-            <div class="price">$69 <small>(توفير 9$)</small></div>
+            <p>سيرة ذاتية وخطاب تقديم معاً بسعر مخفض. خدمة متكاملة لتعزيز فرصك في الحصول على المقابلة.</p>
+            <div class="price">$10 <small>(بدلاً من 12$)</small></div>
             <a href="https://wa.me/212679627332" target="_blank">اطلب الحزمة <i class="fas fa-arrow-right"></i></a>
         </div>
 
@@ -187,7 +186,7 @@
             <span class="icon"><i class="fab fa-linkedin"></i></span>
             <h3>تحسين ملف LinkedIn</h3>
             <p>إعادة هيكلة ملفك الشخصي على LinkedIn لزيادة الظهور أمام الباحثين عن الكفاءات وجذب فرص عمل مميزة.</p>
-            <div class="price">$39 <small>للخدمة</small></div>
+            <div class="price">$8 <small>للخدمة</small></div>
             <a href="https://wa.me/212679627332" target="_blank">اطلب الآن <i class="fas fa-arrow-right"></i></a>
         </div>
 
@@ -196,7 +195,7 @@
             <span class="icon"><i class="fas fa-passport"></i></span>
             <h3>المساعدة في التأشيرات والهجرة</h3>
             <p>دعم في ملء نماذج التأشيرات (فيزا البحث عن عمل، تأشيرة العمل، برامج الهجرة) مع مراجعة المستندات.</p>
-            <div class="price">$99 <small>للخدمة</small></div>
+            <div class="price">$15 <small>للخدمة</small></div>
             <a href="https://wa.me/212679627332" target="_blank">اطلب الآن <i class="fas fa-arrow-right"></i></a>
         </div>
 
@@ -205,14 +204,9 @@
             <span class="icon"><i class="fas fa-comments"></i></span>
             <h3>تدريب المقابلات الشخصية</h3>
             <p>محاكاة مقابلات العمل مع نصائح حول الإجابات المتوقعة، لغة الجسد، والتعامل مع الأسئلة الصعبة.</p>
-            <div class="price">$59 <small>للجلسة</small></div>
+            <div class="price">$10 <small>للجلسة</small></div>
             <a href="https://wa.me/212679627332" target="_blank">اطلب الآن <i class="fas fa-arrow-right"></i></a>
         </div>
-    </div>
-
-    <!-- صورة وسطية -->
-    <div style="text-align: center; margin: 20px 0 10px;">
-        <img src="https://picsum.photos/seed/services-middle/800/200" alt="خدمات التوظيف والهجرة للمغاربة والعرب" title="خدمات كتابة السيرة والتأشيرات" loading="lazy" style="max-width: 100%; border-radius: 20px;">
     </div>
 
     <!-- المميزات -->
@@ -220,60 +214,55 @@
         <div class="feature-item">
             <i class="fas fa-clock"></i>
             <h4>سرعة في التسليم</h4>
-            <p style="font-size:0.9rem; color:#64748B;">تسليم الخدمة خلال 24 ساعة من استلام المعلومات.</p>
+            <p style="font-size:0.85rem; color:#64748B;">تسليم الخدمة خلال 24 ساعة</p>
         </div>
         <div class="feature-item">
             <i class="fas fa-shield-halved"></i>
             <h4>ضمان الجودة</h4>
-            <p style="font-size:0.9rem; color:#64748B;">نعدل الخدمة مجاناً حتى ترضى تماماً عن النتيجة.</p>
+            <p style="font-size:0.85rem; color:#64748B;">تعديل مجاني حتى الرضا</p>
         </div>
         <div class="feature-item">
             <i class="fas fa-globe"></i>
             <h4>خبرة عالمية</h4>
-            <p style="font-size:0.9rem; color:#64748B;">نعرف متطلبات سوق العمل في 28 دولة حول العالم.</p>
+            <p style="font-size:0.85rem; color:#64748B;">معرفة بـ 28 دولة</p>
         </div>
         <div class="feature-item">
             <i class="fas fa-lock"></i>
             <h4>سرية تامة</h4>
-            <p style="font-size:0.9rem; color:#64748B;">بياناتك آمنة ولن نشاركها مع أي طرف ثالث.</p>
+            <p style="font-size:0.85rem; color:#64748B;">بياناتك آمنة</p>
         </div>
     </div>
 
-    <!-- الأسئلة الشائعة (FAQ) -->
+    <!-- الأسئلة الشائعة -->
     <div class="faq-section">
         <h2>📌 أسئلة شائعة عن خدماتنا</h2>
         <div class="faq-item">
             <h4>كيف أطلب الخدمة؟</h4>
-            <p>يمكنك طلب الخدمة عبر النقر على زر "اطلب الآن" في البطاقة المناسبة، وسيتم تحويلك مباشرة إلى واتساب للتواصل معنا وتحديد التفاصيل.</p>
+            <p>انقر على زر "اطلب الآن" في البطاقة المناسبة، وسيتم تحويلك مباشرة إلى واتساب للتواصل معنا وتحديد التفاصيل.</p>
         </div>
         <div class="faq-item">
             <h4>ما هي مدة تسليم الخدمة؟</h4>
-            <p>نلتزم بتسليم جميع الخدمات خلال 24 ساعة من استلام كامل المعلومات المطلوبة من قبلك.</p>
+            <p>نلتزم بتسليم جميع الخدمات خلال 24 ساعة من استلام كامل المعلومات المطلوبة.</p>
         </div>
         <div class="faq-item">
             <h4>هل تقدمون خدمات للدول العربية فقط؟</h4>
-            <p>لا، نحن متخصصون في سوق العمل العالمي. نقدم خدماتنا للراغبين في العمل في الخليج، أوروبا (فرنسا، ألمانيا، بريطانيا، إسبانيا...)، أمريكا، كندا، وأستراليا.</p>
+            <p>لا، نحن متخصصون في سوق العمل العالمي. نقدم خدماتنا للراغبين في العمل في الخليج، أوروبا، أمريكا، كندا، وأستراليا.</p>
         </div>
         <div class="faq-item">
             <h4>هل هناك ضمان على الخدمة؟</h4>
-            <p>نعم، نقدم ضمان الرضا الكامل. إذا لم تكن راضياً عن الخدمة، سنقوم بتعديلها مجاناً حتى تحصل على ما تريد.</p>
+            <p>نعم، نقدم ضمان الرضا الكامل. إذا لم تكن راضياً، سنقوم بتعديلها مجاناً حتى تحصل على ما تريد.</p>
         </div>
         <div class="faq-item">
-            <h4>هل الأسعار بالدولار فقط؟</h4>
-            <p>الأسعار محددة بالدولار الأمريكي للتوحيد، ولكن يمكنك الدفع بالعملة المحلية (درهم مغربي، دينار، جنيه...) حسب سعر الصرف في يوم الدفع.</p>
+            <h4>ما هي طرق الدفع المتاحة؟</h4>
+            <p>يمكن الدفع عبر باي بال، تحويل بنكي، أو فودافون كاش (للعملاء في المغرب).</p>
         </div>
-    </div>
-
-    <!-- صورة ختامية -->
-    <div style="text-align: center; margin: 10px 0 20px;">
-        <img src="https://picsum.photos/seed/services-footer/800/150" alt="احصل على وظيفة أحلامك مع خدماتنا" title="خدمات وظائف على مستوى العالم - تواصل معنا الآن" loading="lazy" style="max-width: 100%; border-radius: 20px;">
     </div>
 
     <!-- دعوة أخيرة -->
-    <div style="background: #EFF6FF; border-radius: 28px; padding: 30px; text-align: center; margin: 30px 0;">
-        <h3 style="color: #0F172A; margin-bottom: 10px;">جاهز لتحسين فرصك الوظيفية؟</h3>
-        <p style="color: #475569;">تواصل معنا الآن على واتساب، واحصل على استشارة أولية مجانية.</p>
-        <a href="https://wa.me/212679627332" target="_blank" style="display: inline-block; margin-top: 15px; background: #25D366; color: white; padding: 14px 35px; border-radius: 50px; text-decoration: none; font-weight: 700;">📱 تواصل عبر واتساب</a>
+    <div class="cta-box">
+        <h3>جاهز لتحسين فرصك الوظيفية؟</h3>
+        <p>تواصل معنا الآن على واتساب، واحصل على استشارة أولية مجانية.</p>
+        <a href="https://wa.me/212679627332" target="_blank">📱 تواصل عبر واتساب</a>
     </div>
 </div>
 
@@ -315,13 +304,13 @@
     </div>
 </footer>
 
-<!-- IndexNow (ثابت) -->
+<!-- IndexNow -->
 <script src="/indexnow.js"></script>
 
-<!-- إعلان Adsterra (ثابت) -->
+<!-- إعلان Adsterra -->
 <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js" defer></script>
 
-<!-- زر واتساب الثابت -->
+<!-- زر واتساب -->
 <a href="https://wa.me/212679627332" class="whatsapp" target="_blank">📱 واتساب – استشارات سريعة</a>
 
 </body>
