@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>سياسة الخصوصية | وظائف على مستوى العالم</title>
-    <meta name="description" content="سياسة الخصوصية لموقع وظائف على مستوى العالم. نوضح كيفية جمع واستخدام بياناتك، وكيفية عمل الإعلانات على موقعنا.">
-    
+    <title>سياسة الخصوصية وكيفية استخدام الإعلانات | وظائف على مستوى العالم</title>
+    <meta name="description" content="سياسة الخصوصية لموقع وظائف على مستوى العالم. تعرف على كيفية جمع واستخدام بياناتك، وكيفية عمل إعلانات Google AdSense وملفات تعريف الارتباط.">
+
+    <!-- أيقونات الموقع (ثابتة) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Inter', sans-serif; background: #F8FAFC; color: #1E293B; line-height: 1.7; }
         .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
-        
+
         /* الهيدر */
         .header { background: #FFFFFF; border-bottom: 1px solid #E2E8F0; position: sticky; top: 0; z-index: 100; }
         .nav { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; flex-wrap: wrap; gap: 15px; }
@@ -25,11 +31,11 @@
         .btn-nav { background: #3B82F6; color: white !important; padding: 6px 18px !important; border-radius: 30px !important; }
         
         .dropdown { position: relative; display: inline-block; }
-        .dropdown-content { display: none; position: absolute; top: 38px; right: 0; background: white; min-width: 200px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); border-radius: 16px; overflow: hidden; z-index: 1000; border: 1px solid #E2E8F0; }
+        .dropdown-content { display: none; position: absolute; top: 38px; right: 0; background: white; min-width: 220px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); border-radius: 16px; overflow: hidden; z-index: 1000; border: 1px solid #E2E8F0; max-height: 300px; overflow-y: auto; }
         .dropdown-content a { display: block; padding: 10px 16px; color: #1E293B; text-decoration: none; border-bottom: 1px solid #F1F5F9; font-size: 0.85rem; }
         .dropdown-content a:hover { background: #EFF6FF; color: #3B82F6; }
         .dropdown:hover .dropdown-content { display: block; }
-        
+
         /* محتوى السياسة */
         .privacy-content { background: white; border-radius: 28px; padding: 45px; margin: 40px 0; border: 1px solid #EFF3F8; box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
         .privacy-content h1 { font-size: 2rem; margin-bottom: 20px; color: #0F172A; }
@@ -42,7 +48,7 @@
         .privacy-content a { color: #3B82F6; text-decoration: none; }
         .privacy-content a:hover { text-decoration: underline; }
         .update-date { margin-top: 30px; padding-top: 20px; border-top: 1px solid #EFF3F8; font-size: 0.8rem; color: #64748B; text-align: center; }
-        
+
         /* تذييل */
         .footer { background: #0F172A; color: #94A3B8; padding: 40px 0 20px; margin-top: 50px; border-radius: 32px 32px 0 0; }
         .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 35px; margin-bottom: 30px; }
@@ -50,12 +56,22 @@
         .footer-col a { display: block; color: #94A3B8; text-decoration: none; margin-bottom: 8px; font-size: 0.8rem; transition: 0.2s; }
         .footer-col a:hover { color: #3B82F6; }
         .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #1E293B; font-size: 0.75rem; }
-        
+
+        /* زر واتساب */
+        .whatsapp {
+            position: fixed; bottom: 25px; left: 25px; background: #25D366; color: white;
+            padding: 14px 22px; border-radius: 50px; font-weight: 700; font-size: 0.95rem;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4); text-decoration: none; z-index: 999;
+            display: inline-flex; align-items: center; gap: 10px; transition: 0.3s; border: none; direction: rtl;
+        }
+        .whatsapp:hover { transform: scale(1.05); background: #1EBE5D; color: white; }
+
         @media (max-width: 768px) {
             .privacy-content { padding: 25px; }
             .privacy-content h1 { font-size: 1.5rem; }
             .nav { flex-direction: column; }
             .nav-links { justify-content: center; }
+            .whatsapp { padding: 12px 18px; font-size: 0.85rem; left: 15px; bottom: 15px; }
         }
     </style>
 </head>
@@ -78,6 +94,9 @@
                         <a href="countries/canada.html">🇨🇦 كندا</a>
                         <a href="countries/germany.html">🇩🇪 ألمانيا</a>
                         <a href="countries/uk.html">🇬🇧 بريطانيا</a>
+                        <a href="countries/france-work-contracts-2026.html">🇫🇷 فرنسا</a>
+                        <a href="countries/spain-jobs-arabs-guide-2026.html">🇪🇸 إسبانيا</a>
+                        <a href="countries/portugal-guide.html">🇵🇹 البرتغال</a>
                     </div>
                 </div>
                 <a href="services.html" class="btn-nav">📄 اطلب خدمتك</a>
@@ -90,55 +109,78 @@
     <div class="privacy-content">
         <h1>سياسة <span>الخصوصية</span></h1>
         
-        <p>نرحب بك في موقع <strong>وظائف على مستوى العالم</strong>. خصوصيتك مهمة بالنسبة لنا، ونحن ملتزمون بحماية بياناتك الشخصية. توضح سياسة الخصوصية هذه كيفية جمع واستخدام وحماية معلوماتك عند زيارة موقعنا.</p>
+        <p>نرحب بك في موقع <strong>وظائف على مستوى العالم</strong>. خصوصيتك مهمة بالنسبة لنا، ونحن ملتزمون بحماية بياناتك الشخصية. توضح سياسة الخصوصية هذه كيفية جمع واستخدام وحماية معلوماتك عند زيارة موقعنا، خاصة فيما يتعلق بالإعلانات وشركائنا في الإعلان.</p>
 
         <h2>📌 المعلومات التي نجمعها</h2>
         <p>قد نجمع الأنواع التالية من المعلومات:</p>
         <ul>
             <li><strong>معلومات غير شخصية:</strong> مثل عنوان IP، نوع المتصفح، نظام التشغيل، الصفحات التي تزورها، الوقت والتاريخ، ومدة الزيارة.</li>
-            <li><strong>معلومات تقنية:</strong> بيانات ملفات تعريف الارتباط (Cookies) المستخدمة لتحسين تجربة التصفح وتحليل الأداء.</li>
+            <li><strong>معلومات تقنية:</strong> بيانات ملفات تعريف الارتباط (Cookies) المستخدمة لتحسين تجربة التصفح وتحليل الأداء وتخصيص الإعلانات.</li>
             <li><strong>معلومات الاتصال:</strong> عندما تتواصل معنا عبر واتساب أو البريد الإلكتروني، قد نحتفظ بسجل التواصل لتقديم الدعم اللازم.</li>
         </ul>
 
         <h2>🍪 ملفات تعريف الارتباط (Cookies)</h2>
         <p>نحن نستخدم ملفات تعريف الارتباط لتحسين تجربتك على موقعنا. تشمل أنواع ملفات تعريف الارتباط التي نستخدمها:</p>
         <ul>
-            <li><strong>ملفات ضرورية:</strong> لتشغيل الموقع بشكل صحيح.</li>
-            <li><strong>ملفات الأداء والتحليلات:</strong> لفهم كيفية استخدام الزوار لموقعنا وتحسين المحتوى.</li>
-            <li><strong>ملفات إعلانية:</strong> لعرض إعلانات مخصصة بناءً على اهتماماتك.</li>
+            <li><strong>ملفات ضرورية:</strong> لتشغيل الموقع بشكل صحيح ولتذكر تفضيلاتك (مثل إعدادات اللغة).</li>
+            <li><strong>ملفات الأداء والتحليلات:</strong> لفهم كيفية استخدام الزوار لموقعنا وتحسين المحتوى، مثل Google Analytics.</li>
+            <li><strong>ملفات إعلانية مخصصة:</strong> لعرض إعلانات ذات صلة باهتماماتك بناءً على زياراتك السابقة لموقعنا أو مواقع أخرى. هذه الملفات تستخدمها شبكات إعلانية مثل Google AdSense.</li>
         </ul>
-        <p>يمكنك تعطيل ملفات تعريف الارتباط من خلال إعدادات المتصفح الخاص بك، لكن قد يؤثر ذلك على بعض وظائف الموقع.</p>
+        <p>يمكنك تعطيل ملفات تعريف الارتباط من خلال إعدادات المتصفح الخاص بك، لكن قد يؤثر ذلك على بعض وظائف الموقع وعلى تخصيص الإعلانات.</p>
 
         <h2>📢 الإعلانات وشركاء الإعلان</h2>
-        <p>نحن نعرض إعلانات على موقعنا لتحقيق عائد مادي يساعدنا في الاستمرار وتقديم محتوى مجاني. نستخدم شبكات إعلانية مثل <strong>Google AdSense</strong> وغيرها من الشبكات الموثوقة. قد تستخدم هذه الشبكات ملفات تعريف الارتباط لعرض إعلانات مخصصة بناءً على زياراتك السابقة لموقعنا أو مواقع أخرى.</p>
+        <p>نعرض إعلانات على موقعنا لتحقيق عائد مادي يساعدنا في الاستمرار وتقديم محتوى مجاني وموثوق. نستخدم شبكات إعلانية موثوقة مثل <strong>Google AdSense</strong> وشبكات أخرى ملتزمة بسياسات الخصوصية الدولية.</p>
         
         <h3>إعلانات Google AdSense</h3>
-        <p>يستخدم Google AdSense ملفات تعريف الارتباط لعرض إعلانات بناءً على اهتماماتك. يمكنك معرفة المزيد حول كيفية استخدام Google للبيانات من خلال زيارة:</p>
+        <p>يستخدم Google AdSense ملفات تعريف الارتباط لعرض إعلانات بناءً على اهتماماتك وسلوكك التصفحي. قد تعرض Google وشركاؤها إعلاناتك بناءً على زياراتك السابقة لهذا الموقع أو مواقع أخرى.</p>
+        <p>لمزيد من التفاصيل حول كيفية استخدام Google للبيانات، يمكنك زيارة:</p>
         <ul>
-            <li><a href="https://policies.google.com/technologies/ads" target="_blank">سياسة Google للإعلانات</a></li>
-            <li><a href="https://adssettings.google.com" target="_blank">إعدادات الإعلانات من Google</a></li>
+            <li><a href="https://policies.google.com/technologies/ads" target="_blank">سياسة Google للإعلانات</a> – شرح كيفية جمع واستخدام البيانات.</li>
+            <li><a href="https://adssettings.google.com" target="_blank">إعدادات الإعلانات من Google</a> – لإدارة تفضيلات الإعلانات المخصصة أو إلغاء الاشتراك.</li>
         </ul>
         
         <h3>إعلانات الطرف الثالث</h3>
-        <p>قد يستخدم معلنون آخرون ملفات تعريف الارتباط وإشارات الويب لتتبع نشاطك وعرض إعلانات ذات صلة. نحن لا نتحكم في هذه التقنيات أو المعلومات التي يجمعونها.</p>
+        <p>قد يستخدم معلنون آخرون ملفات تعريف الارتباط وإشارات الويب لتتبع نشاطك وعرض إعلانات ذات صلة. نحن لا نتحكم في هذه التقنيات أو المعلومات التي يجمعونها. ننصحك بمراجعة سياسات الخصوصية الخاصة بهم:</p>
+        <ul>
+            <li><strong>شركاء الإعلان:</strong> نتعاون مع شبكات إعلانية ملتزمة بخصوصية المستخدمين وتوفير خيارات إلغاء الاشتراك.</li>
+            <li><strong>روابط خارجية:</strong> قد تحتوي الإعلانات على روابط لمواقع خارجية، وكل موقع له سياسة خصوصية خاصة به.</li>
+        </ul>
+
+        <h3>كيفية إلغاء الإعلانات المخصصة</h3>
+        <p>يمكنك إلغاء الاشتراك في الإعلانات المخصصة من Google من خلال:</p>
+        <ul>
+            <li>زيارة <a href="https://adssettings.google.com" target="_blank">إعدادات الإعلانات من Google</a>.</li>
+            <li>تعطيل ملفات تعريف الارتباط الخاصة بالتتبع في إعدادات المتصفح الخاص بك.</li>
+            <li>استخدام إضافات المتصفح التي تمنع التتبع الإعلاني (مثل Privacy Badger أو uBlock Origin).</li>
+        </ul>
 
         <h2>🔒 كيفية حماية معلوماتك</h2>
-        <p>نحن نتخذ تدابير أمنية معقولة لحماية معلوماتك من الوصول غير المصرح به أو التعديل أو الإفصاح أو التدمير. ومع ذلك، لا يمكننا ضمان الأمان الكامل للبيانات المرسلة عبر الإنترنت.</p>
+        <p>نحن نتخذ تدابير أمنية معقولة لحماية معلوماتك من الوصول غير المصرح به أو التعديل أو الإفصاح أو التدمير. ومع ذلك، لا يمكننا ضمان الأمان الكامل للبيانات المرسلة عبر الإنترنت، لذلك ننصحك باستخدام شبكات آمنة.</p>
 
-        <h2>📧 الروابط إلى مواقع خارجية</h2>
-        <p>قد يحتوي موقعنا على روابط إلى مواقع خارجية (مثل مواقع الهجرة والتوظيف الرسمية). نحن لسنا مسؤولين عن ممارسات الخصوصية لتلك المواقع. ننصحك بمراجعة سياسات الخصوصية الخاصة بهم.</p>
+        <h2>🔗 الروابط إلى مواقع خارجية</h2>
+        <p>قد يحتوي موقعنا على روابط إلى مواقع خارجية (مثل مواقع الهجرة والتوظيف الرسمية، شبكات الإعلانات). نحن لسنا مسؤولين عن ممارسات الخصوصية لتلك المواقع. ننصحك بمراجعة سياسات الخصوصية الخاصة بهم قبل تقديم أي معلومات.</p>
 
         <h2>👶 خصوصية الأطفال</h2>
-        <p>موقعنا لا يستهدف الأطفال دون سن 13 عامًا. نحن لا نجمع عمدًا أي معلومات شخصية من الأطفال. إذا اكتشفنا أننا جمعنا معلومات من طفل دون سن 13، فسنتخذ خطوات لحذف هذه المعلومات فورًا.</p>
+        <p>موقعنا لا يستهدف الأطفال دون سن 13 عامًا. نحن لا نجمع عمدًا أي معلومات شخصية من الأطفال. إذا اكتشفنا أننا جمعنا معلومات من طفل دون سن 13، فسنتخذ خطوات لحذف هذه المعلومات فورًا. هذا يتوافق مع متطلبات قانون حماية خصوصية الأطفال على الإنترنت (COPPA).</p>
 
-        <h2>✍️ موافقتك</h2>
-        <p>باستخدام موقعنا، فإنك توافق على سياسة الخصوصية هذه وعلى جمع واستخدام معلوماتك كما هو موضح أعلاه.</p>
+        <h2>✍️ حقوق المستخدمين</h2>
+        <p>أنت تمتلك الحق في:</p>
+        <ul>
+            <li><strong>الوصول:</strong> طلب نسخة من البيانات الشخصية التي نحتفظ بها عنك.</li>
+            <li><strong>التصحيح:</strong> طلب تصحيح أي معلومات غير دقيقة.</li>
+            <li><strong>الحذف:</strong> طلب حذف بياناتك الشخصية من سجلاتنا.</li>
+            <li><strong>إلغاء الاشتراك:</strong> إلغاء الاشتراك في أي اتصالات تسويقية أو إعلانات مخصصة.</li>
+        </ul>
+        <p>للقيام بذلك، يرجى التواصل معنا عبر وسائل الاتصال المذكورة أدناه.</p>
 
         <h2>🔄 التحديثات على سياسة الخصوصية</h2>
-        <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. سيتم نشر أي تغييرات على هذه الصفحة مع تحديث تاريخ "آخر تحديث". ننصحك بمراجعة هذه الصفحة دوريًا للاطلاع على أي تغييرات.</p>
+        <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر لتعكس التغييرات في ممارساتنا أو متطلبات القوانين. سيتم نشر أي تغييرات على هذه الصفحة مع تحديث تاريخ "آخر تحديث". ننصحك بمراجعة هذه الصفحة دوريًا للاطلاع على أي تغييرات.</p>
+
+        <h2>⚖️ الامتثال للقوانين</h2>
+        <p>نلتزم بقوانين الخصوصية المعمول بها، بما في ذلك اللائحة العامة لحماية البيانات (GDPR) للزوار من الاتحاد الأوروبي، وقانون خصوصية المستهلك في كاليفورنيا (CCPA) للمقيمين في كاليفورنيا. نحن نتعامل مع جميع البيانات وفقًا لهذه المعايير.</p>
 
         <h2>📞 اتصل بنا</h2>
-        <p>إذا كان لديك أي أسئلة أو استفسارات حول سياسة الخصوصية هذه، يمكنك التواصل معنا عبر:</p>
+        <p>إذا كان لديك أي أسئلة أو استفسارات حول سياسة الخصوصية هذه، أو ترغب في ممارسة حقوقك المذكورة أعلاه، يمكنك التواصل معنا عبر:</p>
         <ul>
             <li><i class="fab fa-whatsapp"></i> واتساب: <a href="https://wa.me/212679627332" target="_blank">+212 679 627 332</a></li>
             <li><i class="fas fa-envelope"></i> البريد الإلكتروني: <a href="mailto:info@tarik-aljanah.online">info@tarik-aljanah.online</a></li>
@@ -165,12 +207,15 @@
                 <a href="countries/canada.html">كندا</a>
                 <a href="countries/germany.html">ألمانيا</a>
                 <a href="countries/uk.html">بريطانيا</a>
+                <a href="countries/france-work-contracts-2026.html">فرنسا</a>
+                <a href="countries/spain-jobs-arabs-guide-2026.html">إسبانيا</a>
             </div>
             <div class="footer-col">
                 <h4>روابط مهمة</h4>
                 <a href="privacy.html">سياسة الخصوصية</a>
-                <a href="terms.html">الشروط والأحكام</a>
+                <a href="terms.html">شروط الاستخدام</a>
                 <a href="contact.html">اتصل بنا</a>
+                <a href="countries.html">جميع الدول</a>
             </div>
             <div class="footer-col">
                 <h4>تواصل معنا</h4>
@@ -184,6 +229,14 @@
     </div>
 </footer>
 
-<script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js"></script>
+<!-- IndexNow (ثابت) -->
+<script src="/indexnow.js"></script>
+
+<!-- إعلان Adsterra (ثابت) -->
+<script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js" defer></script>
+
+<!-- زر واتساب الثابت -->
+<a href="https://wa.me/212679627332" class="whatsapp" target="_blank">📱 واتساب – استشارات سريعة</a>
+
 </body>
 </html>
