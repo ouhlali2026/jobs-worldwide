@@ -27,8 +27,67 @@
 <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 
-<!-- الأنماط الأساسية (مضمنة أو من style.css) -->
+<!-- الأنماط الأساسية -->
 <link rel="stylesheet" href="/style.css">
+
+<style>
+    /* أنماط إضافية للهيرو والبطاقات */
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+    .header { background: #FFFFFF; border-bottom: 1px solid #E2E8F0; position: sticky; top: 0; z-index: 100; }
+    .nav { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; flex-wrap: wrap; gap: 16px; }
+    .logo { font-size: 1.4rem; font-weight: 800; background: linear-gradient(135deg, #0F172A, #1E293B); -webkit-background-clip: text; background-clip: text; color: transparent; display: flex; align-items: center; gap: 8px; }
+    .logo i { background: none; color: #2563EB; }
+    .nav-links { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .nav-links a { text-decoration: none; color: #475569; font-weight: 500; font-size: 0.9rem; padding: 6px 14px; border-radius: 40px; transition: 0.2s; }
+    .nav-links a:hover { color: #2563EB; background: #EFF6FF; }
+    .btn-nav { background: #2563EB; color: white !important; padding: 6px 20px !important; border-radius: 40px !important; }
+    .dropdown { position: relative; display: inline-block; }
+    .dropdown-content { display: none; position: absolute; top: 40px; right: 0; background: white; min-width: 280px; box-shadow: 0 12px 25px rgba(0,0,0,0.1); border-radius: 20px; overflow: hidden; z-index: 1000; border: 1px solid #E2E8F0; max-height: 400px; overflow-y: auto; }
+    .dropdown-content a { display: block; padding: 10px 16px; color: #1E293B; text-decoration: none; border-bottom: 1px solid #F1F5F9; font-size: 0.85rem; transition: 0.2s; }
+    .dropdown-content a:hover { background: #EFF6FF; color: #2563EB; }
+    .dropdown:hover .dropdown-content { display: block; }
+
+    .hero { background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color: white; border-radius: 32px; padding: 50px 40px; margin: 35px 0; text-align: center; }
+    .hero h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 10px; }
+    .hero h1 span { color: #FCD34D; }
+    .hero p { font-size: 1rem; color: #CBD5E1; max-width: 600px; margin: 0 auto 20px; }
+    .hero-flags { font-size: 1.8rem; margin-bottom: 15px; letter-spacing: 6px; }
+    .search-box { display: flex; max-width: 550px; margin: 0 auto; gap: 10px; flex-wrap: wrap; justify-content: center; }
+    .search-box input { flex: 1; padding: 12px 18px; border-radius: 40px; border: none; font-size: 0.95rem; min-width: 200px; }
+    .search-box button { padding: 12px 28px; border-radius: 40px; border: none; background: #2563EB; color: white; font-weight: 600; cursor: pointer; transition: 0.2s; font-size: 0.95rem; }
+    .search-box button:hover { background: #1D4ED8; }
+
+    .section-title { font-size: 1.6rem; font-weight: 700; margin: 40px 0 20px; color: #0F172A; border-right: 4px solid #FCD34D; padding-right: 15px; }
+    .section-title span { color: #2563EB; }
+
+    .countries-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 20px 0 30px; }
+    .country-card { background: white; border-radius: 24px; overflow: hidden; transition: all 0.35s; text-decoration: none; color: #1E293B; display: flex; flex-direction: column; border: 1px solid #E2E8F0; box-shadow: 0 4px 12px rgba(0,0,0,0.03); height: 100%; }
+    .country-card:hover { transform: translateY(-6px); border-color: #2563EB; box-shadow: 0 20px 35px -12px rgba(0,0,0,0.12); }
+    .card-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background-color: #F1F5F9; }
+    .card-content { padding: 18px 20px; flex: 1; }
+    .card-content h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 6px; color: #0F172A; }
+    .card-content p { color: #475569; font-size: 0.8rem; margin-bottom: 10px; line-height: 1.5; }
+    .card-tag { display: inline-block; background: #EFF6FF; color: #2563EB; padding: 3px 12px; border-radius: 30px; font-size: 0.7rem; font-weight: 600; }
+
+    .whatsapp-float {
+        position: fixed; bottom: 25px; left: 25px; background: #25D366; color: white;
+        padding: 14px 22px; border-radius: 50px; font-weight: 700; font-size: 0.95rem;
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4); text-decoration: none; z-index: 999;
+        display: inline-flex; align-items: center; gap: 10px; transition: 0.3s; border: none; direction: rtl;
+    }
+    .whatsapp-float:hover { transform: scale(1.05); background: #1EBE5D; color: white; }
+
+    @media (max-width: 768px) {
+        .hero h1 { font-size: 1.6rem; }
+        .hero { padding: 30px 20px; }
+        .section-title { font-size: 1.3rem; }
+        .nav { flex-direction: column; text-align: center; }
+        .nav-links { justify-content: center; }
+        .countries-grid { grid-template-columns: 1fr; }
+        .dropdown-content { min-width: 260px; right: auto; left: 0; max-width: 90vw; }
+        .whatsapp-float { padding: 12px 18px; font-size: 0.85rem; left: 15px; bottom: 15px; }
+    }
+</style>
 
 </head>
 <body>
@@ -47,34 +106,42 @@
                 <div class="dropdown">
                     <a href="#" class="dropbtn">🌍 تصنيف الدول ▼</a>
                     <div class="dropdown-content">
-                        <!-- أحدث الدول أولاً -->
-                        <a href="countries/australia.html">🇦🇺 أستراليا</a>
-                        <a href="countries/morocco-jobs-guide-2026.html">🇲🇦 المغرب</a>
-                        <a href="countries/sweden-job-seeker-visa-2026.html">🇸🇪 السويد</a>
-                        <a href="countries/denmark-job-seeker-visa-2026.html">🇩🇰 الدنمارك</a>
-                        <a href="countries/romania-work-visa-guide-2026.html">🇷🇴 رومانيا</a>
-                        <a href="countries/belgium-work-guide-2026.html">🇧🇪 بلجيكا</a>
-                        <a href="countries/portugal-job-seeker-visa-2026.html">🇵🇹 البرتغال (دليل عام)</a>
-                        <a href="countries/how-to-get-portugal-job-seeker-visa-2026.html">🇵🇹 البرتغال (فيزا البحث عن عمل)</a>
-                        <a href="countries/france-seasonal-work-moroccans-2026.html">🇫🇷 فرنسا (موسمي)</a>
-                        <a href="countries/spain-seasonal-work-moroccans-2026.html">🇪🇸 إسبانيا (موسمي)</a>
-                        <a href="countries/netherlands-seasonal-jobs-2026.html">🇳🇱 هولندا (موسمي)</a>
-                        <a href="countries/france-contracts-guide-2026.html">🇫🇷 فرنسا</a>
-                        <a href="countries/italy-contracts-guide-2026.html">🇮🇹 إيطاليا</a>
-                        <a href="countries/spain-jobs-arabs-guide-2026.html">🇪🇸 إسبانيا</a>
+                        <!-- الخليج -->
+                        <a href="countries/kuwait-jobs-guide-2026.html">🇰🇼 الكويت (دليل عام)</a>
+                        <a href="countries/kuwait-jobs-beginners-no-degree-2026.html">🇰🇼 الكويت (للمبتدئين)</a>
+                        <a href="countries/saudi-arabia-contracts-guide-2026.html">🇸🇦 السعودية</a>
+                        <a href="countries/saudi-arabia-jobs-egyptians-2026.html">🇸🇦 السعودية (للمصريين)</a>
+                        <a href="countries/qatar.html">🇶🇦 قطر</a>
+                        <a href="countries/qatar-jobs-without-experience-degree-2026.html">🇶🇦 قطر (بدون خبرة)</a>
+                        <a href="countries/qatar-jobs-for-women-2026.html">🇶🇦 قطر (وظائف نسائية)</a>
+                        <a href="countries/uae-jobs-without-degree-2026.html">🇦🇪 الإمارات (بدون شهادة)</a>
+                        <a href="countries/uae-jobs-without-experience-2026.html">🇦🇪 الإمارات (بدون خبرة)</a>
+                        <!-- أوروبا -->
+                        <a href="countries/europe-jobs-without-degree-2026.html">🇪🇺 أوروبا (بدون شهادة)</a>
                         <a href="countries/netherlands-jobs-arabs-2026.html">🇳🇱 هولندا</a>
+                        <a href="countries/netherlands-seasonal-jobs-2026.html">🇳🇱 هولندا (موسمي)</a>
+                        <a href="countries/spain-jobs-arabs-guide-2026.html">🇪🇸 إسبانيا</a>
+                        <a href="countries/spain-seasonal-work-moroccans-2026.html">🇪🇸 إسبانيا (موسمي)</a>
+                        <a href="countries/france-contracts-guide-2026.html">🇫🇷 فرنسا</a>
+                        <a href="countries/france-seasonal-work-moroccans-2026.html">🇫🇷 فرنسا (موسمي)</a>
+                        <a href="countries/italy-contracts-guide-2026.html">🇮🇹 إيطاليا</a>
                         <a href="countries/germany.html">🇩🇪 ألمانيا</a>
                         <a href="countries/uk.html">🇬🇧 بريطانيا</a>
-                        <a href="countries/europe-jobs-without-degree-2026.html">🇪🇺 أوروبا</a>
                         <a href="countries/albania-jobs-guide-2026.html">🇦🇱 ألبانيا</a>
-                        <a href="countries/qatar.html">🇶🇦 قطر</a>
-                        <a href="countries/uae-jobs-without-degree-2026.html">🇦🇪 الإمارات</a>
-                        <a href="countries/kuwait-jobs-guide-2026.html">🇰🇼 الكويت</a>
-                        <a href="countries/saudi-arabia-contracts-guide-2026.html">🇸🇦 السعودية</a>
-                        <a href="countries/canada.html">🇨🇦 كندا</a>
+                        <a href="countries/denmark-job-seeker-visa-2026.html">🇩🇰 الدنمارك</a>
+                        <a href="countries/belgium-work-guide-2026.html">🇧🇪 بلجيكا</a>
+                        <a href="countries/romania-work-visa-guide-2026.html">🇷🇴 رومانيا</a>
+                        <a href="countries/sweden-job-seeker-visa-2026.html">🇸🇪 السويد</a>
+                        <a href="countries/portugal-job-seeker-visa-2026.html">🇵🇹 البرتغال (دليل عام)</a>
+                        <a href="countries/how-to-get-portugal-job-seeker-visa-2026.html">🇵🇹 البرتغال (فيزا البحث عن عمل)</a>
+                        <!-- أمريكا والبرازيل -->
                         <a href="countries/usa.html">🇺🇸 أمريكا</a>
-                        <a href="countries/brazil-work-visa-guide-2026.html">🇧🇷 البرازيل</a>
+                        <a href="countries/canada.html">🇨🇦 كندا</a>
+                        <a href="countries/brazil-work-visa-guide-2026.html">🇧🇷 البرازيل (عمل)</a>
                         <a href="countries/asylum-brazil-guide-2026.html">🇧🇷 البرازيل (لجوء)</a>
+                        <!-- أخرى -->
+                        <a href="countries/morocco-jobs-guide-2026.html">🇲🇦 المغرب</a>
+                        <a href="countries/australia.html">🇦🇺 أستراليا</a>
                     </div>
                 </div>
                 <a href="services.html" class="btn-nav">✨ اطلب خدمتك</a>
@@ -140,6 +207,14 @@
             <div style="width:48px;height:48px;background:#EFF6FF;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fas fa-balance-scale" style="font-size:1.3rem;color:#2563EB;"></i></div>
             <div><h4 style="font-size:0.95rem;margin-bottom:4px;">🇫🇷🇪🇸 أيهما أفضل؟</h4><p style="font-size:0.75rem;color:#475569;">مقارنة شاملة للرواتب والتأشيرات</p></div>
         </a>
+        <a href="tips/linkedin-job-search-tips.html" style="background: white; border-radius: 20px; padding: 18px; text-decoration: none; color: #1E293B; transition: 0.2s; border: 1px solid #E2E8F0; display: flex; align-items: center; gap: 15px;">
+            <div style="width:48px;height:48px;background:#EFF6FF;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fab fa-linkedin" style="font-size:1.3rem;color:#2563EB;"></i></div>
+            <div><h4 style="font-size:0.95rem;margin-bottom:4px;">البحث عن عمل عبر LinkedIn</h4><p style="font-size:0.75rem;color:#475569;">استراتيجيات فعالة لجذب مسؤولي التوظيف</p></div>
+        </a>
+        <a href="tips/job-contract-tips.html" style="background: white; border-radius: 20px; padding: 18px; text-decoration: none; color: #1E293B; transition: 0.2s; border: 1px solid #E2E8F0; display: flex; align-items: center; gap: 15px;">
+            <div style="width:48px;height:48px;background:#EFF6FF;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fas fa-file-signature" style="font-size:1.3rem;color:#2563EB;"></i></div>
+            <div><h4 style="font-size:0.95rem;margin-bottom:4px;">نصائح عقود العمل</h4><p style="font-size:0.75rem;color:#475569;">ماذا تقرأ قبل توقيع عقدك الأول</p></div>
+        </a>
     </div>
 
     <!-- ===== روابط مفيدة ===== -->
@@ -164,21 +239,21 @@
             <div style="background:#EFF6FF;width:60px;height:60px;line-height:60px;border-radius:40px;margin:0 auto 15px;"><i class="fas fa-file-alt" style="font-size:1.5rem;color:#2563EB;"></i></div>
             <h3 style="font-size:1.1rem;margin-bottom:8px;">كتابة السيرة الذاتية</h3>
             <p style="font-size:0.8rem;color:#475569;margin-bottom:12px;">تصميم ATS عالمي</p>
-            <div style="font-size:1.2rem;font-weight:700;color:#2563EB;margin-bottom:15px;">15$</div>
+            <div style="font-size:1.2rem;font-weight:700;color:#2563EB;margin-bottom:15px;">7$</div>
             <a href="services.html" style="background:#2563EB;color:white;padding:8px 22px;border-radius:40px;text-decoration:none;font-size:0.8rem;font-weight:600;display:inline-block;transition:0.2s;">اطلب</a>
         </div>
         <div style="background:white;border-radius:24px;padding:25px 20px;text-align:center;border:1px solid #E2E8F0;transition:0.2s;">
             <div style="background:#EFF6FF;width:60px;height:60px;line-height:60px;border-radius:40px;margin:0 auto 15px;"><i class="fas fa-envelope-open-text" style="font-size:1.5rem;color:#2563EB;"></i></div>
             <h3 style="font-size:1.1rem;margin-bottom:8px;">خطاب التقديم</h3>
             <p style="font-size:0.8rem;color:#475569;margin-bottom:12px;">مخصص للشركات</p>
-            <div style="font-size:1.2rem;font-weight:700;color:#2563EB;margin-bottom:15px;">10$</div>
+            <div style="font-size:1.2rem;font-weight:700;color:#2563EB;margin-bottom:15px;">5$</div>
             <a href="services.html" style="background:#2563EB;color:white;padding:8px 22px;border-radius:40px;text-decoration:none;font-size:0.8rem;font-weight:600;display:inline-block;transition:0.2s;">اطلب</a>
         </div>
         <div style="background:white;border-radius:24px;padding:25px 20px;text-align:center;border:1px solid #E2E8F0;transition:0.2s;">
             <div style="background:#EFF6FF;width:60px;height:60px;line-height:60px;border-radius:40px;margin:0 auto 15px;"><i class="fas fa-briefcase" style="font-size:1.5rem;color:#2563EB;"></i></div>
             <h3 style="font-size:1.1rem;margin-bottom:8px;">التسجيل في المواقع</h3>
             <p style="font-size:0.8rem;color:#475569;margin-bottom:12px;">Indeed, LinkedIn, USAJobs</p>
-            <div style="font-size:1.2rem;font-weight:700;color:#2563EB;margin-bottom:15px;">20$</div>
+            <div style="font-size:1.2rem;font-weight:700;color:#2563EB;margin-bottom:15px;">15$</div>
             <a href="services.html" style="background:#2563EB;color:white;padding:8px 22px;border-radius:40px;text-decoration:none;font-size:0.8rem;font-weight:600;display:inline-block;transition:0.2s;">اطلب</a>
         </div>
     </div>
@@ -187,7 +262,7 @@
     <div style="background:linear-gradient(135deg,#0F172A,#1E293B);border-radius:24px;padding:30px;margin:35px 0;text-align:center;color:white;">
         <h3 style="font-size:1.2rem;margin-bottom:8px;">📄 سيرة ذاتية احترافية خلال 24 ساعة</h3>
         <p style="margin-bottom:12px;">متوافقة مع أنظمة ATS العالمية</p>
-        <div style="font-size:1.6rem;font-weight:700;color:#FCD34D;margin:12px 0;">15$ فقط</div>
+        <div style="font-size:1.6rem;font-weight:700;color:#FCD34D;margin:12px 0;">7$ فقط</div>
         <a href="services.html" style="background:#FCD34D;color:#0F172A;padding:10px 28px;border-radius:40px;text-decoration:none;font-weight:bold;display:inline-block;transition:0.2s;">اطلب سيرتك الذاتية الآن ←</a>
     </div>
 </div>
@@ -197,7 +272,18 @@
     <div class="container">
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:35px;margin-bottom:30px;">
             <div><h4 style="color:white;margin-bottom:14px;font-size:0.95rem;">🌐 وظائف على مستوى العالم</h4><a href="index.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">الرئيسية</a><a href="services.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">خدماتنا</a><a href="tips.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">النصائح المهنية</a></div>
-            <div><h4 style="color:white;margin-bottom:14px;font-size:0.95rem;">📌 الدول</h4><a href="countries/australia.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇦🇺 أستراليا</a><a href="countries/morocco-jobs-guide-2026.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇲🇦 المغرب</a><a href="countries/sweden-job-seeker-visa-2026.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇸🇪 السويد</a><a href="countries/denmark-job-seeker-visa-2026.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇩🇰 الدنمارك</a><a href="countries/france-contracts-guide-2026.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇫🇷 فرنسا</a><a href="countries/spain-jobs-arabs-guide-2026.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇪🇸 إسبانيا</a><a href="countries/germany.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇩🇪 ألمانيا</a><a href="countries/usa.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇺🇸 أمريكا</a><a href="countries/canada.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇨🇦 كندا</a><a href="countries/portugal-job-seeker-visa-2026.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇵🇹 البرتغال</a></div>
+            <div><h4 style="color:white;margin-bottom:14px;font-size:0.95rem;">📌 الدول</h4>
+                <a href="countries/australia.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇦🇺 أستراليا</a>
+                <a href="countries/morocco-jobs-guide-2026.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇲🇦 المغرب</a>
+                <a href="countries/sweden-job-seeker-visa-2026.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇸🇪 السويد</a>
+                <a href="countries/denmark-job-seeker-visa-2026.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇩🇰 الدنمارك</a>
+                <a href="countries/france-contracts-guide-2026.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇫🇷 فرنسا</a>
+                <a href="countries/spain-jobs-arabs-guide-2026.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇪🇸 إسبانيا</a>
+                <a href="countries/germany.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇩🇪 ألمانيا</a>
+                <a href="countries/usa.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇺🇸 أمريكا</a>
+                <a href="countries/canada.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇨🇦 كندا</a>
+                <a href="countries/portugal-job-seeker-visa-2026.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">🇵🇹 البرتغال</a>
+            </div>
             <div><h4 style="color:white;margin-bottom:14px;font-size:0.95rem;">⚖️ روابط مهمة</h4><a href="privacy.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">سياسة الخصوصية</a><a href="terms.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">شروط الاستخدام</a><a href="contact.html" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;">اتصل بنا</a></div>
             <div><h4 style="color:white;margin-bottom:14px;font-size:0.95rem;">📱 تواصل معنا</h4><a href="https://wa.me/212679627332" target="_blank" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;"><i class="fab fa-whatsapp"></i> واتساب</a><a href="mailto:info@tarik-aljanah.online" style="display:block;color:#94A3B8;text-decoration:none;margin-bottom:8px;font-size:0.8rem;"><i class="fas fa-envelope"></i> البريد الإلكتروني</a></div>
         </div>
@@ -206,8 +292,48 @@
 </footer>
 
 <!-- ===== السكريبتات ===== -->
-<script defer>
-    // دالة البحث (مدمجة في index.html لأنها مرتبطة بالـ HTML)
+<script>
+    // قائمة الدول المعروضة في الصفحة الرئيسية (أحدث 12 وجهة)
+    const featuredCountries = [
+        { url: "countries/australia.html", title: "🇦🇺 أستراليا", desc: "فيزا عقد عمل للمهرة، رواتب مرتفعة.", tag: "فيزا عمل" },
+        { url: "countries/morocco-jobs-guide-2026.html", title: "🇲🇦 المغرب", desc: "أفضل مواقع التوظيف، المهن المطلوبة، والرواتب.", tag: "جديد" },
+        { url: "countries/sweden-job-seeker-visa-2026.html", title: "🇸🇪 السويد", desc: "فيزا بحث عن عمل لمدة 9 أشهر.", tag: "فيزا بحث عن عمل" },
+        { url: "countries/denmark-job-seeker-visa-2026.html", title: "🇩🇰 الدنمارك", desc: "تأشيرة بحث عن عمل لمدة سنتين.", tag: "فيزا بحث عن عمل" },
+        { url: "countries/romania-work-visa-guide-2026.html", title: "🇷🇴 رومانيا", desc: "عقود عمل للعرب، رواتب تنافسية.", tag: "فرص جديدة" },
+        { url: "countries/belgium-work-guide-2026.html", title: "🇧🇪 بلجيكا", desc: "تصريح عمل وإقامة موحد Single Permit.", tag: "فرص جديدة" },
+        { url: "countries/portugal-job-seeker-visa-2026.html", title: "🇵🇹 البرتغال", desc: "دليل شامل لفيزا البرتغال 2026.", tag: "جديد 🔥" },
+        { url: "countries/how-to-get-portugal-job-seeker-visa-2026.html", title: "🇵🇹 البرتغال (فيزا)", desc: "خطوات الحصول على فيزا البحث عن عمل.", tag: "جديد 🔥" },
+        { url: "countries/netherlands-jobs-arabs-2026.html", title: "🇳🇱 هولندا", desc: "تأشيرة العمل للمهرة، رواتب تبدأ 45,000 يورو.", tag: "رواتب عالية" },
+        { url: "countries/spain-jobs-arabs-guide-2026.html", title: "🇪🇸 إسبانيا", desc: "دليل شامل للعرب: عقود، رواتب، تأشيرات.", tag: "دليل شامل" },
+        { url: "countries/france-contracts-guide-2026.html", title: "🇫🇷 فرنسا", desc: "عقود CDI و CDD في السياحة والفلاحة.", tag: "عقود رسمية" },
+        { url: "countries/germany.html", title: "🇩🇪 ألمانيا", desc: "تأشيرة Chancenkarte. وظائف في الطب والهندسة.", tag: "بطاقة الفرصة" }
+    ];
+
+    // دالة إنشاء البطاقات
+    function createCard(article) {
+        const card = document.createElement('a');
+        card.href = article.url;
+        card.className = 'country-card';
+        card.innerHTML = `
+            <div class="card-img" style="background:#EFF6FF;display:flex;align-items:center;justify-content:center;font-size:3rem;min-height:160px;">${article.title.split(' ')[0]}</div>
+            <div class="card-content">
+                <h3>${article.title}</h3>
+                <p>${article.desc}</p>
+                <span class="card-tag">${article.tag}</span>
+            </div>
+        `;
+        return card;
+    }
+
+    // عرض البطاقات
+    const container = document.getElementById('countriesContainer');
+    if (container) {
+        featuredCountries.forEach(c => {
+            container.appendChild(createCard(c));
+        });
+    }
+
+    // دالة البحث
     function searchCountry() {
         const input = document.getElementById('searchInput').value.toLowerCase().trim();
         const map = {
@@ -241,6 +367,7 @@
         }
         if (input) alert('🌍 المتوفر حالياً: الكويت، السعودية، هولندا، إسبانيا، قطر، الإمارات، فرنسا، إيطاليا، أمريكا، كندا، ألمانيا، بريطانيا، ألبانيا، البرازيل، رومانيا، بلجيكا، المغرب، السويد، الدنمارك، أستراليا، البرتغال.');
     }
+
     document.getElementById('searchInput').addEventListener('keypress', function(e) {
         if (e.key === 'Enter') searchCountry();
     });
@@ -251,7 +378,9 @@
 <!-- السكريبتات الخارجية -->
 <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js" defer></script>
 <script src="/indexnow.js" defer></script>
-<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "97966edd08744f88a889c90b9a96262a"}' defer></script>
+
+<!-- زر واتساب الثابت -->
+<a href="https://wa.me/212679627332" class="whatsapp-float" target="_blank">📱 واتساب – استشارات سريعة</a>
 
 </body>
 </html>
