@@ -1,12 +1,13 @@
 // =============================================
 // script.js - إدارة الدول في الصفحة الرئيسية
-// الإصدار: 2.6 - تاريخ: 20 أغسطس 2026
+// الإصدار: 3.0 - تاريخ: 27 أغسطس 2026
+// تحسين الأداء: INP, Lazy Loading, Cache API
 // =============================================
 
 (function() {
     'use strict';
 
-    // قائمة الدول (مرتبة من الأحدث إلى الأقدم)
+    // ===== قائمة الدول (مرتبة من الأحدث إلى الأقدم) =====
     const featuredCountries = [
         { url: "countries/australia.html", title: "🇦🇺 أستراليا (فيزا عقد عمل)", desc: "دليل شامل لتأشيرة العمل، المهن المطلوبة، الرواتب، وشروط التقديم للعرب.", tag: "جديد 🔥", dateAdded: "2026-08-20" },
         { url: "countries/morocco-jobs-guide-2026.html", title: "🇲🇦 المغرب (دليل وظائف)", desc: "أفضل مواقع التوظيف، المهن المطلوبة، الرواتب، وظائف بدون شهادة، والوظيفة العمومية.", tag: "جديد 🔥", dateAdded: "2026-06-13" },
@@ -40,7 +41,7 @@
         { url: "countries/asylum-brazil-guide-2026.html", title: "🇧🇷 البرازيل (لجوء)", desc: "طلب اللجوء الإنساني والسياسي. شروط بروتوكول اللجوء.", tag: "بروتوكول اللجوء", dateAdded: "2026-02-05" }
     ];
 
-    // ترتيب تنازلي حسب التاريخ
+    // ===== الترتيب =====
     const sorted = [...featuredCountries].sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
 
     const container = document.getElementById('countriesContainer');
@@ -49,19 +50,18 @@
     // ===== عرض البطاقات =====
     function renderCards() {
         container.innerHTML = '';
-        
-        // 🔥 عدد الدول المعروضة في الصفحة الرئيسية
-        const MAX_DISPLAY = 7; // يمكنك تغيير الرقم إلى 6 أو 8 أو أي عدد تراه مناسباً
-        
-        // خذ فقط أول 7 دول من القائمة المرتبة (الأحدث أولاً)
+        const MAX_DISPLAY = 7;
         const displayed = sorted.slice(0, MAX_DISPLAY);
         
         displayed.forEach(c => {
             const card = document.createElement('a');
             card.href = c.url;
             card.className = 'country-card';
+            // إضافة `loading="lazy"` للصورة عند الإنشاء
             card.innerHTML = `
-                <div class="card-img loading-placeholder" data-url="${c.url}">⏳ جاري تحميل الصورة...</div>
+                <div class="card-img loading-placeholder" data-url="${c.url}">
+                    <i class="fas fa-briefcase" style="font-size: 3rem; color: #2563EB;"></i>
+                </div>
                 <div class="card-content">
                     <h3>${c.title}</h3>
                     <p>${c.desc}</p>
@@ -71,64 +71,87 @@
             container.appendChild(card);
         });
         
-        // بدء تحميل الصور بعد عرض البطاقات مباشرة
-        loadImages();
+        // استخدام Intersection Observer لتحميل الصور عند التمرير
+        setupLazyLoading();
     }
 
-    // ===== جلب الصور مع تحسينات الأداء =====
-    async function loadImages() {
-        const cacheKey = 'imageCacheV1';
-        let cache = {};
-        try {
-            const saved = localStorage.getItem(cacheKey);
-            if (saved) cache = JSON.parse(saved);
-        } catch(e) {}
-
+    // ===== Lazy Loading باستخدام Intersection Observer =====
+    function setupLazyLoading() {
         const placeholders = document.querySelectorAll('.card-img.loading-placeholder');
-        const pending = [];
+        
+        if (!('IntersectionObserver' in window)) {
+            // للمتصفحات القديمة: تحميل كل الصور فوراً
+            placeholders.forEach(div => loadImageForCard(div));
+            return;
+        }
 
-        for (const div of placeholders) {
-            const url = div.getAttribute('data-url');
-            if (!url) continue;
-
-            // التحقق من التخزين المؤقت
-            if (cache[url] && cache[url].expiry > Date.now()) {
-                const imgUrl = cache[url].imgUrl;
-                if (imgUrl) {
-                    const img = document.createElement('img');
-                    img.src = imgUrl;
-                    img.alt = "صورة المقال";
-                    img.className = "card-img";
-                    img.loading = "lazy";
-                    div.parentNode.replaceChild(img, div);
-                } else {
-                    showFallback(div);
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const div = entry.target;
+                    loadImageForCard(div);
+                    observer.unobserve(div); // إيقاف مراقبة البطاقة بعد التحميل
                 }
-                continue;
-            }
-            pending.push({ div, url });
-        }
+            });
+        }, {
+            rootMargin: '200px 0px', // بدء التحميل قبل وصول البطاقة بـ 200 بكسل
+            threshold: 0.1
+        });
 
-        // معالجة متوازية بحد أقصى 5 طلبات
-        const BATCH_SIZE = 5;
-        for (let i = 0; i < pending.length; i += BATCH_SIZE) {
-            const batch = pending.slice(i, i + BATCH_SIZE);
-            await Promise.all(batch.map(({ div, url }) => fetchImage(div, url, cache, cacheKey)));
-        }
+        placeholders.forEach(div => observer.observe(div));
     }
 
-    async function fetchImage(div, url, cache, cacheKey) {
-        const TIMEOUT = 5000; // 5 ثوانٍ مهلة زمنية
+    // ===== تحميل صورة واحدة باستخدام Cache API =====
+    async function loadImageForCard(div) {
+        const url = div.getAttribute('data-url');
+        if (!url) return;
+
+        // التحقق من Cache API (أسرع من localStorage)
+        try {
+            const cache = await caches.open('article-images-v1');
+            const cachedResponse = await cache.match(url);
+            
+            if (cachedResponse && cachedResponse.ok) {
+                const blob = await cachedResponse.blob();
+                const imgUrl = URL.createObjectURL(blob);
+                replaceWithImage(div, imgUrl);
+                return;
+            }
+        } catch (e) { /* استخدام localStorage كبديل */ }
+
+        // استخدام localStorage كبديل (احتفاظ بالتوافق)
+        try {
+            const cacheKey = 'imageCacheV2';
+            const saved = localStorage.getItem(cacheKey);
+            if (saved) {
+                const cache = JSON.parse(saved);
+                if (cache[url] && cache[url].expiry > Date.now()) {
+                    if (cache[url].imgUrl) {
+                        replaceWithImage(div, cache[url].imgUrl);
+                        return;
+                    }
+                }
+            }
+        } catch (e) {}
+
+        // جلب الصورة عبر الشبكة
+        const TIMEOUT = 3000; // 3 ثوانٍ بدلاً من 5
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), TIMEOUT);
 
         try {
-            const res = await fetch(url, { cache: 'force-cache', signal: controller.signal });
+            const response = await fetch(url, { 
+                cache: 'force-cache', 
+                signal: controller.signal 
+            });
             clearTimeout(timeoutId);
-            if (!res.ok) throw new Error();
-            const html = await res.text();
+            
+            if (!response.ok) throw new Error();
+            
+            const html = await response.text();
             const parser = new DOMParser();
             const doc = parser.parseFromString(html, 'text/html');
+            
             let imgUrl = null;
             const meta = doc.querySelector('meta[property="og:image"]');
             if (meta && meta.content) imgUrl = meta.content;
@@ -136,39 +159,61 @@
                 const firstImg = doc.querySelector('img');
                 if (firstImg && firstImg.src) imgUrl = firstImg.src;
             }
+            
             if (imgUrl) {
-                if (!imgUrl.startsWith('http')) imgUrl = new URL(imgUrl, window.location.origin).href;
-                const img = document.createElement('img');
-                img.src = imgUrl;
-                img.alt = "صورة المقال";
-                img.className = "card-img";
-                img.loading = "lazy";
-                div.parentNode.replaceChild(img, div);
-                cache[url] = { imgUrl: imgUrl, expiry: Date.now() + 604800000 };
-                localStorage.setItem(cacheKey, JSON.stringify(cache));
-            } else {
-                showFallback(div);
-                cache[url] = { imgUrl: null, expiry: Date.now() + 604800000 };
-                localStorage.setItem(cacheKey, JSON.stringify(cache));
+                if (!imgUrl.startsWith('http')) {
+                    imgUrl = new URL(imgUrl, window.location.origin).href;
+                }
+                replaceWithImage(div, imgUrl);
+                
+                // تخزين في localStorage
+                try {
+                    const cacheKey = 'imageCacheV2';
+                    let cache = {};
+                    const saved = localStorage.getItem(cacheKey);
+                    if (saved) cache = JSON.parse(saved);
+                    cache[url] = { imgUrl: imgUrl, expiry: Date.now() + 604800000 };
+                    localStorage.setItem(cacheKey, JSON.stringify(cache));
+                } catch (e) {}
+                
+                // تخزين في Cache API
+                try {
+                    const cache = await caches.open('article-images-v1');
+                    const imgResponse = await fetch(imgUrl);
+                    if (imgResponse.ok) {
+                        await cache.put(url, imgResponse);
+                    }
+                } catch (e) {}
             }
         } catch (error) {
-            showFallback(div);
+            // عرض الأيقونة الاحتياطية
+            div.innerHTML = '<i class="fas fa-briefcase" style="font-size: 3rem; color: #2563EB;"></i>';
+            div.className = 'card-img';
+            div.style.background = '#EFF6FF';
+            div.style.display = 'flex';
+            div.style.alignItems = 'center';
+            div.style.justifyContent = 'center';
         } finally {
             clearTimeout(timeoutId);
         }
     }
 
-    function showFallback(div) {
-        const fallback = document.createElement('div');
-        fallback.className = "card-img";
-        fallback.style.background = "#EFF6FF";
-        fallback.style.display = "flex";
-        fallback.style.alignItems = "center";
-        fallback.style.justifyContent = "center";
-        fallback.innerHTML = '<i class="fas fa-briefcase" style="font-size: 3rem; color: #2563EB;"></i>';
-        div.parentNode.replaceChild(fallback, div);
+    // ===== استبدال العنصر بالصورة =====
+    function replaceWithImage(div, imgUrl) {
+        const img = document.createElement('img');
+        img.src = imgUrl;
+        img.alt = 'صورة المقال';
+        img.className = 'card-img';
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        div.parentNode.replaceChild(img, div);
     }
 
-    // ===== تهيئة البطاقات =====
-    renderCards();
+    // ===== تشغيل التطبيق =====
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', renderCards);
+    } else {
+        renderCards();
+    }
+
 })();
