@@ -52,6 +52,14 @@
         .tip-info h4 { font-size: 0.95rem; margin-bottom: 4px; color: #0F172A; }
         .tip-info p { font-size: 0.75rem; color: #475569; }
         
+        .whatsapp-float {
+            position: fixed; bottom: 25px; left: 25px; background: #25D366; color: white;
+            padding: 14px 22px; border-radius: 50px; font-weight: 700; font-size: 0.95rem;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4); text-decoration: none; z-index: 999;
+            display: inline-flex; align-items: center; gap: 10px; transition: 0.3s; border: none; direction: rtl;
+        }
+        .whatsapp-float:hover { transform: scale(1.05); background: #1EBE5D; color: white; }
+        
         .footer { background: #0F172A; color: #94A3B8; padding: 40px 0 20px; margin-top: 50px; border-radius: 32px 32px 0 0; }
         .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 35px; margin-bottom: 30px; }
         .footer-col h4 { color: white; margin-bottom: 14px; font-size: 0.95rem; }
@@ -66,6 +74,7 @@
             .nav-links { justify-content: center; }
             .tips-grid { grid-template-columns: 1fr; }
             .dropdown-content { min-width: 260px; right: auto; left: 0; max-width: 90vw; }
+            .whatsapp-float { padding: 12px 18px; font-size: 0.85rem; left: 15px; bottom: 15px; }
         }
     </style>
 </head>
@@ -84,33 +93,47 @@
                 <div class="dropdown">
                     <a href="#" class="dropbtn">🌍 تصنيف الدول ▼</a>
                     <div class="dropdown-content">
-                        <a href="countries/australia.html">🇦🇺 أستراليا</a>
-                        <a href="countries/morocco-jobs-guide-2026.html">🇲🇦 المغرب</a>
-                        <a href="countries/sweden-job-seeker-visa-2026.html">🇸🇪 السويد</a>
-                        <a href="countries/denmark-job-seeker-visa-2026.html">🇩🇰 الدنمارك</a>
-                        <a href="countries/romania-work-visa-guide-2026.html">🇷🇴 رومانيا</a>
-                        <a href="countries/belgium-work-guide-2026.html">🇧🇪 بلجيكا</a>
-                        <a href="countries/portugal-job-seeker-visa-2026.html">🇵🇹 البرتغال</a>
-                        <a href="countries/france-seasonal-work-moroccans-2026.html">🇫🇷 فرنسا (موسمي)</a>
-                        <a href="countries/spain-seasonal-work-moroccans-2026.html">🇪🇸 إسبانيا (موسمي)</a>
-                        <a href="countries/netherlands-seasonal-jobs-2026.html">🇳🇱 هولندا (موسمي)</a>
-                        <a href="countries/france-contracts-guide-2026.html">🇫🇷 فرنسا</a>
-                        <a href="countries/italy-contracts-guide-2026.html">🇮🇹 إيطاليا</a>
-                        <a href="countries/spain-jobs-arabs-guide-2026.html">🇪🇸 إسبانيا</a>
+                        <!-- الخليج -->
+                        <a href="countries/kuwait-jobs-guide-2026.html">🇰🇼 الكويت (دليل عام)</a>
+                        <a href="countries/kuwait-jobs-beginners-no-degree-2026.html">🇰🇼 الكويت (للمبتدئين)</a>
+                        <a href="countries/saudi-arabia-contracts-guide-2026.html">🇸🇦 السعودية</a>
+                        <a href="countries/saudi-arabia-jobs-egyptians-2026.html">🇸🇦 السعودية (للمصريين)</a>
+                        <a href="countries/qatar.html">🇶🇦 قطر</a>
+                        <a href="countries/qatar-jobs-without-experience-degree-2026.html">🇶🇦 قطر (بدون خبرة)</a>
+                        <a href="countries/qatar-jobs-for-women-2026.html">🇶🇦 قطر (وظائف نسائية)</a>
+                        <a href="countries/uae-jobs-without-degree-2026.html">🇦🇪 الإمارات (بدون شهادة)</a>
+                        <a href="countries/uae-jobs-without-experience-2026.html">🇦🇪 الإمارات (بدون خبرة)</a>
+                        <!-- أوروبا -->
+                        <a href="countries/europe-jobs-without-degree-2026.html">🇪🇺 أوروبا (بدون شهادة)</a>
                         <a href="countries/netherlands-jobs-arabs-2026.html">🇳🇱 هولندا</a>
+                        <a href="countries/netherlands-seasonal-jobs-2026.html">🇳🇱 هولندا (موسمي)</a>
+                        <a href="countries/spain-jobs-arabs-guide-2026.html">🇪🇸 إسبانيا</a>
+                        <a href="countries/spain-seasonal-work-moroccans-2026.html">🇪🇸 إسبانيا (موسمي)</a>
+                        <a href="countries/france-contracts-guide-2026.html">🇫🇷 فرنسا</a>
+                        <a href="countries/france-seasonal-work-moroccans-2026.html">🇫🇷 فرنسا (موسمي)</a>
+                        <a href="countries/italy-contracts-guide-2026.html">🇮🇹 إيطاليا</a>
                         <a href="countries/germany.html">🇩🇪 ألمانيا</a>
                         <a href="countries/uk.html">🇬🇧 بريطانيا</a>
-                        <a href="countries/europe-jobs-without-degree-2026.html">🇪🇺 أوروبا</a>
                         <a href="countries/albania-jobs-guide-2026.html">🇦🇱 ألبانيا</a>
-                        <a href="countries/qatar.html">🇶🇦 قطر</a>
-                        <a href="countries/uae-jobs-without-degree-2026.html">🇦🇪 الإمارات</a>
-                        <a href="countries/uae-jobs-without-experience-2026.html">🇦🇪 الإمارات (بدون خبرة)</a>
-                        <a href="countries/kuwait-jobs-guide-2026.html">🇰🇼 الكويت</a>
-                        <a href="countries/saudi-arabia-contracts-guide-2026.html">🇸🇦 السعودية</a>
-                        <a href="countries/canada.html">🇨🇦 كندا</a>
+                        <a href="countries/denmark-job-seeker-visa-2026.html">🇩🇰 الدنمارك</a>
+                        <a href="countries/belgium-work-guide-2026.html">🇧🇪 بلجيكا</a>
+                        <a href="countries/romania-work-visa-guide-2026.html">🇷🇴 رومانيا</a>
+                        <a href="countries/sweden-job-seeker-visa-2026.html">🇸🇪 السويد</a>
+                        <a href="countries/portugal-job-seeker-visa-2026.html">🇵🇹 البرتغال (دليل عام)</a>
+                        <a href="countries/how-to-get-portugal-job-seeker-visa-2026.html">🇵🇹 البرتغال (فيزا البحث عن عمل)</a>
+                        <!-- آسيا وأوروبا الشرقية -->
+                        <a href="countries/singapore-jobs-guide-2026.html">🇸🇬 سنغافورة (جديد)</a>
+                        <a href="countries/poland-jobs-guide-2026.html">🇵🇱 بولندا (جديد)</a>
+                        <!-- أمريكا والبرازيل -->
                         <a href="countries/usa.html">🇺🇸 أمريكا</a>
-                        <a href="countries/brazil-work-visa-guide-2026.html">🇧🇷 البرازيل</a>
+                        <a href="countries/canada.html">🇨🇦 كندا</a>
+                        <a href="countries/brazil-work-visa-guide-2026.html">🇧🇷 البرازيل (عمل)</a>
                         <a href="countries/asylum-brazil-guide-2026.html">🇧🇷 البرازيل (لجوء)</a>
+                        <!-- أخرى -->
+                        <a href="countries/morocco-jobs-guide-2026.html">🇲🇦 المغرب</a>
+                        <a href="countries/australia.html">🇦🇺 أستراليا</a>
+                        <!-- فيزا شنغن -->
+                        <a href="tips/schengen-visa-guide-2026.html" style="background:#EFF6FF;color:#003399;font-weight:700;">🇪🇺 فيزا شنغن 2026</a>
                     </div>
                 </div>
                 <a href="services.html" class="btn-nav">📄 اطلب خدمتك</a>
@@ -217,6 +240,15 @@
                 <p>قوالب word و pdf، أخطاء قاتلة، ونصائح قانونية قبل التوقيع</p>
             </div>
         </a>
+
+        <!-- ===== فيزا شنغن 2026 (جديد) ===== -->
+        <a href="tips/schengen-visa-guide-2026.html" class="tip-card" style="border-color:#003399;background:#F8FAFE;">
+            <div class="tip-icon" style="background:#DBEAFE;"><i class="fas fa-passport" style="color:#003399;"></i></div>
+            <div class="tip-info">
+                <h4 style="color:#003399;">🇪🇺 فيزا شنغن 2026</h4>
+                <p>الشروط والوثائق وطريقة التقديم للمغاربة والعرب</p>
+            </div>
+        </a>
         
     </div>
 
@@ -254,6 +286,8 @@
                 <a href="countries/kuwait-jobs-guide-2026.html">🇰🇼 الكويت</a>
                 <a href="countries/brazil-work-visa-guide-2026.html">🇧🇷 البرازيل</a>
                 <a href="countries/albania-jobs-guide-2026.html">🇦🇱 ألبانيا</a>
+                <a href="countries/singapore-jobs-guide-2026.html">🇸🇬 سنغافورة</a>
+                <a href="countries/poland-jobs-guide-2026.html">🇵🇱 بولندا</a>
             </div>
             <div class="footer-col">
                 <h4>⚖️ روابط مهمة</h4>
@@ -274,5 +308,10 @@
 </footer>
 
 <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js" defer></script>
+<script src="/indexnow.js"></script>
+
+<!-- زر واتساب الثابت -->
+<a href="https://wa.me/212679627332" class="whatsapp-float" target="_blank">📱 واتساب – استشارات سريعة</a>
+
 </body>
 </html>
