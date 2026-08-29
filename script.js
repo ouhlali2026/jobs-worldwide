@@ -1,6 +1,6 @@
 // =============================================
 // script.js - إدارة الدول في الصفحة الرئيسية
-// الإصدار: 3.0 - تاريخ: 27 أغسطس 2026
+// الإصدار: 3.1 - تاريخ: 29 أغسطس 2026
 // تحسين الأداء: INP, Lazy Loading, Cache API
 // =============================================
 
@@ -9,6 +9,9 @@
 
     // ===== قائمة الدول (مرتبة من الأحدث إلى الأقدم) =====
     const featuredCountries = [
+        // ===== الدول الجديدة (أغسطس 2026) =====
+        { url: "countries/singapore-jobs-guide-2026.html", title: "🇸🇬 سنغافورة", desc: "فيزا عمل، رواتب تنافسية، وفرص للمهنيين العرب في قلب آسيا.", tag: "جديد 🔥", dateAdded: "2026-08-29" },
+        { url: "countries/poland-jobs-guide-2026.html", title: "🇵🇱 بولندا", desc: "عقود عمل، رواتب تنافسية، وفرص للعرب والمغاربة في أوروبا الشرقية.", tag: "جديد 🔥", dateAdded: "2026-08-29" },
         { url: "countries/australia.html", title: "🇦🇺 أستراليا (فيزا عقد عمل)", desc: "دليل شامل لتأشيرة العمل، المهن المطلوبة، الرواتب، وشروط التقديم للعرب.", tag: "جديد 🔥", dateAdded: "2026-08-20" },
         { url: "countries/morocco-jobs-guide-2026.html", title: "🇲🇦 المغرب (دليل وظائف)", desc: "أفضل مواقع التوظيف، المهن المطلوبة، الرواتب، وظائف بدون شهادة، والوظيفة العمومية.", tag: "جديد 🔥", dateAdded: "2026-06-13" },
         { url: "countries/sweden-job-seeker-visa-2026.html", title: "🇸🇪 السويد (فيزا البحث عن عمل)", desc: "تأشيرة بحث عن عمل لمدة 9 أشهر بدون عقد مسبق، المهن المطلوبة، والرواتب.", tag: "جديد 🔥", dateAdded: "2026-06-11" },
@@ -57,7 +60,6 @@
             const card = document.createElement('a');
             card.href = c.url;
             card.className = 'country-card';
-            // إضافة `loading="lazy"` للصورة عند الإنشاء
             card.innerHTML = `
                 <div class="card-img loading-placeholder" data-url="${c.url}">
                     <i class="fas fa-briefcase" style="font-size: 3rem; color: #2563EB;"></i>
@@ -70,34 +72,28 @@
             `;
             container.appendChild(card);
         });
-        
-        // استخدام Intersection Observer لتحميل الصور عند التمرير
         setupLazyLoading();
     }
 
     // ===== Lazy Loading باستخدام Intersection Observer =====
     function setupLazyLoading() {
         const placeholders = document.querySelectorAll('.card-img.loading-placeholder');
-        
         if (!('IntersectionObserver' in window)) {
-            // للمتصفحات القديمة: تحميل كل الصور فوراً
             placeholders.forEach(div => loadImageForCard(div));
             return;
         }
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const div = entry.target;
                     loadImageForCard(div);
-                    observer.unobserve(div); // إيقاف مراقبة البطاقة بعد التحميل
+                    observer.unobserve(div);
                 }
             });
         }, {
-            rootMargin: '200px 0px', // بدء التحميل قبل وصول البطاقة بـ 200 بكسل
+            rootMargin: '200px 0px',
             threshold: 0.1
         });
-
         placeholders.forEach(div => observer.observe(div));
     }
 
@@ -105,21 +101,17 @@
     async function loadImageForCard(div) {
         const url = div.getAttribute('data-url');
         if (!url) return;
-
-        // التحقق من Cache API (أسرع من localStorage)
         try {
             const cache = await caches.open('article-images-v1');
             const cachedResponse = await cache.match(url);
-            
             if (cachedResponse && cachedResponse.ok) {
                 const blob = await cachedResponse.blob();
                 const imgUrl = URL.createObjectURL(blob);
                 replaceWithImage(div, imgUrl);
                 return;
             }
-        } catch (e) { /* استخدام localStorage كبديل */ }
+        } catch (e) {}
 
-        // استخدام localStorage كبديل (احتفاظ بالتوافق)
         try {
             const cacheKey = 'imageCacheV2';
             const saved = localStorage.getItem(cacheKey);
@@ -134,24 +126,16 @@
             }
         } catch (e) {}
 
-        // جلب الصورة عبر الشبكة
-        const TIMEOUT = 3000; // 3 ثوانٍ بدلاً من 5
+        const TIMEOUT = 3000;
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), TIMEOUT);
-
         try {
-            const response = await fetch(url, { 
-                cache: 'force-cache', 
-                signal: controller.signal 
-            });
+            const response = await fetch(url, { cache: 'force-cache', signal: controller.signal });
             clearTimeout(timeoutId);
-            
             if (!response.ok) throw new Error();
-            
             const html = await response.text();
             const parser = new DOMParser();
             const doc = parser.parseFromString(html, 'text/html');
-            
             let imgUrl = null;
             const meta = doc.querySelector('meta[property="og:image"]');
             if (meta && meta.content) imgUrl = meta.content;
@@ -159,14 +143,11 @@
                 const firstImg = doc.querySelector('img');
                 if (firstImg && firstImg.src) imgUrl = firstImg.src;
             }
-            
             if (imgUrl) {
                 if (!imgUrl.startsWith('http')) {
                     imgUrl = new URL(imgUrl, window.location.origin).href;
                 }
                 replaceWithImage(div, imgUrl);
-                
-                // تخزين في localStorage
                 try {
                     const cacheKey = 'imageCacheV2';
                     let cache = {};
@@ -175,8 +156,6 @@
                     cache[url] = { imgUrl: imgUrl, expiry: Date.now() + 604800000 };
                     localStorage.setItem(cacheKey, JSON.stringify(cache));
                 } catch (e) {}
-                
-                // تخزين في Cache API
                 try {
                     const cache = await caches.open('article-images-v1');
                     const imgResponse = await fetch(imgUrl);
@@ -186,7 +165,6 @@
                 } catch (e) {}
             }
         } catch (error) {
-            // عرض الأيقونة الاحتياطية
             div.innerHTML = '<i class="fas fa-briefcase" style="font-size: 3rem; color: #2563EB;"></i>';
             div.className = 'card-img';
             div.style.background = '#EFF6FF';
