@@ -4,7 +4,7 @@
   <!-- MAIN PAGES -->
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/index.html</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
@@ -19,7 +19,7 @@
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries.html</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
@@ -98,32 +98,32 @@
   <!-- COUNTRIES PAGES -->
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries/albania-jobs-guide-2026.html</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries/asylum-brazil-guide-2026.html</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries/australia.html</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries/belgium-work-guide-2026.html</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries/brazil-work-visa-guide-2026.html</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries/canada.html</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
@@ -133,12 +133,17 @@
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries/europe-jobs-without-degree-2026.html</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://jobs-worldwide.for-us.workers.dev/countries/finland-jobs-guide-2026.html</loc>
+    <lastmod>2026-10-06</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries/france-contracts-guide-2026.html</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
@@ -169,6 +174,11 @@
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries/kuwait-jobs-guide-2026.html</loc>
     <lastmod>2026-08-29</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://jobs-worldwide.for-us.workers.dev/countries/malta-jobs-guide-2026.html</loc>
+    <lastmod>2026-10-06</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
@@ -208,7 +218,7 @@
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries/qatar.html</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
@@ -218,7 +228,7 @@
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries/saudi-arabia-contracts-guide-2026.html</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
