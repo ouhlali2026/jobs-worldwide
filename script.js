@@ -1,7 +1,7 @@
 // =============================================
 // script.js - إدارة الدول في الصفحة الرئيسية
-// الإصدار: 3.2 - تاريخ: 9 أكتوبر 2026
-// تحسين الأداء: INP, Lazy Loading, Cache API
+// الإصدار: 3.3 - تاريخ: 9 أكتوبر 2026
+// تحسين: منع تخزين الفشل + خريطة صور صريحة
 // =============================================
 
 (function() {
@@ -48,6 +48,14 @@
         { url: "countries/asylum-brazil-guide-2026.html", title: "🇧🇷 البرازيل (لجوء)", desc: "طلب اللجوء الإنساني والسياسي. شروط بروتوكول اللجوء.", tag: "بروتوكول اللجوء", dateAdded: "2026-02-05" }
     ];
 
+    // ===== 🖼️ خريطة الصور الصريحة =====
+    // تُستخدم كخيار أول قبل أي محاولة جلب
+    // أضف صورة أي دولة جديدة هنا لضمان ظهورها فوراً
+    const explicitImages = {
+        "countries/finland-jobs-guide-2026.html": "https://i.ibb.co/b5NVGvDL/1000002930.jpg"
+        // "countries/malta-jobs-guide-2026.html": "https://i.ibb.co/XXXX/malta.jpg",
+    };
+
     // ===== الترتيب =====
     const sorted = [...featuredCountries].sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
 
@@ -59,7 +67,7 @@
         container.innerHTML = '';
         const MAX_DISPLAY = 7;
         const displayed = sorted.slice(0, MAX_DISPLAY);
-        
+
         displayed.forEach(c => {
             const card = document.createElement('a');
             card.href = c.url;
@@ -79,7 +87,7 @@
         setupLazyLoading();
     }
 
-    // ===== Lazy Loading باستخدام Intersection Observer =====
+    // ===== Lazy Loading =====
     function setupLazyLoading() {
         const placeholders = document.querySelectorAll('.card-img.loading-placeholder');
         if (!('IntersectionObserver' in window)) {
@@ -101,12 +109,20 @@
         placeholders.forEach(div => observer.observe(div));
     }
 
-    // ===== تحميل صورة واحدة باستخدام Cache API =====
+    // ===== تحميل صورة بطاقة واحدة =====
     async function loadImageForCard(div) {
         const url = div.getAttribute('data-url');
         if (!url) return;
+
+        // ✅ 1) الخريطة الصريحة (أولوية قصوى – تجاوز كل الكاش)
+        if (explicitImages[url]) {
+            replaceWithImage(div, explicitImages[url]);
+            return;
+        }
+
+        // ✅ 2) Cache API (بدون تخزين الفشل)
         try {
-            const cache = await caches.open('article-images-v2');
+            const cache = await caches.open('article-images-v3');
             const cachedResponse = await cache.match(url);
             if (cachedResponse && cachedResponse.ok) {
                 const blob = await cachedResponse.blob();
@@ -114,67 +130,79 @@
                 replaceWithImage(div, imgUrl);
                 return;
             }
-        } catch (e) {}
+        } catch (e) { /* تجاهل */ }
 
+        // ✅ 3) localStorage (فقط الصور الصالحة)
         try {
-            const cacheKey = 'imageCacheV3';
+            const cacheKey = 'imageCacheV4';
             const saved = localStorage.getItem(cacheKey);
             if (saved) {
                 const cache = JSON.parse(saved);
-                if (cache[url] && cache[url].expiry > Date.now()) {
-                    if (cache[url].imgUrl) {
-                        replaceWithImage(div, cache[url].imgUrl);
-                        return;
-                    }
+                if (cache[url] && cache[url].expiry > Date.now() && cache[url].imgUrl) {
+                    replaceWithImage(div, cache[url].imgUrl);
+                    return;
                 }
             }
-        } catch (e) {}
+        } catch (e) { /* تجاهل */ }
 
-        const TIMEOUT = 3000;
+        // ✅ 4) جلب الصفحة واستخراج og:image
+        const TIMEOUT = 5000;
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), TIMEOUT);
+
         try {
             const response = await fetch(url, { cache: 'force-cache', signal: controller.signal });
             clearTimeout(timeoutId);
-            if (!response.ok) throw new Error();
+            if (!response.ok) throw new Error('fetch failed');
+
             const html = await response.text();
             const parser = new DOMParser();
             const doc = parser.parseFromString(html, 'text/html');
+
             let imgUrl = null;
             const meta = doc.querySelector('meta[property="og:image"]');
             if (meta && meta.content) imgUrl = meta.content;
+
             if (!imgUrl) {
                 const firstImg = doc.querySelector('img');
                 if (firstImg && firstImg.src) imgUrl = firstImg.src;
             }
+
             if (imgUrl) {
                 if (!imgUrl.startsWith('http')) {
                     imgUrl = new URL(imgUrl, window.location.origin).href;
                 }
                 replaceWithImage(div, imgUrl);
+
+                // ✅ التخزين فقط عند النجاح
                 try {
-                    const cacheKey = 'imageCacheV3';
+                    const cacheKey = 'imageCacheV4';
                     let cache = {};
                     const saved = localStorage.getItem(cacheKey);
                     if (saved) cache = JSON.parse(saved);
                     cache[url] = { imgUrl: imgUrl, expiry: Date.now() + 604800000 };
                     localStorage.setItem(cacheKey, JSON.stringify(cache));
-                } catch (e) {}
+                } catch (e) { /* تجاهل */ }
+
                 try {
-                    const cache = await caches.open('article-images-v2');
-                    const imgResponse = await fetch(imgUrl);
-                    if (imgResponse.ok) {
-                        await cache.put(url, imgResponse);
+                    const cache = await caches.open('article-images-v3');
+                    const imgResponse = await fetch(imgUrl, { mode: 'no-cors' });
+                    if (imgResponse) {
+                        await cache.put(url, new Response(JSON.stringify({ imgUrl, ts: Date.now() })));
                     }
-                } catch (e) {}
+                } catch (e) { /* تجاهل */ }
+            } else {
+                throw new Error('no image found');
             }
         } catch (error) {
+            // ✅ عند الفشل: أيقونة افتراضية (بدون تخزين)
             div.innerHTML = '<i class="fas fa-briefcase" style="font-size: 3rem; color: #2563EB;"></i>';
             div.className = 'card-img';
             div.style.background = '#EFF6FF';
             div.style.display = 'flex';
             div.style.alignItems = 'center';
             div.style.justifyContent = 'center';
+            console.warn('⚠️ لم يتم العثور على صورة لـ:', url);
         } finally {
             clearTimeout(timeoutId);
         }
