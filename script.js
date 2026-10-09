@@ -1,6 +1,6 @@
 // =============================================
 // script.js - إدارة الدول في الصفحة الرئيسية
-// الإصدار: 3.1 - تاريخ: 29 أغسطس 2026
+// الإصدار: 3.2 - تاريخ: 9 أكتوبر 2026
 // تحسين الأداء: INP, Lazy Loading, Cache API
 // =============================================
 
@@ -9,6 +9,10 @@
 
     // ===== قائمة الدول (مرتبة من الأحدث إلى الأقدم) =====
     const featuredCountries = [
+        // ===== الدول الجديدة (أكتوبر 2026) =====
+        { url: "countries/finland-jobs-guide-2026.html", title: "🇫🇮 فنلندا", desc: "عقود موسمية، قطف التوت، وكنز لابلاند الشتوي – رواتب تبدأ من 1,800 يورو.", tag: "جديد 🔥", dateAdded: "2026-10-06" },
+        { url: "countries/malta-jobs-guide-2026.html", title: "🇲🇹 مالطا", desc: "أوروبا بدون حاجز اللغة – تأشيرة Single Permit ورواتب تبدأ 1,200 يورو.", tag: "جديد 🔥", dateAdded: "2026-10-06" },
+
         // ===== الدول الجديدة (أغسطس 2026) =====
         { url: "countries/singapore-jobs-guide-2026.html", title: "🇸🇬 سنغافورة", desc: "فيزا عمل، رواتب تنافسية، وفرص للمهنيين العرب في قلب آسيا.", tag: "جديد 🔥", dateAdded: "2026-08-29" },
         { url: "countries/poland-jobs-guide-2026.html", title: "🇵🇱 بولندا", desc: "عقود عمل، رواتب تنافسية، وفرص للعرب والمغاربة في أوروبا الشرقية.", tag: "جديد 🔥", dateAdded: "2026-08-29" },
@@ -102,7 +106,7 @@
         const url = div.getAttribute('data-url');
         if (!url) return;
         try {
-            const cache = await caches.open('article-images-v1');
+            const cache = await caches.open('article-images-v2');
             const cachedResponse = await cache.match(url);
             if (cachedResponse && cachedResponse.ok) {
                 const blob = await cachedResponse.blob();
@@ -113,7 +117,7 @@
         } catch (e) {}
 
         try {
-            const cacheKey = 'imageCacheV2';
+            const cacheKey = 'imageCacheV3';
             const saved = localStorage.getItem(cacheKey);
             if (saved) {
                 const cache = JSON.parse(saved);
@@ -149,7 +153,7 @@
                 }
                 replaceWithImage(div, imgUrl);
                 try {
-                    const cacheKey = 'imageCacheV2';
+                    const cacheKey = 'imageCacheV3';
                     let cache = {};
                     const saved = localStorage.getItem(cacheKey);
                     if (saved) cache = JSON.parse(saved);
@@ -157,7 +161,7 @@
                     localStorage.setItem(cacheKey, JSON.stringify(cache));
                 } catch (e) {}
                 try {
-                    const cache = await caches.open('article-images-v1');
+                    const cache = await caches.open('article-images-v2');
                     const imgResponse = await fetch(imgUrl);
                     if (imgResponse.ok) {
                         await cache.put(url, imgResponse);
