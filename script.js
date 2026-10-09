@@ -1,7 +1,6 @@
 // =============================================
 // script.js - إدارة الدول في الصفحة الرئيسية
 // الإصدار: 3.3 - تاريخ: 9 أكتوبر 2026
-// تحسين: منع تخزين الفشل + خريطة صور صريحة
 // =============================================
 
 (function() {
@@ -9,11 +8,8 @@
 
     // ===== قائمة الدول (مرتبة من الأحدث إلى الأقدم) =====
     const featuredCountries = [
-        // ===== الدول الجديدة (أكتوبر 2026) =====
         { url: "countries/finland-jobs-guide-2026.html", title: "🇫🇮 فنلندا", desc: "عقود موسمية، قطف التوت، وكنز لابلاند الشتوي – رواتب تبدأ من 1,800 يورو.", tag: "جديد 🔥", dateAdded: "2026-10-06" },
         { url: "countries/malta-jobs-guide-2026.html", title: "🇲🇹 مالطا", desc: "أوروبا بدون حاجز اللغة – تأشيرة Single Permit ورواتب تبدأ 1,200 يورو.", tag: "جديد 🔥", dateAdded: "2026-10-06" },
-
-        // ===== الدول الجديدة (أغسطس 2026) =====
         { url: "countries/singapore-jobs-guide-2026.html", title: "🇸🇬 سنغافورة", desc: "فيزا عمل، رواتب تنافسية، وفرص للمهنيين العرب في قلب آسيا.", tag: "جديد 🔥", dateAdded: "2026-08-29" },
         { url: "countries/poland-jobs-guide-2026.html", title: "🇵🇱 بولندا", desc: "عقود عمل، رواتب تنافسية، وفرص للعرب والمغاربة في أوروبا الشرقية.", tag: "جديد 🔥", dateAdded: "2026-08-29" },
         { url: "countries/australia.html", title: "🇦🇺 أستراليا (فيزا عقد عمل)", desc: "دليل شامل لتأشيرة العمل، المهن المطلوبة، الرواتب، وشروط التقديم للعرب.", tag: "جديد 🔥", dateAdded: "2026-08-20" },
@@ -45,18 +41,17 @@
         { url: "countries/canada.html", title: "🇨🇦 كندا (Express Entry)", desc: "نظام Express Entry، رواتب بين 3500-9000 دولار كندي.", tag: "500,000 مهاجر", dateAdded: "2026-02-20" },
         { url: "countries/usa.html", title: "🇺🇸 الولايات المتحدة", desc: "تأشيرات H-1B و H-2B. رواتب بين 3000-13000 دولار شهرياً.", tag: "85,000 تأشيرة", dateAdded: "2026-02-15" },
         { url: "countries/brazil-work-visa-guide-2026.html", title: "🇧🇷 البرازيل (تأشيرة عمل)", desc: "تأشيرة VITEM V والمهن المطلوبة.", tag: "فيزا عمل", dateAdded: "2026-02-10" },
-        { url: "countries/asylum-brazil-guide-2026.html", title: "🇧🇷 البرازيل (لجوء)", desc: "طلب اللجوء الإنساني والسياسي. شروط بروتوكول اللجوء.", tag: "بروتوكول اللجوء", dateAdded: "2026-02-05" }
+        { url: "countries/asylum-brazil-guide-2026.html", title: "🇧🇷 البرازيل (لجوء)", desc: "طلب اللجوء الإنساني والسياسي. شروط بروتوكول اللجوء.", tag: "بروتوكول اللجوء", dateAdded: "2026-02-05" },
+        { url: "countries/portugal-job-seeker-visa-2026.html", title: "🇵🇹 البرتغال (فيزا البحث عن عمل)", desc: "تأشيرة بحث عن عمل لمدة 120 يوماً قابلة للتمديد، دليل شامل للعرب.", tag: "فرصة أوروبية", dateAdded: "2026-01-30" },
+        { url: "countries/how-to-get-portugal-job-seeker-visa-2026.html", title: "🇵🇹 البرتغال (كيف تحصل على الفيزا)", desc: "خطوة بخطوة: الوثائق، الشروط، والمقابلة للحصول على الفيزا.", tag: "دليل عملي", dateAdded: "2026-01-25" }
     ];
 
-    // ===== 🖼️ خريطة الصور الصريحة =====
-    // تُستخدم كخيار أول قبل أي محاولة جلب
-    // أضف صورة أي دولة جديدة هنا لضمان ظهورها فوراً
+    // ===== 🖼️ خريطة الصور الصريحة (للدول الجديدة) =====
     const explicitImages = {
         "countries/finland-jobs-guide-2026.html": "https://i.ibb.co/b5NVGvDL/1000002930.jpg"
-        // "countries/malta-jobs-guide-2026.html": "https://i.ibb.co/XXXX/malta.jpg",
     };
 
-    // ===== الترتيب =====
+    // ===== الترتيب حسب الأحدث =====
     const sorted = [...featuredCountries].sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
 
     const container = document.getElementById('countriesContainer');
@@ -65,8 +60,7 @@
     // ===== عرض البطاقات =====
     function renderCards() {
         container.innerHTML = '';
-        const MAX_DISPLAY = 7;
-        const displayed = sorted.slice(0, MAX_DISPLAY);
+        const displayed = sorted.slice(0, 7);
 
         displayed.forEach(c => {
             const card = document.createElement('a');
@@ -97,45 +91,39 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    const div = entry.target;
-                    loadImageForCard(div);
-                    observer.unobserve(div);
+                    loadImageForCard(entry.target);
+                    observer.unobserve(entry.target);
                 }
             });
-        }, {
-            rootMargin: '200px 0px',
-            threshold: 0.1
-        });
+        }, { rootMargin: '200px 0px', threshold: 0.1 });
         placeholders.forEach(div => observer.observe(div));
     }
 
-    // ===== تحميل صورة بطاقة واحدة =====
+    // ===== تحميل صورة بطاقة =====
     async function loadImageForCard(div) {
         const url = div.getAttribute('data-url');
         if (!url) return;
 
-        // ✅ 1) الخريطة الصريحة (أولوية قصوى – تجاوز كل الكاش)
+        // 1) الخريطة الصريحة (أولوية قصوى)
         if (explicitImages[url]) {
             replaceWithImage(div, explicitImages[url]);
             return;
         }
 
-        // ✅ 2) Cache API (بدون تخزين الفشل)
+        // 2) Cache API
         try {
             const cache = await caches.open('article-images-v3');
-            const cachedResponse = await cache.match(url);
-            if (cachedResponse && cachedResponse.ok) {
-                const blob = await cachedResponse.blob();
-                const imgUrl = URL.createObjectURL(blob);
-                replaceWithImage(div, imgUrl);
+            const cached = await cache.match(url);
+            if (cached && cached.ok) {
+                const blob = await cached.blob();
+                replaceWithImage(div, URL.createObjectURL(blob));
                 return;
             }
-        } catch (e) { /* تجاهل */ }
+        } catch (e) {}
 
-        // ✅ 3) localStorage (فقط الصور الصالحة)
+        // 3) localStorage (فقط الصور الصالحة)
         try {
-            const cacheKey = 'imageCacheV4';
-            const saved = localStorage.getItem(cacheKey);
+            const saved = localStorage.getItem('imageCacheV4');
             if (saved) {
                 const cache = JSON.parse(saved);
                 if (cache[url] && cache[url].expiry > Date.now() && cache[url].imgUrl) {
@@ -143,12 +131,11 @@
                     return;
                 }
             }
-        } catch (e) { /* تجاهل */ }
+        } catch (e) {}
 
-        // ✅ 4) جلب الصفحة واستخراج og:image
-        const TIMEOUT = 5000;
+        // 4) جلب الصفحة واستخراج og:image
         const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), TIMEOUT);
+        const timeoutId = setTimeout(() => controller.abort(), 5000);
 
         try {
             const response = await fetch(url, { cache: 'force-cache', signal: controller.signal });
@@ -156,13 +143,11 @@
             if (!response.ok) throw new Error('fetch failed');
 
             const html = await response.text();
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, 'text/html');
+            const doc = new DOMParser().parseFromString(html, 'text/html');
 
             let imgUrl = null;
             const meta = doc.querySelector('meta[property="og:image"]');
             if (meta && meta.content) imgUrl = meta.content;
-
             if (!imgUrl) {
                 const firstImg = doc.querySelector('img');
                 if (firstImg && firstImg.src) imgUrl = firstImg.src;
@@ -176,33 +161,22 @@
 
                 // ✅ التخزين فقط عند النجاح
                 try {
-                    const cacheKey = 'imageCacheV4';
                     let cache = {};
-                    const saved = localStorage.getItem(cacheKey);
+                    const saved = localStorage.getItem('imageCacheV4');
                     if (saved) cache = JSON.parse(saved);
                     cache[url] = { imgUrl: imgUrl, expiry: Date.now() + 604800000 };
-                    localStorage.setItem(cacheKey, JSON.stringify(cache));
-                } catch (e) { /* تجاهل */ }
-
-                try {
-                    const cache = await caches.open('article-images-v3');
-                    const imgResponse = await fetch(imgUrl, { mode: 'no-cors' });
-                    if (imgResponse) {
-                        await cache.put(url, new Response(JSON.stringify({ imgUrl, ts: Date.now() })));
-                    }
-                } catch (e) { /* تجاهل */ }
+                    localStorage.setItem('imageCacheV4', JSON.stringify(cache));
+                } catch (e) {}
             } else {
-                throw new Error('no image found');
+                throw new Error('no image');
             }
         } catch (error) {
-            // ✅ عند الفشل: أيقونة افتراضية (بدون تخزين)
             div.innerHTML = '<i class="fas fa-briefcase" style="font-size: 3rem; color: #2563EB;"></i>';
             div.className = 'card-img';
             div.style.background = '#EFF6FF';
             div.style.display = 'flex';
             div.style.alignItems = 'center';
             div.style.justifyContent = 'center';
-            console.warn('⚠️ لم يتم العثور على صورة لـ:', url);
         } finally {
             clearTimeout(timeoutId);
         }
@@ -219,7 +193,7 @@
         div.parentNode.replaceChild(img, div);
     }
 
-    // ===== تشغيل التطبيق =====
+    // ===== تشغيل =====
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', renderCards);
     } else {
