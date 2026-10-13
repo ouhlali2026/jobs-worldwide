@@ -4,7 +4,7 @@
   <!-- MAIN PAGES -->
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/index.html</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
@@ -19,7 +19,7 @@
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries.html</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
@@ -194,6 +194,16 @@
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries/netherlands-seasonal-jobs-2026.html</loc>
     <lastmod>2026-08-29</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://jobs-worldwide.for-us.workers.dev/countries/norway-jobs-guide-2026.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://jobs-worldwide.for-us.workers.dev/countries/norway-job-seeker-visa-2026.html</loc>
+    <lastmod>2026-10-13</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
