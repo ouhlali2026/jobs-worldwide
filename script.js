@@ -1,22 +1,34 @@
 // =============================================
 // script.js - إدارة الدول (نسخة مبسطة مثل countries.html)
-// الإصدار: 4.1 - تاريخ: 13 أكتوبر 2026
+// الإصدار: 4.2 - تاريخ: 16 أكتوبر 2026
+// إضافة: المقالات الأمريكية الثلاثة
 // =============================================
 
 (function() {
     'use strict';
 
     const featuredCountries = [
-        // ===== الدول الجديدة (أكتوبر 2026) =====
-        { url: "countries/norway-job-seeker-visa-2026.html", title: "🇳🇴 فيزا البحث عن عمل", desc: "6 أشهر للبحث عن عمل داخل النرويج للخريجين – دليل خطوة بخطوة.", tag: "جديد 🔥" },
-        { url: "countries/norway-jobs-guide-2026.html", title: "🇳🇴 النرويج", desc: "رواتب النفط والسلمون وتأشيرة UDI – دليل حصري للعرب.", tag: "جديد 🔥" },
-        { url: "countries/finland-jobs-guide-2026.html", title: "🇫🇮 فنلندا", desc: "عقود موسمية، قطف التوت، وكنز لابلاند الشتوي – رواتب تبدأ من 1,800 يورو.", tag: "جديد 🔥" },
-        { url: "countries/malta-jobs-guide-2026.html", title: "🇲🇹 مالطا", desc: "أوروبا بدون حاجز اللغة – تأشيرة Single Permit ورواتب تبدأ 1,200 يورو.", tag: "جديد 🔥" },
-        { url: "countries/singapore-jobs-guide-2026.html", title: "🇸🇬 سنغافورة", desc: "فيزا عمل، رواتب تنافسية، وفرص للمهنيين العرب في قلب آسيا.", tag: "جديد 🔥" },
-        { url: "countries/poland-jobs-guide-2026.html", title: "🇵🇱 بولندا", desc: "عقود عمل، رواتب تنافسية، وفرص للعرب والمغاربة في أوروبا الشرقية.", tag: "جديد 🔥" },
-        { url: "countries/australia.html", title: "🇦🇺 أستراليا", desc: "دليل شامل لتأشيرة العمل، المهن المطلوبة، الرواتب، وشروط التقديم.", tag: "جديد 🔥" },
-        { url: "countries/morocco-jobs-guide-2026.html", title: "🇲🇦 المغرب", desc: "أفضل مواقع التوظيف، المهن المطلوبة، الرواتب، وظائف بدون شهادة.", tag: "جديد 🔥" },
-        { url: "countries/sweden-job-seeker-visa-2026.html", title: "🇸🇪 السويد", desc: "تأشيرة بحث عن عمل لمدة 9 أشهر بدون عقد مسبق، المهن المطلوبة.", tag: "جديد 🔥" }
+        // ===== أمريكا (جديد - أكتوبر 2026) =====
+        { url: "countries/usa-work-visa-h1b-2026.html", title: "🇺🇸 فيزا H-1B للمهنيين", desc: "نظام الأجور الجديد، رسوم USCIS، ومسار الغرين كارد – حصري.", tag: "جديد 🔥" },
+        { url: "countries/usa-visa-algerians-iraqis-saudis-2026.html", title: "🇺🇸 أمريكا للجزائريين والعراقيين والسعوديين", desc: "مواعيد السفارات، تأشيرات SIV، وكرت العائلة – دليل حصري.", tag: "جديد 🔥" },
+        { url: "countries/usa-visa-moroccans-2026.html", title: "🇺🇸 فيزا أمريكا للمغاربة", desc: "الأوراق، رسوم 185$، نسبة القبول، وقرعة DV – دليل شامل.", tag: "جديد 🔥" },
+
+        // ===== النرويج (أكتوبر 2026) =====
+        { url: "countries/norway-job-seeker-visa-2026.html", title: "🇳🇴 فيزا البحث عن عمل", desc: "6 أشهر للبحث عن عمل داخل النرويج للخريجين – دليل خطوة بخطوة.", tag: "جديد" },
+        { url: "countries/norway-jobs-guide-2026.html", title: "🇳🇴 النرويج", desc: "رواتب النفط والسلمون وتأشيرة UDI – دليل حصري للعرب.", tag: "جديد" },
+
+        // ===== فنلندا ومالطا (أكتوبر 2026) =====
+        { url: "countries/finland-jobs-guide-2026.html", title: "🇫🇮 فنلندا", desc: "عقود موسمية، قطف التوت، وكنز لابلاند الشتوي – رواتب تبدأ من 1,800 يورو.", tag: "جديد" },
+        { url: "countries/malta-jobs-guide-2026.html", title: "🇲🇹 مالطا", desc: "أوروبا بدون حاجز اللغة – تأشيرة Single Permit ورواتب تبدأ 1,200 يورو.", tag: "جديد" },
+
+        // ===== آسيا وأوروبا الشرقية =====
+        { url: "countries/singapore-jobs-guide-2026.html", title: "🇸🇬 سنغافورة", desc: "فيزا عمل، رواتب تنافسية، وفرص للمهنيين العرب في قلب آسيا.", tag: "جديد" },
+        { url: "countries/poland-jobs-guide-2026.html", title: "🇵🇱 بولندا", desc: "عقود عمل، رواتب تنافسية، وفرص للعرب والمغاربة في أوروبا الشرقية.", tag: "جديد" },
+
+        // ===== أستراليا وأفريقيا =====
+        { url: "countries/australia.html", title: "🇦🇺 أستراليا", desc: "دليل شامل لتأشيرة العمل، المهن المطلوبة، الرواتب، وشروط التقديم.", tag: "جديد" },
+        { url: "countries/morocco-jobs-guide-2026.html", title: "🇲🇦 المغرب", desc: "أفضل مواقع التوظيف، المهن المطلوبة، الرواتب، وظائف بدون شهادة.", tag: "جديد" },
+        { url: "countries/sweden-job-seeker-visa-2026.html", title: "🇸🇪 السويد", desc: "تأشيرة بحث عن عمل لمدة 9 أشهر بدون عقد مسبق، المهن المطلوبة.", tag: "جديد" }
     ];
 
     const container = document.getElementById('countriesContainer');
@@ -38,14 +50,14 @@
         return card;
     }
 
-    // ===== جلب صورة البطاقة (نفس منطق countries.html) =====
+    // ===== جلب صورة البطاقة =====
     async function loadImageForCard(card) {
         const imgDiv = card.querySelector('.card-img.loading-placeholder');
         if (!imgDiv) return;
         const url = imgDiv.getAttribute('data-url');
         if (!url) return;
 
-        const cacheKey = 'imageCacheHomeV2';
+        const cacheKey = 'imageCacheHomeV3';
         let cache = {};
         try {
             const saved = localStorage.getItem(cacheKey);
