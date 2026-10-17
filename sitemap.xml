@@ -4,7 +4,7 @@
   <!-- MAIN PAGES -->
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/index.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
@@ -19,7 +19,7 @@
   </url>
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
@@ -281,9 +281,26 @@
     <lastmod>2026-08-29</lastmod>
     <priority>0.70</priority>
   </url>
+  
+  <!-- USA PAGES (Updated) -->
   <url>
     <loc>https://jobs-worldwide.for-us.workers.dev/countries/usa.html</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://jobs-worldwide.for-us.workers.dev/countries/usa-visa-moroccans-2026.html</loc>
+    <lastmod>2026-10-16</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://jobs-worldwide.for-us.workers.dev/countries/usa-visa-algerians-iraqis-saudis-2026.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://jobs-worldwide.for-us.workers.dev/countries/usa-work-visa-h1b-2026.html</loc>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.70</priority>
   </url>
 
