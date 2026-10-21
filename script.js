@@ -1,40 +1,35 @@
 // =============================================
 // script.js - إدارة الدول (نسخة مبسطة مثل countries.html)
-// الإصدار: 4.2 - تاريخ: 16 أكتوبر 2026
-// إضافة: المقالات الأمريكية الثلاثة
+// الإصدار: 4.3 - تاريخ: 21 أكتوبر 2026
+// إضافة: مقالات الأردن الثلاثة
 // =============================================
 
 (function() {
     'use strict';
 
     const featuredCountries = [
-        // ===== أمريكا (جديد - أكتوبر 2026) =====
-        { url: "countries/usa-work-visa-h1b-2026.html", title: "🇺🇸 فيزا H-1B للمهنيين", desc: "نظام الأجور الجديد، رسوم USCIS، ومسار الغرين كارد – حصري.", tag: "جديد 🔥" },
-        { url: "countries/usa-visa-algerians-iraqis-saudis-2026.html", title: "🇺🇸 أمريكا للجزائريين والعراقيين والسعوديين", desc: "مواعيد السفارات، تأشيرات SIV، وكرت العائلة – دليل حصري.", tag: "جديد 🔥" },
-        { url: "countries/usa-visa-moroccans-2026.html", title: "🇺🇸 فيزا أمريكا للمغاربة", desc: "الأوراق، رسوم 185$، نسبة القبول، وقرعة DV – دليل شامل.", tag: "جديد 🔥" },
+        // ===== الأردن (جديد - أكتوبر 2026) =====
+        { url: "countries/jordan-civil-service-guide-2026.html", title: "🇯🇴 الأردن: ديوان الخدمة المدنية", desc: "دليل الترتيب التنافسي والإعلان المفتوح والبدائل الخارجية.", tag: "جديد 🔥" },
+        { url: "countries/jordan-work-abroad-2026.html", title: "🇯🇴 الأردن: الهجرة والعمل بالخارج", desc: "فرص قطر وألمانيا وكندا – رواتب بالدولار واليورو.", tag: "جديد 🔥" },
+        { url: "countries/jordan-third-category-jobs-2026.html", title: "🇯🇴 الأردن: وظائف الفئة الثالثة", desc: "دليل التقديم عبر طسويق لحملة التوجيهي – الرواتب والشروط.", tag: "جديد 🔥" },
+
+        // ===== أمريكا (أكتوبر 2026) =====
+        { url: "countries/usa-work-visa-h1b-2026.html", title: "🇺🇸 فيزا H-1B للمهنيين", desc: "نظام الأجور الجديد، رسوم USCIS، ومسار الغرين كارد.", tag: "جديد" },
+        { url: "countries/usa-visa-algerians-iraqis-saudis-2026.html", title: "🇺🇸 أمريكا للجزائريين والعراقيين والسعوديين", desc: "مواعيد السفارات، تأشيرات SIV، وكرت العائلة.", tag: "جديد" },
+        { url: "countries/usa-visa-moroccans-2026.html", title: "🇺🇸 فيزا أمريكا للمغاربة", desc: "الأوراق، رسوم 185$، نسبة القبول، وقرعة DV.", tag: "جديد" },
 
         // ===== النرويج (أكتوبر 2026) =====
-        { url: "countries/norway-job-seeker-visa-2026.html", title: "🇳🇴 فيزا البحث عن عمل", desc: "6 أشهر للبحث عن عمل داخل النرويج للخريجين – دليل خطوة بخطوة.", tag: "جديد" },
-        { url: "countries/norway-jobs-guide-2026.html", title: "🇳🇴 النرويج", desc: "رواتب النفط والسلمون وتأشيرة UDI – دليل حصري للعرب.", tag: "جديد" },
+        { url: "countries/norway-job-seeker-visa-2026.html", title: "🇳🇴 فيزا البحث عن عمل", desc: "6 أشهر للبحث عن عمل داخل النرويج للخريجين.", tag: "جديد" },
+        { url: "countries/norway-jobs-guide-2026.html", title: "🇳🇴 النرويج", desc: "رواتب النفط والسلمون وتأشيرة UDI – دليل حصري.", tag: "جديد" },
 
         // ===== فنلندا ومالطا (أكتوبر 2026) =====
-        { url: "countries/finland-jobs-guide-2026.html", title: "🇫🇮 فنلندا", desc: "عقود موسمية، قطف التوت، وكنز لابلاند الشتوي – رواتب تبدأ من 1,800 يورو.", tag: "جديد" },
-        { url: "countries/malta-jobs-guide-2026.html", title: "🇲🇹 مالطا", desc: "أوروبا بدون حاجز اللغة – تأشيرة Single Permit ورواتب تبدأ 1,200 يورو.", tag: "جديد" },
-
-        // ===== آسيا وأوروبا الشرقية =====
-        { url: "countries/singapore-jobs-guide-2026.html", title: "🇸🇬 سنغافورة", desc: "فيزا عمل، رواتب تنافسية، وفرص للمهنيين العرب في قلب آسيا.", tag: "جديد" },
-        { url: "countries/poland-jobs-guide-2026.html", title: "🇵🇱 بولندا", desc: "عقود عمل، رواتب تنافسية، وفرص للعرب والمغاربة في أوروبا الشرقية.", tag: "جديد" },
-
-        // ===== أستراليا وأفريقيا =====
-        { url: "countries/australia.html", title: "🇦🇺 أستراليا", desc: "دليل شامل لتأشيرة العمل، المهن المطلوبة، الرواتب، وشروط التقديم.", tag: "جديد" },
-        { url: "countries/morocco-jobs-guide-2026.html", title: "🇲🇦 المغرب", desc: "أفضل مواقع التوظيف، المهن المطلوبة، الرواتب، وظائف بدون شهادة.", tag: "جديد" },
-        { url: "countries/sweden-job-seeker-visa-2026.html", title: "🇸🇪 السويد", desc: "تأشيرة بحث عن عمل لمدة 9 أشهر بدون عقد مسبق، المهن المطلوبة.", tag: "جديد" }
+        { url: "countries/finland-jobs-guide-2026.html", title: "🇫🇮 فنلندا", desc: "عقود موسمية، قطف التوت، وكنز لابلاند الشتوي.", tag: "جديد" },
+        { url: "countries/malta-jobs-guide-2026.html", title: "🇲🇹 مالطا", desc: "أوروبا بدون حاجز اللغة – تأشيرة Single Permit.", tag: "جديد" }
     ];
 
     const container = document.getElementById('countriesContainer');
     if (!container) return;
 
-    // ===== إنشاء البطاقة =====
     function createCard(c) {
         const card = document.createElement('a');
         card.href = c.url;
@@ -50,21 +45,20 @@
         return card;
     }
 
-    // ===== جلب صورة البطاقة =====
     async function loadImageForCard(card) {
         const imgDiv = card.querySelector('.card-img.loading-placeholder');
         if (!imgDiv) return;
         const url = imgDiv.getAttribute('data-url');
         if (!url) return;
 
-        const cacheKey = 'imageCacheHomeV3';
+        // تحديث مفتاح الكاش لإجبار المتصفح على تحميل الصور الجديدة
+        const cacheKey = 'imageCacheHomeV4';
         let cache = {};
         try {
             const saved = localStorage.getItem(cacheKey);
             if (saved) cache = JSON.parse(saved);
         } catch(e) {}
 
-        // من الكاش
         if (cache[url] && cache[url].expiry > Date.now()) {
             if (cache[url].imgUrl) {
                 replaceWithImage(imgDiv, cache[url].imgUrl);
@@ -74,7 +68,6 @@
             return;
         }
 
-        // جلب جديد
         try {
             const response = await fetch(url, { cache: 'force-cache' });
             if (!response.ok) throw new Error();
@@ -123,15 +116,14 @@
         div.parentNode.replaceChild(fallback, div);
     }
 
-    // ===== عرض البطاقات =====
     container.innerHTML = '';
+    // عرض أول 7 بطاقات فقط
     const cards = featuredCountries.slice(0, 7).map(c => {
         const card = createCard(c);
         container.appendChild(card);
         return card;
     });
 
-    // تحميل الصور بشكل متوازي
     setTimeout(() => cards.forEach(card => loadImageForCard(card)), 100);
 
 })();
