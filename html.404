@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة غير موجودة | وظائف على مستوى العالم</title>
+    <meta name="description" content="يبدو أنك وصلت إلى رابط غير صحيح. جاري تحويلك تلقائياً إلى الصفحة الصحيحة، أو يمكنك العودة للرئيسية لتصفح المقالات">
+    <link rel="canonical" href="https://jobs-worldwide.for-us.workers.dev/404.html">
+    <meta name="robots" content="noindex, follow">
+    
+    <!-- الأيقونات الثابتة -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        /* تنسيقات إضافية سريعة لصفحة 404 لتكون متناسقة مع التصميم النصي */
+        .error-container {
+            text-align: center;
+            padding: 4rem 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .error-code {
+            font-size: 5rem;
+            font-weight: 800;
+            color: #333;
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+        .error-message {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .error-actions a {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #0056b3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .error-actions a:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- كود التحويل الذكي -->
+    <script>
+        (function() {
+            var path = window.location.pathname;
+            // تجاهل الصفحة الرئيسية
+            if (path === '/' || path === '') return;
+            
+            // إزالة الشرطة المائلة في النهاية إن وجدت
+            var cleanPath = path.endsWith('/') ? path.slice(0, -1) : path;
+            
+            // أخذ الجزء الأخير من الرابط
+            var lastPart = cleanPath.split('/').pop();
+            
+            // إذا لم يكن يحتوي على نقطة (أي لا ينتهي بـ .html أو .css أو .jpg)، نضيف .html
+            if (lastPart.indexOf('.') === -1) {
+                window.location.replace(cleanPath + '.html' + window.location.search + window.location.hash);
+            }
+        })();
+    </script>
+
+    <!-- الهيدر البسيط -->
+    <header>
+        <div class="container">
+            <a href="/index.html" class="logo">وظائف على مستوى العالم</a>
+        </div>
+    </header>
+
+    <!-- محتوى صفحة الخطأ -->
+    <main class="container">
+        <div class="error-container">
+            <div class="error-code">404</div>
+            <p class="error-message">عذراً، الصفحة التي تبحث عنها غير موجودة أو تم نقلها</p>
+            
+            <div class="error-actions">
+                <a href="/index.html">العودة للصفحة الرئيسية</a>
+                <a href="/countries.html">تصفح الدول</a>
+                <a href="/tips.html">نصائح الهجرة</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- التذييل -->
+    <footer>
+        <div class="container">
+            <p>© 2026 وظائف على مستوى العالم. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <!-- الأكواد الثابتة -->
+    <script src="https://pl28833261.effectivegatecpm.com/a3/cd/eb/a3cdeb45ef63e8a831b324d0f6920df9.js" defer></script>
+    <script src="/indexnow.js" defer></script>
+    <a href="https://wa.me/212679627332" class="whatsapp" target="_blank">📱 واتساب – استشارات سريعة</a>
+
+</body>
+</html>
